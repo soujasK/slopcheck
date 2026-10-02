@@ -284,3 +284,17 @@ def test_fetch_writes_pages_and_signals(
 def test_fetch_without_serps(data_dir: Path) -> None:
     result = invoke("fetch")
     assert result.exit_code == 2 and "run `slopwatch collect` first" in result.output
+
+
+def test_collect_single_job_probe(
+    data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
+    bad = invoke("collect", "--job", "made-up/google/IN")
+    assert bad.exit_code == 2 and "not in the frozen plan" in bad.output
+    result = invoke("collect", "--job", "health-01/google/IN")
+    assert result.exit_code == 0, result.output
+    assert "1 searches in plan; 0 cached, 1 would spend" in result.output
+    assert "credits: 1 spent by this command; project ledger 1/140" in result.output
+    rows = read_jsonl(data_dir / "serps.jsonl", SerpRow)
+    assert {r.query_id for r in rows} == {"health-01"} and len(rows) == 10

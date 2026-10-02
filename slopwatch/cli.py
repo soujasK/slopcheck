@@ -223,6 +223,12 @@ def collect(
     yes: Annotated[
         bool, typer.Option("--yes", help=f"Confirm spending more than {DEFAULT_RUN_CREDITS}.")
     ] = False,
+    only: Annotated[
+        list[str] | None,
+        typer.Option(
+            "--job", help="Run only this plan job, as QUERY_ID/ENGINE/LOCALE (repeatable)."
+        ),
+    ] = None,
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Run the frozen query plan through SerpApi and write data/serps.jsonl."""
@@ -232,6 +238,12 @@ def collect(
     if not plan.frozen:
         err_console.print("collect: queries.yaml is a draft; freeze and commit it first")
         raise typer.Exit(EXIT_USAGE)
+    if only:
+        try:
+            plan = plan.restrict(only)
+        except PlanError as exc:
+            err_console.print(f"collect: {exc}")
+            raise typer.Exit(EXIT_USAGE) from None
     cap = settings.max_credits if max_credits is None else max_credits
     with (
         open_cache(settings, mode) as cache,

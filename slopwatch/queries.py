@@ -92,6 +92,10 @@ class Job:
     def params(self) -> dict[str, str]:
         return serp_params(self.engine, self.query.locale, self.query.text)
 
+    @property
+    def key(self) -> str:
+        return f"{self.query.id}/{self.engine}/{self.query.locale}"
+
 
 @dataclass(frozen=True)
 class Plan:
@@ -106,6 +110,18 @@ class Plan:
 
     def credits_needed(self) -> int:
         return len(self.jobs)
+
+    def restrict(self, job_keys: list[str]) -> Plan:
+        """Only the named jobs (``QUERY_ID/ENGINE/LOCALE``), e.g. for a probe.
+        Jobs outside the frozen plan are refused, so a probe cannot add queries."""
+        by_key = {job.key: job for job in self.jobs}
+        unknown = sorted(set(job_keys) - by_key.keys())
+        if unknown:
+            raise PlanError(f"not in the frozen plan: {', '.join(unknown)}")
+        wanted = set(job_keys)
+        return Plan(
+            self.status, self.specs, self.subset_ids, [j for j in self.jobs if j.key in wanted]
+        )
 
 
 def serp_params(engine: Engine, locale: Locale, text: str) -> dict[str, str]:

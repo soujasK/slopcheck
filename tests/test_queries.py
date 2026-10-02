@@ -128,3 +128,12 @@ def test_to_rows() -> None:
     (row,) = to_rows(page, job.query)
     assert (row.query_id, row.engine, row.locale, row.rank) == (job.query.id, "google", "IN", 1)
     assert row.domain == "x.example" and row.request_hash == "h"
+
+
+def test_restrict_to_named_jobs() -> None:
+    plan = load_plan(REAL)
+    probe = plan.restrict(["health-01/google/IN"])
+    assert [j.key for j in probe.jobs] == ["health-01/google/IN"]
+    assert probe.frozen and probe.credits_needed() == 1
+    with pytest.raises(PlanError, match="not in the frozen plan: health-02/bing/IN"):
+        plan.restrict(["health-02/bing/IN"])  # health-02 is not in the Bing subset
