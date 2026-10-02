@@ -1,0 +1,93 @@
+# SlopWatch measurement query set.
+#
+# status: draft -> frozen. Set `status: frozen` and commit this file BEFORE any
+# collection; `slopwatch collect` refuses to spend credits on a draft plan.
+#
+# Queries are phrased the way people in India search (English).
+#
+# Every query is tagged `locale_neutral` BEFORE the subset draw. false = only
+# meaningful in India (INR prices, "in india", Aadhaar/PAN/UAN/UPI/FASTag, CIBIL,
+# PPF/ELSS/SIP, Indian tax regimes, Indian brands such as Dolo 650, Indian
+# product categories such as RO purifiers, dengue, Ayurveda, "indian" diets).
+#
+# Bing (India) and Google (US) run on the same 20-query subset: 5 per category,
+# drawn from the locale-neutral pool only with random.Random(seed) over categories
+# and ids in sorted order (slopwatch.queries.select_subset). The ids below are
+# that draw written out for review; loading fails if they ever stop matching the
+# tags and seed, so the subset cannot be hand-picked. Neutral pool sizes: health 6,
+# finance 5, product 5, tech 5, so the seed only decides the health draw.
+#
+# Report framing: "India vs US on locale-neutral queries".
+#
+# Locale/engine parameters live in slopwatch/queries.py (LOCALE_PARAMS).
+
+version: 1
+status: draft
+
+subset:
+  seed: 2026
+  per_category: 5
+  ids: [health-01, health-03, health-06, health-07, health-10,
+        finance-06, finance-07, finance-08, finance-09, finance-10,
+        product-06, product-07, product-08, product-09, product-10,
+        tech-06, tech-07, tech-08, tech-09, tech-10]
+
+plan:
+  - locale: IN
+    engines: [google]
+    queries: all       # 40 credits
+  - locale: IN
+    engines: [bing]
+    queries: subset    # 20 credits
+  - locale: US
+    engines: [google]
+    queries: subset    # 20 credits  (total 80)
+
+queries:
+  # -- health -----------------------------------------------------------------
+  - {id: health-01, category: health, text: "best medicine for acidity and gas without prescription", locale_neutral: true}
+  - {id: health-02, category: health, text: "home remedies to increase platelet count in dengue", locale_neutral: false}
+  - {id: health-03, category: health, text: "normal blood sugar level after eating for diabetics", locale_neutral: true}
+  - {id: health-04, category: health, text: "is it safe to take dolo 650 every day", locale_neutral: false}
+  - {id: health-05, category: health, text: "ayurvedic treatment for high blood pressure", locale_neutral: false}
+  - {id: health-06, category: health, text: "vitamin d deficiency symptoms in women", locale_neutral: true}
+  - {id: health-07, category: health, text: "how to reduce uric acid naturally", locale_neutral: true}
+  - {id: health-08, category: health, text: "thyroid diet chart for weight loss indian", locale_neutral: false}
+  - {id: health-09, category: health, text: "fatty liver grade 1 symptoms and treatment", locale_neutral: true}
+  - {id: health-10, category: health, text: "side effects of ashwagandha", locale_neutral: true}
+
+  # -- personal finance -------------------------------------------------------
+  - {id: finance-01, category: personal_finance, text: "best sip to invest in 2026", locale_neutral: false}
+  - {id: finance-02, category: personal_finance, text: "old vs new tax regime which is better for salaried", locale_neutral: false}
+  - {id: finance-03, category: personal_finance, text: "how to improve cibil score fast", locale_neutral: false}
+  - {id: finance-04, category: personal_finance, text: "best credit card for online shopping in india", locale_neutral: false}
+  - {id: finance-05, category: personal_finance, text: "ppf vs elss which is better for tax saving", locale_neutral: false}
+  - {id: finance-06, category: personal_finance, text: "how much emergency fund should i have", locale_neutral: true}
+  - {id: finance-07, category: personal_finance, text: "is term insurance worth it", locale_neutral: true}
+  - {id: finance-08, category: personal_finance, text: "how to start investing with a small amount", locale_neutral: true}
+  - {id: finance-09, category: personal_finance, text: "index funds vs actively managed mutual funds", locale_neutral: true}
+  - {id: finance-10, category: personal_finance, text: "how to get out of credit card debt", locale_neutral: true}
+
+  # -- product reviews ---------------------------------------------------------
+  - {id: product-01, category: product_reviews, text: "best smartphone under 20000", locale_neutral: false}
+  - {id: product-02, category: product_reviews, text: "best 1.5 ton inverter ac in india", locale_neutral: false}
+  - {id: product-03, category: product_reviews, text: "best air purifier for delhi pollution", locale_neutral: false}
+  - {id: product-04, category: product_reviews, text: "best water purifier for home ro or uv", locale_neutral: false}
+  - {id: product-05, category: product_reviews, text: "best laptop for students under 50000", locale_neutral: false}
+  - {id: product-06, category: product_reviews, text: "best budget wireless earbuds", locale_neutral: true}
+  - {id: product-07, category: product_reviews, text: "best robot vacuum cleaner", locale_neutral: true}
+  - {id: product-08, category: product_reviews, text: "best mattress for back pain", locale_neutral: true}
+  - {id: product-09, category: product_reviews, text: "best running shoes for beginners", locale_neutral: true}
+  - {id: product-10, category: product_reviews, text: "best air fryer for a small family", locale_neutral: true}
+
+  # -- tech how-tos ------------------------------------------------------------
+  - {id: tech-01, category: tech_howto, text: "how to link aadhaar with pan card online", locale_neutral: false}
+  - {id: tech-02, category: tech_howto, text: "how to check pf balance using uan number", locale_neutral: false}
+  - {id: tech-03, category: tech_howto, text: "upi payment failed but money debited what to do", locale_neutral: false}
+  - {id: tech-04, category: tech_howto, text: "how to download e-aadhaar pdf", locale_neutral: false}
+  - {id: tech-05, category: tech_howto, text: "how to check fastag balance", locale_neutral: false}
+  - {id: tech-06, category: tech_howto, text: "how to recover deleted whatsapp messages", locale_neutral: true}
+  - {id: tech-07, category: tech_howto, text: "how to speed up a slow windows 11 laptop", locale_neutral: true}
+  - {id: tech-08, category: tech_howto, text: "how to transfer data from android to iphone", locale_neutral: true}
+  - {id: tech-09, category: tech_howto, text: "how to block spam calls on android", locale_neutral: true}
+  - {id: tech-10, category: tech_howto, text: "how to recover a hacked gmail account", locale_neutral: true}

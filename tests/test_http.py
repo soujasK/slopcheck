@@ -1,0 +1,113 @@
+from __future__ import annotations
+
+import json
+from datetime import date
+
+import httpx
+import pytest
+
+from slopwatch.cache import Cache
+from slopwatch.config import CacheMode
+from slopwatch.http import HttpError, NetworkDisabled, ResponseTooLarge, safe_url
+from tests.conftest import Recorder, make_client, no_network
+
+URL = "https://api.example.test/v1/thing"
+
+
+def test_retries_transient_then_succeeds() -> None:
+    statuses = iter([503, 429, 200])
+    rec = Recorder(lambda r: httpx.Response(next(statuses), json={"ok": True}))
+    with make_client(rec) as http:
+        resp = http.get(URL, {"q": "x"})
+    assert resp.status == 200
+    assert len(rec.requests) == 3
+
+
+def test_retries_transport_errors_then_gives_up_without_leaking_secret() -> None:
+    def boom(request: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError(f"cannot reach {request.url}")
+
+    rec = Recorder(boom)
+    with make_client(rec, max_retries=2) as http, pytest.raises(HttpError) as err:
+        http.get(URL, {"q": "x", "api_key": "TOPSECRET"})
+    assert len(rec.requests) == 3
+    assert "TOPSECRET" not in str(err.value)
+    assert "ConnectError" in str(err.value)
+
+
+def test_does_not_retry_client_errors_or_cache_auth_failures() -> None:
+    rec = Recorder(lambda r: httpx.Response(401, text="nope"))
+    with make_client(rec) as http:
+        assert http.get(URL).status == 401
+        assert http.get(URL).status == 401
+        assert len(http.cache) == 0
+    assert len(rec.requests) == 2
+
+
+def test_stable_404_is_cached_for_replay() -> None:
+    rec = Recorder(lambda r: httpx.Response(404, text="missing"))
+    with make_client(rec) as http:
+        http.get(URL)
+        assert http.get(URL).from_cache
+    assert len(rec.requests) == 1
+
+
+def test_cache_hit_skips_network() -> None:
+    rec = Recorder(lambda r: httpx.Response(200, json={"n": 1}))
+    with make_client(rec) as http:
+        first = http.get(URL, {"q": "x", "api_key": "a"})
+        second = http.get(URL, {"api_key": "b", "q": "x"})
+    assert not first.from_cache and second.from_cache
+    assert second.json() == {"n": 1}
+    assert len(rec.requests) == 1
+
+
+def test_api_key_is_sent_but_never_stored() -> None:
+    rec = Recorder(lambda r: httpx.Response(200, json={}))
+    with make_client(rec) as http:
+        http.get(URL, {"q": "x", "api_key": "TOPSECRET"})
+        assert rec.requests[0].url.params["api_key"] == "TOPSECRET"
+        assert "TOPSECRET" not in "\n".join(http.cache._db.iterdump())
+
+
+def test_post_json_keys_on_body() -> None:
+    rec = Recorder(lambda r: httpx.Response(200, json=json.loads(r.content)))
+    with make_client(rec) as http:
+        a = http.post_json(URL, {"pkg": "a"}, as_of=date(2025, 9, 8))
+        b = http.post_json(URL, {"pkg": "b"}, as_of=date(2025, 9, 8))
+        a2 = http.post_json(URL, {"pkg": "a"}, as_of=date(2025, 9, 8))
+    assert a.json() == {"pkg": "a"} and b.json() == {"pkg": "b"}
+    assert a2.from_cache
+    assert len(rec.requests) == 2
+    assert rec.requests[0].headers["content-type"] == "application/json"
+
+
+def test_max_bytes_enforced() -> None:
+    rec = Recorder(lambda r: httpx.Response(200, content=b"x" * 5000))
+    with make_client(rec) as http, pytest.raises(ResponseTooLarge):
+        http.get(URL, max_bytes=1000)
+    with make_client(rec) as http:
+        assert len(http.get(URL, max_bytes=10_000).body) == 5000
+
+
+def test_replay_mode_never_touches_network() -> None:
+    with make_client(no_network, mode=CacheMode.REPLAY) as http:
+        with pytest.raises(LookupError):
+            http.get(URL)
+        with pytest.raises(NetworkDisabled):
+            http.get(URL, store=False)
+
+
+def test_store_false_bypasses_cache() -> None:
+    rec = Recorder(lambda r: httpx.Response(200, json={}))
+    with make_client(rec, cache=Cache(":memory:")) as http:
+        http.get(URL, store=False)
+        http.get(URL, store=False)
+        assert len(http.cache) == 0
+    assert len(rec.requests) == 2
+
+
+def test_safe_url_hides_secrets() -> None:
+    shown = safe_url("https://serpapi.com/search.json", {"q": "npm", "api_key": "S"})
+    assert shown == "https://serpapi.com/search.json?q=npm"
+    assert safe_url("https://x.test/a") == "https://x.test/a"

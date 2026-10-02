@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Recorded fixtures must be byte-for-byte what record mode wrote.
+fixtures/** -text

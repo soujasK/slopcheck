@@ -1,0 +1,66 @@
+"""Runtime configuration.
+
+Secrets come only from the environment (``SERPAPI_API_KEY``, optional
+``SLOPWATCH_LLM_API_KEY`` / ``ANTHROPIC_API_KEY`` for the agent demo) and are held
+as ``SecretStr`` so they never appear in reprs or logs. Everything else can be
+overridden with ``SLOPWATCH_*`` variables, except the project credit cap, which is
+a constant on purpose.
+"""
+
+from __future__ import annotations
+
+from enum import StrEnum
+from pathlib import Path
+
+from pydantic import AliasChoices, Field, SecretStr
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class CacheMode(StrEnum):
+    """How the HTTP cache layer behaves.
+
+    live:   read-through. Serve fresh cache hits, otherwise hit the network and store.
+    record: always hit the network and overwrite the stored response (fixture capture).
+    replay: fixtures only. A miss is an error; the network is never touched.
+    """
+
+    LIVE = "live"
+    RECORD = "record"
+    REPLAY = "replay"
+
+
+# Hard ceiling on SerpApi credits this project may ever spend, counted from the
+# committed ledger. Not configurable: raising it means editing code in review.
+PROJECT_CREDIT_CAP = 140
+# Per-command default; anything larger must be asked for explicitly (--max-credits).
+DEFAULT_RUN_CREDITS = 10
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_prefix="SLOPWATCH_", extra="ignore")
+
+    serpapi_api_key: SecretStr | None = Field(
+        default=None,
+        validation_alias=AliasChoices("SERPAPI_API_KEY", "SLOPWATCH_SERPAPI_API_KEY"),
+    )
+    llm_api_key: SecretStr | None = Field(
+        default=None, validation_alias=AliasChoices("SLOPWATCH_LLM_API_KEY", "ANTHROPIC_API_KEY")
+    )
+    llm_model: str = "claude-opus-5-5"
+
+    cache_path: Path = Path(".slopwatch") / "cache.sqlite"
+    cache_mode: CacheMode = CacheMode.LIVE
+    # Live-mode freshness. SERP snapshots are pinned by fixtures, so a long TTL is fine.
+    cache_ttl_seconds: int = 30 * 24 * 3600
+    fixtures_dir: Path = REPO_ROOT / "fixtures"
+    # Append-only, committed record of every credit spent (feeds the project cap).
+    ledger_path: Path = REPO_ROOT / "data" / "serpapi_ledger.jsonl"
+    data_dir: Path = REPO_ROOT / "data"
+
+    max_credits: int = Field(default=DEFAULT_RUN_CREDITS, ge=0)
+
+    http_timeout_seconds: float = 10.0
+    http_max_retries: int = Field(default=2, ge=0)
+    page_max_bytes: int = 2 * 1024 * 1024
