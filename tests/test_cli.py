@@ -18,7 +18,7 @@ def test_doctor_offline_without_key(tmp_path: Path) -> None:
     assert result.exit_code == 0, result.output
     out = result.output
     assert "0/140 spent" in out
-    assert "draft: 40 queries, 80 searches" in out
+    assert "frozen: 40 queries, 80 searches" in out
     assert "not set" in out
     assert "credits: 0 spent by this command; project ledger 0/140 (140 left)" in out
 

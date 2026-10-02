@@ -22,7 +22,7 @@
 # Locale/engine parameters live in slopwatch/queries.py (LOCALE_PARAMS).
 
 version: 1
-status: draft
+status: frozen
 
 subset:
   seed: 2026
