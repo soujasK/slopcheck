@@ -28,6 +28,15 @@ for _name in ("httpx", "httpcore"):
     logging.getLogger(_name).setLevel(logging.WARNING)
 
 USER_AGENT = f"slopwatch/{__version__} (research; one fetch per page; respects robots.txt)"
+
+
+def user_agent(contact: str | None) -> str:
+    """Some sites (e.g. Wikimedia) refuse crawlers whose UA carries no contact."""
+    if not contact:
+        return USER_AGENT
+    return f"slopwatch/{__version__} (+{contact}; research; respects robots.txt)"
+
+
 RETRY_STATUSES = frozenset({429, 500, 502, 503, 504})
 # Transient or credential-dependent answers are never cached.
 UNCACHEABLE_STATUSES = frozenset({401, 407, 429})
@@ -65,6 +74,7 @@ class HttpClient:
         backoff_base: float = 0.5,
         transport: httpx.BaseTransport | None = None,
         sleep: Callable[[float], None] = time.sleep,
+        agent: str = USER_AGENT,
     ) -> None:
         self.cache = cache
         self.max_retries = max_retries
@@ -73,7 +83,7 @@ class HttpClient:
         self._client = httpx.Client(
             timeout=timeout,
             transport=transport,
-            headers={"User-Agent": USER_AGENT},
+            headers={"User-Agent": agent},
             follow_redirects=True,
         )
 

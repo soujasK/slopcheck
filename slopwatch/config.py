@@ -64,3 +64,6 @@ class Settings(BaseSettings):
     http_timeout_seconds: float = 10.0
     http_max_retries: int = Field(default=2, ge=0)
     page_max_bytes: int = 2 * 1024 * 1024
+    # Contact URL put in the crawler User-Agent (e.g. the public repo). Some sites
+    # refuse anonymous crawlers; set SLOPWATCH_CONTACT_URL before `fetch`.
+    contact_url: str | None = None

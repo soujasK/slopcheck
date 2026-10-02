@@ -1,0 +1,50 @@
+# Online shops. An outbound link to one of these (host suffix match) is a
+# commerce link; affiliate links also count as commerce links. Used for
+# commerce_ratio = commerce links / outbound links (unique URLs).
+
+shops:
+  # India
+  - amazon.in
+  - flipkart.com
+  - myntra.com
+  - ajio.com
+  - nykaa.com
+  - tatacliq.com
+  - croma.com
+  - reliancedigital.in
+  - jiomart.com
+  - meesho.com
+  - snapdeal.com
+  - shopclues.com
+  - firstcry.com
+  - pepperfry.com
+  - urbanladder.com
+  - lenskart.com
+  - boat-lifestyle.com
+  - vijaysales.com
+  - bigbasket.com
+  - 1mg.com
+  - pharmeasy.in
+  - netmeds.com
+  - healthkart.com
+  - decathlon.in
+  # Global
+  - amazon.com
+  - amazon.co.uk
+  - walmart.com
+  - target.com
+  - bestbuy.com
+  - ebay.com
+  - etsy.com
+  - aliexpress.com
+  - temu.com
+  - newegg.com
+  - homedepot.com
+  - lowes.com
+  - costco.com
+  - wayfair.com
+  - kohls.com
+  - macys.com
+  - zappos.com
+  - chewy.com
+  - iherb.com

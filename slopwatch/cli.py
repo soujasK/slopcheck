@@ -10,6 +10,7 @@ Exit codes: 0 ok, 1 a doctor check failed, 2 usage error, 3 credit cap hit.
 from __future__ import annotations
 
 import sys
+from collections import Counter
 from dataclasses import dataclass
 from enum import StrEnum
 from pathlib import Path
@@ -20,12 +21,16 @@ import yaml
 from rich.console import Console
 from rich.table import Table
 
-from slopwatch import __version__
+from slopwatch import __version__, pipeline
 from slopwatch.cache import Cache
-from slopwatch.config import PROJECT_CREDIT_CAP, CacheMode, Settings
-from slopwatch.http import HttpClient, HttpError
-from slopwatch.queries import PlanError, load_plan
+from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
+from slopwatch.http import HttpClient, HttpError, user_agent
+from slopwatch.models import Page, SerpRow
+from slopwatch.pages import PageFetcher
+from slopwatch.queries import Job, PlanError, load_plan
 from slopwatch.serp import ProjectLedger, SerpClient
+from slopwatch.signals import load_lists
+from slopwatch.store import PAGES, SERP_META, SERPS, SIGNALS, read_jsonl, write_jsonl
 
 app = typer.Typer(
     name="slopwatch",
@@ -199,6 +204,137 @@ def run_checks(settings: Settings, mode: CacheMode, *, offline: bool) -> list[Ch
                             )
                         )
     return checks
+
+
+def _settings_and_mode(cache_mode: CacheMode | None) -> tuple[Settings, CacheMode]:
+    settings = Settings()
+    return settings, cache_mode or settings.cache_mode
+
+
+@app.command()
+def collect(
+    plan_path: Annotated[
+        Path | None, typer.Option("--plan", help="Query plan (default data/queries.yaml).")
+    ] = None,
+    max_credits: Annotated[
+        int | None,
+        typer.Option("--max-credits", min=0, help=f"Per-run cap (default {DEFAULT_RUN_CREDITS})."),
+    ] = None,
+    yes: Annotated[
+        bool, typer.Option("--yes", help=f"Confirm spending more than {DEFAULT_RUN_CREDITS}.")
+    ] = False,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Run the frozen query plan through SerpApi and write data/serps.jsonl."""
+    settings, mode = _settings_and_mode(cache_mode)
+    ledger = ProjectLedger(settings.ledger_path)
+    plan = load_plan(plan_path or settings.data_dir / "queries.yaml")
+    if not plan.frozen:
+        err_console.print("collect: queries.yaml is a draft; freeze and commit it first")
+        raise typer.Exit(EXIT_USAGE)
+    cap = settings.max_credits if max_credits is None else max_credits
+    with (
+        open_cache(settings, mode) as cache,
+        HttpClient(
+            cache, timeout=settings.http_timeout_seconds, max_retries=settings.http_max_retries
+        ) as http,
+    ):
+        serp = SerpClient(http, settings.serpapi_api_key, project=ledger, max_credits=cap)
+        pre = pipeline.preview(plan, serp)
+        console.print(
+            f"collect: {pre.total} searches in plan; {pre.cached} cached, "
+            f"{pre.to_spend} would spend credits (run cap {cap}, project left {ledger.remaining})"
+        )
+        if pre.to_spend > cap:
+            err_console.print(f"collect: needs {pre.to_spend} credits; rerun with --max-credits")
+            console.print(credits_line(0, ledger))
+            raise typer.Exit(EXIT_USAGE)
+        if pre.to_spend > DEFAULT_RUN_CREDITS and not yes:
+            err_console.print(f"collect: rerun with --yes to spend {pre.to_spend} credits")
+            console.print(credits_line(0, ledger))
+            raise typer.Exit(EXIT_USAGE)
+
+        def tick(i: int, job: Job) -> None:
+            if i % 10 == 0 or i == pre.total:
+                console.print(f"  {i}/{pre.total} searches")
+
+        result = pipeline.collect(plan, serp, progress=tick)
+        data = settings.data_dir
+        n_rows = write_jsonl(
+            data / SERPS, result.rows, key=lambda r: (r.locale, r.engine, r.query_id, r.rank)
+        )
+        write_jsonl(data / SERP_META, result.meta, key=lambda m: (m.locale, m.engine, m.query_id))
+        if mode is not CacheMode.REPLAY:
+            n_fx = cache.export_dir(settings.fixtures_dir, only=result.keys)
+            console.print(f"collect: exported {n_fx} SerpApi fixtures to {settings.fixtures_dir}")
+        console.print(f"collect: {result.done}/{pre.total} searches, {n_rows} organic rows")
+        console.print(credits_line(serp.ledger.spent, ledger))
+    if result.error:
+        err_console.print(f"collect: stopped early: {result.error}")
+        raise typer.Exit(EXIT_CREDIT_CAP)
+
+
+@app.command()
+def fetch(
+    limit: Annotated[
+        int | None, typer.Option("--limit", min=1, help="Fetch only the first N URLs (dev).")
+    ] = None,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Fetch every SERP URL once (robots-aware) and write pages + signals JSONL.
+
+    The only step that needs the network: page HTML is never committed, so a
+    replay uses the committed data/pages.jsonl and data/signals.jsonl instead.
+    """
+    settings, mode = _settings_and_mode(cache_mode)
+    ledger = ProjectLedger(settings.ledger_path)
+    if mode is CacheMode.REPLAY:
+        err_console.print(
+            "fetch: needs the network (page HTML is not committed). In replay mode, "
+            "score/evaluate/report read the committed data/pages.jsonl and signals.jsonl."
+        )
+        console.print(credits_line(0, ledger))
+        raise typer.Exit(EXIT_USAGE)
+    data = settings.data_dir
+    rows = read_jsonl(data / SERPS, SerpRow)
+    if not rows:
+        err_console.print("fetch: no SERP rows; run `slopwatch collect` first")
+        raise typer.Exit(EXIT_USAGE)
+    urls = pipeline.unique_urls(rows)[:limit]
+    lists = load_lists(data)
+    console.print(f"fetch: {len(urls)} unique URLs from {len(rows)} SERP rows")
+    if not settings.contact_url:
+        err_console.print(
+            "fetch: SLOPWATCH_CONTACT_URL not set; some sites refuse anonymous crawlers"
+        )
+    with (
+        open_cache(settings, mode) as cache,
+        HttpClient(
+            cache,
+            timeout=settings.http_timeout_seconds,
+            max_retries=settings.http_max_retries,
+            agent=user_agent(settings.contact_url),
+        ) as http,
+    ):
+
+        def tick(i: int, page: Page) -> None:
+            if i % 25 == 0 or i == len(urls):
+                console.print(f"  {i}/{len(urls)} pages")
+
+        fetcher = PageFetcher(http, max_bytes=settings.page_max_bytes)
+        result = pipeline.fetch_pages(urls, fetcher, lists, progress=tick)
+    write_jsonl(data / PAGES, result.pages, key=lambda p: p.url)
+    write_jsonl(data / SIGNALS, result.records, key=lambda r: r.url)
+    reasons = Counter(p.unscored_reason for p in result.pages if p.unscored_reason)
+    console.print(f"fetch: {len(result.records)} scored, {sum(reasons.values())} unscored")
+    for reason, n in sorted(reasons.items()):
+        console.print(f"  unscored {reason}: {n}")
+    if limit is None:
+        gaps = pipeline.coverage_gaps(rows, result.pages, result.records)
+        if gaps:  # pragma: no cover - invariant guard
+            err_console.print(f"fetch: {len(gaps)} URLs have neither signals nor a reason")
+            raise typer.Exit(EXIT_FAIL)
+    console.print(credits_line(0, ledger))
 
 
 @app.command()

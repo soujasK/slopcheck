@@ -8,7 +8,15 @@ import pytest
 
 from slopwatch.cache import Cache
 from slopwatch.config import CacheMode
-from slopwatch.http import HttpError, NetworkDisabled, ResponseTooLarge, safe_url
+from slopwatch.http import (
+    USER_AGENT,
+    HttpClient,
+    HttpError,
+    NetworkDisabled,
+    ResponseTooLarge,
+    safe_url,
+    user_agent,
+)
 from tests.conftest import Recorder, make_client, no_network
 
 URL = "https://api.example.test/v1/thing"
@@ -111,3 +119,13 @@ def test_safe_url_hides_secrets() -> None:
     shown = safe_url("https://serpapi.com/search.json", {"q": "npm", "api_key": "S"})
     assert shown == "https://serpapi.com/search.json?q=npm"
     assert safe_url("https://x.test/a") == "https://x.test/a"
+
+
+def test_user_agent_carries_contact() -> None:
+    assert user_agent(None) == USER_AGENT
+    ua = user_agent("https://github.com/someone/slopwatch")
+    assert ua.startswith("slopwatch/") and "+https://github.com/someone/slopwatch" in ua
+    rec = Recorder(lambda r: httpx.Response(200))
+    with HttpClient(Cache(":memory:"), transport=httpx.MockTransport(rec), agent=ua) as http:
+        http.get(URL)
+    assert rec.requests[0].headers["user-agent"] == ua

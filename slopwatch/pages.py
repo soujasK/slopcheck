@@ -27,6 +27,10 @@ from slopwatch.models import EXCERPT_MAX_CHARS, Page, UnscoredReason
 log = logging.getLogger(__name__)
 
 ROBOTS_AGENT = "slopwatch"
+PAGE_HEADERS = {
+    "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
+    "Accept-Language": "en-IN,en;q=0.9",
+}
 MAX_TEXT_CHARS = 400_000
 _SKIP_TAGS = frozenset({"script", "style", "noscript", "svg", "template", "iframe", "head"})
 _BLOCK_TAGS = frozenset(
@@ -164,7 +168,7 @@ class PageFetcher:
             log.info("robots: %s for %s", verdict, url)
             return _unscored(url, verdict)
         try:
-            resp = self.http.get(url, max_bytes=self.max_bytes)
+            resp = self.http.get(url, headers=PAGE_HEADERS, max_bytes=self.max_bytes)
         except ResponseTooLarge:
             return _unscored(url, "too_large")
         except CacheMiss:

@@ -39,8 +39,9 @@ rules:
   - id: commerce_heavy
     weight: 0.15
     all:
+      - {signal: outbound_links, gte: 5}
       - {signal: commerce_ratio, gte: 0.30}
-    reason: "{commerce_ratio:.0%} of outbound links go to shops"
+    reason: "{commerce_ratio:.0%} of {outbound_links} outbound links go to shops"
 
   - id: listicle
     weight: 0.10
@@ -52,7 +53,7 @@ rules:
     weight: 0.15
     all:
       - {signal: ad_scripts, gte: 8}
-    reason: "{ad_scripts} ad/tracker scripts"
+    reason: "{ad_scripts} ad/tracker domains loaded"
 
   - id: anonymous
     weight: 0.15

@@ -23,6 +23,7 @@ UnscoredReason = Literal[
     "too_large",  # body over the 2 MB cap
     "fetch_failed",  # timeout / transport error after retries
     "not_recorded",  # replay mode and no fixture for this page
+    "parse_failed",  # HTML fetched but signal extraction raised
 ]
 
 
@@ -49,6 +50,18 @@ class SerpRow(_Frozen):
     request_hash: str
 
 
+class SerpMeta(_Frozen):
+    """One collected SERP: which non-organic features were present (metadata only)."""
+
+    query_id: str
+    engine: Engine
+    locale: Locale
+    request_hash: str
+    n_organic: int
+    features: list[str]
+    fetched_at: dt.datetime
+
+
 class Page(_Frozen):
     """Fetch metadata. This, not the page HTML, is what gets committed: third-party
     HTML is never stored in the repo, only a hash and a short excerpt for labeling."""
@@ -66,16 +79,27 @@ class Page(_Frozen):
 
 class Signals(_Frozen):
     affiliate_links: int
-    affiliate_density: float
-    commerce_ratio: float
+    affiliate_density: float  # affiliate links / outbound links
+    # Unique outbound links; lets the rubric ignore ratios over tiny denominators.
+    outbound_links: int
+    commerce_ratio: float  # shop + affiliate links / outbound links
     listicle: bool
-    ad_scripts: int
+    ad_scripts: int  # distinct ad/tracker domains in static HTML
     has_author: bool
     has_date: bool
     has_about_contact: bool
-    text_len: int
-    boilerplate_ratio: float
-    near_dup_group: str | None = None
+    text_len: int  # main-text chars
+    boilerplate_ratio: float  # share of visible text outside the main text
+    near_dup_group: str | None = None  # filled at score time, across a SERP set
+
+
+class SignalRecord(_Frozen):
+    """Per-page output of `fetch`, committed to data/signals.jsonl."""
+
+    url: str
+    html_hash: str
+    signals: Signals
+    simhash: str  # 16 hex chars; near-duplicate grouping happens at score time
 
 
 class Score(_Frozen):
