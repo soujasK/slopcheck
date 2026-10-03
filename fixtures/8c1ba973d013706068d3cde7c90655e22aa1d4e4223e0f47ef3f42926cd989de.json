@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a direct, detailed comparison of old vs new tax regimes for salaried income and is published by a identifiable organization (salaryinhand.in).\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"old vs new tax regime which is better for salaried\\\". The page appears to be a salary calculator/comparison tool for a specific salary (20 LPA) and FY 2026-27. Likely it provides analysis, maybe with calculations. It seems to be a specialized tool, possibly with some author or organization (salaryinhand.in). The page likely is a tool, not affiliate. It may be considered \\\"ok\\\" if it provides genuine answer and has identifiable organization (salaryinhand.in). The excerpt shows \\\"Comprehensive side-by-side analysis\\\". It seems to be a legitimate content, not mass-produced affiliate roundup. So label \\\"ok\\\". Reason: provides direct comparison and is from identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"old vs new tax regime which is better for salaried\\\". The page appears to be a salary calculator/comparison tool for a specific salary (20 LPA) and FY 2026-27. Likely it provides analysis, maybe with calculations. It seems to be a specialized tool, possibly with some author or organization (salaryinhand.in). The page likely is a tool, not affiliate. It may be considered \\\"ok\\\" if it provides genuine answer and has identifiable organization (salaryinhand.in). The excerpt shows \\\"Comprehensive side-by-side analysis\\\". It seems to be a legitimate content, not mass-produced affiliate roundup. So label \\\"ok\\\". Reason: provides direct comparison and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030365,\"ec_transfer_params\":null,\"id\":\"chatcmpl-676b4fdf-eefd-4e1c-8e27-2f8f88b57fad\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":656,\"completion_tokens\":210,\"total_tokens\":866,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":35.1907844543457}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:09.861345+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:09 GMT"
+  },
+  "key": "8c1ba973d013706068d3cde7c90655e22aa1d4e4223e0f47ef3f42926cd989de",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

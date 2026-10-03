@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a medically reviewed blog from a reputable hospital with a named doctor, directly addressing normal post‑meal glucose levels.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Normal Blood Sugar Range: Everything You Need to Know\\\". URL is medanta.org patient education blog. Excerpt says \\\"Home Blogs Normal Glucose Levels After Eating Normal Glucose Levels After Eating Medically Reviewed By Dr. Priyanka Krishna, DrNB Endocrinology ...\\\". So appears to be a medical blog with a medical review by a named doctor. That suggests identifiable responsibility. Likely provides answer. So label ok.\\n\\nCheck for monetization? It's a hospital website (Medanta). Likely not affiliate. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Normal Blood Sugar Range: Everything You Need to Know\\\". URL is medanta.org patient education blog. Excerpt says \\\"Home Blogs Normal Glucose Levels After Eating Normal Glucose Levels After Eating Medically Reviewed By Dr. Priyanka Krishna, DrNB Endocrinology ...\\\". So appears to be a medical blog with a medical review by a named doctor. That suggests identifiable responsibility. Likely provides answer. So label ok.\\n\\nCheck for monetization? It's a hospital website (Medanta). Likely not affiliate. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030149,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0bd83525-bb4b-4229-8b5d-f1e5d5d527ed\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":639,\"completion_tokens\":187,\"total_tokens\":826,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.081695556640625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:30.951027+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:22:30 GMT"
+  },
+  "key": "b637c2b4f15947f3f87fce2736aa343806c7a0643e698a2cc6a568e325b733d0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a guide with a named author that directly addresses how to speed up Windows 11.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page title: \\\"How to Speed Up Windows 11: The Ultimate Performance Optimization Guide - PowerBean\\\". Excerpt shows it's an article dated July 14, 2026 by rohitcal1204. Likely a blog post with steps. It appears to be a guide, presumably with actionable advice. It has an author name. Not obviously affiliate or product roundup. Could be a tutorial. So likely \\\"ok\\\". Need to consider if it's monetized referral? PowerBean maybe a tech blog. Not necessarily affiliate heavy. The excerpt doesn't show affiliate links. So label ok.\\n\\nReason: The page appears to be a detailed guide with a named author, directly addressing the query.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page title: \\\"How to Speed Up Windows 11: The Ultimate Performance Optimization Guide - PowerBean\\\". Excerpt shows it's an article dated July 14, 2026 by rohitcal1204. Likely a blog post with steps. It appears to be a guide, presumably with actionable advice. It has an author name. Not obviously affiliate or product roundup. Could be a tutorial. So likely \\\"ok\\\". Need to consider if it's monetized referral? PowerBean maybe a tech blog. Not necessarily affiliate heavy. The excerpt doesn't show affiliate links. So label ok.\\n\\nReason: The page appears to be a detailed guide with a named author, directly addressing the query.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030492,\"ec_transfer_params\":null,\"id\":\"chatcmpl-abcaf805-b16b-490d-b2f6-54d2ea6be4a4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":647,\"completion_tokens\":206,\"total_tokens\":853,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":34.63169479370117}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:28:16.837871+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:28:16 GMT"
+  },
+  "key": "24a27599ed22e93c0f3fd849521710ca41848235aff61e3f58ee64c10ab9497b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

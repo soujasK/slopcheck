@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed guide from Android Authority with a named author, directly addressing how to block spam calls on Android.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page is from Android Authority, a reputable tech site. Title indicates it's a guide. Excerpt shows author name, date. Likely contains steps. So it's ok. Affiliate disclaimer present but primary purpose is guide. So label ok.\\n\\nProvide reason: reputable tech site with author, provides guide.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page is from Android Authority, a reputable tech site. Title indicates it's a guide. Excerpt shows author name, date. Likely contains steps. So it's ok. Affiliate disclaimer present but primary purpose is guide. So label ok.\\n\\nProvide reason: reputable tech site with author, provides guide.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030294,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e7a6d889-d400-4f1c-84fb-f2d5dad5681b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":643,\"completion_tokens\":128,\"total_tokens\":771,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.186243057250977}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:24:56.391926+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:24:56 GMT"
+  },
+  "key": "baa3469f854cb5aa265c85eab6cd395a5e89715115ab5453a58917ef09a6ebe5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

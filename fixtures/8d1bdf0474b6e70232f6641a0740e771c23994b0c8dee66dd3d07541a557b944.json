@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Asurion article offers direct instructions on moving apps and data from Android to iPhone and is authored by a recognized organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to transfer data from android to iphone\\\". The page title: \\\"How to transfer apps from Android to new iPhone | Asurion\\\". Asurion is a consumer tech support company. Likely they have an article with steps. It seems to answer the query, focusing on apps but may include data. It's an official brand site, likely with author or organization (Asurion). So qualifies as ok.\\n\\nCheck for monetization: Asurion is a service provider, not affiliate. The page likely provides instructions. So label ok.\\n\\nReason: The page from Asurion provides instructions on transferring apps/data and is an official organization.\\n\\nThus output.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to transfer data from android to iphone\\\". The page title: \\\"How to transfer apps from Android to new iPhone | Asurion\\\". Asurion is a consumer tech support company. Likely they have an article with steps. It seems to answer the query, focusing on apps but may include data. It's an official brand site, likely with author or organization (Asurion). So qualifies as ok.\\n\\nCheck for monetization: Asurion is a service provider, not affiliate. The page likely provides instructions. So label ok.\\n\\nReason: The page from Asurion provides instructions on transferring apps/data and is an official organization.\\n\\nThus output.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030389,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4b38d618-fff4-46e2-b175-a600c07c3662\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":639,\"completion_tokens\":189,\"total_tokens\":828,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.21806335449219}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:32.854248+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:32 GMT"
+  },
+  "key": "8d1bdf0474b6e70232f6641a0740e771c23994b0c8dee66dd3d07541a557b944",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

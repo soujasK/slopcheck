@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an Ayurvedic hospital and directly discusses treatment for high blood pressure, providing relevant information with identifiable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"ayurvedic treatment for high blood pressure\\\". The page is from Omshree Sidha Hospital, likely an Ayurvedic clinic. Title: Blood pressure | OmShree Sidha Hospital. Excerpt says they have effective treatment for high and low blood pressure. Likely a page describing Ayurvedic treatments. It appears to be an official site of a hospital, presumably with some author/organization. It likely answers the query. So label \\\"ok\\\". Reason: page from Ayurvedic hospital providing treatment info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"ayurvedic treatment for high blood pressure\\\". The page is from Omshree Sidha Hospital, likely an Ayurvedic clinic. Title: Blood pressure | OmShree Sidha Hospital. Excerpt says they have effective treatment for high and low blood pressure. Likely a page describing Ayurvedic treatments. It appears to be an official site of a hospital, presumably with some author/organization. It likely answers the query. So label \\\"ok\\\". Reason: page from Ayurvedic hospital providing treatment info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030567,\"ec_transfer_params\":null,\"id\":\"chatcmpl-36e897af-8362-4f32-af81-b5cb26259065\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":622,\"completion_tokens\":161,\"total_tokens\":783,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.768062591552734}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:29:30.156317+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:29:30 GMT"
+  },
+  "key": "2be01ac2afb2b560a4b740b9e30f2be07906e48276ee23875e508f0a129f2568",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

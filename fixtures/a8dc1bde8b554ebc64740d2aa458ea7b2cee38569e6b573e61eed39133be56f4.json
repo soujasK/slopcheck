@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"AARP is a reputable organization and the page directly lists and reviews mattresses for back pain\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best mattress for back pain\\\". The page title: \\\"10 Best Mattresses for Back Pain (2026): Tested and Reviewed\\\". URL is aarp.org, which is a reputable organization (AARP). The excerpt includes some unrelated content about Social Security payments, but likely the page is a product roundup with testing and reviews. AARP often does product reviews with some testing, and they have named authors? Not sure from excerpt. But likely it's an \\\"ok\\\" page: it answers the query, has identifiable organization (AARP). Even if includes affiliate links, primary purpose is to provide recommendations. So label \\\"ok\\\". Reason: reputable organization providing reviewed list.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best mattress for back pain\\\". The page title: \\\"10 Best Mattresses for Back Pain (2026): Tested and Reviewed\\\". URL is aarp.org, which is a reputable organization (AARP). The excerpt includes some unrelated content about Social Security payments, but likely the page is a product roundup with testing and reviews. AARP often does product reviews with some testing, and they have named authors? Not sure from excerpt. But likely it's an \\\"ok\\\" page: it answers the query, has identifiable organization (AARP). Even if includes affiliate links, primary purpose is to provide recommendations. So label \\\"ok\\\". Reason: reputable organization providing reviewed list.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030531,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f324fe79-0a38-4763-81cf-29413ef269c4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":608,\"completion_tokens\":186,\"total_tokens\":794,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.027156829833984}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:28:53.804280+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:28:53 GMT"
+  },
+  "key": "a8dc1bde8b554ebc64740d2aa458ea7b2cee38569e6b573e61eed39133be56f4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

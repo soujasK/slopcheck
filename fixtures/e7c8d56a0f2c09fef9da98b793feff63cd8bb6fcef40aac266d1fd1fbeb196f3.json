@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a tutorial from GeeksforGeeks that directly explains how to block spam calls on Android and is authored by a known organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page title: \\\"How to Block Spam Calls on Your Android phone - GeeksforGeeks\\\". GeeksforGeeks is a tech tutorial site, generally provides step-by-step guides. Likely has an article with instructions. It may have author attribution? Usually GfG articles have author name at top. So it likely qualifies as \\\"ok\\\". However we need to consider if it's primarily monetized referral? GfG is not affiliate heavy; it's educational. So ok.\\n\\nThus label ok. Reason: provides step-by-step guide and has identifiable organization (GeeksforGeeks).\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page title: \\\"How to Block Spam Calls on Your Android phone - GeeksforGeeks\\\". GeeksforGeeks is a tech tutorial site, generally provides step-by-step guides. Likely has an article with instructions. It may have author attribution? Usually GfG articles have author name at top. So it likely qualifies as \\\"ok\\\". However we need to consider if it's primarily monetized referral? GfG is not affiliate heavy; it's educational. So ok.\\n\\nThus label ok. Reason: provides step-by-step guide and has identifiable organization (GeeksforGeeks).\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791026992,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c66138df-ee19-41ab-91f3-10522e3e9a0c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":634,\"completion_tokens\":193,\"total_tokens\":827,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.33169937133789}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:29:58.321539+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:29:56 GMT"
+  },
+  "key": "e7c8d56a0f2c09fef9da98b793feff63cd8bb6fcef40aac266d1fd1fbeb196f3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

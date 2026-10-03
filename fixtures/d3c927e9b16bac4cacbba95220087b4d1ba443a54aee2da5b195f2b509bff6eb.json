@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a step-by-step guide from a recognizable tech site, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label. The page is a guide on Beebom Gadgets, a tech site. Likely provides step-by-step instructions, possibly with author name. It's not a pure affiliate roundup; it's a guide. So likely \\\"ok\\\". Reason: provides direct answer with identifiable organization (Beebom). So label ok.\",\"reasoning_content\":\"We need to decide label. The page is a guide on Beebom Gadgets, a tech site. Likely provides step-by-step instructions, possibly with author name. It's not a pure affiliate roundup; it's a guide. So likely \\\"ok\\\". Reason: provides direct answer with identifiable organization (Beebom). So label ok.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791026962,\"ec_transfer_params\":null,\"id\":\"chatcmpl-bc7b90ac-b6a9-41b5-8304-d9545ab41404\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":698,\"completion_tokens\":108,\"total_tokens\":806,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.57259750366211}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:29:24.872081+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:29:23 GMT"
+  },
+  "key": "d3c927e9b16bac4cacbba95220087b4d1ba443a54aee2da5b195f2b509bff6eb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

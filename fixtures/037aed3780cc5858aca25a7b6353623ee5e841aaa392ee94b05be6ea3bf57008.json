@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Trusted Reviews provides a curated list of affordable wireless earbuds with identifiable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page title: \\\"Best Cheap Earbuds 2026: Great sound and value on a budget\\\". URL is trustedreviews.com, a known tech review site. Likely an article with list of cheap earbuds, includes recommendations, maybe affiliate links but primary purpose is review. That fits \\\"ok\\\". It likely has identifiable organization (Trusted Reviews). So label ok.\\n\\nProvide reason: reputable review site with list of budget earbuds.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page title: \\\"Best Cheap Earbuds 2026: Great sound and value on a budget\\\". URL is trustedreviews.com, a known tech review site. Likely an article with list of cheap earbuds, includes recommendations, maybe affiliate links but primary purpose is review. That fits \\\"ok\\\". It likely has identifiable organization (Trusted Reviews). So label ok.\\n\\nProvide reason: reputable review site with list of budget earbuds.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030528,\"ec_transfer_params\":null,\"id\":\"chatcmpl-bfc6453a-ad28-45cb-9447-0384e6c40168\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":628,\"completion_tokens\":143,\"total_tokens\":771,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.731700897216797}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:28:50.835747+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:28:50 GMT"
+  },
+  "key": "037aed3780cc5858aca25a7b6353623ee5e841aaa392ee94b05be6ea3bf57008",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

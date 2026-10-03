@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly compares index funds and actively managed funds and is published by a identifiable financial advisory organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page title: \\\"Index funds vs actively managed funds — the honest comparison | Foundation Wealth\\\". Excerpt suggests it's a blog article discussing the comparison. Likely provides answer. Need to assess if it's \\\"ok\\\" (has identifiable responsibility). The site foundationwealth.in appears to be a financial advisory firm (maybe Indian). The article likely has author? Not shown but likely has organization. It's not a low affiliate roundup; it's a comparison article. So label \\\"ok\\\". Reason: provides direct comparison and is from a named financial advisory organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page title: \\\"Index funds vs actively managed funds — the honest comparison | Foundation Wealth\\\". Excerpt suggests it's a blog article discussing the comparison. Likely provides answer. Need to assess if it's \\\"ok\\\" (has identifiable responsibility). The site foundationwealth.in appears to be a financial advisory firm (maybe Indian). The article likely has author? Not shown but likely has organization. It's not a low affiliate roundup; it's a comparison article. So label \\\"ok\\\". Reason: provides direct comparison and is from a named financial advisory organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030409,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b62d8b54-6275-4dc1-a271-ef785fd2f564\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":633,\"completion_tokens\":173,\"total_tokens\":806,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":31.93624496459961}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:51.743115+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:51 GMT"
+  },
+  "key": "3f674becc8b5228e086f290bcaf10b161c248acc549cac2be728b56f0f74946e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

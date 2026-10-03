@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed, author‑written review of top air fryers, providing genuine recommendations that can address a small family’s needs.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best air fryer for a small family\\\". The page is a product roundup \\\"10 Best Air Fryers (October 2026) Tested & Reviewed\\\". It appears to be a review article with author Kelly, claims testing. Likely includes recommendations, maybe includes small family size. It is a genuine review, not just affiliate. It has author, testing, likely ok. The question: best air fryer for a small family. This page likely includes top picks, maybe includes size info. So it's ok.\\n\\nThus label ok. Reason: article provides tested reviews with author, suitable.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best air fryer for a small family\\\". The page is a product roundup \\\"10 Best Air Fryers (October 2026) Tested & Reviewed\\\". It appears to be a review article with author Kelly, claims testing. Likely includes recommendations, maybe includes small family size. It is a genuine review, not just affiliate. It has author, testing, likely ok. The question: best air fryer for a small family. This page likely includes top picks, maybe includes size info. So it's ok.\\n\\nThus label ok. Reason: article provides tested reviews with author, suitable.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027183,\"ec_transfer_params\":null,\"id\":\"chatcmpl-305a2e4d-6313-48e5-971e-c0dad966181b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":633,\"completion_tokens\":181,\"total_tokens\":814,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.48169708251953}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:08.495519+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:33:06 GMT"
+  },
+  "key": "6f44f951ace5e9db7f5341c4cacce2ae291e74230639cc707c87465467d7ed14",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

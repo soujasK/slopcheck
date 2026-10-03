@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page looks like a generic price‑comparison/affiliate listing rather than a detailed, authored guide on budget wireless earbuds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page title: \\\"Best Earphones in India (Prices from ₹89) - Boat, Noise\\\". URL: xerve.in/prices/s-headphones-and-earphones/t-earphones. Excerpt shows generic home page with price comparison, coupons, etc. Likely a price comparison site with affiliate links, not a detailed article. Probably low. No author indicated. So label low.\\n\\nProvide reason: page appears to be a price comparison/affiliate listing without substantive content.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page title: \\\"Best Earphones in India (Prices from ₹89) - Boat, Noise\\\". URL: xerve.in/prices/s-headphones-and-earphones/t-earphones. Excerpt shows generic home page with price comparison, coupons, etc. Likely a price comparison site with affiliate links, not a detailed article. Probably low. No author indicated. So label low.\\n\\nProvide reason: page appears to be a price comparison/affiliate listing without substantive content.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030215,\"ec_transfer_params\":null,\"id\":\"chatcmpl-3efa0740-58fa-4258-990c-43d57f5c6724\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":639,\"completion_tokens\":163,\"total_tokens\":802,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":31.445335388183594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:38.256665+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:38 GMT"
+  },
+  "key": "bf2de1c93673f1e1f49f0e57b2925b5a8d2506ae85fea26fa7ddd0db8715fc37",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

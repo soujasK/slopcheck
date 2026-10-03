@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a how‑to guide with a named author that directly explains blocking spam calls on Android.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page title suggests it's a guide. The excerpt shows author name, date, and seems to be a tutorial. Likely an article with steps. It appears to be a legitimate content piece, not just affiliate. The site \\\"thetechgorilla.com\\\" maybe a tech blog. It has author name. So qualifies as \\\"ok\\\". Need to ensure not low. It's not a product roundup; it's a how-to guide. So label ok.\\n\\nProvide reason: article with author provides steps to block spam calls.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page title suggests it's a guide. The excerpt shows author name, date, and seems to be a tutorial. Likely an article with steps. It appears to be a legitimate content piece, not just affiliate. The site \\\"thetechgorilla.com\\\" maybe a tech blog. It has author name. So qualifies as \\\"ok\\\". Need to ensure not low. It's not a product roundup; it's a how-to guide. So label ok.\\n\\nProvide reason: article with author provides steps to block spam calls.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030316,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9a8abef2-8656-4120-86a3-50b93b843384\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":660,\"completion_tokens\":168,\"total_tokens\":828,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.45442199707031}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:18.739714+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:18 GMT"
+  },
+  "key": "af1d8ca8693593e038c37865d420613a3298d4a12ea933b3bf9b5e489d87b186",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

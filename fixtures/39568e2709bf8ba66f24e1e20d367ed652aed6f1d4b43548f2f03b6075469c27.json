@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly lists vitamin D deficiency symptoms for women and includes a named author, Dr. Maya Torres.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page title suggests it lists symptoms, likely answers query. Need to assess if page is \\\"ok\\\" (has identifiable responsibility: named author Dr. Maya Torres, date, presumably a blog). It's not obviously affiliate or product roundup. It's a health article. It has a named author (Dr. Maya Torres). Might be a health advice site; need to see if it's reputable. The domain naturalremedyideas.com sounds like a health blog. It may not be a medical authority, but has a named author. The criteria: \\\"ok\\\" if article has a named author or organization and answers query directly. It does. So label \\\"ok\\\". Reason: provides symptom list with named author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page title suggests it lists symptoms, likely answers query. Need to assess if page is \\\"ok\\\" (has identifiable responsibility: named author Dr. Maya Torres, date, presumably a blog). It's not obviously affiliate or product roundup. It's a health article. It has a named author (Dr. Maya Torres). Might be a health advice site; need to see if it's reputable. The domain naturalremedyideas.com sounds like a health blog. It may not be a medical authority, but has a named author. The criteria: \\\"ok\\\" if article has a named author or organization and answers query directly. It does. So label \\\"ok\\\". Reason: provides symptom list with named author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030262,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9f49534b-f908-44bf-9fc3-fd2f9e5ed1a3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":632,\"completion_tokens\":205,\"total_tokens\":837,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":34.08624267578125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:24:24.503588+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:24:24 GMT"
+  },
+  "key": "39568e2709bf8ba66f24e1e20d367ed652aed6f1d4b43548f2f03b6075469c27",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

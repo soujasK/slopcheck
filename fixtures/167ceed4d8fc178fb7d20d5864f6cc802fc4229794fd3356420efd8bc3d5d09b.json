@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly discusses Ashwagandha side effects and includes a named author and medical reviewer, indicating responsible content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"side effects of ashwagandha\\\". The page title: \\\"15 Serious Side Effects Of Ashwagandha & Precautions To Take\\\". URL stylecraze.com, a health & wellness site. Excerpt says \\\"Medically reviewed by Madhu Sharma, RD Written by Varsha Patnaik, MSc (Biotechnology), Certified Diet &…\\\". So there is a named author and a medical reviewer. That suggests responsibility. The page appears to be about side effects, likely answers the query. It may have affiliate links? Not indicated. It's a content article, not a product roundup. So label \\\"ok\\\". Reason: has named author and medical reviewer, directly addresses side effects.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"side effects of ashwagandha\\\". The page title: \\\"15 Serious Side Effects Of Ashwagandha & Precautions To Take\\\". URL stylecraze.com, a health & wellness site. Excerpt says \\\"Medically reviewed by Madhu Sharma, RD Written by Varsha Patnaik, MSc (Biotechnology), Certified Diet &…\\\". So there is a named author and a medical reviewer. That suggests responsibility. The page appears to be about side effects, likely answers the query. It may have affiliate links? Not indicated. It's a content article, not a product roundup. So label \\\"ok\\\". Reason: has named author and medical reviewer, directly addresses side effects.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030441,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b1773f67-f886-4a39-9628-733e38041546\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":638,\"completion_tokens\":199,\"total_tokens\":837,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.86806106567383}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:27:35.730580+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:27:24 GMT"
+  },
+  "key": "167ceed4d8fc178fb7d20d5864f6cc802fc4229794fd3356420efd8bc3d5d09b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

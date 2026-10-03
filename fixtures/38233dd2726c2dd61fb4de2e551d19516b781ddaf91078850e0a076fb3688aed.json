@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a specific guide and lists a named author and organization, indicating it directly answers the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page is from blog.ipleaders.in, a legal blog. Title: \\\"How to Link Aadhar card with PAN card - iPleaders\\\". Excerpt shows author name Anubhav Pandey, date July 14 2017. Likely provides steps. It's a genuine article, not just affiliate. It has author. So label ok.\\n\\nCheck if it's official? Not official but has author and organization iPleaders (legal blog). That qualifies as identifiable organization. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page is from blog.ipleaders.in, a legal blog. Title: \\\"How to Link Aadhar card with PAN card - iPleaders\\\". Excerpt shows author name Anubhav Pandey, date July 14 2017. Likely provides steps. It's a genuine article, not just affiliate. It has author. So label ok.\\n\\nCheck if it's official? Not official but has author and organization iPleaders (legal blog). That qualifies as identifiable organization. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030184,\"ec_transfer_params\":null,\"id\":\"chatcmpl-441d13a0-aa82-48ea-890c-5f45c8e4fcfb\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":642,\"completion_tokens\":170,\"total_tokens\":812,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.01805877685547}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:05.223444+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:05 GMT"
+  },
+  "key": "38233dd2726c2dd61fb4de2e551d19516b781ddaf91078850e0a076fb3688aed",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

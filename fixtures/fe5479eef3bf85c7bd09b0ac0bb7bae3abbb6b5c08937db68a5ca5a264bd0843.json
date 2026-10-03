@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers specific SIP fund recommendations and is authored by the Kuvera organization, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from Kuvera.in blog, titled \\\"Best SIP Mutual Funds to Invest in 2026 ? - Kuvera\\\". Excerpt shows date August 8, 2026 (future date?), but maybe placeholder. It says \\\"By Kuvera Desk\\\". So there is an author (Kuvera Desk) and organization (Kuvera). It likely provides a list of SIP mutual funds. This is a genuine answer. It may have affiliate links? Possibly but primary purpose is to provide recommendations. It seems ok. So label ok.\\n\\nReason: page provides specific recommendations and has identifiable organization (Kuvera).\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from Kuvera.in blog, titled \\\"Best SIP Mutual Funds to Invest in 2026 ? - Kuvera\\\". Excerpt shows date August 8, 2026 (future date?), but maybe placeholder. It says \\\"By Kuvera Desk\\\". So there is an author (Kuvera Desk) and organization (Kuvera). It likely provides a list of SIP mutual funds. This is a genuine answer. It may have affiliate links? Possibly but primary purpose is to provide recommendations. It seems ok. So label ok.\\n\\nReason: page provides specific recommendations and has identifiable organization (Kuvera).\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030526,\"ec_transfer_params\":null,\"id\":\"chatcmpl-680caec9-5631-4130-b4e4-fb94b80d9ba7\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":647,\"completion_tokens\":186,\"total_tokens\":833,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.26805877685547}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:28:48.492556+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:28:48 GMT"
+  },
+  "key": "fe5479eef3bf85c7bd09b0ac0bb7bae3abbb6b5c08937db68a5ca5a264bd0843",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

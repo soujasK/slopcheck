@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from Economic Times, a reputable organization, and directly provides steps to resolve a UPI payment failure with money deducted.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"upi payment failed but money debited what to do\\\". The page appears to be from Economic Times Marathi, a reputable news/media outlet. Title suggests steps to get refund. Likely contains detailed guide. It likely has identifiable organization (Economic Times). So label \\\"ok\\\". Reason: reputable source with relevant content.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"upi payment failed but money debited what to do\\\". The page appears to be from Economic Times Marathi, a reputable news/media outlet. Title suggests steps to get refund. Likely contains detailed guide. It likely has identifiable organization (Economic Times). So label \\\"ok\\\". Reason: reputable source with relevant content.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030393,\"ec_transfer_params\":null,\"id\":\"chatcmpl-3a1f59fb-2b0d-4d5e-9fa3-8d2f3a9619bd\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":746,\"completion_tokens\":124,\"total_tokens\":870,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.19076919555664}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:34.916728+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:34 GMT"
+  },
+  "key": "1dc7f12e5897f759285a2c294b35f9db3a7a49cb7f57c964f3a4907e93cd4ae0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

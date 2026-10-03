@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a hospital blog article with a named doctor author that directly addresses grade 1 fatty liver symptoms and treatment.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"fatty liver grade 1 symptoms and treatment\\\". The page title: \\\"Grade 1 Fatty Liver: Symptoms, Causes & Treatment\\\". URL is a hospital blog: ckbhospital.com. Excerpt shows author Dr. Vikas Jindal, date Sep 11 2026, gastroenterology. So appears to be a medical article with named author, likely provides symptoms and treatment. That matches query. So label ok.\\n\\nCheck for monetization? It's a hospital site, likely not affiliate. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"fatty liver grade 1 symptoms and treatment\\\". The page title: \\\"Grade 1 Fatty Liver: Symptoms, Causes & Treatment\\\". URL is a hospital blog: ckbhospital.com. Excerpt shows author Dr. Vikas Jindal, date Sep 11 2026, gastroenterology. So appears to be a medical article with named author, likely provides symptoms and treatment. That matches query. So label ok.\\n\\nCheck for monetization? It's a hospital site, likely not affiliate. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027269,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8f07b7d7-7b28-465f-8ba6-d8dc74f975f4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":657,\"completion_tokens\":168,\"total_tokens\":825,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.35896682739258}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:34:34.390185+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:34:32 GMT"
+  },
+  "key": "e863bf8c6fa6dc1c59158a16357865d3808baff3476cf5e6c089db5d1f1f39ee",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

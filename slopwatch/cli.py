@@ -41,6 +41,7 @@ from slopwatch.label import (
 )
 from slopwatch.llm_label import (
     DEFAULT_NEURON_BUDGET,
+    GEMINI_MODEL,
     CloudflareBackend,
     GeminiBackend,
     QuotaExhausted,
@@ -542,6 +543,9 @@ def llm_label_cmd(
     min_interval: Annotated[
         float, typer.Option("--min-interval", min=0, help="Seconds between Gemini requests.")
     ] = 7.0,
+    model: Annotated[
+        str | None, typer.Option("--model", help="Override labeler A's Gemini model.")
+    ] = None,
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Blind LLM labeling of labels/sample.jsonl (validation only, never scoring)."""
@@ -567,7 +571,12 @@ def llm_label_cmd(
     ):
         backend: GeminiBackend | CloudflareBackend
         if labeler == "a":
-            backend = GeminiBackend(http, settings.gemini_api_key, min_interval=min_interval)
+            backend = GeminiBackend(
+                http,
+                settings.gemini_api_key,
+                model=model or GEMINI_MODEL,
+                min_interval=min_interval,
+            )
         else:
             backend = CloudflareBackend(
                 http, settings.cloudflare_api_token, settings.cloudflare_account_id

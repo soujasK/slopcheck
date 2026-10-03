@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is a relevant how-to guide from a recognized tech publication addressing the query directly.\\\"\\n}\",\n            \"thoughtSignature\": \"EoQFCoEFAWkUfRM/d1duQ9XOHiF/XePVmmLy2oJrBSG80+HnU7cN7hkYO9/YwAx56u3BVjbP9NMjwtTi3WKefn5YPGn+mewBzci/wCwmD7dUFqCOCQrIEsjKuJWzjvTsmF8PjHMAoJbn1B8S/uEHMkPdmbSih7end5+gczgW+I1rFJLXZrl5y6xzPtN1Qkrz0XQy/fD+lAvcpn77q6Pcuam/5EKnLNkzUfLytWsc04WBo43MJuJU18nfzXyWVwn6OBAlJVMom20H6IUp0fciPGNxbue8nsY5Nnt/ivGghRCZavsPpnhskxJxuFvs6u8Rh1dtXukNM56CXzsLTRY2UVkdbbY2sRV24G8ktJFCBZpa24NU7Xmq5QiLMOCb1uM8BHqYEia0VUo2cKwX240S6yHhp9VRKeOBcLO0Jkf1KIQf8Fdg2B+vT8wrYE/aOfdz8ch+OAq9e0f37jKdd6WlR3isBg6oYe1o8XeeTmtqv9wtVanGqVVf3nIJZznAJYi0JEUTYbj6D3/D2I8gczbMCjRrSTtlAw8HLbVlSPtmKXsV4WBhMvXiX++UIwjg5XdvH5C2FtaQrizmoMGfEWdjeXjrmyJStdoBY8fRnHrwGqV0oPK3aldNqnor3A64xcZ9V2mguOwsnSrqz/n3ri7niQiRzisWJYEj2g1B+sYIEk6wrYSz4G+mrqvILgWCAyW+bWauVxmpGp8i2lBZzZhUdWuXyq/J39MTUVuUaB0dXIxODwxVDtiJEKz4ygZc7+Dw3Udvglos2TEq5922k6MUcajkXqPu4BA+eLZE6Mt+kbK6LIgzZAxlJSgBmuWqgMgC7FbLML6VObR7nMH4lEZSpqLxDnFwtqo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 621,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 791,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 621\n      }\n    ],\n    \"thoughtsTokenCount\": 135,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"LOjAaoC2AcSbjuMP4dHg0Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:34:08.691681+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 11:34:06 GMT"
+  },
+  "key": "894abaeb61b4d534686d4021008c500461a845557f0d017b8e4ccb57bc85fffe",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}

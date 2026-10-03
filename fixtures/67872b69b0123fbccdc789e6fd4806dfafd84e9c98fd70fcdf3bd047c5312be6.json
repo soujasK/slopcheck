@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Apple support article directly explains how to transfer data from Android to iPhone.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label. The query: \\\"how to transfer data from android to iphone\\\". The page is Apple Support article \\\"Move content from Android to iOS\\\". That's an official Apple support page, providing instructions. That is definitely an \\\"ok\\\" source: official organization, answers query. So label ok.\\n\\nProvide reason: official Apple support page gives instructions.\",\"reasoning_content\":\"We need to decide label. The query: \\\"how to transfer data from android to iphone\\\". The page is Apple Support article \\\"Move content from Android to iOS\\\". That's an official Apple support page, providing instructions. That is definitely an \\\"ok\\\" source: official organization, answers query. So label ok.\\n\\nProvide reason: official Apple support page gives instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027131,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4f3703c1-44a7-49e8-93f5-32f7aefb46b2\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":626,\"completion_tokens\":113,\"total_tokens\":739,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":27.62261199951172}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:15.538847+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:13 GMT"
+  },
+  "key": "67872b69b0123fbccdc789e6fd4806dfafd84e9c98fd70fcdf3bd047c5312be6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

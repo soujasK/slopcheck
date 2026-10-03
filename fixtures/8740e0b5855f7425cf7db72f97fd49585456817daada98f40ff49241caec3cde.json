@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"ZDNET article with a named author provides direct instructions for transferring data from Android to iPhone.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to transfer data from android to iphone\\\". The page is from ZDNET, a reputable tech site. Title indicates it provides two quick and simple ways. Excerpt shows author name (Kerry Wan) and role. Likely contains instructions. So it's an \\\"ok\\\" page: it answers the query and has identifiable author/organization.\\n\\nThus label ok. Reason: reputable tech site with author, provides instructions.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to transfer data from android to iphone\\\". The page is from ZDNET, a reputable tech site. Title indicates it provides two quick and simple ways. Excerpt shows author name (Kerry Wan) and role. Likely contains instructions. So it's an \\\"ok\\\" page: it answers the query and has identifiable author/organization.\\n\\nThus label ok. Reason: reputable tech site with author, provides instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030182,\"ec_transfer_params\":null,\"id\":\"chatcmpl-809e07e2-5da3-4eb3-a9db-08880eef295c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":642,\"completion_tokens\":140,\"total_tokens\":782,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.972606658935547}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:03.903430+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:03 GMT"
+  },
+  "key": "8740e0b5855f7425cf7db72f97fd49585456817daada98f40ff49241caec3cde",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

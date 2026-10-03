@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a gaming site unrelated to water purifiers, offering no relevant answer.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground an answer to query \\\"best water purifier for home ro or uv\\\". The page is Roblox homepage, about games. Not relevant. So label low? The page's primary purpose is gaming, not answering query. So low.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground an answer to query \\\"best water purifier for home ro or uv\\\". The page is Roblox homepage, about games. Not relevant. So label low? The page's primary purpose is gaming, not answering query. So low.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030372,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8b340090-67c5-41ca-addb-62e136774f46\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":561,\"completion_tokens\":97,\"total_tokens\":658,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":24.463531494140625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:14.979363+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:14 GMT"
+  },
+  "key": "a36b45a54f89a64505b85425cc29a5f417673253408c9ae3a1cf14f715fbec9a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Yahoo Tech article offers specific Windows 11 performance tips, matching the query and likely has identifiable authorship.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page title: \\\"14 Easy Fixes to Make Windows 11 Feel Faster\\\". Likely an article with tips. The URL is tech.yahoo.com, a reputable tech news site. The excerpt shows ads but not content. Likely the page contains a list of fixes, which would answer the query. It likely has an author? Not sure from excerpt. But Yahoo Tech articles usually have author attribution. So likely \\\"ok\\\". The primary purpose is to provide tips, not affiliate. So label ok.\\n\\nReason: article provides concrete fixes for speeding up Windows 11.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page title: \\\"14 Easy Fixes to Make Windows 11 Feel Faster\\\". Likely an article with tips. The URL is tech.yahoo.com, a reputable tech news site. The excerpt shows ads but not content. Likely the page contains a list of fixes, which would answer the query. It likely has an author? Not sure from excerpt. But Yahoo Tech articles usually have author attribution. So likely \\\"ok\\\". The primary purpose is to provide tips, not affiliate. So label ok.\\n\\nReason: article provides concrete fixes for speeding up Windows 11.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030188,\"ec_transfer_params\":null,\"id\":\"chatcmpl-af0486df-8596-4928-99be-67ed6f2ab0e9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":631,\"completion_tokens\":184,\"total_tokens\":815,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.62260818481445}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:09.637652+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:09 GMT"
+  },
+  "key": "61ef2784a7f7f731337bd13b2b46e2db7427ec171eb0a7ca4f41d6350455ce3d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

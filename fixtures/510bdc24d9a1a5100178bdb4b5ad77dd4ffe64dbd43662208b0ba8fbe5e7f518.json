@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"WebMD provides a medically reviewed article with named authors covering vitamin D deficiency symptoms, suitable for answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is WebMD article \\\"Vitamin D Deficiency: Causes, Symptoms & Health Risks\\\". Authors listed: Stephanie Watson, Lori M. King, PhD. WebMD is reputable health site. The article likely covers symptoms generally, may include women-specific? But still answers query about symptoms. It's an official health site with named authors. So label ok.\\n\\nCheck if primary purpose is to inform, not affiliate. WebMD is health info. So ok.\\n\\nThus output.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is WebMD article \\\"Vitamin D Deficiency: Causes, Symptoms & Health Risks\\\". Authors listed: Stephanie Watson, Lori M. King, PhD. WebMD is reputable health site. The article likely covers symptoms generally, may include women-specific? But still answers query about symptoms. It's an official health site with named authors. So label ok.\\n\\nCheck if primary purpose is to inform, not affiliate. WebMD is health info. So ok.\\n\\nThus output.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027315,\"ec_transfer_params\":null,\"id\":\"chatcmpl-94cd943c-7567-486f-ad86-d2135627a249\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":615,\"completion_tokens\":164,\"total_tokens\":779,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.74988555908203}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:35:20.265694+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:35:18 GMT"
+  },
+  "key": "510bdc24d9a1a5100178bdb4b5ad77dd4ffe64dbd43662208b0ba8fbe5e7f518",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

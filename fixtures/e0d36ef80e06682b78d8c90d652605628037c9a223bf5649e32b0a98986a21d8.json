@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an advice article from a reputable financial organization directly addressing how to invest with limited funds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label. The query: \\\"how to start investing with a small amount\\\". The page title: \\\"How to Start Investing with Little Money | Thrivent\\\". Thrivent is a financial services organization (nonprofit). Likely an article giving advice. It likely has an author or organization (Thrivent). It's not a product roundup. So it's likely \\\"ok\\\". The excerpt suggests it's an advice article. So label ok.\\n\\nWe need reason: short sentence.\\n\\nReturn JSON.\",\"reasoning_content\":\"We need to decide label. The query: \\\"how to start investing with a small amount\\\". The page title: \\\"How to Start Investing with Little Money | Thrivent\\\". Thrivent is a financial services organization (nonprofit). Likely an article giving advice. It likely has an author or organization (Thrivent). It's not a product roundup. So it's likely \\\"ok\\\". The excerpt suggests it's an advice article. So label ok.\\n\\nWe need reason: short sentence.\\n\\nReturn JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027191,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4144ee76-c54f-428c-966a-e03a5c1fb5fe\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":630,\"completion_tokens\":139,\"total_tokens\":769,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.52260971069336}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:16.129749+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:33:14 GMT"
+  },
+  "key": "e0d36ef80e06682b78d8c90d652605628037c9a223bf5649e32b0a98986a21d8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

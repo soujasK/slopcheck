@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The wikiHow article directly answers the query with step-by-step advice and is authored by identifiable contributors.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is from wikiHow, which is a how-to guide. It likely provides steps. wikiHow articles have authors and citations, but they are community-generated. They have a named author? Usually they have \\\"Written by\\\" and \\\"Edited by\\\". That qualifies as identifiable responsibility. The content is directly answering the query. So label \\\"ok\\\". Reason: provides step-by-step guide and has identifiable author/organization (wikiHow).\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is from wikiHow, which is a how-to guide. It likely provides steps. wikiHow articles have authors and citations, but they are community-generated. They have a named author? Usually they have \\\"Written by\\\" and \\\"Edited by\\\". That qualifies as identifiable responsibility. The content is directly answering the query. So label \\\"ok\\\". Reason: provides step-by-step guide and has identifiable author/organization (wikiHow).\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027104,\"ec_transfer_params\":null,\"id\":\"chatcmpl-640cd50c-6d6f-4738-80a2-790be45594d0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":631,\"completion_tokens\":155,\"total_tokens\":786,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.645336151123047}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:31:48.707394+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:31:47 GMT"
+  },
+  "key": "d0d4b3772ad478ff2d4069fda16fc7334c56ac65d7a249113d091d46707008ce",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

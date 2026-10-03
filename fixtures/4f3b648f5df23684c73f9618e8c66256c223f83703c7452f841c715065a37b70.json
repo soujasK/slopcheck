@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"CNET article with named expert author directly reviews and ranks budget wireless earbuds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best budget wireless earbuds\\\". The page is from CNET, a reputable tech site, with an article \\\"Best Budget Earbuds for 2026: Cheap Wireless Picks\\\". It says they've tested dozens, includes expert author David Carnoy. This is clearly answering the query, with identifiable author and organization. So label ok.\\n\\nWe need to output JSON with label \\\"ok\\\" and short reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best budget wireless earbuds\\\". The page is from CNET, a reputable tech site, with an article \\\"Best Budget Earbuds for 2026: Cheap Wireless Picks\\\". It says they've tested dozens, includes expert author David Carnoy. This is clearly answering the query, with identifiable author and organization. So label ok.\\n\\nWe need to output JSON with label \\\"ok\\\" and short reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030318,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f0966183-511c-40ef-84b1-5b73543a6003\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":633,\"completion_tokens\":130,\"total_tokens\":763,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.004426956176758}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:21.527206+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:21 GMT"
+  },
+  "key": "4f3b648f5df23684c73f9618e8c66256c223f83703c7452f841c715065a37b70",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

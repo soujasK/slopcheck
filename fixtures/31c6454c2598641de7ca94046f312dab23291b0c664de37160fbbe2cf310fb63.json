@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic blog index with no specific answer or author, likely focused on promotion rather than directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best credit card for online shopping in india\\\". The page is a blog index page of SaveSage Club, likely a site about credit card rewards. The title: \\\"Credit Card & Loyalty Rewards Blog | SaveSage Club\\\". URL: /blogs (likely a list of blog posts). Excerpt shows generic navigation, not specific content. Likely a generic blog index, not a specific article answering the query. It may be monetized affiliate content. No author visible. So label low? The page's primary purpose seems to be promoting the app and possibly affiliate. Not a direct answer. So low.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best credit card for online shopping in india\\\". The page is a blog index page of SaveSage Club, likely a site about credit card rewards. The title: \\\"Credit Card & Loyalty Rewards Blog | SaveSage Club\\\". URL: /blogs (likely a list of blog posts). Excerpt shows generic navigation, not specific content. Likely a generic blog index, not a specific article answering the query. It may be monetized affiliate content. No author visible. So label low? The page's primary purpose seems to be promoting the app and possibly affiliate. Not a direct answer. So low.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027153,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a7fb03b6-9ec2-46e9-a05d-2ad7bf672b17\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":618,\"completion_tokens\":187,\"total_tokens\":805,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.41352081298828}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:38.781349+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:37 GMT"
+  },
+  "key": "31c6454c2598641de7ca94046f312dab23291b0c664de37160fbbe2cf310fb63",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

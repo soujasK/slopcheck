@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page from Bajaj Finserv directly discusses pros and cons of term life insurance, addressing the query with identifiable organizational authority.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"is term insurance worth it\\\". The page is from bajajfinserv.in, which is a financial services company (Bajaj Finserv) in India. Title: Pros and Cons of Term Life Insurance 2026. Likely an article discussing pros and cons, which would answer whether term insurance is worth it. It likely has an organization (Bajaj Finserv) as author, maybe not a named author but organization is identifiable. That qualifies as \\\"ok\\\" if it genuinely answers the query. It's not a low affiliate roundup; it's a corporate informational page. So label \\\"ok\\\". Reason: provides pros/cons from a reputable insurer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"is term insurance worth it\\\". The page is from bajajfinserv.in, which is a financial services company (Bajaj Finserv) in India. Title: Pros and Cons of Term Life Insurance 2026. Likely an article discussing pros and cons, which would answer whether term insurance is worth it. It likely has an organization (Bajaj Finserv) as author, maybe not a named author but organization is identifiable. That qualifies as \\\"ok\\\" if it genuinely answers the query. It's not a low affiliate roundup; it's a corporate informational page. So label \\\"ok\\\". Reason: provides pros/cons from a reputable insurer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030395,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a3d2535d-f9d7-49d0-9fcb-19ac351e49fd\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":616,\"completion_tokens\":191,\"total_tokens\":807,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.62261199951172}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:37.611910+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:37 GMT"
+  },
+  "key": "de017ca501834afa47c2538d8d17bfbab7dd8b4a84b406820a997f529bcfd087",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The India TV article provides a step-by-step guide on checking EPF balance and is authored by a named news desk, indicating a reliable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check pf balance using uan number\\\". The page title: \\\"forgot uan number password how to check epf balance check step by step process | राहत: UAN नंबर के बिना भी पता चल जाएगा PF में जमा बैलेंस, EPFO ने बताया आसान तरीका - India TV Hindi\\\". It's from India TV, a news outlet. The excerpt suggests it's a news article about EPFO method to check balance without UAN. Likely includes steps. It has an organization (India TV) and likely author (India TV Paisa Desk). So it is an \\\"ok\\\" source: it answers the query, has identifiable organization. It's not a low affiliate page. So label ok.\\n\\nReason: The page is from a reputable news outlet providing step-by-step instructions and has a clear author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check pf balance using uan number\\\". The page title: \\\"forgot uan number password how to check epf balance check step by step process | राहत: UAN नंबर के बिना भी पता चल जाएगा PF में जमा बैलेंस, EPFO ने बताया आसान तरीका - India TV Hindi\\\". It's from India TV, a news outlet. The excerpt suggests it's a news article about EPFO method to check balance without UAN. Likely includes steps. It has an organization (India TV) and likely author (India TV Paisa Desk). So it is an \\\"ok\\\" source: it answers the query, has identifiable organization. It's not a low affiliate page. So label ok.\\n\\nReason: The page is from a reputable news outlet providing step-by-step instructions and has a clear author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030155,\"ec_transfer_params\":null,\"id\":\"chatcmpl-bd829ce1-cc82-4da6-a929-4ce5ad9bf789\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":713,\"completion_tokens\":228,\"total_tokens\":941,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":38.23168182373047}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:40.369378+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:22:40 GMT"
+  },
+  "key": "125eccec87976f6672a43af1a80da170bcbf3815945943588905d562c77e0535",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

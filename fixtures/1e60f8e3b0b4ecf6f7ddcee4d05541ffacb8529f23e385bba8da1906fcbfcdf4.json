@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial pharmacy blog primarily selling gas relief medicines, not an unbiased, authoritative answer source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best medicine for acidity and gas without prescription\\\". The page title: \\\"Best Medicine for Gas in India: Gas Relief Medicines | Zeelab Pharmacy\\\". It's a pharmacy e-commerce site blog. Likely promotional, selling medicines, maybe affiliate. Primary purpose is to sell medicines, not to provide unbiased answer. Likely low. Also may have some info but likely commercial. So label low.\\n\\nReason: page is a commercial pharmacy blog promoting products, not a reliable answer source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best medicine for acidity and gas without prescription\\\". The page title: \\\"Best Medicine for Gas in India: Gas Relief Medicines | Zeelab Pharmacy\\\". It's a pharmacy e-commerce site blog. Likely promotional, selling medicines, maybe affiliate. Primary purpose is to sell medicines, not to provide unbiased answer. Likely low. Also may have some info but likely commercial. So label low.\\n\\nReason: page is a commercial pharmacy blog promoting products, not a reliable answer source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791026986,\"ec_transfer_params\":null,\"id\":\"chatcmpl-aec97c4e-e79f-493f-93ca-a1f617e10c32\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":638,\"completion_tokens\":155,\"total_tokens\":793,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.868061065673828}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:29:51.491765+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:29:49 GMT"
+  },
+  "key": "1e60f8e3b0b4ecf6f7ddcee4d05541ffacb8529f23e385bba8da1906fcbfcdf4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

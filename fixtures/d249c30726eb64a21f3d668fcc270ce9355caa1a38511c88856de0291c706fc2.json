@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed, tested roundup from a reputable review site that directly answers the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best running shoes for beginners\\\". The page is from RTINGS.com, a known review site with testing. Title: \\\"The 6 Best Running Shoes for Beginners of 2026 - RTINGS.com\\\". Likely includes reviews, ratings, etc. It is a product roundup but with testing and detailed reviews. That is considered ok if it provides genuine answers and has identifiable organization (RTINGS.com). So label ok.\\n\\nCheck for affiliate? RTINGS may have affiliate links but primary purpose is review. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best running shoes for beginners\\\". The page is from RTINGS.com, a known review site with testing. Title: \\\"The 6 Best Running Shoes for Beginners of 2026 - RTINGS.com\\\". Likely includes reviews, ratings, etc. It is a product roundup but with testing and detailed reviews. That is considered ok if it provides genuine answers and has identifiable organization (RTINGS.com). So label ok.\\n\\nCheck for affiliate? RTINGS may have affiliate links but primary purpose is review. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030330,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b6288f9f-72da-4568-9334-bdd384e078b6\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":624,\"completion_tokens\":161,\"total_tokens\":785,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.83169937133789}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:33.710174+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:33 GMT"
+  },
+  "key": "d249c30726eb64a21f3d668fcc270ce9355caa1a38511c88856de0291c706fc2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

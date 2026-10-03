@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"Practo offers a doctor‑answered Q&A about Dolo dosage, providing direct medical guidance from an identifiable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page appears to be a Q&A on Practo (a health platform) about Dolo 6 times per day, dangerous? It likely includes doctor advice. Practo is a health service site; content likely from doctors, maybe with author. Could be considered an answer. It may be a user question with doctor answer. That seems \\\"ok\\\" if there is identifiable doctor author. The excerpt shows \\\"Doc advised\\\". The page likely includes a doctor response. Practo is a reputable health platform. So label ok.\\n\\nCheck for monetization? Practo may have ads but primary purpose is health advice. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"Practo provides a doctor‑answered Q&A on Dolo dosage, with identifiable medical source.\\\"}\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page appears to be a Q&A on Practo (a health platform) about Dolo 6 times per day, dangerous? It likely includes doctor advice. Practo is a health service site; content likely from doctors, maybe with author. Could be considered an answer. It may be a user question with doctor answer. That seems \\\"ok\\\" if there is identifiable doctor author. The excerpt shows \\\"Doc advised\\\". The page likely includes a doctor response. Practo is a reputable health platform. So label ok.\\n\\nCheck for monetization? Practo may have ads but primary purpose is health advice. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"Practo provides a doctor‑answered Q&A on Dolo dosage, with identifiable medical source.\\\"}\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030423,\"ec_transfer_params\":null,\"id\":\"chatcmpl-93d1c064-bb6f-4429-86a1-5598a0828f24\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":693,\"completion_tokens\":222,\"total_tokens\":915,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":37.18623352050781}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:27:07.209354+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:27:06 GMT"
+  },
+  "key": "cd13ce2ac16947d3c8f5efac70b104688ffad4819aa04b8bbdab11ac4d083a68",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

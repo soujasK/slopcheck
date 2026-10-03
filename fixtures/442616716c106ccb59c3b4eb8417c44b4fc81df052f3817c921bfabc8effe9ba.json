@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed, author‑identified guide on paying off credit‑card debt.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page title: \\\"How to Pay Off Credit Card Debt Fast in 2026\\\". URL is wallethub.com/edu/cc/how-to-pay-off-credit-card-debt/40625. Excerpt shows author name (Adam McCann, WalletHub Financial Writer) and fact-checked by researcher. This seems like a genuine article providing advice. It likely answers the query. It has identifiable organization (WalletHub) and author. So label ok.\\n\\nCheck for monetization: WalletHub may have affiliate links but primary purpose is educational advice. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed, author‑identified guide on paying off credit‑card debt.\\\"}\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page title: \\\"How to Pay Off Credit Card Debt Fast in 2026\\\". URL is wallethub.com/edu/cc/how-to-pay-off-credit-card-debt/40625. Excerpt shows author name (Adam McCann, WalletHub Financial Writer) and fact-checked by researcher. This seems like a genuine article providing advice. It likely answers the query. It has identifiable organization (WalletHub) and author. So label ok.\\n\\nCheck for monetization: WalletHub may have affiliate links but primary purpose is educational advice. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed, author‑identified guide on paying off credit‑card debt.\\\"}\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030346,\"ec_transfer_params\":null,\"id\":\"chatcmpl-dabad071-d1df-47d8-be3d-12e9986de3ba\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":634,\"completion_tokens\":203,\"total_tokens\":837,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":34.01351547241211}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:50.099601+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:50 GMT"
+  },
+  "key": "442616716c106ccb59c3b4eb8417c44b4fc81df052f3817c921bfabc8effe9ba",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

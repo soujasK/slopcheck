@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses the query and features a named author along with a certified expert reviewer from an established insurance advisory service.\\\"\\n}\",\n            \"thoughtSignature\": \"EoMECoAEAWkUfRN+P3hUHDOQVazfIE6zfdJSSfKQyVRpa0V1yFRhPgPoZS4xJkmbZ8SChm8r/BRAwrR2UulUq2LFxyxoKwKti8Rug+3IepSqEzycTsRuVA3ogko+C3CsJMjMFgc7RtAO1fRgc1HxeRRsirxckqPeHGGXgJX80CX9OqlJAmRmakSUnwMSi61EsWPIdHYPXRVS386byWldfc4rspvxITknF0um5N0zL7y4eWGt6lDINvjxp77b/+FMFymhiFzctPAb3E6WNgxuqiPBAVPe0AYpXCgXokahDbWG/KH1OEhnUUF7DrzXMb0RzGZ08N/IgrkX4vzcak+WDhnpsSYeIjsFI7yo+8KW8rVuOUty+LHK04qNAgLJZSDlGIinmqs6Y3R2ib3GR673cr3LCBKS8+0zFVzeDkypxqknhXQSiNkxVaoKEW6bDZoFV6zB/ro014HBa3U7qdm5NZPoTmADJLWlV+yltn32b4SC9pw22F3vw2NsbBKO+vXGiyaL9zysIIQIL1d8DLJ4k1pmAnrMRwRLmPuot7ReWECyx+8uaeRaXvSAsnixjlE9ckHoO+3NHrtqKUV3QnTKGBUspwSGKpPK9GdcetaVvvqrrAs4GwUDfHdBcLRb0qOETc7CZHPMMIw1w7TSOGveEM4mvtpV75YdSuSaxIUcnb46yo0oAQ0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 610,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 741,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 610\n      }\n    ],\n    \"thoughtsTokenCount\": 90,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"UPPAarPvK6nEg8UPh53EsQk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:02.260123+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 12:22:02 GMT"
+  },
+  "key": "71d12b96bd68064f349e458c04ca7a509a089de99236e5e54ca52f00c6b04a9d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}

@@ -20,7 +20,8 @@ listed in the report with the reason.
   into dev (100) and test (100) alternately within each stratum. Committed before
   labeling.
 - **Labels**: two independent LLM labelers, no human labeling (decision recorded
-  in LABELING.md before labeling): A = Google `gemini-3.8-flash`, B = Cloudflare
+  in LABELING.md before labeling): A = Google `gemini-3.5-flash-lite` (see
+  Deviations), B = Cloudflare
   `@cf/openai/gpt-oss-120b`. Both are blind (guide + query, title, URL, excerpt
   only; never scores, signals or rubric), temperature 0, strict JSON. All
   requests and responses are recorded as fixtures.
@@ -79,6 +80,12 @@ DuckDuckGo and Yahoo are reported as the "Bing family" (shared index).
 8 questions fixed in `data/demo_questions.yaml` before running the demo. For
 each: the share of cited sources in the `low` band with raw top-5 vs filtered
 top-5, and whether the answer changed. All 8 are reported; none are dropped.
+
+## Deviations
+
+- 2026-10-03: labeler A changed from `gemini-3.8-flash` to `gemini-3.5-flash-lite`
+  because the former's free tier allows 20 requests per day (see LABELING.md).
+  Decided before any agreement or evaluation result was computed.
 
 ## 5. What will not be claimed
 

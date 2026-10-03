@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an informational article from IIFL Capital offering guidance on investing small amounts.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page title: \\\"How to Invest in Stock Market with Little Money? | IIFL Capital\\\". URL is from India Infoline (indiainfoline.com) knowledge center. Likely an article giving advice. IIFL Capital is a financial services firm, presumably reputable. The excerpt suggests content about capital markets, small investors. Likely provides guidance. It seems to be an informational article, not just affiliate product roundup. It likely has identifiable organization (IIFL Capital). So label \\\"ok\\\". Reason: provides advice from a reputable financial organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page title: \\\"How to Invest in Stock Market with Little Money? | IIFL Capital\\\". URL is from India Infoline (indiainfoline.com) knowledge center. Likely an article giving advice. IIFL Capital is a financial services firm, presumably reputable. The excerpt suggests content about capital markets, small investors. Likely provides guidance. It seems to be an informational article, not just affiliate product roundup. It likely has identifiable organization (IIFL Capital). So label \\\"ok\\\". Reason: provides advice from a reputable financial organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027176,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2afe3c81-d0e0-4cdf-99fc-7717b234e626\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":628,\"completion_tokens\":180,\"total_tokens\":808,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.254425048828125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:01.571711+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:59 GMT"
+  },
+  "key": "94f3670813671e2700bf771ba584835f3a08d9e8bb07d42c05d2284d01fc98bc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

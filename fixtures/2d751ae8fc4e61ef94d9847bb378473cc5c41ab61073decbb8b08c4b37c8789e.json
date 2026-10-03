@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page appears to be an informational article from ClearTax with a named author that likely addresses how much to keep in an emergency fund.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how much emergency fund should i have\\\". The page title: \\\"Emergency Funds – Why have it and Where to Invest It\\\". URL is cleartax.in/s/emergency-fund-invest. Excerpt shows contact info, appears to be a financial advice site (ClearTax). Likely an article about emergency funds, possibly includes recommendation on amount. It has author name \\\"REPAKA PAVAN ADITYA\\\". ClearTax is a known Indian tax filing platform, likely reputable. The page seems to be an article, not a product roundup. It likely answers the query. So label \\\"ok\\\". Reason: article with named author from reputable site providing advice.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how much emergency fund should i have\\\". The page title: \\\"Emergency Funds – Why have it and Where to Invest It\\\". URL is cleartax.in/s/emergency-fund-invest. Excerpt shows contact info, appears to be a financial advice site (ClearTax). Likely an article about emergency funds, possibly includes recommendation on amount. It has author name \\\"REPAKA PAVAN ADITYA\\\". ClearTax is a known Indian tax filing platform, likely reputable. The page seems to be an article, not a product roundup. It likely answers the query. So label \\\"ok\\\". Reason: article with named author from reputable site providing advice.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027149,\"ec_transfer_params\":null,\"id\":\"chatcmpl-7f528237-5318-4005-b28e-3cf21af6e386\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":632,\"completion_tokens\":197,\"total_tokens\":829,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.54078674316406}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:34.912924+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:33 GMT"
+  },
+  "key": "2d751ae8fc4e61ef94d9847bb378473cc5c41ab61073decbb8b08c4b37c8789e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

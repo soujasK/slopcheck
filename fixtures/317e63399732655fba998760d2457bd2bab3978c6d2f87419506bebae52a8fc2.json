@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Google support page directly answers how to recover a hacked Gmail account\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label. The query: \\\"how to recover a hacked gmail account\\\". The page is Google Account Help official support page. It likely provides steps to recover account. That's an official source, answer directly. So label \\\"ok\\\". Reason: official Google support page provides recovery instructions.\",\"reasoning_content\":\"We need to decide label. The query: \\\"how to recover a hacked gmail account\\\". The page is Google Account Help official support page. It likely provides steps to recover account. That's an official source, answer directly. So label \\\"ok\\\". Reason: official Google support page provides recovery instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030329,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2f167a0e-0860-4638-833f-0d2ee3c5f94b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":626,\"completion_tokens\":96,\"total_tokens\":722,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":26.463520050048828}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:30.437033+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:30 GMT"
+  },
+  "key": "317e63399732655fba998760d2457bd2bab3978c6d2f87419506bebae52a8fc2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

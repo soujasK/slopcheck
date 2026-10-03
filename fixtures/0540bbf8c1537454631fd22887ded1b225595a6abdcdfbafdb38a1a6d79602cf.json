@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"Page primarily promotes Syncios software rather than providing a neutral guide\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for page: syncios.com Android transfer data from Android to iPhone. The excerpt shows marketing content, product list, not actual guide. Likely a product page promoting Syncios software for data transfer. Might contain instructions but primary purpose is to sell software. That is monetized referral. So label low.\\n\\nReason: page appears to be product marketing rather than a genuine answer.\\n\\nReturn JSON.\",\"reasoning_content\":\"We need to decide label for page: syncios.com Android transfer data from Android to iPhone. The excerpt shows marketing content, product list, not actual guide. Likely a product page promoting Syncios software for data transfer. Might contain instructions but primary purpose is to sell software. That is monetized referral. So label low.\\n\\nReason: page appears to be product marketing rather than a genuine answer.\\n\\nReturn JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027204,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e6863466-ac05-429c-8bc6-ede70d3116e0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":682,\"completion_tokens\":120,\"total_tokens\":802,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.881690979003906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:28.139517+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:33:26 GMT"
+  },
+  "key": "0540bbf8c1537454631fd22887ded1b225595a6abdcdfbafdb38a1a6d79602cf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

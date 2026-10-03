@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses the query with a curated guide by a clearly identified author known for hands-on earbud testing.\\\"\\n}\",\n            \"thoughtSignature\": \"EpkGCpYGAWkUfRMf0N3d7BAG3afYb8xGKIjWk3o0lGG534x0to5LwMCmw/nXYZ46Gk7d9AkATsMweHiu0g2fw/kFDSVEwtTWvzS2NcCd7FR0SiVnckg7lF6T6nWeVJKC0JsMFb89ETE/ts7KV8d40orv66VKyTyAFaB2+qQPw8e4fwXPYX0z32DEE37LovVKRUVW1SdpMB0T6v1u0izdcKvHU7LRdFdHpwkjRjV6s831G3vTmUPdNaEi12TcLElMmlgHes3Ob53rubzD42+d1HiHo5i5FStl0C5Tv7kseHoHVPXG8eDgjryl9QUYCtUvZie5tpClYCO6arR3wTBCSkv+PRua0del1wbbC2BgsLQ0LZakp2THkxUgZfseSpE9P4lDkVYieUfTpQ91SmQVODgiSREKmsyKYx0Vtnv9XdlrfE0BOl4iAIx09r9uCH+UwQt9UjZN/ijvmUDZiR8ggfZa9oPUIiZutneFPUrU7h16pY0VZV7U7UpK6/oU4IpYyrU32sOXaiMrGrIvtRHIQ4J9Eh5FBKFXE71oK2zQMnqa2pAI0sea6kNnyCF7weKI41MIWJYPU62CKFUvP6akANJ5nEtY0j1QTBUT4Llu4+mJq/+9oERJE0ls63BJ6JEjQC+syLxQR6hJXTLlls/IViLonqRsrf5oEOejVQqzjtrQddILm5aV9FdmAD5ypWp22n2v9wbd4zr1QROKxOcb1QvLTaOue88W20pI1DJKZ9a3V+sgrQ7RhZ1KOTHAyis5GKlJY6drBOTRIf470pg/JSQCAPG6S1V5E6QT/UB6GB0dXfhGjSRyzx9oDRfhAb/WpENrhRqR0iAT29jy6bIkNoYS/Jdu9e91ss+ktqmVGQGao9fcO5F4AwSzSwxyR+LEODk4xmeXM3hVPsG84ywLgNy70Yvs1pZEs71fRc2r365uknH9YAaSa2iRux0bRZLoj52M4kRDV8v/hmD64aGP+JuWfVpU0Ea/d9Rf2dDM1H53Dsg4ZGXbJ8oaBQwu9ESTRqdInTadLWoIKdYaDyBvIsy/GvEYdw1ttTwcRw==\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 631,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 837,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 631\n      }\n    ],\n    \"thoughtsTokenCount\": 165,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"L-jAavKGIZ7-4-EPqqCn4Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:34:15.447526+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 11:34:13 GMT"
+  },
+  "key": "c2b45e026c1dc380f2d490c4874196755c1cfb026f3d8a0e55401f70894331ff",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}

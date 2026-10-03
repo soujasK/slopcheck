@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from a reputable news site includes a named correspondent and discusses safe dosage of Dolo 650, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page appears to be a health article on Onmanorama, a news site, about paracetamol overuse, includes a doctor's tweet, likely discusses safe dosage. It has a correspondent author (Our Correspondent). So it likely answers the query. It is an article with identifiable author (though generic). It's not a product roundup. So label \\\"ok\\\". Reason: article from news outlet with author discussing safe dosage.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page appears to be a health article on Onmanorama, a news site, about paracetamol overuse, includes a doctor's tweet, likely discusses safe dosage. It has a correspondent author (Our Correspondent). So it likely answers the query. It is an article with identifiable author (though generic). It's not a product roundup. So label \\\"ok\\\". Reason: article from news outlet with author discussing safe dosage.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027123,\"ec_transfer_params\":null,\"id\":\"chatcmpl-02c24c87-f11b-46e9-8f93-5a25f747174e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":683,\"completion_tokens\":161,\"total_tokens\":844,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.708961486816406}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:07.549644+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:05 GMT"
+  },
+  "key": "a1df331d2ca2c508ac9ff26ad2de1b02f15bc2a333121a99086da33216e65cbc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

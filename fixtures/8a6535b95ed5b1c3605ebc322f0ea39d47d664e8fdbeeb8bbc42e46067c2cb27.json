@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page provides general weight‑loss information, not a thyroid‑specific Indian diet chart.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"thyroid diet chart for weight loss indian\\\". The page is from WebMD, title \\\"Healthy Weight: Understanding Your Ideal Body Weight Range\\\". Excerpt shows weight loss and obesity overview, not specific to thyroid diet chart, nor Indian diet. Likely not answering query. Also page is general health, not specific to thyroid diet. So low? The page's primary purpose is general weight info, not answering query. So label low. Reason: does not address thyroid diet chart for weight loss Indian.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"thyroid diet chart for weight loss indian\\\". The page is from WebMD, title \\\"Healthy Weight: Understanding Your Ideal Body Weight Range\\\". Excerpt shows weight loss and obesity overview, not specific to thyroid diet chart, nor Indian diet. Likely not answering query. Also page is general health, not specific to thyroid diet. So low? The page's primary purpose is general weight info, not answering query. So label low. Reason: does not address thyroid diet chart for weight loss Indian.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030209,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0a78b369-c532-40d5-ac67-9e252b0d2a69\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":619,\"completion_tokens\":154,\"total_tokens\":773,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.19533920288086}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:32.267704+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:32 GMT"
+  },
+  "key": "8a6535b95ed5b1c3605ebc322f0ea39d47d664e8fdbeeb8bbc42e46067c2cb27",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

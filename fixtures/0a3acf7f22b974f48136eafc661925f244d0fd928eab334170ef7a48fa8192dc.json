@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Android site article directly explains how to block spam calls on Android\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page is from android.com (official Android site). Title: \\\"How to Stop and Block Unwanted Spam Calls | Android\\\". Excerpt indicates it is an article about how to block spam calls on Android, with built-in features. Likely official guide. So it's \\\"ok\\\". Provide label ok with reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page is from android.com (official Android site). Title: \\\"How to Stop and Block Unwanted Spam Calls | Android\\\". Excerpt indicates it is an article about how to block spam calls on Android, with built-in features. Likely official guide. So it's \\\"ok\\\". Provide label ok with reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027174,\"ec_transfer_params\":null,\"id\":\"chatcmpl-3b7b2073-41c2-4a60-b3ea-dc7334f69832\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":638,\"completion_tokens\":123,\"total_tokens\":761,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":28.68624496459961}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:57.913795+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:56 GMT"
+  },
+  "key": "0a3acf7f22b974f48136eafc661925f244d0fd928eab334170ef7a48fa8192dc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

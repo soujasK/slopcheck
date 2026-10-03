@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Hindustan Times article offers a step-by-step guide on linking Aadhaar with PAN online, meeting the query with a reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page title: \\\"Link PAN card and Aadhaar via income tax portal or SMS: A step-by-step guide | India News\\\". URL is Hindustan Times, a reputable news outlet. Excerpt says it provides step-by-step guide on linking via official portal. Likely includes instructions. It is an article, presumably with author. So qualifies as \\\"ok\\\". It's not just affiliate. It's a news site providing guide. So label ok.\\n\\nReason: provides step-by-step guide from reputable source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page title: \\\"Link PAN card and Aadhaar via income tax portal or SMS: A step-by-step guide | India News\\\". URL is Hindustan Times, a reputable news outlet. Excerpt says it provides step-by-step guide on linking via official portal. Likely includes instructions. It is an article, presumably with author. So qualifies as \\\"ok\\\". It's not just affiliate. It's a news site providing guide. So label ok.\\n\\nReason: provides step-by-step guide from reputable source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027241,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c03255fe-2aa3-49ba-a578-c33dcd5430c2\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":668,\"completion_tokens\":173,\"total_tokens\":841,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.04987335205078}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:34:05.870812+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:34:04 GMT"
+  },
+  "key": "ac187ce55f259448f9786181b4a62d5f46124405d63c1a8d1102b0eb589ae01b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

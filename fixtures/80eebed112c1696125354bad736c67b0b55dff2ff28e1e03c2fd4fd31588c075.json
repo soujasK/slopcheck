@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Medical practice site offering expert information on OTC heartburn medications relevant to the query\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best medicine for acidity and gas without prescription\\\". The page is from Birmingham Gastroenterology Associates, likely a medical practice website. Title: \\\"Are Over the Counter Heartburn Medications Safe?\\\" This seems to discuss OTC heartburn meds safety. It likely provides info about OTC options, maybe recommendations. That aligns with query: best medicine for acidity and gas without prescription. The page is from a medical practice, likely has author (clinic). So it's an \\\"ok\\\" source: official medical organization, provides answer. It is not a product roundup; it's a medical article. So label ok.\\n\\nWe need reason: \\\"Medical practice site providing info on OTC heartburn meds\\\".\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best medicine for acidity and gas without prescription\\\". The page is from Birmingham Gastroenterology Associates, likely a medical practice website. Title: \\\"Are Over the Counter Heartburn Medications Safe?\\\" This seems to discuss OTC heartburn meds safety. It likely provides info about OTC options, maybe recommendations. That aligns with query: best medicine for acidity and gas without prescription. The page is from a medical practice, likely has author (clinic). So it's an \\\"ok\\\" source: official medical organization, provides answer. It is not a product roundup; it's a medical article. So label ok.\\n\\nWe need reason: \\\"Medical practice site providing info on OTC heartburn meds\\\".\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030350,\"ec_transfer_params\":null,\"id\":\"chatcmpl-cf588186-2c0a-48a6-9fe2-8d580bc818a9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":631,\"completion_tokens\":186,\"total_tokens\":817,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.75897216796875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:52.658240+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:52 GMT"
+  },
+  "key": "80eebed112c1696125354bad736c67b0b55dff2ff28e1e03c2fd4fd31588c075",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

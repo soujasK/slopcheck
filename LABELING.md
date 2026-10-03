@@ -60,7 +60,8 @@ not the verdict.
   label sample and from precision/recall, and their share of results is
   reported separately.
 - **Labels come from two LLMs, not from humans.** There is no human labeling.
-  Labeler A is Google `gemini-3.8-flash`; labeler B is Cloudflare Workers AI
+  Labeler A is Google `gemini-3.5-flash-lite` (see the deviation note below);
+  labeler B is Cloudflare Workers AI
   `@cf/openai/gpt-oss-120b` (fallback `@cf/meta/llama-3.3-70b-instruct-fp8-fast`,
   used only if the primary is unavailable, and reported if used). Both get the
   guide above plus one item, at temperature 0, and must answer strict JSON
@@ -73,6 +74,16 @@ not the verdict.
 - These labels measure agreement with two LLM judges, not human judgement, and
   the judges see only a 300-character excerpt. This is stated in the README and
   LIMITATIONS.md.
+
+## Deviation (2026-10-03, during labeling)
+
+Labeler A was planned as `gemini-3.8-flash`. Its free tier allows 20 requests per
+day (Google's `GenerateRequestsPerDayPerProjectPerModel-FreeTier`), which was
+exhausted after 7 items; 200 items would take 10 days, past the deadline. All 200
+items are therefore labeled by `gemini-3.5-flash-lite`, the newest Flash-Lite
+model (weaker than Flash). The 7 `gemini-3.8-flash` replies remain in the
+fixtures but are not used. Labeler B was unaffected. The guide, the items and
+the prompt are unchanged.
 
 ## Process rules
 

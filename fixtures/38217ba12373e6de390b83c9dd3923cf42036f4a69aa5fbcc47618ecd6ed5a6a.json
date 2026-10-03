@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a reputable, editorially curated roundup of budget wireless earbuds with disclosed affiliations.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is a roundup of best wireless earbuds under $100, from SoundGuys, a reputable audio review site. It includes disclaimer about commissions but they have editorial independence. Likely has named authors? Not shown but typical SoundGuys articles have author names. This is a product roundup, but it's a genuine review, not just affiliate. So label \\\"ok\\\". Reason: provides curated list with editorial content from reputable site.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is a roundup of best wireless earbuds under $100, from SoundGuys, a reputable audio review site. It includes disclaimer about commissions but they have editorial independence. Likely has named authors? Not shown but typical SoundGuys articles have author names. This is a product roundup, but it's a genuine review, not just affiliate. So label \\\"ok\\\". Reason: provides curated list with editorial content from reputable site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030370,\"ec_transfer_params\":null,\"id\":\"chatcmpl-14a4bb9d-a418-4691-9d2a-145db6b1774a\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":624,\"completion_tokens\":143,\"total_tokens\":767,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.604427337646484}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:12.836629+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:12 GMT"
+  },
+  "key": "38217ba12373e6de390b83c9dd3923cf42036f4a69aa5fbcc47618ecd6ed5a6a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

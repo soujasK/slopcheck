@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Fox Business article offers concrete steps to eliminate credit card debt and is from a recognizable, accountable media outlet.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to get out of credit card debt\\\". The page is from Fox Business, an opinion article titled \\\"Seven steps to get rid of your credit card debt for good\\\". Likely provides advice. It is a reputable media outlet, with identifiable organization (Fox Business). Likely has author (maybe not shown in excerpt but likely). So it answers the query. So label \\\"ok\\\". Reason: provides advice from a reputable source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to get out of credit card debt\\\". The page is from Fox Business, an opinion article titled \\\"Seven steps to get rid of your credit card debt for good\\\". Likely provides advice. It is a reputable media outlet, with identifiable organization (Fox Business). Likely has author (maybe not shown in excerpt but likely). So it answers the query. So label \\\"ok\\\". Reason: provides advice from a reputable source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027042,\"ec_transfer_params\":null,\"id\":\"chatcmpl-02a84cd9-c45d-4cfa-b7ac-4c67670f764f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":638,\"completion_tokens\":147,\"total_tokens\":785,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.322607040405273}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:30:46.709555+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:30:45 GMT"
+  },
+  "key": "934844c5b132a224bf843c7922d4f81f3037ed5eee4bea923becb56dc1d0f29a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

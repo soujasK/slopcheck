@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page appears to be a genuine advice article from a financial‑planning organisation on investing small amounts.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to start investing with a small amount\\\". The page title: \\\"Fun Ways to Start Investing Small Amounts\\\". URL: swellfp.com.au (looks like a financial planning site). Excerpt: seems to be an article giving advice. Likely a genuine article, maybe from a financial planner. Could have author? Not shown. But likely an organization (Swell Financial Planning). That would be ok. Not obviously affiliate roundup. So label ok.\\n\\nCheck for signs of low: Could be generic content, but likely a blog post with advice. Not a product roundup. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page appears to be a genuine advice article from a financial‑planning organisation on investing small amounts.\\\"}\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to start investing with a small amount\\\". The page title: \\\"Fun Ways to Start Investing Small Amounts\\\". URL: swellfp.com.au (looks like a financial planning site). Excerpt: seems to be an article giving advice. Likely a genuine article, maybe from a financial planner. Could have author? Not shown. But likely an organization (Swell Financial Planning). That would be ok. Not obviously affiliate roundup. So label ok.\\n\\nCheck for signs of low: Could be generic content, but likely a blog post with advice. Not a product roundup. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page appears to be a genuine advice article from a financial‑planning organisation on investing small amounts.\\\"}\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030230,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0a8373dd-9626-40bf-967d-1ae479b09fd4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":627,\"completion_tokens\":206,\"total_tokens\":833,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.99533462524414}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:23:55.064636+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:23:55 GMT"
+  },
+  "key": "b94355ab5d0c2f7c253bcccb6905e5b3fc749fdfdb47e34eed2300cf334bc16e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

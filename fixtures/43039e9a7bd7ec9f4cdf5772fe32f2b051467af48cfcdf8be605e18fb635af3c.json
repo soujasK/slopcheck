@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page looks like a generic product roundup with no clear author, likely monetized affiliate content rather than a substantive answer.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best air fryer for a small family\\\". The page appears to be from throwpillow.in, a site maybe about home decor, but the article \\\"Which Air Fryer Is Good??\\\" seems like a product roundup. The excerpt shows generic tags, \\\"All Posts Conscious Living Sofa Cover...\\\" and \\\"Best Air Fryers in India (2025):…\\\" No author, likely affiliate. Likely low quality, monetized referral. So label low.\\n\\nWe need reason: page appears to be a generic product roundup with affiliate links, no clear author.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best air fryer for a small family\\\". The page appears to be from throwpillow.in, a site maybe about home decor, but the article \\\"Which Air Fryer Is Good??\\\" seems like a product roundup. The excerpt shows generic tags, \\\"All Posts Conscious Living Sofa Cover...\\\" and \\\"Best Air Fryers in India (2025):…\\\" No author, likely affiliate. Likely low quality, monetized referral. So label low.\\n\\nWe need reason: page appears to be a generic product roundup with affiliate links, no clear author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030432,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d1c73fe7-8cfd-4b49-88ae-e07177880e15\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":674,\"completion_tokens\":171,\"total_tokens\":845,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.10441970825195}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:27:14.729369+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:27:14 GMT"
+  },
+  "key": "43039e9a7bd7ec9f4cdf5772fe32f2b051467af48cfcdf8be605e18fb635af3c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

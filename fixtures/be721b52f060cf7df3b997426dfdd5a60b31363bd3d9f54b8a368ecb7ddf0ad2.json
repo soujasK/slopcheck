@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable diabetes education foundation offering expert Q&A on blood sugar levels.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is from diabetesaction.org, a Diabetes Action Research and Education Foundation. Title: Questions and Answers about Blood Sugar. Likely contains Q&A from a diabetes educator. That seems to be an official organization, likely provides answer. So label \\\"ok\\\". Reason: page from reputable diabetes education foundation with Q&A by educator.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is from diabetesaction.org, a Diabetes Action Research and Education Foundation. Title: Questions and Answers about Blood Sugar. Likely contains Q&A from a diabetes educator. That seems to be an official organization, likely provides answer. So label \\\"ok\\\". Reason: page from reputable diabetes education foundation with Q&A by educator.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030386,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f883b3b7-171a-4f2d-a794-5738bd29cc7f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":621,\"completion_tokens\":133,\"total_tokens\":754,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":28.82715606689453}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:26:29.106174+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:26:28 GMT"
+  },
+  "key": "be721b52f060cf7df3b997426dfdd5a60b31363bd3d9f54b8a368ecb7ddf0ad2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

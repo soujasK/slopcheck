@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government site likely provides the method to check FASTag balance\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from digitalindia.gov.in, a government portal (MeitY). Title: FASTAG - Digital India. Likely contains info about FASTAG, maybe includes how to check balance. It's official source, likely has answer. So label ok.\\n\\nCheck: The excerpt shows description but not explicit about checking balance. However as official site, likely includes steps. So ok.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from digitalindia.gov.in, a government portal (MeitY). Title: FASTAG - Digital India. Likely contains info about FASTAG, maybe includes how to check balance. It's official source, likely has answer. So label ok.\\n\\nCheck: The excerpt shows description but not explicit about checking balance. However as official site, likely includes steps. So ok.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027038,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9f742800-7efa-4306-b36f-c376da1d4e26\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":634,\"completion_tokens\":136,\"total_tokens\":770,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.445335388183594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:30:42.045875+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:30:40 GMT"
+  },
+  "key": "5b874d14e9ffab4cdf1680a00ec03afb7b0fe5a770b9651cb59a279e6bbc5c8e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

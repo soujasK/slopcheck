@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a direct guideline (3‑6 months of expenses) and is from a named financial site, providing a clear answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"how much emergency fund should i have\\\". The page is \\\"Emergency Fund Calculator India — FY 2026-27\\\" from moneykit.in. It likely provides a calculator and mentions standard rule 3-6 months of expenses, etc. The query asks how much emergency fund should I have. This page directly answers with guidelines. Need to assess if it's \\\"ok\\\" (has identifiable responsibility). Moneykit.in appears to be a financial site, likely with organization. The page likely has author or organization (MoneyKit). It's not a generic affiliate roundup; it's a calculator tool. So likely \\\"ok\\\". Provide reason: provides direct guidance and is from identifiable financial site.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"how much emergency fund should i have\\\". The page is \\\"Emergency Fund Calculator India — FY 2026-27\\\" from moneykit.in. It likely provides a calculator and mentions standard rule 3-6 months of expenses, etc. The query asks how much emergency fund should I have. This page directly answers with guidelines. Need to assess if it's \\\"ok\\\" (has identifiable responsibility). Moneykit.in appears to be a financial site, likely with organization. The page likely has author or organization (MoneyKit). It's not a generic affiliate roundup; it's a calculator tool. So likely \\\"ok\\\". Provide reason: provides direct guidance and is from identifiable financial site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030097,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4bb27823-2cbe-4ddd-b2a1-a043f89cd63d\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":621,\"completion_tokens\":201,\"total_tokens\":822,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.46352005004883}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:21:41.267461+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:21:41 GMT"
+  },
+  "key": "b91d63a768b07cca0d925e5a214f499c1021701d59a47f82ef847409bfce7b53",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

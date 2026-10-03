@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page focuses on high‑performance carbon plate shoes and affiliate links, not on beginner running shoes, making it unsuitable as a primary source for the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best running shoes for beginners\\\". The page is about \\\"Best Carbon Plate Running Shoes 2026 UK: Race Day Speed\\\". That's about carbon plate shoes, likely high-performance racing shoes, not beginners. Also includes affiliate links. The primary purpose seems to be product roundup with affiliate links. Not specifically answering beginners. So low? The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is not about beginners, it's about carbon plate shoes for race day speed. So not appropriate. Also likely affiliate. So label low. Provide reason.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best running shoes for beginners\\\". The page is about \\\"Best Carbon Plate Running Shoes 2026 UK: Race Day Speed\\\". That's about carbon plate shoes, likely high-performance racing shoes, not beginners. Also includes affiliate links. The primary purpose seems to be product roundup with affiliate links. Not specifically answering beginners. So low? The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is not about beginners, it's about carbon plate shoes for race day speed. So not appropriate. Also likely affiliate. So label low. Provide reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030172,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f92b076e-ed7f-45ae-8115-3f1109ed0528\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":640,\"completion_tokens\":185,\"total_tokens\":825,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.977149963378906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:56.018393+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:22:55 GMT"
+  },
+  "key": "eae3ade26595d977aa9416d98580e1ef140902f0a6fd2ed5509281edcd999d91",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

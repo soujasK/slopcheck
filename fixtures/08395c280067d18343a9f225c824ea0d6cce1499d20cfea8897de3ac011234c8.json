@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Verge article provides editorial recommendations for robot vacuums, meeting the query with a reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best robot vacuum cleaner\\\". The page title: \\\"These are the robot vacuum-mops I recommend for every type of home | The Verge\\\". It's a Verge article, likely a buying guide with recommendations. The Verge is a reputable tech publication with named authors. The excerpt is generic but the title indicates recommendations. Likely \\\"ok\\\". The page is not a low affiliate roundup; The Verge does have affiliate links sometimes but they provide editorial content. So label ok.\\n\\nProvide reason: editorial buying guide from reputable tech site.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best robot vacuum cleaner\\\". The page title: \\\"These are the robot vacuum-mops I recommend for every type of home | The Verge\\\". It's a Verge article, likely a buying guide with recommendations. The Verge is a reputable tech publication with named authors. The excerpt is generic but the title indicates recommendations. Likely \\\"ok\\\". The page is not a low affiliate roundup; The Verge does have affiliate links sometimes but they provide editorial content. So label ok.\\n\\nProvide reason: editorial buying guide from reputable tech site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030281,\"ec_transfer_params\":null,\"id\":\"chatcmpl-986a77b7-945d-429b-be6d-d503bd7806dc\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":657,\"completion_tokens\":159,\"total_tokens\":816,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":31.745330810546875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:24:42.309769+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:24:42 GMT"
+  },
+  "key": "08395c280067d18343a9f225c824ea0d6cce1499d20cfea8897de3ac011234c8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

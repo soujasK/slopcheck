@@ -41,7 +41,10 @@ GUIDE_START = "<!-- labeler-guide:start -->"
 GUIDE_END = "<!-- labeler-guide:end -->"
 VALID: frozenset[str] = frozenset({"ok", "low", "unsure"})
 MAX_ATTEMPTS = 3
-GEMINI_MODEL = "gemini-3.8-flash"
+# gemini-3.8-flash was planned, but its free tier allows 20 requests/day
+# (GenerateRequestsPerDayPerProjectPerModel-FreeTier), too few for 200 items by
+# the deadline; labeler A uses the newest Flash-Lite model instead (2026-10-03).
+GEMINI_MODEL = "gemini-3.5-flash-lite"
 CF_PRIMARY = "@cf/openai/gpt-oss-120b"
 CF_FALLBACK = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 CF_URL = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}"

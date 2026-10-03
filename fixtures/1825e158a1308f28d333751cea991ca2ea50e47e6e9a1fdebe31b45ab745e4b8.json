@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly compares index funds and active funds and is authored by the identifiable financial platform OnePaisa.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"index funds vs actively managed mutual funds\\\". The page title: \\\"Index Funds vs Active Funds — Which Should You Choose in India? | OnePaisa\\\". Excerpt suggests article discussing index vs active debate, Indian mutual fund investing, stats, etc. Likely a financial advice article from OnePaisa, which is a brokerage/financial platform. It probably has author or organization (OnePaisa). It answers the query, providing comparison. It may have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: provides direct comparison and is from identifiable organization.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"index funds vs actively managed mutual funds\\\". The page title: \\\"Index Funds vs Active Funds — Which Should You Choose in India? | OnePaisa\\\". Excerpt suggests article discussing index vs active debate, Indian mutual fund investing, stats, etc. Likely a financial advice article from OnePaisa, which is a brokerage/financial platform. It probably has author or organization (OnePaisa). It answers the query, providing comparison. It may have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: provides direct comparison and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030120,\"ec_transfer_params\":null,\"id\":\"chatcmpl-97083550-ca29-4609-90e8-912d92dc5fc1\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":705,\"completion_tokens\":169,\"total_tokens\":874,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":33.95441436767578}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:02.259180+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:22:02 GMT"
+  },
+  "key": "1825e158a1308f28d333751cea991ca2ea50e47e6e9a1fdebe31b45ab745e4b8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

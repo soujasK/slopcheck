@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Lokmat article offers health advice on reducing uric acid naturally and comes from a reputable news source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page appears to be a Marathi news article from Lokmat (a newspaper). Title suggests \\\"Natural Ways to Reduce Uric Acid in the Body\\\". Likely contains advice. It is a news/health article. Does it have identifiable author? Not shown in excerpt. But Lokmat is a reputable newspaper. Likely has editorial staff. Could be considered ok. However we need to assess if it's primarily content or affiliate. It seems like health advice article, not product roundup. So ok.\\n\\nThus label ok. Reason: reputable news outlet providing natural uric acid reduction tips.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page appears to be a Marathi news article from Lokmat (a newspaper). Title suggests \\\"Natural Ways to Reduce Uric Acid in the Body\\\". Likely contains advice. It is a news/health article. Does it have identifiable author? Not shown in excerpt. But Lokmat is a reputable newspaper. Likely has editorial staff. Could be considered ok. However we need to assess if it's primarily content or affiliate. It seems like health advice article, not product roundup. So ok.\\n\\nThus label ok. Reason: reputable news outlet providing natural uric acid reduction tips.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027086,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5be20042-4e1c-4051-bf3b-ad0c5d7c6bcf\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":772,\"completion_tokens\":181,\"total_tokens\":953,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":36.90439987182617}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:31:30.589241+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:31:28 GMT"
+  },
+  "key": "bf2e918df6482f3725159ea097971eddab5112cd4dc3024a62f236cf75fa52f4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

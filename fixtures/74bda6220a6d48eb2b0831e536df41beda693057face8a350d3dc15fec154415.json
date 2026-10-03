@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Harvard Health provides reputable, expert information on OTC antacids relevant to the query\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best medicine for acidity and gas without prescription\\\". The page is Harvard Health article about over-the-counter antacids for heartburn. Likely provides info on OTC antacids, which is relevant. It's an official source (Harvard Health). So label ok.\\n\\nCheck excerpt: seems generic but title indicates content about OTC antacids. Harvard Health is reputable. So ok.\\n\\nReturn JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best medicine for acidity and gas without prescription\\\". The page is Harvard Health article about over-the-counter antacids for heartburn. Likely provides info on OTC antacids, which is relevant. It's an official source (Harvard Health). So label ok.\\n\\nCheck excerpt: seems generic but title indicates content about OTC antacids. Harvard Health is reputable. So ok.\\n\\nReturn JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030335,\"ec_transfer_params\":null,\"id\":\"chatcmpl-be16fd9d-a630-4f6a-b802-b7fc661f0d70\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":643,\"completion_tokens\":133,\"total_tokens\":776,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.52715301513672}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:37.465363+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:37 GMT"
+  },
+  "key": "74bda6220a6d48eb2b0831e536df41beda693057face8a350d3dc15fec154415",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

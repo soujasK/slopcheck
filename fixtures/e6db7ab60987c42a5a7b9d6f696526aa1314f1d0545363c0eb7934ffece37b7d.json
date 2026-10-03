@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Healthline is a reputable health site that likely provides specific post‑meal blood sugar ranges with author attribution.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Chart on Blood Sugar Levels Based on Age\\\". URL healthline.com, a reputable health site. Excerpt says blood sugar management crucial, target levels vary, general guidelines based on age groups. Likely includes postprandial (after eating) ranges. Healthline articles usually have author and sources. So likely \\\"ok\\\". Provide label ok with reason.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Chart on Blood Sugar Levels Based on Age\\\". URL healthline.com, a reputable health site. Excerpt says blood sugar management crucial, target levels vary, general guidelines based on age groups. Likely includes postprandial (after eating) ranges. Healthline articles usually have author and sources. So likely \\\"ok\\\". Provide label ok with reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027281,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0d57b1cd-4d7c-4d93-abde-0d4ce50141c9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":620,\"completion_tokens\":144,\"total_tokens\":764,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.545337677001953}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:34:44.324661+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:34:42 GMT"
+  },
+  "key": "e6db7ab60987c42a5a7b9d6f696526aa1314f1d0545363c0eb7934ffece37b7d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

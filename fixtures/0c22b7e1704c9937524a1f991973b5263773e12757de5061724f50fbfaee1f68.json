@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Google support article provides direct steps to recover a hacked Gmail account\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground an answer to query \\\"how to recover a hacked gmail account\\\". The page is Google Support article \\\"Secure a hacked or compromised Google Account\\\". That's official source, provides steps. So label ok. Reason: official Google support page with instructions.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground an answer to query \\\"how to recover a hacked gmail account\\\". The page is Google Support article \\\"Secure a hacked or compromised Google Account\\\". That's official source, provides steps. So label ok. Reason: official Google support page with instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030333,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b7710d45-3ca6-412e-9944-e797e7c06471\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":618,\"completion_tokens\":96,\"total_tokens\":714,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":26.208974838256836}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:25:35.320041+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:25:35 GMT"
+  },
+  "key": "0c22b7e1704c9937524a1f991973b5263773e12757de5061724f50fbfaee1f68",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

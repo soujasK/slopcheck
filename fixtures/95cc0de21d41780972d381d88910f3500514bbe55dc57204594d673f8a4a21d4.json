@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"ICICI Bank’s official blog likely offers direct guidance on choosing SIPs, meeting the relevance and responsibility criteria.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from ICICI Bank, a major Indian bank. Title: \\\"Best SIP to Invest in India | How to Choose the Best SIP Plan | ICICI Bank\\\". Likely a blog article giving advice on SIP (Systematic Investment Plan) selection. That seems relevant. The excerpt is generic marketing content, but likely the page contains advice. The page is from a reputable bank, likely has author or organization (ICICI Bank). So label \\\"ok\\\". Reason: official bank blog providing SIP advice.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from ICICI Bank, a major Indian bank. Title: \\\"Best SIP to Invest in India | How to Choose the Best SIP Plan | ICICI Bank\\\". Likely a blog article giving advice on SIP (Systematic Investment Plan) selection. That seems relevant. The excerpt is generic marketing content, but likely the page contains advice. The page is from a reputable bank, likely has author or organization (ICICI Bank). So label \\\"ok\\\". Reason: official bank blog providing SIP advice.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030502,\"ec_transfer_params\":null,\"id\":\"chatcmpl-301bf254-9a11-4784-ba61-56a6cdc06282\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":648,\"completion_tokens\":169,\"total_tokens\":817,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.140785217285156}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:28:25.439764+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:28:25 GMT"
+  },
+  "key": "95cc0de21d41780972d381d88910f3500514bbe55dc57204594d673f8a4a21d4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

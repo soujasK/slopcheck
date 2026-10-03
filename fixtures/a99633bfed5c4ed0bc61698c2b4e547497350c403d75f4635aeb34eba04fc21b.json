@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a user-submitted complaint page on a consumer dispute portal rather than an authoritative or helpful guide answering the query.\\\"}\",\n            \"thoughtSignature\": \"Ev4DCvsDAWkUfRMBnN6CdOxgt/CIFgEQWRva8G+wIHmPGJfrNTFSRxWWWgikXD3EjYTHocNbk3hlHg+Pt2cx6zayD6nwdhnMYacP+DfnMPBJxysKVL8BjwRgnBLO+ldw2MLtmHQ6SwiZljc6KSNx45zYlXe9jCgM+4+hvYeoHDyDNacySuObrirM9l+uVFHqEjak5lW9rM9ttT+hmHZ7vN41eVsT4VUbuFRmA3LX3BFE69LNeHIaLdW0QZlfedF10T8YGBDyzcsW6VuXRNPdgSfG/1ytrRvcBUD3k4Ls4+RcmDgZAB7W/oQX1xDABqI250IYJ5LNCdhXkKrlfsTZ/9szNTXTKymvBifKkGrFIgI/TIPeJmojlC8xUXV5/beAFd4/v1286SJ+o1IEXgHNHWDblz+Ybhp2VccyYzvysDtbXlF0dnr4hjGtswwBcYpZ3ynwPsMCRfmJts8QtbSod4Ijmm8ukYkHdh8/CiphRWoQwX+ZOV0Tpks6GJxTdsND0V/g21RKkTBjd7wQQ4/oxWbeG8zNIrjAhoTRWuc2+ENRJJtrHmjul/mN00r7dYhi+Bv7kPeyKvrGcsn6oD+3tz+iFl2u/E2dGG/yj/HS4Hyo12vjdtYo/V8ZKv3ZYtQAPafYp2jrWnj5F08pLklLZCY+YHCPDwT6hQpI2BoDfSdj\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 658,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 775,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 658\n      }\n    ],\n    \"thoughtsTokenCount\": 82,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"wObAaufjGuijqfkPioqc0Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:28:05.169959+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 11:28:03 GMT"
+  },
+  "key": "a99633bfed5c4ed0bc61698c2b4e547497350c403d75f4635aeb34eba04fc21b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Aflac’s official page compares term and whole life insurance, directly addressing the value of term insurance.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"is term insurance worth it\\\". The page is Aflac's term vs whole life insurance resource. Likely a marketing page comparing term and whole life, possibly includes pros/cons, may discuss whether term is worth it. It is from Aflac, an insurance company, official source. It likely has some marketing but also informational content. The query is about whether term insurance is worth it. The page likely answers that by comparing term vs whole life, discussing benefits. It is an official corporate site, with identifiable organization. So label \\\"ok\\\". Reason: official insurer site provides comparative info.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"is term insurance worth it\\\". The page is Aflac's term vs whole life insurance resource. Likely a marketing page comparing term and whole life, possibly includes pros/cons, may discuss whether term is worth it. It is from Aflac, an insurance company, official source. It likely has some marketing but also informational content. The query is about whether term insurance is worth it. The page likely answers that by comparing term vs whole life, discussing benefits. It is an official corporate site, with identifiable organization. So label \\\"ok\\\". Reason: official insurer site provides comparative info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027180,\"ec_transfer_params\":null,\"id\":\"chatcmpl-91e5b31f-d29d-47a9-a4bf-41a6f73ce6f7\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":631,\"completion_tokens\":178,\"total_tokens\":809,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.21351623535156}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:03.567395+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:33:01 GMT"
+  },
+  "key": "9ca8dc67bfce6fd8f596b2d4411bcfd61148f7fb34d60fb6aa92e82f19edb04f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

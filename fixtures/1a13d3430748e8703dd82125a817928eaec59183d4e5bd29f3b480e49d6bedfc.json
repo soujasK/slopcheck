@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an educational guide published by an identifiable finance training organisation that directly addresses investing with small amounts.\\\"}\",\n            \"thoughtSignature\": \"Eu0ECuoEAWkUfROatpNWa/65y2/jj6bQVdzqbyvdMxEEHnaKpO91B83Rm/BqAoMQPM2zSqO3ehnZ7jnxBlmLw6/8mb7HShzme9+PqXfrFuWV/BPO/1WMcKsOcGftcT24Jf8atvRslVV57+dL47unikOiru1Dh7QJsWk6h/XzPqJIZp8fLVCmS92KMHHkcDxdNbh6s8D5pvKYrGYW+LmjfCbp5d48+jWIuDUqy22vY53QXeRPMjidL4qP4R7Rbbw36ANiUBSD3L+zs0JCOu/QqegfMuiDl5dWMZ5BgrD8L9vCF6iFJtuHtCiHqgCE0JBPrBJRKTHKwaAZDu5Fs4hsYkYdD8Aicp+Hc6Wd+7v8DgXzTXTJATpi0BKUHlx+tAzNr7DVh/clKjLSfBpR5d/C4SFRQVBgQuYi+vKrdBQ+zy4Dv72ixsU12C1OfZB9iTc3l9WXzPEIz595D1VJGQg5QD9rdR1tAv3eXNMGEgtXuhr+W/8JuveZHwqHr8yyOLsCr8z7Tee5o0seI8RLNwgVH3glvY/ezvTDZdbhpvba7ShJe47fDj2h8pi0anLYDQRZLFnTU4DWxTfT5wD/X9Vy0NJU8QLtjwvab8+GDZRGwqvgpgLLUD9P2yDSh4nOTPiaJH1WsyeyZwYnMeFFg3io+3Cza+Km2oP+pzuiRQ54WdDM8IV3VbijEGXJeCoxF0aXjQQ7BkeTO7C1axeYHNMZzCenDVN7s8t2nCCAsp3eEM0jT2yOX2FkAFTKBNV/otdgdx3CZ/imaiOGvdmY27Ul52wQ0sqmghJWRvAy4Bm8ga3bT7FPeBtMfUA/gkMXxyxF\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 632,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 776,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 632\n      }\n    ],\n    \"thoughtsTokenCount\": 112,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"avPAavjYLZmwg8UPp_H2yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:21.203089+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 12:22:21 GMT"
+  },
+  "key": "1a13d3430748e8703dd82125a817928eaec59183d4e5bd29f3b480e49d6bedfc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}

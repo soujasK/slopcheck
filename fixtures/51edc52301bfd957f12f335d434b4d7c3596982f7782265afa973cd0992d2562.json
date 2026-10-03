@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Financial Express article directly compares the old and new tax regimes for salaried individuals and is authored by a recognized news organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"old vs new tax regime which is better for salaried\\\". The page title suggests it's about old vs new tax regime in 2026, with calculations, which saves more tax. Likely an article from Financial Express, a reputable news outlet. The excerpt is garbled but indicates news site. Likely has content answering the query. It likely has identifiable organization (Financial Express). So label \\\"ok\\\". Reason: article from reputable news outlet discussing old vs new tax regime and provides analysis.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"old vs new tax regime which is better for salaried\\\". The page title suggests it's about old vs new tax regime in 2026, with calculations, which saves more tax. Likely an article from Financial Express, a reputable news outlet. The excerpt is garbled but indicates news site. Likely has content answering the query. It likely has identifiable organization (Financial Express). So label \\\"ok\\\". Reason: article from reputable news outlet discussing old vs new tax regime and provides analysis.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030238,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d8e9c152-4648-464d-8a0a-f386cb1da3ff\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":681,\"completion_tokens\":162,\"total_tokens\":843,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.71350860595703}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:24:00.135854+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:24:00 GMT"
+  },
+  "key": "51edc52301bfd957f12f335d434b4d7c3596982f7782265afa973cd0992d2562",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

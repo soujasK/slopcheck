@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The HowToGeek article provides specific Windows 11 performance tips and includes a named author, indicating a reliable, answer-focused source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page is from HowToGeek, titled \\\"These 5 Hidden Windows 11 Settings Instantly Made My PC Faster\\\". Likely provides tips to speed up Windows 11. It has author name, organization (HowToGeek). That's a reputable tech site. So it's ok. The page is likely a genuine article with tips, not just affiliate. So label ok.\\n\\nProvide reason: article from HowToGeek with author gives concrete Windows 11 speed tips.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to speed up a slow windows 11 laptop\\\". The page is from HowToGeek, titled \\\"These 5 Hidden Windows 11 Settings Instantly Made My PC Faster\\\". Likely provides tips to speed up Windows 11. It has author name, organization (HowToGeek). That's a reputable tech site. So it's ok. The page is likely a genuine article with tips, not just affiliate. So label ok.\\n\\nProvide reason: article from HowToGeek with author gives concrete Windows 11 speed tips.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791030144,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2593d711-dd7a-49e0-9627-6cc588677b37\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":652,\"completion_tokens\":166,\"total_tokens\":818,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.063514709472656}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T12:22:26.810107+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 12:22:26 GMT"
+  },
+  "key": "80a75cb62c4c383fd7841777911d418ea0ead29841dc487651b6219281d48a4e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

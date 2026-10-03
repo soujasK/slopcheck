@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a review article from All Around Kitchens with an identified editor, directly addressing the best air fryers for a family.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best air fryer for a small family\\\". The page title: \\\"Best Air Fryers For A Family - 2026 Reviews - All Around Kitchens\\\". It seems to be a review article, likely includes recommendations. The excerpt shows \\\"Reviews Best Air Fryers For A Family – 2026 Reviews By All Around Kitchens Editor September 5, 2026\\\". It appears to be a genuine review article, with an editor named. Likely an organization (All Around Kitchens). Not obviously affiliate-only; could be product roundup but with editorial content. The question: is it \\\"ok\\\"? The page seems to answer the query (best air fryer for a small family). It has identifiable organization and author. So label \\\"ok\\\". Reason: provides review with author/editor.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best air fryer for a small family\\\". The page title: \\\"Best Air Fryers For A Family - 2026 Reviews - All Around Kitchens\\\". It seems to be a review article, likely includes recommendations. The excerpt shows \\\"Reviews Best Air Fryers For A Family – 2026 Reviews By All Around Kitchens Editor September 5, 2026\\\". It appears to be a genuine review article, with an editor named. Likely an organization (All Around Kitchens). Not obviously affiliate-only; could be product roundup but with editorial content. The question: is it \\\"ok\\\"? The page seems to answer the query (best air fryer for a small family). It has identifiable organization and author. So label \\\"ok\\\". Reason: provides review with author/editor.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791027126,\"ec_transfer_params\":null,\"id\":\"chatcmpl-efcd82bd-05c9-4e9b-b2c2-a3647a637e91\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":646,\"completion_tokens\":215,\"total_tokens\":861,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":35.21351623535156}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:32:12.674999+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 11:32:10 GMT"
+  },
+  "key": "8a85ee54e06899f5fad895f48597403f4d1f806b70cdbf074f4fc1d31778a80c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

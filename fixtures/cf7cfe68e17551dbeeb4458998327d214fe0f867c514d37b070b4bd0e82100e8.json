@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"unsure\\\",\\n  \\\"reason\\\": \\\"The page is a government staff directory for Revenue Officers (ROs) and is completely irrelevant to water purifiers.\\\"\\n}\",\n            \"thoughtSignature\": \"EsQKCsEKAWkUfRPuxToB2bYQHmT8V/FEEkzntvqpZFLpdzXfa+YZv7lbVxubqFTJDUW7N4pw7U0oWSVIkCFop8OgAA1V5j/s6Z97YWktCpXEfEYCUMq5Z1q5XAXCUAUpQiWiD7Wmfgmkye9kNh15Z5QveV0Icu9IZkrUBImtcoU+xVka5+ya8z1sAjqIC8FPtbsG3fucELHAwRJ4XZ014xwwQgsRsR2RcCWibNqjGgnzDdtnBNXRL4fx7tabm9au0+WvfZKviRMvHxyY4fS7BVNQylev3UqWfph5yotJ1PLYoyoCD3W45wQJuBvksF4aFgxzyIOvkuuqpn6gX8cbGWTqdqAIztJM6O8zvEpNU4WNzgesZW6rBfwrsEEqLrOr1JW9FjwiH9GGSIgXL/aTMneUCqBM2eLz+Ulmojvn4MCi0yStdGjC17eqNOHthyIA/LF/YeCHhUab7fjtp/ljtPnWrMMD/JblgwG+flRpzcwWOhFczq6Yku4vB9iTpKKRxLpj0qZ/E2kY7cadmSP1w4tcY3kuuIM9LQlrw9V105W4uzKjiHc4HAtyjtwZ84yIyBfsTDk5c+RjqhLuGd4ikLnT9tTsz7/dM1oW6WG6ppbSTvBvhoEeKFFvWqiGXjjgnsnz3guuhp3kZ5HJjp3jkNY0+Op7eY4Po2bgR4tGbtd4ow8QNSLPvwPNkpRGWyfqqjI/p/GgKBXKu9kePXDd3VZ3wcwp2PnUmv/3yYz6L82S3fp/mKgzKY73XQFHBnpeOuiPhH7mtbcFeLlQZ+4edpBq/rF7GP5vZg2hn51cIz9QJY2aF/1w+1r0a5ZbujPENP0SsztoFFWh9xbIHjEiyeINYXDLqvIvW3Ro3m1n8eGoVAUfFjyOs8lyEHSU0Rm/uw3FkIWRVN34LCOQ3IhhWiyUDLYRcSl/yCfp4gPg66kZr2gqt19dPkhCAXzPmTpqcJbG9iFqu6g1MB/GcTKAeZWqH8vTaa6Nz/6pRXqOeHOd7/VEsoT0dyvgPrOUqMKxyUNO66JGIziucBuNPwwp7UXclEX0mJyyGL1/sPcNnBYT0sHPB79bmu7kwKU2N0OuUZefDspS0d58WeDOpnwYLcrsArefjSe0FUOpaD/wS9MDizLBVtyBYK5VsaZGeBcs3bS5HpDBu/nvENPHcdd0Vrwxd9ZLDGwxFv9OMWnyqD4m4YsyOxtYC+dmD8zY2MpaOyTPHsYADbW1ITnYmRzVCVhHN1PFAffLwznFsxhEMS31+sCn1imIz0jDT0XHnRUjIb05OaElMroSX15dNsHgReXPl1MQi3V9SvAtxk0ySzdWCnE6qqGnMJAW22W90A0pRGr5TWD4YBcl8RHeFjQxfrrCqwxQVM+4nNfKylLskfvsq/269OnelSXDkUPT8eeU6t+F0OmH8ntNxcRXRAlkjXFG9A8MZwUzPFYx0jdsm9WQTrhctQPwfzYdNISNuAQH2Txoyr3LS1ixVfWflE78pK2uPnIH1GJlv3TlXuDX0J0wHGRZ3XmALIKioajhedh1rvFq5VyCGB24VhpNNTB7IrdsE+Hy4bFzjybhHyThmj2Pe1P4U6Fy18WqFoX6geuR5PaIImzwNNTXe3jp3B0ltqfbPHvNr6otlCnVzfZTth70vOpxeeUjfCenLfQkYAgTr4Ub9FxJ+rQTHD8n6wsZuo5e4wSlUtzYy5Qb8n7JtVYH+ixwDugzW4+MFc69VjmeFgeMMDZRmvKLFmWovIe1FQ8lNARXyE5BUioW/aWDX8ziScZbg2QxT5IdS1cCkg10d65N+w7a0A==\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 625,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 930,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 625\n      }\n    ],\n    \"thoughtsTokenCount\": 264,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.8-flash\",\n  \"responseId\": \"HujAapuXNMf-4-EPjt-6kAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T11:33:55.890950+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 11:33:54 GMT"
+  },
+  "key": "cf7cfe68e17551dbeeb4458998327d214fe0f867c514d37b070b4bd0e82100e8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent"
+}
