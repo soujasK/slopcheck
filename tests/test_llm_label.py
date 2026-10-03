@@ -344,5 +344,50 @@ def test_gemini_daily_quota_raises_quota_exhausted() -> None:
         Recorder(lambda r: httpx.Response(429, json=per_minute)), max_retries=0
     ) as http:
         g = GeminiBackend(http, SecretStr("k"), min_interval=0, sleep=lambda s: None)
-        with pytest.raises(QuotaExhausted, match="kept returning 429"):
+        with pytest.raises(QuotaExhausted, match="kept returning HTTP 429"):
             g.ask("s", "u", attempt=0)
+    overloaded = iter([503, 503, 200])
+
+    def flaky(request: httpx.Request) -> httpx.Response:
+        status = next(overloaded)
+        if status == 503:
+            return httpx.Response(503, json={"error": {"message": "model overloaded"}})
+        return httpx.Response(200, json=gemini_response('{"label": "low", "reason": "x"}'))
+
+    ft = FakeTime()
+    with make_client(Recorder(flaky), max_retries=0) as http:
+        g = GeminiBackend(http, SecretStr("k"), min_interval=0, sleep=ft.sleep, clock=ft.clock)
+        assert parse_reply(g.ask("s", "u", attempt=0).text) == ("low", "x")
+    assert ft.slept == [15.0, 30.0]
+
+
+def test_network_errors_wait_then_resume_or_stop_cleanly() -> None:
+    from slopwatch.llm_label import QuotaExhausted
+
+    calls = iter(["down", "down", "ok"])
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if next(calls) == "down":
+            raise httpx.ConnectError("no route")
+        return httpx.Response(200, json=cf_response('{"label": "ok", "reason": "x"}', 5.0))
+
+    waits: list[float] = []
+    written: list[Label] = []
+    with make_client(Recorder(handler), max_retries=0) as http:
+        backend = CloudflareBackend(http, SecretStr("t"), SecretStr("a"))
+        label_items([item(0)], backend, GUIDE, done=set(), write=written.append, sleep=waits.append)
+    assert waits == [15.0, 30.0] and [w.label for w in written] == ["ok"]
+
+    def dead(request: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError("no route")
+
+    with make_client(Recorder(dead), max_retries=0) as http:
+        backend = CloudflareBackend(http, SecretStr("t"), SecretStr("a"))
+        with pytest.raises(QuotaExhausted, match="cloudflare unavailable"):
+            label_items([item(1)], backend, GUIDE, done=set(), write=written.append,
+                        sleep=lambda s: None)  # fmt: skip
+    bad_request = Recorder(lambda r: httpx.Response(401, json={}))
+    with make_client(bad_request, max_retries=0) as http:
+        backend = CloudflareBackend(http, SecretStr("t"), SecretStr("a"))
+        with pytest.raises(Exception, match="Cloudflare HTTP 401"):
+            label_items([item(2)], backend, GUIDE, done=set(), write=written.append)

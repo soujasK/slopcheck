@@ -29,7 +29,7 @@ from typing import Any, Literal, Protocol
 
 from pydantic import SecretStr
 
-from slopwatch.cache import CachedResponse, CacheMiss
+from slopwatch.cache import CachedResponse
 from slopwatch.http import HttpClient, HttpError
 from slopwatch.label import LabelItem
 from slopwatch.models import Label, LabelValue
@@ -131,6 +131,8 @@ class QuotaExhausted(RuntimeError):
 
 
 RATE_LIMIT_WAITS = (15.0, 30.0, 60.0, 60.0, 120.0, 120.0)  # seconds, on HTTP 429
+# Rate limit and overload answers: wait and retry instead of failing the run.
+TRANSIENT_STATUSES = frozenset({429, 500, 502, 503, 504})
 
 
 class GeminiBackend:
@@ -162,15 +164,17 @@ class GeminiBackend:
                 self._sleep(self.min_interval - gap)
             self._last = self._clock()
             resp = self.http.post_json(url, payload, headers=headers)
-            if resp.status != 429:
+            if resp.status not in TRANSIENT_STATUSES:
                 return resp
-            if "per day" in resp.text.lower() or "perday" in resp.text.lower():
+            if resp.status == 429 and (
+                "per day" in resp.text.lower() or "perday" in resp.text.lower()
+            ):
                 raise QuotaExhausted("Gemini daily quota exhausted; resume after reset")
             if wait is None:
                 break
-            log.info("Gemini 429; waiting %.0fs", wait)
+            log.info("Gemini HTTP %d; waiting %.0fs", resp.status, wait)
             self._sleep(wait)
-        raise QuotaExhausted("Gemini kept returning 429; resume later")
+        raise QuotaExhausted(f"Gemini kept returning HTTP {resp.status}; resume later")
 
     def ask(self, system: str, user: str, attempt: int) -> Reply:
         contents: list[dict[str, Any]] = [{"role": "user", "parts": [{"text": user}]}]
@@ -294,6 +298,24 @@ class RunStats:
     stopped_for_budget: bool = False
 
 
+def _ask_patiently(
+    backend: Backend, system: str, user: str, attempt: int, sleep: Callable[[float], None]
+) -> Reply:
+    """Network errors and transient HTTP answers wait and retry; if the provider
+    stays unavailable the run stops cleanly (QuotaExhausted) and can resume."""
+    for wait in (*RATE_LIMIT_WAITS, None):
+        try:
+            return backend.ask(system, user, attempt=attempt)
+        except HttpError as exc:
+            if exc.status is not None and exc.status not in TRANSIENT_STATUSES:
+                raise
+            if wait is None:
+                raise QuotaExhausted(f"{backend.name} unavailable: {exc}") from None
+            log.info("%s unavailable (%s); waiting %.0fs", backend.name, exc, wait)
+            sleep(wait)
+    raise AssertionError("unreachable")  # pragma: no cover
+
+
 def label_items(
     items: list[LabelItem],
     backend: Backend,
@@ -304,6 +326,7 @@ def label_items(
     neuron_budget: float | None = None,
     now: Callable[[], datetime] = lambda: datetime.now(UTC),
     stats: RunStats | None = None,
+    sleep: Callable[[float], None] = time.sleep,
 ) -> RunStats:
     """Label items not in ``done``. Stops before exceeding ``neuron_budget``.
     Pass ``stats`` to keep partial counts if the run is interrupted."""
@@ -317,10 +340,7 @@ def label_items(
             break
         parsed: tuple[LabelValue, str] | None = None
         for attempt in range(MAX_ATTEMPTS):
-            try:
-                reply = backend.ask(system, item_prompt(item), attempt=attempt)
-            except CacheMiss:
-                raise
+            reply = _ask_patiently(backend, system, item_prompt(item), attempt, sleep)
             stats.models.add(reply.model)
             stats.input_tokens += 0 if reply.from_cache else reply.input_tokens
             stats.output_tokens += 0 if reply.from_cache else reply.output_tokens
