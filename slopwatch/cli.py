@@ -28,11 +28,18 @@ from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode,
 from slopwatch.evaluate import evaluate as evaluate_labels
 from slopwatch.evaluate import render_markdown
 from slopwatch.http import HttpClient, HttpError, user_agent
-from slopwatch.label import draw_sample, load_labels, load_sample, run_labeler
+from slopwatch.label import (
+    draw_sample,
+    load_labels,
+    load_sample,
+    recheck_items,
+    run_labeler,
+    self_agreement,
+)
 from slopwatch.models import Page, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
 from slopwatch.queries import Job, PlanError, load_plan
-from slopwatch.score import load_rubric, score_all
+from slopwatch.score import load_rubric, score_all, with_near_dups
 from slopwatch.serp import ProjectLedger, SerpClient
 from slopwatch.signals import load_lists
 from slopwatch.store import PAGES, SCORES, SERP_META, SERPS, SIGNALS, read_jsonl, write_jsonl
@@ -356,6 +363,7 @@ def fetch(
 
 SAMPLE = "sample.jsonl"
 LABELS = "labels.jsonl"
+RECHECK = "recheck.jsonl"
 
 
 def _labels_dir() -> Path:
@@ -394,6 +402,10 @@ def score(cache_mode: CacheModeOpt = None) -> None:
 def label(
     n: Annotated[int, typer.Option("--n", min=1, help="Sample size.")] = 200,
     seed: Annotated[int, typer.Option("--seed", help="Sampling seed.")] = 7,
+    recheck: Annotated[
+        int | None,
+        typer.Option("--recheck", min=1, help="Blindly re-label N labeled items (consistency)."),
+    ] = None,
 ) -> None:
     """Draw the label sample (first run), then label it one page at a time.
 
@@ -418,9 +430,16 @@ def label(
         console.print("label: commit labels/sample.jsonl, then run `slopwatch label` again")
         return
     items = load_sample(sample_path)
+    target = labels_dir / LABELS
+    if recheck is not None:
+        items = recheck_items(items, load_labels(target), recheck)
+        target = labels_dir / RECHECK
+        console.print(
+            f"label: re-check pass over {len(items)} items (your first labels are hidden)"
+        )
     run_labeler(
         items,
-        labels_dir / LABELS,
+        target,
         getch=typer.getchar,
         prompt=lambda text: str(typer.prompt(text, default="", show_default=False)),
         echo=console.print,
@@ -444,12 +463,25 @@ def evaluate(
     scores = {s.url: s for s in score_all(rows, records, rubric)}
     items = load_sample(_labels_dir() / SAMPLE)
     labels = load_labels(_labels_dir() / LABELS)
-    report = evaluate_labels(items, labels, scores, split=split)  # type: ignore[arg-type]
+    report = evaluate_labels(
+        items,
+        labels,
+        scores,
+        split=split,  # type: ignore[arg-type]
+        signals=with_near_dups(rows, records),
+    )
     digest = hashlib.sha256(rubric_path.read_bytes()).hexdigest()[:12]
     text = (
         f"<!-- rubric v{rubric.version} ({rubric.status}) sha256:{digest}; "
         f"{len(labels)} labels -->\n" + render_markdown(report)
     )
+    n_twice, kappa = self_agreement(labels, load_labels(_labels_dir() / RECHECK))
+    if n_twice:
+        shown = "undefined" if kappa is None else f"{kappa:.2f}"
+        text += (
+            f"\nLabeler self-agreement (blind re-label of {n_twice} items): "
+            f"Cohen's kappa = {shown}\n"
+        )
     console.print(text, markup=False)
     if out is not None:
         with out.open("a", encoding="utf-8", newline="\n") as fh:

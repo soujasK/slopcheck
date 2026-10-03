@@ -20,6 +20,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict
 
 from slopwatch.models import Category, Engine, Label, LabelValue, Locale, Page, Query, SerpRow
+from slopwatch.stats import cohen_kappa
 from slopwatch.store import read_jsonl
 
 Split = Literal["dev", "test"]
@@ -120,6 +121,27 @@ def append_label(path: Path, label: Label) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8", newline="\n") as fh:
         fh.write(label.model_dump_json() + "\n")
+
+
+RECHECK_SEED = 11
+
+
+def recheck_items(
+    items: list[LabelItem], labels: dict[tuple[str, str], Label], n: int, seed: int = RECHECK_SEED
+) -> list[LabelItem]:
+    """A seeded subset of already-labeled items to label again, blind, later."""
+    labeled = [it for it in items if it.key in labels]
+    rng = random.Random(seed)  # noqa: S311 - reproducible sampling, not crypto
+    return rng.sample(labeled, min(n, len(labeled)))
+
+
+def self_agreement(
+    first: dict[tuple[str, str], Label], second: dict[tuple[str, str], Label]
+) -> tuple[int, float | None]:
+    """(n items labeled twice, Cohen's kappa between the two passes)."""
+    keys = sorted(first.keys() & second.keys())
+    kappa = cohen_kappa([first[k].label for k in keys], [second[k].label for k in keys])
+    return len(keys), kappa
 
 
 KEYS: dict[str, LabelValue] = {"o": "ok", "l": "low", "u": "unsure"}

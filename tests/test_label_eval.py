@@ -13,9 +13,11 @@ from slopwatch.label import (
     draw_sample,
     load_labels,
     load_sample,
+    recheck_items,
     run_labeler,
+    self_agreement,
 )
-from slopwatch.models import Label, Page, Query, Score, SerpRow
+from slopwatch.models import Label, Page, Query, Score, SerpRow, Signals
 from slopwatch.store import write_jsonl
 
 QUERIES = {
@@ -154,3 +156,71 @@ def test_evaluate_metrics_confusion_and_errors() -> None:
     empty = evaluate(items, {}, scores, split="test")
     assert (empty.n, empty.precision_low, empty.f1_low) == (0, 0.0, 0.0)
     assert "None." in render_markdown(empty)
+
+
+def _sig(**kw: object) -> Signals:
+    base: dict[str, object] = {
+        "affiliate_links": 0, "affiliate_density": 0.0, "outbound_links": 10,
+        "commerce_ratio": 0.0, "listicle": False, "ad_scripts": 0, "has_author": True,
+        "has_date": True, "has_about_contact": True, "text_len": 5000,
+        "boilerplate_ratio": 0.2,
+    }  # fmt: skip
+    base.update(kw)
+    return Signals.model_validate(base)
+
+
+def test_evaluate_reports_intervals_and_baselines() -> None:
+    items = _items()
+    t = datetime(2026, 10, 4, tzinfo=UTC)
+    labels = {
+        it.key: Label(url=it.url, query_id="q", label=lab, labeled_at=t)
+        for it, lab in zip(items, ["low", "ok", "low", "ok"], strict=True)
+    }
+    scores = {
+        items[0].url: _score(items[0].url, 0.9, "low"),
+        items[1].url: _score(items[1].url, 0.1, "ok"),
+        items[2].url: _score(items[2].url, 0.8, "low"),
+        items[3].url: _score(items[3].url, 0.2, "ok"),
+    }
+    signals = {
+        items[0].url: _sig(affiliate_links=3),
+        items[1].url: _sig(affiliate_links=1),  # affiliate baseline false positive
+        items[2].url: _sig(has_author=False, has_date=False),
+        items[3].url: _sig(),
+    }
+    rep = evaluate(items, labels, scores, split="all", signals=signals)
+    assert (rep.precision_low, rep.recall_low, rep.specificity, rep.prevalence_low) == (
+        1.0, 1.0, 1.0, 0.5,
+    )  # fmt: skip
+    assert rep.precision_ci[0] < 1.0 and rep.precision_ci[1] == 1.0  # n=2 -> wide interval
+    by_name = {b.name: b for b in rep.baselines}
+    aff = by_name["any affiliate link"]
+    assert (aff.flagged, aff.precision_low, aff.recall_low) == (2, 0.5, 0.5)
+    anon = by_name["no author and no date"]
+    assert (anon.precision_low, anon.recall_low) == (1.0, 0.5)
+    rnd = by_name["random (same flag rate)"]
+    assert (rnd.precision_low, rnd.recall_low) == (0.5, 0.5)
+    md = render_markdown(rep)
+    assert "95% CI (Wilson)" in md and "| **SlopWatch rubric** | 2 |" in md
+    assert "| any affiliate link | 2 | 0.50 | 0.50 | 0.50 |" in md
+
+
+def test_recheck_sample_and_self_agreement() -> None:
+    items = _items()
+    t = datetime(2026, 10, 4, tzinfo=UTC)
+    first = {
+        it.key: Label(url=it.url, query_id="q", label=lab, labeled_at=t)
+        for it, lab in zip(items[:3], ["low", "ok", "low"], strict=True)
+    }
+    pick = recheck_items(items, first, n=2)
+    assert len(pick) == 2 and all(it.key in first for it in pick)
+    assert pick == recheck_items(items, first, n=2)
+    assert len(recheck_items(items, first, n=10)) == 3
+    second = {k: v for k, v in first.items()}
+    assert self_agreement(first, second) == (3, 1.0)
+    flipped = dict(second)
+    k = items[1].key
+    flipped[k] = Label(url=items[1].url, query_id="q", label="low", labeled_at=t)
+    n, kappa = self_agreement(first, flipped)
+    assert n == 3 and kappa is not None and kappa < 1.0
+    assert self_agreement(first, {}) == (0, None)

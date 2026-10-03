@@ -126,6 +126,14 @@ class EvalError(_Frozen):
     reasons: list[str]
 
 
+class BaselineResult(_Frozen):
+    name: str
+    flagged: int
+    precision_low: float
+    recall_low: float
+    f1_low: float
+
+
 class EvalReport(_Frozen):
     split: Literal["dev", "test", "all"]
     n: int
@@ -135,3 +143,9 @@ class EvalReport(_Frozen):
     # confusion[label][band] = count
     confusion: dict[str, dict[str, int]]
     errors: list[EvalError]
+    # 95% Wilson intervals (low, high)
+    precision_ci: tuple[float, float] = (0.0, 1.0)
+    recall_ci: tuple[float, float] = (0.0, 1.0)
+    specificity: float = 0.0  # true ok correctly not flagged low
+    prevalence_low: float = 0.0  # share of labeled items that are low
+    baselines: list[BaselineResult] = []

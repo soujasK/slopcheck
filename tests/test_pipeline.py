@@ -336,6 +336,15 @@ def test_score_label_evaluate_end_to_end(
     assert ev.exit_code == 0, ev.output
     body = out.read_text(encoding="utf-8")
     assert "sha256:" in body and "Split: all (n = 20" in body and "| Precision |" in body
+    assert "Baselines on the same items" in body and "any affiliate link" in body
+
+    keys2 = iter(["l", "o"] * 3)
+    monkeypatch.setattr("typer.getchar", lambda: next(keys2))
+    rechecked = invoke("label", "--recheck", "5")
+    assert rechecked.exit_code == 0 and "re-check pass over 5 items" in rechecked.output
+    assert (tmp_path / "labels" / "recheck.jsonl").exists()
+    ev2 = invoke("evaluate", "--split", "all")
+    assert "Labeler self-agreement (blind re-label of 5 items)" in ev2.output
 
 
 def test_unexpected_fetch_error_is_recorded_not_fatal(monkeypatch: pytest.MonkeyPatch) -> None:

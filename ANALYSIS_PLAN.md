@@ -1,0 +1,83 @@
+# Analysis plan (pre-registered)
+
+Written and committed **before any labeling and before any score of the
+measurement data was looked at**. The git history is the evidence. Every number
+in the final report comes from the procedures below; deviations, if any, are
+listed in the report with the reason.
+
+## 1. Data
+
+- SERPs: `data/serps.jsonl` (100 searches, 822 organic rows, collected 2026-10-03;
+  see SERPAPI_USAGE.md).
+- Pages: `data/pages.jsonl`, `data/signals.jsonl` (482 of 681 unique pages scored;
+  every other row carries an unscored reason).
+- Scores: `slopwatch score` with the frozen `data/rubric.yaml`.
+
+## 2. Validation of the scorer
+
+- **Sample**: 200 (url, query) items, drawn by `slopwatch label --n 200 --seed 7`,
+  stratified by category x engine x locale with proportional allocation, split
+  into dev (100) and test (100) alternately within each stratum. Committed before
+  labeling.
+- **Labels**: one labeler following LABELING.md (frozen before labeling). The
+  scorer's output is never shown during labeling.
+- **Primary metric**: precision for the class "low" (predicted low = band `low`)
+  on the **test** split, with a 95% Wilson interval. Secondary: recall, F1,
+  specificity, confusion matrix.
+- **Gate**: if test precision < 0.70, stop and decide (fix signals or fall back),
+  as set in the project brief. The number is reported either way.
+- **Tuning**: the rubric may be changed only using the dev split, each change in
+  its own commit. The test split is evaluated once; `slopwatch evaluate` stamps
+  the rubric hash into the output so a later change is detectable.
+- **Baselines** on the same items: "any affiliate link", "no author and no
+  date", "'best X' listicle", and random flagging at the scorer's rate. The
+  rubric is claimed useful only if its test F1 exceeds every baseline's.
+- **Labeler consistency**: about a day after labeling, 30 labeled items (seed 11)
+  are re-labeled blind with `slopwatch label --recheck 30`; Cohen's kappa
+  between the two passes is reported. If a second person labels a subset,
+  inter-rater kappa is reported too.
+- `unsure` labels are excluded from the metrics and their count is reported.
+
+## 3. Observatory measurements
+
+For each group, the report gives the share of **scored** rows in the `low` band,
+together with:
+
+- `n` scored rows and **coverage** (scored / all rows),
+- a **95% cluster-bootstrap interval** (2000 resamples, seed 2026, clusters =
+  queries),
+- **bounds** if every unscored row were ok / low,
+- a **prevalence-corrected** share (Rogan-Gladen) using the test-split
+  sensitivity (recall) and specificity, shown next to the raw share.
+
+Groups, fixed in advance:
+
+1. India, by engine (Google, DuckDuckGo, Yahoo) and by category.
+2. India vs US on Google, on the 20 locale-neutral queries only.
+3. Low share by rank position (1-10), India Google.
+4. Share of results that are platform pages (video, forum, social, shop), if the
+   platform class is adopted in LABELING.md.
+
+Comparisons (paired by query, same queries on both sides; difference in
+per-query low share with a 95% paired-bootstrap interval and a two-sided
+sign-flip permutation p-value, 2000 resamples, seed 2026):
+
+- Google IN vs DuckDuckGo IN; Google IN vs Yahoo IN (20 shared queries).
+- Google IN vs Google US (20 locale-neutral queries).
+
+With 20 pairs, only large differences can be detected; a non-significant
+difference is reported as "no detectable difference", not as "no difference".
+DuckDuckGo and Yahoo are reported as the "Bing family" (shared index).
+
+## 4. Agent before/after demo
+
+8 questions fixed in `data/demo_questions.yaml` before running the demo. For
+each: the share of cited sources in the `low` band with raw top-5 vs filtered
+top-5, and whether the answer changed. All 8 are reported; none are dropped.
+
+## 5. What will not be claimed
+
+- No per-site "spam" verdicts; examples show only the signals that fired.
+- No claim about trends (one snapshot).
+- No claim about how humans experience these SERPs (we measure what an agent
+  retrieves via SerpApi).
