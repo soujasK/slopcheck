@@ -9,7 +9,8 @@ from pydantic import BaseModel, ConfigDict, Field
 
 EXCERPT_MAX_CHARS = 300
 
-Engine = Literal["google", "bing"]
+# bing is kept for the recorded probes; SerpApi Bing returned unusable India results.
+Engine = Literal["google", "bing", "duckduckgo"]
 Locale = Literal["IN", "US"]
 Category = Literal["health", "personal_finance", "product_reviews", "tech_howto"]
 Band = Literal["ok", "mixed", "low"]

@@ -1,0 +1,19 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"search_metadata\": {\n    \"id\": \"6ac0942a1c38821ed22fdc61\",\n    \"status\": \"Success\",\n    \"json_endpoint\": \"https://serpapi.com/searches/fXKeu5i9Y-wzU7GxTWnl8z28ekwJxVCKR-JiuY6-3XM/6ac0942a1c38821ed22fdc61.json\",\n    \"markdown_endpoint\": \"https://serpapi.com/searches/fXKeu5i9Y-wzU7GxTWnl8z28ekwJxVCKR-JiuY6-3XM/6ac0942a1c38821ed22fdc61.md\",\n    \"created_at\": \"2026-10-03 05:35:38 UTC\",\n    \"processed_at\": \"2026-10-03 05:35:38 UTC\",\n    \"bing_url\": \"https://www.bing.com/search?q=normal+blood+sugar+level+after+eating+for+diabetics&cc=IN\",\n    \"raw_html_file\": \"https://serpapi.com/searches/fXKeu5i9Y-wzU7GxTWnl8z28ekwJxVCKR-JiuY6-3XM/6ac0942a1c38821ed22fdc61.html\",\n    \"total_time_taken\": 10.29\n  },\n  \"search_parameters\": {\n    \"q\": \"normal blood sugar level after eating for diabetics\",\n    \"cc\": \"IN\",\n    \"device\": \"desktop\",\n    \"engine\": \"bing\"\n  },\n  \"search_information\": {\n    \"organic_results_state\": \"Fully empty\"\n  },\n  \"error\": \"Bing hasn't returned any results for this query.\"\n}",
+  "cost": 1,
+  "fetched_at": "2026-10-03T05:35:50.892789+00:00",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 03 Oct 2026 05:35:48 GMT"
+  },
+  "key": "e4da10e72ed8e0a43e8049bf68841c9c53d1edd9fbf619b0d0098f51e6aebe94",
+  "method": "GET",
+  "params": {
+    "cc": "IN",
+    "engine": "bing",
+    "q": "normal blood sugar level after eating for diabetics"
+  },
+  "status": 200,
+  "url": "https://serpapi.com/search.json"
+}

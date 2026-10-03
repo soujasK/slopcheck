@@ -21,17 +21,35 @@ the SerpApi account balance (via the free Account API).
 
 ## Engines and parameters
 
-Verified against serpapi.com docs on 2026-10-02.
+Verified against serpapi.com docs on 2026-10-02 (Google, Bing) and 2026-10-03 (DuckDuckGo).
 
 | Engine | Locale | Parameters |
 |---|---|---|
 | `google` | India | `gl=in`, `hl=en`, `google_domain=google.co.in` |
 | `google` | US | `gl=us`, `hl=en`, `google_domain=google.com` |
-| `bing` | India | `mkt=en-IN` (`cc` is not sent: the docs say `cc` and `mkt` are mutually exclusive) |
+| `duckduckgo` | India | `kl=in-en` ([region list](https://serpapi.com/duckduckgo-regions)) |
 
-Only `organic_results` are scored, top 10 by rank. Ads, AI Overviews, answer
-boxes, "People also ask" and other SERP features are recorded as metadata (which
-features were present) and excluded from scoring.
+### Why DuckDuckGo and not Bing
+
+The plan originally used Bing for the second India engine. Before collection,
+probes of SerpApi's `bing` engine for India returned unusable results:
+
+| Probe | Parameters | Result |
+|---|---|---|
+| health-01 | `mkt=en-IN` | no results ("Fully empty") |
+| health-03 | `mkt=en-IN` | 7 results, all about the word "normal" alone (dictionaries, a film) |
+| health-03 | `cc=IN` | no results ("Fully empty") |
+
+The same health-03 query on `duckduckgo` with `kl=in-en` returned 10 relevant
+results including Indian sources, so DuckDuckGo (the third engine in Bevendorff
+et al.) replaced Bing, with the same 20-query subset. The change was made before
+any measurement data was collected; all probes are in the ledger and `fixtures/`.
+
+Only `organic_results` are scored: the top 10 by rank, or fewer when the engine
+returns fewer (Google often shows 8 or 9 organic results next to an AI Overview;
+a second page would double the cost, so the report states the actual n). Ads,
+AI Overviews, answer boxes, "People also ask" and other SERP features are recorded
+as metadata (which features were present) and excluded from scoring.
 
 ## Collection plan (80 credits)
 
@@ -41,7 +59,7 @@ any collection.
 | Step | Queries | Credits |
 |---|---|---|
 | India, Google | all 40 (10 per category) | 40 |
-| India, Bing | 20-query subset | 20 |
+| India, DuckDuckGo | 20-query subset | 20 |
 | US, Google | same 20-query subset | 20 |
 | **Total** | | **80** |
 
@@ -62,4 +80,14 @@ key and spends no credits.
 
 ## Credits spent
 
-Filled in from the ledger after collection.
+| Step | Credits |
+|---|---|
+| Probe: Google India (health-01) | 1 |
+| Probes: Bing India (2 x `mkt=en-IN`, 1 x `cc=IN`), all unusable | 3 |
+| Probe: DuckDuckGo India (health-03) | 1 |
+| Measurement collection | filled in after collection |
+
+The Google probe (health-01/google/IN) and the DuckDuckGo probe
+(health-03/duckduckgo/IN) are both jobs in the plan, so the full collection reuses
+them from the cache: it needs 78 more credits, not 80. The 3 Bing credits bought
+no measurement data.

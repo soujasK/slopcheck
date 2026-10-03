@@ -21,16 +21,19 @@ from pydantic import BaseModel, ConfigDict, field_validator
 from slopwatch.models import Category, Engine, Locale, Query, SerpRow
 from slopwatch.serp import SerpPage
 
-# Locale parameters per engine (serpapi.com docs, checked 2026-10-02). Bing's `cc`
-# and `mkt` are mutually exclusive; `mkt` pins both language and market.
+# Locale parameters per engine (serpapi.com docs, checked 2026-10-02/03). Bing's
+# `cc` and `mkt` are mutually exclusive; `mkt` pins both language and market.
+# DuckDuckGo regions: serpapi.com/duckduckgo-regions (in-en, us-en).
 LOCALE_PARAMS: dict[Locale, dict[Engine, dict[str, str]]] = {
     "IN": {
         "google": {"gl": "in", "hl": "en", "google_domain": "google.co.in"},
         "bing": {"mkt": "en-IN"},
+        "duckduckgo": {"kl": "in-en"},
     },
     "US": {
         "google": {"gl": "us", "hl": "en", "google_domain": "google.com"},
         "bing": {"mkt": "en-US"},
+        "duckduckgo": {"kl": "us-en"},
     },
 }
 

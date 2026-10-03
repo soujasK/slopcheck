@@ -23,16 +23,16 @@ def test_real_query_set_matches_measurement_design() -> None:
         "tech_howto": 10,
     }
     by = Counter((j.query.locale, j.engine) for j in plan.jobs)
-    assert by == {("IN", "google"): 40, ("IN", "bing"): 20, ("US", "google"): 20}
+    assert by == {("IN", "google"): 40, ("IN", "duckduckgo"): 20, ("US", "google"): 20}
     assert plan.credits_needed() == 80
     assert len({(j.query.id, j.query.locale, j.engine) for j in plan.jobs}) == 80
-    # Bing-IN and Google-US run the same seeded subset, 5 per category
-    bing = {j.query.id for j in plan.jobs if j.engine == "bing"}
+    # DuckDuckGo-IN and Google-US run the same seeded subset, 5 per category
+    ddg = {j.query.id for j in plan.jobs if j.engine == "duckduckgo"}
     us = {j.query.id for j in plan.jobs if j.query.locale == "US"}
-    assert bing == us == set(plan.subset_ids)
-    assert set(Counter(i.split("-")[0] for i in bing).values()) == {5}
+    assert ddg == us == set(plan.subset_ids)
+    assert set(Counter(i.split("-")[0] for i in ddg).values()) == {5}
     neutral = {q.id for q in plan.specs if q.locale_neutral}
-    assert bing <= neutral
+    assert ddg <= neutral
 
 
 def test_locale_params() -> None:
@@ -44,6 +44,8 @@ def test_locale_params() -> None:
     }
     assert serp_params("google", "US", "q")["google_domain"] == "google.com"
     assert serp_params("bing", "IN", "q") == {"q": "q", "mkt": "en-IN"}
+    assert serp_params("duckduckgo", "IN", "q") == {"q": "q", "kl": "in-en"}
+    assert serp_params("duckduckgo", "US", "q")["kl"] == "us-en"
 
 
 def _write(tmp_path: Path, body: str) -> Path:
@@ -135,5 +137,5 @@ def test_restrict_to_named_jobs() -> None:
     probe = plan.restrict(["health-01/google/IN"])
     assert [j.key for j in probe.jobs] == ["health-01/google/IN"]
     assert probe.frozen and probe.credits_needed() == 1
-    with pytest.raises(PlanError, match="not in the frozen plan: health-02/bing/IN"):
-        plan.restrict(["health-02/bing/IN"])  # health-02 is not in the Bing subset
+    with pytest.raises(PlanError, match="not in the frozen plan: health-02/duckduckgo/IN"):
+        plan.restrict(["health-02/duckduckgo/IN"])  # not in the subset

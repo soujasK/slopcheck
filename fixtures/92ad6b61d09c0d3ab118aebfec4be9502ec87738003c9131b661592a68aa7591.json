@@ -1,0 +1,19 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"search_metadata\": {\n    \"id\": \"6ac093346c4c0c04559f679d\",\n    \"status\": \"Success\",\n    \"json_endpoint\": \"https://serpapi.com/searches/Uzb19SvxnspPrDNEoWrd7ymYypAS6_8X2HHbElpVDWs/6ac093346c4c0c04559f679d.json\",\n    \"markdown_endpoint\": \"https://serpapi.com/searches/Uzb19SvxnspPrDNEoWrd7ymYypAS6_8X2HHbElpVDWs/6ac093346c4c0c04559f679d.md\",\n    \"created_at\": \"2026-10-03 05:31:32 UTC\",\n    \"processed_at\": \"2026-10-03 05:31:32 UTC\",\n    \"bing_url\": \"https://www.bing.com/search?q=best+medicine+for+acidity+and+gas+without+prescription&mkt=en-IN\",\n    \"raw_html_file\": \"https://serpapi.com/searches/Uzb19SvxnspPrDNEoWrd7ymYypAS6_8X2HHbElpVDWs/6ac093346c4c0c04559f679d.html\",\n    \"total_time_taken\": 15.58\n  },\n  \"search_parameters\": {\n    \"q\": \"best medicine for acidity and gas without prescription\",\n    \"device\": \"desktop\",\n    \"mkt\": \"en-IN\",\n    \"engine\": \"bing\"\n  },\n  \"search_information\": {\n    \"organic_results_state\": \"Fully empty\"\n  },\n  \"error\": \"Bing hasn't returned any results for this query.\"\n}",
+  "cost": 1,
+  "fetched_at": "2026-10-03T05:31:50.225379+00:00",
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "date": "Sat, 03 Oct 2026 05:31:48 GMT"
+  },
+  "key": "92ad6b61d09c0d3ab118aebfec4be9502ec87738003c9131b661592a68aa7591",
+  "method": "GET",
+  "params": {
+    "engine": "bing",
+    "mkt": "en-IN",
+    "q": "best medicine for acidity and gas without prescription"
+  },
+  "status": 200,
+  "url": "https://serpapi.com/search.json"
+}

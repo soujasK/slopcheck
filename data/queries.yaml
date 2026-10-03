@@ -10,7 +10,13 @@
 # PPF/ELSS/SIP, Indian tax regimes, Indian brands such as Dolo 650, Indian
 # product categories such as RO purifiers, dengue, Ayurveda, "indian" diets).
 #
-# Bing (India) and Google (US) run on the same 20-query subset: 5 per category,
+# Engine change (2026-10-03, before any measurement collection): the second India
+# engine was Bing, but SerpApi's Bing engine returned unusable results for India
+# in three probes (mkt=en-IN: empty, then first-word-only junk; cc=IN: empty).
+# It is replaced by DuckDuckGo (kl=in-en), the third engine in Bevendorff et al.
+# The probes are recorded in data/serpapi_ledger.jsonl and fixtures/.
+#
+# DuckDuckGo (India) and Google (US) run on the same 20-query subset: 5 per category,
 # drawn from the locale-neutral pool only with random.Random(seed) over categories
 # and ids in sorted order (slopwatch.queries.select_subset). The ids below are
 # that draw written out for review; loading fails if they ever stop matching the
@@ -37,7 +43,7 @@ plan:
     engines: [google]
     queries: all       # 40 credits
   - locale: IN
-    engines: [bing]
+    engines: [duckduckgo]
     queries: subset    # 20 credits
   - locale: US
     engines: [google]
