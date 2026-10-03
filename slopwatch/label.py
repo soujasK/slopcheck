@@ -70,13 +70,17 @@ def draw_sample(
     *,
     n: int,
     seed: int,
+    exclude: Callable[[str], bool] | None = None,
 ) -> list[LabelItem]:
-    """``queries`` is keyed by (query_id, locale)."""
+    """``queries`` is keyed by (query_id, locale); ``exclude(url)`` drops rows
+    (platform pages) before stratification."""
     page_by_url = {p.url: p for p in pages}
     seen: set[tuple[str, str]] = set()
     strata: dict[tuple[str, str, str], list[SerpRow]] = defaultdict(list)
     for row in sorted(rows, key=lambda r: (r.locale, r.engine, r.query_id, r.rank)):
         if row.url not in scored_urls or (row.url, row.query_id) in seen:
+            continue
+        if exclude is not None and exclude(row.url):
             continue
         seen.add((row.url, row.query_id))
         query = queries[(row.query_id, row.locale)]

@@ -171,7 +171,8 @@ def data_dir(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     data = tmp_path / "data"
     data.mkdir()
     for name in ("queries.yaml", "rubric.yaml", "affiliate_domains.yaml", "ad_domains.yaml",
-                 "commerce_domains.yaml"):  # fmt: skip
+                 "commerce_domains.yaml",
+        "platform_domains.yaml"):  # fmt: skip
         shutil.copy(REPO_ROOT / "data" / name, data / name)
     monkeypatch.setenv("SLOPWATCH_DATA_DIR", str(data))
     monkeypatch.setenv("SLOPWATCH_FIXTURES_DIR", str(tmp_path / "fixtures"))
@@ -312,7 +313,7 @@ def test_score_label_evaluate_end_to_end(
     assert invoke("fetch").exit_code == 0
     scored = invoke("score", "--cache-mode", "replay")
     assert scored.exit_code == 0, scored.output
-    assert "rubric v0 (draft)" in scored.output and "credits: 0 spent" in scored.output
+    assert "rubric v1 (frozen)" in scored.output and "credits: 0 spent" in scored.output
     scores = read_jsonl(data_dir / "scores.jsonl", Score)
     by_url = {s.url: s for s in scores}
     assert by_url["https://www.dealsite.example/best-phones/"].band == "low"

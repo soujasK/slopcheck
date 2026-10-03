@@ -15,8 +15,8 @@
 # (`set: true` = signal is not null). `reason` is a format string over the
 # Signals fields and is shown to users verbatim.
 
-version: 0
-status: draft
+version: 1
+status: frozen
 
 bands:
   low: 0.50

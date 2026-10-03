@@ -92,3 +92,11 @@ def test_doctor_warns_when_budget_short(tmp_path: Path, monkeypatch: pytest.Monk
     assert result.exit_code == 0
     assert "plan needs 100 > 20 left" in result.output
     assert credits_line(2, ProjectLedger(ledger)).startswith("credits: 2 spent")
+
+
+def test_tests_never_read_the_real_env_file() -> None:
+    from slopwatch.config import Settings
+
+    s = Settings()
+    assert s.gemini_api_key is None and s.cloudflare_api_token is None
+    assert s.cloudflare_account_id is None

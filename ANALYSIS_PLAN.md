@@ -19,8 +19,15 @@ listed in the report with the reason.
   stratified by category x engine x locale with proportional allocation, split
   into dev (100) and test (100) alternately within each stratum. Committed before
   labeling.
-- **Labels**: one labeler following LABELING.md (frozen before labeling). The
-  scorer's output is never shown during labeling.
+- **Labels**: two independent LLM labelers, no human labeling (decision recorded
+  in LABELING.md before labeling): A = Google `gemini-3.8-flash`, B = Cloudflare
+  `@cf/openai/gpt-oss-120b`. Both are blind (guide + query, title, URL, excerpt
+  only; never scores, signals or rubric), temperature 0, strict JSON. All
+  requests and responses are recorded as fixtures.
+- **Agreement**: Cohen's kappa between A and B on the 200 items, and labels per
+  class for each labeler.
+- **Ground truth for evaluation**: items where A and B agree on `ok` or `low`.
+  Items with disagreement or any `unsure` are dropped and the count is reported.
 - **Primary metric**: precision for the class "low" (predicted low = band `low`)
   on the **test** split, with a 95% Wilson interval. Secondary: recall, F1,
   specificity, confusion matrix.
@@ -32,11 +39,8 @@ listed in the report with the reason.
 - **Baselines** on the same items: "any affiliate link", "no author and no
   date", "'best X' listicle", and random flagging at the scorer's rate. The
   rubric is claimed useful only if its test F1 exceeds every baseline's.
-- **Labeler consistency**: about a day after labeling, 30 labeled items (seed 11)
-  are re-labeled blind with `slopwatch label --recheck 30`; Cohen's kappa
-  between the two passes is reported. If a second person labels a subset,
-  inter-rater kappa is reported too.
-- `unsure` labels are excluded from the metrics and their count is reported.
+- All reports say plainly that labels come from two LLMs with no human
+  validation, with kappa and n. They are never called human labels.
 
 ## 3. Observatory measurements
 
@@ -55,8 +59,9 @@ Groups, fixed in advance:
 1. India, by engine (Google, DuckDuckGo, Yahoo) and by category.
 2. India vs US on Google, on the 20 locale-neutral queries only.
 3. Low share by rank position (1-10), India Google.
-4. Share of results that are platform pages (video, forum, social, shop), if the
-   platform class is adopted in LABELING.md.
+4. Share of results that are platform pages (video, forum, social, app store,
+   shop), by engine. Low shares in groups 1-3 are computed over scored,
+   non-platform rows.
 
 Comparisons (paired by query, same queries on both sides; difference in
 per-query low share with a 95% paired-bootstrap interval and a two-sided

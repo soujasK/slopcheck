@@ -38,6 +38,7 @@ from slopwatch.label import (
 )
 from slopwatch.models import Page, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
+from slopwatch.platform import load_platforms
 from slopwatch.queries import Job, PlanError, load_plan
 from slopwatch.score import load_rubric, score_all, with_near_dups
 from slopwatch.serp import ProjectLedger, SerpClient
@@ -420,7 +421,16 @@ def label(
         pages = read_jsonl(settings.data_dir / PAGES, Page)
         plan = load_plan(settings.data_dir / "queries.yaml")
         queries = {(j.query.id, j.query.locale): j.query for j in plan.jobs}
-        items = draw_sample(rows, pages, {r.url for r in records}, queries, n=n, seed=seed)
+        platforms = load_platforms(settings.data_dir)
+        items = draw_sample(
+            rows,
+            pages,
+            {r.url for r in records},
+            queries,
+            n=n,
+            seed=seed,
+            exclude=lambda url: platforms.kind(url) is not None,
+        )
         write_jsonl(sample_path, items, key=lambda it: 0)  # keep the seeded order
         splits = Counter(it.split for it in items)
         console.print(

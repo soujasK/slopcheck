@@ -6,7 +6,7 @@ import httpx
 import pytest
 
 from slopwatch.cache import Cache
-from slopwatch.config import CacheMode
+from slopwatch.config import CacheMode, Settings
 from slopwatch.http import HttpClient
 
 Handler = Callable[[httpx.Request], httpx.Response]
@@ -49,11 +49,15 @@ def _isolate_env(monkeypatch: pytest.MonkeyPatch, tmp_path_factory: pytest.TempP
     for var in (
         "SERPAPI_API_KEY",
         "SLOPWATCH_SERPAPI_API_KEY",
-        "SLOPWATCH_LLM_API_KEY",
-        "ANTHROPIC_API_KEY",
+        "GEMINI_API_KEY",
+        "CLOUDFLARE_API_TOKEN",
+        "CLOUDFLARE_ACCOUNT_ID",
         "SLOPWATCH_CACHE_MODE",
+        "SLOPWATCH_CONTACT_URL",
     ):
         monkeypatch.delenv(var, raising=False)
+    # Never read the developer's real .env (it holds secrets).
+    monkeypatch.setitem(Settings.model_config, "env_file", None)
     tmp = tmp_path_factory.mktemp("state")
     monkeypatch.setenv("SLOPWATCH_CACHE_PATH", str(tmp / "cache.sqlite"))
     # The real ledger is committed project state; tests must never append to it.

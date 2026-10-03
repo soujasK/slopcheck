@@ -224,3 +224,13 @@ def test_recheck_sample_and_self_agreement() -> None:
     n, kappa = self_agreement(first, flipped)
     assert n == 3 and kappa is not None and kappa < 1.0
     assert self_agreement(first, {}) == (0, None)
+
+
+def test_draw_sample_excludes_platform_pages() -> None:
+    all_rows = rows()
+    scored = {r.url for r in all_rows}
+    a = draw_sample(
+        all_rows, [], scored, QUERIES, n=30, seed=7,
+        exclude=lambda url: url.startswith("https://duckduckgo"),
+    )  # fmt: skip
+    assert len(a) == 30 and all(it.engine == "google" for it in a)

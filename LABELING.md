@@ -1,78 +1,82 @@
 # Labeling guide
 
-DRAFT for review. Freeze (commit) this file and `data/rubric.yaml` before the first
-label is written.
+Frozen before the first label was produced. The section between the
+`labeler-guide` markers is the complete guide given to the labelers, verbatim;
+nothing else from this repository is shown to them.
 
-## The question
+<!-- labeler-guide:start -->
+## Task
 
-For each result you see the **query**, the page **title**, its **URL** and a short
-**excerpt** of the main text. You never see the score. Answer one question:
+You are given one web search result: the search **query**, the result page's
+**title**, its **URL**, and an **excerpt** of at most 300 characters of the
+page's main text. You cannot open the page. Answer one question:
 
 > Is this a page an AI agent should ground an answer to this query on?
 
-| Key | Label | Use when |
-|---|---|---|
-| `l` | **low** | The page's primary purpose is monetised referral or mass-produced content rather than answering the query. |
-| `o` | **ok** | The page genuinely answers the query **and** has identifiable responsibility: a named author, an organisation, or an official source. |
-| `u` | **unsure** | You cannot tell from what you see, or the page fits neither definition. Excluded from the metrics. Use it honestly rather than guessing. |
+Choose exactly one label:
 
-Other keys: `n` add a note before labeling, `s` skip, `b` back, `q` quit (progress is saved).
+- **low**: the page's primary purpose is monetised referral or mass-produced
+  content rather than answering the query.
+- **ok**: the page genuinely answers the query **and** has identifiable
+  responsibility: a named author, an organisation, or an official source.
+- **unsure**: you cannot tell from what you see, or the page fits neither
+  definition. Use it honestly rather than guessing.
 
-You may open the URL in a browser when the excerpt is not enough. Spend at most
-about 30 seconds per page; if it still is not clear, use `unsure`.
+## Signs of "low"
 
-## "low": signs to look for
-
-- Product roundups ("10 best …") where most links go to shops through affiliate
-  links, with little evidence of hands-on testing.
+- Product roundups ("10 best ...") whose links mostly go to shops through
+  affiliate links, with little evidence of hands-on testing.
 - Generic text that could be about any product or condition, padded with
   keyword variations of the query.
 - Doorway or tag pages, scraped or spun copies of other pages, auto-generated
-  Q&A.
+  question-and-answer pages.
 - Health or finance advice with no author, no organisation and no sources, sold
   next to products or ads.
 
-## "ok": signs to look for
+## Signs of "ok"
 
-- Official sources (government portals, regulators, banks' own help pages,
-  hospital or medical-body pages).
+- Official sources: government portals, regulators, banks' own help pages,
+  hospital or medical-body pages.
 - Articles with a named author or a clearly identified organisation that answer
   the query directly.
-- Product reviews that show their own testing (measurements, photos, comparisons),
-  even if they also carry affiliate links.
+- Product reviews that show their own testing (measurements, photos,
+  comparisons), even if they also carry affiliate links.
 
-Affiliate links alone do not make a page low. The question is the page's primary
-purpose.
+Affiliate links alone do not make a page low; the question is the page's
+primary purpose.
 
-## Judging the query, not the site
+## Judge the page for this query, not the site
 
-Label the page for **this query**. A reputable site's thin tag page can be low,
-and a small blog that answers the query well with a named author can be ok.
+A reputable site's thin tag page can be low, and a small blog that answers the
+query well with a named author can be ok. The domain in the URL is evidence,
+not the verdict.
+<!-- labeler-guide:end -->
 
-## Open question: platform pages (decide before freezing)
+## Decisions recorded before labeling
 
-The SERPs contain many pages that are not articles: YouTube videos (56 rows),
-Reddit and Quora threads, Facebook posts, and shop product pages (Flipkart,
-Amazon). The text signals were designed for articles and will misread these: a
-video page looks "thin", a product page looks "commercial". Options:
-
-1. **Label them like any page** using the definitions above (a helpful forum
-   thread is ok, a shop page answering a "best X" query is low or unsure). Simple,
-   but the scorer will probably make systematic errors on them.
-2. **Treat them as a separate class** ("platform"): not scored as ok/low, excluded
-   from precision/recall, and reported separately in the observatory ("X% of top
-   results are video/forum/shop pages"). More honest about what the signals can
-   do; needs a fixed, committed list of platform domains.
-3. **Label them `unsure`** by rule. Cheapest, but hides a large share of results.
-
-The choice is recorded here before labeling starts.
+- **Platform pages are a separate class.** Results on video, forum, social,
+  app-store and shop domains (`data/platform_domains.yaml` plus the shops in
+  `data/commerce_domains.yaml`) are not articles. They are excluded from the
+  label sample and from precision/recall, and their share of results is
+  reported separately.
+- **Labels come from two LLMs, not from humans.** There is no human labeling.
+  Labeler A is Google `gemini-3.8-flash`; labeler B is Cloudflare Workers AI
+  `@cf/openai/gpt-oss-120b` (fallback `@cf/meta/llama-3.3-70b-instruct-fp8-fast`,
+  used only if the primary is unavailable, and reported if used). Both get the
+  guide above plus one item, at temperature 0, and must answer strict JSON
+  `{"label": "ok"|"low"|"unsure", "reason": "..."}`. They never see scores,
+  signals, the rubric or its reasons. Every request and response is recorded
+  as a fixture.
+- **Agreement and evaluation.** Cohen's kappa between A and B is reported. The
+  scorer is evaluated only on items where A and B agree on ok or low; the
+  number of items dropped (disagreement or any `unsure`) is reported.
+- These labels measure agreement with two LLM judges, not human judgement, and
+  the judges see only a 300-character excerpt. This is stated in the README and
+  LIMITATIONS.md.
 
 ## Process rules
 
 - The 200-item sample is drawn with a fixed seed (`slopwatch label --n 200 --seed 7`)
-  and committed before labeling.
-- One labeler (solo); there is no inter-rater agreement. This is stated in
-  LIMITATIONS.md.
-- Labels are append-only; relabeling an item keeps the latest label.
+  from scored, non-platform results, and committed before labeling.
 - The rubric is tuned on the dev half only. The test half is evaluated once, at
   the end, and reported as is.

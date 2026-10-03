@@ -1,8 +1,9 @@
 """Runtime configuration.
 
-Secrets come only from the environment (``SERPAPI_API_KEY``, optional
-``SLOPWATCH_LLM_API_KEY`` / ``ANTHROPIC_API_KEY`` for the agent demo) and are held
-as ``SecretStr`` so they never appear in reprs or logs. Everything else can be
+Secrets come only from the environment or a git-ignored ``.env`` file in the
+repo root (``SERPAPI_API_KEY``, ``GEMINI_API_KEY``, ``CLOUDFLARE_API_TOKEN``,
+``CLOUDFLARE_ACCOUNT_ID``) and are held as ``SecretStr`` so they never appear in
+reprs or logs. Everything else can be
 overridden with ``SLOPWATCH_*`` variables, except the project credit cap, which is
 a constant on purpose.
 """
@@ -39,16 +40,26 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_prefix="SLOPWATCH_", extra="ignore")
+    model_config = SettingsConfigDict(
+        env_prefix="SLOPWATCH_", extra="ignore", env_file=REPO_ROOT / ".env"
+    )
 
     serpapi_api_key: SecretStr | None = Field(
         default=None,
         validation_alias=AliasChoices("SERPAPI_API_KEY", "SLOPWATCH_SERPAPI_API_KEY"),
     )
-    llm_api_key: SecretStr | None = Field(
-        default=None, validation_alias=AliasChoices("SLOPWATCH_LLM_API_KEY", "ANTHROPIC_API_KEY")
+    # LLM labelers (validation only; never used in scoring).
+    gemini_api_key: SecretStr | None = Field(
+        default=None, validation_alias=AliasChoices("GEMINI_API_KEY", "SLOPWATCH_GEMINI_API_KEY")
     )
-    llm_model: str = "claude-opus-5-5"
+    cloudflare_api_token: SecretStr | None = Field(
+        default=None,
+        validation_alias=AliasChoices("CLOUDFLARE_API_TOKEN", "SLOPWATCH_CLOUDFLARE_API_TOKEN"),
+    )
+    cloudflare_account_id: SecretStr | None = Field(
+        default=None,
+        validation_alias=AliasChoices("CLOUDFLARE_ACCOUNT_ID", "SLOPWATCH_CLOUDFLARE_ACCOUNT_ID"),
+    )
 
     cache_path: Path = Path(".slopwatch") / "cache.sqlite"
     cache_mode: CacheMode = CacheMode.LIVE
