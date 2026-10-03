@@ -18,7 +18,7 @@ def test_doctor_offline_without_key(tmp_path: Path) -> None:
     assert result.exit_code == 0, result.output
     out = result.output
     assert "0/140 spent" in out
-    assert "frozen: 40 queries, 80 searches" in out
+    assert "frozen: 40 queries, 100 searches" in out
     assert "not set" in out
     assert "credits: 0 spent by this command; project ledger 0/140 (140 left)" in out
 
@@ -90,5 +90,5 @@ def test_doctor_warns_when_budget_short(tmp_path: Path, monkeypatch: pytest.Monk
     monkeypatch.setenv("SLOPWATCH_LEDGER_PATH", str(ledger))
     result = runner.invoke(app, ["doctor", "--offline"], env={"COLUMNS": "200"})
     assert result.exit_code == 0
-    assert "plan needs 80 > 20 left" in result.output
+    assert "plan needs 100 > 20 left" in result.output
     assert credits_line(2, ProjectLedger(ledger)).startswith("credits: 2 spent")

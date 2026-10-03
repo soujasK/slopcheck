@@ -9,6 +9,9 @@ docs, 2026-10-02):
 * ``bing``    ``mkt`` (``<lang>-<country>``, e.g. ``en-IN``). ``cc`` is the
               alternative and the docs say the two are mutually exclusive, so only
               ``mkt`` is used. Web results under ``organic_results``.
+* ``duckduckgo``  ``kl`` region (``in-en``). ``organic_results``, up to ~35/page.
+* ``yahoo``   query parameter is ``p`` (not ``q``); ``yahoo_domain=in`` selects
+              in.search.yahoo.com. ``organic_results``; ads under ``ads_results``.
 
 Caps, both checked *before* any network call:
 
@@ -40,6 +43,8 @@ from slopwatch.models import Engine
 SERPAPI_SEARCH_URL = "https://serpapi.com/search.json"
 SERPAPI_ACCOUNT_URL = "https://serpapi.com/account.json"
 TOP_N = 10
+# Name of the search-text parameter per engine.
+QUERY_PARAM: dict[str, str] = {"google": "q", "bing": "q", "duckduckgo": "q", "yahoo": "p"}
 # Top-level response keys that are bookkeeping, not SERP features.
 _NON_FEATURE_KEYS = frozenset(
     {
@@ -182,9 +187,11 @@ class SerpClient:
             return False
 
     def search(self, engine: Engine, params: Mapping[str, str]) -> SerpPage:
-        """Run one search. ``params`` holds ``q`` plus locale parameters."""
-        if "q" not in params:
-            raise ValueError("params must include 'q'")
+        """Run one search. ``params`` holds the query (``q``, or ``p`` for Yahoo)
+        plus locale parameters."""
+        qp = QUERY_PARAM[engine]
+        if qp not in params:
+            raise ValueError(f"params must include {qp!r} for engine {engine!r}")
         full: dict[str, str] = {"engine": engine, **params}
         key = request_key("GET", SERPAPI_SEARCH_URL, full)
         hit = self.http.cache.lookup(key)
@@ -218,7 +225,7 @@ class SerpClient:
             self.project.record(engine=engine, request_hash=key, params=full)
             self.http.cache.set_cost(key, 1)
         self.ledger.entries.append(
-            SpendEntry(engine, params["q"], credits, from_cache=resp.from_cache)
+            SpendEntry(engine, params[qp], credits, from_cache=resp.from_cache)
         )
         return SerpPage(
             request_hash=key,

@@ -113,6 +113,20 @@ def test_bing_uses_mkt_not_cc(ledger: ProjectLedger) -> None:
     assert sent["mkt"] == "en-IN" and "cc" not in sent
 
 
+def test_yahoo_uses_p_as_query_param(ledger: ProjectLedger) -> None:
+    rec = serp_handler({"organic_results": organic(3), "ads_results": [{"link": "x"}]})
+    with make_client(rec) as http:
+        serp = client(http, ledger)
+        with pytest.raises(ValueError, match="'p' for engine 'yahoo'"):
+            serp.search("yahoo", {"q": "wrong param"})
+        page = serp.search("yahoo", serp_params("yahoo", "IN", "is term insurance worth it"))
+    sent = rec.requests[0].url.params
+    assert sent["p"] == "is term insurance worth it" and sent["yahoo_domain"] == "in"
+    assert "q" not in sent
+    assert len(page.organic) == 3 and page.features == ["ads_results"]
+    assert serp.ledger.entries[0].query == "is term insurance worth it"
+
+
 def test_cache_hit_is_free(ledger: ProjectLedger) -> None:
     rec = serp_handler(GOOGLE_IN)
     with make_client(rec) as http:

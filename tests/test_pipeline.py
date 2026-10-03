@@ -67,7 +67,8 @@ def fake_web(request: httpx.Request) -> httpx.Response:
     if host == "serpapi.com":
         params = dict(request.url.params)
         assert params["api_key"] == "test-key-not-real"
-        return httpx.Response(200, json=serp_payload(params["q"], params["engine"]))
+        q = params.get("q") or params["p"]  # Yahoo uses p
+        return httpx.Response(200, json=serp_payload(q, params["engine"]))
     if path == "/robots.txt":
         if host == "google0.example":
             return httpx.Response(200, text="User-agent: *\nDisallow: /\n")
@@ -90,7 +91,7 @@ def test_collect_preview_and_partial_stop(tmp_path: Path) -> None:
     ledger = ProjectLedger(tmp_path / "ledger.jsonl")
     with make_client(Recorder(fake_web)) as http:
         serp = SerpClient(http, KEY, project=ledger, max_credits=5)
-        assert pipeline.preview(plan, serp) == pipeline.CollectPreview(80, 0, 80)
+        assert pipeline.preview(plan, serp) == pipeline.CollectPreview(100, 0, 100)
         result = pipeline.collect(plan, serp)
         assert result.done == 5 and result.error and "cap of 5" in result.error
         assert len(result.rows) == 50 and len(result.meta) == 5 and len(result.keys) == 5
@@ -206,12 +207,12 @@ def test_collect_asks_before_spending_more_than_10(
     data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
-    result = invoke("collect", "--max-credits", "80")
+    result = invoke("collect", "--max-credits", "100")
     assert result.exit_code == 2
-    assert "rerun with --yes to spend 80 credits" in result.output
+    assert "rerun with --yes to spend 100 credits" in result.output
     assert "credits: 0 spent by this command" in result.output
     too_low = invoke("collect", "--yes")
-    assert too_low.exit_code == 2 and "needs 80 credits" in too_low.output
+    assert too_low.exit_code == 2 and "needs 100 credits" in too_low.output
     assert web.requests == []
 
 
@@ -219,17 +220,17 @@ def test_collect_then_replay_offline_is_identical(
     data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch, tmp_path: Path
 ) -> None:
     monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
-    live = invoke("collect", "--max-credits", "80", "--yes")
+    live = invoke("collect", "--max-credits", "100", "--yes")
     assert live.exit_code == 0, live.output
-    assert "credits: 80 spent by this command; project ledger 80/140 (60 left)" in live.output
+    assert "credits: 100 spent by this command; project ledger 100/140 (40 left)" in live.output
     serps = (data_dir / "serps.jsonl").read_bytes()
     rows = read_jsonl(data_dir / "serps.jsonl", SerpRow)
-    assert len(rows) == 800 and {r.rank for r in rows} == set(range(1, 11))
+    assert len(rows) == 1000 and {r.rank for r in rows} == set(range(1, 11))
     fixtures = list((tmp_path / "fixtures").glob("*.json"))
-    assert len(fixtures) == 80
+    assert len(fixtures) == 100
     assert not any("test-key-not-real" in f.read_text(encoding="utf-8") for f in fixtures)
     ledger_lines = (tmp_path / "ledger.jsonl").read_text(encoding="utf-8").splitlines()
-    assert len(ledger_lines) == 80 and "test-key-not-real" not in "".join(ledger_lines)
+    assert len(ledger_lines) == 100 and "test-key-not-real" not in "".join(ledger_lines)
 
     # replay: no key, network blocked, no credits, byte-identical output
     monkeypatch.delenv("SERPAPI_API_KEY")
@@ -237,8 +238,8 @@ def test_collect_then_replay_offline_is_identical(
     (data_dir / "serps.jsonl").unlink()
     replay = invoke("collect", "--cache-mode", "replay")
     assert replay.exit_code == 0, replay.output
-    assert "80 cached, 0 would spend" in replay.output
-    assert "credits: 0 spent by this command; project ledger 80/140" in replay.output
+    assert "100 cached, 0 would spend" in replay.output
+    assert "credits: 0 spent by this command; project ledger 100/140" in replay.output
     assert web.requests == []
     assert (data_dir / "serps.jsonl").read_bytes() == serps
 
@@ -251,7 +252,7 @@ def test_collect_stops_at_cap_with_exit_3(
     (tmp_path / "ledger.jsonl").write_text(
         "".join(json.dumps({"credits": 1}) + "\n" for _ in range(75)), encoding="utf-8"
     )
-    result = invoke("collect", "--max-credits", "80", "--yes")
+    result = invoke("collect", "--max-credits", "100", "--yes")
     assert result.exit_code == 3
     assert "project SerpApi cap reached: 140/140" in result.output
     assert len(read_jsonl(data_dir / "serps.jsonl", SerpRow)) == 650
@@ -261,7 +262,7 @@ def test_fetch_writes_pages_and_signals(
     data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
-    assert invoke("collect", "--max-credits", "80", "--yes").exit_code == 0
+    assert invoke("collect", "--max-credits", "100", "--yes").exit_code == 0
     refused = invoke("fetch", "--cache-mode", "replay")
     assert refused.exit_code == 2 and "needs the network" in refused.output
     result = invoke("fetch")

@@ -15,8 +15,12 @@
 # in three probes (mkt=en-IN: empty, then first-word-only junk; cc=IN: empty).
 # It is replaced by DuckDuckGo (kl=in-en), the third engine in Bevendorff et al.
 # The probes are recorded in data/serpapi_ledger.jsonl and fixtures/.
+# Yahoo (yahoo_domain=in) was added on 2026-10-03 as a third, widely known engine,
+# also before collection. Yahoo and DuckDuckGo both draw heavily on Bing's index,
+# so they are reported as the "Bing family", not as independent engines.
 #
-# DuckDuckGo (India) and Google (US) run on the same 20-query subset: 5 per category,
+# DuckDuckGo (India), Yahoo (India) and Google (US) run on the same 20-query
+# subset: 5 per category,
 # drawn from the locale-neutral pool only with random.Random(seed) over categories
 # and ids in sorted order (slopwatch.queries.select_subset). The ids below are
 # that draw written out for review; loading fails if they ever stop matching the
@@ -43,11 +47,11 @@ plan:
     engines: [google]
     queries: all       # 40 credits
   - locale: IN
-    engines: [duckduckgo]
-    queries: subset    # 20 credits
+    engines: [duckduckgo, yahoo]
+    queries: subset    # 40 credits
   - locale: US
     engines: [google]
-    queries: subset    # 20 credits  (total 80)
+    queries: subset    # 20 credits  (total 100)
 
 queries:
   # -- health -----------------------------------------------------------------

@@ -19,21 +19,24 @@ import yaml
 from pydantic import BaseModel, ConfigDict, field_validator
 
 from slopwatch.models import Category, Engine, Locale, Query, SerpRow
-from slopwatch.serp import SerpPage
+from slopwatch.serp import QUERY_PARAM, SerpPage
 
 # Locale parameters per engine (serpapi.com docs, checked 2026-10-02/03). Bing's
 # `cc` and `mkt` are mutually exclusive; `mkt` pins both language and market.
 # DuckDuckGo regions: serpapi.com/duckduckgo-regions (in-en, us-en).
+# Yahoo domains: serpapi.com/yahoo-domains ("in" = India (English)); query param p.
 LOCALE_PARAMS: dict[Locale, dict[Engine, dict[str, str]]] = {
     "IN": {
         "google": {"gl": "in", "hl": "en", "google_domain": "google.co.in"},
         "bing": {"mkt": "en-IN"},
         "duckduckgo": {"kl": "in-en"},
+        "yahoo": {"yahoo_domain": "in"},
     },
     "US": {
         "google": {"gl": "us", "hl": "en", "google_domain": "google.com"},
         "bing": {"mkt": "en-US"},
         "duckduckgo": {"kl": "us-en"},
+        "yahoo": {},  # default search.yahoo.com
     },
 }
 
@@ -128,7 +131,7 @@ class Plan:
 
 
 def serp_params(engine: Engine, locale: Locale, text: str) -> dict[str, str]:
-    return {"q": text, **LOCALE_PARAMS[locale][engine]}
+    return {QUERY_PARAM[engine]: text, **LOCALE_PARAMS[locale][engine]}
 
 
 def select_subset(specs: list[QuerySpec], seed: int, per_category: int) -> list[str]:

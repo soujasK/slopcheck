@@ -8,8 +8,8 @@ fetching, scoring, evaluation, reporting and filtering cost no credits.
 | | Credits |
 |---|---|
 | Hard project cap (constant `PROJECT_CREDIT_CAP` in `slopwatch/config.py`) | **140** |
-| Measurement collection (below) | 80 |
-| Development probes and agent demo | ≤ 60 |
+| Measurement collection (below) | 100 |
+| Development probes and agent demo | ≤ 40 |
 
 Every billed request is appended to [`data/serpapi_ledger.jsonl`](data/serpapi_ledger.jsonl)
 (timestamp, engine, request hash, redacted params, credits). The cap is checked
@@ -21,13 +21,14 @@ the SerpApi account balance (via the free Account API).
 
 ## Engines and parameters
 
-Verified against serpapi.com docs on 2026-10-02 (Google, Bing) and 2026-10-03 (DuckDuckGo).
+Verified against serpapi.com docs on 2026-10-02 (Google, Bing) and 2026-10-03 (DuckDuckGo, Yahoo).
 
 | Engine | Locale | Parameters |
 |---|---|---|
 | `google` | India | `gl=in`, `hl=en`, `google_domain=google.co.in` |
 | `google` | US | `gl=us`, `hl=en`, `google_domain=google.com` |
 | `duckduckgo` | India | `kl=in-en` ([region list](https://serpapi.com/duckduckgo-regions)) |
+| `yahoo` | India | `p=<query>` (Yahoo's query parameter), `yahoo_domain=in` (in.search.yahoo.com, [domain list](https://serpapi.com/yahoo-domains)) |
 
 ### Why DuckDuckGo and not Bing
 
@@ -45,13 +46,19 @@ results including Indian sources, so DuckDuckGo (the third engine in Bevendorff
 et al.) replaced Bing, with the same 20-query subset. The change was made before
 any measurement data was collected; all probes are in the ledger and `fixtures/`.
 
+Yahoo India was then added as a third, widely known engine (also before
+collection). Its probe for health-03 returned 7 relevant results, all of which
+also appear in DuckDuckGo's top 10: both draw heavily on Bing's index. The
+report therefore treats DuckDuckGo and Yahoo as the "Bing family", not as two
+independent engines.
+
 Only `organic_results` are scored: the top 10 by rank, or fewer when the engine
 returns fewer (Google often shows 8 or 9 organic results next to an AI Overview;
 a second page would double the cost, so the report states the actual n). Ads,
 AI Overviews, answer boxes, "People also ask" and other SERP features are recorded
 as metadata (which features were present) and excluded from scoring.
 
-## Collection plan (80 credits)
+## Collection plan (100 credits)
 
 Defined in [`data/queries.yaml`](data/queries.yaml), frozen and committed before
 any collection.
@@ -60,8 +67,9 @@ any collection.
 |---|---|---|
 | India, Google | all 40 (10 per category) | 40 |
 | India, DuckDuckGo | 20-query subset | 20 |
+| India, Yahoo | same 20-query subset | 20 |
 | US, Google | same 20-query subset | 20 |
-| **Total** | | **80** |
+| **Total** | | **100** |
 
 Every query is tagged `locale_neutral` before the draw. The subset is 5 queries per
 category, drawn from the **locale-neutral pool only** with `random.Random(2026)`
@@ -85,9 +93,9 @@ key and spends no credits.
 | Probe: Google India (health-01) | 1 |
 | Probes: Bing India (2 x `mkt=en-IN`, 1 x `cc=IN`), all unusable | 3 |
 | Probe: DuckDuckGo India (health-03) | 1 |
+| Probe: Yahoo India (health-03) | 1 |
 | Measurement collection | filled in after collection |
 
-The Google probe (health-01/google/IN) and the DuckDuckGo probe
-(health-03/duckduckgo/IN) are both jobs in the plan, so the full collection reuses
-them from the cache: it needs 78 more credits, not 80. The 3 Bing credits bought
-no measurement data.
+The Google, DuckDuckGo and Yahoo probes are jobs in the plan, so the full
+collection reuses them from the cache: it needs 97 more credits, not 100. The 3
+Bing credits bought no measurement data.
