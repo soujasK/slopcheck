@@ -21,6 +21,8 @@ from slopwatch.pages import PageFetcher, make_excerpt
 from slopwatch.queries import Job, Plan, to_rows
 from slopwatch.serp import SerpClient, SerpError
 from slopwatch.signals import DomainLists, extract
+from slopwatch.signals.base import parse_page
+from slopwatch.signals.thin import main_text
 
 log = logging.getLogger(__name__)
 
@@ -165,4 +167,15 @@ def resignal(records: list[SignalRecord], cache: Cache, lists: DomainLists) -> l
                 simhash=f"{ex.simhash:016x}",
             )
         )
+    return out
+
+
+def main_texts(records: list[SignalRecord], cache: Cache) -> dict[str, str]:
+    """Main text per scored page, from the hash-verified cached snapshot."""
+    out: dict[str, str] = {}
+    for rec in records:
+        hit = cache.get(request_key("GET", rec.url))
+        if hit is None or hashlib.sha256(hit.body).hexdigest() != rec.html_hash:
+            raise SnapshotMismatch(f"cached HTML missing or changed for {rec.url}")
+        out[rec.url] = main_text(parse_page(rec.url, hit.text))
     return out

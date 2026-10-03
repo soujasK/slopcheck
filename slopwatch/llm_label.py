@@ -75,15 +75,19 @@ def system_prompt(guide: str) -> str:
     return f"{guide}\n\n{OUTPUT_RULES}"
 
 
-def item_prompt(item: LabelItem) -> str:
-    """The only item fields a labeler sees. Built from an explicit allow-list."""
+MAIN_TEXT_CHARS = 2000
+
+
+def item_prompt(item: LabelItem, main_text: str | None = None) -> str:
+    """The only item fields a labeler sees. Built from an explicit allow-list.
+    Round 1 shows the 300-char excerpt; round 2 the first 2,000 chars of main text."""
+    if main_text is not None:
+        body = " ".join(main_text.split())[:MAIN_TEXT_CHARS] or "(no text available)"
+        last = f"Main text (first {MAIN_TEXT_CHARS} characters): {body}"
+    else:
+        last = f"Excerpt: {item.excerpt or '(no excerpt available)'}"
     return "\n".join(
-        [
-            f"Query: {item.query_text}",
-            f"Title: {item.title}",
-            f"URL: {item.url}",
-            f"Excerpt: {item.excerpt or '(no excerpt available)'}",
-        ]
+        [f"Query: {item.query_text}", f"Title: {item.title}", f"URL: {item.url}", last]
     )
 
 
@@ -330,6 +334,7 @@ def label_items(
     now: Callable[[], datetime] = lambda: datetime.now(UTC),
     stats: RunStats | None = None,
     sleep: Callable[[float], None] = time.sleep,
+    context: Callable[[LabelItem], str | None] | None = None,
 ) -> RunStats:
     """Label items not in ``done``. Stops before exceeding ``neuron_budget``.
     Pass ``stats`` to keep partial counts if the run is interrupted."""
@@ -343,7 +348,8 @@ def label_items(
             break
         parsed: tuple[LabelValue, str] | None = None
         for attempt in range(MAX_ATTEMPTS):
-            reply = _ask_patiently(backend, system, item_prompt(item), attempt, sleep)
+            user = item_prompt(item, context(item) if context else None)
+            reply = _ask_patiently(backend, system, user, attempt, sleep)
             stats.models.add(reply.model)
             stats.input_tokens += 0 if reply.from_cache else reply.input_tokens
             stats.output_tokens += 0 if reply.from_cache else reply.output_tokens

@@ -569,6 +569,16 @@ def llm_label_cmd(
     model: Annotated[
         str | None, typer.Option("--model", help="Override labeler A's Gemini model.")
     ] = None,
+    context: Annotated[
+        str,
+        typer.Option(
+            "--context", help="main = first 2,000 chars of main text (round 2); excerpt = round 1"
+        ),
+    ] = "main",
+    snapshot_cache: Annotated[
+        Path | None,
+        typer.Option("--snapshot-cache", help="Cache holding page snapshots (default: main cache)"),
+    ] = None,
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Blind LLM labeling of labels/sample.jsonl (validation only, never scoring)."""
@@ -581,6 +591,25 @@ def llm_label_cmd(
         err_console.print("llm-label: no labels/sample.jsonl; run `slopwatch label` first")
         raise typer.Exit(EXIT_USAGE)
     guide = load_guide(settings.data_dir.parent / "LABELING.md")
+    if context not in ("main", "excerpt"):
+        err_console.print("llm-label: --context must be main or excerpt")
+        raise typer.Exit(EXIT_USAGE)
+    texts: dict[str, str] | None = None
+    if context == "main":
+        records = read_jsonl(settings.data_dir / SIGNALS, SignalRecord)
+        wanted = {it.url for it in items}
+        snap_path = snapshot_cache or settings.cache_path
+        if not snap_path.exists():
+            err_console.print(
+                f"llm-label: no snapshot cache at {snap_path} (needed for --context main)"
+            )
+            raise typer.Exit(EXIT_USAGE)
+        with Cache(snap_path, mode=CacheMode.LIVE) as snap:
+            try:
+                texts = pipeline.main_texts([r for r in records if r.url in wanted], snap)
+            except pipeline.SnapshotMismatch as exc:
+                err_console.print(f"llm-label: {exc}")
+                raise typer.Exit(EXIT_FAIL) from None
     out_path = _llm_labels_path(labeler)
     done = set(load_labels(out_path))
     usage_path = _labels_dir() / LLM_USAGE
@@ -615,6 +644,7 @@ def llm_label_cmd(
                 write=lambda lab: append_label(out_path, lab),
                 neuron_budget=left,
                 stats=stats,
+                context=(lambda it: texts.get(it.url)) if texts is not None else None,
             )
         except QuotaExhausted as exc:
             quota_note = str(exc)
@@ -635,6 +665,7 @@ def llm_label_cmd(
         "output_tokens": stats.output_tokens,
         "neurons": round(stats.neurons, 2),
         "fallback_used": isinstance(backend, CloudflareBackend) and backend.fallback_used,
+        "context": context,
     }
     if mode is not CacheMode.REPLAY:
         usage_path.parent.mkdir(parents=True, exist_ok=True)

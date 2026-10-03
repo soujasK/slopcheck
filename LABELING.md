@@ -8,8 +8,8 @@ nothing else from this repository is shown to them.
 ## Task
 
 You are given one web search result: the search **query**, the result page's
-**title**, its **URL**, and an **excerpt** of at most 300 characters of the
-page's main text. You cannot open the page. Answer one question:
+**title**, its **URL**, and the beginning of the page's **main text** (up to
+2,000 characters). You cannot open the page. Answer one question:
 
 > Is this a page an AI agent should ground an answer to this query on?
 
@@ -72,7 +72,8 @@ not the verdict.
   scorer is evaluated only on items where A and B agree on ok or low; the
   number of items dropped (disagreement or any `unsure`) is reported.
 - These labels measure agreement with two LLM judges, not human judgement, and
-  the judges see only a 300-character excerpt. This is stated in the README and
+  the judges see only part of the page (round 1: a 300-character excerpt;
+  round 2: the first 2,000 characters of main text). This is stated in the README and
   LIMITATIONS.md.
 
 ## Deviation (2026-10-03, during labeling)
@@ -84,6 +85,30 @@ items are therefore labeled by `gemini-3.5-flash-lite`, the newest Flash-Lite
 model (weaker than Flash). The 7 `gemini-3.8-flash` replies remain in the
 fixtures but are not used. Labeler B was unaffected. The guide, the items and
 the prompt are unchanged.
+
+## Round 2 (declared 2026-10-03, before any round-2 label)
+
+Round 1 (above protocol, 300-character excerpt) gave Cohen's kappa 0.47 between
+the labelers, and on the dev split the frozen rubric v1 reached precision 0.20
+and the best v2 candidate 0.38. Because the round-1 ground truth was judged too
+unreliable (the labelers could not see the page beyond 300 characters), all 200
+items are labeled again, **after** those dev results were seen:
+
+- Same items, same labelers and models (A `gemini-3.5-flash-lite`, B
+  `@cf/openai/gpt-oss-120b`), temperature 0, same JSON contract.
+- The only change: the item shows the first 2,000 characters of the page's main
+  text (from the fetched snapshot, verified against its SHA-256) instead of the
+  300-character excerpt; the guide's first paragraph says so (round 1's wording
+  is in git history).
+- Still blind: never scores, signals, the rubric or its reasons.
+- Ground truth = round-2 items where A and B agree on ok or low. Round-1 labels
+  are kept (`labels/round1/`) and reported.
+- Rubric choice: among the four rubrics already committed (v1 and candidates
+  v2a, v2b, v2c), the one with the highest dev F1 on round-2 labels; then the
+  test split is evaluated once.
+- The 2,000-character texts are third-party content and are not committed, so
+  round-2 requests cannot be rebuilt from a fresh clone; labels and recorded
+  responses are committed.
 
 ## Process rules
 

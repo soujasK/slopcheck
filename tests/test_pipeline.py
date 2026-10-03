@@ -375,3 +375,14 @@ def test_resignal_requires_matching_snapshot(tmp_path: Path) -> None:
         tampered = rec.model_copy(update={"html_hash": "0" * 64})
         with pytest.raises(pipeline.SnapshotMismatch, match="missing or changed"):
             pipeline.resignal([tampered], cache, load_lists(REPO_ROOT / "data"))
+
+
+def test_main_texts_from_verified_snapshots() -> None:
+    url = "https://www.dealsite.example/best-phones/"
+    with make_client(Recorder(fake_web)) as http:
+        fetched = pipeline.fetch_pages([url], PageFetcher(http), load_lists(REPO_ROOT / "data"))
+        texts = pipeline.main_texts(fetched.records, http.cache)
+        assert texts[url].startswith("10 Best Smartphones")
+        bad = fetched.records[0].model_copy(update={"html_hash": "f" * 64})
+        with pytest.raises(pipeline.SnapshotMismatch):
+            pipeline.main_texts([bad], http.cache)

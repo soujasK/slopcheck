@@ -87,6 +87,15 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   because the former's free tier allows 20 requests per day (see LABELING.md).
   Decided before any agreement or evaluation result was computed.
 
+- 2026-10-03: **label round 2.** After seeing round-1 dev results (rubric v1
+  precision 0.20; best v2 candidate 0.38; labeler kappa 0.47), all 200 items are
+  re-labeled with the labelers seeing the first 2,000 characters of main text
+  instead of a 300-character excerpt (protocol in LABELING.md, committed before
+  any round-2 label). Round-2 agreed labels become the ground truth; round-1
+  results are reported alongside. The rubric is chosen among the four already
+  committed (v1, v2a, v2b, v2c) by round-2 dev F1; the test split is evaluated
+  once. Signal added before round 2: `sells_directly`.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

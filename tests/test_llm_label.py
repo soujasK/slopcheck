@@ -257,10 +257,14 @@ def test_cli_llm_label_agreement_and_offline_replay(
     bad = runner.invoke(app, ["llm-label", "--labeler", "c"])
     assert bad.exit_code == 2
     ra = runner.invoke(
-        app, ["llm-label", "--labeler", "a", "--min-interval", "0"], env={"COLUMNS": "200"}
+        app,
+        ["llm-label", "--labeler", "a", "--min-interval", "0", "--context", "excerpt"],
+        env={"COLUMNS": "200"},
     )
     assert ra.exit_code == 0, ra.output
-    rb = runner.invoke(app, ["llm-label", "--labeler", "b"], env={"COLUMNS": "200"})
+    rb = runner.invoke(
+        app, ["llm-label", "--labeler", "b", "--context", "excerpt"], env={"COLUMNS": "200"}
+    )
     assert rb.exit_code == 0, rb.output
     assert "neurons 160.0" in rb.output
     ag = runner.invoke(app, ["agreement"], env={"COLUMNS": "200"})
@@ -285,7 +289,9 @@ def test_cli_llm_label_agreement_and_offline_replay(
     monkeypatch.setattr(httpx.Client, "send", no_send)
     before = {k: v.label for k, v in _load(labels / "llm_b.jsonl").items()}
     (labels / "llm_b.jsonl").unlink()
-    rp = runner.invoke(app, ["llm-label", "--labeler", "b", "--cache-mode", "replay"])
+    rp = runner.invoke(
+        app, ["llm-label", "--labeler", "b", "--cache-mode", "replay", "--context", "excerpt"]
+    )
     assert rp.exit_code == 0, rp.output
     assert {k: v.label for k, v in _load(labels / "llm_b.jsonl").items()} == before
 
@@ -391,3 +397,40 @@ def test_network_errors_wait_then_resume_or_stop_cleanly() -> None:
         backend = CloudflareBackend(http, SecretStr("t"), SecretStr("a"))
         with pytest.raises(Exception, match="Cloudflare HTTP 401"):
             label_items([item(2)], backend, GUIDE, done=set(), write=written.append)
+
+
+def test_round2_prompt_shows_main_text_and_stays_blind() -> None:
+    from slopwatch.llm_label import MAIN_TEXT_CHARS
+
+    text = "word " * 1000
+    prompt = item_prompt(item(), text)
+    assert "Main text (first 2000 characters): word word" in prompt
+    assert "Excerpt:" not in prompt
+    body = prompt.split("characters): ", 1)[1]
+    assert len(body) <= MAIN_TEXT_CHARS
+    assert item_prompt(item(), "").endswith("(no text available)")
+    low = (system_prompt(GUIDE) + prompt).lower()
+    assert not [w for w in ["slop_risk", "rubric", "score", *Signals.model_fields] if w in low]
+    assert "2,000 characters" in GUIDE
+
+
+def test_cli_context_main_requires_snapshots(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from typer.testing import CliRunner
+
+    from slopwatch.cli import app
+    from slopwatch.store import write_jsonl
+
+    data = tmp_path / "data"
+    data.mkdir()
+    (tmp_path / "LABELING.md").write_text(
+        (REPO_ROOT / "LABELING.md").read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    write_jsonl(tmp_path / "labels" / "sample.jsonl", [item(0)], key=lambda it: 0)
+    monkeypatch.setenv("SLOPWATCH_DATA_DIR", str(data))
+    monkeypatch.setenv("SLOPWATCH_CACHE_PATH", str(tmp_path / "missing.sqlite"))
+    r = CliRunner().invoke(app, ["llm-label", "--labeler", "a"])
+    assert r.exit_code == 2 and "no snapshot cache" in r.output
+    bad = CliRunner().invoke(app, ["llm-label", "--labeler", "a", "--context", "nope"])
+    assert bad.exit_code == 2
