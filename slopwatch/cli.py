@@ -9,7 +9,9 @@ Exit codes: 0 ok, 1 a doctor check failed, 2 usage error, 3 credit cap hit.
 
 from __future__ import annotations
 
+import datetime as dt
 import hashlib
+import json
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -29,12 +31,22 @@ from slopwatch.evaluate import evaluate as evaluate_labels
 from slopwatch.evaluate import render_markdown
 from slopwatch.http import HttpClient, HttpError, user_agent
 from slopwatch.label import (
+    append_label,
     draw_sample,
     load_labels,
     load_sample,
     recheck_items,
     run_labeler,
     self_agreement,
+)
+from slopwatch.llm_label import (
+    DEFAULT_NEURON_BUDGET,
+    CloudflareBackend,
+    GeminiBackend,
+    agreement_report,
+    label_items,
+    load_guide,
+    render_agreement,
 )
 from slopwatch.models import Page, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
@@ -498,6 +510,117 @@ def evaluate(
             fh.write(text + "\n")
         console.print(f"evaluate: appended to {out}")
     console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
+
+
+LLM_USAGE = "llm_usage.jsonl"
+
+
+def _llm_labels_path(labeler: str) -> Path:
+    return _labels_dir() / f"llm_{labeler}.jsonl"
+
+
+def _neurons_today(usage_path: Path, labeler: str) -> float:
+    if not usage_path.exists():
+        return 0.0
+    today = dt.datetime.now(dt.UTC).date().isoformat()
+    total = 0.0
+    for line in usage_path.read_text(encoding="utf-8").splitlines():
+        entry = json.loads(line)
+        if entry.get("labeler") == labeler and str(entry.get("ts", "")).startswith(today):
+            total += float(entry.get("neurons", 0.0))
+    return total
+
+
+@app.command("llm-label")
+def llm_label_cmd(
+    labeler: Annotated[str, typer.Option("--labeler", help="a = Gemini, b = Cloudflare")],
+    budget: Annotated[
+        float, typer.Option("--neuron-budget", help="Cloudflare neurons allowed today.")
+    ] = DEFAULT_NEURON_BUDGET,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Blind LLM labeling of labels/sample.jsonl (validation only, never scoring)."""
+    if labeler not in ("a", "b"):
+        err_console.print("llm-label: --labeler must be a or b")
+        raise typer.Exit(EXIT_USAGE)
+    settings, mode = _settings_and_mode(cache_mode)
+    items = load_sample(_labels_dir() / SAMPLE)
+    if not items:
+        err_console.print("llm-label: no labels/sample.jsonl; run `slopwatch label` first")
+        raise typer.Exit(EXIT_USAGE)
+    guide = load_guide(settings.data_dir.parent / "LABELING.md")
+    out_path = _llm_labels_path(labeler)
+    done = set(load_labels(out_path))
+    usage_path = _labels_dir() / LLM_USAGE
+    left: float | None = None
+    if labeler == "b" and mode is not CacheMode.REPLAY:
+        left = max(budget - _neurons_today(usage_path, "b"), 0.0)
+        console.print(f"llm-label b: neuron budget left today {left:.0f} of {budget:.0f}")
+    with (
+        open_cache(settings, mode) as cache,
+        HttpClient(cache, timeout=120.0, max_retries=settings.http_max_retries) as http,
+    ):
+        backend: GeminiBackend | CloudflareBackend
+        if labeler == "a":
+            backend = GeminiBackend(http, settings.gemini_api_key)
+        else:
+            backend = CloudflareBackend(
+                http, settings.cloudflare_api_token, settings.cloudflare_account_id
+            )
+        stats = label_items(
+            items,
+            backend,
+            guide,
+            done=done,
+            write=lambda lab: append_label(out_path, lab),
+            neuron_budget=left,
+        )
+        if mode is not CacheMode.REPLAY:
+            n_fx = cache.export_dir(settings.fixtures_dir, only=cache.used)
+            console.print(f"llm-label {labeler}: exported {n_fx} fixtures")
+    entry = {
+        "ts": dt.datetime.now(dt.UTC).isoformat(timespec="seconds"),
+        "labeler": labeler,
+        "models": sorted(stats.models),
+        "labeled": stats.labeled,
+        "from_cache": stats.from_cache,
+        "retries": stats.retries,
+        "invalid_final": stats.invalid_final,
+        "input_tokens": stats.input_tokens,
+        "output_tokens": stats.output_tokens,
+        "neurons": round(stats.neurons, 2),
+        "fallback_used": isinstance(backend, CloudflareBackend) and backend.fallback_used,
+    }
+    if mode is not CacheMode.REPLAY:
+        usage_path.parent.mkdir(parents=True, exist_ok=True)
+        with usage_path.open("a", encoding="utf-8", newline="\n") as fh:
+            fh.write(json.dumps(entry, sort_keys=True) + "\n")
+    total = len(load_labels(out_path))
+    console.print(
+        f"llm-label {labeler}: labeled {stats.labeled} now ({total}/{len(items)} total), "
+        f"models {', '.join(sorted(stats.models)) or '-'}, retries {stats.retries}, "
+        f"invalid {stats.invalid_final}, tokens in/out {stats.input_tokens}/"
+        f"{stats.output_tokens}, neurons {stats.neurons:.1f}"
+    )
+    if stats.stopped_for_budget:
+        console.print(
+            f"llm-label {labeler}: stopped at today's neuron budget; rerun tomorrow to continue"
+        )
+    console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
+
+
+@app.command()
+def agreement() -> None:
+    """Labels per class for each LLM labeler, A-vs-B Cohen's kappa, agreed items.
+
+    Writes the agreed ok/low items to labels/labels.jsonl (the ground truth used
+    by `slopwatch evaluate`). Does not evaluate the scorer.
+    """
+    items = load_sample(_labels_dir() / SAMPLE)
+    a, b = load_labels(_llm_labels_path("a")), load_labels(_llm_labels_path("b"))
+    rep = agreement_report(items, a, b)
+    write_jsonl(_labels_dir() / LABELS, rep.agreed, key=lambda lab: (lab.url, lab.query_id))
+    console.print(render_agreement(rep), markup=False)
 
 
 @app.command()

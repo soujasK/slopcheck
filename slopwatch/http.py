@@ -129,10 +129,13 @@ class HttpClient:
         *,
         as_of: date | None = None,
         headers: Mapping[str, str] | None = None,
+        cache_url: str | None = None,
     ) -> CachedResponse:
         body = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()
         merged = {"Content-Type": "application/json", **(headers or {})}
-        return self.request("POST", url, body=body, as_of=as_of, headers=merged)
+        return self.request(
+            "POST", url, body=body, as_of=as_of, headers=merged, cache_url=cache_url
+        )
 
     def request(
         self,
@@ -145,24 +148,38 @@ class HttpClient:
         headers: Mapping[str, str] | None = None,
         max_bytes: int | None = None,
         store: bool = True,
+        cache_url: str | None = None,
     ) -> CachedResponse:
         """Cache-routed request.
+
+        ``cache_url`` replaces ``url`` in the cache key, the stored record and
+        logs, for endpoints whose URL path embeds an identifier that must not be
+        persisted (e.g. a Cloudflare account id).
 
         ``store=False`` is for requests whose responses must never be persisted
         (e.g. account metadata); they still pass through this layer and are
         refused in replay mode.
         """
-        key = request_key(method, url, params, as_of, body)
+        public_url = cache_url or url
+        key = request_key(method, public_url, params, as_of, body)
         if store:
             hit = self.cache.lookup(key, as_of=as_of)
             if hit is not None:
-                log.debug("cache hit %s %s", method, safe_url(url, params))
+                log.debug("cache hit %s %s", method, safe_url(public_url, params))
                 return hit
         elif self.cache.mode is CacheMode.REPLAY:
-            raise NetworkDisabled(f"network disabled in replay mode: {safe_url(url, params)}")
+            raise NetworkDisabled(
+                f"network disabled in replay mode: {safe_url(public_url, params)}"
+            )
 
         resp, content = self._send(
-            method, url, params=params, body=body, headers=headers, max_bytes=max_bytes
+            method,
+            url,
+            params=params,
+            body=body,
+            headers=headers,
+            max_bytes=max_bytes,
+            shown=safe_url(public_url, params),
         )
         result = CachedResponse(
             status=resp.status_code,
@@ -177,7 +194,7 @@ class HttpClient:
             self.cache.put(
                 key,
                 method=method,
-                url=url,
+                url=public_url,
                 params=params,
                 as_of=as_of,
                 status=result.status,
@@ -197,10 +214,11 @@ class HttpClient:
         body: bytes | None,
         headers: Mapping[str, str] | None,
         max_bytes: int | None = None,
+        shown: str | None = None,
     ) -> tuple[httpx.Response, bytes]:
         """Send and read the body, retrying transport errors in either step (a
         server can accept the connection and then stall mid-body)."""
-        shown = safe_url(url, params)
+        shown = shown or safe_url(url, params)
         last_error: Exception | None = None
         for attempt in range(self.max_retries + 1):
             if attempt:

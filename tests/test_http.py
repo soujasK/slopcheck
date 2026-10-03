@@ -158,3 +158,23 @@ def test_body_read_timeout_is_retried_then_reported() -> None:
         pytest.raises(HttpError, match="ReadTimeout"),
     ):
         http.get(URL, max_bytes=10_000)
+
+
+def test_cache_url_hides_secret_path_from_cache_and_errors() -> None:
+    secret_url = "https://api.example.test/accounts/SECRETACCT/ai/run/model"
+    public = "https://api.example.test/accounts/{account}/ai/run/model"
+    rec = Recorder(lambda r: httpx.Response(200, json={"ok": 1}))
+    with make_client(rec) as http:
+        http.post_json(secret_url, {"q": 1}, cache_url=public)
+        again = http.post_json(secret_url, {"q": 1}, cache_url=public)
+        dump = " ".join(http.cache._db.iterdump())
+    assert again.from_cache and len(rec.requests) == 1
+    assert "SECRETACCT" in str(rec.requests[0].url)  # the real URL is used on the wire
+    assert "SECRETACCT" not in dump and "{account}" in dump
+
+    def boom(request: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError("down")
+
+    with make_client(Recorder(boom), max_retries=0) as http, pytest.raises(HttpError) as err:
+        http.post_json(secret_url, {"q": 2}, cache_url=public)
+    assert "SECRETACCT" not in str(err.value)
