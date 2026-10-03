@@ -317,3 +317,27 @@ def test_extract_combines_signals(lists: DomainLists) -> None:
     assert s.near_dup_group is None
     assert out.title.startswith("10 Best Smartphones")
     assert out.simhash == duplicate.simhash(out.main_text)
+
+
+@pytest.mark.parametrize(
+    ("html", "expected"),
+    [
+        ('<a href="/cart">Cart</a>', True),
+        ('<a href="https://www.shop.example/checkout/">Checkout</a>', True),
+        ('<a href="https://other.example/cart">Their cart</a>', False),  # not same site
+        ("".join(f'<a href="/products/p{i}">P{i}</a>' for i in range(3)), True),
+        ("".join(f'<a href="/products/p{i}">P{i}</a>' for i in range(2)), False),
+        ("<button>Add to Cart</button>", True),
+        ("<p>Buy now and save</p>", True),
+        ('<script type="application/ld+json">{"@type": ["Product"], "name": "x"}</script>', True),
+        ('<script type="application/ld+json">{"@type": "Article"}</script>', False),
+        ("<p>We explain how carts work.</p>", False),
+    ],
+)
+def test_sells_directly(html: str, expected: bool) -> None:
+    assert commerce.sells_directly(parse_page("https://www.shop.example/blog/x", html)) is expected
+
+
+def test_extract_sets_sells_directly(lists: DomainLists) -> None:
+    html = (HTML / "affiliate_listicle.html").read_text(encoding="utf-8")
+    assert extract(LISTICLE_URL, html, lists).signals.sells_directly is False

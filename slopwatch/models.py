@@ -92,6 +92,8 @@ class Signals(_Frozen):
     text_len: int  # main-text chars
     boilerplate_ratio: float  # share of visible text outside the main text
     near_dup_group: str | None = None  # filled at score time, across a SERP set
+    # Own site sells (cart/checkout/buy button/product markup). Added in rubric v2.
+    sells_directly: bool = False
 
 
 class SignalRecord(_Frozen):

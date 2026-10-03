@@ -360,3 +360,18 @@ def test_unexpected_fetch_error_is_recorded_not_fatal(monkeypatch: pytest.Monkey
             load_lists(REPO_ROOT / "data"),
         )
     assert [p.unscored_reason for p in result.pages] == ["fetch_failed", "fetch_failed"]
+
+
+def test_resignal_requires_matching_snapshot(tmp_path: Path) -> None:
+    from slopwatch.cache import Cache
+
+    url = "https://www.dealsite.example/best-phones/"
+    with make_client(Recorder(fake_web)) as http:
+        fetched = pipeline.fetch_pages([url], PageFetcher(http), load_lists(REPO_ROOT / "data"))
+        cache: Cache = http.cache
+        (rec,) = fetched.records
+        again = pipeline.resignal([rec], cache, load_lists(REPO_ROOT / "data"))
+        assert again[0].signals == rec.signals and again[0].html_hash == rec.html_hash
+        tampered = rec.model_copy(update={"html_hash": "0" * 64})
+        with pytest.raises(pipeline.SnapshotMismatch, match="missing or changed"):
+            pipeline.resignal([tampered], cache, load_lists(REPO_ROOT / "data"))

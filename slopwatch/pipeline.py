@@ -9,11 +9,12 @@ Every SERP row ends up with either a SignalRecord or a Page carrying an explicit
 
 from __future__ import annotations
 
+import hashlib
 import logging
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
-from slopwatch.cache import CacheMiss
+from slopwatch.cache import Cache, CacheMiss, request_key
 from slopwatch.models import Page, SerpMeta, SerpRow, SignalRecord
 from slopwatch.pages import FetchResult as PageFetchResult
 from slopwatch.pages import PageFetcher, make_excerpt
@@ -137,3 +138,31 @@ def coverage_gaps(rows: list[SerpRow], pages: list[Page], records: list[SignalRe
     scored = {r.url for r in records}
     explained = {p.url for p in pages if p.unscored_reason is not None}
     return sorted({row.url for row in rows} - scored - explained)
+
+
+class SnapshotMismatch(RuntimeError):
+    """Cached HTML is missing or differs from the hash committed at fetch time."""
+
+
+def resignal(records: list[SignalRecord], cache: Cache, lists: DomainLists) -> list[SignalRecord]:
+    """Re-extract signals from the locally cached HTML of already-scored pages.
+
+    Used when a signal is added: every page is checked against the SHA-256
+    committed in data/signals.jsonl, so new signals are computed on exactly the
+    snapshot that was fetched (and labeled), never on a re-fetched page.
+    """
+    out: list[SignalRecord] = []
+    for rec in records:
+        hit = cache.get(request_key("GET", rec.url))
+        if hit is None or hashlib.sha256(hit.body).hexdigest() != rec.html_hash:
+            raise SnapshotMismatch(f"cached HTML missing or changed for {rec.url}")
+        ex = extract(rec.url, hit.text, lists)
+        out.append(
+            SignalRecord(
+                url=rec.url,
+                html_hash=rec.html_hash,
+                signals=ex.signals,
+                simhash=f"{ex.simhash:016x}",
+            )
+        )
+    return out

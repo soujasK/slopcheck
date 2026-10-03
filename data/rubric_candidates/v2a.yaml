@@ -1,0 +1,100 @@
+# Candidate v2a (declared before evaluation on dev): v1 + no_author (0.30) + sells_directly (0.25); bands unchanged
+# SlopWatch scoring rubric.
+#
+# status: draft -> frozen. Freeze and commit BEFORE any labeling. After that,
+# changes are allowed only while tuning on the 100-label dev split, each in its
+# own commit, and never after the held-out test split has been evaluated.
+#
+# slop_risk = min(1, sum of weights of the rules that fire). HIGHER = WORSE:
+# 0 = no low-quality signals fired, 1 = many did. Bands:
+#   low    slop_risk >= bands.low
+#   mixed  bands.mixed <= slop_risk < bands.low
+#   ok     slop_risk < bands.mixed
+# The filter drops results with slop_risk >= --threshold (default 0.6).
+#
+# A rule fires when ALL its conditions hold. Ops: gte, gt, lte, lt, eq, set
+# (`set: true` = signal is not null). `reason` is a format string over the
+# Signals fields and is shown to users verbatim.
+
+version: 2
+status: draft
+
+bands:
+  low: 0.5
+  mixed: 0.25
+
+rules:
+  - id: affiliate_heavy
+    weight: 0.35
+    all:
+      - {signal: affiliate_links, gte: 3}
+      - {signal: affiliate_density, gte: 0.05}
+    reason: "{affiliate_links} affiliate links (density {affiliate_density:.2f})"
+
+  - id: affiliate_present
+    weight: 0.10
+    all:
+      - {signal: affiliate_links, gte: 1}
+    reason: "contains affiliate links ({affiliate_links})"
+
+  - id: commerce_heavy
+    weight: 0.15
+    all:
+      - {signal: outbound_links, gte: 5}
+      - {signal: commerce_ratio, gte: 0.30}
+    reason: "{commerce_ratio:.0%} of {outbound_links} outbound links go to shops"
+
+  - id: listicle
+    weight: 0.10
+    all:
+      - {signal: listicle, eq: true}
+    reason: "'best X' listicle pattern"
+
+  - id: ad_heavy
+    weight: 0.15
+    all:
+      - {signal: ad_scripts, gte: 8}
+    reason: "{ad_scripts} ad/tracker domains loaded"
+
+  - id: anonymous
+    weight: 0.15
+    all:
+      - {signal: has_author, eq: false}
+      - {signal: has_date, eq: false}
+    reason: "no author or date"
+
+  - id: no_about_contact
+    weight: 0.05
+    all:
+      - {signal: has_about_contact, eq: false}
+    reason: "no about or contact page linked"
+
+  - id: thin
+    weight: 0.15
+    all:
+      - {signal: text_len, lt: 1500}
+    reason: "thin main text ({text_len} chars)"
+
+  - id: boilerplate
+    weight: 0.05
+    all:
+      - {signal: boilerplate_ratio, gte: 0.60}
+    reason: "mostly boilerplate ({boilerplate_ratio:.0%})"
+
+  - id: near_duplicate
+    weight: 0.15
+    all:
+      - {signal: near_dup_group, set: true}
+    reason: "near-duplicate of a page on another domain in the same results"
+
+  - id: no_author
+    weight: 0.3
+    all:
+      - {signal: has_author, eq: false}
+    reason: "no named author"
+
+  - id: sells_directly
+    weight: 0.25
+    all:
+      - {signal: sells_directly, eq: true}
+    reason: "the site sells products on this page (cart, buy button or product markup)"

@@ -1,8 +1,10 @@
-"""Outbound commerce-link ratio and the "best X" listicle pattern."""
+"""Outbound commerce-link ratio, the "best X" listicle pattern, and whether the
+page's own site sells directly."""
 
 from __future__ import annotations
 
 import re
+from urllib.parse import urlsplit
 
 from slopwatch.signals.affiliate import is_affiliate
 from slopwatch.signals.base import ParsedPage
@@ -40,3 +42,38 @@ def is_listicle(page: ParsedPage) -> bool:
         1 for tag, text in page.headings if tag in {"h2", "h3"} and _NUMBERED_HEADING.match(text)
     )
     return numbered >= MIN_NUMBERED_HEADINGS
+
+
+# The page's own site sells: cart / checkout links, buy buttons, product markup.
+# Catches first-party "content marketing" (a shop's blog ranking for an
+# informational query), which affiliate detection cannot see because the shop
+# links to itself.
+_CART_PATH = re.compile(r"/(cart|checkout|basket|my-cart|add-to-cart)(/|$)", re.IGNORECASE)
+_PRODUCT_PATH = re.compile(r"/(products?|shop|store|collections)/", re.IGNORECASE)
+_BUY_PHRASES = ("add to cart", "add to bag", "buy now")
+_PRODUCT_TYPES = frozenset({"Product", "Offer", "AggregateOffer", "ProductGroup"})
+MIN_PRODUCT_LINKS = 3
+
+
+def _types(node: dict[str, object]) -> set[str]:
+    t = node.get("@type")
+    if isinstance(t, str):
+        return {t}
+    if isinstance(t, list):
+        return {str(x) for x in t}
+    return set()
+
+
+def sells_directly(page: ParsedPage) -> bool:
+    same = page.same_site()
+    if any(_CART_PATH.search(urlsplit(link.href).path) for link in same):
+        return True
+    if (
+        sum(1 for link in same if _PRODUCT_PATH.search(urlsplit(link.href).path))
+        >= MIN_PRODUCT_LINKS
+    ):
+        return True
+    text = page.text.lower()
+    if any(phrase in text for phrase in _BUY_PHRASES):
+        return True
+    return any(_types(node) & _PRODUCT_TYPES for node in page.jsonld_nodes())

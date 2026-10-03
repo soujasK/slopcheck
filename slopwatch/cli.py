@@ -377,6 +377,29 @@ def fetch(
     console.print(credits_line(0, ledger))
 
 
+@app.command()
+def resignal() -> None:
+    """Re-extract signals for scored pages from the local HTML cache (hash-checked).
+
+    Needs the local cache from the original `fetch` (page HTML is never
+    committed). Refuses if any page's HTML is missing or differs from the hash
+    in data/signals.jsonl.
+    """
+    settings = Settings()
+    records = read_jsonl(settings.data_dir / SIGNALS, SignalRecord)
+    if not records:
+        err_console.print("resignal: no data/signals.jsonl")
+        raise typer.Exit(EXIT_USAGE)
+    with Cache(settings.cache_path, mode=CacheMode.LIVE) as cache:
+        try:
+            fresh = pipeline.resignal(records, cache, load_lists(settings.data_dir))
+        except pipeline.SnapshotMismatch as exc:
+            err_console.print(f"resignal: {exc}")
+            raise typer.Exit(EXIT_FAIL) from None
+    write_jsonl(settings.data_dir / SIGNALS, fresh, key=lambda r: r.url)
+    console.print(f"resignal: {len(fresh)} pages re-extracted from hash-verified snapshots")
+
+
 SAMPLE = "sample.jsonl"
 LABELS = "labels.jsonl"
 RECHECK = "recheck.jsonl"
