@@ -299,3 +299,40 @@ def test_collect_single_job_probe(
     assert "credits: 1 spent by this command; project ledger 1/140" in result.output
     rows = read_jsonl(data_dir / "serps.jsonl", SerpRow)
     assert {r.query_id for r in rows} == {"health-01"} and len(rows) == 10
+
+
+def test_score_label_evaluate_end_to_end(
+    data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch, tmp_path: Path
+) -> None:
+    from slopwatch.models import Score
+
+    monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
+    assert invoke("score").exit_code == 2  # nothing collected yet
+    assert invoke("collect", "--max-credits", "100", "--yes").exit_code == 0
+    assert invoke("fetch").exit_code == 0
+    scored = invoke("score", "--cache-mode", "replay")
+    assert scored.exit_code == 0, scored.output
+    assert "rubric v0 (draft)" in scored.output and "credits: 0 spent" in scored.output
+    scores = read_jsonl(data_dir / "scores.jsonl", Score)
+    by_url = {s.url: s for s in scores}
+    assert by_url["https://www.dealsite.example/best-phones/"].band == "low"
+
+    # first run draws the sample and stops so it can be committed
+    drew = invoke("label", "--n", "20", "--seed", "7")
+    assert drew.exit_code == 0 and "drew 20 items" in drew.output
+    sample = tmp_path / "labels" / "sample.jsonl"
+    assert sample.exists() and not (tmp_path / "labels" / "labels.jsonl").exists()
+
+    keys = iter(["l", "o"] * 10)
+    monkeypatch.setattr("typer.getchar", lambda: next(keys))
+    labeled = invoke("label")
+    assert labeled.exit_code == 0, labeled.output
+    assert "wrote 20 labels" in labeled.output
+
+    bad = invoke("evaluate", "--split", "nope")
+    assert bad.exit_code == 2
+    out = tmp_path / "EVAL.md"
+    ev = invoke("evaluate", "--split", "all", "--out", str(out))
+    assert ev.exit_code == 0, ev.output
+    body = out.read_text(encoding="utf-8")
+    assert "sha256:" in body and "Split: all (n = 20" in body and "| Precision |" in body

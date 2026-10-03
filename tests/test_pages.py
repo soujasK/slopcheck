@@ -114,7 +114,27 @@ def test_transport_failure_is_fetch_failed() -> None:
 
 def test_replay_without_fixture_is_not_recorded() -> None:
     with make_client(no_network, mode=CacheMode.REPLAY) as http:
-        # robots.txt is missing too -> conservative verdict, no network
+        # robots.txt is missing too -> no network, explicit reason
+        assert PageFetcher(http).fetch("https://a.example/x").page.unscored_reason == (
+            "not_recorded"
+        )
+
+
+def test_unreachable_site_is_fetch_failed_not_robots() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectTimeout("no route")
+
+    rec = Recorder(handler)
+    with make_client(rec, max_retries=0) as http:
+        fetcher = PageFetcher(http)
+        assert fetcher.fetch("https://down.example/a").page.unscored_reason == "fetch_failed"
+        assert fetcher.fetch("https://down.example/b").page.unscored_reason == "fetch_failed"
+    assert len(rec.requests) == 1  # origin verdict is remembered
+
+
+def test_oversized_robots_is_unavailable() -> None:
+    rec = site(robots=httpx.Response(200, content=b"#" * 600_000))
+    with make_client(rec) as http:
         assert PageFetcher(http).fetch("https://a.example/x").page.unscored_reason == (
             "robots_unavailable"
         )

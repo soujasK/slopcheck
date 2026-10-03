@@ -18,3 +18,25 @@ fetches pages as they are then, which may differ from the snapshot. The stored
 HTML hash shows whether a page changed, but the original HTML cannot be
 recovered from the repo, so the signal extractors cannot be re-run on the
 original snapshot by a third party.
+
+## Engines
+
+- Bing could not be measured. SerpApi's Bing engine returned empty or
+  first-word-only results for India in three probes (see SERPAPI_USAGE.md), so
+  it was replaced before collection by DuckDuckGo and Yahoo.
+- DuckDuckGo and Yahoo both draw heavily on Bing's index (in the probe, all 7
+  Yahoo results were also in DuckDuckGo's top 10). They are reported as the
+  "Bing family", not as independent engines.
+
+## Result counts
+
+"Top 10" means the organic results the engine returned on its first page, up
+to 10. Google returned 6 to 10 (it showed an AI Overview on 39 of 40 India
+searches and 20 of 20 US searches), DuckDuckGo 9 to 10, Yahoo always 7.
+Fetching a second page would have doubled the SerpApi cost. The report states
+the actual n per engine.
+
+## Snapshot
+
+All SERPs were collected on 2026-10-03 from one location via SerpApi. Results
+vary by day, user and location; this is one snapshot, not a trend.

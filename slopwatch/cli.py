@@ -9,6 +9,7 @@ Exit codes: 0 ok, 1 a doctor check failed, 2 usage error, 3 credit cap hit.
 
 from __future__ import annotations
 
+import hashlib
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -24,13 +25,17 @@ from rich.table import Table
 from slopwatch import __version__, pipeline
 from slopwatch.cache import Cache
 from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
+from slopwatch.evaluate import evaluate as evaluate_labels
+from slopwatch.evaluate import render_markdown
 from slopwatch.http import HttpClient, HttpError, user_agent
-from slopwatch.models import Page, SerpRow
+from slopwatch.label import draw_sample, load_labels, load_sample, run_labeler
+from slopwatch.models import Page, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
 from slopwatch.queries import Job, PlanError, load_plan
+from slopwatch.score import load_rubric, score_all
 from slopwatch.serp import ProjectLedger, SerpClient
 from slopwatch.signals import load_lists
-from slopwatch.store import PAGES, SERP_META, SERPS, SIGNALS, read_jsonl, write_jsonl
+from slopwatch.store import PAGES, SCORES, SERP_META, SERPS, SIGNALS, read_jsonl, write_jsonl
 
 app = typer.Typer(
     name="slopwatch",
@@ -347,6 +352,110 @@ def fetch(
             err_console.print(f"fetch: {len(gaps)} URLs have neither signals nor a reason")
             raise typer.Exit(EXIT_FAIL)
     console.print(credits_line(0, ledger))
+
+
+SAMPLE = "sample.jsonl"
+LABELS = "labels.jsonl"
+
+
+def _labels_dir() -> Path:
+    return Settings().data_dir.parent / "labels"
+
+
+def _load_scored(settings: Settings) -> tuple[list[SerpRow], list[SignalRecord]]:
+    rows = read_jsonl(settings.data_dir / SERPS, SerpRow)
+    records = read_jsonl(settings.data_dir / SIGNALS, SignalRecord)
+    if not rows or not records:
+        err_console.print("no SERP rows or signals; run `slopwatch collect` and `fetch` first")
+        raise typer.Exit(EXIT_USAGE)
+    return rows, records
+
+
+@app.command()
+def score(cache_mode: CacheModeOpt = None) -> None:
+    """Score every fetched page with data/rubric.yaml (slop_risk: higher = worse).
+
+    Reads only committed data (signals.jsonl), so it works in replay mode.
+    """
+    settings, _mode = _settings_and_mode(cache_mode)
+    rows, records = _load_scored(settings)
+    rubric = load_rubric(settings.data_dir / "rubric.yaml")
+    scores = score_all(rows, records, rubric)
+    write_jsonl(settings.data_dir / SCORES, scores, key=lambda s: s.url)
+    bands = Counter(s.band for s in scores)
+    console.print(
+        f"score: rubric v{rubric.version} ({rubric.status}); {len(scores)} pages scored: "
+        + ", ".join(f"{b} {bands.get(b, 0)}" for b in ("ok", "mixed", "low"))
+    )
+    console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
+
+
+@app.command()
+def label(
+    n: Annotated[int, typer.Option("--n", min=1, help="Sample size.")] = 200,
+    seed: Annotated[int, typer.Option("--seed", help="Sampling seed.")] = 7,
+) -> None:
+    """Draw the label sample (first run), then label it one page at a time.
+
+    The first run only draws labels/sample.jsonl and stops, so it can be
+    committed before any labeling. The labeler never shows scores.
+    """
+    settings = Settings()
+    labels_dir = _labels_dir()
+    sample_path = labels_dir / SAMPLE
+    if not sample_path.exists():
+        rows, records = _load_scored(settings)
+        pages = read_jsonl(settings.data_dir / PAGES, Page)
+        plan = load_plan(settings.data_dir / "queries.yaml")
+        queries = {(j.query.id, j.query.locale): j.query for j in plan.jobs}
+        items = draw_sample(rows, pages, {r.url for r in records}, queries, n=n, seed=seed)
+        write_jsonl(sample_path, items, key=lambda it: 0)  # keep the seeded order
+        splits = Counter(it.split for it in items)
+        console.print(
+            f"label: drew {len(items)} items (seed {seed}; dev {splits['dev']}, "
+            f"test {splits['test']}) -> {sample_path}"
+        )
+        console.print("label: commit labels/sample.jsonl, then run `slopwatch label` again")
+        return
+    items = load_sample(sample_path)
+    run_labeler(
+        items,
+        labels_dir / LABELS,
+        getch=typer.getchar,
+        prompt=lambda text: str(typer.prompt(text, default="", show_default=False)),
+        echo=console.print,
+    )
+
+
+@app.command()
+def evaluate(
+    split: Annotated[str, typer.Option("--split", help="dev | test | all")] = "dev",
+    out: Annotated[Path | None, typer.Option("--out", help="Append the report here.")] = None,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Precision/recall/F1 for "low" against hand labels. Tune on dev only."""
+    if split not in ("dev", "test", "all"):
+        err_console.print("evaluate: --split must be dev, test or all")
+        raise typer.Exit(EXIT_USAGE)
+    settings, _mode = _settings_and_mode(cache_mode)
+    rows, records = _load_scored(settings)
+    rubric_path = settings.data_dir / "rubric.yaml"
+    rubric = load_rubric(rubric_path)
+    scores = {s.url: s for s in score_all(rows, records, rubric)}
+    items = load_sample(_labels_dir() / SAMPLE)
+    labels = load_labels(_labels_dir() / LABELS)
+    report = evaluate_labels(items, labels, scores, split=split)  # type: ignore[arg-type]
+    digest = hashlib.sha256(rubric_path.read_bytes()).hexdigest()[:12]
+    text = (
+        f"<!-- rubric v{rubric.version} ({rubric.status}) sha256:{digest}; "
+        f"{len(labels)} labels -->\n" + render_markdown(report)
+    )
+    console.print(text, markup=False)
+    if out is not None:
+        with out.open("a", encoding="utf-8", newline="\n") as fh:
+            fh.write(text + "\n")
+        console.print(f"evaluate: appended to {out}")
+    console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
 
 
 @app.command()

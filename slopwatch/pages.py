@@ -138,29 +138,40 @@ class PageFetcher:
     def __init__(self, http: HttpClient, *, max_bytes: int = 2 * 1024 * 1024) -> None:
         self.http = http
         self.max_bytes = max_bytes
-        self._robots: dict[str, RobotFileParser | None] = {}
+        # Per origin: a parsed robots.txt, or the reason the origin cannot be fetched.
+        self._robots: dict[str, RobotFileParser | UnscoredReason] = {}
 
     def robots_verdict(self, url: str) -> UnscoredReason | None:
-        """None if fetching is allowed, otherwise why not."""
+        """None if fetching is allowed, otherwise why not.
+
+        A site that cannot be reached at all is ``fetch_failed`` (not a robots
+        problem); a robots.txt answering 5xx or over 512 KB is
+        ``robots_unavailable``, and we conservatively do not fetch.
+        """
         parts = urlsplit(url)
         origin = f"{parts.scheme}://{parts.netloc}"
         if origin not in self._robots:
-            try:
-                resp = self.http.get(f"{origin}/robots.txt", max_bytes=512_000)
-            except (HttpError, CacheMiss):
-                resp = None
-            if resp is None or resp.status >= 500:
-                # unreachable robots.txt: be conservative and do not fetch
-                self._robots[origin] = None
-            else:
-                parser = RobotFileParser()
-                # 4xx means no robots.txt: everything is allowed
-                parser.parse([] if resp.status >= 400 else resp.text.splitlines())
-                self._robots[origin] = parser
+            self._robots[origin] = self._load_robots(origin)
         robots = self._robots[origin]
-        if robots is None:
-            return "robots_unavailable"
+        if not isinstance(robots, RobotFileParser):
+            return robots
         return None if robots.can_fetch(ROBOTS_AGENT, url) else "robots_blocked"
+
+    def _load_robots(self, origin: str) -> RobotFileParser | UnscoredReason:
+        try:
+            resp = self.http.get(f"{origin}/robots.txt", max_bytes=512_000)
+        except ResponseTooLarge:
+            return "robots_unavailable"
+        except CacheMiss:
+            return "not_recorded"
+        except HttpError:
+            return "fetch_failed"
+        if resp.status >= 500:
+            return "robots_unavailable"
+        parser = RobotFileParser()
+        # 4xx means no robots.txt: everything is allowed
+        parser.parse([] if resp.status >= 400 else resp.text.splitlines())
+        return parser
 
     def fetch(self, url: str) -> FetchResult:
         verdict = self.robots_verdict(url)
