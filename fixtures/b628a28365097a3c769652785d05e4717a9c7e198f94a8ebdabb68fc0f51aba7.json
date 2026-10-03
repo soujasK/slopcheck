@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional blog post by an insurance agency lacking substantive independent analysis or author attribution.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TaceMNsJ4/1QPOY/QEj41a6UjITzF4NspbILxcOKfnhmDvf/5EVhlH5U7arn1VADxOkB8oydVlHcNQSrx8b7ru+YuV6hnCGTloiloOXMSoUqzZej2aYYbh+M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 616,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 646,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 616\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"9wPBatygKa3Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:32:40.522331+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:32:40 GMT"
+  },
+  "key": "b628a28365097a3c769652785d05e4717a9c7e198f94a8ebdabb68fc0f51aba7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

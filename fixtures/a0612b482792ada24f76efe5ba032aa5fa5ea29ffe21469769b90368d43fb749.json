@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"wikiHow is a recognized collaborative-author platform providing structured, step-by-step troubleshooting guides for tech issues.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tyf+oN7+pLBUVkluvlxQuwsJIrdZL2y5ZfJvgndsCSY3uEwb4BSSFQShmFCKZttc7/srBWNPobCsTMWd7XN1oHZwxHgI0DZAHdlE96TDi6ufUlP3N2VYNqsc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 601,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 635,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 601\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"SwbBatLnG6urg8UPxJ_wsAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:42:36.381455+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:42:36 GMT"
+  },
+  "key": "a0612b482792ada24f76efe5ba032aa5fa5ea29ffe21469769b90368d43fb749",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

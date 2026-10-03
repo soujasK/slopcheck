@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized credit bureau, features named authors and editors, and provides direct, actionable advice on managing debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TRWMM2PnF8k4gND6b2NHA4FsoTWYXg7HsFp/kA8o5TEeMYfLsYc7WOHun1L/MAcIPfZTbCqHn85NDhnD4I4BuC8yxOrO756z3Uql2sK+XsjhgRHjk+oKEUZg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 623,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 659,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 623\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VgPBaqn8Jvq2juMPvbjaoAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:29:59.753345+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:29:59 GMT"
+  },
+  "key": "0ce35410e265f1f7c7b28587d49f8ceabf212b108bde34b1db2822e832d8b658",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

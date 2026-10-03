@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a commercial product category page designed to sell brand-specific air purifiers rather than providing an objective guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjsmS6NkQrTo0VRKNywjkZu3/zjT/2TFELymzOpSepxErbvbGvyrUUS/nheHHY9BuqymBRUp65WdshCiFxH6F+2bjE78w/Odxa8KmF/xmQHpljRys90Dj4QY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 653,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 687,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 653\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MgXBat_LLbmkg8UP55SMqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:37:55.670514+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:37:55 GMT"
+  },
+  "key": "a18e56ceb1f55a4c5b714585007710ae98217d05ea16dc34ab76569da2baad36",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

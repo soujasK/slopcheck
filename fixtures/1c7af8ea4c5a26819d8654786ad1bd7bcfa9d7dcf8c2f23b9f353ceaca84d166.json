@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a detailed running shoe guide by a named author (Amanda Brooks) with independent reviews and clear expertise.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1pQcPoMBzPPIvXnHgmnM7xXvYiSHnZdYyfynHUWsnibbEFfHyXtqEjqCK0gLS24EqEX40pDgcy9r3LO+YSCD2N/Nlnvdv7AG40FPdrKMvGK+yFqOGePIvAQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 600,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 640,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 600\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"OQfBauXrNYajqfkP3K3O6Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:46:34.754445+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:46:34 GMT"
+  },
+  "key": "1c7af8ea4c5a26819d8654786ad1bd7bcfa9d7dcf8c2f23b9f353ceaca84d166",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

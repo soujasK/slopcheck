@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is hosted by an official financial institution and provides educational content on index funds versus mutual funds.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TNkkBy7Fz1ZpvF8lA3lj1c+M2J5zC2itmag77B+jzV6VaA3cpm7tcNb28xr2TOun5HrpPeaNrmJ53cuEFM7sG33vSH7/wx9XsiXVfS2qtgDUg9OJgGdRGu9g=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 590,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 627,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 590\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"rQTBauyJH4_eg8UPvOPcyAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:35:42.485777+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:35:42 GMT"
+  },
+  "key": "af7db770a6c4e7abb4ddd82b10da1b07457502447059b3f88932ab4d22872e32",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

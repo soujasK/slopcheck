@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from an official government health channel and directly provides reliable information on fatty liver disease.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TmJc6nE4UJmX6q3h690XNIV6XF/L9pm6P9t0qv9y2A9ydup6wf7NfWiuxDC/iyMk7uLXbJrkypTw+n0lj2wXfja6nDis2kukOoaaBEzLA8gkz6I0u4ehKfVE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 610,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 646,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 610\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"1APBaqeSJumwg8UP--eLmAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:32:05.500864+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:32:05 GMT"
+  },
+  "key": "5c22f48252c8db201bf0f0e0919d979d289d3951248f30931bc501ed4081f666",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

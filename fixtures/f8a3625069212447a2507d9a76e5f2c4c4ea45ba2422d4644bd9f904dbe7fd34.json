@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable health publisher providing a direct overview of over-the-counter gas relief medications.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TYWtEI3JAFYf3wMoF/U+OAEVbFJRXudOEVHnPWQZazRJcqfNZp10NlZx2mdjmdyt5xO5xKCFnW/BcKvMOsk0xpV9C70UvMuoH0HeuEaTJfL8Ie7KixsxtaSQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 594,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 627,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 594\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"RQLBauOlKuO-g8UPlrS4kQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:25:26.767180+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:25:26 GMT"
+  },
+  "key": "f8a3625069212447a2507d9a76e5f2c4c4ea45ba2422d4644bd9f904dbe7fd34",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

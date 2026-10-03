@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic Q&A health forum snippet geared towards app downloads and doctor bookings rather than providing a definitive, well-sourced medical overview of side effects.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TP1ueaZAzplMjyIbrBwUyywejqvnRYwm5PSW+375pu0+Sw3TavLAzOYhXzaZIoReCv0LapX+1jHfoqPjHCv1Lzro41VVqMK4Xc5HPprBmRePdNNheuqtp+hg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 625,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 669,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 625\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MwPBaoKrJJKzg8UP6sGw6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:29:24.544073+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:29:24 GMT"
+  },
+  "key": "e1c465c7f2d0cb1ebe8ec41b080572e6afccdb3075c321544804fbb33672a9c4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

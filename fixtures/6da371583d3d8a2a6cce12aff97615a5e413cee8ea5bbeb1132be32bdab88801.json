@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"unsure\\\",\\n  \\\"reason\\\": \\\"The snippet is from the homepage and blog feed rather than a specific guide answering the query about online shopping credit cards.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TtDNjbk6xwKBHDClrXxbvi4laapEqtK/5ZRajGDo477qMoW0UqA5yii+xOBUlZ7Kq7k2y6pYUV0RRhCP0X6Dx8CqMtCvmC7k+SKKmcRuu1r7jQr/T41+nNDY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 601,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 642,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 601\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"TALBatPMMcO0g8UPgdCdkAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:25:33.821885+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:25:33 GMT"
+  },
+  "key": "6da371583d3d8a2a6cce12aff97615a5e413cee8ea5bbeb1132be32bdab88801",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

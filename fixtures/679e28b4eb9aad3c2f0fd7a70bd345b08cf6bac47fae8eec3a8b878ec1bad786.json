@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a promotional treatment page for a specific hospital with vague claims and no substantive medical information or named experts.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWXd4vcliNVfzlhG1DJ6dZmi3Az0RYZbiSQ+SZTJMyQmo67N28oisvKqces59r4juVwnF+EGIKRdo4q+IJzjyM6pevjLA50IdKvhd0VAuVty8Yw5tXMKOudc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 593,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 633,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 593\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fwfBasvnNPvHg8UP4-XIsQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:47:44.818077+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:47:44 GMT"
+  },
+  "key": "679e28b4eb9aad3c2f0fd7a70bd345b08cf6bac47fae8eec3a8b878ec1bad786",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

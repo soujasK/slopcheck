@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional landing page for Syncios software rather than an informative guide answering the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWsnlmjM83HZTd2wrmODAP8s7EfWPC/hjtvexyvXGyb1l8fnYFgA1LL/7tM3QTjqrnQZuOZXTy5zf+4qZrjtHSXbg0UWyOWcwkweZNNOmhyLyztf8oPHeeaA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 600,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 631,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 600\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"jgPBap_7LqDag8UP7P6K-QM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:30:55.561697+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:30:55 GMT"
+  },
+  "key": "f0ea4b5e5bb5137b65809713bf3fe1bc0d37c1b5f336170fc38f010b18133461",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

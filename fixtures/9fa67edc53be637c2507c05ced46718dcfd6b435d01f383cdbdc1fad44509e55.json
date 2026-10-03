@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is hosted by a pest control brand and offers generic health advice without clear medical authorship or sources.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TIf4ZoNCswqg8WWMdAtz8W8nWpuHBJgTbdcVLhlEBVXoyc/O62MSAfCHndgTQrx8rnsjws9qX+RW21u2xMI/i3HctMUHrhwjue/a1m9EbZ+5O8x19nfJSP0Y=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 624,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 656,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 624\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"mQbBapLLAYrGg8UP9NnEmQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:43:54.106813+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:43:53 GMT"
+  },
+  "key": "9fa67edc53be637c2507c05ced46718dcfd6b435d01f383cdbdc1fad44509e55",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

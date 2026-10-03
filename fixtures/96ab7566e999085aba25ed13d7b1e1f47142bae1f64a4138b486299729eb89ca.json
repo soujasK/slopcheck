@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized financial organization and provides direct guidance on mutual fund SIP investment options for 2026.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Thh0Q0pmPB0XK0SLmNkez4kl70UaRTh98FmRpvl5/HzkqDnb+azX44n0EDFuqfTwqjRC5pzwpkEYc/36IFFQ1DmnlolrouSBi2zYDiV2l+Aj/yBuUIJ6DyHE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 613,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 649,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 613\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"1AXBauXRF83a4-EPsu3VqQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:40:37.294351+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:40:36 GMT"
+  },
+  "key": "96ab7566e999085aba25ed13d7b1e1f47142bae1f64a4138b486299729eb89ca",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

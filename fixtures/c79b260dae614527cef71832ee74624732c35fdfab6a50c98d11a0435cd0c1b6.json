@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page has a named author and provides a direct, actionable guide on blocking spam calls on Android.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TOsPavQl11TA3jc3q2nyQ/sTWu4tuZ5r2C7WFZ/xWW2hLk0Dduhg+PQOKAGuZBcPH65gTDC4w+2um0zCA9J3YXMEwifzum+W2NoERqLts6oHfda73MJxWy7I=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 609,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 640,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 609\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"nwbBauG1OpfQg8UPotuiuQk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:44:01.071715+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:44:00 GMT"
+  },
+  "key": "c79b260dae614527cef71832ee74624732c35fdfab6a50c98d11a0435cd0c1b6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a personal finance article from a recognized financial organization with a named author discussing credit card debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TwIu/Ako0g5NPuBuBvjZBbBUm6Sz9RzgpXBp8+GL6DV2/xLOGqcPMx15zJHX+3lyQV6WfeCFP0B+hwDnYN0PQNsq3RNmqtQqfV34YieEACd02KWUqD0QMUAo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 613,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 645,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 613\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"XAfBavOjOOuvg8UPwNvtmQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:47:09.789357+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:47:09 GMT"
+  },
+  "key": "2eae7de2cb780fc352fbe6c2b170a3cc7b0c3c689ae15f7dc2a9c0135231fc30",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

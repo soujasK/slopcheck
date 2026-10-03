@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page appears to be a third-party SEO-optimized blog post rather than an official UIDAI portal or authoritative guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T8FrDgK6iNOmqlTUxDNTaNXFmW8EDUCeh/ypcdCCPiUyr17/kjDkPe7HDVD3lLzbmgqVqm4TcBfCSddFiGEsfN9CJfhGGQKv2jWXENiRygmXa0bc6OCd1NgQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 636,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 672,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 636\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"dgTBauSwC-mwg8UP--eLmAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:34:47.088090+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:34:46 GMT"
+  },
+  "key": "07fc0c6c49c64492c35c2a76d92f25e5e2b4af159b6e62f6d42cc6cdb3810c41",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

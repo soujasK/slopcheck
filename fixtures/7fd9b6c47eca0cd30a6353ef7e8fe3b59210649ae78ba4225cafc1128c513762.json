@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is on an unrelated lifestyle blog and features generic product lists with missing ratings and affiliate style links.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TTLN1UhOieG446/srOWeQBQnSCczXTds64UDB5TIm0txFnlZWdKG8Dt1OrK/4GNy4qJbZtcwNyomXLrxifDAgtVg9nY30jk91WDa3qIcUJLO+BlLTDwtsaUk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 665,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 703,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 665\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"1AbBasaRB6bRg8UPlfaGsQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:44:53.080263+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:44:52 GMT"
+  },
+  "key": "7fd9b6c47eca0cd30a6353ef7e8fe3b59210649ae78ba4225cafc1128c513762",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a direct guide by a named author on a recognised legal blog.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TcL7+mbfvkPV4808RNXNkwn9FqRl1hu82MCVi9AVnK5znAgcj/ibPLWlAjWzWp+lZzry6ChTziDSNChsLl86y5LbIlx6GKZBqvZDQp8m9xnCBlZf/vOd1cIQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 617,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 650,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 617\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3gTBapXDKZmwg8UPp_H2yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:36:31.665281+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:36:31 GMT"
+  },
+  "key": "b38729861a3cc92b13f2dd4f82560f9cc8c3de0c06922fca04add4bfe15b51bd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

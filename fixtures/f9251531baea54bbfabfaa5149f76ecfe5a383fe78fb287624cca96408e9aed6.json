@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a promotional blog post on a pharmaceutical company's website selling products, lacking independent medical expertise or transparent sourcing for health advice.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TAFb6Z6wjxxQV+yBtRMdpbxRf7gJX15ZFulmhIhOH9fHkNZ+tHPSK/V7xZEGqJuj812vW8xkBDNHQ9EgIy4pVeKtJTxh3nhdmv8lv1nOjPdv5jDObNp3Uqzk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 640,\n    \"candidatesTokenCount\": 45,\n    \"totalTokenCount\": 685,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 640\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"tQbBapXcA4mkqfkP_eSo6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:44:22.214293+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:44:21 GMT"
+  },
+  "key": "f9251531baea54bbfabfaa5149f76ecfe5a383fe78fb287624cca96408e9aed6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

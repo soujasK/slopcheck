@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an official government directory list of administrative officers (ROs), completely unrelated to water purifiers.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TGu95TYVouWVlQx8pm62MG0MVqXv+TXxtYCj5sdRVdTDq77GoOzGw0t3GwGDpLB1s1rsrHL0/BAMZb39dvxxUBb6Mdc7D1VWRt193sB4hzkg8FqlndFBtXCg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 625,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 658,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 625\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"GwLBaqrkJpemg8UPpO_UyAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:24:44.569903+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:24:44 GMT"
+  },
+  "key": "245d96a34e23c68d77d45d4d98906e0760fc1806259402545a50f6176a4d8bbe",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is medically reviewed by a qualified professional and discusses side effects with identifiable authors.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzeXzf5yMQ5TwmSxELjz/LNgHmENK70l+c1FCgW7H6rYBCBPRrp0igOqP4vzjOObWL4XUQHWcJfg6PxTvj7G+14Pwkvee88tSIkeelCsDrAZ3j56HiAnl77k=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 610,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 638,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 610\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3gbBar29M-W8mNMPz_-E6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:45:03.842739+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:45:03 GMT"
+  },
+  "key": "7737d17062ea7159094ef17705b0af290ed4ecd1e9bb26e909bb651872ef1b4b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

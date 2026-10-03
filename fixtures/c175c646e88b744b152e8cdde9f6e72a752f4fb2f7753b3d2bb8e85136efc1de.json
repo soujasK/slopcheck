@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized healthcare organization (Apollo Cradle) and directly addresses the query about vitamin D deficiency symptoms.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBZs1ECgd+T94epE3ROhbMexG53Iqmb1BVQ9wG4EJGqogbHI4NBdmpB9GR5pfhxof/sxNWijD4Xqek4l49lvic6aNqPuwe8toTMQvYa+JJoAAPOQlxrVLbZE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 607,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 642,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 607\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"LwbBavDGHaurg8UPxJ_wsAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:42:08.429873+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:42:08 GMT"
+  },
+  "key": "c175c646e88b744b152e8cdde9f6e72a752f4fb2f7753b3d2bb8e85136efc1de",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

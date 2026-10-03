@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a dedicated audio review site with a named author providing hands-on budget wireless earbud recommendations.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+3oWaBvzEqstYl7nhyndUHcsOwhqE+6lKFnz+OzjAVvQi1CscQKZxw46pamSRZCB5rgjftW0wrHhRRhRsV6EwaNThEETBXg5YU3zegePdDYoNQa3azBnzS4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 631,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 664,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 631\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"KQLBaoqGI_q2juMPvbjaoAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:24:58.800900+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:24:58 GMT"
+  },
+  "key": "bcea568c033287b9afc4d1105446961123902e072c0b87556e852d1e88d18ef8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

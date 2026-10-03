@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article provides direct, actionable tips on speeding up Windows 11 with a named author and a reputable tech publication.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzmRo4+D3BlX7/ZxMfXUhZuGEs9PDjw+kVq1ngxTRP3/DpQXNqsZFyc4s/ym2QmX5/Djn81xraJrpisg3BEuW4OW6wjb5RX8mt09WhVInNgfOlCmxFOAaMvA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 636,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 677,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 636\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fQTBaomhKfiiqfkPjcLZ4QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:34:54.459705+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:34:54 GMT"
+  },
+  "key": "404416b0a0c0d1e8a38fc80a077d7c4a0d23d329efc38744d2092151b923c7bc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

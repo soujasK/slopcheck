@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"NerdWallet is a recognized financial organisation providing a direct, comprehensive guide on paying off credit card debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TGoYAgA6uDiAAKSHUrB6x2IUZ5ShkeetzxD29TiE0QPOuviP2avC+IfOGSmODDfzkNaNq51J/efnLMyt8W0JyH1/0Xw056rFt29GseyfZ7GuCrpz8T/yDHNY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 606,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 638,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 606\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"2ALBasWiKJmwg8UPp_H2yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:27:53.700530+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:27:53 GMT"
+  },
+  "key": "438125cf7f181e986a9f16d0f7c870c7c971686ad37b21267a3880defa305f39",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

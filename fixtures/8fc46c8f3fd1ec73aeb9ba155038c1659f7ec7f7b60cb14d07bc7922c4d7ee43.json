@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable medical organization and reviewed by a named endocrinologist.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T9Gz4xaEucz3O5e/GhSf0JpIlGCZk0TTpe0I12AmGVb8cNbrrFo+qPsBsiC+nf55kogrjThaSR9ut2w9zqaKuuUuPPW92W2ONUByE6yWvUJMOw3TcGC61X18=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 619,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 647,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 619\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kgLBaqLGJpzB4-EPkMbvoAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:26:43.657198+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:26:43 GMT"
+  },
+  "key": "8fc46c8f3fd1ec73aeb9ba155038c1659f7ec7f7b60cb14d07bc7922c4d7ee43",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

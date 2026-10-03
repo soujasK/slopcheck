@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page appears to be generic financial content lacking clear author accountability or deep expertise.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T2uWbHp/fk5PO9oXiSln75Lu2x3EkhYaowwjwuF6729XfPdeJ0WtXQ73nbXlFOgi+F41UGVgWFr95o5MDCWVxGv5IymjoXj5S64byxNoPvG26XrUflvKOz5E=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 621,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 648,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 621\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"cQfBavCmMZjnqfkP79nm-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:47:30.634602+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:47:30 GMT"
+  },
+  "key": "7fb82f562f7c484559c0eb7ce4b0c129505374cc2b5b42cbbeb9b3a10f65c6d1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

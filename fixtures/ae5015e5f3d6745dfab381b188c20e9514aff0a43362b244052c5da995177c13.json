@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Healthline is a reputable health publisher providing well-researched medical content with editorial oversight.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TZP1p9NFzlzlD4nBvcbMZ/L2aIalZRuORappVRx/8XEt5cLlKQFP6EDRJ/LEgN45MCNzQLD3YJ76vLGtNhYK6YhwC4Auy9WWtCLYXbC8BVanDWVsOdNiaFyY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 600,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 630,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 600\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"mATBaqXEHPXeg8UP66CxmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:35:21.392339+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:35:21 GMT"
+  },
+  "key": "ae5015e5f3d6745dfab381b188c20e9514aff0a43362b244052c5da995177c13",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

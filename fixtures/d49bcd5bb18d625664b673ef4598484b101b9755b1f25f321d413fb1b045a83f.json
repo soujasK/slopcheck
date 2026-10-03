@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a basic interactive calculator with minimal explanatory content and lacks a clear author or organisation.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TQ7Zg+koMJ1yL/Hrfh2ViHowPFCj5ri4XhCPYjQhsbrJLZDAWBZyg39wnQM8ccbwFkC+lOE5N1/X5KV8/VqKi7vPkfo10lSiKx6mapYp6bTbG5Nvbri8O8c8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 599,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 629,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 599\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"SwTBauLTKtmsg8UPuMa-yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:34:04.599167+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:34:04 GMT"
+  },
+  "key": "d49bcd5bb18d625664b673ef4598484b101b9755b1f25f321d413fb1b045a83f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

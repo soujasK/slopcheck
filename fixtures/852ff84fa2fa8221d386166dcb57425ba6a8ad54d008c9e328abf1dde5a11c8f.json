@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an IPCC scientific report on global warming, which is completely irrelevant to buying an air conditioner.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TcAtsCik24ps0ULQtW8QVqaXfPBXtAQa5ZLFKwP8rZYDzZXfYbIZNHs7UzecTBLT/67yUVF6wyAnV8JC8oEMF7vfsoCWsnBw9F7Lgp/WK2DVZsl1XK3wxmt0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 586,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 618,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 586\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"qgXBauHuEfq2juMPvbjaoAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:39:55.177147+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:39:54 GMT"
+  },
+  "key": "852ff84fa2fa8221d386166dcb57425ba6a8ad54d008c9e328abf1dde5a11c8f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

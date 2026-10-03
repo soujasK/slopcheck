@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a detailed side-by-side tax regime comparison for a specific salary bracket with a dedicated calculator tool.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKz2aIGnVzOVZbQJFTMjMqRcFN+ZU859vYYw1jn1ZdJY+7qenyu0N+A8wvb29kL1dSDXQ0aOeP33RucREx9GSUuf7yEcOS5wv4FEeNtHSh5bxMfUFAhFu5Fc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 636,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 677,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 636\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"UgbBapDBFY20g8UP7aX5qAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:42:43.246604+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:42:42 GMT"
+  },
+  "key": "1c166567176b8cec1b5d4a5e2c248bec615c9abda6e0a9bc3f2b5bc17d10c3dc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

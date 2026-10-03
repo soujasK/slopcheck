@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic calculation tool on an unbranded site without a clear author or organization, making it unsuitable for authoritative financial advice.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TNEsk8V94IYjidTd0y+7Ac4ddxtf/7E/BetBZY26+cyMyNOsTauH03MQpNX+vh0gxwDOSTknrTuRjeqp2W+xS137y2irAWb6mLYb5FukJn4fzo7H4bLbomdo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 582,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 620,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 582\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"iwLBapW8J6zSqfkPpuz2kAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:26:36.592275+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:26:36 GMT"
+  },
+  "key": "3d9245fa86e166eaa936d4bcb8979a38f8622bd48fdfb6031496c27f0371b0fa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

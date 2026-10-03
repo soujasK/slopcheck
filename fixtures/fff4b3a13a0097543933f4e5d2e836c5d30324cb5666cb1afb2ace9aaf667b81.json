@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a general blog and rewards app landing page rather than a specific guide answering the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TH3Mtt5mKFrkWD/GppRheRLWOw2z6KP+xCNow2LIYPiPaEqvvZ+SYOKObHZjEFKKmuOyRDRfutI7sQx2QAAvd/DChamK9Pn2aldDS97zn4KZhS+Dz4W29Gzc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 582,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 619,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 582\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"SAPBasv8JZW-g8UP_rmq0QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:29:45.449352+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:29:45 GMT"
+  },
+  "key": "fff4b3a13a0097543933f4e5d2e836c5d30324cb5666cb1afb2ace9aaf667b81",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

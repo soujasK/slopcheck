@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page discusses carbon plate race shoes rather than the beginner running shoes requested in the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TcTBH208PoyyhTI85cuaFu4xbo9OiIUphiALr2dPfn1U+j8OvEnh8w6ujAzG9VciTtOqCKQWGrai3ZzkiTNwqpvzSbxJUIvHlrvMoEoqn1ZelVIho9mX84Kc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 623,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 658,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 623\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"wgTBaqv4Jve4g8UPhP-CiQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:36:03.478557+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:36:03 GMT"
+  },
+  "key": "c208f3cbbeec7ec2b6352c598e318d3ab8054ad328890f48d24bcb70388dedbc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

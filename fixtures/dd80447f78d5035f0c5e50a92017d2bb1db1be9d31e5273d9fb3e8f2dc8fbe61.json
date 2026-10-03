@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable medical organization, Cleveland Clinic, providing reliable health information.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPOpVCQb9m0sH5v/ahYEK771DM77E7JygdFwzfrCYmDBaY84mvkbDjOLFnR8KP6PPIHrANJfv3gIBsi7oQEUEgACCO6M7lein03XNBS46YUYvDQg5tRnZ9dk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 595,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 623,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 595\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"qgPBate6LLmkg8UP55SMqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:31:23.619077+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:31:23 GMT"
+  },
+  "key": "dd80447f78d5035f0c5e50a92017d2bb1db1be9d31e5273d9fb3e8f2dc8fbe61",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

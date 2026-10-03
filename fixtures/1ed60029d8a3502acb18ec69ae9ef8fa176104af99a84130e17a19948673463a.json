@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an essay by author Ursula K. Le Guin about writing and has nothing to do with recovering deleted WhatsApp messages.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TN8mIV27+K1OoHbKm5hj5RTAJUykg2E4aj4Pfctu7BS8ZSG8AfI2ywhHcPm0LxgkB7K8nTfjRdZWA5QzHLgK9XSx+d8SWutc5yi+rKmKUNiymG6nk+7v9hYI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 606,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 642,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 606\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"dgLBauL0IpWzg8UPltbm0Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:26:15.703805+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:26:15 GMT"
+  },
+  "key": "1ed60029d8a3502acb18ec69ae9ef8fa176104af99a84130e17a19948673463a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

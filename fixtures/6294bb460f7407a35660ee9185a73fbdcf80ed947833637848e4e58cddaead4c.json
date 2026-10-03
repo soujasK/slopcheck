@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a direct step-by-step guide from a named cybersecurity guide resource.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4wQQIAYYMSqPg8a5x0mVeIPwOO8/1awrwHo8GhOxjl4ys6UtAkD/SpN7oU0uYMADY4p0I7r2vMT24o4gpLZm0K2VW2qEXPz++AvdJ+LlaMIdC+kv3G9o4k8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 597,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 626,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 597\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"UgTBaqPsKoajqfkP4K3O6Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:34:11.658431+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:34:11 GMT"
+  },
+  "key": "6294bb460f7407a35660ee9185a73fbdcf80ed947833637848e4e58cddaead4c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

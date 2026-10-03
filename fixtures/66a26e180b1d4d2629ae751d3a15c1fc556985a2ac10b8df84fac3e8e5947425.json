@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"This is an unanswered user forum discussion thread rather than a definitive guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TUUauMD8Hp77EbECXEkm/tXrq78bd/wA2cNQoRDgguAg1jMCph6kbw7F6jBn3baOY/PDorTaIoGFtSSLXl4xFHEOeIgn6oAEbLuSq4zqObfEkuAsHojljlTI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 625,\n    \"candidatesTokenCount\": 26,\n    \"totalTokenCount\": 651,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 625\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"bwLBaoH1Irmkg8UP5PX80Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:26:08.844845+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:26:08 GMT"
+  },
+  "key": "66a26e180b1d4d2629ae751d3a15c1fc556985a2ac10b8df84fac3e8e5947425",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

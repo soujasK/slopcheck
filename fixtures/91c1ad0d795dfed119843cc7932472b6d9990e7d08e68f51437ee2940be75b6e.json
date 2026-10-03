@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a manufacturer product page rather than an objective guide or roundup answering the best ac query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T8bZhfaqroNNViKUmRx7TV8Z/m+scaiqo8noONhXDNqhfK+mR+Awrmd7k9bH9QikH5dHuYjvNZeUm1tjIglWyqZZeGuYsuoXQYgeoX5pbsdlliX6oS3FgVpU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 647,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 678,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 647\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"6QPBat_rOI_eg8UPvOPcyAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:32:26.916133+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:32:26 GMT"
+  },
+  "key": "91c1ad0d795dfed119843cc7932472b6d9990e7d08e68f51437ee2940be75b6e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

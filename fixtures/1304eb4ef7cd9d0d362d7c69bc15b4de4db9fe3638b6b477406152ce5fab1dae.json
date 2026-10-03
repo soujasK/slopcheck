@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Verge is a reputable technology publication providing expert product recommendations and reviews.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T375WO8Rl8LhWssTL33e4LiS5qTsp6KOZ65n1INojg00KuZQbTSuAHE7JQI+i5oSjk7FIezUgImGx0z//zTEJ098jpfdpNGHVVR6OdMj2LQ/QPfU6N3LOsE4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 632,\n    \"candidatesTokenCount\": 25,\n    \"totalTokenCount\": 657,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 632\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"sQXBao-hFZayg8UP0oOl-AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:40:02.363823+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:40:02 GMT"
+  },
+  "key": "1304eb4ef7cd9d0d362d7c69bc15b4de4db9fe3638b6b477406152ce5fab1dae",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

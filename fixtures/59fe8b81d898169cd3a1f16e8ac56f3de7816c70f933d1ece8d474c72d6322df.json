@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official support page from Apple providing direct instructions for the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TTHXL4i/Mq7+PNuol+CeH7n3++rJQQjNtlU3tCBV5BPHWPfo1Ud0gb7JmMnHm7Rdbk8ScfgAscn/AaFLPfilh/4LiuMEs22JkZFXxlZig7HMyvw35SeGz0ho=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 597,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 629,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 597\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JQPBaoHUI4mkqfkP_eSo6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:29:10.499597+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:29:10 GMT"
+  },
+  "key": "59fe8b81d898169cd3a1f16e8ac56f3de7816c70f933d1ece8d474c72d6322df",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

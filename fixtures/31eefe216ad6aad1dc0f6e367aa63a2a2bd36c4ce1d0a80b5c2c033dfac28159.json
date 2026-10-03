@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from a recognized debt solutions organisation and offers direct strategies for credit card debt.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tdglz7gjUUctCaFsi/GhPZOG1FyYKe8wD/G/3RmdeII/Tse3JdHIU/Vwei6Bk/ojZl5PsdrHkzFz5H49maiKf27BORd62d14ljwIRbABN9BJU3IaH6fkJxHA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 615,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 650,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 615\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"AQfBaoHVM8Hbg8UPpvqm6Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:45:39.272697+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:45:38 GMT"
+  },
+  "key": "31eefe216ad6aad1dc0f6e367aa63a2a2bd36c4ce1d0a80b5c2c033dfac28159",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

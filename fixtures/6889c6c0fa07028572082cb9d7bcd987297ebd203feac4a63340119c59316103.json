@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The excerpt and URL suggest a generic product roundup heavily padded with navigation links and placeholder dates, lacking clear evidence of hands-on testing.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+iJ5Ja5T4NLfWSBup9/ocC27u4W4RMfNwNkhNESKaA6W/2mIzqi81q7lhBFAyifxIwLxRk1XjRegdEIW9cCVEBeH2rP0446jag8euuLRe76XJTbs8zfYgLg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 630,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 668,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 630\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"HgPBar64Lpazg8UPn-K-mQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:29:03.638694+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:29:03 GMT"
+  },
+  "key": "6889c6c0fa07028572082cb9d7bcd987297ebd203feac4a63340119c59316103",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

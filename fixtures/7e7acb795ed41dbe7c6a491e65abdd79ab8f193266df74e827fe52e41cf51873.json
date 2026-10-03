@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from MedlinePlus, an official and authoritative government health information source.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TCb4FdYsgDRWcVxmQ5SyfkfMaq9BHocW05gMgl6MUrmZCGmlVGU83DJwQcrtPdiNEmNVfKTLid9kveoIKiTAByiM3I0CAds6DHGZ2/5g+JJyuBNqThzdUkIA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 582,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 610,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 582\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"bgbBatutFaurg8UPxJ_wsAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:43:11.307040+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:43:11 GMT"
+  },
+  "key": "7e7acb795ed41dbe7c6a491e65abdd79ab8f193266df74e827fe52e41cf51873",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

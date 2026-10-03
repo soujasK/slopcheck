@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is a manufacturer's single product e-commerce page rather than a guide comparing the best 1.5 ton inverter ACs in India.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TufrsUB4tDvA2TDLGUncVt7shb54Bs9objXHHWsCJ6o48zB7FLxGWilwECBlc6PyqMNy9amrA86rNC7AHDMkkDq/Wq7S/575LgXsF5Zc+jKtjd3exjUTBEAQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 589,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 637,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 589\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"EAPBapKVJI20g8UPpKyIoQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:28:49.711747+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:28:49 GMT"
+  },
+  "key": "9d0b557e1a88c6bbc39e8dc968b774123f20185ae4f8d083aa85eda50ec2f4e9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an FDA regulatory guidance document for drug development and does not contain an Indian thyroid diet chart for weight loss.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T5iV+7bfJgXNiF8m/mNfN8dfQEVAX2S/ysc3pbmjD+m2RtGn1Xq/F4B/VxxOpQdAKm/rjMxptN77cbINg9V5l4LRrIsLHNXkSXpmjhes0EaCOXAA8bLUXPmg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 616,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 651,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 616\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"wwLBatT_KI70g8UP3876gAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:27:32.708488+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:27:32 GMT"
+  },
+  "key": "7458f48ddca49e95bc21c42c672e04cd347b03582e3dfb7ac1af1ccebde49775",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

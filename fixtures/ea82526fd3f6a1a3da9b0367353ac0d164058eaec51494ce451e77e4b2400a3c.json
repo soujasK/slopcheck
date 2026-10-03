@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is authored by a named doctor at a hospital website and directly addresses the query's topic of fatty liver symptoms and treatment.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TchhAEIgBHISEGPHKW5GQIxwRPv1uAsEtIojDKdohrW2FES8iAtjHRuwBwRCNgC6M+CD+CqXhacfJMRJROuCBvF5MNuM0TbO7NIYPpMnAtyRgH6CBPYFWZiU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 628,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 672,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 628\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8APBar_hJ5W-g8UP_rmq0QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:32:33.763617+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:32:33 GMT"
+  },
+  "key": "ea82526fd3f6a1a3da9b0367353ac0d164058eaec51494ce451e77e4b2400a3c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Trusted Reviews is a recognized publication offering hands-on tested product recommendations with identifiable editorial responsibility.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T495RrO3Lc8yqb/UcIim+iJ7Qt5ohUjEb3olSq2I2Fi88gbZHD3rfsS7/js1b9+VcahO96z5nK/s+711pRWgb8k4n9NqEys0mHt31uEpBEDHeC3VtijNF7gk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 605,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 634,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 605\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"KwfBas_nN_y4g8UP5pKX-AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:46:20.947885+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:46:20 GMT"
+  },
+  "key": "7f71413a9ab65f661589b99801b798f17bdf2492263d89740085ac48544041fd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

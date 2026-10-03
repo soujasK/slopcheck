@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"WebMD is a recognized medical information source providing structured details on the side effects of ashwagandha.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tc1DRHyoE9IWoWlHGi3hHM3310rE5Ok1KEwKnCpc2IKmnN7ugv7ud8P2Vw8FGld5foZcFXkJG9L3WskTQUhvQM39wJSxBgp8MsFvSDsPcr7Z6ngj2YXZTLAM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 606,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 643,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 606\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"5QTBavm8Kbmkg8UP5PX80Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:36:39.010881+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:36:38 GMT"
+  },
+  "key": "ba8b4e5d1c3f620e070fe0b985e982c9aecd75b5fab5ebed72ff9712693ffa2a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

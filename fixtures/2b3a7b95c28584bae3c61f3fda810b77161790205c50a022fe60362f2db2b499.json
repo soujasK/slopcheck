@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a brand's promotional blog/FAQ that lacks substantive advice or testing for back pain.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TnTA2p1U+Nld9+BKAlk0u7IJBRGp09RVLtATHHMkp50XEyKy5K2+IUvkx7XZGHLTG3JnqIBxArW8dsMEf1VyjreY68CchZKMiV2UxeKDQPgJXVrn1zIL2aq4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 580,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 612,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 580\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"0ATBatmCLfSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:36:17.711551+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:36:17 GMT"
+  },
+  "key": "2b3a7b95c28584bae3c61f3fda810b77161790205c50a022fe60362f2db2b499",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

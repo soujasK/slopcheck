@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page appears to be a generic SEO-optimized guide with a generic author name and lacks evidence of original hands-on technical testing.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TC3vaTZwqWBOZRRYyyyrstA6P+wNv1kiKbAEqZ+amaKPMT6Z9qZZE5N/WZ4ceGgOtcCIjBv/pClMg6kCPiqk/KfRLzdslDHmsFPhjo8bpi7DGxrgBZbUbtvQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 633,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 677,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 633\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_AbBatT2EIHUqfkPk5aN2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:45:33.230824+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:45:32 GMT"
+  },
+  "key": "93d2578724f7f3fed1e6abd401fe51691af96cac6ce2a1cbf7b8260e5976fed5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

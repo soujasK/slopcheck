@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The excerpt shows navigation and site elements rather than the content needed to answer the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T8gIu5AzZlIPrJGZ3aCDAsZmB2QOqb0OOckWdiNwhVamVse4KbMnm9rWypm/hm4DM5o0iIwrCHv8U/JImRwr4FX1TWpy0t6n9HnqQX85GytnBAbZNW6auRYw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 601,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 630,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 601\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"AgPBapfoJ9f1g8UPl76k8QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:28:35.478355+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:28:35 GMT"
+  },
+  "key": "e3d359d61b47b1532ee8d400f385310eb1a4f82dcd1c53463668338981bfd2f3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is written by a named author with a clear, direct guide on transferring data from Android to iPhone.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TRCjlfPD9BNwvTY6Y4GDb7/b7ALt5LyAuYa63y7j9V1FGEE3kHr8nKY6Upou/B6NO2OMv88a+XYtziP1mIekYlrt/tjc2lFHtAVQy/xreVEZkUeTKfcMUWSU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 633,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 672,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 633\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"tQLBaqrhJNzfg8UPpfe7mQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:27:18.577262+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:27:18 GMT"
+  },
+  "key": "f3459a8db9981c65ec6ca5b74384c1a1ed7745097591e7e6411e1bbe17b34eae",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

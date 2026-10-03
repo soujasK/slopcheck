@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The snippet mentions investing as a young adult with little money, but does not show enough content to confirm how well it answers the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TDCnR4nu3pOQjdmmfFzoX7jYw5rPW4R8ljQDosrnwCj+5WIPHxLldhGkKC3stw/6uyxm17heDX7JXMaiH70R4kU4tcc4DsJwRkqHBz4eedUU7GtINZP0UNts=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 632,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 671,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 632\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"NwLBao2CJJemg8UPpO_UyAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:25:12.987048+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:25:12 GMT"
+  },
+  "key": "dff6b00cec24d2afeb830655c2d16551a9300e1a1527f1dd25c3c6f9b85ce0c7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

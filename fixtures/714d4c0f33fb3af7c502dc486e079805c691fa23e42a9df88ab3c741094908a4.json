@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The snippet consists mostly of unrelated headlines and does not show the actual content comparing the tax regimes.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TAWxAoaE27oD1/aVKXIkpm91FNQwhWex7IZjzqhhhb5JyPM3Z2dkuNowKCe44ZHseCNPF3UBEpfCeowmzooexgOmNrF1eEcSZRXAnAWC85zdJyDLNg0RZ47M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 670,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 701,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 670\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"XQXBaqOsF_3cg8UPj4TVoQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:38:38.204790+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:38:37 GMT"
+  },
+  "key": "714d4c0f33fb3af7c502dc486e079805c691fa23e42a9df88ab3c741094908a4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

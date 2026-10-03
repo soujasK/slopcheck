@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page lacks identifiable medical authorship, institutional backing, or direct evidence-based answers to the safety of daily medication.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7vTPT1sPbecRoH3CmNe9KYG91vjOxRm/2ixjpKKoFJ7KHliMmCmA63Co752f+4myUIQw2sFJbh+KAWiXvW1HMMsRUpUInSCIGpwLxBXVv2sBEN0+cf3Bb94=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 602,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 636,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 602\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7QbBarf2Drevg8UPi5S2oQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:45:18.279974+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:45:17 GMT"
+  },
+  "key": "4b6800ddd54a063cc9fe0fdafd1f8737191ea20d316a3983ec788991c11f4fb7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

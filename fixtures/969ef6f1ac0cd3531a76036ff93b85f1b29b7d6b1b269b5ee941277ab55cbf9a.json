@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic blog post on a financial app's promotional site likely aimed at capturing search traffic for affiliate or product sign-ups.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Trm4O8zQ1H+nzo8o73o/GHj5s1Tt5ZP7j0uR7n4zua3fu8/wxmAQhGVjoMmMWBQVBD3IsisDcfsBx+7SFS6wZtraMh8aPUaF8UMwZS9ZRtg0WZWFrFhOxzGo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 622,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 662,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 622\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ygbBat3ADeW8mNMPz_-E6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:44:43.319219+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:44:43 GMT"
+  },
+  "key": "969ef6f1ac0cd3531a76036ff93b85f1b29b7d6b1b269b5ee941277ab55cbf9a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

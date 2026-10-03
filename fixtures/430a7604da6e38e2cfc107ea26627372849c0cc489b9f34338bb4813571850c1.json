@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a trusted healthcare organisation (Apollo Pharmacy) with a clear author and provides direct information on the topic.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TV2TgrFbOk5ZRvwJPNxvwmJNlzyPbaAGpqkEovUcPg8QjmHsRVM6/OVfRNDejBx+sPoBINDQXXrF1Z83Q2kdqi60BSXzBPSgAlVMnPWdwzulDn3Qip1nwKQA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 621,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 657,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 621\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"IQTBatKDI4mkqfkP_eSo6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:33:22.450785+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:33:22 GMT"
+  },
+  "key": "430a7604da6e38e2cfc107ea26627372849c0cc489b9f34338bb4813571850c1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

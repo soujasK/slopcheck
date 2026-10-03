@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The excerpt shows ecommerce clutter and shopping cart details rather than substantive medical content answering the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TK50k/H5AzkbKEqNjMhT5ZLbV5/SIXThnlEYJsrOJ2/a5c81Irgpk+dnNUolYTzkGywzBipp5mi/ojLNFawTFNaF/FlWlAV11d7Kc+AQ/Jtbdemg56Pk/lRk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 648,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 677,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 648\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VgXBasqFFqS-g8UPodKW6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:38:31.306743+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:38:30 GMT"
+  },
+  "key": "1592f86b6be20f8ed556cce2f6bd365b62aaf55d99a944e17ab79abde333da4a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

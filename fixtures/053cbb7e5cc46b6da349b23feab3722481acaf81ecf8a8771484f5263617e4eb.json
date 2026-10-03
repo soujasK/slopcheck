@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable financial news source and provides clear steps to resolve failed UPI transactions.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T6JxkoXdW/5fMR3OuzfDNlx1ccZiTyPP817E5GaXErWznIIagiYsCt5/b4f+JYzWD8PPFPagk6bCPqgxzuz/yNTPUwAcjxf9q2wQpDM+GnY36SrKuyO+JVms=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 694,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 724,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 694\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"igbBavrMNemwg8UP--eLmAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T13:43:40.042371+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 13:43:39 GMT"
+  },
+  "key": "053cbb7e5cc46b6da349b23feab3722481acaf81ecf8a8771484f5263617e4eb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
