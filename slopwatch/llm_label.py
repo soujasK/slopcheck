@@ -18,7 +18,9 @@ and is exported as a fixture, so labels replay offline with no keys.
 from __future__ import annotations
 
 import json
+import logging
 import re
+import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
@@ -27,11 +29,13 @@ from typing import Any, Literal, Protocol
 
 from pydantic import SecretStr
 
-from slopwatch.cache import CacheMiss
+from slopwatch.cache import CachedResponse, CacheMiss
 from slopwatch.http import HttpClient, HttpError
 from slopwatch.label import LabelItem
 from slopwatch.models import Label, LabelValue
 from slopwatch.stats import cohen_kappa
+
+log = logging.getLogger(__name__)
 
 GUIDE_START = "<!-- labeler-guide:start -->"
 GUIDE_END = "<!-- labeler-guide:end -->"
@@ -122,11 +126,51 @@ class ModelUnavailable(RuntimeError):
     pass
 
 
+class QuotaExhausted(RuntimeError):
+    """The provider's daily quota is used up; stop and resume later."""
+
+
+RATE_LIMIT_WAITS = (15.0, 30.0, 60.0, 60.0, 120.0, 120.0)  # seconds, on HTTP 429
+
+
 class GeminiBackend:
     name = "gemini"
 
-    def __init__(self, http: HttpClient, key: SecretStr | None, model: str = GEMINI_MODEL) -> None:
+    def __init__(
+        self,
+        http: HttpClient,
+        key: SecretStr | None,
+        model: str = GEMINI_MODEL,
+        *,
+        min_interval: float = 7.0,
+        sleep: Callable[[float], None] = time.sleep,
+        clock: Callable[[], float] = time.monotonic,
+    ) -> None:
         self.http, self._key, self.model = http, key, model
+        self.min_interval, self._sleep, self._clock = min_interval, sleep, clock
+        self._last = -1e9
+
+    def _post(self, payload: dict[str, Any], headers: dict[str, str]) -> CachedResponse:
+        """Paced request; 429s wait and retry; a daily-quota 429 raises QuotaExhausted.
+        Cache hits are never paced."""
+        url = GEMINI_URL.format(model=self.model)
+        for wait in (*RATE_LIMIT_WAITS, None):
+            if self.http.would_hit_cache("POST", url, payload):
+                return self.http.post_json(url, payload, headers=headers)
+            gap = self._clock() - self._last
+            if gap < self.min_interval:
+                self._sleep(self.min_interval - gap)
+            self._last = self._clock()
+            resp = self.http.post_json(url, payload, headers=headers)
+            if resp.status != 429:
+                return resp
+            if "per day" in resp.text.lower() or "perday" in resp.text.lower():
+                raise QuotaExhausted("Gemini daily quota exhausted; resume after reset")
+            if wait is None:
+                break
+            log.info("Gemini 429; waiting %.0fs", wait)
+            self._sleep(wait)
+        raise QuotaExhausted("Gemini kept returning 429; resume later")
 
     def ask(self, system: str, user: str, attempt: int) -> Reply:
         contents: list[dict[str, Any]] = [{"role": "user", "parts": [{"text": user}]}]
@@ -149,7 +193,7 @@ class GeminiBackend:
             },
         }
         headers = {"x-goog-api-key": self._key.get_secret_value()} if self._key else {}
-        resp = self.http.post_json(GEMINI_URL.format(model=self.model), payload, headers=headers)
+        resp = self._post(payload, headers)
         if resp.status >= 400:
             raise HttpError(f"Gemini HTTP {resp.status}", resp.status)
         data = resp.json()
@@ -259,9 +303,11 @@ def label_items(
     write: Callable[[Label], None],
     neuron_budget: float | None = None,
     now: Callable[[], datetime] = lambda: datetime.now(UTC),
+    stats: RunStats | None = None,
 ) -> RunStats:
-    """Label items not in ``done``. Stops before exceeding ``neuron_budget``."""
-    stats = RunStats()
+    """Label items not in ``done``. Stops before exceeding ``neuron_budget``.
+    Pass ``stats`` to keep partial counts if the run is interrupted."""
+    stats = stats if stats is not None else RunStats()
     system = system_prompt(guide)
     for item in items:
         if item.key in done:

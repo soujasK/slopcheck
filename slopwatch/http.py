@@ -19,7 +19,7 @@ from urllib.parse import urlsplit
 import httpx
 
 from slopwatch import __version__
-from slopwatch.cache import Cache, CachedResponse, redact_params, request_key
+from slopwatch.cache import Cache, CachedResponse, CacheMiss, redact_params, request_key
 from slopwatch.config import CacheMode
 
 log = logging.getLogger(__name__)
@@ -121,6 +121,18 @@ class HttpClient:
             max_bytes=max_bytes,
             store=store,
         )
+
+    def would_hit_cache(
+        self, method: str, url: str, payload: Any, *, cache_url: str | None = None
+    ) -> bool:
+        """True if a ``post_json`` with this payload would be served from cache
+        (in replay mode always True: the request itself then raises on a miss)."""
+        body = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()
+        key = request_key(method, cache_url or url, None, None, body)
+        try:
+            return self.cache.lookup(key) is not None
+        except CacheMiss:
+            return True
 
     def post_json(
         self,

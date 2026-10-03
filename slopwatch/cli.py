@@ -43,6 +43,8 @@ from slopwatch.llm_label import (
     DEFAULT_NEURON_BUDGET,
     CloudflareBackend,
     GeminiBackend,
+    QuotaExhausted,
+    RunStats,
     agreement_report,
     label_items,
     load_guide,
@@ -537,6 +539,9 @@ def llm_label_cmd(
     budget: Annotated[
         float, typer.Option("--neuron-budget", help="Cloudflare neurons allowed today.")
     ] = DEFAULT_NEURON_BUDGET,
+    min_interval: Annotated[
+        float, typer.Option("--min-interval", min=0, help="Seconds between Gemini requests.")
+    ] = 7.0,
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Blind LLM labeling of labels/sample.jsonl (validation only, never scoring)."""
@@ -562,22 +567,30 @@ def llm_label_cmd(
     ):
         backend: GeminiBackend | CloudflareBackend
         if labeler == "a":
-            backend = GeminiBackend(http, settings.gemini_api_key)
+            backend = GeminiBackend(http, settings.gemini_api_key, min_interval=min_interval)
         else:
             backend = CloudflareBackend(
                 http, settings.cloudflare_api_token, settings.cloudflare_account_id
             )
-        stats = label_items(
-            items,
-            backend,
-            guide,
-            done=done,
-            write=lambda lab: append_label(out_path, lab),
-            neuron_budget=left,
-        )
-        if mode is not CacheMode.REPLAY:
-            n_fx = cache.export_dir(settings.fixtures_dir, only=cache.used)
-            console.print(f"llm-label {labeler}: exported {n_fx} fixtures")
+        stats = RunStats()
+        quota_note = ""
+        try:
+            stats = label_items(
+                items,
+                backend,
+                guide,
+                done=done,
+                write=lambda lab: append_label(out_path, lab),
+                neuron_budget=left,
+                stats=stats,
+            )
+        except QuotaExhausted as exc:
+            quota_note = str(exc)
+        finally:
+            # export whatever was recorded, even if the run stopped early
+            if mode is not CacheMode.REPLAY:
+                n_fx = cache.export_dir(settings.fixtures_dir, only=cache.used)
+                console.print(f"llm-label {labeler}: exported {n_fx} fixtures")
     entry = {
         "ts": dt.datetime.now(dt.UTC).isoformat(timespec="seconds"),
         "labeler": labeler,
@@ -602,6 +615,8 @@ def llm_label_cmd(
         f"invalid {stats.invalid_final}, tokens in/out {stats.input_tokens}/"
         f"{stats.output_tokens}, neurons {stats.neurons:.1f}"
     )
+    if quota_note:
+        console.print(f"llm-label {labeler}: stopped: {quota_note}; rerun later to continue")
     if stats.stopped_for_budget:
         console.print(
             f"llm-label {labeler}: stopped at today's neuron budget; rerun tomorrow to continue"

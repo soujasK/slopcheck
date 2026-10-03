@@ -256,7 +256,9 @@ def test_cli_llm_label_agreement_and_offline_replay(
     runner = CliRunner()
     bad = runner.invoke(app, ["llm-label", "--labeler", "c"])
     assert bad.exit_code == 2
-    ra = runner.invoke(app, ["llm-label", "--labeler", "a"], env={"COLUMNS": "200"})
+    ra = runner.invoke(
+        app, ["llm-label", "--labeler", "a", "--min-interval", "0"], env={"COLUMNS": "200"}
+    )
     assert ra.exit_code == 0, ra.output
     rb = runner.invoke(app, ["llm-label", "--labeler", "b"], env={"COLUMNS": "200"})
     assert rb.exit_code == 0, rb.output
@@ -292,3 +294,55 @@ def _load(path: Path) -> dict[tuple[str, str], Label]:
     from slopwatch.label import load_labels
 
     return load_labels(path)
+
+
+class FakeTime:
+    def __init__(self) -> None:
+        self.now = 1000.0
+        self.slept: list[float] = []
+
+    def sleep(self, s: float) -> None:
+        self.slept.append(s)
+        self.now += s
+
+    def clock(self) -> float:
+        return self.now
+
+
+def test_gemini_paces_requests_and_waits_on_429() -> None:
+    from slopwatch.llm_label import GeminiBackend
+
+    statuses = iter([200, 429, 200])
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        status = next(statuses)
+        if status == 429:
+            return httpx.Response(
+                429, json={"error": {"message": "Resource exhausted (per minute)"}}
+            )
+        return httpx.Response(200, json=gemini_response('{"label": "ok", "reason": "x"}'))
+
+    ft = FakeTime()
+    with make_client(Recorder(handler), max_retries=0) as http:
+        g = GeminiBackend(http, SecretStr("k"), min_interval=7.0, sleep=ft.sleep, clock=ft.clock)
+        g.ask("s", "u1", attempt=0)
+        g.ask("s", "u2", attempt=0)  # paced 7s, then 429 -> waits 15s, then paced again
+        assert g.ask("s", "u1", attempt=0).from_cache  # cache hit: no pacing
+    assert ft.slept == [7.0, 15.0]
+
+
+def test_gemini_daily_quota_raises_quota_exhausted() -> None:
+    from slopwatch.llm_label import GeminiBackend, QuotaExhausted
+
+    body = {"error": {"message": "Quota exceeded for GenerateRequestsPerDay"}}
+    with make_client(Recorder(lambda r: httpx.Response(429, json=body)), max_retries=0) as http:
+        g = GeminiBackend(http, SecretStr("k"), min_interval=0, sleep=lambda s: None)
+        with pytest.raises(QuotaExhausted, match="daily"):
+            g.ask("s", "u", attempt=0)
+    per_minute = {"error": {"message": "rate limit"}}
+    with make_client(
+        Recorder(lambda r: httpx.Response(429, json=per_minute)), max_retries=0
+    ) as http:
+        g = GeminiBackend(http, SecretStr("k"), min_interval=0, sleep=lambda s: None)
+        with pytest.raises(QuotaExhausted, match="kept returning 429"):
+            g.ask("s", "u", attempt=0)
