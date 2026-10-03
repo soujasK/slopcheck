@@ -40,3 +40,17 @@ the actual n per engine.
 
 All SERPs were collected on 2026-10-03 from one location via SerpApi. Results
 vary by day, user and location; this is one snapshot, not a trend.
+
+## Coverage (pages that could be scored)
+
+482 of 681 unique pages (593 of 822 SERP rows, 72%) were fetched and scored.
+The rest are reported as unscored with a reason, never guessed: 81 refused our
+crawler with HTTP 403, 14 answered 402 Payment Required (pay-per-crawl), 68 are
+disallowed by robots.txt (Reddit, Quora, Facebook, LinkedIn, Instagram among
+them), 13 were unreachable, and a few were too large, not HTML or had a broken
+robots.txt.
+
+Coverage is not uniform: 72-81% of rows for the India engines but only 56% for
+Google US, where several large publishers block crawlers. Every comparison in
+the report shows its coverage next to it; low-quality shares are computed over
+scored rows only.

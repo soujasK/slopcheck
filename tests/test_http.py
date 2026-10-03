@@ -129,3 +129,32 @@ def test_user_agent_carries_contact() -> None:
     with HttpClient(Cache(":memory:"), transport=httpx.MockTransport(rec), agent=ua) as http:
         http.get(URL)
     assert rec.requests[0].headers["user-agent"] == ua
+
+
+def test_body_read_timeout_is_retried_then_reported() -> None:
+    class StallingStream(httpx.SyncByteStream):
+        def __iter__(self):  # type: ignore[no-untyped-def]
+            yield b"<html>"
+            raise httpx.ReadTimeout("stalled")
+
+    calls = iter([StallingStream(), None])
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        stream = next(calls)
+        if stream is None:
+            return httpx.Response(200, content=b"<html>ok</html>")
+        return httpx.Response(200, stream=stream)
+
+    rec = Recorder(handler)
+    with make_client(rec, max_retries=1) as http:
+        assert http.get(URL, max_bytes=10_000).body == b"<html>ok</html>"
+    assert len(rec.requests) == 2
+
+    def always_stall(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(200, stream=StallingStream())
+
+    with (
+        make_client(Recorder(always_stall), max_retries=1) as http,
+        pytest.raises(HttpError, match="ReadTimeout"),
+    ):
+        http.get(URL, max_bytes=10_000)

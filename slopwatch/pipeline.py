@@ -15,6 +15,7 @@ from dataclasses import dataclass, field
 
 from slopwatch.cache import CacheMiss
 from slopwatch.models import Page, SerpMeta, SerpRow, SignalRecord
+from slopwatch.pages import FetchResult as PageFetchResult
 from slopwatch.pages import PageFetcher, make_excerpt
 from slopwatch.queries import Job, Plan, to_rows
 from slopwatch.serp import SerpClient, SerpError
@@ -100,7 +101,13 @@ def fetch_pages(
 ) -> FetchResult:
     out = FetchResult()
     for i, url in enumerate(urls, start=1):
-        fetched = fetcher.fetch(url)
+        try:
+            fetched = fetcher.fetch(url)
+        except Exception:  # backstop: one bad page must not lose a 681-page run
+            log.exception("unexpected fetch error for %s", url)
+            fetched = PageFetchResult(
+                Page(url=url, status=None, fetched_at=None, unscored_reason="fetch_failed")
+            )
         page = fetched.page
         if fetched.html is not None and page.html_hash is not None:
             try:

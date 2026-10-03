@@ -161,8 +161,9 @@ class HttpClient:
         elif self.cache.mode is CacheMode.REPLAY:
             raise NetworkDisabled(f"network disabled in replay mode: {safe_url(url, params)}")
 
-        resp = self._send(method, url, params=params, body=body, headers=headers)
-        content = self._read_capped(resp, max_bytes)
+        resp, content = self._send(
+            method, url, params=params, body=body, headers=headers, max_bytes=max_bytes
+        )
         result = CachedResponse(
             status=resp.status_code,
             headers=dict(resp.headers),
@@ -195,7 +196,10 @@ class HttpClient:
         params: Mapping[str, Any] | None,
         body: bytes | None,
         headers: Mapping[str, str] | None,
-    ) -> httpx.Response:
+        max_bytes: int | None = None,
+    ) -> tuple[httpx.Response, bytes]:
+        """Send and read the body, retrying transport errors in either step (a
+        server can accept the connection and then stall mid-body)."""
         shown = safe_url(url, params)
         last_error: Exception | None = None
         for attempt in range(self.max_retries + 1):
@@ -215,7 +219,11 @@ class HttpClient:
                 resp.close()
                 last_error = HttpError(f"HTTP {resp.status_code} from {shown}", resp.status_code)
                 continue
-            return resp
+            try:
+                return resp, self._read_capped(resp, max_bytes)
+            except httpx.TransportError as exc:
+                last_error = exc
+                continue
         # Exception text can embed the full URL (and its secrets); report the type only.
         reason = last_error if isinstance(last_error, HttpError) else type(last_error).__name__
         raise HttpError(f"request failed after retries: {shown}: {reason}") from None

@@ -336,3 +336,17 @@ def test_score_label_evaluate_end_to_end(
     assert ev.exit_code == 0, ev.output
     body = out.read_text(encoding="utf-8")
     assert "sha256:" in body and "Split: all (n = 20" in body and "| Precision |" in body
+
+
+def test_unexpected_fetch_error_is_recorded_not_fatal(monkeypatch: pytest.MonkeyPatch) -> None:
+    def boom(self: PageFetcher, url: str) -> None:
+        raise RuntimeError("surprise")
+
+    monkeypatch.setattr(PageFetcher, "fetch", boom)
+    with make_client(Recorder(fake_web)) as http:
+        result = pipeline.fetch_pages(
+            ["https://a.example/1", "https://b.example/2"],
+            PageFetcher(http),
+            load_lists(REPO_ROOT / "data"),
+        )
+    assert [p.unscored_reason for p in result.pages] == ["fetch_failed", "fetch_failed"]
