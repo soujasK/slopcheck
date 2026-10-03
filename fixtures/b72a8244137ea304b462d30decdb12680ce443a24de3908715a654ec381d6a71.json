@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a reputable, human-authored expert source on Indian credit cards with detailed reviews and guides.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TM5UnNfkfWSsz5VJMN1WQbiG19BCpno9Wxl+b4xwNxvTW1u98CpG973C08km5uTl9zpp9g3R84IrutapNn2bE8kjOU3IH5XxtC//LvR62cwpVmFBB/C5HWdE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 959,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 997,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 959\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"pQ3Bat72Esf-4-EPjt-6kAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:13:58.389093+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:13:57 GMT"
+  },
+  "key": "b72a8244137ea304b462d30decdb12680ce443a24de3908715a654ec381d6a71",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

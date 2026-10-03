@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a health article from a recognized publication with a named author that directly answers the query with natural remedies.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ti5VZQHvu7PInW0/XXNU6kW0idwiK6dcmZrPNUPAJl/HySJ23PR8ffBCeatQEYnR4Zt1jyCCNJzu8vsIPIKjVLxu2zEmXUS80hqyKCvii42YtMxa7P6Xm28I=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1214,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1248,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1214\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ZhDBaqrgPMPFg8UPwtCToQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:25:44.026720+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:25:43 GMT"
+  },
+  "key": "b18529705efa213f5ff8281078ec5394d7c96272c01cec7379a768e859395c8b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable financial organisation with named authors and provides direct, detailed methods for paying off credit card debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TVsNCWmJwr0QMHHFZPCZEby0NZMwDqSW7H4DdeVaGD6ZLVKI9EMLNJY3zzk+iCZr+M/TUcoMQsuPCHcaCeR4RVW+VvuUUBOhC1RZ0ejXpO+LZ+srk8bo9IHQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 939,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 974,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 939\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Nw7Bap3NCvvHg8UP4-XIsQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:16:24.105444+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:16:23 GMT"
+  },
+  "key": "ccab24adb26d0a6bf26811cc8231401f03756fbf64d5d6c077b9ccae3b2c7244",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

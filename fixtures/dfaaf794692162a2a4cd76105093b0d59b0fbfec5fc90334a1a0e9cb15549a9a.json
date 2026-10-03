@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from a recognized testing organization with hands-on reviews, a named author, and clear criteria for beginners.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzgEvwNlsokt5HKRL8OZqTHe47uy9t5HkCQvBBbg1Mx6IB+6y2RmPdv9TBZy9rz6o4FbttkjQOvp73qv8pe+k/LNyi9C11LLxuMRjF/CjBJxgsJ7VT4fIRNw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1017,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1058,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1017\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fRHBaqquIYLRg8UPldKn2Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:30:22.514893+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:30:22 GMT"
+  },
+  "key": "dfaaf794692162a2a4cd76105093b0d59b0fbfec5fc90334a1a0e9cb15549a9a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

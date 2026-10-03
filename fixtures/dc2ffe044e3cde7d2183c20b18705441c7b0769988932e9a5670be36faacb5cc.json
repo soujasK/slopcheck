@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author who explicitly details hands-on testing of multiple air fryer models over several months.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TdgEPalGuyVQHpW7kygoDct4dqRBkeVlqgrXK8ZgwhKBb5AjkglTVsoGZuKC1+SNiVnFD8AhyQP2yBztpeVRGbfe9TDrqhsJsqNeT3CGE9V8OmjIJP6Q+7RA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1024,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1059,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1024\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"2A7Bar6kCdi6juMPqaLB4Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:19:05.080812+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:19:04 GMT"
+  },
+  "key": "dc2ffe044e3cde7d2183c20b18705441c7b0769988932e9a5670be36faacb5cc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

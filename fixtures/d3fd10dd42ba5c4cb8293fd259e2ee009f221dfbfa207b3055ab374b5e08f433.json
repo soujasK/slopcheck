@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a price comparison and cashback shopping directory rather than a helpful review article for budget wireless earbuds.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TLYC9usdYZ0Z//8OAbEOjj8MCM+B2WkncFjxxuCS7iWWBSR3Ma9pEPDySFZKx54/SftktLicwNsAHfFX7xZbHXE45VH8zzRDGVlpiqg/Nw54ZT1nZMiL2ekw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1062,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1100,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1062\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"gxDBao4-wduDxQ-m-qboCQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:26:12.078996+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:26:11 GMT"
+  },
+  "key": "d3fd10dd42ba5c4cb8293fd259e2ee009f221dfbfa207b3055ab374b5e08f433",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

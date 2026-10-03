@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a commercial product category page for an air purifier brand rather than an informative review or guide for Delhi pollution.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4VXMoXma8WFWtcj2Df9HVUdR62ZBDuXG1uW1dhEZMd+cRnLq93epMUv5AWPDVblOpvHjSQ8IdnI659V3+zN2wud5F++xBMA7lQoGttRKae/QuG8R4/r0rNw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1171,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1205,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1171\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kRDBaob9HK3Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:26:26.420053+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:26:26 GMT"
+  },
+  "key": "03d6ded0b84f75faf5ace0eb04d26a83ed63e189224eab266d6084fb6bd5e1a8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

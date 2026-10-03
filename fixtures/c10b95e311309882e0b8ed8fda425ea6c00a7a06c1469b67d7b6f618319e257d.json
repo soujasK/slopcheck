@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The wikiHow article is co-authored and medically reviewed by qualified professionals, offering direct and structured advice on the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TkdiYfrDu2kq9wsXO/goiEkimP4sE58+xTB2HphrJ2mgz/okAJMkz/EWnlFQdv5spP7RtRMqUMhHi7psfugR87CVXesVA0uGHDjEQG8Oh0Cw4btaMBU12BiA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 911,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 951,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 911\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"rg7BaviQBZW-g8UP_rmq0QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:18:23.093877+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:18:22 GMT"
+  },
+  "key": "c10b95e311309882e0b8ed8fda425ea6c00a7a06c1469b67d7b6f618319e257d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

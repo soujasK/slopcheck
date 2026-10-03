@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The snippet only contains unrelated headlines and does not display the actual article text needed to evaluate the tax comparison.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TnZwEJo0FKy7hWctaqzkCDAtD/W0ntWjSlvnzjAR1JX1U7KwuYhoGseTP+YA4tfKl6gxhVdpmpuFdrn4uoKgIDsDO5JaKah7ya0erib9RKNOPdmMNyHDTHLc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 812,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 845,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 812\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"uxDBauCyAa3Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:27:08.097333+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:27:07 GMT"
+  },
+  "key": "aa996ba7497873f1dab04f343a0809028a23459c21d9b1805e2ad638dd944d6b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a well-structured blog post by a pharmacy brand with named medical professionals providing clear information on gas and acidity remedies.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBo86y/UmFNelAZSXH0MSwVpUQ4T9fqjYZir6wgfuhQaozfU3HDv+w2aGFrOHe83qM4M5zvdhkk3CWtPe0XCWYEwiIxHHR8GSIUtf53skpurtCILjaqueepY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 961,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 998,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 961\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"rA3BauDVE8eCg8UP-ruR6Qc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:05.844539+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:14:05 GMT"
+  },
+  "key": "ccaa7ada18a8821872d11e4d250fcc14af8a7371192760e1191ea672f77fb93d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

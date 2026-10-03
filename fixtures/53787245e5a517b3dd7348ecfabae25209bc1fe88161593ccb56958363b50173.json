@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides official health guidelines from reputable organizations like the ADA and CDC with clear authorship and medical context.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ts/xbnkc8oeLPHIltNVZ2eHrWL9opmCIlKNkeLbWHtmsCr9D8zPJuSAThw2CiWb45JdrI3cvVaUzR1pErYkwZfakIo/jCyvy7/esoEobBYQRz3lvHoiKHGjM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 954,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 986,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 954\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"HRHBao-XBsO0g8UPgdCdkAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:28:45.959764+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:28:45 GMT"
+  },
+  "key": "53787245e5a517b3dd7348ecfabae25209bc1fe88161593ccb56958363b50173",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

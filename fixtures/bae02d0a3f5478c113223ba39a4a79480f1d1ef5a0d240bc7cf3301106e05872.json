@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a commercial blog post promoting supplements without a clear author or medical organisation behind it.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TEDnetzP66TiuykA2icvEHkZq+EZWeAlp95U67lIfV85mW66XWn0BpaGkDSfc9c8271J/JJSza0K3+ROve4phlB/up35Ddgc6aW+S2T6dAoknYWayafeWbfI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 967,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 967\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"YBDBaq-GC9apg8UPkOLwkAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:25:37.883962+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:25:37 GMT"
+  },
+  "key": "bae02d0a3f5478c113223ba39a4a79480f1d1ef5a0d240bc7cf3301106e05872",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

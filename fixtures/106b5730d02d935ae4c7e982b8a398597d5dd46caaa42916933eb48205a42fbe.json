@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is the official Google Account Help page which provides direct and authoritative instructions on how to recover a hacked Gmail account.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TxGTpfRxC0pxY9NkIcA7p1n15Tq3xE9MgESGy7alqvfcaW58w0YlgnPQQk1Pz73hVoN8GacapVdVKwg6yjhvI4WFKzmw0UmLRzF4no4iE1IixZY669+O4bB8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 975,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1009,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 975\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"dhHBavGtDZmwg8UPp_H2yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:30:15.080731+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:30:14 GMT"
+  },
+  "key": "106b5730d02d935ae4c7e982b8a398597d5dd46caaa42916933eb48205a42fbe",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

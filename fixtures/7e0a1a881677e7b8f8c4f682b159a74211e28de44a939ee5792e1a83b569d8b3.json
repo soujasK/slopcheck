@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page text does not provide recovery instructions due to a browser compatibility message.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T38hNh6GmNJgDYmT+47Ppje3ObVqwl3+LJrLh717JDOhIGdfdhRvKepZOKFSuReyUH04JDXP5L8+furulnbuQBCFPBWfZ5+LKSHGxkNweaNHvf3Vw66cT0Do=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 579,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 606,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 579\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"QQ_BaomjCdi6juMPqaLB4Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:20:49.995988+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:20:49 GMT"
+  },
+  "key": "7e0a1a881677e7b8f8c4f682b159a74211e28de44a939ee5792e1a83b569d8b3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

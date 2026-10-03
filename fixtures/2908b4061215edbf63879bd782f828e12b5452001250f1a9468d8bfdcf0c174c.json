@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page offers health advice on a commercial site promoting clinics and products without a clear named medical author or authoritative backing.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TxlspEN6iiFz06DcOYmQPCqEcIOJWKnUmAgsRFAwioopMIpgSB2PgB0B5MkK9DkUbWfA1a8Khx035gzFlVbvEf95j37YglqYLN3n6s70lLy7zugwXuW3WYaw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1007,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1041,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1007\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MA7BasDAComog8UP9v_06QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:16:16.964157+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:16:16 GMT"
+  },
+  "key": "2908b4061215edbf63879bd782f828e12b5452001250f1a9468d8bfdcf0c174c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

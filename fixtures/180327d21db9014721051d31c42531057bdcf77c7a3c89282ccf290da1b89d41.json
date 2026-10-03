@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a certified financial planner and directly answers the query with clear methods.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tt+WZ2bnML4UGp4ZEtYoaFAnYqFI9giwFS5BWW4HEO5jQONRwxIy79UYaJhBDYjscTOH27+1C4ncPn7QYD/CvWNxvCpFhM8x3Xba9GwRejYAH9KKHjwO3hTI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 938,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 967,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 938\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"4g_BasbJH_vHg8UP3bi8iQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:23:31.544976+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:23:31 GMT"
+  },
+  "key": "180327d21db9014721051d31c42531057bdcf77c7a3c89282ccf290da1b89d41",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional landing page for Google Messages and does not contain instructions on recovering deleted WhatsApp messages.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TRAUI5DaPw+02dLVZIQSuBPCIcM+YetK2BdJu15D4KadNxo68J0iH6kXOrZ1T/awTsciT2LoXX4qf3DF+mSsmdn9hC3jPT7MIGuGskhNM2j+z7Rw3fTz1KXc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 924,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 956,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 924\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"QBHBauCmGZbRg8UP2fzUiAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:29:21.314351+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:29:21 GMT"
+  },
+  "key": "8552aa15a78ed37724dcae3a2c2f2c855593128a53ae8b0192c706b87db7bebe",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

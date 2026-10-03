@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly answers how much emergency fund is needed and is written by a named author on a recognized financial platform.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T0AwQA9VLV6yJ8WCBxP3fMPgXAlZtKZSWLdrwdxkZoh/VvXuZJNuMJwg4SagUwR+KzKRkJo5RB8pKcwARISNhDDAPe65AgQwNPzwvU/BnMBBnQitTygy7AIw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"oA7BaoKsHJzB4-EPkMbvoAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:18:09.269610+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:18:08 GMT"
+  },
+  "key": "40cb3789c5a50f10939f4afb59b52972ee2b7db5d72be56ce4f4b989b31506a4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from an official insurance provider and covers term life insurance products.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TvJ9y341K5jMOyKM7TGW2pRpboXzUrz8hSyX7jiQl3ec4ZKRafOoaBDi/fYA5V+uMdv97V6gAI83m75/YHH0PQP/qEv0gbu+Cyqx23erTLbEV5LX7IwXJBfA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 556,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 588,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 556\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"9A7Bat_DAYLRg8UPldKn2Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:19:33.134752+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:19:32 GMT"
+  },
+  "key": "bf048dc233743b6f38b8bcf7c73157931c760e1a22a88188d72c5ba4a94a1724",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

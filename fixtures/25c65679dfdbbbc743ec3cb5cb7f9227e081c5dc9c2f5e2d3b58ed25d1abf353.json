@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an official banking institution and directly addresses investing in SIP plans for 2026.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tkej7vjQ3uDbV5ARndeH0ZIFhL7ccmBihXAbfnurY6zlpH7pJX/kSCIBHDDMEf2Ejkzhzc4gMX1LLDnWR9PS62Msfm4MwGhOBLOOOrCZwf8pzlWXiQj3jraw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1002,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1035,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1002\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"sxXBavbRI7mkg8UP55SMqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:48:21.086845+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:48:20 GMT"
+  },
+  "key": "25c65679dfdbbbc743ec3cb5cb7f9227e081c5dc9c2f5e2d3b58ed25d1abf353",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

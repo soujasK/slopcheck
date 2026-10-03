@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic wellness blog post padded with affiliate product picks and lacks expert medical authorship.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TxGxnbzjKqUtE11WuTzEZS6kWtkwj+1JRLt+xX5/STPLN1uHcXmN23DxKge/30vfJOANY3HlQJ+3QlHi0sXKZVPgg6SLkWGyvvMHtUHSWPtBZ4dQHgyn7+v8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 960,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 990,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 960\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JQ_BavaEB6zSqfkP3LXDgAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:20:21.979719+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:20:21 GMT"
+  },
+  "key": "5fe927dee0d0d65608125dfe0ffe98ecbc6c88130eee0f8765a03ec4f01552d2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

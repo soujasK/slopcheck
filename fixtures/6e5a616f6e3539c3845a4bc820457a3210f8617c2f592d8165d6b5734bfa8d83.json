@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from a reputable health platform, written by a named author, and medically reviewed by a registered dietitian.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TIjOX7juQv94VTidnyoTpR//XW3xtX/bFmjjAtNbguCEXke1bNc15ZxVI/Rc6F3ub01YjSYYz4g8OtbZE1Qyi0YG+/CgOAdE/R5F40dsqWYa8//uMCannRSk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 955,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 995,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 955\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"jg_Barj5A6bRg8UPlfaGsQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:22:07.142678+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:22:06 GMT"
+  },
+  "key": "6e5a616f6e3539c3845a4bc820457a3210f8617c2f592d8165d6b5734bfa8d83",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

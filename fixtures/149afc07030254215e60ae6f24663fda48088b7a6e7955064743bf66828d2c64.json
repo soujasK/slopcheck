@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional article from a financial services company heavily focused on lead generation and advertising insurance products rather than providing objective advice on investing small amounts.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7OPBh7bwsaJMrnfnWvx14YTHoEte0iPzmrFJJDaHZJQoRkryMnd1VRs5jm2UZFslKusQJqZyWKUIjKWdi7JpYU3Eq6H5ZJQ6esEa80kT66EAnjpsUr8qBjw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1080,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1121,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1080\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3w7BataiE5q2g8UPqcK0yQk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:19:12.436103+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:19:12 GMT"
+  },
+  "key": "149afc07030254215e60ae6f24663fda48088b7a6e7955064743bf66828d2c64",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

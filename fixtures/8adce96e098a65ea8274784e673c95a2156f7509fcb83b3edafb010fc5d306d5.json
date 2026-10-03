@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official Google community support page for account recovery.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TNLS+Gt+5pUmwLIjKEEtnZh2z13a3oXQTqvrDXd+fKzkkL9tmCz0U2ix2FWpCHjYvxPPYTamfVumQ1ZxecoU4Ldpi/w+h0I/9U7AaoefGs/fFOYXhgYWgWJk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 616,\n    \"candidatesTokenCount\": 23,\n    \"totalTokenCount\": 639,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 616\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"wQ3BasX4G63Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:26.652212+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:14:26 GMT"
+  },
+  "key": "8adce96e098a65ea8274784e673c95a2156f7509fcb83b3edafb010fc5d306d5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

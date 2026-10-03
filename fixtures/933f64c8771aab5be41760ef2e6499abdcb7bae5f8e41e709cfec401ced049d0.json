@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized health platform and features an answer from a named medical professional with years of experience.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TdTAGco1qyAOeuInyRI7e/L4UGSDdLg8A7fVg5MPCYTRKD3FNVigAYm9NSt/GDg1/PAiuX8qCsmBDALbGei8B8W3SsTIk+13tDbAOBlAXZfATdp3OQUQrG5M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1093,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1126,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1093\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MBLBaviTEuW8mNMPz_-E6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:33:21.180139+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:33:20 GMT"
+  },
+  "key": "933f64c8771aab5be41760ef2e6499abdcb7bae5f8e41e709cfec401ced049d0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

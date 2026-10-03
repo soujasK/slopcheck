@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from an authoritative sleep organization, features expert medical input, and describes hands-on testing.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0THWArO+n75xpNmIEHP7GOoEN3FM0DVuEtpmtqfCMTiSqr6gG+n8VJnTjlvBwDk4Hmf/i2PDDebp8xszyFnVQKIxs6wYpR57ms1hm9yo2mkWFXof7jXdzXE50=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 958,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 996,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 958\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"mBDBauq_BLevg8UPi5S2oQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:26:33.346438+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:26:32 GMT"
+  },
+  "key": "4314a697b44ad23417b7b13217c7cdc5a1ef2b8489552170a2dddc402bd1d9cb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

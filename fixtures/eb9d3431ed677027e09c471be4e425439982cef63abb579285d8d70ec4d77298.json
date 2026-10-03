@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a generic blog post with unverified advice and generic authorship, lacking official authority.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tj2O+wDMSukT1fSw2oHkyvK2SGaspOgUqj4J2PFyN/FOX5T2XuA4orcbq2DG7aphR+pxaPK0PO9A4njPgIkgw+lIqMGIvmVkTqmFPIX8SWNpF46e2Jc7CPLs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1042,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1078,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1042\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"lw3Bapy8E4ijqfkPpIuf6QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:13:44.360099+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:13:44 GMT"
+  },
+  "key": "eb9d3431ed677027e09c471be4e425439982cef63abb579285d8d70ec4d77298",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

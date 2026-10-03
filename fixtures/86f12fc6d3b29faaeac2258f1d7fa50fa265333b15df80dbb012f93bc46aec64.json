@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"unsure\\\",\\n  \\\"reason\\\": \\\"The page is from a healthcare organisation website, but the excerpt only shows navigation and physician search menus without content on blood sugar levels.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TMtQKAho+fwtbi6AQkWX6lx2GmxtBsCNtLMhqi0MSJKFonG/7DINjc/kFzKPPSUGhPnL710NxKQHd/k31pgCSTHYgyHVwsjnwsztSC8FoM0LUogw03KvxGOM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 890,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 934,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 890\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"-w7BavbREcPFg8UPwtCToQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:19:40.526511+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:19:40 GMT"
+  },
+  "key": "86f12fc6d3b29faaeac2258f1d7fa50fa265333b15df80dbb012f93bc46aec64",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is published by AARP, an official and trusted organization with clear responsibility.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TxafGoXo3lXa5yCGdtcmaVD90aUCpE0IRT0T15Qw6Qp/my474nyzjUKB02tfhhqC12ydbzNJWh7Yn3rNu3OXq8rlkTCP27j2mX6n/EvheIo/YkvQ65MbtChk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 937,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 971,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 937\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7RXBasK9DOO-g8UPlrS4kQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:49:18.416158+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:49:17 GMT"
+  },
+  "key": "2a04888dd1c823fc44610de2b2d751ebe38f7c0e005cf78cca30b5a87b795f26",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

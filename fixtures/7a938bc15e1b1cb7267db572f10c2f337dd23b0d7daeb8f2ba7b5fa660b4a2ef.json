@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides structured, actionable steps written by a named author with editorial oversight from a certified credit counselor.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tqd9nLPK0nZOI1bZ4gUvvN/nIzoESMEJBxXFuqD/rUQtfvsOQM8f8JmAzyC5qSkgYoecR4rsJJKcjtEsskc1jYmU5lLCpCpXahOizT35umLYtIIFAnKIyN0k=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1044,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1076,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1044\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"mQ7BauKCGce-g8UPhab10AU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:18:02.408330+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:18:02 GMT"
+  },
+  "key": "7a938bc15e1b1cb7267db572f10c2f337dd23b0d7daeb8f2ba7b5fa660b4a2ef",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

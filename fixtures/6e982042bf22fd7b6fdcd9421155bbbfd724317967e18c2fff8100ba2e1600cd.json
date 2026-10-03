@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"WebMD is a recognized health information provider that directly answers the query with clear details on side effects and warnings.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T88ZEt3N/Cpv6Jcs3rByHIllp1scjfFygeNkYRWsMr0lIQUvxTOlE3fW4cnsI20HMNKazqb93WKOHLAdA7EZmruD47T8cqBSDEevIkKAY3qq+IyjK7+S40Y0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 967,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1006,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 967\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"RBDBauG1JPXeg8UP66CxmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:25:09.624260+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:25:09 GMT"
+  },
+  "key": "6e982042bf22fd7b6fdcd9421155bbbfd724317967e18c2fff8100ba2e1600cd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Vikaspedia is an official government-backed portal providing reliable digital governance services and guides.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tb5kXbyT8NePLygN23GucjMEfUds5+LMhEQTFlIHun6XVwaK1f9GAts8zW0qakYQ8ouaTm6Cz13aYBeAbntwWOJacdBPEHXtxgABk+KjTZr+10Lx0rsdwSC4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 600,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 629,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 600\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"nA_BatrLHMHbg8UPpvqm6Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:22:21.489227+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:22:21 GMT"
+  },
+  "key": "fa9dbef77359e5a68261a80b26c13579bffc235add60b4076f37af6b93a7fa63",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

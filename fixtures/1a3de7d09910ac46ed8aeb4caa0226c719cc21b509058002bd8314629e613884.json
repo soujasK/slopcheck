@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is medically reviewed by a named doctor and provides a direct, detailed guide on OTC gas medications.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TrWFNy2/MbkupvtOf8qWbginikGBHOPJH3ztHCDJ1UvD5IyRsoD0UHUUgt+oco6E5lW/jqkRj4fenxD0FAPB6mvVs2ano+h0eVR9itDeeGhQ0qbjN92mY4F4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 971,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 971\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8A_BasCEG6bRg8UPlfaGsQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:23:45.472495+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:23:45 GMT"
+  },
+  "key": "1a3de7d09910ac46ed8aeb4caa0226c719cc21b509058002bd8314629e613884",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

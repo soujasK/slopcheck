@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from a recognized financial platform clearly explains the differences with identifiable authorship and publication details.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tqgtq1+J33LWAR+nMHk+8AMGN9cNzeJFZ6ZLpJYw3+KlafdzkPaMqRFvvAIJoD59/BCSYZ34FzCAYxETQDk+JpXmBSTJfyhAflYnUPDHTGuNwWULe1SvxBIs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 945,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 974,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 945\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JRbBar7WGfXeg8UP66CxmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:50:14.797228+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:50:14 GMT"
+  },
+  "key": "4ab0b8d2e10702b4d15189ccc1d421a164f69fde0b38a7f4d17474182e45455d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

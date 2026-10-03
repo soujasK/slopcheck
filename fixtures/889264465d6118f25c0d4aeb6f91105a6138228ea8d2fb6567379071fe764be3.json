@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a manufacturer's promotional blog and contact form rather than a genuine, objective guide for back pain mattresses.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+L9xEMJz7NvcVpMekRxS+92adLiA6yZwm8dDof8DLRfc/218thz5WPgqGI5IYrqmUXm0sCbkkS53HDCoRjIwrItfHJi037z/mCSKfaxxzumkjUiLkPq4WwY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 590,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 631,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 590\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"LxDBarK7CPy4g8UP5pKX-AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:24:48.013255+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:24:47 GMT"
+  },
+  "key": "889264465d6118f25c0d4aeb6f91105a6138228ea8d2fb6567379071fe764be3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Google support community page that directly addresses recovering a hacked Gmail account\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground an answer to query \\\"how to recover a hacked gmail account\\\". The page is a Google Support Community thread: \\\"Recover my hacked Gmail account - Google Account Community\\\". Likely an official Google support forum. That is an official source, likely contains answers from community and possibly Google staff. It is appropriate. The page likely answers the query. It is an official Google support community, which is a reputable source. So label \\\"ok\\\". Reason: official Google support community page provides guidance.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground an answer to query \\\"how to recover a hacked gmail account\\\". The page is a Google Support Community thread: \\\"Recover my hacked Gmail account - Google Account Community\\\". Likely an official Google support forum. That is an official source, likely contains answers from community and possibly Google staff. It is appropriate. The page likely answers the query. It is an official Google support community, which is a reputable source. So label \\\"ok\\\". Reason: official Google support community page provides guidance.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036850,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e485f643-8df4-4a8b-8f0b-925a55bb77a9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":615,\"completion_tokens\":142,\"total_tokens\":757,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.24988555908203}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:12.928682+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:12 GMT"
+  },
+  "key": "94853a22cc90ecb3d50855e109d6cded4ae7cacf096342027a1eb7deb3eb02fa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

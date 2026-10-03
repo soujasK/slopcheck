@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with a detailed, author‑named review of budget wireless earbuds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page titled \\\"Best Budget Wireless Earbuds under $100 - October 2026\\\". The content shows author name Bart Breij, date, description, claims of testing 541 models, says never accept payments, etc. This appears to be a product review guide. It likely includes affiliate links? Not shown but could. The question: \\\"best budget wireless earbuds\\\". This page directly answers the query, providing recommendations and testing methodology. It has a named author and organization (Scarbir.com). So it meets \\\"ok\\\" criteria: genuine answer, identifiable responsibility. Even if affiliate links present, primary purpose is to provide review, not just referral. So label \\\"ok\\\". Provide reason: page provides detailed, author‑named review of budget earbuds.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page titled \\\"Best Budget Wireless Earbuds under $100 - October 2026\\\". The content shows author name Bart Breij, date, description, claims of testing 541 models, says never accept payments, etc. This appears to be a product review guide. It likely includes affiliate links? Not shown but could. The question: \\\"best budget wireless earbuds\\\". This page directly answers the query, providing recommendations and testing methodology. It has a named author and organization (Scarbir.com). So it meets \\\"ok\\\" criteria: genuine answer, identifiable responsibility. Even if affiliate links present, primary purpose is to provide review, not just referral. So label \\\"ok\\\". Provide reason: page provides detailed, author‑named review of budget earbuds.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036806,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9a80b146-ec49-499f-b8f6-ecfce4abcf40\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1028,\"completion_tokens\":204,\"total_tokens\":1232,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.61799240112305}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:13:28.898742+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:13:28 GMT"
+  },
+  "key": "c27049afae1e5eea1f001cef40d55e875e55359c50c5d166425194bbdd01d86f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

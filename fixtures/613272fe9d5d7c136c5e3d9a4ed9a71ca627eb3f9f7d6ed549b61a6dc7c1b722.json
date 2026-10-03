@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a medically reviewed educational article with named experts providing diabetes level information.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is a patient education blog from medanta.org (likely a hospital). Title: Diabetes Level Chart: Normal, Prediabetes & Diabetes. It is medically reviewed by Dr. Saurav Shishir Agrawal etc. So it likely includes normal ranges, possibly postprandial glucose levels. The page appears to be an educational article with author credentials. That fits \\\"ok\\\". It's not a product roundup. It's a medical article with named reviewers. So label ok.\\n\\nReason: page is medically reviewed and provides diabetes level chart, likely includes post-meal glucose ranges.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is a patient education blog from medanta.org (likely a hospital). Title: Diabetes Level Chart: Normal, Prediabetes & Diabetes. It is medically reviewed by Dr. Saurav Shishir Agrawal etc. So it likely includes normal ranges, possibly postprandial glucose levels. The page appears to be an educational article with author credentials. That fits \\\"ok\\\". It's not a product roundup. It's a medical article with named reviewers. So label ok.\\n\\nReason: page is medically reviewed and provides diabetes level chart, likely includes post-meal glucose ranges.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036869,\"ec_transfer_params\":null,\"id\":\"chatcmpl-afb3aa4a-8995-44e8-b11d-480f7e3e7730\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1134,\"completion_tokens\":180,\"total_tokens\":1314,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":48.35433578491211}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:30.542778+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:30 GMT"
+  },
+  "key": "613272fe9d5d7c136c5e3d9a4ed9a71ca627eb3f9f7d6ed549b61a6dc7c1b722",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

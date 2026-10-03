@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial organisation and offers detailed, responsible advice on managing debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBqVOw9VIo2I6WRjdx8dpnZlQuzshhcHB60W2c/hJRCtzO1CKIDb0H4tOSDIHezms3QoClC5C1Qi0f+2P/0imtoox1LUl10kCURK3uKysvVig/j/0hi7gHQs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 925,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 955,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 925\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"-hDBaojGHKXcg8UP9OCo0Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:28:11.387348+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:28:11 GMT"
+  },
+  "key": "eac72f2e5c4e16ae7a6dcc1505a74c1a01c2ce0f98dd31bc2e5502a11aeec1be",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

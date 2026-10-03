@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page lacks a clear author or organisation and relies on generic keyword-padded text rather than providing a concise, authoritative guide from the official source.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+gCzI7OJFuFhOYxpct+iUYywvrSb3IaqwyIy/L+91c8LtjvGNSRYv/iBNSNTxq78W3qez+dVASY0PjYzX+VT/NK3yL1xsp80zXQwJQQXS4sr3br9CKyMQic=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 984,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1024,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 984\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"1A_Bat-HD_iiqfkPjcLZ4QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:23:17.083130+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:23:16 GMT"
+  },
+  "key": "c9258b3b809be5d6bdd3b177ea2ab11c236a0354af3b43b7a7711b588c2a14be",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

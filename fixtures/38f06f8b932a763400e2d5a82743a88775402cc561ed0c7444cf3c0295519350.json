@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by pharmacy professionals and provides reliable, evidence-based information on over-the-counter medications for acid reflux.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzLThKZCATz6ccy4/GUDtvJ9RvkASFxGJgKPhGxqAlxXHc8TUDz63AUxvq0oWJPccfX8oO+4VKy8lACcuO9h6ovagQ/tgrXolS/9f+Mp6+5SIy5GXI24SygU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 968,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1005,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 968\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"EA_BaoatIIHljuMP5rGl6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:20:01.707988+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:20:01 GMT"
+  },
+  "key": "38f06f8b932a763400e2d5a82743a88775402cc561ed0c7444cf3c0295519350",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

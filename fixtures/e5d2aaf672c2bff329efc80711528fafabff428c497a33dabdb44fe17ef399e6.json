@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a lightweight interactive calculator tool with generic financial advice and no clear editorial authorship or organisational accountability.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+1la+q6zCmDICkwMVSzXD4LWDr1vzKJYuW7qQ1EWuZhW+0WwuOMKIq9DizZPUja9Gt/iM/cEJpN2dP4/0dFiZ3JI+wBx1PF553cDuHSQ3f3vEU/E94z/650=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1100,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1132,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1100\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fhDBarK5B9i6juMPqaLB4Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:26:07.612551+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:26:07 GMT"
+  },
+  "key": "e5d2aaf672c2bff329efc80711528fafabff428c497a33dabdb44fe17ef399e6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

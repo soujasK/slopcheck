@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named finance expert from a known organization and directly addresses how to handle credit card debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ta4tuj2PvdvMysGl3o/whAiAYm95eLEIkx6evKmChr8dIM8wMHMsVTyZo0qn1R5zF8rWPbnqIeBH67DRSQuDq/MaPgoEPzGrjFJSlwFvcE269tCydQGdUgZY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 995,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1029,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 995\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"FxbBaqKTDOa2g8UP55vrsQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:50:00.410553+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:49:59 GMT"
+  },
+  "key": "01dfee3a4099a17c883c5e6b0e90f42101afd52510b3642d08dc9209dd9fc350",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

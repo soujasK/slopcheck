@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is a tennis forum index page that does not contain content about running shoes for beginners.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TdY3VGh5bYWYNlLqEUa9PzUxHR4ZvUjBrpEl04R95cvnliRa0Nj8bL4pzVetTgC5UBG+YjQS0ha8iMVltxL9aAJVtNZ5/dp7z66aZYteO9XNVIqPY2RTfXbg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1104,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1139,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1104\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3hDBauPzG6urg8UPxJ_wsAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:27:43.528011+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:27:43 GMT"
+  },
+  "key": "d660e08af6f9470132daf334abbadcfb161b09ef072b26d9b790fd19dd00dd87",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

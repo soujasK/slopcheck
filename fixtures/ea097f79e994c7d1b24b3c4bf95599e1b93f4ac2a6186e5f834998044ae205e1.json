@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government site with identifiable organization providing FASTAG information\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from digitalindia.gov.in, a government portal (MeitY). Title: FASTAG - Digital India. Content describes FASTAG, purchase, recharge, etc. Does it explain how to check balance? Not in excerpt; maybe later. But we have only first 2000 characters; not showing balance checking instructions. However the page is official government source, likely includes info. Even if not explicit, it's an official source about FASTAG. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is official, likely contains relevant info. It has identifiable organization (MeitY, Government of India). So label \\\"ok\\\". Reason: official government page about FASTAG.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from digitalindia.gov.in, a government portal (MeitY). Title: FASTAG - Digital India. Content describes FASTAG, purchase, recharge, etc. Does it explain how to check balance? Not in excerpt; maybe later. But we have only first 2000 characters; not showing balance checking instructions. However the page is official government source, likely includes info. Even if not explicit, it's an official source about FASTAG. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is official, likely contains relevant info. It has identifiable organization (MeitY, Government of India). So label \\\"ok\\\". Reason: official government page about FASTAG.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036870,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b8aef92e-27f9-4221-b8f6-3392bba753b8\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":810,\"completion_tokens\":202,\"total_tokens\":1012,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.54530334472656}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:33.110629+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:32 GMT"
+  },
+  "key": "ea097f79e994c7d1b24b3c4bf95599e1b93f4ac2a6186e5f834998044ae205e1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

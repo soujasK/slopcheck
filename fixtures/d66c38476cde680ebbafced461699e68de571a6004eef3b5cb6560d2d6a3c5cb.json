@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a clear guide on how to link PAN with Aadhaar from an established financial organization website.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tl/gVtoevVMDoS1U2OB731Zf2cpq51HWWiJUgiB/pL6UOGavYSc0zY/86U/xL3kUM60JLvLPZ+9jweRDEH1lblS5c97IqWwnqoP8uJeLcMVEPsnGz8suyAj4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 938,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 976,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 938\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7BDBaoCiPMK6g8UPsbOi-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:27:58.375844+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:27:58 GMT"
+  },
+  "key": "d66c38476cde680ebbafced461699e68de571a6004eef3b5cb6560d2d6a3c5cb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

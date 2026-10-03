@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized news organisation and provides detailed steps on checking PF balance.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TLuyJsf6RKFXFRp38MDcWETq8E4tmrYfskeuVnC0CMbPn/xEdyyq0USE5JWmiTQMGOU0o5VdX4VzsaJmZp0TackpsAlw6pmFQEpRLLwxGRYBqVB6X8Z3yX0A=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1155,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 1183,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1155\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_g_BapDBF5W_g8UPt8im0AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:23:59.369876+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:23:59 GMT"
+  },
+  "key": "e4e6bbb65d977d160b8c5c43b0caed83e89c2b3574515d192b55ae8656b2ef87",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

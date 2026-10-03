@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a detailed, well-structured guide with a named author providing a mathematical and data-driven comparison of index versus active funds.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TylCL+y9DW/ToQflzg0oCFQ9bvkrY03QZqzxH3U+VgRGUL+5FJVb8qxr/O1Kc2A9tGhEy21TZsMYBJzzWbc3drVkHnolPXS9tsM39wRCzbSyN8LCGs5Sv1Ws=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1060,\n    \"candidatesTokenCount\": 45,\n    \"totalTokenCount\": 1105,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1060\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"xg_BatL-CqS-g8UPodKW6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:23:03.028511+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:23:02 GMT"
+  },
+  "key": "ad9bb222fa399e84efed20873066aca4f2ccc41170bf275ea47ecd3dfcd1b163",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

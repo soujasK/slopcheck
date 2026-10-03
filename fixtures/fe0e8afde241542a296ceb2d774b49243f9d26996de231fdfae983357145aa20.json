@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑named guide on transferring Android data to iPhone, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to transfer data from android to iphone\\\". The page appears to be a blog post titled \\\"I moved my Android data to an iPhone: Here’s the transfer method I’d use again – iGeeksBlog\\\". It includes author name Ava Biswas, date, and detailed steps. It seems to be a genuine guide, not just affiliate. It likely qualifies as \\\"ok\\\" if it has identifiable author/organisation. iGeeksBlog is a tech blog. It has author name. It provides instructions. So label \\\"ok\\\". Reason: provides detailed guide with author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to transfer data from android to iphone\\\". The page appears to be a blog post titled \\\"I moved my Android data to an iPhone: Here’s the transfer method I’d use again – iGeeksBlog\\\". It includes author name Ava Biswas, date, and detailed steps. It seems to be a genuine guide, not just affiliate. It likely qualifies as \\\"ok\\\" if it has identifiable author/organisation. iGeeksBlog is a tech blog. It has author name. It provides instructions. So label \\\"ok\\\". Reason: provides detailed guide with author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036886,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c17c00b5-9a60-4f37-a1bb-7a3ac120eafa\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1051,\"completion_tokens\":175,\"total_tokens\":1226,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.372528076171875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:47.599184+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:47 GMT"
+  },
+  "key": "fe0e8afde241542a296ceb2d774b49243f9d26996de231fdfae983357145aa20",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic medical directory and question-and-answer forum page padded with long lists of medical treatments rather than providing structured, reliable information on the side effects of ashwagandha.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TFjTss2BU1hVhoRucs0Eynjvl6tllMzHhXJKRQpfF0bc7xx4FCzREm0PaBUBXzIJ2SennhhEwHityEe422v3M11J7KYw0H2nYw1FIq+IEnuXRFBaKgaPcTeU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 961,\n    \"candidatesTokenCount\": 49,\n    \"totalTokenCount\": 1010,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 961\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kQ7BarTFO_SiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:17:55.149345+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:17:54 GMT"
+  },
+  "key": "a9fe77d340f0b3c0729c62534598a8c2e4d9f8f59f04752d3ca5082559399c6f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

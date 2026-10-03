@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable medical institution (Harvard Health) and directly answers the query about over-the-counter remedies.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzsJPPGTDJr09Gl2AZxpNDl4Afk0VRBJRSHinPJEX+gczhsgpyiDLKqYDXO0Luh/ViFsvPyeYSEU1tp/WxKbdCkhZlRElsvaeD6RcvX5AJAa86U9gSZjSmwU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 972,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1008,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 972\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ixHBary0Ff_Fg8UP1e-duAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:30:36.192807+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:30:35 GMT"
+  },
+  "key": "dde3b0d3cce7d1f4509ff08cbe75267df5c3de349875aeffb2bae86213ed08e6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

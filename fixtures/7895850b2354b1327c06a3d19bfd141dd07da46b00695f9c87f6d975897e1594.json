@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional guide designed primarily to advertise and drive downloads for the proprietary FoneTool software rather than offering an unbiased technical solution.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TheIzEvzYa5EVRqCQnbMs5s6lZOyvqtCzEBOIxSy74pb+B4zJrIhbMZ67Ci28U+7dumS2++aF7QU/BGTgFD+zexZdGrY6bSbbO2kMOK70L78i9Xuf81XwLLM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 980,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 980\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vw_BasTqGdWymNMP3eGlqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:22:56.398084+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:22:56 GMT"
+  },
+  "key": "7895850b2354b1327c06a3d19bfd141dd07da46b00695f9c87f6d975897e1594",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

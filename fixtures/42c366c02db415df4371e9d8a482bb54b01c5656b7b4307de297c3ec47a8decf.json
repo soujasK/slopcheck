@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a named financial writer and researcher from a recognized financial platform, providing structured and direct advice on paying off debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TzIasBkOlTzY4LychaOhI/TIpJTsIc/9VKwRH1J2ONfWVvlqhRTyaNY7PqglMZuJUP8ZR/BIR+VTYW/fhQX8/0KOtg/QNGxJxhoPeJAs87bjPsC46BDMovR8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 973,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1011,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 973\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"oBHBatqUI4mkqfkP_eSo6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:30:57.606419+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:30:57 GMT"
+  },
+  "key": "42c366c02db415df4371e9d8a482bb54b01c5656b7b4307de297c3ec47a8decf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

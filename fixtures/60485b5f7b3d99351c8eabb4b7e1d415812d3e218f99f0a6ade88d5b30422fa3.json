@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The health article is published on a generic natural remedy blog with a questionable author name and lacks verifiable medical backing or organizational accountability.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TP6c7ItNq/G7kCMiP9+N/cXuX1ayTEwcqcGlcRkeCf2Nw3kN7lzG2Kt6wnlKduPL9ycRq10pkEUxJXJ1zWt8LsPdyPat3VneUu7qjbQ+SbVn2TM6YAMGMRVk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 926,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 968,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 926\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"5RDBaqX5C8K6g8UPsbOi-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:27:50.183101+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:27:49 GMT"
+  },
+  "key": "60485b5f7b3d99351c8eabb4b7e1d415812d3e218f99f0a6ade88d5b30422fa3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

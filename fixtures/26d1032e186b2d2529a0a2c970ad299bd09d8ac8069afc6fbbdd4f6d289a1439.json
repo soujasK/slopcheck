@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official Apple Support page providing direct instructions on how to transfer data from Android to iOS.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TFG9efFuVdl4I2aI9HXr60cZJfXAza3OriLUKqTrUkxD8TPyl5BfoFUsaSe6cPNW4KKLv9E5JR4weNtV+kF2MIRLZRXx3zzD471AXGXoCYGljRGlNC1MVR0U=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 994,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"hA7BarWTENjVqfkPx8eSgAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:17:41.415426+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:17:41 GMT"
+  },
+  "key": "26d1032e186b2d2529a0a2c970ad299bd09d8ac8069afc6fbbdd4f6d289a1439",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

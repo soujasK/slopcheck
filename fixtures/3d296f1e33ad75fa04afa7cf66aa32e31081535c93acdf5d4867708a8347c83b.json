@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑named review and ranking of budget wireless earbuds, providing direct answers to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is a product roundup article with testing and ranking, includes author name (dileep) and date, appears to be a review site RevieHub India. It likely includes affiliate links (Check Price on Amazon.in). The primary purpose is to provide a list of best budget earbuds, with testing and ranking. This is a genuine answer, with identifiable author and organization (RevieHub India). So label \\\"ok\\\". Reason: article provides reviewed list with author and organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is a product roundup article with testing and ranking, includes author name (dileep) and date, appears to be a review site RevieHub India. It likely includes affiliate links (Check Price on Amazon.in). The primary purpose is to provide a list of best budget earbuds, with testing and ranking. This is a genuine answer, with identifiable author and organization (RevieHub India). So label \\\"ok\\\". Reason: article provides reviewed list with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036887,\"ec_transfer_params\":null,\"id\":\"chatcmpl-dd86142f-ad90-4c86-ad11-231700d3d984\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1049,\"completion_tokens\":162,\"total_tokens\":1211,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.42253112792969}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:50.410957+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:50 GMT"
+  },
+  "key": "3d296f1e33ad75fa04afa7cf66aa32e31081535c93acdf5d4867708a8347c83b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

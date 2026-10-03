@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is provided by a named Ayurvedic hospital and details their specific treatments for blood pressure.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBnECCDoaJ8V+pZmd0CXEBp7ih22Sm7vDcrr8tVJ4n9PHFblSbOF3SqJGBGn4cyV4tKjOSQTaAKjYmrxR48UfInknintr6LpwXAJ8uQkKGm7bBuslmCdROPw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 971,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1006,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 971\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"OhbBavjsEseCg8UP-ruR6Qc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:50:35.604151+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:50:35 GMT"
+  },
+  "key": "9a327fc88037eb63aabc4ba15944f831ca5e5a5de993034738e488a4eade81d0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

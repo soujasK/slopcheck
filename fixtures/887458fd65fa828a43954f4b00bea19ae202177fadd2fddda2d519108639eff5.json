@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"unsure\\\",\\n  \\\"reason\\\": \\\"The official Google support page is for recovering a deleted account rather than a hacked one.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TSuEJSXKqKL4GBd1kZh+BAVpAeAGtOBANXG3eaUwX0zLDCvX1w8xsdBZJIYEl+t2Q9T7OKFlqU8QJ/ogQ6ysJW5vTrRbr5Nc5NoeUS8VBPnSjggWFM02/W9Y=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 800,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 835,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 800\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Og_BarOEDo20g8UPpKyIoQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:20:43.397461+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:20:43 GMT"
+  },
+  "key": "887458fd65fa828a43954f4b00bea19ae202177fadd2fddda2d519108639eff5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

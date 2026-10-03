@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official educational resource from Vanguard that directly compares index funds and actively managed funds with clear definitions and structured information.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TlidekIfkI4dBdfFDKx+QG/4MoDQOIUA93aaZb/gFiT7iz/UfJW+E20JvE8rhK2EycZ54A1aPY6GhVM+iW3T5uFaYy7k34NiPhPGEEtF4hpe2SjeavvZOdH4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 933,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 968,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 933\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"0Q7BauuaHorD4-EP6O3PmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:18:58.642270+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:18:58 GMT"
+  },
+  "key": "b93479bf68d9cd547c79a8b852d7df48a8c3bb6bc7b3934a9205feed33728d39",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

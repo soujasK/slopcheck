@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional brand blog primarily intended to sell the company's own mattresses rather than provide an objective guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TB/q0YfTZ9po810sQK8q0fWSGiDIxVPcaJOPDfqsNcjXkxgWOIEaFrP4A9xZXKTppmmSD13G2Ii0naNYPo+HjFSbm5SR5T6e2SB9TxuIbvOsM2TT33UOT84M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1018,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1053,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1018\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"whDBarGjEf3cg8UPj4TVoQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:27:15.246348+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:27:14 GMT"
+  },
+  "key": "bd64ecc0e28f043eaaef8b4251f01860f958720cf333719683ac8bcfd5009e23",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

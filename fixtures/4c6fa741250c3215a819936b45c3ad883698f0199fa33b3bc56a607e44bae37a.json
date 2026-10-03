@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial organisation and directly answers the query by detailing the pros and cons of term insurance.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TZ1LCblptvvazOZ2Sjda1+wkhO1O+9A9ARWyd7j/rqYgb5gl6O73qIYYZ1GSb5Pq79i4td2BBCFywqyJ+28AoH+9lNF7qsSYadp7zgz/Iejej9ZyB/ITvTlU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 952,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 987,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 952\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"9RHBapipMcyrg8UPt_jRkQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:32:22.588929+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:32:22 GMT"
+  },
+  "key": "4c6fa741250c3215a819936b45c3ad883698f0199fa33b3bc56a607e44bae37a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

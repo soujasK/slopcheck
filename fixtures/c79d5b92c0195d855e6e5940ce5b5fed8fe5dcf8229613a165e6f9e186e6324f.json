@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides an evidence-based overview of the side effects of ashwagandha.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TrLhPkxw8FLgmvaNcFafRdtJVHNFolAcvha/kc8olwMWsxuaGg5RC12+JhoelBLtEbkkr/XRDodjMtIeQbRAZVfczQOEnmtBInn2Un3Z1ucrq6mXKpyTiyvE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 956,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 991,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 956\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"aA7BasGDDMf-4-EPjt-6kAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:17:13.190333+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:17:12 GMT"
+  },
+  "key": "c79d5b92c0195d855e6e5940ce5b5fed8fe5dcf8229613a165e6f9e186e6324f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

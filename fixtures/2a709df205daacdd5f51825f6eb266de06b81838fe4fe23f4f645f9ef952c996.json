@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Runner's World provides a named author and editorial review, directly answering the query with a curated list of shoes.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from Runner's World, a reputable publication. It has author name (Amanda Furrer) and senior editor reviewer. It includes disclosure about affiliate commissions but that's fine. It provides product reviews, likely with testing. So it answers query \\\"best running shoes for beginners\\\". It has identifiable organization (Runner's World). So label \\\"ok\\\". Reason: reputable source with author and editorial oversight.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from Runner's World, a reputable publication. It has author name (Amanda Furrer) and senior editor reviewer. It includes disclosure about affiliate commissions but that's fine. It provides product reviews, likely with testing. So it answers query \\\"best running shoes for beginners\\\". It has identifiable organization (Runner's World). So label \\\"ok\\\". Reason: reputable source with author and editorial oversight.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036860,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d529c565-9321-46bc-8176-594be21ccf02\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1050,\"completion_tokens\":136,\"total_tokens\":1186,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.68162155151367}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:22.645168+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:22 GMT"
+  },
+  "key": "2a709df205daacdd5f51825f6eb266de06b81838fe4fe23f4f645f9ef952c996",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

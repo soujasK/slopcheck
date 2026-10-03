@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides structured, actionable financial advice from a recognized media organization.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TEfVdaKzcv8krtnnsx01FDrpP0jXeaY+0HpZKQ5rRnCdINd5tJAyy3q1+aHW7pl4M6B6Z98a8OGvR6+pSbubAcMrRdo8FEGMOd3otaSjozwkMxXrty/6srQ0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 981,\n    \"candidatesTokenCount\": 25,\n    \"totalTokenCount\": 1006,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 981\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"AA7Baq__D5ayg8UP0oOl-AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:15:29.321000+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:15:28 GMT"
+  },
+  "key": "b53922bf4127f64ac2630e24695974c786807d430ec47060b380049e1e2c252b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page title and URL promise remedies for dengue platelet count, but the main text is entirely about stress and insulin sensitivity, indicating scraped or poorly managed content.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7Ip4GRgxgou8i98mQm/VNJD1qb7gcMJUOdT48uGA90udLRSL3H0ZI/Tzi8a7akE3U98KKa02ZTPJAtrbphBW6LfrKJ11YbyCJtttWUPwGntr6qUHVz/Q5Rw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 972,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1014,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 972\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3Q3BaseUGYrD4-EP6O3PmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:54.523079+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:14:54 GMT"
+  },
+  "key": "4256ec70eed689a0d99f4f4e0e9d9ddbec0f6c7eae0f7e7e2bb0beea3d2dd557",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is the official Google support page providing direct instructions for recovering a compromised Gmail account.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1GUYF30ZbAo1mXS8oih/uZcwTcmGE9EN8dL/Q9lOx5a/ZBDPOpIvqa8uxIcJDitv2ikCVQMfWBynKmwfKjNYd8pLT4cLHuoduGMrkTf4sYChjHK6TJMYFro=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 973,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 1001,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 973\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"RxHBat2MM_Xeg8UP66CxmQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:29:28.760908+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:29:28 GMT"
+  },
+  "key": "02c7bfdedc253b173635ee2e8cf660793ae934ffb87c358ed8f8de4776734196",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

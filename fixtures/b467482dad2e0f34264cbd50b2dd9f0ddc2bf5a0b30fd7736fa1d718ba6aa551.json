@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable publication and provides clear, actionable steps backed by RBI and NPCI rules for handling a failed UPI payment.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TMi1u/Bpr9IFunk52NkwpzsIJ0z93G+U1rDK35WR7drQ4j6Ec6up6vjGfGayPPQ6hMzi0N5Omfc1ZpCUrjNE0IRBotSFDec4eiCcKeepfWSCCudAdEEcnu/c=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1186,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1224,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1186\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7xHBaorWCMyrg8UPt_jRkQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:32:15.954908+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:32:15 GMT"
+  },
+  "key": "b467482dad2e0f34264cbd50b2dd9f0ddc2bf5a0b30fd7736fa1d718ba6aa551",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

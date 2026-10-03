@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article gives specific guidance on emergency fund size and includes a named author and organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"how much emergency fund should i have\\\". The page is about emergency fund for Indian families, gives specific guidance. It appears to be a content article from nyvo.money, with author Kshitij Jain, founder, date, etc. It seems to answer the query with specific advice. It has identifiable author and organization. Not just affiliate. So label \\\"ok\\\". Reason: provides detailed answer with named author and organization.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"how much emergency fund should i have\\\". The page is about emergency fund for Indian families, gives specific guidance. It appears to be a content article from nyvo.money, with author Kshitij Jain, founder, date, etc. It seems to answer the query with specific advice. It has identifiable author and organization. Not just affiliate. So label \\\"ok\\\". Reason: provides detailed answer with named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036844,\"ec_transfer_params\":null,\"id\":\"chatcmpl-afb340a8-3806-47d2-abe8-18f444005b93\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1067,\"completion_tokens\":133,\"total_tokens\":1200,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.01798629760742}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:14:06.643408+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:14:06 GMT"
+  },
+  "key": "582432be4f48fc6f4a7b95d7ebbfd4972ca7504573f085208abf2c57a355e8b9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

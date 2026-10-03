@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Healthline is a reputable health publisher providing a well-structured and medically reviewed guide on OTC gas medications.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7m20lxOtqqLq47M8j01OMrrhzrF+dqmREHJXMsP5P12u2s2PgzJwR1lXBvnJjHe2O/JJHQrvnzpsxlspxdyOjLLHofSV9bum/xOrDtaM/9hefUbM/E6cfsE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 951,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 983,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 951\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ng3BapnRFve4g8UPhP-CiQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:13:51.941716+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:13:51 GMT"
+  },
+  "key": "d885976ab336dce85b1d2f8d7bb5fac335f2f88dff8e7f0c40cef066845a7147",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic footer and navigation index for a financial platform rather than a substantive article about mutual funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TEBp7K8TZhuP2I+rI2Ge3GBEjr6D0/1GCVRqoik7J43KIn8j+lF7V2M6aqbXAgT3pk9a45XF4CJK8uRlMB4IXNy9k/8Ph4CzAspMNRK34HYarrgM+Hyjwc4c=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 982,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1015,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 982\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"TA7BarqrGfi6g8UPt9uuyAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:16:45.259031+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:16:45 GMT"
+  },
+  "key": "f27802c302982f63f0a52f3a425f893da4e9aa22f99c6ea8150564253661557b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

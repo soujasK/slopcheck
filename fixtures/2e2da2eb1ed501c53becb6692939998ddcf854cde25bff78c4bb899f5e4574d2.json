@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial institution and provides a clear, educational comparison between index and actively managed mutual funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPImbfV380AyHaLql7H5jq2M24iLM7TVftInCYbaUG/F1lAR3WVukU7qkvvXm3p/vptpsnSRD0KcrljoTtbk7EqvWGLE07DqnhXgD5LoNctt+o+kB6Ken6jY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 925,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 960,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 925\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"DBDBauajDPy4g8UP5pKX-AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:24:15.348819+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:24:15 GMT"
+  },
+  "key": "2e2da2eb1ed501c53becb6692939998ddcf854cde25bff78c4bb899f5e4574d2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

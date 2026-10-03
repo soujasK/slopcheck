@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed guide from a recognized tech site, directly answering how to block spam calls on Android.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Beebom Gadgets, a tech site. Title: How to Block Spam Calls on Android: Step-by-Step Guide. Content appears to be a guide with steps. Likely includes author? Not shown in excerpt. But typical Beebom articles have author name and date. The page seems to be a genuine guide, not affiliate heavy. It may have affiliate links for third-party apps, but primary purpose is to answer query. So label \\\"ok\\\" if identifiable author/organisation. The excerpt doesn't show author, but the site is Beebom, a known tech media. That qualifies as identifiable organisation. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed guide from a recognized tech site, directly answering how to block spam calls on Android.\\\"}\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Beebom Gadgets, a tech site. Title: How to Block Spam Calls on Android: Step-by-Step Guide. Content appears to be a guide with steps. Likely includes author? Not shown in excerpt. But typical Beebom articles have author name and date. The page seems to be a genuine guide, not affiliate heavy. It may have affiliate links for third-party apps, but primary purpose is to answer query. So label \\\"ok\\\" if identifiable author/organisation. The excerpt doesn't show author, but the site is Beebom, a known tech media. That qualifies as identifiable organisation. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page provides a detailed guide from a recognized tech site, directly answering how to block spam calls on Android.\\\"}\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791036800,\"ec_transfer_params\":null,\"id\":\"chatcmpl-ffe9bb34-4543-42e2-9f0b-d384ef070d0f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":989,\"completion_tokens\":216,\"total_tokens\":1205,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.19526672363281}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:13:26.138342+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 03 Oct 2026 14:13:25 GMT"
+  },
+  "key": "581101f0e859a4be9608143459789c3711a6e0ab3c944746c951de1edd5f395e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

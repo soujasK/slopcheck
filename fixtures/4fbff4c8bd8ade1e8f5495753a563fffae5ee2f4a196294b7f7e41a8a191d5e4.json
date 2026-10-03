@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a blog index page rather than a direct answer to the query about the best credit card for online shopping.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPU5oza41UNRMGzUsACIIum5XtuOx6o/SbXc19p/5oiDcIUmc+X8zHcoIru6o6KS27RAmrYqtGRsmyNU6FBJZrxcceXCq+Nv8joZGczsu/gFCWGP9vbxNnG4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 985,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 985\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"pw7BaoSVDYfEg8UPtZ6x4Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:18:16.745235+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:18:16 GMT"
+  },
+  "key": "4fbff4c8bd8ade1e8f5495753a563fffae5ee2f4a196294b7f7e41a8a191d5e4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

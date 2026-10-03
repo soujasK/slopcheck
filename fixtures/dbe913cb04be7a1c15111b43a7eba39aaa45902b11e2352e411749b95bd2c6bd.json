@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a credit union and provides educational content on paying off debt.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TJKnNiGVPpN0fTqFg3kA+ao4yE9AYdvQ9HIWidb5yFsz+5mjyE5Rh+O+7vJ7uwjwh132O31ixcadTvAXt41k/RfZG8IyHB7K9r4sCjEWwJGRVX/Ien1Tz+z0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 918,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 946,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 918\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"aw_BasfoDI70g8UP3876gAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:21:32.026298+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:21:31 GMT"
+  },
+  "key": "dbe913cb04be7a1c15111b43a7eba39aaa45902b11e2352e411749b95bd2c6bd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a user complaint thread on a generic consumer complaint forum rather than an official or expert guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TJ2+C1u5eI/FMLMg5OihASgNX8HaxsFwQrcr0IJ0ZmA9vnhvJjuXkppwfc4UsWyHerAYMw/f5wbZpzYs/p/qTOjU6dBpcRBcX3Ac5k6enpByhNtZo5Cps7sY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1008,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1040,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1008\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Zg3Bau6KOImkqfkP_eSo6AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:12:55.824519+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:12:55 GMT"
+  },
+  "key": "9c03f93f95d7a2ada5ecac0aae7b1ca073d1c9ee20208296ec048271f8a23d38",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

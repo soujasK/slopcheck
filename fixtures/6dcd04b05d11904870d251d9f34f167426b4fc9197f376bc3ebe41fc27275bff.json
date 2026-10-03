@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a well-researched product guide by SoundGuys featuring named authors, objective testing data, and real-world reviews.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TJliwfwVPftlVjy/iH9EXDebx+fbc0qA4PiTLEOWJ3GWupfmBszYk2eCRlcAWxLRNGdZFYgc7DitFtzyqcNBkgKe3d/z3GtoY4VI9FKDazD6hGGnEbeMp0wU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1051,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1090,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1051\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vBHBaofAE_e4g8UPg_-CiQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:31:25.150067+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:31:24 GMT"
+  },
+  "key": "6dcd04b05d11904870d251d9f34f167426b4fc9197f376bc3ebe41fc27275bff",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

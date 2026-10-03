@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from a recognized news organisation and provides a clear, step-by-step guide on how to check EPF balance using a UAN number.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TOxpAImWVy3FPJ17mBW0gMqhQtkvPR+NeZl21mlThxHQ2KCm36FtzD4Fr0AHAD07FrDJM/ZD+yvJcHpMe4418OhT5kcwbGmnuulRyxbbXv1dPJK04/LRVJlM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1063,\n    \"candidatesTokenCount\": 49,\n    \"totalTokenCount\": 1112,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1063\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8hDBavf4O72iqfkPmbHRiAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:28:04.109470+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:28:03 GMT"
+  },
+  "key": "6cb4cb69e6258e567fc4280314d0ab0059328faa8f19ba382514ced62e7cb439",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

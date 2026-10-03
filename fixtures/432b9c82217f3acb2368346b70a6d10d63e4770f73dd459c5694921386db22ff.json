@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with detailed information and a clear editorial focus, despite lacking a prominent named author.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKBBAb+Ci3rHA8da9GnWDwKYhNTGKNMauPuxAHsw7OpHcWdxrzuLJrJONsCYkUhO+x2FS46rW8nGoX6yniXkN8aRnx53iMgdcefSLHj49kzJCFO4kEa/tbNw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 947,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 980,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 947\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"KBDBatGNE8yrg8UPt_jRkQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-03T14:24:41.255736+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sat, 03 Oct 2026 14:24:40 GMT"
+  },
+  "key": "432b9c82217f3acb2368346b70a6d10d63e4770f73dd459c5694921386db22ff",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
