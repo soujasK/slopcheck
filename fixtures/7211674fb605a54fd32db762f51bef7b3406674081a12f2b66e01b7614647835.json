@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses whether term insurance is worth it, provides detailed comparisons with named authorship, and includes appropriate disclosures.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tso+dMUB6z9GisD7qJq/b1XJpqmrbJxTcR28+INqv7fohSBvdFKzPngO0iq3VAsB4jw/KI7m61dxmN45syH8KPawRpAXY5sgc2ilhAAvnH+oR05AhSu41JGs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1015,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1055,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1015\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_e_Bas2yHPe4g8UPhP-CiQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:19:43.536508+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:19:42 GMT"
+  },
+  "key": "7211674fb605a54fd32db762f51bef7b3406674081a12f2b66e01b7614647835",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

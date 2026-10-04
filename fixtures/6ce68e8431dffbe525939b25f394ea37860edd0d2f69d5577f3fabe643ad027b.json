@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Consumer Reports provides expert lab testing and named authors for their product recommendations.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKueCKPXNdPWz2I7KyZJY1Aa84Si3yclnueEnFNkVOccpgp75JvRZNV8L9iU3KFxjvKFcOSMFyl2PeDEuSHyAG3paF9FqT0bXW805y+TEnFAx3P3FwlkGldI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1057,\n    \"candidatesTokenCount\": 25,\n    \"totalTokenCount\": 1082,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1057\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JO_BaovMGuS2g8UPlem6sQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:16:06.581236+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:16:05 GMT"
+  },
+  "key": "6ce68e8431dffbe525939b25f394ea37860edd0d2f69d5577f3fabe643ad027b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

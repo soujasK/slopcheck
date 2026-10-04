@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a specialised running shoe review site providing specific product recommendations and ratings for beginners.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TCI3W8+O5sQwjU2GKuwDjjG3RX15xrp4ZxuM+QR0TJ1VgJShhleg7Bn+ElnXnWRPrg8HoQ/qst7BZga7o94gQbIcXZsTwsNy/Owua0lf8ulx+TKLVCYZXMWo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1036,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1065,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1036\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7-7BaoL5FfSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:15:13.429087+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:15:11 GMT"
+  },
+  "key": "99509098381b18b422315550473a741c4542cc4f6ef01bd1db8cb47932bb4ab8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

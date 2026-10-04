@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article provides clear instructions on how to check PF balance using a UAN number with a named author.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tx1yjht0+leG4KsgU5QipX2CA+Ur629l4Qdym+kJPGp8ymzmcyBXo6cL2/JiPp9jNJpvWDQBekphUe8LhSLcPq4DXEcV/RQvVVMsBlqaaPAdH0DafPKs2UCs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 989,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1027,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 989\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"f-7BavbQDcK6g8UPsbOi-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:13:21.522768+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:13:19 GMT"
+  },
+  "key": "0f7c77a9e9b7ae15dfc12af68f0c47081ec24eada93359be3a78f0d2df0f5f2f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

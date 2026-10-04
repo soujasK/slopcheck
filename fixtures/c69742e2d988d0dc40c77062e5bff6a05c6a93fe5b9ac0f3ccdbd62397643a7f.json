@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a recognized financial organisation and a named licensed insurance specialist, providing clear and objective guidance on life insurance.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TYJ17FWtdgbEFgm6/gQp6hemaFkA6XrvRDDjKGiF2LMIupu1hZ41ij8Q1pFTnuCKwiK7gsTtE00UpRVgVmq0pnhscsk8ZKr/L9lMxpTI8flqdPQP9OMw+gdQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 942,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 978,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 942\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vu7BapSrFpr-4-EPq5yruQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:14:24.497278+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:14:22 GMT"
+  },
+  "key": "c69742e2d988d0dc40c77062e5bff6a05c6a93fe5b9ac0f3ccdbd62397643a7f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

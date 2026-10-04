@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic promotional guide created by a financial platform primarily to drive traffic and recharges rather than offering detailed authoritative instructions.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TRZFcD2dfoI36wbtPESOKWhNgZ0Gt+wRcsNk2Pyx3Q1/fqxJjKdm51LR40PEujBQkclu//muhLJPkhHGugT8d4g1xW/O6P+oGL7BjbbKHyL9V79avvGPK4Ys=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 966,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 966\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"-fDBapTKJLqfjuMP-J_k6Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:23:56.132527+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:23:54 GMT"
+  },
+  "key": "527d3ec12662a2346eccf2c566e001b1cb5ee06499e9afa6d3336510fd353617",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,43 @@
+# Rubric v3: weights fitted on 155 development items (39 low), round-2 LLM labels (slopwatch fit; procedure in slopwatch/fit.py).
+# 5-fold out-of-fold: precision 0.7222, recall 0.3333, F1 0.4561, flagged 18; precision floor met.
+# Coefficients: no_author 1.1202, anonymous 0.4942, sells_directly 0.8529, title_off_query 0.9544, text_off_query 0.7758, thin -0.3945, ad_heavy 0.0, affiliate_present -0.2399, listicle -0.4243, no_about_contact -0.3492, near_duplicate 0.0
+
+version: 3
+status: frozen
+
+bands:
+  low: 0.5774
+  mixed: 0.2887
+
+rules:
+  - id: no_author
+    weight: 0.2669
+    all:
+      - {signal: has_author, eq: false}
+    reason: "no named author"
+
+  - id: anonymous
+    weight: 0.1177
+    all:
+      - {signal: has_author, eq: false}
+      - {signal: has_date, eq: false}
+    reason: "no author or date"
+
+  - id: sells_directly
+    weight: 0.2032
+    all:
+      - {signal: sells_directly, eq: true}
+    reason: "the site sells products on this page (cart, buy button or product markup)"
+
+  - id: title_off_query
+    weight: 0.2274
+    all:
+      - {signal: query_title_coverage, lt: 0.5}
+    reason: "title and headings cover {query_title_coverage:.0%} of the query's words"
+
+  - id: text_off_query
+    weight: 0.1848
+    all:
+      - {signal: query_text_coverage, lt: 0.6}
+    reason: "main text covers {query_text_coverage:.0%} of the query's words"
+

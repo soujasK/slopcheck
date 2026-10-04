@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized expert running shoe testing platform detailing methodology, lab testing, and named authors.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tom5stFvQDVFkX46fn+TPwhfefpHe378Z/wJANIJUiv4F+H1GH0z5T5BY+7H+93oCtz+w1mVWtqxea9O5QDUlQfw+0kQXfDUoOPSr8WI0q1xdByyr58k+CSA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 993,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1025,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 993\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Fe_BaovED4DEg8UP84_Q0A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:15:51.431659+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:15:49 GMT"
+  },
+  "key": "239a26ab165dcf03a765b9949376daef9cb4a1dd92e6a127ac8d63eb0310feb0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

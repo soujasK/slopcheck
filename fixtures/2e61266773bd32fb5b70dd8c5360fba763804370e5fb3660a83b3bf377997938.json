@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a clear, structured comparison between ELSS and PPF for tax saving purposes, directly answering the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWaDFh4wS5pIQ8zhGdjDwHZEkHiNWfVdQkUbf6BQiP8uxEoSQuwDUJa4gTDcrNSPlo2+x9dWq4+tXi5QB91yfPWHSSKdR13aL9vxukqbt7gOlxNfnhtR+Ftw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1102,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1143,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1102\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"NfDBauGqJuijqfkPioqc0Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:20:39.821282+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:20:38 GMT"
+  },
+  "key": "2e61266773bd32fb5b70dd8c5360fba763804370e5fb3660a83b3bf377997938",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

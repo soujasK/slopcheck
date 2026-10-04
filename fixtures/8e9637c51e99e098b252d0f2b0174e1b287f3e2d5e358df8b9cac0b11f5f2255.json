@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a direct, thoughtful guide for beginners with clear advice from a known running retailer, without feeling like a pure low-effort affiliate roundup.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0THSVPihB3BIVCgM0sFsh2NdJ9lkPsn7BAJ9BNyDqKy2tOlSe6/1wIaBw/I1UHEQXxlze71/dAzgVmv+dsHADfWYF848/6eI7r/1pl58sQjl14ldxpG6Sy1wY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1032,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1073,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1032\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Y-_BasqBKNi6juMPqaLB4Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:17:09.810858+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:17:08 GMT"
+  },
+  "key": "8e9637c51e99e098b252d0f2b0174e1b287f3e2d5e358df8b9cac0b11f5f2255",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

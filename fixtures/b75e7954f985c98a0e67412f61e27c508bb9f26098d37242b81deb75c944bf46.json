@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an official medical center and provides reliable, medically reviewed information on vitamin D deficiency.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TeVJKrfhS/fZOWTG4Sdi/21PtMETzxkYyk47KMXTdL+FOy+dfOgeFiyBBCPUmj2wtVU3plEhNJJ2MW6wn6yadFnkTYmBIyIOPWV33H8Of0ICkrp1965CzNqo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 972,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 972\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"C_DBaqnPJ-O-g8UPlrS4kQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:19:57.906459+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:19:56 GMT"
+  },
+  "key": "b75e7954f985c98a0e67412f61e27c508bb9f26098d37242b81deb75c944bf46",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

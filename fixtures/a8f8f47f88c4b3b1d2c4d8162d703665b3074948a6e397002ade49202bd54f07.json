@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable health publisher with clear medical review standards providing actionable natural advice for reducing uric acid.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TtUO4EUHO6tAr6YVJJMoFftlvK4Bkwi6xSAa3uGOgV1uo1KSSMMiTLFC4lL5f6SYOktBU5StnEp+R/JdYBIlE/D2HvpQKEYi+ZSBqJfYrDrYr8YC1vDlb81U=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 956,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 989,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 956\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"s_DBatiuHvq2juMPvbjaoAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:22:45.637165+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:22:44 GMT"
+  },
+  "key": "a8f8f47f88c4b3b1d2c4d8162d703665b3074948a6e397002ade49202bd54f07",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

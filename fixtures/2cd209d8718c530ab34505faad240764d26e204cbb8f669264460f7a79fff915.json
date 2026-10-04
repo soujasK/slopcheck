@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is about a video game development and QA company, which is completely irrelevant to the side effects of ashwagandha.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TUnFglEi3Sm3bhEMBC7y1T+g0h/n3Fzir71D/yr86T08rYGETJbW85th5iWIM78TCeMZIVQVyMjoSr14Kwhqx4oJmE0dnNfKnF9NBXX6Pszb+HiamD4GCGNc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 977,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 977\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vu_Bat6wGpzB4-EPkMbvoAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:18:40.794741+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:18:39 GMT"
+  },
+  "key": "2cd209d8718c530ab34505faad240764d26e204cbb8f669264460f7a79fff915",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

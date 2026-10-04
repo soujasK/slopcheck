@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about an LGBTQ+ youth community organization and is completely unrelated to the side effects of ashwagandha.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tnw5wUhCbG/xUtPfh3DYyFC1B4iVB6mX0ya0M6ktlwpeEQJqJzCjKjXTUnOLkOzqRSJ7PIygJMaWIdOoniTTZrAsnHFQRgfl0PnaL+c4DJEGdl+fZBTx0XrA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 904,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 938,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 904\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ou7BaojXF420g8UP7aX5qAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:13:56.439982+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:13:54 GMT"
+  },
+  "key": "b02d186ec6e8c63d41c43d21087bd3787bacd80320f8f11591e1cc56f65b7a06",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

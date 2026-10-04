@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides a detailed, structured comparison of index funds versus actively managed funds with specific current context.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TqTdl8vGeWVgGCs3IygQPAUr5vA/WcogExL+Uq34xJxAgnDDsAjPcOWC0qPPv6S976oIywivV6gpkJdcMjylxFoM6dw6FYn8Y0q3vl7+HIbHdTcL05t6vQ/0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1002,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1040,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1002\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"au_Bat74FY20g8UP7aX5qAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:17:16.592078+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:17:15 GMT"
+  },
+  "key": "42900e10364756522ded22acd82f28fdedfa4efe08d3cd13535cdd58233e49dd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

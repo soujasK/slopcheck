@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides clear, actionable steps with a named contributing editor on a reputable tech publication.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tz7wmaiBkg43MjsowOm1uEZIeqBsNHTqIktbWTWNe9JJHXUlpy3PqH1qIQvsgYL6u5V2GKlxmKUMzFJAWNZBG8+aNtafYgRhLbyZFwMcZS9teoOoXMukXOqE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1021,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1050,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1021\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ifDBaofwJeW8mNMPz_-E6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:22:03.714367+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:22:02 GMT"
+  },
+  "key": "7c0b6a759af25ef21b2b4567547d5469f58e51aad6f73b8517405b2b9f9c2950",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

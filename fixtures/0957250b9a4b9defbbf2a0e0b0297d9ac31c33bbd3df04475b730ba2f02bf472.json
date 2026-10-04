@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is primarily a promotional landing page for data recovery software rather than an informative guide on recovering WhatsApp messages.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TI6O4Mb4Br5mGVFsKV0ZZxm9XFpltOylIR6YiXDwe0jO6RJaR+7xjn+jlUQ/tY9GU+dGxcS7UJSQ1FnaN4lfFOlbAncGnmfRGR4gzIHZnp1Eog1giBZGzs6U=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 978,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1011,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 978\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"J_DBaubIKNf1g8UPl76k8QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:20:25.764582+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:20:24 GMT"
+  },
+  "key": "0957250b9a4b9defbbf2a0e0b0297d9ac31c33bbd3df04475b730ba2f02bf472",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

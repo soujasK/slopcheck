@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a general encyclopedia entry about the physical concept of weight and does not provide an Indian thyroid diet chart for weight loss.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T447cvTbzvfI2gEqHjaPCFU779BhqoH4kqT9f0xP+MVKs17yaZ+g/lGiCJcqEmWmBTRrqPvaIGcDlXBtWlIBIO+cs/oFHteWOStLC6P32HIJnxDPGZjpnDoU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1065,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1102,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1065\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"9u7BapzJGc3fg8UP0-e38QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:15:20.587073+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:15:19 GMT"
+  },
+  "key": "b81c476aa9dfac759284b1e9b2999decf6c777b81e4fc4159a383a3b77cd5fc9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

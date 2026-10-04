@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a single manufacturer product page rather than an objective guide or review comparing the best ACs in India.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ty2qgUYfptSMSm5dLXg/TM1I20m4gf3JD0ObeQSXipMXleuuuQliQ7HIQdhghQ3VOy9fwpQnUWIee+YyGip1ylS3NcGj5Hz5HvkoY24nAluu53DPr6VRGiCc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1072,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1105,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1072\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"nvDBarTpK9fx4-EPiKCl-AY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:22:24.848920+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:22:23 GMT"
+  },
+  "key": "9a52bde691b601b6abbc79db69e64d283a00cd43f2edd2cbe1d04f48ab46b469",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

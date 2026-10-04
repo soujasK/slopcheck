@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized health platform and provides detailed medical information on managing platelet counts in dengue.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TsToUmJRkpV/EpAqnSpeJiIEcmzV9SHoTSN5S+svV3A3I1ahWqdg/1qaokKKGnhRM8fBbujH4vD0PhDlv8JCcyT+Sbs3J7XpbyMyKs9+3xg4nlk3Yi75kxwQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1002,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1034,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1002\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"t-_BarnVGumwg8UP--eLmAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:18:33.616574+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:18:32 GMT"
+  },
+  "key": "de8b262ad1fa898e63a0a8958e33996cd93229fb0c8bbaa1f88ebf21c351ed7a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

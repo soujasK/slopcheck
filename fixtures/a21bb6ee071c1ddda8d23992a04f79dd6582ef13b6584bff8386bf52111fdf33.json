@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable organization with named testers and details hands-on kitchen lab testing of air fryers.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TEncRSHTX6KSockt9vVmK7ZgopyOWOGNHD30U0g+mLeYeZtmIIrWKPkkrARkPtdBciaITbN8p+dysZVquSOSc0oOlhP/7ETKBOJQAOayxQVpiy3z90LN7Zoc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1035,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1069,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1035\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"zO_BaoPOJcO0g8UPgdCdkAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:18:54.931028+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:18:53 GMT"
+  },
+  "key": "a21bb6ee071c1ddda8d23992a04f79dd6582ef13b6584bff8386bf52111fdf33",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

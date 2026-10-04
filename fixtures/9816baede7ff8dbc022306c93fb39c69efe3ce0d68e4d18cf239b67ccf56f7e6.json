@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a recognizable financial research organisation and provides an in-depth analysis comparing active and index funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tycu9xsCsvzIS+gviVwCVmJxhVr+1OzDrEa7oBIFwTkRXpnfVSoDJP8lg+D6yDA/6YoNz0+2ZrbfhE/+rc/X8gqvxCRrI+alCLNcWD1TDNrXdJXDqM1FFJt0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1000,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1033,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1000\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"6O_BaqCwKdfx4-EPiKCl-AY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:19:23.090326+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:19:21 GMT"
+  },
+  "key": "9816baede7ff8dbc022306c93fb39c69efe3ce0d68e4d18cf239b67ccf56f7e6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

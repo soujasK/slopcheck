@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page provides general health and medication advice without a named author or clear medical organisation responsible for the content.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TdidkB8lHlDNUUSeMOkGOrV3Ob7pwQnHJt/ztwcf182bLO9O2hy7qRaqpFNelRud6w/KrhbwyVyR2gVPjo81/E0h0z5ci4Ux8tciF0GudsTSToJrneY2PAYM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1005,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1043,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1005\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"hu_BavXpGNijqfkP6N_DwAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:17:44.687523+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:17:43 GMT"
+  },
+  "key": "0696dc34df1aa01076dc9f97f62884d0caf8178381f11dc87bae86e615c67d3b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

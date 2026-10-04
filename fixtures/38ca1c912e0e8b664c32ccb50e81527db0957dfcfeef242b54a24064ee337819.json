@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides detailed, structured guidance on emergency fund sizing by employment type with clear explanations.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TN5PdNKOuZbEHXqRHT0lOC9hTDzFJi4jG81CLNBPaPCAH2Z4PmdqXXaa6u/O/U2FFaZKv0/bLnEjbC9cMc7eLN33DDiCdhLJNpih6ZfNL2liek5PI/wbAF7Q=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 946,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 975,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 946\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"BO_Bat_eC5-6g8UPoOLC2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:15:34.331761+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:15:32 GMT"
+  },
+  "key": "38ca1c912e0e8b664c32ccb50e81527db0957dfcfeef242b54a24064ee337819",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page offers generic, high-level tax comparisons without a named author, identifiable organization, or practical calculation tools.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1jrbkD69e9S2+ni5sn4WvSXcXzfUeZnKBLrUNmZPzhsenhEf10ClXn0k5JOWN/3YHiqr9315ZG0+F7QrsIpvW21OBbNjyvXWgdvKc1RKUCD4ObfNduEusb8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 964,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1004,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 964\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"t-7BaoOLEviiqfkPjcLZ4QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:14:17.538178+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:14:15 GMT"
+  },
+  "key": "2d9f673b7e11bf3215f7e24c2fa057d16c003dc931a5dc08022a6035760e9728",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

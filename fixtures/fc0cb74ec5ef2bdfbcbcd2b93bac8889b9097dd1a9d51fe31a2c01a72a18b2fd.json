@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written and reviewed by medical professionals and provides specific blood sugar target ranges for individuals with diabetes.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tsd0Lf6dkFGEhuTWyFauGnse51yoRzGpvKmoeRa0kF5dbsDiaFz9/AzLra4fb+wtYWxbkAN6m7aOjqlxfXGF/L/IvWIfHwb1NFqRoxExlsuRuzM1NQFCt6SY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 981,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1013,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 981\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"sO7Bas_LE4LCg8UP1qOf8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:14:10.478642+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:14:08 GMT"
+  },
+  "key": "fc0cb74ec5ef2bdfbcbcd2b93bac8889b9097dd1a9d51fe31a2c01a72a18b2fd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

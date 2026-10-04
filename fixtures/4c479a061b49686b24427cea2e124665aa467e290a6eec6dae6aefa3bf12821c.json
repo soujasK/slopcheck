@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear guide with a named author and an identifiable organization for recovering WhatsApp messages.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0THgzHqVns4TBd2OfPh9tNNW6G6nqDJ1q19IuDQXaF8/5fbug2LhtLnFjmVqfFQWH1SSken+w+Cw3Eyg9pQfPgxRVzNoLWmZvCGAX482my5TjHg7DNE5Dcfcc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 951,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 981,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 951\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"4e7BaquvFq3Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:14:59.418822+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:14:57 GMT"
+  },
+  "key": "4c479a061b49686b24427cea2e124665aa467e290a6eec6dae6aefa3bf12821c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

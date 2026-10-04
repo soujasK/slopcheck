@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic health blog post on a commercial telemedicine site, lacking detailed medical authorship or rigorous sourcing for over-the-counter advice.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1oZaAXPvKqT0/sfNhNjwMhhUqkYI+j4c4FLw99LUzuaYSZLspi0JB8vGUgzOdkqcnwzwV0w9M8ZK1oDNZXVzRxxb5+5d1tBc3N1tDIF4rPhd826KtRVsXL0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 953,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 993,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 953\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"QO_Basj4Ose-g8UPhab10AU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:16:35.156174+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:16:33 GMT"
+  },
+  "key": "b32534c73f27fbb482e32f82f764513b33314ae2459841653c3c1263b4bdbe59",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

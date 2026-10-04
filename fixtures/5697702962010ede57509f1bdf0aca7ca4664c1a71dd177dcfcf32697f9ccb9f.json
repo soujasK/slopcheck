@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an official bank and insurance provider (TD Insurance) and provides clear, responsible guidance on term life insurance.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TXQobFuqsCSwlLNO9VcKEnI9WJuRvz1oljwAAAQ6eEcVySvAwPzqit233svUvsUPx0HIruEj3xAZni4DYcCYWabXiaYC9+dUs6z/yzBiZJWXrRsL5No256VU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 935,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 971,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 935\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"IPDBaoqIIfvHg8UP3bi8iQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:20:18.930275+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:20:17 GMT"
+  },
+  "key": "5697702962010ede57509f1bdf0aca7ca4664c1a71dd177dcfcf32697f9ccb9f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The health article lacks a named author, identifiable medical organisation, or references, appearing as generic content on a clinic's blog.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TUdw7Zh5+H20cSTbhymAbbwHacUtE2kenco88jbTfVaHttNewaAWbKPnN1jDVIO7AkGTBsi6UjAR4dC2J+x2IIr3O/RuPVotXbsmeb7p1BBCDzjUDb+nG1U4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1006,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"m-_BaqSQGPSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:18:05.599943+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:18:04 GMT"
+  },
+  "key": "65b222e9079c3c65dac5d0da8a485413b2ae16067a0047d8848356429bfe4e1b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official bank page providing customer service and service requests for IDFC FIRST FASTag.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TqGBXNOKLbQXvhYqS9kI0eS9Vv8l8pakL+6YSapEYtrsaCLhKeKF/0LSlJHrB3fX4njJwWJGBDOcSgcNZVlNK40nteclHgAxuh2tx8y1Myn9jQQnz1kUVvzQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 859,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 889,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 859\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"z_DBav7XHPSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:23:13.592435+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:23:11 GMT"
+  },
+  "key": "eece3bf5cf5dd072f13fe9d0ffca48e1b1f8f2dce27ef5f5d6c61d94ca8a47d3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

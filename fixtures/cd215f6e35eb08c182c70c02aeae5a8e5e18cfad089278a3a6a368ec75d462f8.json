@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic lifestyle and health gallery site with fragmented snippets rather than a reliable, in-depth guide on reducing uric acid.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TbJqlXhL4fQSUFzCaZZ/U9t2f2ezwqrxvpVkgHW+X20ExIVvLdWTMolfjfEw8+lGQx/A6J7Rc3VmCnTX24BVid5P61C4qu3JnkuEwf+Xbm/uCP2fAwypddGs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 668,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 706,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 668\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"FfHBap3bGazSqfkP3LXDgAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:24:23.954691+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:24:22 GMT"
+  },
+  "key": "cd215f6e35eb08c182c70c02aeae5a8e5e18cfad089278a3a6a368ec75d462f8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

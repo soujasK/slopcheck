@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic, mass-produced guide with generic advice, no specific product recommendations, and lacks a clear reputable organizational author.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TnyB/VjzZNgpHdvriEEgoUqRW2CHDSpE74ZNuSpwF0KddsPexoio0Uu67X+pMSVFSURNd0liE6ZGyBmDcrDDY4N8FM5Q3LuuAkGlBOSBLyj7ATtKrrQtumA8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1056,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1094,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1056\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Y-7BarKkM_iiqfkPjcLZ4QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:12:54.074665+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:12:52 GMT"
+  },
+  "key": "88673effadf39556d997d644661634df03ac845174c9732f4cfe15b69afca430",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

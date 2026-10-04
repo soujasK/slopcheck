@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial platform (Share.Market) and provides a structured, direct comparison between ELSS and PPF for tax saving under Section 80C.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjwKXSZfSBJpk3AmhN0WjSDHNceu+C38MOmtaXxhmvwbXkX5rj8MnUzncOghipDBQkt+mR0yoC2+wZm1Cvh02tvS25ockq6JAm7FVXSzcndILTHzGkzwDT/g=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1107,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1155,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1107\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Ve_BatWqK6O1g8UPk4bkuQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:16:56.461035+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:16:54 GMT"
+  },
+  "key": "1c24b16930f410d690391ba80b5a686e9eeec6211e7f1137b55c8a3bce883a0d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

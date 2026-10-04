@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a financial institution and provides clear, responsible introductory guidance on investing for beginners.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TAZ+V9b8PvokSbV8hLjXNUdzwoEv6tDdbZnKKI36j5qDT8BSNTif9rZVbpFfN0lC4tRGMb6AazWgB9MfIzuBWJ8P0e6vMpONKgnjHjO3elu0OiBYqtXW1sT8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 977,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1008,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 977\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kPDBasHzLZ7-4-EPqqCn4Ak\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:22:11.026071+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:22:09 GMT"
+  },
+  "key": "07e0c9182606b459acf77f517be624b7b796b5aa085efc964c35fc914b15c19a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

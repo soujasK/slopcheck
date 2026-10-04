@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about state-to-state disaster assistance rather than personal financial emergency funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T5V2zw2oPvCq9F4ftB4/6qzHTGz8fPkMP9SYCsxSbpx6eAfBv5icvO4YvsDOWd2cpZt0+3y3QXTRjVx4CyB7YlHYfA1s3ZIh3evwqEBjMsAThVHD/dgzHDtw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 916,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 945,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 916\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ou_Baqe8Hbmkg8UP55SMqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:18:12.705711+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:18:11 GMT"
+  },
+  "key": "1ec839c6217593a6820ad28a4ba68709816cc9e46b57a1c5201f5b7713931f12",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

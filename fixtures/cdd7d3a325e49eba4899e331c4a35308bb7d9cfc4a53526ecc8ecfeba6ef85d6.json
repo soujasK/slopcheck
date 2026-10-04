@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an established herbal supplement organisation and directly discusses the side effects and contraindications of ashwagandha.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T01kEfIHe3xkfwL0+extNCbPFQ2ySMO7o9iV6Y+2kk3MAgtoYoKFEafAyP4Qez7UhNc69Xas0xQ6gKf4sRq8co/miMmPjEhGw7cR9qLJtbvtmtoqwbo7iMZU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 979,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1014,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 979\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"0-_BapL0Louyg8UPvYvhqQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:19:01.918351+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:19:00 GMT"
+  },
+  "key": "cdd7d3a325e49eba4899e331c4a35308bb7d9cfc4a53526ecc8ecfeba6ef85d6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

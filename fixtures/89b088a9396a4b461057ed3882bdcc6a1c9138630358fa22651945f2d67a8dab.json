@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides a detailed, well-structured comparison between index and active funds with clear headings and definitions.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TF25r/OLFAkFEOybl42SLl91XU8ZZcvUDLvM5MicrVMe8r1/BGQtxgwxSymcpFr+NBDvxB33hxuebQMnA8ic0yTrOonXCjMa9Pu3oC4c3quA0WcxZsLpbXcc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1029,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1061,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1029\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"je_Bav_IIfSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T06:17:51.648808+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 06:17:50 GMT"
+  },
+  "key": "89b088a9396a4b461057ed3882bdcc6a1c9138630358fa22651945f2d67a8dab",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
