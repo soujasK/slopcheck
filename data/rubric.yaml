@@ -1,3 +1,6 @@
+# Rubric v2 = candidate v2c, chosen by highest dev F1 on round-2 labels among v1,
+# v2a, v2b, v2c (dev: precision 0.50, recall 0.63, F1 0.56, n = 84). Frozen before
+# the one-time test evaluation. v1 is in git history.
 # SlopWatch scoring rubric.
 #
 # status: draft -> frozen. Freeze and commit BEFORE any labeling. After that,
@@ -15,12 +18,12 @@
 # (`set: true` = signal is not null). `reason` is a format string over the
 # Signals fields and is shown to users verbatim.
 
-version: 1
+version: 2
 status: frozen
 
 bands:
-  low: 0.50
-  mixed: 0.25
+  low: 0.4
+  mixed: 0.2
 
 rules:
   - id: affiliate_heavy
@@ -85,3 +88,15 @@ rules:
     all:
       - {signal: near_dup_group, set: true}
     reason: "near-duplicate of a page on another domain in the same results"
+
+  - id: no_author
+    weight: 0.3
+    all:
+      - {signal: has_author, eq: false}
+    reason: "no named author"
+
+  - id: sells_directly
+    weight: 0.25
+    all:
+      - {signal: sells_directly, eq: true}
+    reason: "the site sells products on this page (cart, buy button or product markup)"

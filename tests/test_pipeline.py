@@ -313,7 +313,7 @@ def test_score_label_evaluate_end_to_end(
     assert invoke("fetch").exit_code == 0
     scored = invoke("score", "--cache-mode", "replay")
     assert scored.exit_code == 0, scored.output
-    assert "rubric v1 (frozen)" in scored.output and "credits: 0 spent" in scored.output
+    assert "rubric v2 (frozen)" in scored.output and "credits: 0 spent" in scored.output
     scores = read_jsonl(data_dir / "scores.jsonl", Score)
     by_url = {s.url: s for s in scores}
     assert by_url["https://www.dealsite.example/best-phones/"].band == "low"
