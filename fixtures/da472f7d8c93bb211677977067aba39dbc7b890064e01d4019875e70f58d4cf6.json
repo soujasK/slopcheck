@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The wikiHow article directly answers the query with a step-by-step guide and lists a named author, indicating responsible content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page as source for query \\\"how to start investing with a small amount\\\". The page is a wikiHow article \\\"How to Invest Small Amounts of Money Wisely: 12 Steps\\\". wikiHow is a known how-to site with community contributions, but they have editorial process, often with named authors and citations. The page includes a personal finance coach Joyee Yang as author, co-authored. That seems to be a named author, organization (wikiHow). The content is likely to answer the query. It's not primarily monetized referral; wikiHow may have ads but primary purpose is to provide instructions. So label \\\"ok\\\". Reason: article provides step-by-step guide and has identified author.\",\"reasoning_content\":\"We need to decide label for this page as source for query \\\"how to start investing with a small amount\\\". The page is a wikiHow article \\\"How to Invest Small Amounts of Money Wisely: 12 Steps\\\". wikiHow is a known how-to site with community contributions, but they have editorial process, often with named authors and citations. The page includes a personal finance coach Joyee Yang as author, co-authored. That seems to be a named author, organization (wikiHow). The content is likely to answer the query. It's not primarily monetized referral; wikiHow may have ads but primary purpose is to provide instructions. So label \\\"ok\\\". Reason: article provides step-by-step guide and has identified author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092235,\"ec_transfer_params\":null,\"id\":\"chatcmpl-ade1467b-0719-4f6a-a6d6-69416735c56f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":939,\"completion_tokens\":192,\"total_tokens\":1131,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.9680061340332}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:20.575455+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:19 GMT"
+  },
+  "key": "da472f7d8c93bb211677977067aba39dbc7b890064e01d4019875e70f58d4cf6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

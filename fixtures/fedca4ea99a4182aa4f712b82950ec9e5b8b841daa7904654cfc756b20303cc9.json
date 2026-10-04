@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on paying off credit card debt and includes a named author and organization, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"how to get out of credit card debt\\\". The page is from wallethub.com, titled \\\"How to Pay Off Credit Card Debt Fast in 2026\\\". It appears to be an article with author name (Adam McCann, WalletHub Financial Writer) and fact-checked. It provides steps, advice. This is a genuine answer, with identifiable author and organization. It may contain affiliate links? Not shown, but likely not primary purpose. It's a guide, not a product roundup. So label \\\"ok\\\". Reason: article provides detailed advice and has named author and organization.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"how to get out of credit card debt\\\". The page is from wallethub.com, titled \\\"How to Pay Off Credit Card Debt Fast in 2026\\\". It appears to be an article with author name (Adam McCann, WalletHub Financial Writer) and fact-checked. It provides steps, advice. This is a genuine answer, with identifiable author and organization. It may contain affiliate links? Not shown, but likely not primary purpose. It's a guide, not a product roundup. So label \\\"ok\\\". Reason: article provides detailed advice and has named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092580,\"ec_transfer_params\":null,\"id\":\"chatcmpl-60193ed8-3e0f-426f-bd43-214a32fad9c0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":990,\"completion_tokens\":175,\"total_tokens\":1165,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.43163299560547}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:03.416841+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:01 GMT"
+  },
+  "key": "fedca4ea99a4182aa4f712b82950ec9e5b8b841daa7904654cfc756b20303cc9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

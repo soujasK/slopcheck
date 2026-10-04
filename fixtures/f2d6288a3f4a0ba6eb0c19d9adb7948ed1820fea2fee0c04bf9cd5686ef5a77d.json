@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Bajaj Finserv page directly discusses pros and cons of term life insurance, answering the query, and is authored by a recognizable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is term insurance worth it\\\". The page is from Bajaj Finserv, a financial services company, likely an official site. It provides pros and cons, FAQs, etc. It seems to answer the question, providing analysis of term life insurance. It has identifiable organization (Bajaj Finserv). Likely \\\"ok\\\". The page is not just affiliate roundup; it's a corporate site providing info. So label ok.\\n\\nReason: page from Bajaj Finserv, provides pros/cons, directly addresses term insurance value.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is term insurance worth it\\\". The page is from Bajaj Finserv, a financial services company, likely an official site. It provides pros and cons, FAQs, etc. It seems to answer the question, providing analysis of term life insurance. It has identifiable organization (Bajaj Finserv). Likely \\\"ok\\\". The page is not just affiliate roundup; it's a corporate site providing info. So label ok.\\n\\nReason: page from Bajaj Finserv, provides pros/cons, directly addresses term insurance value.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092609,\"ec_transfer_params\":null,\"id\":\"chatcmpl-bbad0686-8440-42ed-9631-1fa7bace797f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":953,\"completion_tokens\":171,\"total_tokens\":1124,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.98163986206055}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:33.620929+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:32 GMT"
+  },
+  "key": "f2d6288a3f4a0ba6eb0c19d9adb7948ed1820fea2fee0c04bf9cd5686ef5a77d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

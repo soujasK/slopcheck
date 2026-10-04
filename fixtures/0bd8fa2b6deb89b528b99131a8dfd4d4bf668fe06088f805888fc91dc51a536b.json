@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Harvard Health provides a reputable, organization‑authored overview of OTC antacids for acidity, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is Harvard Health article about over-the-counter antacids for heartburn. It lists antacids, their types, pros/cons. That directly answers query about non-prescription medicines for acidity (heartburn) and possibly gas. It is an official reputable source (Harvard Health). It has identifiable organization. So label \\\"ok\\\". Reason: reputable source providing relevant info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is Harvard Health article about over-the-counter antacids for heartburn. It lists antacids, their types, pros/cons. That directly answers query about non-prescription medicines for acidity (heartburn) and possibly gas. It is an official reputable source (Harvard Health). It has identifiable organization. So label \\\"ok\\\". Reason: reputable source providing relevant info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092573,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b9cbf78e-414c-4179-8820-1432f4dca745\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":992,\"completion_tokens\":149,\"total_tokens\":1141,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.72254180908203}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:56.549927+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:54 GMT"
+  },
+  "key": "0bd8fa2b6deb89b528b99131a8dfd4d4bf668fe06088f805888fc91dc51a536b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

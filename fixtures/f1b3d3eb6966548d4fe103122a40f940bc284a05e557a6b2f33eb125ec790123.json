@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed article from Ventura Securities offering strategies to escape credit card debt and is authored by a named research team.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page appears to be a blog article from Ventura Securities (financial services). Title: \\\"Escaping the Credit Card Debt Trap: Smart Strategies to Regain Financial Control\\\". It seems to provide strategies. It is authored by \\\"Ventura Research Team\\\". Likely a named organization. It seems to be a genuine article, not just affiliate product roundup. So label \\\"ok\\\". Reason: provides advice and has identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page appears to be a blog article from Ventura Securities (financial services). Title: \\\"Escaping the Credit Card Debt Trap: Smart Strategies to Regain Financial Control\\\". It seems to provide strategies. It is authored by \\\"Ventura Research Team\\\". Likely a named organization. It seems to be a genuine article, not just affiliate product roundup. So label \\\"ok\\\". Reason: provides advice and has identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092522,\"ec_transfer_params\":null,\"id\":\"chatcmpl-38676966-48bd-4047-852f-2055cf9a5d91\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":940,\"completion_tokens\":154,\"total_tokens\":1094,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.40891647338867}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:05.405603+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:03 GMT"
+  },
+  "key": "f1b3d3eb6966548d4fe103122a40f940bc284a05e557a6b2f33eb125ec790123",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

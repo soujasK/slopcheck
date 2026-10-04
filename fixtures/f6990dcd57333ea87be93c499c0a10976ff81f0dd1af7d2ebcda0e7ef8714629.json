@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Hospital blog with named doctor provides relevant medical information on fatty liver symptoms and treatment\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"fatty liver grade 1 symptoms and treatment\\\". The page is a blog from Sarvoday Hospital, appears to be a health blog with author Dr. Manoj Yadav, gastroenterology. It likely provides general info on fatty liver symptoms, causes, treatment. It may not specifically address \\\"grade 1\\\" (i.e., mild steatosis) but still relevant. The page seems to be an official hospital website, with author name, likely credible. It is not a low-quality affiliate roundup. So label \\\"ok\\\". Reason: provides medical info with named author from hospital.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"fatty liver grade 1 symptoms and treatment\\\". The page is a blog from Sarvoday Hospital, appears to be a health blog with author Dr. Manoj Yadav, gastroenterology. It likely provides general info on fatty liver symptoms, causes, treatment. It may not specifically address \\\"grade 1\\\" (i.e., mild steatosis) but still relevant. The page seems to be an official hospital website, with author name, likely credible. It is not a low-quality affiliate roundup. So label \\\"ok\\\". Reason: provides medical info with named author from hospital.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092503,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d6e9fcdc-f267-4dab-b2f7-d1a227bec9b4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1098,\"completion_tokens\":170,\"total_tokens\":1268,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.52706527709961}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:41:46.201134+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:41:44 GMT"
+  },
+  "key": "f6990dcd57333ea87be93c499c0a10976ff81f0dd1af7d2ebcda0e7ef8714629",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

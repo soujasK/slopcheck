@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a sales product listing for a single AC model, not a comparative or review article answering the best‑in‑category query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best 1.5 ton inverter ac in india\\\". The page is a product page for a specific AC model (Amstrad Megalo 1.5 Ton 5 Star Inverter Split AC). It is a commercial product listing, likely with affiliate or sales purpose. The query asks for best 1.5 ton inverter AC in India, which is a recommendation/comparison. This page is a single product page, not a review or comparison. It is primarily for selling. That would be considered \\\"low\\\" because primary purpose is monetised referral/sales. It does not provide a comparative answer. So label low.\\n\\nWe need reason: page is a product sales listing, not a review or recommendation.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best 1.5 ton inverter ac in india\\\". The page is a product page for a specific AC model (Amstrad Megalo 1.5 Ton 5 Star Inverter Split AC). It is a commercial product listing, likely with affiliate or sales purpose. The query asks for best 1.5 ton inverter AC in India, which is a recommendation/comparison. This page is a single product page, not a review or comparison. It is primarily for selling. That would be considered \\\"low\\\" because primary purpose is monetised referral/sales. It does not provide a comparative answer. So label low.\\n\\nWe need reason: page is a product sales listing, not a review or recommendation.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092335,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c59f32d3-daa7-4bb8-8713-9018020ec240\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1194,\"completion_tokens\":207,\"total_tokens\":1401,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":52.10432434082031}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:38:57.753416+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:38:56 GMT"
+  },
+  "key": "2f0bae133320078bf0015bbbfb1636917b1815e1bfc9ba4b5164a04c51fd9859",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

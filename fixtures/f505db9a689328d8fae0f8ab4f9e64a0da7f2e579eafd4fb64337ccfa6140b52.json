@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"WebMD provides medically reviewed, author‑identified information on vitamin D deficiency symptoms, making it a reliable source for the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is WebMD article about vitamin D deficiency, written by Stephanie Watson, Lori M. King, PhD, medically reviewed. It likely includes symptoms generally, not specifically women, but still relevant. It has identifiable authors and medical review, official health site. So label \\\"ok\\\". Reason: reputable health site with named authors and medical review, provides symptom info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is WebMD article about vitamin D deficiency, written by Stephanie Watson, Lori M. King, PhD, medically reviewed. It likely includes symptoms generally, not specifically women, but still relevant. It has identifiable authors and medical review, official health site. So label \\\"ok\\\". Reason: reputable health site with named authors and medical review, provides symptom info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092364,\"ec_transfer_params\":null,\"id\":\"chatcmpl-40b87123-abf8-4533-b7ec-a696e56c75ac\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":980,\"completion_tokens\":143,\"total_tokens\":1123,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.931636810302734}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:28.012500+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:26 GMT"
+  },
+  "key": "f505db9a689328d8fae0f8ab4f9e64a0da7f2e579eafd4fb64337ccfa6140b52",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

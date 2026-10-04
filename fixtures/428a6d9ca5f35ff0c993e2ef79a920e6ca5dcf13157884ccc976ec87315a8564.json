@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an informational article from a gastroenterology practice discussing OTC heartburn medicines, directly relevant to non‑prescription acidity relief.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is from Birmingham Gastroenterology Associates, a medical practice website. Title: \\\"Are Over the Counter Heartburn Medications Safe?\\\" Content discusses OTC heartburn meds, categories, examples. It likely provides info on safe OTC options, which is relevant to query about best medicine for acidity and gas without prescription. The page appears to be an informational article from a medical practice, likely with author or organization identified (Birmingham Gastroenterology Associates). It is not a product roundup; it's an informational piece. So label \\\"ok\\\". Reason: provides expert info on OTC heartburn meds, from a medical practice.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is from Birmingham Gastroenterology Associates, a medical practice website. Title: \\\"Are Over the Counter Heartburn Medications Safe?\\\" Content discusses OTC heartburn meds, categories, examples. It likely provides info on safe OTC options, which is relevant to query about best medicine for acidity and gas without prescription. The page appears to be an informational article from a medical practice, likely with author or organization identified (Birmingham Gastroenterology Associates). It is not a product roundup; it's an informational piece. So label \\\"ok\\\". Reason: provides expert info on OTC heartburn meds, from a medical practice.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092582,\"ec_transfer_params\":null,\"id\":\"chatcmpl-948fbee0-908e-4beb-8ff3-667586acd5ce\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1027,\"completion_tokens\":197,\"total_tokens\":1224,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.10890197753906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:05.669809+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:04 GMT"
+  },
+  "key": "428a6d9ca5f35ff0c993e2ef79a920e6ca5dcf13157884ccc976ec87315a8564",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

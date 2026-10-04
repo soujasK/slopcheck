@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed step-by-step guide to transferring data and includes a named author and site, indicating genuine answer content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from thetechgorilla.com, titled \\\"Transfer Data From Android To iPhone (Easy Guide!)\\\". The content appears to be a step-by-step guide, with author name Daniel Shuttleworth, date, etc. It seems to be a genuine guide, not just affiliate roundup. It may contain affiliate links? Not shown. But primary purpose is to answer query. It has identifiable author and organization (The Tech Gorilla). So likely \\\"ok\\\". Need to consider if it's low due to being monetized referral. The page seems to be a guide, not a product roundup. So ok.\\n\\nThus label ok, reason: provides a detailed step-by-step guide and has a named author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from thetechgorilla.com, titled \\\"Transfer Data From Android To iPhone (Easy Guide!)\\\". The content appears to be a step-by-step guide, with author name Daniel Shuttleworth, date, etc. It seems to be a genuine guide, not just affiliate roundup. It may contain affiliate links? Not shown. But primary purpose is to answer query. It has identifiable author and organization (The Tech Gorilla). So likely \\\"ok\\\". Need to consider if it's low due to being monetized referral. The page seems to be a guide, not a product roundup. So ok.\\n\\nThus label ok, reason: provides a detailed step-by-step guide and has a named author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092414,\"ec_transfer_params\":null,\"id\":\"chatcmpl-51c205a2-d6aa-4e61-8b84-c8b6128bf53b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1053,\"completion_tokens\":201,\"total_tokens\":1254,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":47.208892822265625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:17.626575+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:16 GMT"
+  },
+  "key": "0371e44fcf542ae3430b33ac21e77ce63d6b0057717646929a5c55406bde10f9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

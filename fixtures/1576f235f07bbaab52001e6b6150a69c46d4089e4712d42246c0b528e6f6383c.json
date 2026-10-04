@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a credit union blog offering specific advice on paying off credit card debt, with an identifiable organization as the source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page title: \\\"11 Best Ways to Pay Off Credit Card Debt Fast | Wasatch Peaks Credit Union\\\". Likely a blog post from a credit union offering advice. The main text snippet is mostly navigation and site header; not showing the article content yet. But the title suggests it provides ways to pay off credit card debt. The site is a credit union, an organization. Likely the page includes advice, possibly with author. So it would be \\\"ok\\\". However we haven't seen author info. But credit union is an organization, official source. The page appears to be a blog article, not a generic affiliate roundup. So label \\\"ok\\\". Reason: provides advice from a credit union.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page title: \\\"11 Best Ways to Pay Off Credit Card Debt Fast | Wasatch Peaks Credit Union\\\". Likely a blog post from a credit union offering advice. The main text snippet is mostly navigation and site header; not showing the article content yet. But the title suggests it provides ways to pay off credit card debt. The site is a credit union, an organization. Likely the page includes advice, possibly with author. So it would be \\\"ok\\\". However we haven't seen author info. But credit union is an organization, official source. The page appears to be a blog article, not a generic affiliate roundup. So label \\\"ok\\\". Reason: provides advice from a credit union.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092349,\"ec_transfer_params\":null,\"id\":\"chatcmpl-72e69e51-0e20-4ed0-8553-2001517adcad\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":939,\"completion_tokens\":210,\"total_tokens\":1149,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.19527816772461}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:12.916719+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:11 GMT"
+  },
+  "key": "1576f235f07bbaab52001e6b6150a69c46d4089e4712d42246c0b528e6f6383c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

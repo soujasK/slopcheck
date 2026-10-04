@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a clear step-by-step guide from a named organization (Times Now) that directly answers the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to check pf balance using uan number\\\". The page is Times Now news article, appears to be a guide with step-by-step instructions. It has author \\\"Times Now Digital\\\". It's a news/media site, not official EPFO site, but it provides instructions. It likely is a genuine answer, with identifiable organization (Times Now). Not monetized referral; maybe includes affiliate but not primary. So label \\\"ok\\\". Reason: provides step-by-step guide and has clear author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to check pf balance using uan number\\\". The page is Times Now news article, appears to be a guide with step-by-step instructions. It has author \\\"Times Now Digital\\\". It's a news/media site, not official EPFO site, but it provides instructions. It likely is a genuine answer, with identifiable organization (Times Now). Not monetized referral; maybe includes affiliate but not primary. So label \\\"ok\\\". Reason: provides step-by-step guide and has clear author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092520,\"ec_transfer_params\":null,\"id\":\"chatcmpl-36b613c4-ae84-4d60-a325-38098a76a38c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1061,\"completion_tokens\":159,\"total_tokens\":1220,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.59980010986328}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:03.882701+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:02 GMT"
+  },
+  "key": "9bbf2978f24e2855ad8c2f1e792ed8338543a5e3b8339b3233af327180e3407c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

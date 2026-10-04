@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a product catalog with no substantive answer or author, primarily for selling items\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page appears to be a product listing on Apollo Pharmacy site, with a health query about indigestion etc. The title is a long query. The main text is a huge list of product categories, not actual answer. Likely a generic page with categories, not providing specific recommendation. It seems like a health query page but content is just navigation. No author, no answer. So low? The primary purpose is to sell products (pharmacy). It may be a Q&A but not providing answer. So label low.\\n\\nReason: page is product catalog, not a substantive answer.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page appears to be a product listing on Apollo Pharmacy site, with a health query about indigestion etc. The title is a long query. The main text is a huge list of product categories, not actual answer. Likely a generic page with categories, not providing specific recommendation. It seems like a health query page but content is just navigation. No author, no answer. So low? The primary purpose is to sell products (pharmacy). It may be a Q&A but not providing answer. So label low.\\n\\nReason: page is product catalog, not a substantive answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092311,\"ec_transfer_params\":null,\"id\":\"chatcmpl-310333e4-4396-446d-969a-7bc9e39d9810\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1095,\"completion_tokens\":181,\"total_tokens\":1276,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":47.18161392211914}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:38:35.328154+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:38:33 GMT"
+  },
+  "key": "86b7d4d8f31eac0aef8411b0df5026a181c6c7df1cf9cb7a4d3a9d32ed74ce96",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

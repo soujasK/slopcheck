@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official ICICI Bank blog page that likely provides recommendations on best SIP funds for 2026\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page appears to be from ICICI Bank blog, about best SIP funds to invest in 2026. The snippet includes marketing content, but also likely includes article content. The page is from a reputable bank, official source. It likely answers the query. However the snippet we see is heavily marketing and navigation, not the actual article content. But the title suggests it's about best SIP plan. The page is likely an official bank blog, with responsibility. So label \\\"ok\\\". Reason: official bank blog providing SIP recommendations.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page appears to be from ICICI Bank blog, about best SIP funds to invest in 2026. The snippet includes marketing content, but also likely includes article content. The page is from a reputable bank, official source. It likely answers the query. However the snippet we see is heavily marketing and navigation, not the actual article content. But the title suggests it's about best SIP plan. The page is likely an official bank blog, with responsibility. So label \\\"ok\\\". Reason: official bank blog providing SIP recommendations.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092656,\"ec_transfer_params\":null,\"id\":\"chatcmpl-94b18a00-f3ef-413c-b4b1-8b829851d397\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1024,\"completion_tokens\":168,\"total_tokens\":1192,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.036170959472656}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:44:18.717194+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:44:17 GMT"
+  },
+  "key": "eda25b1b735095d1034a93d797d37a3aa7692be9a8f20ea9d9bbf785c053f82d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

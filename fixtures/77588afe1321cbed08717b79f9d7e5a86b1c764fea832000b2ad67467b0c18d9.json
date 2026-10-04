@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government portal likely provides step-by-step instructions for linking Aadhaar with PAN online\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page title: \\\"How to link PAN with Aadhaar | Vikaspedia - Digital governance\\\". URL: e-governance.vikaspedia.in/... It's likely an Indian government portal providing instructions. Vikaspedia is a government initiative (Digital governance). Likely official source. The page likely contains step-by-step instructions. Even though main text not provided, we can infer it's an official guide. So label \\\"ok\\\". Reason: official government site providing instructions.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page title: \\\"How to link PAN with Aadhaar | Vikaspedia - Digital governance\\\". URL: e-governance.vikaspedia.in/... It's likely an Indian government portal providing instructions. Vikaspedia is a government initiative (Digital governance). Likely official source. The page likely contains step-by-step instructions. Even though main text not provided, we can infer it's an official guide. So label \\\"ok\\\". Reason: official government site providing instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092370,\"ec_transfer_params\":null,\"id\":\"chatcmpl-77efbb02-8002-470f-b51f-42447d619fa6\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":616,\"completion_tokens\":159,\"total_tokens\":775,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.440793991088867}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:34.412980+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:32 GMT"
+  },
+  "key": "77588afe1321cbed08717b79f9d7e5a86b1c764fea832000b2ad67467b0c18d9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

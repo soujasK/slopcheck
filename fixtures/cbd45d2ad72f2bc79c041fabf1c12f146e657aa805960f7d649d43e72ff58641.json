@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on recovering a hacked Google account and includes a named author and clear source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to recover a hacked gmail account\\\". The page is from Android Authority, a tech news/review site. Title: \\\"How to recover a Google account if lost or hacked\\\". It appears to be an article providing steps. It has author name (Mark O'Neill) and date. It includes affiliate disclaimer. It's not purely affiliate product roundup; it's a guide. Likely qualifies as \\\"ok\\\": it answers the query and has identifiable author/organisation. It's not a low-quality scraped page. So label ok.\\n\\nReason: article provides recovery steps and has named author and organization.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to recover a hacked gmail account\\\". The page is from Android Authority, a tech news/review site. Title: \\\"How to recover a Google account if lost or hacked\\\". It appears to be an article providing steps. It has author name (Mark O'Neill) and date. It includes affiliate disclaimer. It's not purely affiliate product roundup; it's a guide. Likely qualifies as \\\"ok\\\": it answers the query and has identifiable author/organisation. It's not a low-quality scraped page. So label ok.\\n\\nReason: article provides recovery steps and has named author and organization.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092620,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2ed2fca1-16c4-4d7e-b2b7-f2bdf2927a24\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":986,\"completion_tokens\":179,\"total_tokens\":1165,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.57708740234375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:44.882813+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:43 GMT"
+  },
+  "key": "cbd45d2ad72f2bc79c041fabf1c12f146e657aa805960f7d649d43e72ff58641",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

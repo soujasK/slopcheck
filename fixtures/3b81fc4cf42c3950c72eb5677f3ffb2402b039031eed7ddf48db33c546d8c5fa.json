@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers specific natural methods to lower uric acid and is authored by a named writer from a reputable news outlet.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from maharashtratimes.com, a news site, Marathi language article about foods to reduce uric acid. It has an author name, date, seems to provide natural ways (foods, water, coffee). It's not purely affiliate; it's informational health article. It appears to answer the query. It has identifiable author and organization (Maharashtra Times). So label \\\"ok\\\". Reason: provides natural uric acid reduction advice with named author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from maharashtratimes.com, a news site, Marathi language article about foods to reduce uric acid. It has an author name, date, seems to provide natural ways (foods, water, coffee). It's not purely affiliate; it's informational health article. It appears to answer the query. It has identifiable author and organization (Maharashtra Times). So label \\\"ok\\\". Reason: provides natural uric acid reduction advice with named author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092463,\"ec_transfer_params\":null,\"id\":\"chatcmpl-11b5a7c2-9900-4872-9d39-237cde9b73c7\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1381,\"completion_tokens\":161,\"total_tokens\":1542,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":54.91792297363281}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:41:07.448758+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:41:05 GMT"
+  },
+  "key": "3b81fc4cf42c3950c72eb5677f3ffb2402b039031eed7ddf48db33c546d8c5fa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

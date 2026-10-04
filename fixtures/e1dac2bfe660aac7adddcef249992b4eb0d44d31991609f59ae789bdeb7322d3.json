@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed beginner guide on investing, authored by the Pocketful team, directly addressing starting with small amounts.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is a guide for beginners on stock market investing, includes steps, likely addresses small amount. It is from pocketful.in, a financial blog. It lists author as Pocketful Team, not a named individual but organization. It seems to be a genuine guide, not just affiliate roundup. Might contain affiliate links? Not shown. It appears to be a content article, not a product roundup. So likely \\\"ok\\\". Need reason: page provides step-by-step guide for beginners, authored by Pocketful Team. So label ok.\\n\\nCheck for signs of low: Could be monetized? Possibly includes affiliate links for broker accounts, but primary purpose is to educate. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is a guide for beginners on stock market investing, includes steps, likely addresses small amount. It is from pocketful.in, a financial blog. It lists author as Pocketful Team, not a named individual but organization. It seems to be a genuine guide, not just affiliate roundup. Might contain affiliate links? Not shown. It appears to be a content article, not a product roundup. So likely \\\"ok\\\". Need reason: page provides step-by-step guide for beginners, authored by Pocketful Team. So label ok.\\n\\nCheck for signs of low: Could be monetized? Possibly includes affiliate links for broker accounts, but primary purpose is to educate. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092455,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e701d1d7-3b55-42a2-a98b-c0d182fc3c8e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":999,\"completion_tokens\":208,\"total_tokens\":1207,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.967994689941406}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:41:01.162130+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:59 GMT"
+  },
+  "key": "e1dac2bfe660aac7adddcef249992b4eb0d44d31991609f59ae789bdeb7322d3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

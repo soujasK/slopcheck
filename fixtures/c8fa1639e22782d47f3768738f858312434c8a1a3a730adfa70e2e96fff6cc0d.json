@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed beginner guide on investing, authored by the Precize organization, directly addressing how to start investing even with limited funds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"how to start investing with a small amount\\\". The page is a blog article \\\"Introduction to Investing Basics: A Guide for Beginners\\\" on precize.in. It seems to be a generic guide, likely includes sections on starting with limited funds. The page appears to be a content article, with author \\\"Precize\\\" (maybe organization). It seems to be providing advice, not just affiliate links. There's no obvious affiliate focus. It seems to answer the query. It has identifiable organization (Precize). So label \\\"ok\\\". Reason: provides investing basics and likely includes steps for small amount. So answer.\\n\\n\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"how to start investing with a small amount\\\". The page is a blog article \\\"Introduction to Investing Basics: A Guide for Beginners\\\" on precize.in. It seems to be a generic guide, likely includes sections on starting with limited funds. The page appears to be a content article, with author \\\"Precize\\\" (maybe organization). It seems to be providing advice, not just affiliate links. There's no obvious affiliate focus. It seems to answer the query. It has identifiable organization (Precize). So label \\\"ok\\\". Reason: provides investing basics and likely includes steps for small amount. So answer.\\n\\n\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092601,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2070d954-5a04-4abd-bd70-df3984c277bb\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":938,\"completion_tokens\":184,\"total_tokens\":1122,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.3907356262207}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:24.398339+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:22 GMT"
+  },
+  "key": "c8fa1639e22782d47f3768738f858312434c8a1a3a730adfa70e2e96fff6cc0d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

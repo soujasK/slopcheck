@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on investing with little money and is from a recognizable finance site, indicating responsible authorship.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is Money Under 30, a personal finance site targeting younger audience. Likely has author and content, not just affiliate. The page appears to be an article giving advice on how to start investing with little money. It likely includes actionable steps, maybe affiliate links to brokers, but primary purpose is to inform. It likely has author name (maybe at bottom). The excerpt doesn't show author, but typical Money Under 30 articles have author byline. So it seems \\\"ok\\\": genuine answer, identifiable organization (Money Under 30). Not purely affiliate roundup. So label ok.\\n\\nReason: provides detailed advice and is from a named finance site.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is Money Under 30, a personal finance site targeting younger audience. Likely has author and content, not just affiliate. The page appears to be an article giving advice on how to start investing with little money. It likely includes actionable steps, maybe affiliate links to brokers, but primary purpose is to inform. It likely has author name (maybe at bottom). The excerpt doesn't show author, but typical Money Under 30 articles have author byline. So it seems \\\"ok\\\": genuine answer, identifiable organization (Money Under 30). Not purely affiliate roundup. So label ok.\\n\\nReason: provides detailed advice and is from a named finance site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092558,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8dcad9d8-7c4f-4d57-8280-0bc4bc9a4986\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":964,\"completion_tokens\":188,\"total_tokens\":1152,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.49073028564453}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:42.520886+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:40 GMT"
+  },
+  "key": "7fc8e9f7c391d29038952afc30b8968406a66e5ede87656e52e732e0da95109e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

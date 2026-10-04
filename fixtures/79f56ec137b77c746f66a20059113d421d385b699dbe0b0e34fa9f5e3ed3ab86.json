@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"WebMD is a reputable health source that provides specific side effect information for ashwaganda with clear organizational attribution.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"side effects of ashwagandha\\\". The page is from WebMD, a reputable health information site. It includes side effects info. It likely has identifiable organization (WebMD). So it's \\\"ok\\\". Provide reason: reputable medical site with side effect info.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"side effects of ashwagandha\\\". The page is from WebMD, a reputable health information site. It includes side effects info. It likely has identifiable organization (WebMD). So it's \\\"ok\\\". Provide reason: reputable medical site with side effect info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092445,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5968f3ff-1fe5-4a7a-9cf3-d42bc60debe0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1034,\"completion_tokens\":109,\"total_tokens\":1143,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.331626892089844}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:48.275756+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:46 GMT"
+  },
+  "key": "79f56ec137b77c746f66a20059113d421d385b699dbe0b0e34fa9f5e3ed3ab86",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

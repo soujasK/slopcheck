@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on getting out of credit card debt and includes a named author and the MoneyLion organization, indicating responsible, answer-focused content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from MoneyLion.com, a financial services company. Title: How To Get Out of Credit Card Debt in 10 Steps. The page includes author name Jeannine Mancini, edited by Jasmin Baron, CCC™. So identifiable author and organization. Content appears to be a guide, not just affiliate product roundup. MoneyLion is a fintech company offering loans, etc. The page likely includes advice, possibly with affiliate links but primary purpose is to provide advice. That fits \\\"ok\\\": genuine answer with identifiable organization.\\n\\nThus label ok. Reason: page provides detailed steps and has named author and organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from MoneyLion.com, a financial services company. Title: How To Get Out of Credit Card Debt in 10 Steps. The page includes author name Jeannine Mancini, edited by Jasmin Baron, CCC™. So identifiable author and organization. Content appears to be a guide, not just affiliate product roundup. MoneyLion is a fintech company offering loans, etc. The page likely includes advice, possibly with affiliate links but primary purpose is to provide advice. That fits \\\"ok\\\": genuine answer with identifiable organization.\\n\\nThus label ok. Reason: page provides detailed steps and has named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092259,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0b5ad8c8-4435-4aba-8c8c-adc4d4e5c34c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1041,\"completion_tokens\":189,\"total_tokens\":1230,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.00889587402344}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:43.213656+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:41 GMT"
+  },
+  "key": "e5461524f5a8b5ee76d38fcce33df3d0221dc3d1fb3a2f03456235547339612f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

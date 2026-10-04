@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on linking PAN with Aadhaar and is published by the identifiable financial site BankBazaar.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page is from bankbazaar.com, a financial services comparison site. It appears to have a detailed article about linking PAN with Aadhaar, includes steps, etc. It likely includes instructions. The page likely has some author? Not shown. It may be a content article, possibly with affiliate links but primary purpose is to provide info. It seems to be a genuine guide, not just product roundup. It may have no named author visible in snippet, but organization is BankBazaar, a known financial portal. That qualifies as identifiable organization. So label \\\"ok\\\". Reason: provides direct instructions and is from identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to link aadhaar with pan card online\\\". The page is from bankbazaar.com, a financial services comparison site. It appears to have a detailed article about linking PAN with Aadhaar, includes steps, etc. It likely includes instructions. The page likely has some author? Not shown. It may be a content article, possibly with affiliate links but primary purpose is to provide info. It seems to be a genuine guide, not just product roundup. It may have no named author visible in snippet, but organization is BankBazaar, a known financial portal. That qualifies as identifiable organization. So label \\\"ok\\\". Reason: provides direct instructions and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092517,\"ec_transfer_params\":null,\"id\":\"chatcmpl-57ec699b-85ed-4e51-ab69-51074b18cf05\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":953,\"completion_tokens\":195,\"total_tokens\":1148,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.618003845214844}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:01.285581+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:41:59 GMT"
+  },
+  "key": "9a34d09d99d09367bd8cc08ae5500d7d323f9a64773e41ada3885f0226b2e208",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

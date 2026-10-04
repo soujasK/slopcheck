@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, authored comparison of index funds and active mutual funds, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page appears to be a guide comparing index funds and active funds in India, with cost impact, performance data, decision framework. It has author name (Nikhil Fernandes), date, seems detailed, not just affiliate. Likely ok. It may have affiliate links? Not shown. But primary purpose is to inform, not just sell. So label ok.\\n\\nReason: provides detailed comparison, author identified.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page appears to be a guide comparing index funds and active funds in India, with cost impact, performance data, decision framework. It has author name (Nikhil Fernandes), date, seems detailed, not just affiliate. Likely ok. It may have affiliate links? Not shown. But primary purpose is to inform, not just sell. So label ok.\\n\\nReason: provides detailed comparison, author identified.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092391,\"ec_transfer_params\":null,\"id\":\"chatcmpl-12d334c6-c4ca-4731-b484-c14494379e79\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1059,\"completion_tokens\":148,\"total_tokens\":1207,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.786163330078125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:55.199867+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:53 GMT"
+  },
+  "key": "14db0e344ee038a8ba0f5df5dd85be51e83abe82b3304ad8c44795977043ed23",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

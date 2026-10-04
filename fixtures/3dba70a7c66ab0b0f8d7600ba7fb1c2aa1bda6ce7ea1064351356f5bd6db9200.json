@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The Hindustan Times article provides a clear step‑by‑step guide and is authored by a recognizable news organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to link aadhaar with pan card online\\\". The page is from Hindustan Times, a news site, with a step-by-step guide. It appears to provide instructions. It has author attribution: \\\"By hindustantimes.com, New Delhi\\\". Not a named author but organization. It's a news article providing guide. This is likely acceptable as \\\"ok\\\" because it answers the query and has identifiable organization (Hindustan Times). It's not primarily monetized referral; it's a guide. So label ok.\\n\\nCheck for affiliate links? Not indicated. It's a news site, not product. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The article from Hindustan Times gives a step‑by‑step guide and is clearly authored by the news organisation.\\\"}\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to link aadhaar with pan card online\\\". The page is from Hindustan Times, a news site, with a step-by-step guide. It appears to provide instructions. It has author attribution: \\\"By hindustantimes.com, New Delhi\\\". Not a named author but organization. It's a news article providing guide. This is likely acceptable as \\\"ok\\\" because it answers the query and has identifiable organization (Hindustan Times). It's not primarily monetized referral; it's a guide. So label ok.\\n\\nCheck for affiliate links? Not indicated. It's a news site, not product. So ok.\\n\\nThus answer: {\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The article from Hindustan Times gives a step‑by‑step guide and is clearly authored by the news organisation.\\\"}\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092320,\"ec_transfer_params\":null,\"id\":\"chatcmpl-50567fd7-59ca-43fe-a964-7e34317fea7d\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1050,\"completion_tokens\":213,\"total_tokens\":1263,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":47.93162155151367}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:38:44.952545+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:38:42 GMT"
+  },
+  "key": "3dba70a7c66ab0b0f8d7600ba7fb1c2aa1bda6ce7ea1064351356f5bd6db9200",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses Ashwagandha side effects and lists named authors and medical review, indicating responsible, answer-focused content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"side effects of ashwagandha\\\". The page is an article titled \\\"15 Serious Side Effects Of Ashwagandha & Precautions To Take\\\". It appears to be a health article on StyleCraze.com, with medical review, written by named authors, edited, fact-checked. It seems to provide information about side effects. It has named authors, medical review, editorial process. So it is likely \\\"ok\\\" as it answers the query and has identifiable responsibility.\\n\\nCheck for monetization: StyleCraze is a lifestyle site, may have affiliate links but primary purpose is to inform about side effects. The presence of \\\"Medically reviewed by\\\" and authors suggests ok.\\n\\nThus label \\\"ok\\\". Reason: article provides detailed side effects with named authors and medical review.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"side effects of ashwagandha\\\". The page is an article titled \\\"15 Serious Side Effects Of Ashwagandha & Precautions To Take\\\". It appears to be a health article on StyleCraze.com, with medical review, written by named authors, edited, fact-checked. It seems to provide information about side effects. It has named authors, medical review, editorial process. So it is likely \\\"ok\\\" as it answers the query and has identifiable responsibility.\\n\\nCheck for monetization: StyleCraze is a lifestyle site, may have affiliate links but primary purpose is to inform about side effects. The presence of \\\"Medically reviewed by\\\" and authors suggests ok.\\n\\nThus label \\\"ok\\\". Reason: article provides detailed side effects with named authors and medical review.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092641,\"ec_transfer_params\":null,\"id\":\"chatcmpl-31ebdcf9-dcc1-4adb-803c-fb0334ecd636\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":987,\"completion_tokens\":218,\"total_tokens\":1205,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.26799774169922}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:44:05.261809+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:44:03 GMT"
+  },
+  "key": "d6e5870c3922f683beed18b45b9c804bae921e810b92cb4baf06d4845b8c40dc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

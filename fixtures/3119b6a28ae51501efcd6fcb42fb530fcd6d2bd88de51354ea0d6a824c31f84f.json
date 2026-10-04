@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Provides expert, named physiotherapist answers on mattress choice for back pain\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best mattress for back pain\\\". The page is a Practo consult Q&A page with multiple user questions and answers from physiotherapists. It seems to be a health advice platform, with professional answers. It includes specific advice about mattress types. It appears to have identifiable responsibility: doctors/physiotherapists with names and credentials. So it's \\\"ok\\\". However, is the primary purpose to answer the query? Yes, it's a Q&A about mattress and back pain. It's not a product roundup. So label ok.\\n\\nReason: page provides expert answers from named physiotherapists about mattress choice for back pain.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best mattress for back pain\\\". The page is a Practo consult Q&A page with multiple user questions and answers from physiotherapists. It seems to be a health advice platform, with professional answers. It includes specific advice about mattress types. It appears to have identifiable responsibility: doctors/physiotherapists with names and credentials. So it's \\\"ok\\\". However, is the primary purpose to answer the query? Yes, it's a Q&A about mattress and back pain. It's not a product roundup. So label ok.\\n\\nReason: page provides expert answers from named physiotherapists about mattress choice for back pain.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092309,\"ec_transfer_params\":null,\"id\":\"chatcmpl-50cfa943-d9da-4fbf-b01d-69b4de056236\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1022,\"completion_tokens\":171,\"total_tokens\":1193,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.17708206176758}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:38:32.615206+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:38:31 GMT"
+  },
+  "key": "3119b6a28ae51501efcd6fcb42fb530fcd6d2bd88de51354ea0d6a824c31f84f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

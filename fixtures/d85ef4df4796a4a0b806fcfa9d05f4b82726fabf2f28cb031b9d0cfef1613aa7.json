@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a direct medical answer from a named doctor, addressing Dolo dosage safety.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page is from Practo, a health Q&A platform. It appears to be a specific question about taking Dolo 6 times per day, with an answer from a doctor (Dr. Ashwini Khadtare). The page includes a disclaimer. It seems to provide medical advice, with a named doctor, and is not just affiliate. So likely \\\"ok\\\". However we need to consider if the page is primarily a Q&A with a doctor answer, which is appropriate. The query is about daily use of Dolo 650 (paracetamol 650 mg). The page addresses frequency (6 times per day) and intervals. It is relevant. The page has a named author (doctor). So \\\"ok\\\". Provide reason: contains answer from named doctor.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take dolo 650 every day\\\". The page is from Practo, a health Q&A platform. It appears to be a specific question about taking Dolo 6 times per day, with an answer from a doctor (Dr. Ashwini Khadtare). The page includes a disclaimer. It seems to provide medical advice, with a named doctor, and is not just affiliate. So likely \\\"ok\\\". However we need to consider if the page is primarily a Q&A with a doctor answer, which is appropriate. The query is about daily use of Dolo 650 (paracetamol 650 mg). The page addresses frequency (6 times per day) and intervals. It is relevant. The page has a named author (doctor). So \\\"ok\\\". Provide reason: contains answer from named doctor.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092628,\"ec_transfer_params\":null,\"id\":\"chatcmpl-587b4670-83ae-4a46-9895-df42773d3e99\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1090,\"completion_tokens\":219,\"total_tokens\":1309,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":49.613433837890625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:51.960659+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:50 GMT"
+  },
+  "key": "d85ef4df4796a4a0b806fcfa9d05f4b82726fabf2f28cb031b9d0cfef1613aa7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

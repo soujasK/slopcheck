@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on blocking spam calls on Android and includes a named author, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page appears to be an article titled \\\"How To Block Spam Calls On Android (Simple Steps) - The Tech Gorilla\\\". It includes author name (Ibinabo Bagshaw) and date. It seems to provide step-by-step guide, includes built-in settings, third-party apps, carrier tools. This is a genuine guide, not just affiliate. Might have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: provides detailed instructions and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block spam calls on android\\\". The page appears to be an article titled \\\"How To Block Spam Calls On Android (Simple Steps) - The Tech Gorilla\\\". It includes author name (Ibinabo Bagshaw) and date. It seems to provide step-by-step guide, includes built-in settings, third-party apps, carrier tools. This is a genuine guide, not just affiliate. Might have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: provides detailed instructions and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092555,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e659620d-4396-4e20-a4b8-aaf79c25f4ca\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1019,\"completion_tokens\":163,\"total_tokens\":1182,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.53617477416992}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:38.335020+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:36 GMT"
+  },
+  "key": "9ce57965e55f7adc1b1f017110b621dd3c92b0a36dd60e2757ec6471ad07cd1a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

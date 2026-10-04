@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The wikiHow article directly addresses natural ways to lower uric acid and includes a named author and medical reviewer, indicating clear responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from wikiHow, which is a how-to site with articles written by contributors, with named author and medically reviewed. That seems \\\"ok\\\": it answers the query, has identifiable responsibility (author, medical reviewer). It's not primarily monetized referral; it's instructional. So label ok.\\n\\nReason: article provides natural ways, has named author and medical reviewer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from wikiHow, which is a how-to site with articles written by contributors, with named author and medically reviewed. That seems \\\"ok\\\": it answers the query, has identifiable responsibility (author, medical reviewer). It's not primarily monetized referral; it's instructional. So label ok.\\n\\nReason: article provides natural ways, has named author and medical reviewer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092266,\"ec_transfer_params\":null,\"id\":\"chatcmpl-6c0ddd4b-cbde-4548-b150-348299a6268b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":944,\"completion_tokens\":143,\"total_tokens\":1087,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.78618621826172}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:50.120940+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:48 GMT"
+  },
+  "key": "c7b629da6f4312d4adb1893e0127f9e47382d8a49f4bd794eedba3f17bef5839",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a medically reviewed article from a reputable hospital with a named doctor, directly addressing normal post‑meal glucose levels for diabetics.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Normal Blood Sugar Range: Everything You Need to Know\\\". URL: medanta.org patient-education-blog. The main text shows \\\"Home Blogs Normal Glucose Levels After Eating Normal Glucose Levels After Eating Medically Reviewed By Dr. Priyanka Krishna, DrNB Endocrinology ...\\\". So appears to be a patient education blog from Medanta, a reputable hospital (Kokilaben Dhirubhai Ambani Hospital). It has medical review by a named doctor. Likely provides answer. So label \\\"ok\\\". Reason: medically reviewed article from reputable hospital with named author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page title: \\\"Normal Blood Sugar Range: Everything You Need to Know\\\". URL: medanta.org patient-education-blog. The main text shows \\\"Home Blogs Normal Glucose Levels After Eating Normal Glucose Levels After Eating Medically Reviewed By Dr. Priyanka Krishna, DrNB Endocrinology ...\\\". So appears to be a patient education blog from Medanta, a reputable hospital (Kokilaben Dhirubhai Ambani Hospital). It has medical review by a named doctor. Likely provides answer. So label \\\"ok\\\". Reason: medically reviewed article from reputable hospital with named author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092406,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0069ef54-0f87-4c90-b889-47fe722641dc\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1123,\"completion_tokens\":197,\"total_tokens\":1320,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":49.163429260253906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:10.454565+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:08 GMT"
+  },
+  "key": "1d2880ac83e337bdf27a848bfadd2d1b7b1ef2a938cf097da6ca9f964d9725b5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

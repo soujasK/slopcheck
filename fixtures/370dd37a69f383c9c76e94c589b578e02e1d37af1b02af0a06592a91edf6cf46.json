@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic blog index promoting rewards and offers, not a focused answer to the best credit card for online shopping in India\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"best credit card for online shopping in india\\\". The page is a blog index page of SaveSage Club, with list of articles about rewards, etc. It does not appear to directly answer the query. It's a generic blog with many articles, likely marketing. No clear author. Primary purpose seems to promote SaveSage app and affiliate offers. So label low.\\n\\nWe need reason: page is a generic blog index, not providing specific answer, likely promotional.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"best credit card for online shopping in india\\\". The page is a blog index page of SaveSage Club, with list of articles about rewards, etc. It does not appear to directly answer the query. It's a generic blog with many articles, likely marketing. No clear author. Primary purpose seems to promote SaveSage app and affiliate offers. So label low.\\n\\nWe need reason: page is a generic blog index, not providing specific answer, likely promotional.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092265,\"ec_transfer_params\":null,\"id\":\"chatcmpl-de37ba92-5faa-4677-b9d8-74077fab94b4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":993,\"completion_tokens\":154,\"total_tokens\":1147,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.09526824951172}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:48.126119+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:46 GMT"
+  },
+  "key": "370dd37a69f383c9c76e94c589b578e02e1d37af1b02af0a06592a91edf6cf46",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The India TV article gives a clear, step-by-step guide to checking EPF balance and is authored by a named news desk, providing a reliable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check pf balance using uan number\\\". The page is a news article from India TV Hindi, providing steps to check EPF balance without UAN number, but also likely includes steps using UAN. It is a news article, with author \\\"Edited By: India TV Paisa Desk\\\". It's a reputable media outlet, not affiliate. It provides instructions. So it's \\\"ok\\\" as it answers the query and has identifiable organization (India TV). So label ok.\\n\\nReason: article from India TV provides step-by-step instructions and has clear source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check pf balance using uan number\\\". The page is a news article from India TV Hindi, providing steps to check EPF balance without UAN number, but also likely includes steps using UAN. It is a news article, with author \\\"Edited By: India TV Paisa Desk\\\". It's a reputable media outlet, not affiliate. It provides instructions. So it's \\\"ok\\\" as it answers the query and has identifiable organization (India TV). So label ok.\\n\\nReason: article from India TV provides step-by-step instructions and has clear source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092412,\"ec_transfer_params\":null,\"id\":\"chatcmpl-11aaa97e-b64f-434b-84b2-7313a522c3a2\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1247,\"completion_tokens\":178,\"total_tokens\":1425,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":51.81340408325195}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:16.152746+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:14 GMT"
+  },
+  "key": "ca0dec982357117364e931156bc636cbce7a918d6004301bc7da0f547e955068",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

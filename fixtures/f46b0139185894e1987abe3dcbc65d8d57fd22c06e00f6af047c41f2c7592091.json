@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly lists and discusses top SIP options for 2026 and is published by the identifiable financial institution Bajaj Finserv.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"best sip to invest in 2026\\\". The page is from bajajfinserv.in, a financial services company. The page title: \\\"Best Mutual Fund SIP Plan: Top Options for 2026\\\". The content appears to be a list of mutual fund SIP options, with some description. Likely it's a marketing page but also provides information. It likely has the company's branding, maybe some affiliate links, but it's an official site of Bajaj Finserv, a reputable financial institution. The page seems to answer the query: best SIP to invest in 2026. It lists funds, gives details. It likely has responsibility: Bajaj Finserv as organization. So label \\\"ok\\\". Reason: provides direct answer and is from identifiable organization.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"best sip to invest in 2026\\\". The page is from bajajfinserv.in, a financial services company. The page title: \\\"Best Mutual Fund SIP Plan: Top Options for 2026\\\". The content appears to be a list of mutual fund SIP options, with some description. Likely it's a marketing page but also provides information. It likely has the company's branding, maybe some affiliate links, but it's an official site of Bajaj Finserv, a reputable financial institution. The page seems to answer the query: best SIP to invest in 2026. It lists funds, gives details. It likely has responsibility: Bajaj Finserv as organization. So label \\\"ok\\\". Reason: provides direct answer and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092544,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5fe025eb-ced1-4670-9822-32ae7ee03cb1\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1005,\"completion_tokens\":208,\"total_tokens\":1213,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.158905029296875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:28.493021+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:26 GMT"
+  },
+  "key": "f46b0139185894e1987abe3dcbc65d8d57fd22c06e00f6af047c41f2c7592091",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

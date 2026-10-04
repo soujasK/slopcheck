@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Verge article has a named expert author and provides a detailed buying guide for robot vacuums, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from The Verge, a reputable tech news site. The article is a buying guide for robot vacuum-mops, with author named Jennifer Pattison Tuohy, senior reviewer, with credentials. It includes affiliate disclosure but that's fine. The page purpose is to recommend robot vacuum-mops, which answers query \\\"best robot vacuum cleaner\\\". So it's a good source, with identifiable author and organization. So label \\\"ok\\\". Reason: reputable site with named author providing recommendations.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from The Verge, a reputable tech news site. The article is a buying guide for robot vacuum-mops, with author named Jennifer Pattison Tuohy, senior reviewer, with credentials. It includes affiliate disclosure but that's fine. The page purpose is to recommend robot vacuum-mops, which answers query \\\"best robot vacuum cleaner\\\". So it's a good source, with identifiable author and organization. So label \\\"ok\\\". Reason: reputable site with named author providing recommendations.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092528,\"ec_transfer_params\":null,\"id\":\"chatcmpl-49dc8c1c-b5e3-4143-acb4-70e658e7a6b9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1036,\"completion_tokens\":153,\"total_tokens\":1189,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.395263671875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:12.114423+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:10 GMT"
+  },
+  "key": "ac3a79e0d18a323cced866becd59b4f9d25143c04dcbfd8180938eeb09f914ce",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

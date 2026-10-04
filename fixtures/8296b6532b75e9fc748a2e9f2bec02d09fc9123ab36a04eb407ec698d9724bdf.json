@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑named review list from a reputable testing site (RTINGS) that directly answers the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"best running shoes for beginners\\\". The page is from RTINGS.com, a known review site that does testing and provides detailed reviews. The page title: \\\"The 6 Best Running Shoes for Beginners of 2026 - RTINGS.com\\\". The main text includes description, mentions affiliate links, but also includes testing methodology, scores, etc. It appears to be a genuine review article with a named author (Redd Glass). RTINGS is an organization with identifiable responsibility. So this is \\\"ok\\\". The presence of affiliate links does not make it low. So label ok.\\n\\nProvide reason: page provides a curated list with testing and author, from reputable review site.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"best running shoes for beginners\\\". The page is from RTINGS.com, a known review site that does testing and provides detailed reviews. The page title: \\\"The 6 Best Running Shoes for Beginners of 2026 - RTINGS.com\\\". The main text includes description, mentions affiliate links, but also includes testing methodology, scores, etc. It appears to be a genuine review article with a named author (Redd Glass). RTINGS is an organization with identifiable responsibility. So this is \\\"ok\\\". The presence of affiliate links does not make it low. So label ok.\\n\\nProvide reason: page provides a curated list with testing and author, from reputable review site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092569,\"ec_transfer_params\":null,\"id\":\"chatcmpl-ac9cb537-c438-494c-a8e6-e59d888cbd5f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1029,\"completion_tokens\":196,\"total_tokens\":1225,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.10435104370117}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:52.966273+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:51 GMT"
+  },
+  "key": "8296b6532b75e9fc748a2e9f2bec02d09fc9123ab36a04eb407ec698d9724bdf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

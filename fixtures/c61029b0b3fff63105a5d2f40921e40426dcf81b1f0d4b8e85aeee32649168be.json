@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Google support page directly explains how to recover a hacked Gmail account\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure. The page is Google Support official help page. It directly answers query \\\"how to recover a hacked gmail account\\\". It is official source, clearly responsible. So label ok.\\n\\nProvide reason: official Google support page provides recovery steps.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure. The page is Google Support official help page. It directly answers query \\\"how to recover a hacked gmail account\\\". It is official source, clearly responsible. So label ok.\\n\\nProvide reason: official Google support page provides recovery steps.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092568,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f344fb3f-f249-47b5-b001-b9aba20ad642\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":979,\"completion_tokens\":91,\"total_tokens\":1070,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":37.35436248779297}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:50.918547+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:49 GMT"
+  },
+  "key": "c61029b0b3fff63105a5d2f40921e40426dcf81b1f0d4b8e85aeee32649168be",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

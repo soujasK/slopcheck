@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"CNET article with a named expert author provides a detailed, tested list of budget wireless earbuds.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure. The page is CNET article \\\"Best Budget Earbuds for 2026: Cheap Wireless Picks\\\". It includes author David Carnoy, executive editor, with bio. CNET is reputable tech site, with testing, etc. The page clearly answers query \\\"best budget wireless earbuds\\\". It has author, organization. So label \\\"ok\\\". Reason: reputable source with named author providing recommendations.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure. The page is CNET article \\\"Best Budget Earbuds for 2026: Cheap Wireless Picks\\\". It includes author David Carnoy, executive editor, with bio. CNET is reputable tech site, with testing, etc. The page clearly answers query \\\"best budget wireless earbuds\\\". It has author, organization. So label \\\"ok\\\". Reason: reputable source with named author providing recommendations.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092557,\"ec_transfer_params\":null,\"id\":\"chatcmpl-ca567afc-f6b3-4b36-8ea6-f01fa2635fbf\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":992,\"completion_tokens\":129,\"total_tokens\":1121,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.358909606933594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:39.788978+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:38 GMT"
+  },
+  "key": "1417c2d15237c29e7f5ee3d631c52d27ac95578f57327b704ba41dda136b6bc6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

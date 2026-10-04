@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Android help page directly explains how to block spam calls on Android.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from android.com (official Android website). Title: How to Stop and Block Unwanted Spam Calls | Android. The content appears to be an official help article. It provides steps. Likely an official source, with responsibility (Google/Android). So it's \\\"ok\\\". The query: \\\"how to block spam calls on android\\\". This page directly answers. So label ok.\\n\\nProvide reason: official Android help article that directly explains how to block spam calls.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from android.com (official Android website). Title: How to Stop and Block Unwanted Spam Calls | Android. The content appears to be an official help article. It provides steps. Likely an official source, with responsibility (Google/Android). So it's \\\"ok\\\". The query: \\\"how to block spam calls on android\\\". This page directly answers. So label ok.\\n\\nProvide reason: official Android help article that directly explains how to block spam calls.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092272,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4996d912-59ff-45df-aff0-c961acede8d3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":983,\"completion_tokens\":145,\"total_tokens\":1128,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.1634521484375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:56.415323+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:54 GMT"
+  },
+  "key": "ee32ef8ed1b8d3cf67415f2cad4434ba2bfbde499053882994458b0960908291",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑named guide from a clear organization on paying off credit card debt.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page as source for query \\\"how to get out of credit card debt\\\". The page is from americancreditfoundation.org, appears to be an article with author Mike Peterson, date July 1 2025. It provides advice on getting out of credit card debt without hurting credit. This seems to be a genuine informational article, with named author and organization (American Credit Foundation). Likely \\\"ok\\\". Need to ensure not low: It's not a product roundup, not affiliate heavy. It's a financial advice article from a presumably nonprofit organization. So label ok.\\n\\nReason: article provides detailed advice and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide label for this page as source for query \\\"how to get out of credit card debt\\\". The page is from americancreditfoundation.org, appears to be an article with author Mike Peterson, date July 1 2025. It provides advice on getting out of credit card debt without hurting credit. This seems to be a genuine informational article, with named author and organization (American Credit Foundation). Likely \\\"ok\\\". Need to ensure not low: It's not a product roundup, not affiliate heavy. It's a financial advice article from a presumably nonprofit organization. So label ok.\\n\\nReason: article provides detailed advice and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092210,\"ec_transfer_params\":null,\"id\":\"chatcmpl-be04c25d-1a99-4243-84a8-e037f7036906\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1016,\"completion_tokens\":173,\"total_tokens\":1189,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.12253952026367}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:36:53.462219+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:36:51 GMT"
+  },
+  "key": "e6c29a52491997be64082deac352823d652c1f6c532f132cf0b338560a872c1c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

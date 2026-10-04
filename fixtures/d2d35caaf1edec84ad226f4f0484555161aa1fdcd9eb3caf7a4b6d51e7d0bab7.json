@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers specific natural uric acid reduction advice and is authored by a named writer for Times Now, an identifiable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from Times Now (news site) health article, authored by Ashima Sharda Mahindra, with date. It provides advice: water, lemon shot, coffee, etc. It seems to be a genuine article giving natural ways. It has a named author and organization (Times Now). So likely \\\"ok\\\". Need to consider if it's monetized referral? Not obvious; seems informational. So label ok.\\n\\nReason: article provides natural uric acid reduction tips and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to reduce uric acid naturally\\\". The page is from Times Now (news site) health article, authored by Ashima Sharda Mahindra, with date. It provides advice: water, lemon shot, coffee, etc. It seems to be a genuine article giving natural ways. It has a named author and organization (Times Now). So likely \\\"ok\\\". Need to consider if it's monetized referral? Not obvious; seems informational. So label ok.\\n\\nReason: article provides natural uric acid reduction tips and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092524,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8e5a3534-e06b-4fe6-b3a9-4e6feaaf2b73\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1055,\"completion_tokens\":170,\"total_tokens\":1225,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.15889358520508}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:42:07.813189+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:42:06 GMT"
+  },
+  "key": "d2d35caaf1edec84ad226f4f0484555161aa1fdcd9eb3caf7a4b6d51e7d0bab7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

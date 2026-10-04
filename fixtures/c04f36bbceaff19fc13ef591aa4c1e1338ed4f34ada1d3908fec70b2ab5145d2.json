@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a sales product listing for a specific RO purifier, not a comparative answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best water purifier for home ro or uv\\\". The page is a product page for AO Smith India Z2 Pro Under the Counter RO Water Purifier. It's a commercial product page, likely selling product. The query asks for best water purifier for home ro or uv. This page is a product listing, not a comparative review. It's primarily for sales, with purchase options. That is monetised referral (direct sales). According to guidelines, such pages are low if primary purpose is monetised referral or mass-produced content rather than answering query. This page does not provide comparative analysis, just product details. So label low.\\n\\nWe need reason: page is a commercial product listing, not a comparative answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best water purifier for home ro or uv\\\". The page is a product page for AO Smith India Z2 Pro Under the Counter RO Water Purifier. It's a commercial product page, likely selling product. The query asks for best water purifier for home ro or uv. This page is a product listing, not a comparative review. It's primarily for sales, with purchase options. That is monetised referral (direct sales). According to guidelines, such pages are low if primary purpose is monetised referral or mass-produced content rather than answering query. This page does not provide comparative analysis, just product details. So label low.\\n\\nWe need reason: page is a commercial product listing, not a comparative answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092366,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4016e6e9-5048-4706-8c64-69622e3482e3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1062,\"completion_tokens\":196,\"total_tokens\":1258,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":47.15434646606445}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:31.347631+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:29 GMT"
+  },
+  "key": "c04f36bbceaff19fc13ef591aa4c1e1338ed4f34ada1d3908fec70b2ab5145d2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

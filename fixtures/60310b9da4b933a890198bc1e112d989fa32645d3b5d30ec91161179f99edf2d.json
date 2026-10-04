@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Healthline provides a detailed, sourced guide on naturally lowering uric acid and is a clearly identified reputable health organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is Healthline article \\\"How to Reduce Uric Acid Naturally: What to Eat and What to Avoid\\\". Healthline is a reputable health information site, with editorial standards, usually includes author name and citations. The excerpt shows content with references to studies, advice. Likely an \\\"ok\\\" page: it answers query, has identifiable organization (Healthline). So label ok.\\n\\nReason: reputable health site with clear answer.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is Healthline article \\\"How to Reduce Uric Acid Naturally: What to Eat and What to Avoid\\\". Healthline is a reputable health information site, with editorial standards, usually includes author name and citations. The excerpt shows content with references to studies, advice. Likely an \\\"ok\\\" page: it answers query, has identifiable organization (Healthline). So label ok.\\n\\nReason: reputable health site with clear answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092411,\"ec_transfer_params\":null,\"id\":\"chatcmpl-ff413bf3-9b1d-4835-b793-97e114d076a4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":992,\"completion_tokens\":142,\"total_tokens\":1134,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.245269775390625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:13.836336+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:12 GMT"
+  },
+  "key": "60310b9da4b933a890198bc1e112d989fa32645d3b5d30ec91161179f99edf2d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

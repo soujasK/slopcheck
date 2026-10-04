@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Healthline article provides medically reviewed guidance on post‑meal blood sugar targets for diabetics and has a clear organizational source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query: \\\"normal blood sugar level after eating for diabetics\\\". The page is a Healthline article about blood sugar levels based on age, includes chart, likely includes target ranges for fasting and postprandial (after eating). Healthline is a reputable health information site, with medical review, authors, citations. The excerpt shows key takeaways, mentions guidelines, etc. It likely answers the query. It has identifiable organization (Healthline) and likely author. So label \\\"ok\\\". Reason: page provides medically reviewed info on blood sugar targets for diabetics, including post-meal levels.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query: \\\"normal blood sugar level after eating for diabetics\\\". The page is a Healthline article about blood sugar levels based on age, includes chart, likely includes target ranges for fasting and postprandial (after eating). Healthline is a reputable health information site, with medical review, authors, citations. The excerpt shows key takeaways, mentions guidelines, etc. It likely answers the query. It has identifiable organization (Healthline) and likely author. So label \\\"ok\\\". Reason: page provides medically reviewed info on blood sugar targets for diabetics, including post-meal levels.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092347,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5935b242-40aa-4947-895b-0e1fe7afb106\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":949,\"completion_tokens\":177,\"total_tokens\":1126,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.263458251953125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:10.756971+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:09 GMT"
+  },
+  "key": "a917141211609e288cf1ceaf7b1ba13ace4f381d52ddd67e5d94f40cc728c487",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

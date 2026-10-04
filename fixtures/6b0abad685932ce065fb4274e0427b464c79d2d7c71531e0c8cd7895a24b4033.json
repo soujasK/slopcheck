@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The India Today article directly discusses the pros and cons of term insurance and includes a named author, providing a genuine answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"is term insurance worth it\\\". The page is an article from India Today, a reputable news outlet. It appears to discuss pros and cons, likely answering the query. It has author name (Aastha Sachdeva) and organization (India Today). So it is a genuine answer, not just affiliate. So label \\\"ok\\\". Reason: article from reputable source with author, directly addresses pros/cons of term insurance.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"is term insurance worth it\\\". The page is an article from India Today, a reputable news outlet. It appears to discuss pros and cons, likely answering the query. It has author name (Aastha Sachdeva) and organization (India Today). So it is a genuine answer, not just affiliate. So label \\\"ok\\\". Reason: article from reputable source with author, directly addresses pros/cons of term insurance.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092373,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4a82e246-e50e-4a90-9b0d-0ba7c378f4d1\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":994,\"completion_tokens\":149,\"total_tokens\":1143,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.78617858886719}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:39:35.744349+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:39:34 GMT"
+  },
+  "key": "6b0abad685932ce065fb4274e0427b464c79d2d7c71531e0c8cd7895a24b4033",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

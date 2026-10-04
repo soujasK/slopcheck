@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The ZDNET article directly answers the query with clear instructions and includes a named author and reputable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is ZDNET article, with author Kerry Wan, Senior Contributing Editor, edited by Aly Windsor. It's a tech article giving instructions. This seems to be a genuine answer to query, with identifiable author and organization (ZDNET). So label \\\"ok\\\". Reason: article provides detailed steps and has named author and reputable source.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is ZDNET article, with author Kerry Wan, Senior Contributing Editor, edited by Aly Windsor. It's a tech article giving instructions. This seems to be a genuine answer to query, with identifiable author and organization (ZDNET). So label \\\"ok\\\". Reason: article provides detailed steps and has named author and reputable source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092439,\"ec_transfer_params\":null,\"id\":\"chatcmpl-088e3ff8-d8d3-48e1-9b36-35e06907ea05\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1031,\"completion_tokens\":125,\"total_tokens\":1156,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.32707977294922}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:40:43.224647+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:40:41 GMT"
+  },
+  "key": "fd78a479ffea7ecb64c18637d7a51adff89827e77c71ee3135b4f39e816744de",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

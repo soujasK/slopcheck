@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with specific guidance and includes a named author and clear organizational source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"how much emergency fund should i have\\\". The page title: \\\"Emergency Funds – Why have it and Where to Invest It\\\". The content includes \\\"An emergency fund should ideally cover 3 to 6 months of your essential living costs. If you have an unstable income, the emergency fund should cover 6 to 12 months.\\\" That directly answers the query. The page appears to be from cleartax.in, which is a financial services site (ClearTax). It includes author name \\\"REPAKA PAVAN ADITYA\\\". So there is identifiable author and organization. The page is not just affiliate; it's providing advice. So label \\\"ok\\\". Reason: provides direct answer with author and organization.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"how much emergency fund should i have\\\". The page title: \\\"Emergency Funds – Why have it and Where to Invest It\\\". The content includes \\\"An emergency fund should ideally cover 3 to 6 months of your essential living costs. If you have an unstable income, the emergency fund should cover 6 to 12 months.\\\" That directly answers the query. The page appears to be from cleartax.in, which is a financial services site (ClearTax). It includes author name \\\"REPAKA PAVAN ADITYA\\\". So there is identifiable author and organization. The page is not just affiliate; it's providing advice. So label \\\"ok\\\". Reason: provides direct answer with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092261,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2254426c-30a2-4231-a3c7-ec95fe24bb25\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":975,\"completion_tokens\":193,\"total_tokens\":1168,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.181636810302734}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:46.602251+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:45 GMT"
+  },
+  "key": "ac469ae030b04cbe62d84a8f64fa1da919d77cd110bebf6ceb82d27012ce688c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

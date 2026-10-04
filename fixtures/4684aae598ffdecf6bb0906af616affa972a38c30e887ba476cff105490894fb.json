@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page, from a named diabetes education foundation, directly answers the query with specific post‑meal blood sugar targets.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is a Q&A from Diabetes Action Research and Education Foundation, likely an organization. It includes a Q&A: \\\"What is the normal range that your blood sugar should be if you test it at home? A: For a basically healthy person, a good fasting is under 100, and 80-90 is even better for most people. If you test two hours after a meal, under 120 is ideal.\\\" That directly answers the query. The page appears to be from a nonprofit organization (Diabetes Action Research and Education Foundation). It likely has identifiable organization. So label \\\"ok\\\". Reason: provides direct answer and is from reputable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page is a Q&A from Diabetes Action Research and Education Foundation, likely an organization. It includes a Q&A: \\\"What is the normal range that your blood sugar should be if you test it at home? A: For a basically healthy person, a good fasting is under 100, and 80-90 is even better for most people. If you test two hours after a meal, under 120 is ideal.\\\" That directly answers the query. The page appears to be from a nonprofit organization (Diabetes Action Research and Education Foundation). It likely has identifiable organization. So label \\\"ok\\\". Reason: provides direct answer and is from reputable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092603,\"ec_transfer_params\":null,\"id\":\"chatcmpl-94262d43-7461-4f81-b9ea-afa8a0061d27\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1054,\"completion_tokens\":201,\"total_tokens\":1255,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":47.2407112121582}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:26.219388+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:24 GMT"
+  },
+  "key": "4684aae598ffdecf6bb0906af616affa972a38c30e887ba476cff105490894fb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

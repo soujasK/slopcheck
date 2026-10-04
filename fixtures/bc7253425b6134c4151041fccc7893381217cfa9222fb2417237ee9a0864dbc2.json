@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from Economic Times gives clear, relevant steps and is from a reputable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"upi payment failed but money debited what to do\\\". The page is from marathi.economictimes.com, a subdomain of Economic Times (a reputable news outlet). Title: \\\"What to do if UPI payment failed but money deducted : UPI पेमेंट फेल अन् पैसे कट झाले? घाबरू नका, 'या' 8 सोप्या स्टेप्सने 1 तासात पैसे मिळवा परत\\\". The content appears to give steps, referencing RBI, NPCI, and includes detailed instructions. Likely an article providing answer. It seems to have identifiable organization (Economic Times). Likely \\\"ok\\\". There's no author visible in snippet, but organization is clear. So label ok.\\n\\nReason: page from reputable news outlet provides detailed steps to resolve issue.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"upi payment failed but money debited what to do\\\". The page is from marathi.economictimes.com, a subdomain of Economic Times (a reputable news outlet). Title: \\\"What to do if UPI payment failed but money deducted : UPI पेमेंट फेल अन् पैसे कट झाले? घाबरू नका, 'या' 8 सोप्या स्टेप्सने 1 तासात पैसे मिळवा परत\\\". The content appears to give steps, referencing RBI, NPCI, and includes detailed instructions. Likely an article providing answer. It seems to have identifiable organization (Economic Times). Likely \\\"ok\\\". There's no author visible in snippet, but organization is clear. So label ok.\\n\\nReason: page from reputable news outlet provides detailed steps to resolve issue.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092607,\"ec_transfer_params\":null,\"id\":\"chatcmpl-92acf253-1b25-41a4-ac2f-16f1f5a03446\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1380,\"completion_tokens\":216,\"total_tokens\":1596,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":58.636104583740234}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:43:30.341214+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:43:28 GMT"
+  },
+  "key": "bc7253425b6134c4151041fccc7893381217cfa9222fb2417237ee9a0864dbc2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

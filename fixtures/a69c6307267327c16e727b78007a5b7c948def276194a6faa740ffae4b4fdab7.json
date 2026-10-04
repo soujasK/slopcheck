@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly discusses ashwagandha side effects and includes a named author, indicating a genuine answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page titled \\\"10 Ashwagandha Side Effects You Should Know - Masala Monk\\\". It's a blog article posted May 27 2025 by Shashank Aggarwal. It appears to discuss side effects, referencing scientific research, etc. The query: \\\"side effects of ashwagandya\\\". The page seems to answer the query directly, providing side effects. It has a named author (Shashank Aggarwal) and presumably an organization (Masala Monk). It's not obviously a low-quality affiliate roundup; it's a content article. It may have affiliate links but not shown. It seems to be a genuine article. So label \\\"ok\\\". Reason: provides detailed answer with named author.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page titled \\\"10 Ashwagandha Side Effects You Should Know - Masala Monk\\\". It's a blog article posted May 27 2025 by Shashank Aggarwal. It appears to discuss side effects, referencing scientific research, etc. The query: \\\"side effects of ashwagandya\\\". The page seems to answer the query directly, providing side effects. It has a named author (Shashank Aggarwal) and presumably an organization (Masala Monk). It's not obviously a low-quality affiliate roundup; it's a content article. It may have affiliate links but not shown. It seems to be a genuine article. So label \\\"ok\\\". Reason: provides detailed answer with named author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791092239,\"ec_transfer_params\":null,\"id\":\"chatcmpl-62069eab-ffaa-472c-9e15-76ec15fbec2b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1006,\"completion_tokens\":204,\"total_tokens\":1210,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.91799545288086}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-04T05:37:22.935335+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sun, 04 Oct 2026 05:37:21 GMT"
+  },
+  "key": "a69c6307267327c16e727b78007a5b7c948def276194a6faa740ffae4b4fdab7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}
