@@ -1,6 +1,7 @@
 """Query relevance: does the page address *this* query?
 
-Coverage = share of the query's content words (lowercased, stopwords removed)
+Coverage = share of the query's content words (lowercased, stopwords removed,
+lightly stemmed)
 that appear in the page's title + H1-H3 headings, and in the first 5,000
 characters of its main text. Deterministic and explainable ("the page's title
 mentions 1 of 4 query terms"). Relevance depends on the (page, query) pair, so
@@ -59,8 +60,20 @@ STOPWORDS = frozenset(
 _TOKEN = re.compile(r"[a-z0-9]+")
 
 
+# Light suffix stemming so "acidity"/"acid", "symptoms"/"symptom", "investing"/
+# "invest" match. Longest suffix first; the stem keeps at least 3 characters.
+_SUFFIXES = ("ities", "ity", "ies", "ing", "ed", "es", "s")
+
+
+def stem(token: str) -> str:
+    for suffix in _SUFFIXES:
+        if token.endswith(suffix) and len(token) - len(suffix) >= 3:
+            return token[: -len(suffix)]
+    return token
+
+
 def terms(text: str) -> set[str]:
-    return {t for t in _TOKEN.findall(text.lower()) if len(t) > 1 and t not in STOPWORDS}
+    return {stem(t) for t in _TOKEN.findall(text.lower()) if len(t) > 1 and t not in STOPWORDS}
 
 
 def coverage(query: str, text: str) -> float:

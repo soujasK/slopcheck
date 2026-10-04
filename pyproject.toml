@@ -52,6 +52,7 @@ ignore = ["S101"]  # asserts are fine; tests and invariants
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S105", "S106", "S108", "PT018"]
+"slopwatch/report/observatory.py" = ["E501"]  # HTML/CSS/SVG templates
 
 [tool.mypy]
 python_version = "3.11"

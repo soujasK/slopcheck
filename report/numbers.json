@@ -1,0 +1,454 @@
+{
+  "rubric_version": 3,
+  "rubric_low_band": 0.5774,
+  "n_searches": 100,
+  "n_rows": 822,
+  "n_article_rows": 660,
+  "n_scored_rows": 510,
+  "collected": "2026-10-03",
+  "overall_india": {
+    "value": 0.05668934240362812,
+    "ci": [
+      0.03197954721388508,
+      0.08728525168953946
+    ],
+    "n_scored": 441,
+    "n_rows": 555,
+    "coverage": 0.7945945945945946,
+    "bounds": [
+      0.04504504504504504,
+      0.25045045045045045
+    ],
+    "corrected": null
+  },
+  "by_engine": {
+    "duckduckgo": {
+      "value": 0.033783783783783786,
+      "ci": [
+        0.006756756756756757,
+        0.06329336780174719
+      ],
+      "n_scored": 148,
+      "n_rows": 192,
+      "coverage": 0.7708333333333334,
+      "bounds": [
+        0.026041666666666668,
+        0.2552083333333333
+      ],
+      "corrected": null
+    },
+    "google": {
+      "value": 0.09239130434782608,
+      "ci": [
+        0.04944885361552028,
+        0.1443865121806298
+      ],
+      "n_scored": 184,
+      "n_rows": 228,
+      "coverage": 0.8070175438596491,
+      "bounds": [
+        0.07456140350877193,
+        0.2675438596491228
+      ],
+      "corrected": null
+    },
+    "yahoo": {
+      "value": 0.027522935779816515,
+      "ci": [
+        0.0,
+        0.06896551724137931
+      ],
+      "n_scored": 109,
+      "n_rows": 135,
+      "coverage": 0.8074074074074075,
+      "bounds": [
+        0.022222222222222223,
+        0.21481481481481482
+      ],
+      "corrected": null
+    }
+  },
+  "by_category": {
+    "health": {
+      "value": 0.05785123966942149,
+      "ci": [
+        0.008259464142895228,
+        0.125
+      ],
+      "n_scored": 121,
+      "n_rows": 148,
+      "coverage": 0.8175675675675675,
+      "bounds": [
+        0.0472972972972973,
+        0.22972972972972974
+      ],
+      "corrected": null
+    },
+    "personal_finance": {
+      "value": 0.040983606557377046,
+      "ci": [
+        0.007998412698412699,
+        0.10128047351148609
+      ],
+      "n_scored": 122,
+      "n_rows": 152,
+      "coverage": 0.8026315789473685,
+      "bounds": [
+        0.03289473684210526,
+        0.23026315789473684
+      ],
+      "corrected": null
+    },
+    "product_reviews": {
+      "value": 0.08602150537634409,
+      "ci": [
+        0.027206287920573634,
+        0.19402985074626866
+      ],
+      "n_scored": 93,
+      "n_rows": 128,
+      "coverage": 0.7265625,
+      "bounds": [
+        0.0625,
+        0.3359375
+      ],
+      "corrected": null
+    },
+    "tech_howto": {
+      "value": 0.047619047619047616,
+      "ci": [
+        0.012654272151898734,
+        0.08333333333333333
+      ],
+      "n_scored": 105,
+      "n_rows": 127,
+      "coverage": 0.8267716535433071,
+      "bounds": [
+        0.03937007874015748,
+        0.2125984251968504
+      ],
+      "corrected": null
+    }
+  },
+  "by_rank": {
+    "01": {
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_scored": 24,
+      "n_rows": 29,
+      "coverage": 0.8275862068965517,
+      "bounds": [
+        0.0,
+        0.1724137931034483
+      ],
+      "corrected": null
+    },
+    "02": {
+      "value": 0.12,
+      "ci": [
+        0.0,
+        0.28
+      ],
+      "n_scored": 25,
+      "n_rows": 32,
+      "coverage": 0.78125,
+      "bounds": [
+        0.09375,
+        0.3125
+      ],
+      "corrected": null
+    },
+    "03": {
+      "value": 0.06896551724137931,
+      "ci": [
+        0.0,
+        0.1724137931034483
+      ],
+      "n_scored": 29,
+      "n_rows": 34,
+      "coverage": 0.8529411764705882,
+      "bounds": [
+        0.058823529411764705,
+        0.20588235294117646
+      ],
+      "corrected": null
+    },
+    "04": {
+      "value": 0.045454545454545456,
+      "ci": [
+        0.0,
+        0.13636363636363635
+      ],
+      "n_scored": 22,
+      "n_rows": 27,
+      "coverage": 0.8148148148148148,
+      "bounds": [
+        0.037037037037037035,
+        0.2222222222222222
+      ],
+      "corrected": null
+    },
+    "05": {
+      "value": 0.15,
+      "ci": [
+        0.0,
+        0.3
+      ],
+      "n_scored": 20,
+      "n_rows": 27,
+      "coverage": 0.7407407407407407,
+      "bounds": [
+        0.1111111111111111,
+        0.37037037037037035
+      ],
+      "corrected": null
+    },
+    "06": {
+      "value": 0.16666666666666666,
+      "ci": [
+        0.0,
+        0.3333333333333333
+      ],
+      "n_scored": 18,
+      "n_rows": 21,
+      "coverage": 0.8571428571428571,
+      "bounds": [
+        0.14285714285714285,
+        0.2857142857142857
+      ],
+      "corrected": null
+    },
+    "07": {
+      "value": 0.09090909090909091,
+      "ci": [
+        0.0,
+        0.22727272727272727
+      ],
+      "n_scored": 22,
+      "n_rows": 28,
+      "coverage": 0.7857142857142857,
+      "bounds": [
+        0.07142857142857142,
+        0.2857142857142857
+      ],
+      "corrected": null
+    },
+    "08": {
+      "value": 0.14285714285714285,
+      "ci": [
+        0.0,
+        0.35714285714285715
+      ],
+      "n_scored": 14,
+      "n_rows": 18,
+      "coverage": 0.7777777777777778,
+      "bounds": [
+        0.1111111111111111,
+        0.3333333333333333
+      ],
+      "corrected": null
+    },
+    "09": {
+      "value": 0.1111111111111111,
+      "ci": [
+        0.0,
+        0.3333333333333333
+      ],
+      "n_scored": 9,
+      "n_rows": 11,
+      "coverage": 0.8181818181818182,
+      "bounds": [
+        0.09090909090909091,
+        0.2727272727272727
+      ],
+      "corrected": null
+    },
+    "10": {
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_scored": 1,
+      "n_rows": 1,
+      "coverage": 1.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "corrected": null
+    }
+  },
+  "india_vs_us": {
+    "IN": {
+      "value": 0.07142857142857142,
+      "ci": [
+        0.02197802197802198,
+        0.13699914383561637
+      ],
+      "n_scored": 84,
+      "n_rows": 104,
+      "coverage": 0.8076923076923077,
+      "bounds": [
+        0.057692307692307696,
+        0.25
+      ],
+      "corrected": null
+    },
+    "US": {
+      "value": 0.21739130434782608,
+      "ci": [
+        0.1147423887587822,
+        0.3283582089552239
+      ],
+      "n_scored": 69,
+      "n_rows": 105,
+      "coverage": 0.6571428571428571,
+      "bounds": [
+        0.14285714285714285,
+        0.4857142857142857
+      ],
+      "corrected": null
+    }
+  },
+  "comparisons": {
+    "google_in_vs_google_us": {
+      "diff": -0.12535714285714286,
+      "ci": [
+        -0.275,
+        0.010622023809523661
+      ],
+      "p": 0.1179,
+      "n_pairs": 20
+    },
+    "google_in_vs_duckduckgo_in": {
+      "diff": 0.04672619047619048,
+      "ci": [
+        -0.018333333333333333,
+        0.12840178571428565
+      ],
+      "p": 0.2389,
+      "n_pairs": 20
+    },
+    "google_in_vs_yahoo_in": {
+      "diff": 0.05047619047619047,
+      "ci": [
+        -0.017380952380952375,
+        0.13333333333333333
+      ],
+      "p": 0.2709,
+      "n_pairs": 20
+    }
+  },
+  "platform_share": {
+    "DuckDuckGo IN": {
+      "share": 0.030303030303030304,
+      "shop": 5,
+      "forum": 1
+    },
+    "Google IN": {
+      "share": 0.30275229357798167,
+      "video": 41,
+      "social": 16,
+      "forum": 27,
+      "shop": 14,
+      "app_store": 1
+    },
+    "Google US": {
+      "share": 0.33121019108280253,
+      "forum": 23,
+      "social": 7,
+      "video": 15,
+      "shop": 3,
+      "app_store": 4
+    },
+    "Yahoo IN": {
+      "share": 0.03571428571428571,
+      "shop": 5
+    }
+  },
+  "ai_overview": {
+    "DuckDuckGo IN": "0/20",
+    "Google IN": "39/40",
+    "Google US": "20/20",
+    "Yahoo IN": "0/20"
+  },
+  "low_reasons": [
+    [
+      "no named author",
+      95
+    ],
+    [
+      "no author or date",
+      87
+    ],
+    [
+      "title and headings cover 0% of the query's words",
+      61
+    ],
+    [
+      "main text covers 0% of the query's words",
+      58
+    ],
+    [
+      "the site sells products on this page",
+      24
+    ],
+    [
+      "title and headings cover 25% of the query's words",
+      12
+    ]
+  ],
+  "validation": {
+    "round2_test": {
+      "n": 71,
+      "precision": 0.3684,
+      "precision_ci": [
+        0.1915,
+        0.5896
+      ],
+      "recall": 0.35,
+      "recall_ci": [
+        0.1812,
+        0.5671
+      ],
+      "f1": 0.359,
+      "specificity": 0.7647,
+      "baselines": [
+        {
+          "name": "any affiliate link",
+          "flagged": 2,
+          "precision_low": 0.0,
+          "recall_low": 0.0,
+          "f1_low": 0.0
+        },
+        {
+          "name": "no author and no date",
+          "flagged": 15,
+          "precision_low": 0.4667,
+          "recall_low": 0.35,
+          "f1_low": 0.4
+        },
+        {
+          "name": "'best X' listicle",
+          "flagged": 5,
+          "precision_low": 0.0,
+          "recall_low": 0.0,
+          "f1_low": 0.0
+        },
+        {
+          "name": "random (same flag rate)",
+          "flagged": 19,
+          "precision_low": 0.2817,
+          "recall_low": 0.2676,
+          "f1_low": 0.2745
+        }
+      ]
+    }
+  },
+  "corrected_with": null,
+  "rogan_gladen_overall": null
+}

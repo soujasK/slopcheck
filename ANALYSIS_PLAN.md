@@ -116,6 +116,13 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   `mixed` = half of it. The result is frozen as rubric v3 and tested once on
   round 3.
 
+- 2026-10-04: **relevance stemming before the round-3 test.** Building the
+  observatory (no labels involved) showed exact-word matching marking good pages
+  off-query ("acidity" vs "acid"; Harvard Health scored 0% for an acidity query).
+  Light suffix stemming was added; signals were recomputed and rubric v3 refitted
+  on the 155 development items with the same procedure before any round-3
+  evaluation. The pre-stemming v3 is in git history.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

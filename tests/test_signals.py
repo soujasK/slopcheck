@@ -341,3 +341,14 @@ def test_sells_directly(html: str, expected: bool) -> None:
 def test_extract_sets_sells_directly(lists: DomainLists) -> None:
     html = (HTML / "affiliate_listicle.html").read_text(encoding="utf-8")
     assert extract(LISTICLE_URL, html, lists).signals.sells_directly is False
+
+
+def test_relevance_stemming_matches_word_forms() -> None:
+    from slopwatch.signals.relevance import coverage, stem
+
+    assert stem("acidity") == "acid" and stem("symptoms") == "symptom"
+    assert stem("gas") == "gas" and stem("is") == "is"  # too short to strip
+    assert coverage("best medicine for acidity", "Antacids for acid reflux: which medicine") == 1.0
+    assert coverage("vitamin d deficiency symptoms", "Symptom of vitamin deficiency") == 1.0
+    assert coverage("the of and", "anything") == 1.0  # no content words
+    assert coverage("fastag balance", "mattress reviews") == 0.0
