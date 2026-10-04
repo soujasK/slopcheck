@@ -877,7 +877,16 @@ def serve(
     )
     serp = SerpClient(http, settings.serpapi_api_key, project=ledger, max_credits=max_credits)
     live = SlopFilter.live(PageFetcher(http, max_bytes=settings.page_max_bytes))
-    server = make_server(App(serp, live), port)
+    agent = None
+    if settings.gemini_api_key is not None:
+        backend = GeminiBackend(http, settings.gemini_api_key, min_interval=4.0)
+
+        def agent(question: str, sources: list[DemoSource]) -> tuple[str, list[int]]:
+            return ask_agent(backend, question, sources)
+
+    else:
+        console.print("serve: GEMINI_API_KEY not set; pages are scored but agent answers are off")
+    server = make_server(App(serp, live, agent), port)
     url = f"http://127.0.0.1:{port}/"
     console.print(f"SlopWatch Live at {url}  (Ctrl+C to stop; up to {max_credits} credits)")
     console.print(credits_line(0, ledger))

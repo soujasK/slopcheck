@@ -25,7 +25,7 @@ from typing import Any, Literal
 
 from slopwatch.config import REPO_ROOT
 from slopwatch.models import Band, RelevanceRecord, SignalRecord, Signals
-from slopwatch.pages import PageFetcher
+from slopwatch.pages import PageFetcher, make_excerpt
 from slopwatch.platform import PlatformList, load_platforms
 from slopwatch.queries import load_plan
 from slopwatch.score import Rubric, load_rubric, score
@@ -75,6 +75,9 @@ class SlopFilter:
     _offline_signals: dict[str, SignalRecord] = field(default_factory=dict)
     _offline_relevance: dict[tuple[str, str], RelevanceRecord] = field(default_factory=dict)
     _offline_unscored: dict[str, str] = field(default_factory=dict)
+    # <=300-char main-text excerpt per page (what an agent would read); filled as pages
+    # are assessed live, or from data/pages.jsonl offline.
+    excerpts: dict[str, str] = field(default_factory=dict)
     _query_ids: dict[str, str] = field(default_factory=dict)
 
     # -- construction ------------------------------------------------------------
@@ -88,11 +91,9 @@ class SlopFilter:
         }
         from slopwatch.models import Page
 
-        f._offline_unscored = {
-            p.url: p.unscored_reason
-            for p in read_jsonl(data_dir / PAGES, Page)
-            if p.unscored_reason is not None
-        }
+        pages = read_jsonl(data_dir / PAGES, Page)
+        f._offline_unscored = {p.url: p.unscored_reason for p in pages if p.unscored_reason}
+        f.excerpts = {p.url: p.excerpt for p in pages if p.excerpt}
         f._query_ids = {s.text.lower(): s.id for s in load_plan(data_dir / "queries.yaml").specs}
         return f
 
@@ -121,6 +122,7 @@ class SlopFilter:
             if fetched.html is None:
                 return _PageFacts(None, None, fetched.page.unscored_reason or "fetch_failed")
             ex = extract(url, fetched.html, self.lists)
+            self.excerpts[url] = make_excerpt(ex.main_text)
             title_cov, text_cov = relevance(query, parse_page(url, fetched.html))
             return _PageFacts(ex.signals, ex.simhash, None, title_cov, text_cov)
         rec = self._offline_signals.get(url)

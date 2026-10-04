@@ -114,7 +114,7 @@ tools = [web_search()]                                    # same tool, slop filt
 **CLI**
 
 ```bash
-slopwatch serve                                                # local web app: search anything, watch the filter
+slopwatch serve                                                # local app: ask anything, compare the agent's answer with and without the filter
 slopwatch search "is it safe to take dolo 650 every day"      # live: SerpApi + filter
 slopwatch filter --serp-json results.json --threshold 0.6      # pipe-friendly
 slopwatch report --cache-mode replay                           # rebuild the observatory

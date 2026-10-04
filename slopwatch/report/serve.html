@@ -6,12 +6,13 @@
 <title>SlopWatch Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Newsreader:opsz,wght@6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Same system as the story page: one column, clear teal vs ochre silt on mist. */
+/* Same system as the story page. Two answers side by side are the point of the page;
+   the result list underneath is the evidence. Teal = clear, ochre silt = slop. */
 :root {
   --bg: #edf1ef; --surface: #f6f8f7; --ink: #142725; --ink-2: #455754; --ink-3: #74837f;
-  --line: #d3dcd9; --clean: #2e7f72; --silt: #b8732a; --silt-soft: #f0dcc4;
+  --line: #d3dcd9; --clean: #2e7f72; --clean-soft: #d6ebe7; --silt: #b8732a; --silt-soft: #f2e1cd;
   --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body: "Newsreader", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
@@ -20,51 +21,81 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
-    --line: #233b37; --clean: #55aa9b; --silt: #d8964d; --silt-soft: #4a3520; color-scheme: dark;
+    --line: #233b37; --clean: #55aa9b; --clean-soft: #173a35; --silt: #d8964d; --silt-soft: #3d2b19;
+    color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
-  --line: #233b37; --clean: #55aa9b; --silt: #d8964d; --silt-soft: #4a3520; color-scheme: dark;
+  --line: #233b37; --clean: #55aa9b; --clean-soft: #173a35; --silt: #d8964d; --silt-soft: #3d2b19;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.08rem/1.55 var(--body); padding-inline: 16px; }
-.wrap { max-width: 50rem; margin: 0 auto; padding-block: 2.5rem 4rem; display: grid; gap: 2rem; }
+.wrap { max-width: 62rem; margin: 0 auto; padding-block: 2.25rem 4rem; display: grid; gap: 1.75rem; }
 header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
 .mark { font: 700 1.05rem/1 var(--display); }
 .mark span { color: var(--silt); }
-.credits { font: 0.78rem var(--mono); color: var(--ink-3); }
-h1 { font: 600 clamp(2rem, 5vw, 3.2rem)/1.05 var(--display); letter-spacing: -0.025em; margin: 0; text-wrap: balance; max-width: 16ch; }
+.credits { font: 0.76rem var(--mono); color: var(--ink-3); }
+h1 { font: 600 clamp(2rem, 5vw, 3.3rem)/1.04 var(--display); letter-spacing: -0.025em; margin: 0; text-wrap: balance; max-width: 18ch; }
 form { display: grid; gap: 0.75rem; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 640px) { form { grid-template-columns: minmax(0, 1fr) auto auto; } }
-input, select, button { font: 0.95rem var(--mono); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.9rem; min-width: 0; }
+@media (min-width: 680px) { form { grid-template-columns: minmax(0, 1fr) auto auto; } }
+input, select, button { font: 0.95rem var(--mono); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0.8rem 0.95rem; min-width: 0; }
 input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--clean); outline-offset: 2px; }
 button { cursor: pointer; }
 button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 500; }
 button.primary:disabled { opacity: 0.5; cursor: progress; }
-.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; font: 0.82rem var(--mono); color: var(--ink-2); min-height: 2.2rem; }
-.switch { border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.8rem; }
+.examples { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font: 0.78rem var(--mono); color: var(--ink-3); }
+.examples button { font-size: 0.8rem; border-radius: 999px; padding: 0.4rem 0.8rem; color: var(--ink-2); }
+.examples button:hover { border-color: var(--ink-3); color: var(--ink); }
+
+.progress { display: grid; gap: 0.45rem; }
+.progress .label { display: flex; justify-content: space-between; gap: 1rem; font: 0.8rem var(--mono); color: var(--ink-2); flex-wrap: wrap; }
+.track { height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.track b { display: block; height: 100%; width: 0; background: var(--clean); transition: width .35s ease; }
+
+.answers { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .answers { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.ans { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 1.25rem 1.3rem; display: grid; gap: 0.9rem; align-content: start; min-width: 0; }
+.ans .head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; }
+.ans h2 { font: 600 1.1rem/1.2 var(--display); margin: 0; letter-spacing: -0.01em; }
+.ans .tag { font: 0.72rem var(--mono); color: var(--ink-3); }
+.ans.raw.has-slop { border-color: var(--silt); }
+.ans.clean { border-color: var(--clean); }
+.ans p { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.ans .waiting { color: var(--ink-3); font: 0.85rem var(--mono); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip { font: 0.74rem var(--mono); border-radius: 999px; padding: 0.25rem 0.6rem; background: var(--clean-soft); color: var(--ink); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip.slop { background: var(--silt-soft); color: var(--ink); box-shadow: inset 0 0 0 1px var(--silt); }
+.chip.other { background: transparent; box-shadow: inset 0 0 0 1px var(--line); color: var(--ink-2); }
+.chip b { font-weight: 500; color: var(--silt); }
+.same { font: 0.82rem var(--mono); color: var(--ink-2); }
+
+.listhead { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; font: 0.8rem var(--mono); color: var(--ink-2); }
+.switch { border-radius: 999px; padding: 0.4rem 0.85rem; font-size: 0.78rem; }
 .switch[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-li { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; gap: 0.25rem 0.9rem; padding: 0.85rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
-li .rk { font: 0.8rem var(--mono); color: var(--ink-3); padding-top: 0.15rem; }
-li .tt { color: var(--ink); line-height: 1.35; overflow-wrap: anywhere; }
-li .tt a { color: inherit; text-decoration: none; }
-li .tt a:hover { text-decoration: underline; }
-li .dm { grid-column: 2; font: 0.78rem var(--mono); color: var(--ink-3); overflow-wrap: anywhere; }
-li .st { font: 0.72rem var(--mono); color: var(--ink-3); white-space: nowrap; text-align: right; }
-li .why { grid-column: 2 / -1; font: 0.76rem var(--mono); color: var(--silt); }
-li.slop { border-color: var(--silt); }
-li.slop .st { color: var(--silt); }
-li.removed { display: none; }
+ol.results { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+ol.results li { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; gap: 0.25rem 0.9rem; padding: 0.8rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; transition: border-color .4s ease, opacity .4s ease; }
+ol.results .rk { font: 0.8rem var(--mono); color: var(--ink-3); padding-top: 0.15rem; }
+ol.results .tt { color: var(--ink); line-height: 1.35; overflow-wrap: anywhere; }
+ol.results .tt a { color: inherit; text-decoration: none; }
+ol.results .tt a:hover { text-decoration: underline; }
+ol.results .dm { grid-column: 2; font: 0.76rem var(--mono); color: var(--ink-3); overflow-wrap: anywhere; }
+ol.results .st { font: 0.72rem var(--mono); color: var(--ink-3); white-space: nowrap; text-align: right; }
+ol.results .why { grid-column: 2 / -1; font: 0.76rem var(--mono); color: var(--silt); }
+ol.results li.slop { border-color: var(--silt); }
+ol.results li.slop .st { color: var(--silt); }
+ol.results li.clean .st { color: var(--clean); }
+ol.results li.removed { display: none; }
 .meter { display: inline-block; width: 3.2rem; height: 4px; border-radius: 2px; background: var(--line); vertical-align: middle; margin-left: 0.5rem; position: relative; overflow: hidden; }
 .meter b { position: absolute; inset: 0 auto 0 0; background: var(--silt); }
-.msg { font: 0.9rem var(--mono); color: var(--ink-2); padding: 1rem 0; }
+.msg { font: 0.9rem var(--mono); color: var(--ink-2); }
 .msg.err { color: var(--silt); }
-.hint { font: 0.78rem var(--mono); color: var(--ink-3); }
+.hint { font: 0.76rem var(--mono); color: var(--ink-3); max-width: 46rem; }
+[hidden] { display: none !important; }
 @media (prefers-reduced-motion: no-preference) {
   .pulse { animation: pulse 1.6s ease-in-out infinite; }
-  @keyframes pulse { 50% { opacity: 0.45; } }
+  @keyframes pulse { 50% { opacity: 0.4; } }
 }
 </style>
 </head>
@@ -74,9 +105,11 @@ li.removed { display: none; }
     <div class="mark">Slop<span>Watch</span> Live</div>
     <div class="credits" id="credits"></div>
   </header>
-  <h1>Search anything. See what your agent would read.</h1>
+
+  <h1>Ask anything. See what your agent would tell you.</h1>
+
   <form id="f">
-    <input id="q" name="q" type="search" autocomplete="off" required placeholder="is it safe to take dolo 650 every day" aria-label="Question">
+    <input id="q" name="q" type="search" autocomplete="off" required placeholder="Type a question an agent would search" aria-label="Question">
     <select id="engine" name="engine" aria-label="Search engine">
       <option value="google-in">Google India</option>
       <option value="duckduckgo-in">DuckDuckGo India</option>
@@ -85,61 +118,147 @@ li.removed { display: none; }
     </select>
     <button class="primary" id="go" type="submit">Search</button>
   </form>
-  <div class="bar">
-    <span id="summary">Each new search uses one SerpApi credit. Repeats are free.</span>
-    <button class="switch" id="filter" type="button" aria-pressed="true">Filter on</button>
+  <div class="examples" id="examples">
+    <span>Try:</span>
+    <button type="button">is it safe to take dolo 650 every day</button>
+    <button type="button">how to improve cibil score fast</button>
+    <button type="button">best air purifier for delhi pollution</button>
   </div>
-  <div id="out"></div>
-  <p class="hint">Pages are fetched once (robots.txt respected) and scored with deterministic signals. Video, forum and shop pages, and sites that refuse crawlers, are kept and marked, never dropped.</p>
+
+  <div class="progress" id="progress" hidden>
+    <div class="label"><span id="plabel"></span><span id="pmeta"></span></div>
+    <div class="track"><b id="pbar"></b></div>
+  </div>
+
+  <div class="answers" id="answers" hidden>
+    <div class="ans raw" id="ans-raw">
+      <div class="head"><h2>Without SlopWatch</h2><span class="tag">top 5, as ranked</span></div>
+      <p id="raw-text" class="waiting"></p>
+      <div class="chips" id="raw-cites"></div>
+    </div>
+    <div class="ans clean" id="ans-clean">
+      <div class="head"><h2>With SlopWatch</h2><span class="tag">top 5, slop removed</span></div>
+      <p id="clean-text" class="waiting"></p>
+      <div class="chips" id="clean-cites"></div>
+    </div>
+  </div>
+  <p class="same" id="same" hidden></p>
+  <p class="msg" id="msg"></p>
+
+  <div id="listwrap" hidden>
+    <div class="listhead"><span id="listsum"></span>
+      <button class="switch" id="filter" type="button" aria-pressed="true">Filter on</button></div>
+    <ol class="results" id="list"></ol>
+  </div>
+
+  <p class="hint">Each new search uses one SerpApi credit; the examples and repeats are free. Pages are read once (robots.txt respected) and scored with deterministic signals. Video, forum and shop pages, and sites that refuse crawlers, are kept and marked, never dropped.</p>
 </div>
 <script>
 (function () {
-  var out = document.getElementById("out"), go = document.getElementById("go");
-  var filterBtn = document.getElementById("filter"), summary = document.getElementById("summary");
-  var last = null, filterOn = true;
-  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
+  var $ = function (id) { return document.getElementById(id); };
+  var job = null, results = [], scores = {}, threshold = 1, filterOn = true, busy = false;
   // page titles are third-party text: show them without emoji or pictographs
   var PICTO = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}️‍]/gu;
   function clean(s) { return String(s || "").replace(PICTO, "").replace(/\s+/g, " ").trim(); }
-  function credits(d) {
-    if (d && d.project_cap) document.getElementById("credits").textContent =
-      "credits this session " + d.session_spent + "/" + d.session_cap + " · project " + d.project_spent + "/" + d.project_cap;
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
+  function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return u; } }
+  function isSlop(s) { return s && s.slop_risk !== null && s.slop_risk >= threshold; }
+  function get(path) {
+    return fetch(path).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); });
   }
-  function render() {
-    if (!last) return;
-    var removed = 0, html = "<ol>";
-    last.results.forEach(function (r) {
-      var s = r.slopwatch, slop = s.slop_risk !== null && s.slop_risk >= last.threshold;
+  function credits(d) {
+    if (d && d.project_cap) $("credits").textContent = "credits this session " + d.session_spent + "/" + d.session_cap +
+      " · project " + d.project_spent + "/" + d.project_cap;
+  }
+  function stateOf(s) {
+    if (!s) return { cls: "", text: '<span class="pulse">reading</span>' };
+    if (isSlop(s)) return { cls: "slop", text: "slop" };
+    if (s.band) return { cls: "clean", text: "clear" };
+    if (s.not_scored && s.not_scored.indexOf("platform:") === 0) return { cls: "", text: s.not_scored.slice(9) };
+    return { cls: "", text: "not readable" };
+  }
+  function renderList() {
+    var html = "", removed = 0, done = 0;
+    results.forEach(function (r) {
+      var s = scores[r.link], st = stateOf(s), slop = isSlop(s);
+      if (s) done++;
       if (slop) removed++;
-      var st = s.band ? (slop ? "slop" : "clear") : (s.not_scored && s.not_scored.indexOf("platform:") === 0 ? s.not_scored.slice(9) : "not scored");
-      var meter = s.slop_risk === null ? "" : '<span class="meter" aria-hidden="true"><b style="width:' + Math.round(s.slop_risk * 100) + '%"></b></span>';
-      var host = ""; try { host = new URL(r.link).hostname.replace(/^www\./, ""); } catch (e) { host = r.link; }
-      html += '<li class="' + (slop ? "slop" : "") + (slop && filterOn ? " removed" : "") + '"><span class="rk">' + r.position +
-        '</span><span class="tt"><a href="' + esc(r.link) + '" target="_blank" rel="noopener">' + esc(clean(r.title) || host) +
-        '</a></span><span class="st">' + st + meter + '</span><span class="dm">' + esc(host) + "</span>" +
+      var meter = s && s.slop_risk !== null ? '<span class="meter" aria-hidden="true"><b style="width:' + Math.round(s.slop_risk * 100) + '%"></b></span>' : "";
+      html += '<li class="' + st.cls + (slop && filterOn ? " removed" : "") + '"><span class="rk">' + r.position +
+        '</span><span class="tt"><a href="' + esc(r.link) + '" target="_blank" rel="noopener">' + esc(clean(r.title) || host(r.link)) +
+        '</a></span><span class="st">' + st.text + meter + '</span><span class="dm">' + esc(host(r.link)) + "</span>" +
         (slop ? '<span class="why">' + esc(s.reasons.join(" · ")) + "</span>" : "") + "</li>";
     });
-    out.innerHTML = html + "</ol>";
-    summary.textContent = last.results.length + " results" + (last.cached ? " (from cache)" : "") + " · " +
-      (removed === 0 ? "nothing removed" : (filterOn ? removed + " removed before your agent reads them" : removed + " would be removed"));
+    $("list").innerHTML = html;
+    $("listsum").textContent = results.length + " results · " + (done < results.length ? done + " read" :
+      (removed === 0 ? "nothing to remove" : (filterOn ? removed + " removed" : removed + " would be removed")));
+    $("plabel").textContent = done < results.length ? "Reading result pages" : "Pages read";
+    $("pmeta").textContent = done + " of " + results.length;
+    $("pbar").style.width = (results.length ? Math.round(done / results.length * 100) : 0) + "%";
   }
-  filterBtn.addEventListener("click", function () {
-    filterOn = !filterOn; filterBtn.setAttribute("aria-pressed", String(filterOn));
-    filterBtn.textContent = filterOn ? "Filter on" : "Filter off"; render();
-  });
-  document.getElementById("f").addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var q = document.getElementById("q").value, engine = document.getElementById("engine").value;
-    go.disabled = true; out.innerHTML = '<p class="msg pulse">Searching, then reading each result page. First run takes a little while.</p>';
-    fetch("/api/search?q=" + encodeURIComponent(q) + "&engine=" + encodeURIComponent(engine))
-      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+  function chips(target, cited) {
+    target.innerHTML = cited.length ? cited.map(function (c) {
+      var cls = "other", label = "";
+      var sc = scores[c.link];
+      if (isSlop(sc)) { cls = "slop"; label = " <b>slop</b>"; } else if (c.band) { cls = ""; }
+      return '<span class="chip ' + cls + '">[' + c.n + "] " + esc(host(c.link)) + label + "</span>";
+    }).join("") : '<span class="chip other">no sources cited</span>';
+  }
+  function answer() {
+    $("answers").hidden = false; $("same").hidden = true;
+    $("raw-text").className = $("clean-text").className = "waiting pulse";
+    $("raw-text").textContent = $("clean-text").textContent = "Asking the agent";
+    $("raw-cites").innerHTML = $("clean-cites").innerHTML = "";
+    return get("/api/answer?job=" + job).then(function (res) {
+      if (!res.ok) {
+        $("answers").hidden = true; $("msg").className = "msg"; $("msg").textContent = res.d.error; return;
+      }
+      var d = res.d;
+      $("raw-text").className = $("clean-text").className = "";
+      $("raw-text").textContent = d.before.answer;
+      $("clean-text").textContent = d.after.answer;
+      chips($("raw-cites"), d.before.cited);
+      chips($("clean-cites"), d.after.cited);
+      var rawSlop = d.before.cited.some(function (c) { return isSlop(scores[c.link]); });
+      $("ans-raw").classList.toggle("has-slop", rawSlop);
+      $("same").hidden = !d.same_sources;
+      $("same").textContent = "Nothing in the top 5 crossed the slop line, so both answers come from the same sources.";
+    });
+  }
+  function stepLoop() {
+    return get("/api/step?job=" + job).then(function (res) {
+      if (!res.ok) throw new Error(res.d.error);
+      if (res.d.link) scores[res.d.link] = res.d.slopwatch;
+      renderList();
+      return res.d.done ? null : stepLoop();
+    });
+  }
+  function run(q, engine) {
+    if (busy) return;
+    busy = true; $("go").disabled = true; $("msg").textContent = ""; $("msg").className = "msg";
+    $("answers").hidden = true; $("same").hidden = true;
+    results = []; scores = {}; job = null;
+    $("progress").hidden = false; $("plabel").textContent = "Searching"; $("pmeta").textContent = ""; $("pbar").style.width = "4%";
+    get("/api/start?q=" + encodeURIComponent(q) + "&engine=" + encodeURIComponent(engine))
       .then(function (res) {
         credits(res.d);
-        if (!res.ok) { out.innerHTML = '<p class="msg err">' + esc(res.d.error) + "</p>"; return; }
-        last = res.d; render();
+        if (!res.ok) throw new Error(res.d.error);
+        job = res.d.job; results = res.d.results; threshold = res.d.threshold;
+        $("listwrap").hidden = false; renderList();
+        if (!results.length) throw new Error("The engine returned no results for this question.");
+        return stepLoop().then(function () { return res.d.agent ? answer() : null; })
+          .then(function () { if (!res.d.agent) { $("msg").textContent = "Agent answers are off: set GEMINI_API_KEY in .env and restart."; } });
       })
-      .catch(function () { out.innerHTML = '<p class="msg err">The local server stopped. Restart it with: slopwatch serve</p>'; })
-      .then(function () { go.disabled = false; });
+      .catch(function (e) { $("msg").className = "msg err"; $("msg").textContent = e.message || "The local server stopped. Restart it with: slopwatch serve"; })
+      .then(function () { busy = false; $("go").disabled = false; });
+  }
+  $("filter").addEventListener("click", function () {
+    filterOn = !filterOn; this.setAttribute("aria-pressed", String(filterOn));
+    this.textContent = filterOn ? "Filter on" : "Filter off"; renderList();
+  });
+  $("f").addEventListener("submit", function (ev) { ev.preventDefault(); run($("q").value, $("engine").value); });
+  Array.prototype.forEach.call($("examples").querySelectorAll("button"), function (b) {
+    b.addEventListener("click", function () { $("q").value = b.textContent; $("engine").value = "google-in"; run(b.textContent, "google-in"); });
   });
 })();
 </script>

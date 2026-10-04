@@ -1,20 +1,29 @@
 """``slopwatch serve``: a local web app to search anything and watch the filter work.
 
-Listens on 127.0.0.1 only; the SerpApi key stays on this machine. Each new
-search costs one SerpApi credit (repeats are served from the cache); a
-per-session credit cap and the project's ledger cap both apply. Result pages are
-fetched (robots-aware, cached) and scored with the frozen rubric.
+Workflow (driven by the page, one short request at a time, so a single-threaded
+server can stream progress):
+
+1. ``/api/start``  SerpApi search; the result list comes back immediately.
+2. ``/api/step``   reads and scores the next result page (robots-aware, cached).
+3. ``/api/answer`` the same agent answers twice: from the raw top 5 and from the
+   SlopWatch-filtered top 5, each citation marked clear or slop.
+
+Listens on 127.0.0.1 only; keys stay on this machine. Each new search costs one
+SerpApi credit (repeats come from the cache); per-session and project caps apply.
 """
 
 from __future__ import annotations
 
+import itertools
 import json
-from dataclasses import dataclass
+from collections.abc import Callable
+from dataclasses import dataclass, field
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from importlib import resources
 from typing import Any
 from urllib.parse import parse_qs, urlsplit
 
+from slopwatch.demo import Source
 from slopwatch.filter.core import SlopFilter
 from slopwatch.models import Engine, Locale
 from slopwatch.queries import serp_params
@@ -27,14 +36,34 @@ ENGINES: dict[str, tuple[Engine, Locale]] = {
     "google-us": ("google", "US"),
 }
 MAX_QUERY_CHARS = 200
+TOP_K = 5
+MAX_JOBS = 50
+
+Agent = Callable[[str, list[Source]], tuple[str, list[int]]]
+
+
+@dataclass
+class Job:
+    query: str
+    engine: str
+    results: list[dict[str, Any]]
+    scores: dict[str, dict[str, Any]] = field(default_factory=dict)
+
+    @property
+    def done(self) -> bool:
+        return len(self.scores) >= len(self.results)
 
 
 @dataclass
 class App:
     serp: SerpClient
     slop_filter: SlopFilter
+    agent: Agent | None = None
+    jobs: dict[str, Job] = field(default_factory=dict)
+    _ids: itertools.count[int] = field(default_factory=lambda: itertools.count(1))
 
-    def search(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:
+    # -- step 1 -------------------------------------------------------------------
+    def start(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:
         query = " ".join(query.split())[:MAX_QUERY_CHARS]
         if not query:
             return 400, {"error": "Type a question to search."}
@@ -46,17 +75,112 @@ class App:
             page = self.serp.search(engine, serp_params(engine, locale, query))
         except SerpError as exc:
             return 429, {"error": str(exc), **self._credits()}
-        results = [{"position": r.rank, "title": r.title, "link": r.url} for r in page.organic]
-        annotated = self.slop_filter.apply(query, results, mode="annotate")
+        results = [
+            {"position": r.rank, "title": r.title, "link": r.url, "snippet": r.snippet}
+            for r in page.organic
+        ]
+        job_id = str(next(self._ids))
+        self.jobs[job_id] = Job(query, engine_key, results)
+        while len(self.jobs) > MAX_JOBS:
+            self.jobs.pop(next(iter(self.jobs)))
         return 200, {
+            "job": job_id,
             "query": query,
             "engine": engine_key,
             "threshold": self.slop_filter.threshold(None),
-            "results": annotated,
+            "results": results,
             "cached": page.from_cache,
             "credit_spent": self.serp.ledger.spent - spent_before,
+            "agent": self.agent is not None,
             **self._credits(),
         }
+
+    # -- step 2 -------------------------------------------------------------------
+    def step(self, job_id: str) -> tuple[int, dict[str, Any]]:
+        job = self.jobs.get(job_id)
+        if job is None:
+            return 404, {"error": "This search has expired; search again."}
+        if job.done:
+            return 200, {"done": True, "progress": [len(job.scores), len(job.results)]}
+        index = len(job.scores)
+        link = job.results[index]["link"]
+        (assessment,) = self.slop_filter.assess(job.query, [link])
+        job.scores[link] = assessment.as_dict()
+        return 200, {
+            "index": index,
+            "link": link,
+            "slopwatch": job.scores[link],
+            "done": job.done,
+            "progress": [len(job.scores), len(job.results)],
+        }
+
+    # -- step 3 -------------------------------------------------------------------
+    def answer(self, job_id: str) -> tuple[int, dict[str, Any]]:
+        job = self.jobs.get(job_id)
+        if job is None:
+            return 404, {"error": "This search has expired; search again."}
+        if not job.done:
+            return 409, {"error": "Still reading pages."}
+        if self.agent is None:
+            return 503, {"error": "Set GEMINI_API_KEY (in .env) to see the agent's answers."}
+        cut = self.slop_filter.threshold(None)
+
+        def is_slop(link: str) -> bool:
+            risk = job.scores[link]["slop_risk"]
+            return risk is not None and risk >= cut
+
+        raw = job.results[:TOP_K]
+        kept = [r for r in job.results if not is_slop(r["link"])][:TOP_K]
+        dropped = [r["link"] for r in raw if is_slop(r["link"])]
+        before = self._ask(job, raw)
+        after = before if not dropped else self._ask(job, kept)
+        return 200, {
+            "dropped": dropped,
+            "same_sources": not dropped,
+            "before": before,
+            "after": after,
+        }
+
+    def _ask(self, job: Job, results: list[dict[str, Any]]) -> dict[str, Any]:
+        assert self.agent is not None
+        sources = []
+        for n, r in enumerate(results, start=1):
+            s = job.scores[r["link"]]
+            text = self.slop_filter.excerpts.get(r["link"]) or r.get("snippet") or ""
+            sources.append(
+                Source(n, r["link"], r["title"], text, s["slop_risk"], s["band"], s["not_scored"])
+            )
+        text, cited = self.agent(job.query, sources)
+        by_n = {s.n: s for s in sources}
+        return {
+            "answer": text,
+            "sources": [
+                {"n": s.n, "link": s.url, "band": s.band, "not_scored": s.not_scored}
+                for s in sources
+            ],
+            "cited": [
+                {
+                    "n": c,
+                    "link": by_n[c].url,
+                    "band": by_n[c].band,
+                    "not_scored": by_n[c].not_scored,
+                }
+                for c in cited
+                if c in by_n
+            ],
+        }
+
+    # -- one-shot (API / scripts) ---------------------------------------------------
+    def search(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:
+        """Start, score every result, return everything in one response."""
+        status, started = self.start(query, engine_key)
+        if status != 200:
+            return status, started
+        job = self.jobs[started["job"]]
+        while not job.done:
+            self.step(started["job"])
+        started["results"] = [{**r, "slopwatch": job.scores[r["link"]]} for r in job.results]
+        return 200, started
 
     def _credits(self) -> dict[str, Any]:
         return {
@@ -84,20 +208,29 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
             self.end_headers()
             self.wfile.write(body)
 
+        def _json(self, status: int, payload: dict[str, Any]) -> None:
+            body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+            self._send(status, body, "application/json; charset=utf-8")
+
         def do_GET(self) -> None:
             parts = urlsplit(self.path)
+            qs = parse_qs(parts.query)
+
+            def arg(name: str, default: str = "") -> str:
+                return qs.get(name, [default])[0]
+
             if parts.path == "/":
                 self._send(200, page_html(), "text/html; charset=utf-8")
-                return
-            if parts.path == "/api/search":
-                qs = parse_qs(parts.query)
-                status, payload = app.search(
-                    qs.get("q", [""])[0], qs.get("engine", ["google-in"])[0]
-                )
-                body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-                self._send(status, body, "application/json; charset=utf-8")
-                return
-            self._send(404, b"not found", "text/plain; charset=utf-8")
+            elif parts.path == "/api/start":
+                self._json(*app.start(arg("q"), arg("engine", "google-in")))
+            elif parts.path == "/api/step":
+                self._json(*app.step(arg("job")))
+            elif parts.path == "/api/answer":
+                self._json(*app.answer(arg("job")))
+            elif parts.path == "/api/search":
+                self._json(*app.search(arg("q"), arg("engine", "google-in")))
+            else:
+                self._send(404, b"not found", "text/plain; charset=utf-8")
 
     return Handler
 

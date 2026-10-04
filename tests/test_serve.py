@@ -105,5 +105,47 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
 
 def test_page_html_is_self_describing() -> None:
     html = page_html().decode("utf-8")
-    assert "<title>SlopWatch Live</title>" in html and "/api/search" in html
+    assert "<title>SlopWatch Live</title>" in html
+    assert all(p in html for p in ("/api/start", "/api/step", "/api/answer"))
     assert "prefers-color-scheme: dark" in html
+
+
+def test_start_step_answer_workflow(tmp_path: Path) -> None:
+    calls: list[list[str]] = []
+
+    def agent(question: str, sources: list[Any]) -> tuple[str, list[int]]:
+        calls.append([s.url for s in sources])
+        return f"answer from {len(sources)} sources", [1, 2]
+
+    app, _ = make_app(tmp_path)
+    app.agent = agent
+    status, started = app.start("dolo 650 daily", "google-in")
+    assert status == 200 and started["agent"] and len(started["results"]) == 3
+    job = started["job"]
+    assert app.answer(job)[0] == 409  # still reading
+    steps = []
+    while True:
+        st, body = app.step(job)
+        assert st == 200
+        steps.append(body)
+        if body["done"]:
+            break
+    assert [s["progress"][0] for s in steps] == [1, 2, 3]
+    assert app.step(job)[1] == {"done": True, "progress": [3, 3]}
+    st, ans = app.answer(job)
+    assert (
+        st == 200 and ans["dropped"] == ["https://shop.example/deals"] and not ans["same_sources"]
+    )
+    assert len(calls) == 2 and "https://shop.example/deals" not in calls[1]
+    assert ans["before"]["cited"][1]["link"] == "https://shop.example/deals"
+    assert ans["after"]["answer"].startswith("answer from")
+    assert app.step("nope")[0] == 404 and app.answer("nope")[0] == 404
+
+
+def test_answer_without_agent_explains(tmp_path: Path) -> None:
+    app, _ = make_app(tmp_path)
+    job = app.start("q", "google-in")[1]["job"]
+    while not app.step(job)[1]["done"]:
+        pass
+    st, body = app.answer(job)
+    assert st == 503 and "GEMINI_API_KEY" in body["error"]

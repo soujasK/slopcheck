@@ -69,7 +69,9 @@ Live, for any question (1 credit per new search; cached repeats are free):
 slopwatch serve          # opens http://127.0.0.1:8765
 ```
 
-Type a question, pick Google India, and flip "Filter on/off".
+Click an example question (free, cached) or type your own. Results appear at once,
+each page is read and scored live, then the same agent answers twice side by side:
+without SlopWatch and with it, every citation marked clear or slop.
 
 ## 2:30 - 2:45  Close
 
