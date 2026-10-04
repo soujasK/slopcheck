@@ -26,6 +26,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# SerpApi's official agent tooling (14 agent frameworks); slopwatch.filter.serpapi_tools
+agents = ["serpapi-search-tools>=1.0"]
 dev = [
   "pytest>=8",
   "pytest-cov>=5",
@@ -56,6 +58,10 @@ python_version = "3.11"
 strict = true
 plugins = ["pydantic.mypy"]
 files = ["slopwatch"]
+
+[[tool.mypy.overrides]]
+module = ["serpapi", "serpapi.*", "serpapi_search_tools", "serpapi_search_tools.*"]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
