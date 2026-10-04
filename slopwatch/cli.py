@@ -63,6 +63,7 @@ from slopwatch.models import Page, RelevanceRecord, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
 from slopwatch.platform import load_platforms
 from slopwatch.queries import Job, PlanError, load_plan, serp_params
+from slopwatch.report.observatory import build as build_report
 from slopwatch.score import load_rubric, row_signals, score_rows
 from slopwatch.serp import ProjectLedger, SerpClient, SerpError
 from slopwatch.signals import load_lists
@@ -836,6 +837,23 @@ def search(
     console.print(table)
     console.print(f"kept {len(kept)} of {len(results)}")
     console.print(credits_line(serp.ledger.spent, ledger))
+
+
+@app.command()
+def report(
+    out: Annotated[Path, typer.Option("--out")] = Path("report/observatory.html"),
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Build the observatory HTML (and numbers.json) from committed data only."""
+    settings, _mode = _settings_and_mode(cache_mode)
+    numbers = build_report(settings.data_dir.parent, out)
+    o = numbers["overall_india"]
+    console.print(
+        f"report: {out} | India low share {o['value']:.1%} "
+        f"(95% CI {o['ci'][0]:.1%}-{o['ci'][1]:.1%}, n = {o['n_scored']}, "
+        f"coverage {o['coverage']:.0%})"
+    )
+    console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
 
 
 @app.command()
