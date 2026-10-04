@@ -78,3 +78,5 @@ class Settings(BaseSettings):
     # Contact URL put in the crawler User-Agent (e.g. the public repo). Some sites
     # refuse anonymous crawlers; set SLOPWATCH_CONTACT_URL before `fetch`.
     contact_url: str | None = None
+    # Label set directory under labels/ (empty = the main set); see `slopwatch label`.
+    label_set: str = ""

@@ -96,6 +96,16 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   committed (v1, v2a, v2b, v2c) by round-2 dev F1; the test split is evaluated
   once. Signal added before round 2: `sells_directly`.
 
+- 2026-10-04: **round 3 (fresh held-out set).** Rubric v2 failed the gate on the
+  round-2 test split (precision 0.37; EVAL.md), which therefore can no longer be
+  used for testing. All 155 round-2 labeled items become development data. A
+  new sample of 150 results whose URLs appear in no earlier sample is drawn
+  (`SLOPWATCH_LABEL_SET=round3 slopwatch label --n 150 --seed 2027`) and
+  committed before any new model is fitted; it is labeled by the same two LLMs
+  with the round-2 protocol (2,000 chars of main text) and used **only** as a
+  one-time test. New signals may be built and rule weights may be fitted on
+  the 155 development items only. The round-2 failure stays reported.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

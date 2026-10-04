@@ -406,7 +406,20 @@ RECHECK = "recheck.jsonl"
 
 
 def _labels_dir() -> Path:
-    return Settings().data_dir.parent / "labels"
+    """labels/ or, with SLOPWATCH_LABEL_SET=name, labels/<name>/ (e.g. a fresh
+    held-out round)."""
+    settings = Settings()
+    base = settings.data_dir.parent / "labels"
+    return base / settings.label_set if settings.label_set else base
+
+
+def _used_urls() -> set[str]:
+    """URLs in every existing label sample (a new set must not reuse them)."""
+    base = Settings().data_dir.parent / "labels"
+    used: set[str] = set()
+    for path in base.rglob(SAMPLE):
+        used.update(it.url for it in load_sample(path))
+    return used
 
 
 def _load_scored(settings: Settings) -> tuple[list[SerpRow], list[SignalRecord]]:
@@ -460,6 +473,7 @@ def label(
         plan = load_plan(settings.data_dir / "queries.yaml")
         queries = {(j.query.id, j.query.locale): j.query for j in plan.jobs}
         platforms = load_platforms(settings.data_dir)
+        used = _used_urls() if settings.label_set else set()
         items = draw_sample(
             rows,
             pages,
@@ -467,7 +481,7 @@ def label(
             queries,
             n=n,
             seed=seed,
-            exclude=lambda url: platforms.kind(url) is not None,
+            exclude=lambda url: platforms.kind(url) is not None or url in used,
         )
         write_jsonl(sample_path, items, key=lambda it: 0)  # keep the seeded order
         splits = Counter(it.split for it in items)

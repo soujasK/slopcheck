@@ -110,6 +110,13 @@ items are labeled again, **after** those dev results were seen:
   round-2 requests cannot be rebuilt from a fresh clone; labels and recorded
   responses are committed.
 
+## Round 3 (declared 2026-10-04, before any round-3 label or model fit)
+
+Fresh held-out test set: 150 results whose URLs are in no earlier sample,
+drawn with seed 2027 from scored, non-platform results. Same labelers, models,
+guide and protocol as round 2. Used once, as the test for the model developed
+on the 155 round-2 items. Files: `labels/round3/`.
+
 ## Process rules
 
 - The 200-item sample is drawn with a fixed seed (`slopwatch label --n 200 --seed 7`)
