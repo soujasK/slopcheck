@@ -63,6 +63,14 @@ the filter drops two off-topic pages Google ranked in the top 5 (an NIH research
 program called 'IMPROVE'). For the other six nothing is dropped. All 8 are in
 DEMO_RESULTS.md."
 
+Live, for any question (1 credit per new search; cached repeats are free):
+
+```bash
+slopwatch serve          # opens http://127.0.0.1:8765
+```
+
+Type a question, pick Google India, and flip "Filter on/off".
+
 ## 2:30 - 2:45  Close
 
 ```bash

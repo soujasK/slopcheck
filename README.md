@@ -13,7 +13,7 @@ SerpApi's official agent tooling (14 agent frameworks).
 
 Built for the SerpApi India Hackathon 2026 (Open-Source Integrations).
 
-[Observatory report](report/observatory.html) · [EVAL.md](EVAL.md) ·
+[Story](report/story.html) · [Observatory report](report/observatory.html) · [EVAL.md](EVAL.md) ·
 [DEMO_RESULTS.md](DEMO_RESULTS.md) · [LIMITATIONS.md](LIMITATIONS.md)
 
 ## The problem
@@ -114,6 +114,7 @@ tools = [web_search()]                                    # same tool, slop filt
 **CLI**
 
 ```bash
+slopwatch serve                                                # local web app: search anything, watch the filter
 slopwatch search "is it safe to take dolo 650 every day"      # live: SerpApi + filter
 slopwatch filter --serp-json results.json --threshold 0.6      # pipe-friendly
 slopwatch report --cache-mode replay                           # rebuild the observatory
