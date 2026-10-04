@@ -785,7 +785,14 @@ def filter_cmd(
         "threshold": f.threshold(threshold),
         "rubric_version": f.rubric.version,
     }
-    sys.stdout.write(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    # UTF-8 bytes regardless of the console code page (Windows defaults to cp1252).
+    text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    buffer = getattr(sys.stdout, "buffer", None)
+    if buffer is not None:
+        buffer.write(text.encode("utf-8"))
+        buffer.flush()
+    else:
+        sys.stdout.write(text)
 
 
 @app.command()
