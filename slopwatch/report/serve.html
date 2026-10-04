@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SlopWatch Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Newsreader:opsz,wght@6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Same system as the story page: one column, clear teal vs ochre silt on mist. */
+:root {
+  --bg: #edf1ef; --surface: #f6f8f7; --ink: #142725; --ink-2: #455754; --ink-3: #74837f;
+  --line: #d3dcd9; --clean: #2e7f72; --silt: #b8732a; --silt-soft: #f0dcc4;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Newsreader", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
+    --line: #233b37; --clean: #55aa9b; --silt: #d8964d; --silt-soft: #4a3520; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
+  --line: #233b37; --clean: #55aa9b; --silt: #d8964d; --silt-soft: #4a3520; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.08rem/1.55 var(--body); padding-inline: 16px; }
+.wrap { max-width: 50rem; margin: 0 auto; padding-block: 2.5rem 4rem; display: grid; gap: 2rem; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.mark { font: 700 1.05rem/1 var(--display); }
+.mark span { color: var(--silt); }
+.credits { font: 0.78rem var(--mono); color: var(--ink-3); }
+h1 { font: 600 clamp(2rem, 5vw, 3.2rem)/1.05 var(--display); letter-spacing: -0.025em; margin: 0; text-wrap: balance; max-width: 16ch; }
+form { display: grid; gap: 0.75rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) { form { grid-template-columns: minmax(0, 1fr) auto auto; } }
+input, select, button { font: 0.95rem var(--mono); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 0.9rem; min-width: 0; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--clean); outline-offset: 2px; }
+button { cursor: pointer; }
+button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 500; }
+button.primary:disabled { opacity: 0.5; cursor: progress; }
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; font: 0.82rem var(--mono); color: var(--ink-2); min-height: 2.2rem; }
+.switch { border-radius: 999px; padding: 0.45rem 0.9rem; font-size: 0.8rem; }
+.switch[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+li { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; gap: 0.25rem 0.9rem; padding: 0.85rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+li .rk { font: 0.8rem var(--mono); color: var(--ink-3); padding-top: 0.15rem; }
+li .tt { color: var(--ink); line-height: 1.35; overflow-wrap: anywhere; }
+li .tt a { color: inherit; text-decoration: none; }
+li .tt a:hover { text-decoration: underline; }
+li .dm { grid-column: 2; font: 0.78rem var(--mono); color: var(--ink-3); overflow-wrap: anywhere; }
+li .st { font: 0.72rem var(--mono); color: var(--ink-3); white-space: nowrap; text-align: right; }
+li .why { grid-column: 2 / -1; font: 0.76rem var(--mono); color: var(--silt); }
+li.slop { border-color: var(--silt); }
+li.slop .st { color: var(--silt); }
+li.removed { display: none; }
+.meter { display: inline-block; width: 3.2rem; height: 4px; border-radius: 2px; background: var(--line); vertical-align: middle; margin-left: 0.5rem; position: relative; overflow: hidden; }
+.meter b { position: absolute; inset: 0 auto 0 0; background: var(--silt); }
+.msg { font: 0.9rem var(--mono); color: var(--ink-2); padding: 1rem 0; }
+.msg.err { color: var(--silt); }
+.hint { font: 0.78rem var(--mono); color: var(--ink-3); }
+@media (prefers-reduced-motion: no-preference) {
+  .pulse { animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.45; } }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">Slop<span>Watch</span> Live</div>
+    <div class="credits" id="credits"></div>
+  </header>
+  <h1>Search anything. See what your agent would read.</h1>
+  <form id="f">
+    <input id="q" name="q" type="search" autocomplete="off" required placeholder="is it safe to take dolo 650 every day" aria-label="Question">
+    <select id="engine" name="engine" aria-label="Search engine">
+      <option value="google-in">Google India</option>
+      <option value="duckduckgo-in">DuckDuckGo India</option>
+      <option value="yahoo-in">Yahoo India</option>
+      <option value="google-us">Google US</option>
+    </select>
+    <button class="primary" id="go" type="submit">Search</button>
+  </form>
+  <div class="bar">
+    <span id="summary">Each new search uses one SerpApi credit. Repeats are free.</span>
+    <button class="switch" id="filter" type="button" aria-pressed="true">Filter on</button>
+  </div>
+  <div id="out"></div>
+  <p class="hint">Pages are fetched once (robots.txt respected) and scored with deterministic signals. Video, forum and shop pages, and sites that refuse crawlers, are kept and marked, never dropped.</p>
+</div>
+<script>
+(function () {
+  var out = document.getElementById("out"), go = document.getElementById("go");
+  var filterBtn = document.getElementById("filter"), summary = document.getElementById("summary");
+  var last = null, filterOn = true;
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
+  // page titles are third-party text: show them without emoji or pictographs
+  var PICTO = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}️‍]/gu;
+  function clean(s) { return String(s || "").replace(PICTO, "").replace(/\s+/g, " ").trim(); }
+  function credits(d) {
+    if (d && d.project_cap) document.getElementById("credits").textContent =
+      "credits this session " + d.session_spent + "/" + d.session_cap + " · project " + d.project_spent + "/" + d.project_cap;
+  }
+  function render() {
+    if (!last) return;
+    var removed = 0, html = "<ol>";
+    last.results.forEach(function (r) {
+      var s = r.slopwatch, slop = s.slop_risk !== null && s.slop_risk >= last.threshold;
+      if (slop) removed++;
+      var st = s.band ? (slop ? "slop" : "clear") : (s.not_scored && s.not_scored.indexOf("platform:") === 0 ? s.not_scored.slice(9) : "not scored");
+      var meter = s.slop_risk === null ? "" : '<span class="meter" aria-hidden="true"><b style="width:' + Math.round(s.slop_risk * 100) + '%"></b></span>';
+      var host = ""; try { host = new URL(r.link).hostname.replace(/^www\./, ""); } catch (e) { host = r.link; }
+      html += '<li class="' + (slop ? "slop" : "") + (slop && filterOn ? " removed" : "") + '"><span class="rk">' + r.position +
+        '</span><span class="tt"><a href="' + esc(r.link) + '" target="_blank" rel="noopener">' + esc(clean(r.title) || host) +
+        '</a></span><span class="st">' + st + meter + '</span><span class="dm">' + esc(host) + "</span>" +
+        (slop ? '<span class="why">' + esc(s.reasons.join(" · ")) + "</span>" : "") + "</li>";
+    });
+    out.innerHTML = html + "</ol>";
+    summary.textContent = last.results.length + " results" + (last.cached ? " (from cache)" : "") + " · " +
+      (removed === 0 ? "nothing removed" : (filterOn ? removed + " removed before your agent reads them" : removed + " would be removed"));
+  }
+  filterBtn.addEventListener("click", function () {
+    filterOn = !filterOn; filterBtn.setAttribute("aria-pressed", String(filterOn));
+    filterBtn.textContent = filterOn ? "Filter on" : "Filter off"; render();
+  });
+  document.getElementById("f").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var q = document.getElementById("q").value, engine = document.getElementById("engine").value;
+    go.disabled = true; out.innerHTML = '<p class="msg pulse">Searching, then reading each result page. First run takes a little while.</p>';
+    fetch("/api/search?q=" + encodeURIComponent(q) + "&engine=" + encodeURIComponent(engine))
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        credits(res.d);
+        if (!res.ok) { out.innerHTML = '<p class="msg err">' + esc(res.d.error) + "</p>"; return; }
+        last = res.d; render();
+      })
+      .catch(function () { out.innerHTML = '<p class="msg err">The local server stopped. Restart it with: slopwatch serve</p>'; })
+      .then(function () { go.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>

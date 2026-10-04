@@ -116,6 +116,30 @@ pre .c { color: var(--ink-3); }
 .verdict .n { font: 600 2.4rem/1 var(--display); letter-spacing: -0.03em; }
 .verdict .n.fail { color: var(--silt); }
 
+/* try it */
+.controls { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: end; }
+.ctl { display: grid; gap: 0.35rem; min-width: 0; flex: 1 1 22rem; }
+.ctl span { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.1em; }
+select { font: 0.92rem var(--mono); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 0.6rem 0.75rem; width: 100%; min-width: 0; }
+select:focus-visible, .seg button:focus-visible { outline: 2px solid var(--clean); outline-offset: 2px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; flex-wrap: wrap; }
+.seg button { font: 0.8rem var(--mono); color: var(--ink-2); background: transparent; border: 0; border-radius: 999px; padding: 0.45rem 0.85rem; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.seg button:disabled { opacity: 0.35; cursor: default; }
+.ex-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.ex-list li { display: grid; grid-template-columns: 1.8rem minmax(0, 1fr) auto; gap: 0.25rem 0.9rem; padding: 0.85rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; transition: opacity .4s ease; }
+.ex-list .rk { font: 0.8rem var(--mono); color: var(--ink-3); padding-top: 0.15rem; }
+.ex-list .tt { color: var(--ink); line-height: 1.35; overflow-wrap: anywhere; }
+.ex-list .dm { grid-column: 2; font: 0.78rem var(--mono); color: var(--ink-3); overflow-wrap: anywhere; }
+.ex-list .st { font: 0.72rem var(--mono); color: var(--ink-3); white-space: nowrap; text-align: right; }
+.ex-list .why { grid-column: 2 / -1; font: 0.76rem var(--mono); color: var(--silt); }
+.ex-list li.slop { border-color: var(--silt); }
+.ex-list li.slop .st { color: var(--silt); }
+.ex-list li.removed { display: none; }
+.ex-list .meter { display: inline-block; width: 3.2rem; height: 4px; border-radius: 2px; background: var(--line); vertical-align: middle; margin-left: 0.5rem; position: relative; overflow: hidden; }
+.ex-list .meter b { position: absolute; inset: 0 auto 0 0; background: var(--silt); border-radius: 2px; }
+code { font: 0.85em var(--mono); }
+
 footer { display: grid; gap: 1rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
 footer .closing { font: 600 clamp(1.8rem, 4vw, 2.8rem)/1.05 var(--display); letter-spacing: -0.025em; }
 a { color: var(--clean); text-underline-offset: 3px; }
@@ -187,6 +211,19 @@ tools = [web_search()]</pre>
     <div class="serp filtered" id="after-serp"></div>
     <button class="toggle" id="toggle" type="button" aria-pressed="true">Show unfiltered</button>
     <p id="demo-note"></p>
+  </section>
+
+  <section id="try">
+    <p class="eyebrow">Try it</p>
+    <h2>Pick a question. See what your agent would have read.</h2>
+    <div class="controls">
+      <label class="ctl"><span>Question</span><select id="ex-query"></select></label>
+      <div class="seg" id="ex-engine" role="group" aria-label="Search engine"></div>
+      <button class="toggle" id="ex-filter" type="button" aria-pressed="true">Filter on</button>
+    </div>
+    <p class="mono" id="ex-summary"></p>
+    <ol class="ex-list" id="ex-list"></ol>
+    <p class="note">Recorded searches from the measurement. For any question, run <code>slopwatch serve</code> and search live.</p>
   </section>
 
   <section>
@@ -283,6 +320,60 @@ tools = [web_search()]</pre>
   });
   el("demo-note").textContent = "Across " + D.demo.n + " questions fixed before the run, the filter removed a top-five source for " +
     D.demo.dropped + ", and the agent's citations changed for " + D.demo.changed + ". Most results it leaves alone.";
+
+  // --- try it ---------------------------------------------------------------
+  var X = D.explorer, ENGINES = [["google|IN", "Google India"], ["duckduckgo|IN", "DuckDuckGo"],
+    ["yahoo|IN", "Yahoo"], ["google|US", "Google US"]];
+  var CAT = { health: "Health", personal_finance: "Money", product_reviews: "Products", tech_howto: "Tech how-to" };
+  var state = { q: "health-04", e: "google|IN", filter: true };
+  var sel = el("ex-query"), seg = el("ex-engine"), fbtn = el("ex-filter");
+  var groups = {};
+  X.queries.forEach(function (q) { (groups[q.category] = groups[q.category] || []).push(q); });
+  Object.keys(CAT).forEach(function (c) {
+    var og = document.createElement("optgroup"); og.label = CAT[c];
+    (groups[c] || []).forEach(function (q) {
+      var o = document.createElement("option"); o.value = q.id; o.textContent = q.text; og.appendChild(o);
+    });
+    sel.appendChild(og);
+  });
+  sel.value = state.q;
+  ENGINES.forEach(function (e) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = e[1]; b.dataset.e = e[0];
+    b.addEventListener("click", function () { state.e = e[0]; renderEx(); });
+    seg.appendChild(b);
+  });
+  sel.addEventListener("change", function () {
+    state.q = sel.value;
+    if (!X.serps[state.q + "|" + state.e]) state.e = "google|IN";
+    renderEx();
+  });
+  fbtn.addEventListener("click", function () { state.filter = !state.filter; renderEx(); });
+
+  function renderEx() {
+    Array.prototype.forEach.call(seg.children, function (b) {
+      var has = !!X.serps[state.q + "|" + b.dataset.e];
+      b.disabled = !has;
+      b.setAttribute("aria-pressed", String(b.dataset.e === state.e));
+      b.title = has ? "" : "Not collected for this question (India-only questions ran on Google India)";
+    });
+    fbtn.setAttribute("aria-pressed", String(state.filter));
+    fbtn.textContent = state.filter ? "Filter on" : "Filter off";
+    var rows = X.serps[state.q + "|" + state.e] || [], removed = 0, html = "";
+    rows.forEach(function (r) {
+      var slop = r.risk !== null && r.risk >= X.threshold;
+      if (slop) removed++;
+      var st = r.band ? (slop ? "slop" : "clear") : (r.not_scored.indexOf("platform:") === 0 ? r.not_scored.slice(9) : "not scored");
+      var meter = r.risk === null ? "" : '<span class="meter" aria-hidden="true"><b style="width:' + Math.round(r.risk * 100) + '%"></b></span>';
+      html += '<li class="' + (slop ? "slop" : "") + (slop && state.filter ? " removed" : "") + '"><span class="rk">' + r.rank +
+        '</span><span class="tt">' + esc(r.title || r.domain) + '</span><span class="st">' + st + meter +
+        '</span><span class="dm">' + esc(r.domain) + "</span>" +
+        (slop ? '<span class="why">' + esc(r.reasons.join(" · ")) + "</span>" : "") + "</li>";
+    });
+    el("ex-list").innerHTML = html;
+    el("ex-summary").textContent = rows.length + " results · " + (removed === 0 ? "nothing removed" :
+      (state.filter ? removed + " removed before your agent reads them" : removed + " would be removed"));
+  }
+  renderEx();
 
   var v = D.validation, html = "";
   if (v.round2_test) html += '<div><span class="k">First test</span><span class="n fail">' + v.round2_test.precision.toFixed(2) +

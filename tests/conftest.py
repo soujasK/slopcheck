@@ -36,7 +36,7 @@ def make_client(
     max_retries: int = 3,
 ) -> HttpClient:
     return HttpClient(
-        cache or Cache(":memory:", mode=mode),
+        cache if cache is not None else Cache(":memory:", mode=mode),
         transport=httpx.MockTransport(handler),
         max_retries=max_retries,
         sleep=lambda _s: None,

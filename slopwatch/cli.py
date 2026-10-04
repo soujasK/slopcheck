@@ -848,6 +848,55 @@ def search(
 
 
 @app.command()
+def serve(
+    port: Annotated[int, typer.Option("--port", min=1, max=65535)] = 8765,
+    max_credits: Annotated[
+        int, typer.Option("--max-credits", min=0, help="SerpApi credits this session may use.")
+    ] = DEFAULT_RUN_CREDITS,
+    open_browser: Annotated[bool, typer.Option("--open/--no-open")] = True,
+) -> None:
+    """Local web app: search anything, watch the filter remove slop (127.0.0.1 only)."""
+    from slopwatch.serve import App, make_server
+
+    settings = Settings()
+    if settings.serpapi_api_key is None:
+        err_console.print("serve: SERPAPI_API_KEY is not set (put it in the environment or .env)")
+        raise typer.Exit(EXIT_USAGE)
+    ledger = ProjectLedger(settings.ledger_path)
+    cache = Cache(
+        settings.cache_path,
+        mode=CacheMode.LIVE,
+        ttl_seconds=settings.cache_ttl_seconds,
+        cross_thread=True,
+    )
+    http = HttpClient(
+        cache,
+        timeout=settings.http_timeout_seconds,
+        max_retries=settings.http_max_retries,
+        agent=user_agent(settings.contact_url),
+    )
+    serp = SerpClient(http, settings.serpapi_api_key, project=ledger, max_credits=max_credits)
+    live = SlopFilter.live(PageFetcher(http, max_bytes=settings.page_max_bytes))
+    server = make_server(App(serp, live), port)
+    url = f"http://127.0.0.1:{port}/"
+    console.print(f"SlopWatch Live at {url}  (Ctrl+C to stop; up to {max_credits} credits)")
+    console.print(credits_line(0, ledger))
+    if open_browser:
+        import webbrowser
+
+        webbrowser.open(url)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.server_close()
+        http.close()
+        cache.close()
+        console.print(credits_line(serp.ledger.spent, ledger))
+
+
+@app.command()
 def report(
     out: Annotated[Path, typer.Option("--out")] = Path("report/observatory.html"),
     cache_mode: CacheModeOpt = None,

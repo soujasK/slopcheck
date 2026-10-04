@@ -119,13 +119,16 @@ class Cache:
         path: Path | str = ":memory:",
         mode: CacheMode = CacheMode.LIVE,
         ttl_seconds: int = 24 * 3600,
+        cross_thread: bool = False,
     ) -> None:
         if isinstance(path, Path):
             path.parent.mkdir(parents=True, exist_ok=True)
         self.path = path
         self.mode = mode
         self.ttl = timedelta(seconds=ttl_seconds)
-        self._db = sqlite3.connect(str(path))
+        # cross_thread: the connection may be used from another thread, never concurrently
+        # (e.g. a single-threaded local server running off the main thread).
+        self._db = sqlite3.connect(str(path), check_same_thread=not cross_thread)
         # Keys read or written through this instance (for minimal fixture exports).
         self.used: set[str] = set()
         self._db.executescript(_SCHEMA)

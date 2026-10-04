@@ -9,6 +9,7 @@ writes a full HTML document; ``story_fragment`` returns the page body only
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
 from importlib import resources
 from pathlib import Path
@@ -25,6 +26,14 @@ from slopwatch.store import PAGES, RELEVANCE, SERPS, SIGNALS, read_jsonl
 GROUPS = (("google", "IN", "Google India"), ("duckduckgo", "IN", "DuckDuckGo India"),
           ("yahoo", "IN", "Yahoo India"), ("google", "US", "Google US"))  # fmt: skip
 HERO_QUERY_ID = "health-04"
+
+
+_EMOJI = re.compile("[\U0001f000-\U0001faff☀-➿⬀-⯿️‍]")
+
+
+def _clean(text: str) -> str:
+    """Display text without emoji/pictographs (page titles are third-party text)."""
+    return " ".join(_EMOJI.sub("", text).split())
 
 
 def _domain(url: str) -> str:
@@ -80,7 +89,7 @@ def story_data(root: Path) -> dict[str, Any]:
             {
                 "rank": r.rank,
                 "domain": _domain(r.url),
-                "title": r.title,
+                "title": _clean(r.title),
                 "band": a.band,
                 "not_scored": a.not_scored,
                 "reasons": list(a.reasons),
@@ -119,6 +128,7 @@ def story_data(root: Path) -> dict[str, Any]:
             "changed": sum(1 for d in demo if d["changed"]),
         },
         "collected": numbers["collected"],
+        "explorer": explorer_data(root, rows),
     }
 
 
@@ -141,3 +151,40 @@ def build_story(root: Path, out: Path) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(doc, encoding="utf-8", newline="\n")
     return out
+
+
+def explorer_data(root: Path, rows: list[SerpRow]) -> dict[str, Any]:
+    """Every recorded search with each result's assessment, for the "try it" section."""
+    from slopwatch.queries import load_plan
+
+    data = root / "data"
+    specs = load_plan(data / "queries.yaml").specs
+    text = {s.id: s.text for s in specs}
+    f = SlopFilter.offline(data)
+    serps: dict[str, list[dict[str, Any]]] = {}
+    keys = sorted({(r.query_id, r.engine, r.locale) for r in rows})
+    for qid, engine, locale in keys:
+        serp = sorted(
+            (r for r in rows if (r.query_id, r.engine, r.locale) == (qid, engine, locale)),
+            key=lambda r: r.rank,
+        )
+        out = []
+        for a, r in zip(f.assess(text[qid], [r.url for r in serp]), serp, strict=True):
+            out.append(
+                {
+                    "rank": r.rank,
+                    "domain": _domain(r.url),
+                    "url": r.url,
+                    "title": _clean(r.title),
+                    "risk": a.slop_risk,
+                    "band": a.band,
+                    "not_scored": a.not_scored,
+                    "reasons": list(a.reasons),
+                }
+            )
+        serps[f"{qid}|{engine}|{locale}"] = out
+    return {
+        "threshold": f.rubric.bands.low,
+        "queries": [{"id": s.id, "text": s.text, "category": s.category} for s in specs],
+        "serps": serps,
+    }
