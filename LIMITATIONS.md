@@ -1,6 +1,6 @@
 # Limitations
 
-Draft. Completed in Phase 3; items are recorded here as design decisions are made.
+What SlopWatch's numbers can and cannot support.
 
 ## Reproducibility: page HTML is not committed
 
@@ -54,3 +54,52 @@ Coverage is not uniform: 72-81% of rows for the India engines but only 56% for
 Google US, where several large publishers block crawlers. Every comparison in
 the report shows its coverage next to it; low-quality shares are computed over
 scored rows only.
+
+## Labels: two LLMs, no human validation
+
+Ground truth comes from two LLMs (Google `gemini-3.5-flash-lite`, Cloudflare
+`@cf/openai/gpt-oss-120b`) labeling blind; only items where both agree count.
+There is no human labeling and no inter-rater check against a person. Agreement
+between the two was Cohen's kappa 0.47 with a 300-character excerpt and 0.66
+with 2,000 characters of main text. Using only agreed items favours clearer
+cases. LLM judges share training data and may share blind spots. Labeler A was
+planned as `gemini-3.8-flash` but its free tier allows 20 requests per day, so
+all 200/150 items were labeled with `gemini-3.5-flash-lite` (a smaller model).
+13 round-2 items were not labeled by B (Cloudflare daily quota) and were dropped.
+
+## Validation history
+
+The first held-out test failed (rubric v2: precision 0.37, n = 71) and is
+reported. The rubric was then refitted on development data and tested once on a
+fresh held-out sample. The rubric is tuned for precision; at its operating point
+it catches roughly one third of low-quality pages (recall about 0.33), so shares
+of "low" results are lower bounds of what the labelers would call low. Where the
+round-3 test provides sensitivity and specificity, a prevalence-corrected share
+(Rogan-Gladen) is reported next to the raw share.
+
+## Signals
+
+- Heuristic and deterministic. No AI-text detection, by design.
+- Query relevance is lexical (stemmed word overlap): synonyms ("heartburn" for
+  "acidity") count as off-query.
+- Author/date detection reads markup and visible bylines; JavaScript-rendered
+  pages may look anonymous or empty.
+- Ad and tracker counts see only scripts present in the static HTML.
+
+## Platform pages
+
+Video, forum, social, app-store and shop results (about 30% of Google results)
+are reported as a separate class and never scored: the signals were designed for
+articles.
+
+## Statistical power
+
+Engine and locale comparisons are paired over 20 queries; only large differences
+are detectable. "No detectable difference" is not "no difference".
+
+## Agent demo
+
+8 pre-registered questions, one Gemini call per condition, sources limited to
+committed text (titles, snippets, excerpts of at most 300 characters). The
+filter dropped a top-5 source for 2 of 8 questions; the demo shows the mechanism,
+not a measured effect on answer quality.

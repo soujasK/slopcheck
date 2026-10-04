@@ -57,7 +57,7 @@ India, or between Google India and Google US (India − US: −11.7 points, 95% 
 2. **Google shows an AI Overview on 59 of 60 searches** (39/40 India, 20/20 US),
    and fills 30% of its India top results with platform pages (YouTube, Reddit,
    Quora, shops) against 3-4% on DuckDuckGo and Yahoo.
-3. **The web is closing to crawlers:** 21% of pages refused us (403s, robots.txt)
+3. **The web is closing to crawlers:** 22% of pages refused us (403s, robots.txt)
    and 14 answered *402 Payment Required* (pay-per-crawl). US publishers block
    more (66% coverage vs ~80% for India).
 4. **The top result was never in the low band** on Google India; ranks 2-9 were

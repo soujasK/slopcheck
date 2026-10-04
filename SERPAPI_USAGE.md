@@ -94,7 +94,8 @@ key and spends no credits.
 | Probes: Bing India (2 x `mkt=en-IN`, 1 x `cc=IN`), all unusable | 3 |
 | Probe: DuckDuckGo India (health-03) | 1 |
 | Probe: Yahoo India (health-03) | 1 |
-| Measurement collection | filled in after collection |
+| Measurement collection (97 searches; 3 probes reused from cache) | 97 |
+| **Total** | **103** of the 140 cap |
 
 The Google, DuckDuckGo and Yahoo probes are jobs in the plan, so the full
 collection reuses them from the cache: it needs 97 more credits, not 100. The 3
