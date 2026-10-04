@@ -1,0 +1,20 @@
+# Agent before/after demo questions.
+# Chosen BEFORE running the demo: 2 per category from the 40 India queries,
+# drawn with random.Random(8) over categories and ids in sorted order (no
+# cherry-picking). All 8 are reported, whatever the outcome. Sources: each
+# question's committed Google India SERP (top organic results).
+
+seed: 8
+engine: google
+locale: IN
+top_k: 5
+
+questions:
+  - {id: health-04, text: "is it safe to take dolo 650 every day"}
+  - {id: health-06, text: "vitamin d deficiency symptoms in women"}
+  - {id: finance-03, text: "how to improve cibil score fast"}
+  - {id: finance-07, text: "is term insurance worth it"}
+  - {id: product-01, text: "best smartphone under 20000"}
+  - {id: product-04, text: "best water purifier for home ro or uv"}
+  - {id: tech-02, text: "how to check pf balance using uan number"}
+  - {id: tech-03, text: "upi payment failed but money debited what to do"}
