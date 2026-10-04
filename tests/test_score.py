@@ -43,7 +43,7 @@ def test_affiliate_listicle_is_low_with_reasons() -> None:
             affiliate_links=14, affiliate_density=0.21, outbound_links=20, commerce_ratio=0.6,
             listicle=True, ad_scripts=12, has_author=False, has_date=False,
         ),
-        load_rubric(RUBRIC),
+        load_rubric(REPO_ROOT / "data" / "rubric_candidates" / "v2c.yaml"),
     )  # fmt: skip
     assert s.band == "low" and s.slop_risk == 1.0  # capped
     assert "14 affiliate links (density 0.21)" in s.reasons
@@ -52,7 +52,7 @@ def test_affiliate_listicle_is_low_with_reasons() -> None:
 
 
 def test_commerce_needs_enough_links() -> None:
-    rubric = load_rubric(RUBRIC)
+    rubric = load_rubric(REPO_ROOT / "data" / "rubric_candidates" / "v2c.yaml")
     few = score("u", sig(outbound_links=2, commerce_ratio=1.0), rubric)
     assert not any("shops" in r for r in few.reasons)
 
@@ -153,3 +153,17 @@ def test_near_dups_filled_across_serp_set() -> None:
     scores = score_all(rows, records, dup_rubric)
     assert [s.url for s in scores] == sorted(r.url for r in records)
     assert any("near-duplicate" in r for r in scores[0].reasons)
+
+
+def test_rubric_v3_flags_anonymous_off_query_sellers() -> None:
+    rubric = load_rubric(RUBRIC)
+    assert rubric.version == 3
+    slop = score(
+        "u",
+        sig(has_author=False, has_date=False, sells_directly=True,
+            query_title_coverage=0.25, query_text_coverage=0.3),
+        rubric,
+    )  # fmt: skip
+    assert slop.band == "low"
+    assert any("cover 25%" in r for r in slop.reasons)
+    assert score("u", sig(query_title_coverage=1.0, query_text_coverage=1.0), rubric).band == "ok"
