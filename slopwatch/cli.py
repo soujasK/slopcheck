@@ -27,6 +27,11 @@ from rich.table import Table
 from slopwatch import __version__, pipeline
 from slopwatch.cache import Cache
 from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
+from slopwatch.demo import Source as DemoSource
+from slopwatch.demo import ask_agent, run_demo
+from slopwatch.demo import load_questions as load_demo_questions
+from slopwatch.demo import render_markdown as render_demo
+from slopwatch.demo import to_json as demo_to_json
 from slopwatch.evaluate import evaluate as evaluate_labels
 from slopwatch.evaluate import render_markdown
 from slopwatch.filter import live_filter, offline_filter
@@ -831,6 +836,54 @@ def search(
     console.print(table)
     console.print(f"kept {len(kept)} of {len(results)}")
     console.print(credits_line(serp.ledger.spent, ledger))
+
+
+@app.command()
+def demo(
+    questions: Annotated[Path, typer.Option("--questions")] = Path("data/demo_questions.yaml"),
+    out_dir: Annotated[Path, typer.Option("--out-dir")] = Path("report"),
+    min_interval: Annotated[float, typer.Option("--min-interval", min=0)] = 7.0,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Agent before/after on the committed demo questions (all reported).
+
+    One Gemini call per question per condition (skipped when the filter drops
+    nothing). Responses are recorded as fixtures; replay needs no key.
+    """
+    settings, mode = _settings_and_mode(cache_mode)
+    meta, qs = load_demo_questions(questions)
+    with (
+        open_cache(settings, mode) as cache,
+        HttpClient(cache, timeout=120.0, max_retries=settings.http_max_retries) as http,
+    ):
+        backend = GeminiBackend(http, settings.gemini_api_key, min_interval=min_interval)
+
+        def agent(question: str, sources: list[DemoSource]) -> tuple[str, list[int]]:
+            return ask_agent(backend, question, sources)
+
+        try:
+            results = run_demo(
+                qs,
+                data_dir=settings.data_dir,
+                slop_filter=offline_filter(),
+                agent=agent,
+                engine=str(meta.get("engine", "google")),
+                locale=str(meta.get("locale", "IN")),
+                k=int(meta.get("top_k", 5)),
+            )
+        finally:
+            if mode is not CacheMode.REPLAY:
+                cache.export_dir(settings.fixtures_dir, only=cache.used)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "demo.json").write_text(
+        json.dumps(demo_to_json(results), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    md = render_demo(results)
+    Path("DEMO_RESULTS.md").write_text(md, encoding="utf-8", newline="\n")
+    console.print(md.split("\n## ")[0], markup=False)
+    console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
 
 
 @app.command()

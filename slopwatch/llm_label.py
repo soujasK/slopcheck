@@ -159,7 +159,10 @@ class GeminiBackend:
         self.min_interval, self._sleep, self._clock = min_interval, sleep, clock
         self._last = -1e9
 
-    def _post(self, payload: dict[str, Any], headers: dict[str, str]) -> CachedResponse:
+    def key_value(self) -> str | None:
+        return self._key.get_secret_value() if self._key else None
+
+    def post_paced(self, payload: dict[str, Any], headers: dict[str, str]) -> CachedResponse:
         """Paced request; 429s wait and retry; a daily-quota 429 raises QuotaExhausted.
         Cache hits are never paced."""
         url = GEMINI_URL.format(model=self.model)
@@ -204,7 +207,7 @@ class GeminiBackend:
             },
         }
         headers = {"x-goog-api-key": self._key.get_secret_value()} if self._key else {}
-        resp = self._post(payload, headers)
+        resp = self.post_paced(payload, headers)
         if resp.status >= 400:
             raise HttpError(f"Gemini HTTP {resp.status}", resp.status)
         data = resp.json()
