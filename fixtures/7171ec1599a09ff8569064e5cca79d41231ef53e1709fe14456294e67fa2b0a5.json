@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an authoritative source from Harvard Health with named authors and medical reviewers providing reliable information.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TTlydL0Jri8gN7Y6yD/YnLX+eEKb9vhmjpxtxj7zMT4mf0wAF99GznJ6cNbouf6eHnNDcpAEFxfgC/ycWLvDl7Y1tQF3Bq1HmzZZfVgtiD3hGuPOfGt5d2fU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 986,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1016,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 986\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VfrBaq7CDOqjqfkP36_W8QY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:03:51.626953+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:03:50 GMT"
+  },
+  "key": "7171ec1599a09ff8569064e5cca79d41231ef53e1709fe14456294e67fa2b0a5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

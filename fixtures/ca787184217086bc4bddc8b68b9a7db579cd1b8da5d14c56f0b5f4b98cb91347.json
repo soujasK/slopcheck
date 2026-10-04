@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The guide provides actionable, step-by-step advice for getting out of debt with a clear organisational backing.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TTTPiqx4VkQ0xv2wGmbEmvMNgxOgRq6Mmq3/fH5AHqWAjzw65vNemIcQeCKLK3Y7oojqRha8gp9GQ+BLAi4S68GVRlx9IOj+n4QqmSEXd6quaEMWMpLnYTbg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 999,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1038,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 999\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3vnBarC0Ds3fg8UP0-e38QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:01:52.694915+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:01:51 GMT"
+  },
+  "key": "ca787184217086bc4bddc8b68b9a7db579cd1b8da5d14c56f0b5f4b98cb91347",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

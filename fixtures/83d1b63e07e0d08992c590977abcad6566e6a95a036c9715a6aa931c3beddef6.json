@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable source with named expert testers and provides hands-on shoe testing specifically for beginners.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1YgCgg6p2odgp5zpVRkfGPylXUBsYYy9rkTAsTy6vbV6z8LqY/v+jXuNKK2VxhH/CvXC521J+lrjaZWqVfbxzH6tlumVbG51lK7qJaolalC0MArdqHxIgu4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1039,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1072,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1039\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"yfnBasnrCcf-4-EPjt-6kAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:01:31.592491+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:01:30 GMT"
+  },
+  "key": "83d1b63e07e0d08992c590977abcad6566e6a95a036c9715a6aa931c3beddef6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

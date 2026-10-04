@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear, step-by-step guide with an author credited, detailing the official process to download an e-Aadhaar PDF.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKZvk+ttcBRxdT20o0FcuV9rllmTQpFqVwSon4t+xw9C9Q1kxagFd40SpKI7X2JWgfH6liPV4+bMt57yfClsuFqA/bjpAsjf6eD49eWlVqZdcr0vHFnyuGoY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1004,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1046,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1004\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ePrBatyUEf3dqfkP282l4QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:04:26.438524+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:04:24 GMT"
+  },
+  "key": "3157833254abd06617a51817fabb548481cc0d8959663641aea350174657bbf7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

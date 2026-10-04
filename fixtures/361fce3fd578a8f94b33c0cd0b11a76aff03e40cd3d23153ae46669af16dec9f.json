@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic health listicle lacking verified medical authority or institutional backing.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TOjDnpab7UFgxWsonsTWibYXsP55hFz+ih7nZKLHfZQ/5nuektiy5naC/vp923gpm6UpA55XihYj//rswnQhzT+OUEq3lIvbhNrTL7VvPiS25MopmZtE/rxM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 962,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 989,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 962\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vvrBatrkDseCg8UP-ruR6Qc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:05:36.786479+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:05:35 GMT"
+  },
+  "key": "361fce3fd578a8f94b33c0cd0b11a76aff03e40cd3d23153ae46669af16dec9f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

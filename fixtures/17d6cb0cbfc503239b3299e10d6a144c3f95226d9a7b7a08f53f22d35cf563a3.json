@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a superficial web-story slide format lacking deep medical context or identifiable author responsibility.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T2HCgnxWBXq7UD8VsJz263OcAAXCkhExqf+pmpb2aaGsRv/m8a6XajURilldjE0odXcXcdAo4NGKDYOrmQXfayXsujM5b/bj93rbQkz3/xj7IRTuXCQ+/GYs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 861,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 891,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 861\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"D_rBavydB7mkg8UP55SMqQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:02:41.581463+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:02:40 GMT"
+  },
+  "key": "17d6cb0cbfc503239b3299e10d6a144c3f95226d9a7b7a08f53f22d35cf563a3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

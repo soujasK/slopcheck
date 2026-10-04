@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about a humanitarian medical organization and does not contain personal finance advice about emergency funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T3RWEs7ykkd5X9m06afZx9a6n89VlnCiKeF2azkGp/OLGhSnUIzi0keeNIIeTpPPF/dgpeuxSQhLPUtY4zb80aChiawPwb5w3J+MAcTd3c0cYaL+EsaEf5C4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 940,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 970,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 940\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"m_rBauruDfSiqfkP1uq70AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:05:01.765158+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:05:00 GMT"
+  },
+  "key": "f35f06f934e8ce7ea5924ecd008d878cb76b4ab6b5d354459ff9d8ca6dc38734",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

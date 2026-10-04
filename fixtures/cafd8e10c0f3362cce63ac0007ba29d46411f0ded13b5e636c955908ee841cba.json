@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is published by a recognized hospital organisation and directly answers the query about blood sugar levels for diabetics.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TVliHKaI11ozZbht9ExI+RaspsRecSHvwcELzacAy3bkHaakwgzkxM98jwdO4KHkBxOrAqSlvT232LB42Fh99qaBhfB8eOY5AZy1LHpzz0T8Pec3TrfQSGTU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 970,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1008,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 970\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"9vrBasvMFI70g8UP3876gAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:06:32.901469+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:06:31 GMT"
+  },
+  "key": "cafd8e10c0f3362cce63ac0007ba29d46411f0ded13b5e636c955908ee841cba",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

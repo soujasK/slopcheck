@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides clear, step-by-step instructions with identifiable editorial oversight from wikiHow staff.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0ThnrI1eAxlbofrY8CHjszLpHODEp/Ti4nOfQLJ2oY6HGTMSmULzxJr0T1+Zhh3MMJJ062W4VqcVrC5rrRnX1wEx8xz2bZ5ijnhfEGgr0KWlH5QTED8W5sELw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 961,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 991,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 961\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"cfrBarGiBNijqfkP6N_DwAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:04:19.502440+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:04:18 GMT"
+  },
+  "key": "c6d568bf0a03beccd58557d919f3d0b2bb88000de8536ca47c9017e0f1d0e800",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a local business directory listing rather than a substantive guide or review answering the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TvShNpT1mT+wbNnPdhGUCTsEw/dAZ1EMNnuLnldihN2kwzR27HKgmJjLdULOzVFB8Z4gwYNpfOEeM7kazy0m2j8RmqEuTLxEFeKWJ2wwqWyxz9VQHrPt6pNQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 557,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 593,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 557\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"qfrBatKmCua2g8UP55vrsQU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:05:15.605618+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:05:14 GMT"
+  },
+  "key": "796ba3218b3983730591730ce01848ca04543606a5d6dedddf12b931836bca97",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

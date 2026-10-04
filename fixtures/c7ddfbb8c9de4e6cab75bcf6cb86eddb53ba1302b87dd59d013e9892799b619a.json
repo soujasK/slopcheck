@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about FDA vaccine emergency use authorizations and has nothing to do with personal finance or emergency funds.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TSE62yRpo3WXIyPgyjqDkGYi8SqqJ4bIkGykexLGKo7v0QB1Za05Iet9kJXSDlLaYqJlCxquT8tSQGqtwpkrnu6xY0o/biKonh+IupnovilRg7JD/R0G2Ui8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 896,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 928,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 896\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"HfrBauODCpjnqfkP79nm-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:02:55.518727+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:02:54 GMT"
+  },
+  "key": "c7ddfbb8c9de4e6cab75bcf6cb86eddb53ba1302b87dd59d013e9892799b619a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

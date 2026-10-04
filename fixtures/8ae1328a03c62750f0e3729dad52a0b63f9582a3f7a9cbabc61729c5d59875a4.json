@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides direct, step-by-step instructions on recovering a hacked Gmail account.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TR0oDlNxEA5BMAy/eAF7B9XG/kkJ92kjp62L/xP+u5hmKbeH74a/MbeWMe7yX349EgO+pVpgcz+GG/SzsFI6ox1UKeyyXTUdygBnQ+v/Xz8i0STt9yzG8g+c=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 943,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 979,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 943\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"5fnBaqudC5mwg8UPp_H2yAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:01:59.700220+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:01:58 GMT"
+  },
+  "key": "8ae1328a03c62750f0e3729dad52a0b63f9582a3f7a9cbabc61729c5d59875a4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

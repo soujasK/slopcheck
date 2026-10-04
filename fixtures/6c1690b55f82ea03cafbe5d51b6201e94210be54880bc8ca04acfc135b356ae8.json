@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"No, taking Dolo 650 every day or excessively like candy is dangerous and can cause serious complications, including liver damage.\\\", \\\"cited\\\": [2, 4, 5]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TkpSIBsAIwkpIYLgBH3Gfv6QbDdxABHH68tx4+3YIxYQtiz1aFCSHx4+fgJxHAsiFFNDpWrYzb1iRB8z+H146B0I9uu3tyg0HWisVDFJnmoI4QL3WH0q2VzY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 717,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 760,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 717\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"I_vBasuUOsPFg8UPwtCToQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:07:18.497693+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:07:16 GMT"
+  },
+  "key": "6c1690b55f82ea03cafbe5d51b6201e94210be54880bc8ca04acfc135b356ae8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

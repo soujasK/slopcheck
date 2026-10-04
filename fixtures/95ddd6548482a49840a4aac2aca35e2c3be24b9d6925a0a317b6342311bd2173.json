@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"For the best smartphones under Rs 20,000, popular options and brands include models from POCO, Xiaomi, Samsung, Realme, VIVO, OPPO, and IQOO [1]. Upcoming and notable choices feature devices like the Samsung Galaxy A08 4G and MIVI One 5G [2], as well as slim options such as the Xiaomi Mi 11 Lite, iQOO Z10R, and Motorola Edge 20 [5].\\\", \\\"cited\\\": [1, 2, 5]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TwdnQ+WOI9h3p4n8zLKAdBiLUaUrjteaFySy/HvHRQranSP0SVrXipdwAnWlwJlU8gsmJF/diq57un0fzsX3X342YkQYcPCmI7OfE3QNZBxjJIcLhQsskOR4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 719,\n    \"candidatesTokenCount\": 116,\n    \"totalTokenCount\": 835,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 719\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"R_vBasSpC63Rg8UP4pyikAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:07:53.899507+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:07:52 GMT"
+  },
+  "key": "95ddd6548482a49840a4aac2aca35e2c3be24b9d6925a0a317b6342311bd2173",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized hospital and provides structured, evidence-based dietary advice for managing dengue.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TN7MaEi/uHF1itYw3KXiMRfTZ9KAYBCvQhE0ZQeSLa4SujSj2ZOwjJTCeAxTdrfSvHzWn1xx0b4i5KKFLR3zlLhlCsKweHPrgEMQVWJj3MwvH5amyjF9QGAA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 906,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 938,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 906\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"0PnBau24D8K6g8UPsbOi-QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:01:38.685115+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:01:37 GMT"
+  },
+  "key": "585004ea912ad974340489f75b492ccae10e028f487dc7482d408de96e3b5240",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

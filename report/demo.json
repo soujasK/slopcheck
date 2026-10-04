@@ -1,0 +1,916 @@
+[
+  {
+    "id": "health-04",
+    "question": "is it safe to take dolo 650 every day",
+    "dropped": [
+      "https://askdocdoc.com/questions/27796-dolo--action-time"
+    ],
+    "changed": true,
+    "before": {
+      "answer": "No, taking Dolo 650 every day or excessively like candy is not safe and can be harmful to your health [3, 5]. Overuse of paracetamol can lead to health risks, so it should only be taken as directed by a healthcare professional.",
+      "cited": [
+        3,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.practo.com/consult/dolo-6-times-per-day-is-dangerous-can-dolo-be-taken-within-an-interval-of-4-hrs-each-doc-advised-to-take-at-an/q",
+          "title": "Dolo 6 Times Per Day Is Dangerous?",
+          "text": "Download FREE Practo app Get ₹200 HealthCash Get App Home Consult with a doctor Flu Dolo 6 times per day is dangerous? Hrs! Dolo 6 times per day is dangerous? Asked for Female, 28 Years Can dolo be taken within an interval of 4 hrs each. Doc advised to take at an interval of 4 hrs for 1st day, 2nd…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://askdocdoc.com/questions/27796-dolo--action-time",
+          "title": "dolo 650 action time",
+          "text": "Consultations Hematologic DiseasesInfectious IllnessesLung & Breathing ConditionsNervous System DisordersRheumatic & Autoimmune ConditionsSkin & Hair ConcernsDental & Oral DisordersCardiac & Vascular HealthDigestive HealthEndocrine & Hormonal ImbalancesFertility & Reproductive SupportGeriatrics &…",
+          "slop_risk": 0.6325,
+          "band": "low",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://www.onmanorama.com/lifestyle/health/2025/04/18/indians-take-dolo-parcetamol-like-gems-healthy-dosage.html",
+          "title": "'Indians take Dolo like Cadbury Gems;' doctor's tweet on ...",
+          "text": "ADVERTISEMENT LIFESTYLE Health 'Indians take Dolo like Cadbury Gems;' doctor’s tweet on paracetamol overuse goes viral: What's a healthy dose? Our Correspondent Published: April 18, 2025 11:31 AM IST 2 minute Read Share × Email Facebook Twitter WhatsApp LinkedIn Telegram Reddit Comments Link…",
+          "slop_risk": 0.2415,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://flypped.com/health-fitness/dolo-650-tablet-uses",
+          "title": "Dolo 650: Uses, Dosage, Side Effects, Benefits & Complete ...",
+          "text": "What Is Dolo 650 Tablet? Uses, Benefits, Side Effects and Safety Information Connecting... Connecting to avatar... Introduction Dolo 650 is one of the most commonly used medicines in India for treating fever and relieving mild to moderate pain. Whether you have a high temperature due to a viral…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://www.republicworld.com/india/why-popping-dolo-650-like-candy-could-be-hurting-you-more-than-helping-us-doctor-explains",
+          "title": "Why Popping Dolo-650 Like Candy Could Be Hurting You ...",
+          "text": "Updated 16 April 2025 at 22:04 IST Why Popping Dolo-650 Like Candy Could Be Hurting You More Than Helping? US Doctor Explains From headaches and fatigue to low-grade fevers, Dolo-650 has become India’s go-to fix for almost everything Surabhi Shaurya India News 4 min read Follow : Why Popping…",
+          "slop_risk": 0.2415,
+          "band": "ok",
+          "not_scored": null
+        }
+      ]
+    },
+    "after": {
+      "answer": "No, taking Dolo 650 every day or excessively like candy is dangerous and can cause serious complications, including liver damage.",
+      "cited": [
+        2,
+        4,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.practo.com/consult/dolo-6-times-per-day-is-dangerous-can-dolo-be-taken-within-an-interval-of-4-hrs-each-doc-advised-to-take-at-an/q",
+          "title": "Dolo 6 Times Per Day Is Dangerous?",
+          "text": "Download FREE Practo app Get ₹200 HealthCash Get App Home Consult with a doctor Flu Dolo 6 times per day is dangerous? Hrs! Dolo 6 times per day is dangerous? Asked for Female, 28 Years Can dolo be taken within an interval of 4 hrs each. Doc advised to take at an interval of 4 hrs for 1st day, 2nd…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://www.onmanorama.com/lifestyle/health/2025/04/18/indians-take-dolo-parcetamol-like-gems-healthy-dosage.html",
+          "title": "'Indians take Dolo like Cadbury Gems;' doctor's tweet on ...",
+          "text": "ADVERTISEMENT LIFESTYLE Health 'Indians take Dolo like Cadbury Gems;' doctor’s tweet on paracetamol overuse goes viral: What's a healthy dose? Our Correspondent Published: April 18, 2025 11:31 AM IST 2 minute Read Share × Email Facebook Twitter WhatsApp LinkedIn Telegram Reddit Comments Link…",
+          "slop_risk": 0.2415,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://flypped.com/health-fitness/dolo-650-tablet-uses",
+          "title": "Dolo 650: Uses, Dosage, Side Effects, Benefits & Complete ...",
+          "text": "What Is Dolo 650 Tablet? Uses, Benefits, Side Effects and Safety Information Connecting... Connecting to avatar... Introduction Dolo 650 is one of the most commonly used medicines in India for treating fever and relieving mild to moderate pain. Whether you have a high temperature due to a viral…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.republicworld.com/india/why-popping-dolo-650-like-candy-could-be-hurting-you-more-than-helping-us-doctor-explains",
+          "title": "Why Popping Dolo-650 Like Candy Could Be Hurting You ...",
+          "text": "Updated 16 April 2025 at 22:04 IST Why Popping Dolo-650 Like Candy Could Be Hurting You More Than Helping? US Doctor Explains From headaches and fatigue to low-grade fevers, Dolo-650 has become India’s go-to fix for almost everything Surabhi Shaurya India News 4 min read Follow : Why Popping…",
+          "slop_risk": 0.2415,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://www.instagram.com/reel/DZASgYMMDf5/?hl=en",
+          "title": "Half a Pill, Double the Danger? “He's ...",
+          "text": "Dolo 650 in half.” Giving a higher-than-recommended dose repeatedly can cause serious complications, including liver damage.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:social"
+        }
+      ]
+    }
+  },
+  {
+    "id": "health-06",
+    "question": "vitamin d deficiency symptoms in women",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "In females, vitamin D deficiency can cause symptoms such as fatigue, depression, bone pain, deep body aches, weight gain, and menstrual irregularities like irregular periods or worsened PMS symptoms due to hormone imbalance [1], [4], [5].",
+      "cited": [
+        1,
+        4,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://primadiagnostics.com/vitamin-d-deficiency-symptoms-in-indians-10-signs-you-are-low/",
+          "title": "Vitamin D Deficiency Symptoms in Indians - 10 Signs",
+          "text": "Health library ›Blood Test Vitamin D Deficiency Symptoms in Indians - 10 Signs You Are Low 26 Sep 2026 · Prima Diagnostics · 8 min read Blood Test In this article What Are Vitamin D Deficiency Symptoms? 10 Vitamin D Deficiency Symptoms to Watch For 1. Bone Pain or Deep Body Aches 2. Feeling Tired…",
+          "slop_risk": 0.2008,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://www.ckbhospital.com/blogs/importance-of-vitamin-d",
+          "title": "Vitamin D Deficiency | Causes, Symptoms And Diagnosis",
+          "text": "Home >Blogs >Importance of Vitamin D Importance of Vitamin D Orthopaedics | by Dr Ashwani Maichand on Jul 30, 2019 | Last Updated : Mar 2, 2026 Share : Summary Vitamin D keeps our bones healthy and strong. Know more about the symptoms & causes of Vitamin D deficiency and get in touch with our team…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://hitechdiagnosticcentre.com/vitamin-d-deficiency-test/",
+          "title": "Vitamin D Deficiency: Symptoms, Causes & Testing",
+          "text": "+91 94477 12300 0484 2333888 Make an Appointment About Us About Us Testimonials Health Packages Scanning Our Labs Hi-Tech Diagnostic Centre Palarivattom Hi-Tech Diagnostic Centre Pottakuzhi Hi-Tech Diagnostic Centre Kadavanthra Hi-Tech Diagnostic Centre Vyttila Hi-Tech Diagnostic Centre North…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.33fuel.com/blogs/default-blog/vitamin-d-deficiency-symptoms",
+          "title": "Vitamin D Deficiency Symptoms",
+          "text": "Nutrition · Nov 05, 2024 Vitamin D Deficiency Symptoms Written by James Eacott Vitamin D deficiency is linked to a range of serious health conditions so spotting symptoms early is crucial. Some vitamin D deficiency symptoms such as fatigue and depression could also be signs of other issues Vitamin…",
+          "slop_risk": 0.2008,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://indianexpress.com/web-stories/miscellaneous/9-signs-vitamin-d-deficiency-females/9987676/",
+          "title": "9 signs of Vitamin D deficiency in females",
+          "text": "May 09, 2025 9 signs of Vitamin D deficiency in females Lifestyle Desk Menstrual Irregularities Vitamin D influences hormone balance; low levels may lead to irregular periods or worsened PMS symptoms. Source: Pexels Weight Gain Hormonal imbalance and fatigue from vitamin D deficiency can lead to…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        }
+      ]
+    },
+    "after": {
+      "answer": "In females, vitamin D deficiency can cause symptoms such as fatigue, depression, bone pain, deep body aches, weight gain, and menstrual irregularities like irregular periods or worsened PMS symptoms due to hormone imbalance [1], [4], [5].",
+      "cited": [
+        1,
+        4,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://primadiagnostics.com/vitamin-d-deficiency-symptoms-in-indians-10-signs-you-are-low/",
+          "title": "Vitamin D Deficiency Symptoms in Indians - 10 Signs",
+          "text": "Health library ›Blood Test Vitamin D Deficiency Symptoms in Indians - 10 Signs You Are Low 26 Sep 2026 · Prima Diagnostics · 8 min read Blood Test In this article What Are Vitamin D Deficiency Symptoms? 10 Vitamin D Deficiency Symptoms to Watch For 1. Bone Pain or Deep Body Aches 2. Feeling Tired…",
+          "slop_risk": 0.2008,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://www.ckbhospital.com/blogs/importance-of-vitamin-d",
+          "title": "Vitamin D Deficiency | Causes, Symptoms And Diagnosis",
+          "text": "Home >Blogs >Importance of Vitamin D Importance of Vitamin D Orthopaedics | by Dr Ashwani Maichand on Jul 30, 2019 | Last Updated : Mar 2, 2026 Share : Summary Vitamin D keeps our bones healthy and strong. Know more about the symptoms & causes of Vitamin D deficiency and get in touch with our team…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://hitechdiagnosticcentre.com/vitamin-d-deficiency-test/",
+          "title": "Vitamin D Deficiency: Symptoms, Causes & Testing",
+          "text": "+91 94477 12300 0484 2333888 Make an Appointment About Us About Us Testimonials Health Packages Scanning Our Labs Hi-Tech Diagnostic Centre Palarivattom Hi-Tech Diagnostic Centre Pottakuzhi Hi-Tech Diagnostic Centre Kadavanthra Hi-Tech Diagnostic Centre Vyttila Hi-Tech Diagnostic Centre North…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.33fuel.com/blogs/default-blog/vitamin-d-deficiency-symptoms",
+          "title": "Vitamin D Deficiency Symptoms",
+          "text": "Nutrition · Nov 05, 2024 Vitamin D Deficiency Symptoms Written by James Eacott Vitamin D deficiency is linked to a range of serious health conditions so spotting symptoms early is crucial. Some vitamin D deficiency symptoms such as fatigue and depression could also be signs of other issues Vitamin…",
+          "slop_risk": 0.2008,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://indianexpress.com/web-stories/miscellaneous/9-signs-vitamin-d-deficiency-females/9987676/",
+          "title": "9 signs of Vitamin D deficiency in females",
+          "text": "May 09, 2025 9 signs of Vitamin D deficiency in females Lifestyle Desk Menstrual Irregularities Vitamin D influences hormone balance; low levels may lead to irregular periods or worsened PMS symptoms. Source: Pexels Weight Gain Hormonal imbalance and fatigue from vitamin D deficiency can lead to…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "finance-03",
+    "question": "how to improve cibil score fast",
+    "dropped": [
+      "https://www.nichd.nih.gov/research/supported/IMPROVE",
+      "https://platform.edu21-improve.com/"
+    ],
+    "changed": false,
+    "before": {
+      "answer": "The provided sources do not contain information on how to improve a CIBIL score.",
+      "cited": [],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://dictionary.cambridge.org/dictionary/english/improve",
+          "title": "IMPROVE | English meaning - Cambridge Dictionary",
+          "text": "IMPROVE definition: 1. to (cause something to) get better: 2. to (cause something to) get better: 3. to get better…. Learn more.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 2,
+          "url": "https://www.merriam-webster.com/dictionary/improve",
+          "title": "IMPROVE Definition & Meaning",
+          "text": "The meaning of IMPROVE is to enhance in value or quality : make better. How to use improve in a sentence. Synonym Discussion of Improve.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://www.nichd.nih.gov/research/supported/IMPROVE",
+          "title": "Implementing a Maternal health and PRegnancy Outcomes ...",
+          "text": "Breadcrumb Home Research Share Instagram Print Implementing a Maternal health and PRegnancy Outcomes Vision for Everyone (IMPROVE) Initiative The National Institutes of Health (NIH) launched the IMPROVE initiative in 2019 in response to high rates of pregnancy-related complications and deaths,…",
+          "slop_risk": 0.7992,
+          "band": "low",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1410489",
+          "title": "Ezetimibe Added to Statin Therapy after Acute Coronary ...",
+          "text": "When added to statin therapy, ezetimibe resulted in incremental lowering of LDL cholesterol levels and improved cardiovascular outcomes.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 5,
+          "url": "https://platform.edu21-improve.com/",
+          "title": "iM-PROVE: Log in",
+          "text": "Login Did you forget your password? FAQ | Cookies Policy | Privacy Policy. © 2026 iM-PROVE.",
+          "slop_risk": 0.7992,
+          "band": "low",
+          "not_scored": null
+        }
+      ]
+    },
+    "after": {
+      "answer": "I am sorry, but the provided sources do not contain information on how to improve a CIBIL score.",
+      "cited": [],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://dictionary.cambridge.org/dictionary/english/improve",
+          "title": "IMPROVE | English meaning - Cambridge Dictionary",
+          "text": "IMPROVE definition: 1. to (cause something to) get better: 2. to (cause something to) get better: 3. to get better…. Learn more.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 2,
+          "url": "https://www.merriam-webster.com/dictionary/improve",
+          "title": "IMPROVE Definition & Meaning",
+          "text": "The meaning of IMPROVE is to enhance in value or quality : make better. How to use improve in a sentence. Synonym Discussion of Improve.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1410489",
+          "title": "Ezetimibe Added to Statin Therapy after Acute Coronary ...",
+          "text": "When added to statin therapy, ezetimibe resulted in incremental lowering of LDL cholesterol levels and improved cardiovascular outcomes.",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 4,
+          "url": "https://www.youtube.com/watch?v=-t7ZdEfYDes",
+          "title": "5 things to practise every day to improve your English ...",
+          "text": "AboutPressCopyrightContact usCreatorAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new features © 2026 Google LLC",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:video"
+        },
+        {
+          "n": 5,
+          "url": "https://www.sciencedirect.com/science/article/pii/S1818087617309297",
+          "title": "Phyto-phospholipid complexes (phytosomes): A novel ...",
+          "text": "A strategy of using phyto-phospholipid complexes represents a promising approach to increase the oral bioavailability of active constituents, which is consist ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "robots_unavailable"
+        }
+      ]
+    }
+  },
+  {
+    "id": "finance-07",
+    "question": "is term insurance worth it",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "Term insurance is considered worth it because it is a pure protection plan that offers high coverage for a low premium [5]. It is known for providing affordability, flexibility, and simplicity compared to other life insurance types [4], helping to adequately cover your beneficiaries [2].",
+      "cited": [
+        2,
+        4,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.reddit.com/r/InsuranceTroubleIndia/comments/1vx052s/term_insurance_is_it_really_worth/",
+          "title": "Term insurance - is it really worth? : r/InsuranceTroubleIndia",
+          "text": "There must be some loophole right which insurance companies must be using or else it is easy money for your family and you being free from the ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:forum"
+        },
+        {
+          "n": 2,
+          "url": "https://www.kotaklife.com/insurance-guide/wealth-creation/is-it-worth-investing-in-insurance",
+          "title": "Is Life Insurance Investment Worthy Enough",
+          "text": "It is recommended you invest adequately in life insurance to cover your beneficiaries before you make additional investments in other types ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://basketoption.insure/blog/is-term-insurance-worth-it",
+          "title": "Term Insurance a Waste of Money?",
+          "text": "Home / Blog details Is Term Insurance a Waste of Money ? 25 Oct 2024 Life & Retirement Insurance Is Term Insurance a Waste of Money ? Term insurance is a popular form of life insurance that many people consider when planning for their financial future. However, questions often arise about its true…",
+          "slop_risk": 0.391,
+          "band": "mixed",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.tdinsurance.com/products-services/life-insurance/life-guide/is-term-life-insurance-worth-it",
+          "title": "Reasons to Choose Term Life Insurance",
+          "text": "Reasons to Choose Term Life Insurance Published: 2026-05-19 When it comes to different types of life insurance in Canada, many Canadians choose term life insurance. This coverage often offers Canadians more affordability, flexibility, and simplicity than other types of life insurance, which can…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://www.linkedin.com/posts/shilpa-arora-16008a25_riskcover-criticalillness-riders-activity-7399291145215754240-S_88",
+          "title": "Shilpa Arora's Post",
+          "text": "It doesn't grow your money — it protects it. Term Insurance (Most Important) Pure protection plan. Low premium → high coverage (₹1 crore cover ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:social"
+        }
+      ]
+    },
+    "after": {
+      "answer": "Term insurance is considered worth it because it is a pure protection plan that offers high coverage for a low premium [5]. It is known for providing affordability, flexibility, and simplicity compared to other life insurance types [4], helping to adequately cover your beneficiaries [2].",
+      "cited": [
+        2,
+        4,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.reddit.com/r/InsuranceTroubleIndia/comments/1vx052s/term_insurance_is_it_really_worth/",
+          "title": "Term insurance - is it really worth? : r/InsuranceTroubleIndia",
+          "text": "There must be some loophole right which insurance companies must be using or else it is easy money for your family and you being free from the ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:forum"
+        },
+        {
+          "n": 2,
+          "url": "https://www.kotaklife.com/insurance-guide/wealth-creation/is-it-worth-investing-in-insurance",
+          "title": "Is Life Insurance Investment Worthy Enough",
+          "text": "It is recommended you invest adequately in life insurance to cover your beneficiaries before you make additional investments in other types ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://basketoption.insure/blog/is-term-insurance-worth-it",
+          "title": "Term Insurance a Waste of Money?",
+          "text": "Home / Blog details Is Term Insurance a Waste of Money ? 25 Oct 2024 Life & Retirement Insurance Is Term Insurance a Waste of Money ? Term insurance is a popular form of life insurance that many people consider when planning for their financial future. However, questions often arise about its true…",
+          "slop_risk": 0.391,
+          "band": "mixed",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.tdinsurance.com/products-services/life-insurance/life-guide/is-term-life-insurance-worth-it",
+          "title": "Reasons to Choose Term Life Insurance",
+          "text": "Reasons to Choose Term Life Insurance Published: 2026-05-19 When it comes to different types of life insurance in Canada, many Canadians choose term life insurance. This coverage often offers Canadians more affordability, flexibility, and simplicity than other types of life insurance, which can…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://www.linkedin.com/posts/shilpa-arora-16008a25_riskcover-criticalillness-riders-activity-7399291145215754240-S_88",
+          "title": "Shilpa Arora's Post",
+          "text": "It doesn't grow your money — it protects it. Term Insurance (Most Important) Pure protection plan. Low premium → high coverage (₹1 crore cover ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:social"
+        }
+      ]
+    }
+  },
+  {
+    "id": "product-01",
+    "question": "best smartphone under 20000",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "For the best smartphones under Rs 20,000, popular options and brands include models from POCO, Xiaomi, Samsung, Realme, VIVO, OPPO, and IQOO [1]. Upcoming and notable choices feature devices like the Samsung Galaxy A08 4G and MIVI One 5G [2], as well as slim options such as the Xiaomi Mi 11 Lite, iQOO Z10R, and Motorola Edge 20 [5].",
+      "cited": [
+        1,
+        2,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.reliancedigital.in/collection/mobile-phones-between-rs-10000-to-20000",
+          "title": "Best Mobile Phones under Rs 20000 in India 2026",
+          "text": "Orders Contact us Resource Center Find a store Cart Wishlist Filters Available In Stock Out of Stock Screen Size 5.5 inch & Above Price ₹ ₹ ₹0 ₹3,29,900 Discount 0% 58% Brand POCO Xiaomi Samsung Realme VIVO OPPO IQOO LG Internal Storage 128 GB 64 GB 256 GB Screen Size (Diagonal) 17.53 cm - 6.9…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 2,
+          "url": "https://www.91mobiles.com/list-of-phones/upcoming-smartphones-under-20000",
+          "title": "Upcoming Mobile Phones Under 20000 (Oct 2026)",
+          "text": "Top 5 Upcoming Mobile Phones Under 20,000 with Prices & Specs ; Samsung Galaxy A08 4G, MediaTek Helio G99, 4 GB RAM | 64 GB Storage ; MIVI One 5G 8GB RAM ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://www.91mobiles.com/reviews/best-phones-in-india/",
+          "title": "Best phones in India (2026): Our top picks for every budget ...",
+          "text": "Best Gaming Phone, POCO X8 Pro Max, Rs 45,999. Best Under Rs 40,000, Motorola Edge 70 Pro, Rs 39,999. Best Under Rs 30,000, Motorola Edge 60 Pro ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 4,
+          "url": "https://www.reliancedigital.in/collection/mobile-phones-between-20000-to-30000",
+          "title": "Mobile Phones Between 20000 to 30000",
+          "text": "Orders Contact us Resource Center Find a store Cart Wishlist Filters Available In Stock Out of Stock Screen Size 5.5 inch & Above Price ₹ ₹ ₹0 ₹3,29,900 Discount 0% 58% Brand Samsung Realme VIVO OPPO Xiaomi POCO One Plus IQOO LG Internal Storage 128 GB 256 GB 64 GB Screen Size (Diagonal) 17.018 cm…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 5,
+          "url": "https://www.91mobiles.com/list-of-phones/slimmest-phones-under-20000",
+          "title": "Slimmest Mobile Phones under 20000 (Oct 2026)",
+          "text": "Top 5 Slimmest Mobile Phones under 20000 with Prices & Specs · Xiaomi Mi 11 Lite · iQOO Z10R · Tecno Pova Curve 5G · Motorola Edge 20 · Tecno Pova Curve 256GB 8GB ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        }
+      ]
+    },
+    "after": {
+      "answer": "For the best smartphones under Rs 20,000, popular options and brands include models from POCO, Xiaomi, Samsung, Realme, VIVO, OPPO, and IQOO [1]. Upcoming and notable choices feature devices like the Samsung Galaxy A08 4G and MIVI One 5G [2], as well as slim options such as the Xiaomi Mi 11 Lite, iQOO Z10R, and Motorola Edge 20 [5].",
+      "cited": [
+        1,
+        2,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.reliancedigital.in/collection/mobile-phones-between-rs-10000-to-20000",
+          "title": "Best Mobile Phones under Rs 20000 in India 2026",
+          "text": "Orders Contact us Resource Center Find a store Cart Wishlist Filters Available In Stock Out of Stock Screen Size 5.5 inch & Above Price ₹ ₹ ₹0 ₹3,29,900 Discount 0% 58% Brand POCO Xiaomi Samsung Realme VIVO OPPO IQOO LG Internal Storage 128 GB 64 GB 256 GB Screen Size (Diagonal) 17.53 cm - 6.9…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 2,
+          "url": "https://www.91mobiles.com/list-of-phones/upcoming-smartphones-under-20000",
+          "title": "Upcoming Mobile Phones Under 20000 (Oct 2026)",
+          "text": "Top 5 Upcoming Mobile Phones Under 20,000 with Prices & Specs ; Samsung Galaxy A08 4G, MediaTek Helio G99, 4 GB RAM | 64 GB Storage ; MIVI One 5G 8GB RAM ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 3,
+          "url": "https://www.91mobiles.com/reviews/best-phones-in-india/",
+          "title": "Best phones in India (2026): Our top picks for every budget ...",
+          "text": "Best Gaming Phone, POCO X8 Pro Max, Rs 45,999. Best Under Rs 40,000, Motorola Edge 70 Pro, Rs 39,999. Best Under Rs 30,000, Motorola Edge 60 Pro ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 4,
+          "url": "https://www.reliancedigital.in/collection/mobile-phones-between-20000-to-30000",
+          "title": "Mobile Phones Between 20000 to 30000",
+          "text": "Orders Contact us Resource Center Find a store Cart Wishlist Filters Available In Stock Out of Stock Screen Size 5.5 inch & Above Price ₹ ₹ ₹0 ₹3,29,900 Discount 0% 58% Brand Samsung Realme VIVO OPPO Xiaomi POCO One Plus IQOO LG Internal Storage 128 GB 256 GB 64 GB Screen Size (Diagonal) 17.018 cm…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 5,
+          "url": "https://www.91mobiles.com/list-of-phones/slimmest-phones-under-20000",
+          "title": "Slimmest Mobile Phones under 20000 (Oct 2026)",
+          "text": "Top 5 Slimmest Mobile Phones under 20000 with Prices & Specs · Xiaomi Mi 11 Lite · iQOO Z10R · Tecno Pova Curve 5G · Motorola Edge 20 · Tecno Pova Curve 256GB 8GB ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        }
+      ]
+    }
+  },
+  {
+    "id": "product-04",
+    "question": "best water purifier for home ro or uv",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "Some of the best water purifiers combine multiple technologies, such as the Kent Ace 8 L RO + UV + UF + TDS Purifier, which features a multi-stage filtration system.",
+      "cited": [
+        4
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://ro.co/",
+          "title": "Ro - Weight loss, better sex, fuller hair, improved skin and ...",
+          "text": "Best seller in ED. Ro Sparks. Works in 15 minutes on average,* lasts up to 36 hours**. Get started · Learn more · Important safety information · a Ro Daily Rise ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 2,
+          "url": "https://www.amazon.in/Water-Coolers-Filters-Cartridges-RO/s?rh=n%3A1380262031%2Cp_n_feature_twenty_browse-bin%3A12618051031",
+          "title": "RO - Water Coolers, Filters & Cartridges / Water Purifiers & ...",
+          "text": "Shop popular deals Lifelong 14T Cycle for Kids 2 to 5 Years - Bike for Boys and Girls - Balance Wheels & Mudguard, 95% Pre-Assembled, Frame Size: 9\" - Suitable for Children Under 3 Feet Height (Yellow),Rigid,12 inches 33% off Da URBAN® Milford Leatherette | Heavy Duty Metal Frame|…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 3,
+          "url": "https://www.linkedin.com/company/ro",
+          "title": "Ro",
+          "text": "Ro was named one of the best GLP-1 telehealth platforms by U.S. News & World Report—ranking #3 overall and #1 for customer satisfaction. https://lnkd.in/ ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:social"
+        },
+        {
+          "n": 4,
+          "url": "https://www.flipkart.com/water-purifiers/pr?sid=j9e,abm,i45",
+          "title": "Buy Latest Water Purifiers Online at Best Prices in India",
+          "text": "Some of the best water RO purifiers such as the Kent Ace 8 L RO + UV + UF + TDS Purifier have a multi-stage filtration system that not only filters out ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 5,
+          "url": "https://www.roblox.com/",
+          "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+          "text": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Free Online Games on Roblox",
+          "slop_risk": 0.4082,
+          "band": "mixed",
+          "not_scored": null
+        }
+      ]
+    },
+    "after": {
+      "answer": "Some of the best water purifiers combine multiple technologies, such as the Kent Ace 8 L RO + UV + UF + TDS Purifier, which features a multi-stage filtration system.",
+      "cited": [
+        4
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://ro.co/",
+          "title": "Ro - Weight loss, better sex, fuller hair, improved skin and ...",
+          "text": "Best seller in ED. Ro Sparks. Works in 15 minutes on average,* lasts up to 36 hours**. Get started · Learn more · Important safety information · a Ro Daily Rise ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "http_error"
+        },
+        {
+          "n": 2,
+          "url": "https://www.amazon.in/Water-Coolers-Filters-Cartridges-RO/s?rh=n%3A1380262031%2Cp_n_feature_twenty_browse-bin%3A12618051031",
+          "title": "RO - Water Coolers, Filters & Cartridges / Water Purifiers & ...",
+          "text": "Shop popular deals Lifelong 14T Cycle for Kids 2 to 5 Years - Bike for Boys and Girls - Balance Wheels & Mudguard, 95% Pre-Assembled, Frame Size: 9\" - Suitable for Children Under 3 Feet Height (Yellow),Rigid,12 inches 33% off Da URBAN® Milford Leatherette | Heavy Duty Metal Frame|…",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 3,
+          "url": "https://www.linkedin.com/company/ro",
+          "title": "Ro",
+          "text": "Ro was named one of the best GLP-1 telehealth platforms by U.S. News & World Report—ranking #3 overall and #1 for customer satisfaction. https://lnkd.in/ ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:social"
+        },
+        {
+          "n": 4,
+          "url": "https://www.flipkart.com/water-purifiers/pr?sid=j9e,abm,i45",
+          "title": "Buy Latest Water Purifiers Online at Best Prices in India",
+          "text": "Some of the best water RO purifiers such as the Kent Ace 8 L RO + UV + UF + TDS Purifier have a multi-stage filtration system that not only filters out ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:shop"
+        },
+        {
+          "n": 5,
+          "url": "https://www.roblox.com/",
+          "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+          "text": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Free Online Games on Roblox",
+          "slop_risk": 0.4082,
+          "band": "mixed",
+          "not_scored": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "tech-02",
+    "question": "how to check pf balance using uan number",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "Members of the Employees' Provident Fund Organisation (EPFO) can check their PF account balance using their UAN number online, via SMS, or through a missed call facility.",
+      "cited": [
+        3
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://biznext.in/blog/tag/pf-balance-check-with-uan-number/?srsltid=AU7gw4WzmX0Vopv8RBoQh7EcKaG-0V7VDysjnXVyIyu429OPWbM5p5b7",
+          "title": "Tag: PF Balance Check with Uan Number",
+          "text": "Register Login About Us Partner with us Biznext Retailer Biznext Distributor Whitelabel Partner API Partner Services BANKING AePS UPI Cash Withdrawal Micro ATM Money Transfer Banking Services Loan Credit Card Agent Payment Solutions RECHARGE & BILL Mobile Recharge Utility Bill Payment DTH Recharge…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://www.timesnownews.com/business-economy/personal-finance/how-to-check-epf-balance-using-uan-number-heres-a-step-by-step-guide-article-108724437",
+          "title": "How To Check EPF Balance Using UAN Number? Here's A ...",
+          "text": "Personal Finance How To Check EPF Balance Using UAN Number? Here's A Step-By-Step Guide Authored by: Times Now Digital Updated: Mar 23, 2024, 11:41 IST Though most of the employees in the organised sector contribute to EPF every month necessarily they do not track their EPF balance, but it is…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://www.indiatoday.in/information/story/heres-how-you-can-check-your-account-balance-using-different-methods-1814632-2021-06-14",
+          "title": "Here's how you can check EPF account balance using ...",
+          "text": "Here's how you can check EPF account balance using different methods Members of Employees' Provident Fund Organisation (EPFO) can now check their PF balance online, via SMS or missed call facility. Live TV Share Advertisement PF account holders can access all the information related to their…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.zeebiz.com/personal-finance/video-gallery-how-to-check-epf-balance-online-with-uan-number-54419",
+          "title": "How to check EPF balance online with UAN number",
+          "text": "हिंदी में पढ़ें Login v logout Login v logout Get app for better experienceInstall Now Latest News Markets Your Money Economy Companies India World Videos Trending Terms and Conditions Disclaimer Privacy Policy Complaint Follow us on Latest News Markets Stocks IPOs Commodities Your Money Mutual…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://salaryslip.org/pf-balance-check-with-and-without-uan/",
+          "title": "PF Balance Check With And Without UAN Number - Salary Slip",
+          "text": "PF Balance Check With And Without UAN Number Written by AsthaSRPV784 April 23, 2024 Facebook X Pinterest WhatsApp The Employees Provident Fund (EPF) is an important financial plan for millions of employees in India and boosts the stable savings and retirement plan. If you want to know how pf…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        }
+      ]
+    },
+    "after": {
+      "answer": "Members of the Employees' Provident Fund Organisation (EPFO) can check their PF account balance using their UAN number online, via SMS, or through a missed call facility.",
+      "cited": [
+        3
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://biznext.in/blog/tag/pf-balance-check-with-uan-number/?srsltid=AU7gw4WzmX0Vopv8RBoQh7EcKaG-0V7VDysjnXVyIyu429OPWbM5p5b7",
+          "title": "Tag: PF Balance Check with Uan Number",
+          "text": "Register Login About Us Partner with us Biznext Retailer Biznext Distributor Whitelabel Partner API Partner Services BANKING AePS UPI Cash Withdrawal Micro ATM Money Transfer Banking Services Loan Credit Card Agent Payment Solutions RECHARGE & BILL Mobile Recharge Utility Bill Payment DTH Recharge…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 2,
+          "url": "https://www.timesnownews.com/business-economy/personal-finance/how-to-check-epf-balance-using-uan-number-heres-a-step-by-step-guide-article-108724437",
+          "title": "How To Check EPF Balance Using UAN Number? Here's A ...",
+          "text": "Personal Finance How To Check EPF Balance Using UAN Number? Here's A Step-By-Step Guide Authored by: Times Now Digital Updated: Mar 23, 2024, 11:41 IST Though most of the employees in the organised sector contribute to EPF every month necessarily they do not track their EPF balance, but it is…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 3,
+          "url": "https://www.indiatoday.in/information/story/heres-how-you-can-check-your-account-balance-using-different-methods-1814632-2021-06-14",
+          "title": "Here's how you can check EPF account balance using ...",
+          "text": "Here's how you can check EPF account balance using different methods Members of Employees' Provident Fund Organisation (EPFO) can now check their PF balance online, via SMS or missed call facility. Live TV Share Advertisement PF account holders can access all the information related to their…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://www.zeebiz.com/personal-finance/video-gallery-how-to-check-epf-balance-online-with-uan-number-54419",
+          "title": "How to check EPF balance online with UAN number",
+          "text": "हिंदी में पढ़ें Login v logout Login v logout Get app for better experienceInstall Now Latest News Markets Your Money Economy Companies India World Videos Trending Terms and Conditions Disclaimer Privacy Policy Complaint Follow us on Latest News Markets Stocks IPOs Commodities Your Money Mutual…",
+          "slop_risk": 0.2681,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://salaryslip.org/pf-balance-check-with-and-without-uan/",
+          "title": "PF Balance Check With And Without UAN Number - Salary Slip",
+          "text": "PF Balance Check With And Without UAN Number Written by AsthaSRPV784 April 23, 2024 Facebook X Pinterest WhatsApp The Employees Provident Fund (EPF) is an important financial plan for millions of employees in India and boosts the stable savings and retirement plan. If you want to know how pf…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "tech-03",
+    "question": "upi payment failed but money debited what to do",
+    "dropped": [],
+    "changed": false,
+    "before": {
+      "answer": "If your UPI payment fails but money is debited, do not panic [3]. This typically happens due to a temporary gateway glitch, bank issue, or incorrect payee details [5]. You can follow specific steps to request a refund [3].",
+      "cited": [
+        3,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.youtube.com/shorts/sbTdFkMs0wk",
+          "title": "UPI Payment Failed But Money Deducted? 😱 Do This!",
+          "text": "AboutPressCopyrightContact usCreatorAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new features © 2026 Google LLC",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:video"
+        },
+        {
+          "n": 2,
+          "url": "https://www.quora.com/If-one-makes-a-mistake-while-sending-cash-through-UPI-will-he-get-back-his-amount-after-returning-it-to-him-her",
+          "title": "If one makes a mistake while sending cash through UPI ...",
+          "text": "If one makes a mistake while sending cash through UPI, will he get back his amount after returning it to him/her?",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:forum"
+        },
+        {
+          "n": 3,
+          "url": "https://marathi.economictimes.com/wealth/personal-finance/upi-payment-failed-money-deducted-refund-steps-guide-rbi-rules/articleshow/133310193.cms",
+          "title": "UPI पेमेंट फेल अन् पैसे कट झाले? घाबरू नका, 'या' 8 सोप्या ...",
+          "text": "आजच्या डिजिटल युगात चहाच्या टपरीपासून ते मोठ्या शॉपिंग मॉलपर्यंत आपण सर्वजण यूपीआयचा वापर करतो. पण विचार करा, तुम्ही दुकानात पेमेंट केले, तुमच्या मोबाईलवर 'पैसे कट झाले' असा मेसेज आला, पण समोरील व्यापाऱ्याला पैसे मिळालेच नाहीत किंवा ॲपवर 'पेमेंट फेल' (Payment Failed) असे दिसले, अशा वेळी मनात लगेच…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://support.google.com/googleplay/thread/16194698/in-app-purchase-failed-with-upi-but-amount-deducted-how-to-request-for-refund?hl=en",
+          "title": "In-app purchase failed with UPI but amount deducted. How ...",
+          "text": "Skip to main content false Search Clear search Close search Google apps Main menu 10699532178366483269 true Search Help Center false true true true true true 84680 false false false",
+          "slop_risk": 0.5577,
+          "band": "mixed",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://pcs.mahaonline.gov.in/latest-online-rummy-cash-games-upi-payment-failed-common-reasons-and-fixes.html",
+          "title": "Online Rummy Cash Games UPI Payment Failed",
+          "text": "UPI payment failing usually comes from either a UPI mandate/bank issue, incorrect payee details, or a temporary gateway glitch—fix it by confirming the UPI ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "fetch_failed"
+        }
+      ]
+    },
+    "after": {
+      "answer": "If your UPI payment fails but money is debited, do not panic [3]. This typically happens due to a temporary gateway glitch, bank issue, or incorrect payee details [5]. You can follow specific steps to request a refund [3].",
+      "cited": [
+        3,
+        5
+      ],
+      "sources": [
+        {
+          "n": 1,
+          "url": "https://www.youtube.com/shorts/sbTdFkMs0wk",
+          "title": "UPI Payment Failed But Money Deducted? 😱 Do This!",
+          "text": "AboutPressCopyrightContact usCreatorAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new features © 2026 Google LLC",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:video"
+        },
+        {
+          "n": 2,
+          "url": "https://www.quora.com/If-one-makes-a-mistake-while-sending-cash-through-UPI-will-he-get-back-his-amount-after-returning-it-to-him-her",
+          "title": "If one makes a mistake while sending cash through UPI ...",
+          "text": "If one makes a mistake while sending cash through UPI, will he get back his amount after returning it to him/her?",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "platform:forum"
+        },
+        {
+          "n": 3,
+          "url": "https://marathi.economictimes.com/wealth/personal-finance/upi-payment-failed-money-deducted-refund-steps-guide-rbi-rules/articleshow/133310193.cms",
+          "title": "UPI पेमेंट फेल अन् पैसे कट झाले? घाबरू नका, 'या' 8 सोप्या ...",
+          "text": "आजच्या डिजिटल युगात चहाच्या टपरीपासून ते मोठ्या शॉपिंग मॉलपर्यंत आपण सर्वजण यूपीआयचा वापर करतो. पण विचार करा, तुम्ही दुकानात पेमेंट केले, तुमच्या मोबाईलवर 'पैसे कट झाले' असा मेसेज आला, पण समोरील व्यापाऱ्याला पैसे मिळालेच नाहीत किंवा ॲपवर 'पेमेंट फेल' (Payment Failed) असे दिसले, अशा वेळी मनात लगेच…",
+          "slop_risk": 0.0,
+          "band": "ok",
+          "not_scored": null
+        },
+        {
+          "n": 4,
+          "url": "https://support.google.com/googleplay/thread/16194698/in-app-purchase-failed-with-upi-but-amount-deducted-how-to-request-for-refund?hl=en",
+          "title": "In-app purchase failed with UPI but amount deducted. How ...",
+          "text": "Skip to main content false Search Clear search Close search Google apps Main menu 10699532178366483269 true Search Help Center false true true true true true 84680 false false false",
+          "slop_risk": 0.5577,
+          "band": "mixed",
+          "not_scored": null
+        },
+        {
+          "n": 5,
+          "url": "https://pcs.mahaonline.gov.in/latest-online-rummy-cash-games-upi-payment-failed-common-reasons-and-fixes.html",
+          "title": "Online Rummy Cash Games UPI Payment Failed",
+          "text": "UPI payment failing usually comes from either a UPI mandate/bank issue, incorrect payee details, or a temporary gateway glitch—fix it by confirming the UPI ...",
+          "slop_risk": null,
+          "band": null,
+          "not_scored": "fetch_failed"
+        }
+      ]
+    }
+  }
+]

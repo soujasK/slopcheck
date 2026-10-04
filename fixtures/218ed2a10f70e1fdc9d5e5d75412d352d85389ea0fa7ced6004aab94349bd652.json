@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"Term insurance is considered worth it because it is a pure protection plan that offers high coverage for a low premium [5]. It is known for providing affordability, flexibility, and simplicity compared to other life insurance types [4], helping to adequately cover your beneficiaries [2].\\\", \\\"cited\\\": [2, 4, 5]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tf+AoUKwQkE/Hg9E1G77ZX0EG8U5KgVEO4Ig62IB+JywT4nj7qoIDLimUKc/GG5SHFhE6qAg0gFDr/hCcvVmFAH9SJrb8iGC46/qSk14H6b8C8zbeDtmVpxM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 531,\n    \"candidatesTokenCount\": 70,\n    \"totalTokenCount\": 601,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 531\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"QPvBaqGZC4HUqfkPk5aN2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:07:46.732270+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:07:45 GMT"
+  },
+  "key": "218ed2a10f70e1fdc9d5e5d75412d352d85389ea0fa7ced6004aab94349bd652",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

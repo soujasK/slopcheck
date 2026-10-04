@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides a named author, clear organisation context from Credihealth, and directly answers the query with specific medical options.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T714RH/LqEPp6AVBmM8e6xUTjvKQj5y7x2DhKMsLtyP+/wIx7aRkqLgWECaVTyhorcJuE7jCOYf+Yan5Kf89wPHjH4+uVuEpAS9VrUg/gWLpVzd8EipJVPiA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1005,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1041,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1005\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"zPrBat6cApW-g8UP_rmq0QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:05:50.713876+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:05:49 GMT"
+  },
+  "key": "f8ae1fbfb41339231b30f71524b7fbfdb57fbe073ee41b53d044b9bb58ccb3bf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

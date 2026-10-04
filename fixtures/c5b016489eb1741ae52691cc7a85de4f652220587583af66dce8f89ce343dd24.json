@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an FDA guidance document about breast implants, which is completely irrelevant to the query about improving CIBIL scores.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Trb0iAI098Pt66kKzCqnqjd1kSdRs2Wi1kq8fvythFUWzyFeHPsjKDIqZIPdyTXmMXzSv+D9JTqLERB+OxjzhFEBm12m6o3Rm0uY5tWDyfyO44ieFFHB9eGQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 925,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 961,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 925\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MvrBaoLdBv-jqfkP5_f02QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:03:16.617586+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:03:15 GMT"
+  },
+  "key": "c5b016489eb1741ae52691cc7a85de4f652220587583af66dce8f89ce343dd24",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

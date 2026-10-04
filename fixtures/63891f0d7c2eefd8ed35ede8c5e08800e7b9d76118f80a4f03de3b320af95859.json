@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page is a forum discussion about earbuds specifically for the Nintendo Switch rather than a comprehensive guide for the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tvk8Tuxt0LJtfZ6N/YQxT9NHH666mpU4yMLkqZLJ/q0HZemGkr23anqsJbGXlukcg+mMKPX06snhboDT8ssN/fCNQ3W17c4PP29EiD1VO134HUWJ6DohnVJ4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1123,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1157,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1123\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8_nBapCICq23g8UPw_-biQw\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:02:13.727723+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:02:12 GMT"
+  },
+  "key": "63891f0d7c2eefd8ed35ede8c5e08800e7b9d76118f80a4f03de3b320af95859",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page offers general advice on investing with small amounts from a financial app blog, but lacks a clearly identifiable author or authoritative credentials.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjJ7AfASanGJuevNcfo8sTYcHfpnhKwctS/B7q9fpotGEuN0ZhZOLLHIQrsYBlIk5zOIPF1d4zsD0sdK8EhX+WvthtXNPR7gLvA57wubqjk8SrsFPN3PIV5Y=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 941,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 979,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 941\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_frBav_JB-O-g8UPlrS4kQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:06:39.563882+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:06:38 GMT"
+  },
+  "key": "bd424ac3f5160901bc133e8328b330760e0bb672f04c41f7a0fa1c63cf07ed4f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is primarily a promotional landing page and soft ad for Wondershare MobileTrans software rather than an objective guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TlPSteGNSiaxsBApnS0vepRrvjsCGBbVXo1A0vVpBZZv2uqjjT94nXLYUVMPEG/R/t8wRhcIkWAHEovhleJQJGWtfcjoLcoJnDRBKD+vlqY03IpFfo/K/W08=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 942,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 976,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 942\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"xfrBaq26CI20g8UP7aX5qAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-04T07:05:43.339768+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 04 Oct 2026 07:05:41 GMT"
+  },
+  "key": "e2b680e35a7db86da94135e67ed9f5fc12c1720fdc88756df6bd84ffffeb80ec",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
