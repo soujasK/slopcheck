@@ -133,3 +133,62 @@ def test_langchain_helper_with_wrapper_like_object() -> None:
 def test_filter_results_entry_point() -> None:
     out = filter_results(QUERY, committed_results(), slop_filter=offline_filter(), mode="annotate")
     assert out[0]["slopwatch"].keys() == {"slop_risk", "band", "reasons", "not_scored"}
+
+
+def test_cli_filter_offline_and_stdin(tmp_path: Any, monkeypatch: pytest.MonkeyPatch) -> None:
+    from typer.testing import CliRunner
+
+    from slopwatch.cli import app
+
+    serp = {"search_parameters": {"q": QUERY}, "organic_results": committed_results()}
+    path = tmp_path / "serp.json"
+    path.write_text(json.dumps(serp), encoding="utf-8")
+    runner = CliRunner()
+    r = runner.invoke(app, ["filter", "--serp-json", str(path), "--offline", "--annotate"])
+    assert r.exit_code == 0, r.output
+    out = json.loads(r.output)
+    assert out["slopwatch"]["dropped"] == 0 and len(out["organic_results"]) == len(
+        serp["organic_results"]
+    )
+    r2 = runner.invoke(
+        app, ["filter", "--serp-json", "-", "--offline", "--threshold", "0"], input=json.dumps(serp)
+    )
+    assert r2.exit_code == 0 and json.loads(r2.output)["slopwatch"]["dropped"] > 0
+    noq = tmp_path / "noq.json"
+    noq.write_text(json.dumps({"organic_results": []}), encoding="utf-8")
+    assert runner.invoke(app, ["filter", "--serp-json", str(noq), "--offline"]).exit_code == 2
+
+
+def test_cli_search_live_with_fake_network(monkeypatch: pytest.MonkeyPatch, tmp_path: Any) -> None:
+    from typer.testing import CliRunner
+
+    from slopwatch.cli import app
+
+    monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
+    page = (
+        "<html><head><title>Acidity</title></head><body><main>"
+        + "<p>acidity gas medicine</p>" * 50
+        + "</main></body></html>"
+    )
+
+    def send(self: httpx.Client, request: httpx.Request, **kw: object) -> httpx.Response:
+        if request.url.host == "serpapi.com":
+            return httpx.Response(200, json={"organic_results": [
+                {"position": 1, "title": "A", "link": "https://a.example/x"},
+                {"position": 2, "title": "Y", "link": "https://www.youtube.com/watch?v=1"},
+            ]}, request=request)  # fmt: skip
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404, request=request)
+        return httpx.Response(
+            200, text=page, headers={"content-type": "text/html"}, request=request
+        )
+
+    monkeypatch.setattr(httpx.Client, "send", send)
+    runner = CliRunner()
+    r = runner.invoke(app, ["search", QUERY, "--annotate"], env={"COLUMNS": "200"})
+    assert r.exit_code == 0, r.output
+    assert "kept 2 of 2" in r.output and "credits: 1 spent" in r.output
+    r0 = runner.invoke(app, ["search", QUERY, "--threshold", "0"], env={"COLUMNS": "200"})
+    assert r0.exit_code == 0 and "dropped" in r0.output and "credits: 0 spent" in r0.output
+    bad = runner.invoke(app, ["search", QUERY, "--engine", "bing"])
+    assert bad.exit_code == 2

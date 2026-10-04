@@ -29,6 +29,8 @@ from slopwatch.cache import Cache
 from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
 from slopwatch.evaluate import evaluate as evaluate_labels
 from slopwatch.evaluate import render_markdown
+from slopwatch.filter import live_filter, offline_filter
+from slopwatch.filter.core import SlopFilter
 from slopwatch.fit import CANDIDATES, fit_rubric, rubric_yaml
 from slopwatch.http import HttpClient, HttpError, user_agent
 from slopwatch.label import (
@@ -55,9 +57,9 @@ from slopwatch.llm_label import (
 from slopwatch.models import Page, RelevanceRecord, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
 from slopwatch.platform import load_platforms
-from slopwatch.queries import Job, PlanError, load_plan
+from slopwatch.queries import Job, PlanError, load_plan, serp_params
 from slopwatch.score import load_rubric, row_signals, score_rows
-from slopwatch.serp import ProjectLedger, SerpClient
+from slopwatch.serp import ProjectLedger, SerpClient, SerpError
 from slopwatch.signals import load_lists
 from slopwatch.store import (
     PAGES,
@@ -739,6 +741,96 @@ def agreement() -> None:
     rep = agreement_report(items, a, b)
     write_jsonl(_labels_dir() / LABELS, rep.agreed, key=lambda lab: (lab.url, lab.query_id))
     console.print(render_agreement(rep), markup=False)
+
+
+@app.command("filter")
+def filter_cmd(
+    serp_json: Annotated[
+        Path, typer.Option("--serp-json", help="A SerpApi JSON response ('-' = stdin).")
+    ],
+    threshold: Annotated[
+        float | None,
+        typer.Option("--threshold", help="Drop slop_risk >= this (default: low band)."),
+    ] = None,
+    query: Annotated[
+        str | None, typer.Option("--query", help="Query text (default: search_parameters.q).")
+    ] = None,
+    annotate: Annotated[
+        bool, typer.Option("--annotate", help="Keep every result; only add scores.")
+    ] = False,
+    offline: Annotated[
+        bool, typer.Option("--offline", help="Use committed data only (no page fetches).")
+    ] = False,
+) -> None:
+    """Filter a SerpApi response: prints the JSON with organic_results scored/filtered."""
+    raw = sys.stdin.read() if str(serp_json) == "-" else serp_json.read_text(encoding="utf-8")
+    payload = json.loads(raw)
+    params = payload.get("search_parameters") or {}
+    q = query or params.get("q") or params.get("p")
+    if not q:
+        err_console.print("filter: no query (pass --query or include search_parameters.q)")
+        raise typer.Exit(EXIT_USAGE)
+    f = offline_filter() if offline else live_filter()
+    organic = payload.get("organic_results") or []
+    kept = f.apply(str(q), organic, threshold=threshold, mode="annotate" if annotate else "drop")
+    payload["organic_results"] = kept
+    payload["slopwatch"] = {
+        "dropped": len(organic) - len(kept),
+        "threshold": f.threshold(threshold),
+        "rubric_version": f.rubric.version,
+    }
+    sys.stdout.write(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+
+@app.command()
+def search(
+    query: Annotated[str, typer.Argument(help="Search query.")],
+    engine: Annotated[str, typer.Option("--engine", help="google | duckduckgo | yahoo")] = "google",
+    locale: Annotated[str, typer.Option("--locale", help="IN | US")] = "IN",
+    threshold: Annotated[float | None, typer.Option("--threshold")] = None,
+    annotate: Annotated[bool, typer.Option("--annotate")] = False,
+    cache_mode: CacheModeOpt = None,
+) -> None:
+    """Live: search via SerpApi (1 credit unless cached), then score and filter results."""
+    if engine not in ("google", "duckduckgo", "yahoo") or locale not in ("IN", "US"):
+        err_console.print("search: --engine google|duckduckgo|yahoo, --locale IN|US")
+        raise typer.Exit(EXIT_USAGE)
+    settings, mode = _settings_and_mode(cache_mode)
+    ledger = ProjectLedger(settings.ledger_path)
+    with (
+        open_cache(settings, mode) as cache,
+        HttpClient(
+            cache,
+            timeout=settings.http_timeout_seconds,
+            max_retries=settings.http_max_retries,
+            agent=user_agent(settings.contact_url),
+        ) as http,
+    ):
+        serp = SerpClient(http, settings.serpapi_api_key, project=ledger, max_credits=1)
+        try:
+            page = serp.search(engine, serp_params(engine, locale, query))  # type: ignore[arg-type]
+        except SerpError as exc:
+            err_console.print(f"search: {exc}")
+            console.print(credits_line(serp.ledger.spent, ledger))
+            raise typer.Exit(EXIT_CREDIT_CAP) from None
+        f = SlopFilter.live(PageFetcher(http, max_bytes=settings.page_max_bytes))
+        results = [{"position": r.rank, "title": r.title, "link": r.url} for r in page.organic]
+        kept = f.apply(query, results, threshold=threshold, mode="annotate" if annotate else "drop")
+    table = Table(title=f"{query}  ({engine}, {locale})")
+    for col in ("#", "slop_risk", "band", "url", "why"):
+        table.add_column(col, overflow="fold")
+    kept_urls = {r["link"] for r in kept}
+    for r in [*kept, *({**x, "slopwatch": None} for x in results if x["link"] not in kept_urls)]:
+        s = r["slopwatch"]
+        if s is None:
+            table.add_row(str(r["position"]), "", "[red]dropped[/]", r["link"], "")
+            continue
+        risk = "" if s["slop_risk"] is None else f"{s['slop_risk']:.2f}"
+        why = "; ".join(s["reasons"]) or (s["not_scored"] or "")
+        table.add_row(str(r["position"]), risk, str(s["band"] or "-"), r["link"], why)
+    console.print(table)
+    console.print(f"kept {len(kept)} of {len(results)}")
+    console.print(credits_line(serp.ledger.spent, ledger))
 
 
 @app.command()
