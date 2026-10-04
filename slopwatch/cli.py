@@ -29,6 +29,7 @@ from slopwatch.cache import Cache
 from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
 from slopwatch.evaluate import evaluate as evaluate_labels
 from slopwatch.evaluate import render_markdown
+from slopwatch.fit import CANDIDATES, fit_rubric, rubric_yaml
 from slopwatch.http import HttpClient, HttpError, user_agent
 from slopwatch.label import (
     append_label,
@@ -738,6 +739,50 @@ def agreement() -> None:
     rep = agreement_report(items, a, b)
     write_jsonl(_labels_dir() / LABELS, rep.agreed, key=lambda lab: (lab.url, lab.query_id))
     console.print(render_agreement(rep), markup=False)
+
+
+@app.command()
+def fit(
+    out: Annotated[Path, typer.Option("--out", help="Where to write the fitted rubric.")] = Path(
+        "data/rubric_candidates/v3.yaml"
+    ),
+) -> None:
+    """Fit rule weights on the development labels (main label set, all splits).
+
+    Procedure: slopwatch/fit.py and ANALYSIS_PLAN.md. Never reads a held-out set.
+    """
+    settings = Settings()
+    rows, records = _load_scored(settings)
+    relevance = read_jsonl(settings.data_dir / RELEVANCE, RelevanceRecord)
+    base = settings.data_dir.parent / "labels"
+    items = load_sample(base / SAMPLE)
+    labels = load_labels(base / LABELS)
+    sig = row_signals(rows, records, relevance)
+    xs, ys = [], []
+    for it in items:
+        lab = labels.get(it.key)
+        if lab is None or lab.label == "unsure" or it.key not in sig:
+            continue
+        xs.append(sig[it.key])
+        ys.append(int(lab.label == "low"))
+    res = fit_rubric(xs, ys)
+    coefs = ", ".join(f"{c.id} {v}" for c, v in zip(CANDIDATES, res.coefficients, strict=True))
+    note_lines = [
+        f"Rubric v3: weights fitted on {len(ys)} development items ({sum(ys)} low), "
+        "round-2 LLM labels (slopwatch fit; procedure in slopwatch/fit.py).",
+        f"5-fold out-of-fold: precision {res.oof_precision}, recall {res.oof_recall}, "
+        f"F1 {res.oof_f1}, flagged {res.oof_flagged}; precision floor "
+        f"{'met' if res.met_min_precision else 'NOT met'}.",
+        f"Coefficients: {coefs}",
+    ]
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        rubric_yaml(res, version=3, note="\n".join(note_lines)), encoding="utf-8", newline="\n"
+    )
+    load_rubric(out)  # validate
+    for line in note_lines:
+        console.print(line)
+    console.print(f"fit: wrote {out}")
 
 
 @app.command()

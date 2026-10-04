@@ -112,6 +112,7 @@ class Rubric(BaseModel):
             affiliate_links=1, affiliate_density=0.1, outbound_links=1, commerce_ratio=0.1,
             listicle=True, ad_scripts=1, has_author=True, has_date=True,
             has_about_contact=True, text_len=1, boilerplate_ratio=0.1, near_dup_group="g",
+            sells_directly=True, query_title_coverage=0.5, query_text_coverage=0.5,
         )  # fmt: skip
         for rule in self.rules:
             try:

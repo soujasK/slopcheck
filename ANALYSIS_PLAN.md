@@ -106,6 +106,16 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   one-time test. New signals may be built and rule weights may be fitted on
   the 155 development items only. The round-2 failure stays reported.
 
+- 2026-10-04: **rubric v3 fitting procedure** (declared before it was run on
+  real data): 11 yes/no candidate rules (slopwatch/fit.py `CANDIDATES`, incl.
+  the new query-relevance and sells_directly signals); L2 logistic regression
+  on the 155 development items; rule weight = positive coefficient / sum of
+  positive coefficients (others dropped); `low` threshold by 5-fold
+  cross-validation = best out-of-fold F1 among thresholds with out-of-fold
+  precision >= 0.70 (else highest out-of-fold precision with >= 10 flagged);
+  `mixed` = half of it. The result is frozen as rubric v3 and tested once on
+  round 3.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.
