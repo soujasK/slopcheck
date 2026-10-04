@@ -1,5 +1,7 @@
 # SlopWatch
 
+[![ci](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml)
+
 > **Don't feed your agent slop.**
 
 AI agents and RAG systems answer from the top web search results and trust them
@@ -87,7 +89,8 @@ but it catches only about a third of low-quality pages. Treat a drop as
 ## Use it
 
 ```bash
-pip install -e ".[agents]"          # from a clone; Python 3.11+
+pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"   # Python 3.11+
+# or from a clone: pip install -e ".[agents]"
 ```
 
 Three lines in any Python agent:

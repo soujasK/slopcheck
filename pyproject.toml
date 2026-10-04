@@ -5,11 +5,12 @@ build-backend = "hatchling.build"
 [project]
 name = "slopwatch"
 version = "0.1.0"
-description = "Don't feed your agent slop. Measure and filter low-quality web search results."
+description = "Don't feed your agent slop: measure and filter low-quality web search results for AI agents (SerpApi)."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
 authors = [{ name = "SlopWatch contributors" }]
+keywords = ["serpapi", "search", "agents", "rag", "seo-spam", "llm", "filter", "india"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
@@ -24,6 +25,10 @@ dependencies = [
   "rich>=13",
   "pyyaml>=6",
 ]
+
+[project.urls]
+Homepage = "https://github.com/soujasK/slopwatch"
+Documentation = "https://github.com/soujasK/slopwatch#readme"
 
 [project.optional-dependencies]
 # SerpApi's official agent tooling (14 agent frameworks); slopwatch.filter.serpapi_tools
@@ -45,6 +50,10 @@ packages = ["slopwatch"]
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+
+[tool.ruff.format]
+# README/DEMO snippets are laid out for reading, not formatted as modules.
+exclude = ["*.md"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "S", "PT"]

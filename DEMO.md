@@ -57,14 +57,16 @@ tools = [web_search()]                                    # any of 14 agent fram
 slopwatch demo --cache-mode replay
 ```
 
-Say: "Same agent, same questions, raw vs filtered top 5. For the Dolo 650 and CIBIL
-questions a source is dropped and the answer changes; all 8 questions are in
+Say: "Same agent, same pre-registered questions, raw vs filtered top 5. For Dolo 650
+an anonymous Q&A page is dropped and the agent cites different sources. For CIBIL
+the filter drops two off-topic pages Google ranked in the top 5 (an NIH research
+program called 'IMPROVE'). For the other six nothing is dropped. All 8 are in
 DEMO_RESULTS.md."
 
 ## 2:30 - 2:45  Close
 
 ```bash
-pip install slopwatch[agents]
+pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"
 ```
 
 "SlopWatch: don't feed your agent slop." Show the repo URL.
