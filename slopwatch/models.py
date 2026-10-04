@@ -94,6 +94,19 @@ class Signals(_Frozen):
     near_dup_group: str | None = None  # filled at score time, across a SERP set
     # Own site sells (cart/checkout/buy button/product markup). Added in rubric v2.
     sells_directly: bool = False
+    # Query relevance (per SERP row, filled at score time): share of the query's
+    # content words in the title + headings / in the main text. Added in round 3.
+    query_title_coverage: float | None = None
+    query_text_coverage: float | None = None
+
+
+class RelevanceRecord(_Frozen):
+    """Per (url, query) relevance, committed to data/relevance.jsonl."""
+
+    url: str
+    query_id: str
+    title_coverage: float
+    text_coverage: float
 
 
 class SignalRecord(_Frozen):
@@ -107,6 +120,7 @@ class SignalRecord(_Frozen):
 
 class Score(_Frozen):
     url: str
+    query_id: str | None = None  # set when relevance to a query was scored
     # Higher = worse. 0 = no low-quality signals fired; filters drop slop_risk >= threshold.
     slop_risk: float = Field(ge=0.0, le=1.0)
     band: Band

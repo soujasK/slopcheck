@@ -20,6 +20,7 @@ SERP_META = "serp_meta.jsonl"
 PAGES = "pages.jsonl"
 SIGNALS = "signals.jsonl"
 SCORES = "scores.jsonl"
+RELEVANCE = "relevance.jsonl"
 
 
 def write_jsonl(path: Path, rows: Iterable[M], key: Callable[[M], Any]) -> int:

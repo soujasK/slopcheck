@@ -11,8 +11,8 @@ band they fell.
 
 from __future__ import annotations
 
-from collections.abc import Callable
-from typing import Literal
+from collections.abc import Callable, Mapping
+from typing import Any, Literal
 
 from slopwatch.label import LabelItem
 from slopwatch.models import (
@@ -35,6 +35,14 @@ BASELINES: dict[str, Callable[[Signals], bool]] = {
     "no author and no date": lambda s: not s.has_author and not s.has_date,
     "'best X' listicle": lambda s: s.listicle,
 }
+
+
+def _signal_rule(
+    rule: Callable[[Signals], bool], signals: Mapping[Any, Signals], item: LabelItem
+) -> bool:
+    """Per-row signals (keyed by (url, query_id)) if present, else per-page (url)."""
+    sig = signals.get(item.key) or signals.get(item.url)
+    return rule(sig) if sig is not None else False
 
 
 def _ratio(num: int, den: int) -> float:
@@ -64,10 +72,10 @@ def _baseline(name: str, truth: list[bool], pred: list[bool]) -> BaselineResult:
 def evaluate(
     items: list[LabelItem],
     labels: dict[tuple[str, str], Label],
-    scores: dict[str, Score],
+    scores: Mapping[Any, Score],
     *,
     split: Literal["dev", "test", "all"],
-    signals: dict[str, Signals] | None = None,
+    signals: Mapping[Any, Signals] | None = None,
 ) -> EvalReport:
     confusion: dict[str, dict[str, int]] = {
         lab: dict.fromkeys(BANDS, 0) for lab in ("ok", "low", "unsure")
@@ -80,7 +88,7 @@ def evaluate(
         if split != "all" and item.split != split:
             continue
         label = labels.get(item.key)
-        score = scores.get(item.url)
+        score = scores.get(item.key) or scores.get(item.url)
         if label is None or score is None:
             continue
         confusion[label.label][score.band] += 1
@@ -100,7 +108,7 @@ def evaluate(
     baselines: list[BaselineResult] = []
     if signals is not None and used:
         for name, rule in BASELINES.items():
-            bpred = [rule(signals[it.url]) if it.url in signals else False for it in used]
+            bpred = [_signal_rule(rule, signals, it) for it in used]
             baselines.append(_baseline(name, truth, bpred))
         # Random flagging at the scorer's rate: expected precision = prevalence.
         prevalence = _ratio(sum(truth), len(truth))

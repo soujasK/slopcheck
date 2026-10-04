@@ -15,13 +15,14 @@ from collections.abc import Callable
 from dataclasses import dataclass, field
 
 from slopwatch.cache import Cache, CacheMiss, request_key
-from slopwatch.models import Page, SerpMeta, SerpRow, SignalRecord
+from slopwatch.models import Page, RelevanceRecord, SerpMeta, SerpRow, SignalRecord
 from slopwatch.pages import FetchResult as PageFetchResult
 from slopwatch.pages import PageFetcher, make_excerpt
 from slopwatch.queries import Job, Plan, to_rows
 from slopwatch.serp import SerpClient, SerpError
 from slopwatch.signals import DomainLists, extract
-from slopwatch.signals.base import parse_page
+from slopwatch.signals.base import ParsedPage, parse_page
+from slopwatch.signals.relevance import relevance
 from slopwatch.signals.thin import main_text
 
 log = logging.getLogger(__name__)
@@ -179,3 +180,28 @@ def main_texts(records: list[SignalRecord], cache: Cache) -> dict[str, str]:
             raise SnapshotMismatch(f"cached HTML missing or changed for {rec.url}")
         out[rec.url] = main_text(parse_page(rec.url, hit.text))
     return out
+
+
+def relevance_records(
+    rows: list[SerpRow], records: list[SignalRecord], cache: Cache, queries: dict[str, str]
+) -> list[RelevanceRecord]:
+    """Query coverage per scored (url, query) row, from hash-verified snapshots.
+    ``queries`` maps query_id -> query text."""
+    by_url = {r.url: r for r in records}
+    parsed: dict[str, ParsedPage] = {}
+    out: dict[tuple[str, str], RelevanceRecord] = {}
+    for row in rows:
+        rec = by_url.get(row.url)
+        key = (row.url, row.query_id)
+        if rec is None or key in out:
+            continue
+        if row.url not in parsed:
+            hit = cache.get(request_key("GET", row.url))
+            if hit is None or hashlib.sha256(hit.body).hexdigest() != rec.html_hash:
+                raise SnapshotMismatch(f"cached HTML missing or changed for {row.url}")
+            parsed[row.url] = parse_page(row.url, hit.text)
+        title_cov, text_cov = relevance(queries[row.query_id], parsed[row.url])
+        out[key] = RelevanceRecord(
+            url=row.url, query_id=row.query_id, title_coverage=title_cov, text_coverage=text_cov
+        )
+    return [out[k] for k in sorted(out)]

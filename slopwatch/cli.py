@@ -51,14 +51,23 @@ from slopwatch.llm_label import (
     load_guide,
     render_agreement,
 )
-from slopwatch.models import Page, SerpRow, SignalRecord
+from slopwatch.models import Page, RelevanceRecord, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
 from slopwatch.platform import load_platforms
 from slopwatch.queries import Job, PlanError, load_plan
-from slopwatch.score import load_rubric, score_all, with_near_dups
+from slopwatch.score import load_rubric, row_signals, score_rows
 from slopwatch.serp import ProjectLedger, SerpClient
 from slopwatch.signals import load_lists
-from slopwatch.store import PAGES, SCORES, SERP_META, SERPS, SIGNALS, read_jsonl, write_jsonl
+from slopwatch.store import (
+    PAGES,
+    RELEVANCE,
+    SCORES,
+    SERP_META,
+    SERPS,
+    SIGNALS,
+    read_jsonl,
+    write_jsonl,
+)
 
 app = typer.Typer(
     name="slopwatch",
@@ -234,6 +243,11 @@ def run_checks(settings: Settings, mode: CacheMode, *, offline: bool) -> list[Ch
     return checks
 
 
+def _query_texts(settings: Settings) -> dict[str, str]:
+    plan = load_plan(settings.data_dir / "queries.yaml")
+    return {spec.id: spec.text for spec in plan.specs}
+
+
 def _settings_and_mode(cache_mode: CacheMode | None) -> tuple[Settings, CacheMode]:
     settings = Settings()
     return settings, cache_mode or settings.cache_mode
@@ -365,6 +379,10 @@ def fetch(
         result = pipeline.fetch_pages(urls, fetcher, lists, progress=tick)
     write_jsonl(data / PAGES, result.pages, key=lambda p: p.url)
     write_jsonl(data / SIGNALS, result.records, key=lambda r: r.url)
+    if limit is None:
+        with open_cache(settings, mode) as cache:
+            rel = pipeline.relevance_records(rows, result.records, cache, _query_texts(settings))
+        write_jsonl(data / RELEVANCE, rel, key=lambda r: (r.url, r.query_id))
     reasons = Counter(p.unscored_reason for p in result.pages if p.unscored_reason)
     console.print(f"fetch: {len(result.records)} scored, {sum(reasons.values())} unscored")
     for reason, n in sorted(reasons.items()):
@@ -397,6 +415,11 @@ def resignal() -> None:
             err_console.print(f"resignal: {exc}")
             raise typer.Exit(EXIT_FAIL) from None
     write_jsonl(settings.data_dir / SIGNALS, fresh, key=lambda r: r.url)
+    rows = read_jsonl(settings.data_dir / SERPS, SerpRow)
+    with Cache(settings.cache_path, mode=CacheMode.LIVE) as cache:
+        rel = pipeline.relevance_records(rows, fresh, cache, _query_texts(settings))
+    write_jsonl(settings.data_dir / RELEVANCE, rel, key=lambda r: (r.url, r.query_id))
+    console.print(f"resignal: {len(rel)} (url, query) relevance records")
     console.print(f"resignal: {len(fresh)} pages re-extracted from hash-verified snapshots")
 
 
@@ -440,11 +463,12 @@ def score(cache_mode: CacheModeOpt = None) -> None:
     settings, _mode = _settings_and_mode(cache_mode)
     rows, records = _load_scored(settings)
     rubric = load_rubric(settings.data_dir / "rubric.yaml")
-    scores = score_all(rows, records, rubric)
-    write_jsonl(settings.data_dir / SCORES, scores, key=lambda s: s.url)
+    relevance = read_jsonl(settings.data_dir / RELEVANCE, RelevanceRecord)
+    scores = list(score_rows(rows, records, relevance, rubric).values())
+    write_jsonl(settings.data_dir / SCORES, scores, key=lambda s: (s.url, s.query_id or ""))
     bands = Counter(s.band for s in scores)
     console.print(
-        f"score: rubric v{rubric.version} ({rubric.status}); {len(scores)} pages scored: "
+        f"score: rubric v{rubric.version} ({rubric.status}); {len(scores)} results scored: "
         + ", ".join(f"{b} {bands.get(b, 0)}" for b in ("ok", "mixed", "low"))
     )
     console.print(credits_line(0, ProjectLedger(settings.ledger_path)))
@@ -522,7 +546,8 @@ def evaluate(
     rows, records = _load_scored(settings)
     rubric_path = settings.data_dir / "rubric.yaml"
     rubric = load_rubric(rubric_path)
-    scores = {s.url: s for s in score_all(rows, records, rubric)}
+    relevance = read_jsonl(settings.data_dir / RELEVANCE, RelevanceRecord)
+    scores = score_rows(rows, records, relevance, rubric)
     items = load_sample(_labels_dir() / SAMPLE)
     labels = load_labels(_labels_dir() / LABELS)
     report = evaluate_labels(
@@ -530,7 +555,7 @@ def evaluate(
         labels,
         scores,
         split=split,  # type: ignore[arg-type]
-        signals=with_near_dups(rows, records),
+        signals=row_signals(rows, records, relevance),
     )
     digest = hashlib.sha256(rubric_path.read_bytes()).hexdigest()[:12]
     text = (

@@ -16,7 +16,7 @@ from typing import Any, Literal
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-from slopwatch.models import Band, Score, SerpRow, SignalRecord, Signals
+from slopwatch.models import Band, RelevanceRecord, Score, SerpRow, SignalRecord, Signals
 from slopwatch.signals import duplicate
 
 Op = Literal["gte", "gt", "lte", "lt", "eq", "set"]
@@ -136,11 +136,12 @@ def load_rubric(path: Path) -> Rubric:
         raise RubricError(f"{path}: {exc}") from exc
 
 
-def score(url: str, signals: Signals, rubric: Rubric) -> Score:
+def score(url: str, signals: Signals, rubric: Rubric, query_id: str | None = None) -> Score:
     fired = [rule for rule in rubric.rules if rule.fires(signals)]
     risk = round(min(1.0, sum(rule.weight for rule in fired)), 4)
     return Score(
         url=url,
+        query_id=query_id,
         slop_risk=risk,
         band=rubric.band(risk),
         reasons=[rule.explain(signals) for rule in fired],
@@ -170,3 +171,39 @@ def with_near_dups(rows: list[SerpRow], records: list[SignalRecord]) -> dict[str
 def score_all(rows: list[SerpRow], records: list[SignalRecord], rubric: Rubric) -> list[Score]:
     signals = with_near_dups(rows, records)
     return [score(url, sig, rubric) for url, sig in sorted(signals.items())]
+
+
+RowKey = tuple[str, str]  # (url, query_id)
+
+
+def row_signals(
+    rows: list[SerpRow], records: list[SignalRecord], relevance: list[RelevanceRecord]
+) -> dict[RowKey, Signals]:
+    """Signals per (url, query): page signals + near-duplicate group + relevance."""
+    page = with_near_dups(rows, records)
+    rel = {(r.url, r.query_id): r for r in relevance}
+    out: dict[RowKey, Signals] = {}
+    for row in rows:
+        key = (row.url, row.query_id)
+        if row.url not in page or key in out:
+            continue
+        r = rel.get(key)
+        out[key] = page[row.url].model_copy(
+            update={
+                "query_title_coverage": r.title_coverage if r else None,
+                "query_text_coverage": r.text_coverage if r else None,
+            }
+        )
+    return out
+
+
+def score_rows(
+    rows: list[SerpRow],
+    records: list[SignalRecord],
+    relevance: list[RelevanceRecord],
+    rubric: Rubric,
+) -> dict[RowKey, Score]:
+    return {
+        key: score(key[0], sig, rubric, query_id=key[1])
+        for key, sig in sorted(row_signals(rows, records, relevance).items())
+    }
