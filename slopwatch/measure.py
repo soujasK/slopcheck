@@ -16,8 +16,9 @@ paired by query.
 from __future__ import annotations
 
 from collections import defaultdict
-from collections.abc import Callable
+from collections.abc import Callable, Mapping
 from dataclasses import dataclass
+from typing import Any
 
 from slopwatch.models import Score, SerpRow
 from slopwatch.stats import Interval, PairedDiff, bootstrap_ci, paired_diff, rogan_gladen
@@ -43,9 +44,14 @@ def _share_low(flags: list[bool]) -> float:
     return sum(flags) / len(flags) if flags else 0.0
 
 
+def lookup(scores: Mapping[Any, Score], row: SerpRow) -> Score | None:
+    """Per-row score ((url, query_id) key) if present, else per-page (url key)."""
+    return scores.get((row.url, row.query_id)) or scores.get(row.url)
+
+
 def low_shares(
     rows: list[SerpRow],
-    scores: dict[str, Score],
+    scores: Mapping[Any, Score],
     key: Callable[[SerpRow], Group],
     *,
     sensitivity: float | None = None,
@@ -60,7 +66,7 @@ def low_shares(
         members = groups[group]
         by_query: dict[str, list[bool]] = defaultdict(list)
         for row in members:
-            score = scores.get(row.url)
+            score = lookup(scores, row)
             if score is not None:
                 by_query[row.query_id].append(score.band == "low")
         clusters = [by_query[q] for q in sorted(by_query)]
@@ -75,16 +81,18 @@ def low_shares(
     return out
 
 
-def per_query_low(rows: list[SerpRow], scores: dict[str, Score]) -> dict[str, float]:
+def per_query_low(rows: list[SerpRow], scores: Mapping[Any, Score]) -> dict[str, float]:
     by_query: dict[str, list[bool]] = defaultdict(list)
     for row in rows:
-        score = scores.get(row.url)
+        score = lookup(scores, row)
         if score is not None:
             by_query[row.query_id].append(score.band == "low")
     return {q: _share_low(f) for q, f in by_query.items() if f}
 
 
-def compare(rows_a: list[SerpRow], rows_b: list[SerpRow], scores: dict[str, Score]) -> PairedDiff:
+def compare(
+    rows_a: list[SerpRow], rows_b: list[SerpRow], scores: Mapping[Any, Score]
+) -> PairedDiff:
     """Paired difference in per-query low share, A minus B, over shared queries."""
     a, b = per_query_low(rows_a, scores), per_query_low(rows_b, scores)
     shared = sorted(a.keys() & b.keys())
