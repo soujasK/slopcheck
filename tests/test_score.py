@@ -149,6 +149,7 @@ def test_near_dups_filled_across_serp_set() -> None:
         filled["https://a.example/1"].near_dup_group == filled["https://b.example/1"].near_dup_group
     )
     assert filled["https://c.example/1"].near_dup_group is None
-    scores = score_all(rows, records, load_rubric(RUBRIC))
+    dup_rubric = load_rubric(REPO_ROOT / "data" / "rubric_candidates" / "v2c.yaml")
+    scores = score_all(rows, records, dup_rubric)
     assert [s.url for s in scores] == sorted(r.url for r in records)
     assert any("near-duplicate" in r for r in scores[0].reasons)
