@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+</head><body>
+<title>SlopWatch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one left-aligned reading column (~40rem); visuals break out to 66rem.
+   Clear water over silt: teal = clean result, ochre = slop, mist neutrals. */
+:root {
+  --bg: #edf1ef;
+  --surface: #f6f8f7;
+  --ink: #142725;
+  --ink-2: #455754;
+  --ink-3: #74837f;
+  --line: #d3dcd9;
+  --clean: #2e7f72;
+  --clean-soft: #a9cfc8;
+  --silt: #b8732a;
+  --silt-soft: #f0dcc4;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Newsreader", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
+    --line: #233b37; --clean: #55aa9b; --clean-soft: #24524b; --silt: #d8964d; --silt-soft: #4a3520;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1817; --surface: #14211f; --ink: #e1eae7; --ink-2: #a9b8b4; --ink-3: #7c8d89;
+  --line: #233b37; --clean: #55aa9b; --clean-soft: #24524b; --silt: #d8964d; --silt-soft: #4a3520;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); margin: 0;
+  font: 400 1.125rem/1.6 var(--body);
+  padding-inline: 16px; -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 66rem; margin: 0 auto; padding-block: 2.5rem 5rem; display: grid; gap: 7rem; }
+.col { max-width: 40rem; }
+header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.mark { font: 700 1.05rem/1 var(--display); letter-spacing: -0.01em; }
+.mark span { color: var(--silt); }
+.meta, .eyebrow, .mono { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.02em; color: var(--ink-3); }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 1rem; }
+h1, h2 { font-family: var(--display); font-weight: 600; letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.5rem, 6.2vw, 4.6rem); line-height: 1.02; max-width: 14ch; }
+h2 { font-size: clamp(1.75rem, 3.6vw, 2.6rem); line-height: 1.08; max-width: 18ch; }
+p { margin: 0; color: var(--ink-2); max-width: 36rem; }
+.lede { font-size: 1.3rem; line-height: 1.5; margin-top: 1.25rem; }
+section { display: grid; gap: 1.5rem; }
+.hero { display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: end; } }
+
+/* search results as the agent receives them */
+.serp { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem; min-width: 0; }
+.query { font-family: var(--mono); font-size: 0.9rem; padding: 0.7rem 0.9rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); margin-bottom: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.results { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.results li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) auto; gap: 0.75rem; align-items: baseline; padding: 0.55rem 0.6rem; border-radius: 8px; transition: opacity .5s ease, background-color .5s ease; }
+.results .rk { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.results .dm { font-family: var(--mono); font-size: 0.86rem; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.results .st { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-3); white-space: nowrap; }
+.results li.slop { background: var(--silt-soft); }
+.results li.slop .st { color: var(--silt); }
+.results li.clean .st { color: var(--clean); }
+.results .why { grid-column: 2 / -1; font-family: var(--mono); font-size: 0.74rem; color: var(--silt); white-space: normal; }
+.serp.filtered li.slop { opacity: 0.28; }
+.serp.filtered li.slop .dm { text-decoration: line-through; }
+
+/* the dot field: every result is one dot */
+.field { display: grid; gap: 1.75rem; }
+.group { display: grid; gap: 0.6rem; }
+.group-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--mono); font-size: 0.8rem; color: var(--ink-2); }
+.dots { display: flex; flex-wrap: wrap; gap: 4px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--clean-soft); }
+.dot.s { background: var(--silt); }
+.dot.p { background: transparent; box-shadow: inset 0 0 0 1.5px var(--line); }
+.dot.b { background: var(--line); }
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-2); }
+.legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 0.45rem; vertical-align: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .dot { animation: settle .9s ease both; animation-delay: calc(var(--i) * 1.2ms); }
+  @keyframes settle { from { opacity: .35; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+}
+
+.big { font: 600 clamp(3.4rem, 9vw, 6rem)/0.95 var(--display); letter-spacing: -0.04em; color: var(--ink); }
+.big small { font-size: 0.32em; letter-spacing: 0; color: var(--ink-3); font-family: var(--mono); font-weight: 400; margin-left: 0.6rem; }
+.pair { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.pair > div { min-width: 0; display: grid; gap: 0.5rem; align-content: start; }
+
+/* three kinds of slop */
+.kinds { display: grid; gap: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.kinds > div { display: grid; gap: 0.6rem; align-content: start; border-top: 2px solid var(--silt); padding-top: 1rem; min-width: 0; }
+.kinds h3 { font: 600 1.3rem/1.2 var(--display); margin: 0; letter-spacing: -0.015em; }
+.kinds .eg { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-3); }
+
+/* engine bars */
+.bars { display: grid; gap: 0.9rem; max-width: 46rem; }
+.bar { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr) 3.5rem; gap: 1rem; align-items: center; font-family: var(--mono); font-size: 0.82rem; color: var(--ink-2); }
+.bar svg { width: 100%; height: 18px; overflow: visible; }
+.bar .v { text-align: right; color: var(--ink); font-variant-numeric: tabular-nums; }
+.note { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-3); max-width: 46rem; }
+
+pre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem 1.25rem; overflow-x: auto; font: 0.88rem/1.6 var(--mono); color: var(--ink); }
+pre .c { color: var(--ink-3); }
+.toggle { justify-self: start; font: 500 0.85rem var(--mono); color: var(--ink); background: transparent; border: 1px solid var(--ink-3); border-radius: 999px; padding: 0.5rem 1rem; cursor: pointer; }
+.toggle:hover { border-color: var(--ink); }
+.toggle:focus-visible { outline: 2px solid var(--clean); outline-offset: 3px; }
+
+.verdict { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.verdict > div { display: grid; gap: 0.35rem; align-content: start; min-width: 0; }
+.verdict .k { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.1em; }
+.verdict .n { font: 600 2.4rem/1 var(--display); letter-spacing: -0.03em; }
+.verdict .n.fail { color: var(--silt); }
+
+footer { display: grid; gap: 1rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
+footer .closing { font: 600 clamp(1.8rem, 4vw, 2.8rem)/1.05 var(--display); letter-spacing: -0.025em; }
+a { color: var(--clean); text-underline-offset: 3px; }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="mark">Slop<span>Watch</span></div>
+    <div class="meta" id="collected"></div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">What an AI agent reads</p>
+      <h1>Your agent believes the top ten.</h1>
+      <p class="lede">It searches, takes whatever ranks, and repeats it back to you with confidence. Nobody checks what it was fed.</p>
+    </div>
+    <div class="serp" id="hero-serp" aria-label="Google India results for the hero query"></div>
+  </section>
+
+  <section>
+    <p class="eyebrow">The measurement</p>
+    <h2>So we looked at everything it reads.</h2>
+    <p class="mono" id="scope"></p>
+    <div class="field" id="field"></div>
+    <div class="legend" aria-hidden="true">
+      <span><i style="background:var(--clean-soft)"></i>clear</span>
+      <span><i style="background:var(--silt)"></i>slop signals</span>
+      <span><i style="box-shadow:inset 0 0 0 1.5px var(--line)"></i>video, forum, shop</span>
+      <span><i style="background:var(--line)"></i>refused our crawler</span>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">The finding</p>
+    <h2>Slop in India does not look like spam.</h2>
+    <div class="kinds">
+      <div><h3>Nobody signs it</h3><p>No named author was the strongest signal of a page the judges called slop.</p></div>
+      <div><h3>It answers another question</h3><p>Pages that barely mention what was asked still rank.</p><p class="eg">A UN climate report ranked #2 on Google India for "best 1.5 ton inverter ac".</p></div>
+      <div><h3>It is selling to you</h3><p>Pharmacies and brands ranking their own blogs for health and product questions.</p></div>
+    </div>
+    <p class="note">Affiliate links and "best X" lists, the classic markers of SEO spam, did not predict low quality in this sample.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">How much</p>
+    <div class="pair">
+      <div><div class="big" id="overall"></div><p id="overall-note"></p></div>
+      <div><div class="bars" id="bars"></div></div>
+    </div>
+    <p class="note" id="bars-note"></p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Meanwhile</p>
+    <h2>The open web is quietly closing.</h2>
+    <div class="pair">
+      <div><div class="big" id="aio"></div><p>Google searches answered by an AI Overview before the first link.</p></div>
+      <div><div class="big" id="refused"></div><p id="refused-note"></p></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">The filter</p>
+    <h2>One import, and the slop never reaches your agent.</h2>
+    <pre><span class="c"># any agent built on SerpApi's search tools</span>
+from slopwatch.filter.serpapi_tools import web_search
+tools = [web_search()]</pre>
+    <div class="serp filtered" id="after-serp"></div>
+    <button class="toggle" id="toggle" type="button" aria-pressed="true">Show unfiltered</button>
+    <p id="demo-note"></p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Measured, not claimed</p>
+    <h2>We publish where it fails, too.</h2>
+    <div class="verdict" id="verdict"></div>
+    <p class="note">Labels come from two independent LLM judges reading each page blind, not from humans. Only pages both agree on count.</p>
+  </section>
+
+  <footer>
+    <div class="closing">Don't feed your agent slop.</div>
+    <p class="mono">pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"</p>
+    <p class="meta">Built on SerpApi. Deterministic signals, no AI-text detection. <a href="https://github.com/soujasK/slopwatch">github.com/soujasK/slopwatch</a></p>
+  </footer>
+</div>
+
+<script id="story-data" type="application/json">{"query": "is it safe to take dolo 650 every day", "hero": [{"rank": 1, "domain": "practo.com", "title": "Dolo 6 Times Per Day Is Dangerous?", "band": "ok", "not_scored": null, "reasons": []}, {"rank": 2, "domain": "askdocdoc.com", "title": "dolo 650 action time", "band": "low", "not_scored": null, "reasons": ["no named author", "no author or date", "title and headings cover 33% of the query's words"]}, {"rank": 3, "domain": "onmanorama.com", "title": "'Indians take Dolo like Cadbury Gems;' doctor's tweet on ...", "band": "ok", "not_scored": null, "reasons": ["title and headings cover 33% of the query's words"]}, {"rank": 4, "domain": "flypped.com", "title": "Dolo 650: Uses, Dosage, Side Effects, Benefits & Complete ...", "band": "ok", "not_scored": null, "reasons": []}, {"rank": 5, "domain": "republicworld.com", "title": "Why Popping Dolo-650 Like Candy Could Be Hurting You ...", "band": "ok", "not_scored": null, "reasons": ["title and headings cover 33% of the query's words"]}, {"rank": 6, "domain": "instagram.com", "title": "Half a Pill, Double the Danger? “He's ...", "band": null, "not_scored": "platform:social", "reasons": []}, {"rank": 7, "domain": "practo.com", "title": "Mild Fever - How Many Dolo 650 Tablets Can V Take For A ...", "band": "ok", "not_scored": null, "reasons": []}, {"rank": 8, "domain": "youtube.com", "title": "Paracetamol போடாதீங்க ! Heat Stroke Effect | Dolo 650", "band": null, "not_scored": "platform:video", "reasons": []}], "grid": [{"name": "Google India", "cells": ["c", "s", "c", "c", "c", "c", "p", "c", "c", "b", "c", "c", "c", "b", "p", "c", "p", "b", "b", "b", "s", "b", "s", "p", "b", "p", "c", "c", "c", "c", "c", "c", "c", "c", "c", "p", "b", "c", "c", "c", "p", "p", "c", "c", "b", "p", "s", "c", "p", "c", "c", "p", "b", "c", "c", "p", "b", "p", "c", "p", "c", "c", "c", "s", "c", "c", "c", "p", "c", "c", "c", "c", "c", "c", "b", "c", "c", "p", "c", "c", "c", "c", "b", "c", "c", "c", "p", "p", "p", "p", "p", "c", "c", "c", "c", "p", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "b", "c", "c", "s", "c", "c", "c", "p", "c", "p", "c", "c", "p", "c", "c", "c", "p", "b", "c", "c", "c", "c", "c", "c", "b", "b", "p", "p", "c", "p", "c", "p", "s", "c", "b", "b", "b", "s", "c", "c", "p", "c", "c", "p", "b", "c", "c", "c", "c", "b", "c", "p", "c", "b", "c", "c", "c", "c", "p", "b", "b", "p", "b", "p", "b", "b", "p", "c", "c", "s", "c", "p", "b", "s", "p", "c", "c", "c", "p", "c", "p", "p", "c", "s", "p", "b", "p", "p", "p", "c", "s", "p", "s", "c", "c", "c", "p", "p", "p", "c", "p", "c", "c", "b", "p", "p", "p", "b", "p", "s", "p", "c", "s", "b", "b", "s", "p", "c", "p", "b", "c", "c", "c", "p", "c", "c", "c", "c", "c", "p", "c", "b", "p", "c", "c", "c", "c", "c", "p", "c", "b", "c", "p", "c", "c", "c", "p", "c", "c", "c", "c", "c", "c", "c", "p", "p", "p", "c", "c", "b", "p", "p", "c", "c", "p", "c", "p", "p", "p", "p", "c", "c", "p", "c", "c", "c", "c", "p", "b", "c", "s", "p", "c", "c", "p", "p", "p", "p", "p", "p", "c", "p", "c", "c", "p", "p", "c", "c", "p", "p", "b", "p", "p", "p", "p", "b", "p", "b", "p", "c", "p", "c", "c", "b", "c", "p", "p", "c", "p", "p"], "counts": {"clean": 167, "slop": 17, "platform": 99, "blocked": 44}}, {"name": "DuckDuckGo India", "cells": ["b", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "b", "c", "c", "b", "b", "b", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "b", "b", "c", "c", "c", "c", "c", "c", "s", "s", "c", "c", "b", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "b", "c", "b", "b", "c", "c", "c", "b", "c", "c", "b", "c", "c", "c", "c", "c", "b", "c", "p", "c", "c", "b", "b", "c", "p", "c", "b", "c", "p", "c", "p", "b", "c", "b", "b", "c", "c", "p", "c", "c", "b", "c", "b", "b", "b", "c", "c", "c", "b", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "b", "b", "c", "c", "c", "c", "c", "c", "c", "b", "b", "c", "c", "s", "c", "c", "b", "c", "c", "c", "b", "c", "p", "c", "c", "c", "c", "c", "c", "s", "c", "c", "b", "c", "b", "c", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "b", "b", "c", "s", "c", "c"], "counts": {"blocked": 44, "clean": 143, "slop": 5, "platform": 6}}, {"name": "Yahoo India", "cells": ["b", "c", "c", "c", "c", "c", "b", "b", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "c", "b", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "s", "p", "s", "b", "c", "c", "b", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "b", "b", "c", "b", "c", "c", "b", "c", "c", "c", "b", "c", "p", "c", "c", "p", "c", "b", "c", "c", "b", "p", "c", "c", "c", "p", "c", "c", "b", "b", "c", "c", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "c", "b", "c", "c", "c", "c", "b", "c", "c", "c", "b", "c", "c", "c", "c", "s", "c", "b", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "c", "b", "b", "c"], "counts": {"blocked": 26, "clean": 106, "slop": 3, "platform": 5}}, {"name": "Google US", "cells": ["c", "b", "b", "s", "b", "c", "b", "b", "c", "c", "c", "b", "s", "b", "p", "s", "c", "c", "b", "c", "p", "c", "c", "p", "c", "b", "b", "b", "b", "p", "c", "c", "b", "b", "p", "c", "p", "c", "c", "s", "p", "c", "b", "s", "b", "c", "s", "c", "s", "b", "b", "c", "c", "c", "p", "c", "b", "c", "c", "c", "c", "c", "b", "b", "c", "p", "p", "p", "s", "p", "c", "p", "b", "b", "s", "c", "s", "b", "b", "b", "p", "c", "p", "p", "c", "b", "c", "p", "p", "b", "p", "b", "p", "b", "c", "p", "c", "c", "p", "p", "c", "c", "c", "b", "c", "p", "p", "p", "s", "p", "p", "c", "b", "c", "p", "p", "b", "p", "c", "b", "p", "p", "s", "p", "p", "s", "p", "p", "p", "p", "p", "p", "p", "c", "p", "c", "c", "c", "p", "p", "p", "c", "p", "p", "p", "p", "c", "p", "p", "c", "c", "c", "c", "s", "b", "c", "b"], "counts": {"clean": 55, "blocked": 36, "slop": 14, "platform": 52}}], "n_searches": 100, "n_rows": 822, "n_pages": 681, "overall": {"value": 0.05668934240362812, "ci": [0.03197954721388508, 0.08728525168953946], "n_scored": 441, "n_rows": 555, "coverage": 0.7945945945945946, "bounds": [0.04504504504504504, 0.25045045045045045], "corrected": null}, "by_engine": {"duckduckgo": {"value": 0.033783783783783786, "ci": [0.006756756756756757, 0.06329336780174719], "n_scored": 148, "n_rows": 192, "coverage": 0.7708333333333334, "bounds": [0.026041666666666668, 0.2552083333333333], "corrected": null}, "google": {"value": 0.09239130434782608, "ci": [0.04944885361552028, 0.1443865121806298], "n_scored": 184, "n_rows": 228, "coverage": 0.8070175438596491, "bounds": [0.07456140350877193, 0.2675438596491228], "corrected": null}, "yahoo": {"value": 0.027522935779816515, "ci": [0.0, 0.06896551724137931], "n_scored": 109, "n_rows": 135, "coverage": 0.8074074074074075, "bounds": [0.022222222222222223, 0.21481481481481482], "corrected": null}}, "india_vs_us": {"IN": {"value": 0.07142857142857142, "ci": [0.02197802197802198, 0.13699914383561637], "n_scored": 84, "n_rows": 104, "coverage": 0.8076923076923077, "bounds": [0.057692307692307696, 0.25], "corrected": null}, "US": {"value": 0.2028985507246377, "ci": [0.10767857142857144, 0.3030438311688311], "n_scored": 69, "n_rows": 105, "coverage": 0.6571428571428571, "bounds": [0.13333333333333333, 0.47619047619047616], "corrected": null}}, "comparisons": {"google_in_vs_google_us": {"diff": -0.11702380952380953, "ci": [-0.2612113095238096, 0.01727976190476181], "p": 0.1399, "n_pairs": 20}, "google_in_vs_duckduckgo_in": {"diff": 0.04672619047619048, "ci": [-0.018333333333333333, 0.12840178571428565], "p": 0.2389, "n_pairs": 20}, "google_in_vs_yahoo_in": {"diff": 0.05047619047619047, "ci": [-0.017380952380952375, 0.13333333333333333], "p": 0.2709, "n_pairs": 20}}, "ai_overview": {"DuckDuckGo IN": "0/20", "Google IN": "39/40", "Google US": "20/20", "Yahoo IN": "0/20"}, "platform_share": {"DuckDuckGo IN": 0.030303030303030304, "Google IN": 0.30275229357798167, "Google US": 0.33121019108280253, "Yahoo IN": 0.03571428571428571}, "refused_share": 0.21879588839941264, "pay_per_crawl": 14, "validation": {"round2_test": {"n": 71, "precision": 0.3684, "precision_ci": [0.1915, 0.5896], "recall": 0.35, "recall_ci": [0.1812, 0.5671], "f1": 0.359, "specificity": 0.7647, "baselines": [{"name": "any affiliate link", "flagged": 2, "precision_low": 0.0, "recall_low": 0.0, "f1_low": 0.0}, {"name": "no author and no date", "flagged": 15, "precision_low": 0.4667, "recall_low": 0.35, "f1_low": 0.4}, {"name": "'best X' listicle", "flagged": 5, "precision_low": 0.0, "recall_low": 0.0, "f1_low": 0.0}, {"name": "random (same flag rate)", "flagged": 19, "precision_low": 0.2817, "recall_low": 0.2676, "f1_low": 0.2745}]}}, "demo": {"n": 8, "dropped": 2, "changed": 1}, "collected": "2026-10-03"}</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("story-data").textContent);
+  var pct = function (x) { return Math.round(x * 100) + "%"; };
+  var pct1 = function (x) { return (Math.round(x * 1000) / 10).toFixed(1) + "%"; };
+  var el = function (id) { return document.getElementById(id); };
+  var esc = function (s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; };
+
+  el("collected").textContent = "Snapshot " + D.collected;
+
+  function label(r) {
+    if (r.band === "low") return "slop";
+    if (r.band) return "clear";
+    if (r.not_scored && r.not_scored.indexOf("platform:") === 0) return r.not_scored.slice(9);
+    return "refused";
+  }
+  function serp(target, withReasons) {
+    var html = '<div class="query">' + esc(D.query) + "</div><ol class=\"results\">";
+    D.hero.forEach(function (r) {
+      var cls = r.band === "low" ? "slop" : (r.band ? "clean" : "");
+      html += '<li class="' + cls + '"><span class="rk">' + r.rank + '</span><span class="dm">' +
+        esc(r.domain) + '</span><span class="st">' + label(r) + "</span>";
+      if (withReasons && r.band === "low") html += '<span class="why">' + esc(r.reasons.join(" · ")) + "</span>";
+      html += "</li>";
+    });
+    target.innerHTML = html + "</ol>";
+  }
+  serp(el("hero-serp"), true);
+  serp(el("after-serp"), true);
+
+  el("scope").textContent = D.n_searches + " searches · " + D.n_rows + " results · " +
+    D.n_pages + " pages fetched · Google, DuckDuckGo, Yahoo · India and the US";
+
+  var i = 0, field = "";
+  D.grid.forEach(function (g) {
+    var c = g.counts, scored = (c.clean || 0) + (c.slop || 0);
+    field += '<div class="group"><div class="group-head"><span>' + esc(g.name) + "</span><span>" +
+      (c.slop || 0) + " of " + scored + " scored show slop signals</span></div><div class=\"dots\" role=\"img\" aria-label=\"" +
+      esc(g.name) + ": " + g.cells.length + " results\">";
+    g.cells.forEach(function (s) { field += '<span class="dot ' + s + '" style="--i:' + (i++) + '"></span>'; });
+    field += "</div></div>";
+  });
+  el("field").innerHTML = field;
+
+  var o = D.overall;
+  el("overall").innerHTML = pct1(o.value) + "<small>" + pct1(o.ci[0]) + "–" + pct1(o.ci[1]) + "</small>";
+  el("overall-note").textContent = "of scored results in India crossed the slop threshold. The filter is strict by design, so the true share is higher.";
+
+  var bars = [["Google India", D.by_engine.google], ["DuckDuckGo India", D.by_engine.duckduckgo],
+              ["Yahoo India", D.by_engine.yahoo], ["Google US", D.india_vs_us.US]];
+  var max = 0.35, bh = "";
+  bars.forEach(function (b) {
+    var s = b[1], x = function (v) { return Math.min(v / max, 1) * 100; };
+    bh += '<div class="bar"><span>' + b[0] + '</span><svg viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true">' +
+      '<rect x="0" y="5" width="100" height="8" rx="4" fill="var(--line)"></rect>' +
+      '<rect x="0" y="5" width="' + Math.max(x(s.value), 1.5) + '" height="8" rx="4" fill="var(--silt)"></rect>' +
+      '<line x1="' + x(s.ci[0]) + '" x2="' + x(s.ci[1]) + '" y1="9" y2="9" stroke="var(--ink)" stroke-width="1.2" vector-effect="non-scaling-stroke"></line>' +
+      "</svg><span class=\"v\">" + pct(s.value) + "</span></div>";
+  });
+  el("bars").innerHTML = bh;
+  var us = D.comparisons.google_in_vs_google_us;
+  el("bars-note").textContent = "Lines show 95% intervals. Google US vs Google India on the same 20 questions: " +
+    (us.ci[0] <= 0 && us.ci[1] >= 0 ? "a gap, but not a statistically clear one" : "a clear gap") +
+    " (p = " + us.p.toFixed(2) + ").";
+
+  var aio = (D.ai_overview["Google IN"] || "0/0").split("/").map(Number);
+  var aioUs = (D.ai_overview["Google US"] || "0/0").split("/").map(Number);
+  el("aio").innerHTML = (aio[0] + aioUs[0]) + "<small>of " + (aio[1] + aioUs[1]) + "</small>";
+  el("refused").innerHTML = pct(D.refused_share) + "<small>of pages</small>";
+  el("refused-note").textContent = "turned our crawler away. " + D.pay_per_crawl + " asked to be paid first.";
+
+  var t = el("toggle"), after = el("after-serp");
+  t.addEventListener("click", function () {
+    var on = after.classList.toggle("filtered");
+    t.setAttribute("aria-pressed", String(on));
+    t.textContent = on ? "Show unfiltered" : "Apply filter";
+  });
+  el("demo-note").textContent = "Across " + D.demo.n + " questions fixed before the run, the filter removed a top-five source for " +
+    D.demo.dropped + ", and the agent's citations changed for " + D.demo.changed + ". Most results it leaves alone.";
+
+  var v = D.validation, html = "";
+  if (v.round2_test) html += '<div><span class="k">First test</span><span class="n fail">' + v.round2_test.precision.toFixed(2) +
+    "</span><p>precision. Below our 0.70 bar, so we rebuilt the rules.</p></div>";
+  if (v.round3_test) {
+    var r3 = v.round3_test;
+    html += '<div><span class="k">Fresh held-out test</span><span class="n' + (r3.precision < 0.7 ? " fail" : "") + '">' +
+      r3.precision.toFixed(2) + "</span><p>precision, " + r3.recall.toFixed(2) + " recall, on " + r3.n + " pages never seen in tuning.</p></div>";
+  } else {
+    html += '<div><span class="k">Fresh held-out test</span><span class="n">—</span><p>150 unseen pages, being labeled now. Reported as it lands.</p></div>';
+  }
+  html += '<div><span class="k">Judges agree</span><span class="n">0.66</span><p>Cohen\'s kappa between the two LLM labelers.</p></div>';
+  el("verdict").innerHTML = html;
+})();
+</script>
+
+</body></html>

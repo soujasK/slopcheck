@@ -46,3 +46,16 @@ def test_cli_report_writes_self_contained_html(tmp_path: Path) -> None:
     assert "two LLMs" in page and "Table view" in page
     numbers = json.loads((tmp_path / "numbers.json").read_text(encoding="utf-8"))
     assert numbers["n_searches"] == 100
+
+
+def test_story_page_is_built_from_committed_data(tmp_path: Path) -> None:
+    from slopwatch.report.story import build_story, story_data
+
+    d = story_data(REPO_ROOT)
+    assert sum(len(g["cells"]) for g in d["grid"]) == d["n_rows"] == 822
+    assert {c for g in d["grid"] for c in g["cells"]} <= {"c", "s", "p", "b"}
+    assert any(h["band"] == "low" and h["reasons"] for h in d["hero"])
+    page = build_story(REPO_ROOT, tmp_path / "story.html").read_text(encoding="utf-8")
+    assert page.startswith("<!doctype html>") and "__STORY_DATA__" not in page
+    assert "<title>SlopWatch</title>" in page and "prefers-color-scheme: dark" in page
+    assert not re.search(r"[\U0001F300-\U0001FAFF]", page)  # no emoji

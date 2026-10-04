@@ -64,6 +64,7 @@ from slopwatch.pages import PageFetcher
 from slopwatch.platform import load_platforms
 from slopwatch.queries import Job, PlanError, load_plan, serp_params
 from slopwatch.report.observatory import build as build_report
+from slopwatch.report.story import build_story
 from slopwatch.score import load_rubric, row_signals, score_rows
 from slopwatch.serp import ProjectLedger, SerpClient, SerpError
 from slopwatch.signals import load_lists
@@ -854,6 +855,8 @@ def report(
     """Build the observatory HTML (and numbers.json) from committed data only."""
     settings, _mode = _settings_and_mode(cache_mode)
     numbers = build_report(settings.data_dir.parent, out)
+    story = build_story(settings.data_dir.parent, out.parent / "story.html")
+    console.print(f"report: {story} (narrative page)")
     o = numbers["overall_india"]
     console.print(
         f"report: {out} | India low share {o['value']:.1%} "
