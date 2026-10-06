@@ -148,7 +148,12 @@ class App:
         sources = []
         for n, r in enumerate(results, start=1):
             s = job.scores[r["link"]]
-            text = self.slop_filter.excerpts.get(r["link"]) or r.get("snippet") or ""
+            text = (
+                self.slop_filter.agent_texts.get(r["link"])
+                or self.slop_filter.excerpts.get(r["link"])
+                or r.get("snippet")
+                or ""
+            )
             sources.append(
                 Source(n, r["link"], r["title"], text, s["slop_risk"], s["band"], s["not_scored"])
             )

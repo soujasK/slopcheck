@@ -192,3 +192,25 @@ def test_cli_search_live_with_fake_network(monkeypatch: pytest.MonkeyPatch, tmp_
     assert r0.exit_code == 0 and "dropped" in r0.output and "credits: 0 spent" in r0.output
     bad = runner.invoke(app, ["search", QUERY, "--engine", "bing"])
     assert bad.exit_code == 2
+
+
+def test_live_filter_keeps_longer_agent_text_in_memory_only() -> None:
+    from slopwatch.filter.core import AGENT_TEXT_CHARS
+
+    page = (
+        "<html><head><title>t</title></head><body><main>"
+        + "<p>acidity relief words</p>" * 400
+        + "</main></body></html>"
+    )
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/robots.txt":
+            return httpx.Response(404)
+        return httpx.Response(200, text=page, headers={"content-type": "text/html"})
+
+    with make_client(Recorder(handler)) as http:
+        f = SlopFilter.live(PageFetcher(http))
+        f.assess(QUERY, ["https://a.example/x"])
+    assert len(f.excerpts["https://a.example/x"]) <= 300
+    assert 300 < len(f.agent_texts["https://a.example/x"]) <= AGENT_TEXT_CHARS
+    assert offline_filter().agent_texts == {}  # committed data never carries long text

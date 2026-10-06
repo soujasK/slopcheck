@@ -35,6 +35,7 @@ from slopwatch.signals.relevance import relevance
 from slopwatch.store import PAGES, RELEVANCE, SIGNALS, read_jsonl
 
 DATA_DIR = REPO_ROOT / "data"
+AGENT_TEXT_CHARS = 1500
 Mode = Literal["drop", "annotate"]
 
 
@@ -78,6 +79,9 @@ class SlopFilter:
     # <=300-char main-text excerpt per page (what an agent would read); filled as pages
     # are assessed live, or from data/pages.jsonl offline.
     excerpts: dict[str, str] = field(default_factory=dict)
+    # Live mode only: up to AGENT_TEXT_CHARS of main text for an agent to read; kept in
+    # memory for this process, never written to committed data.
+    agent_texts: dict[str, str] = field(default_factory=dict)
     _query_ids: dict[str, str] = field(default_factory=dict)
 
     # -- construction ------------------------------------------------------------
@@ -123,6 +127,7 @@ class SlopFilter:
                 return _PageFacts(None, None, fetched.page.unscored_reason or "fetch_failed")
             ex = extract(url, fetched.html, self.lists)
             self.excerpts[url] = make_excerpt(ex.main_text)
+            self.agent_texts[url] = " ".join(ex.main_text.split())[:AGENT_TEXT_CHARS]
             title_cov, text_cov = relevance(query, parse_page(url, fetched.html))
             return _PageFacts(ex.signals, ex.simhash, None, title_cov, text_cov)
         rec = self._offline_signals.get(url)
