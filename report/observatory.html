@@ -43,7 +43,7 @@ code{font-size:.85em;background:var(--surface-1);padding:1px 4px;border-radius:4
 on DuckDuckGo India, Yahoo India and Google US), collected via SerpApi on
 2026-10-03. Rubric v3; deterministic signals, no AI-text detection.</p>
 <div class="tiles"><div class="tile"><div class="big">6%</div><div class="lbl">of scored India top results show low-quality signals (95% CI 3%-9%, n = 441)</div></div><div class="tile"><div class="big">79%</div><div class="lbl">of India article results could be scored (the rest blocked our crawler or failed)</div></div><div class="tile"><div class="big">39/40</div><div class="lbl">Google India searches showed an AI Overview</div></div><div class="tile"><div class="big">30%</div><div class="lbl">of Google India results are platform pages (video, forum, social, shop)</div></div></div>
-<p>6% of scored India results crossed the low-quality threshold.
+<p>6% of scored India results crossed the low-quality threshold. Corrected for the scorer's measured error rates (Rogan-Gladen): <b>15%</b>.
 If every unscored result were ok the share would be 5%; if every one
 were low, 25%. Shares below are over scored, non-platform results.</p>
 
@@ -77,7 +77,7 @@ own content did.</p>
 <p>Labels come from <b>two LLMs (Gemini, gpt-oss-120b), not humans</b>, judging
 blind; ground truth is where both agree. Full protocol and history: EVAL.md,
 LABELING.md, ANALYSIS_PLAN.md.</p>
-<div class="card warn"><h3>Round 2 test (rubric v2): gate not met</h3><p>Precision 0.37 [0.19, 0.59], recall 0.35, F1 0.36, n = 71. It did not beat the one-line baseline "no author and no date". This test split was then retired and its labels became development data.</p></div><div class="card"><h3>Round 3 fresh held-out test</h3><p>Pending: labels for the fresh held-out sample are not complete.</p></div>
+<div class="card warn"><h3>Round 2 test (rubric v2): gate not met</h3><p>Precision 0.37 [0.19, 0.59], recall 0.35, F1 0.36, n = 71. It did not beat the one-line baseline "no author and no date". This test split was then retired and its labels became development data.</p></div><div class="card warn"><h3>Round 3 fresh held-out test (rubric v3): gate not met</h3><p>Precision <b>0.57</b> [0.25, 0.84], recall <b>0.19</b> [0.08, 0.40], F1 0.29, specificity 0.97, n = 114. Baseline "no author and no date": precision 0.15, F1 0.12.</p></div>
 <h2>Agent before / after</h2><p>The same one-call agent answered 8 pre-registered questions from the raw top 5 and from the SlopWatch-filtered top 5. A source was dropped for <b>2 of 8</b>; the cited sources changed for <b>1 of 8</b>. All are shown (DEMO_RESULTS.md).</p><div class="card"><table><tr><th>Question</th><th>Dropped from top 5</th><th>Citations changed</th></tr><tr><td>is it safe to take dolo 650 every day</td><td>1</td><td>yes</td></tr><tr><td>vitamin d deficiency symptoms in women</td><td>0</td><td>no</td></tr><tr><td>how to improve cibil score fast</td><td>2</td><td>no</td></tr><tr><td>is term insurance worth it</td><td>0</td><td>no</td></tr><tr><td>best smartphone under 20000</td><td>0</td><td>no</td></tr><tr><td>best water purifier for home ro or uv</td><td>0</td><td>no</td></tr><tr><td>how to check pf balance using uan number</td><td>0</td><td>no</td></tr><tr><td>upi payment failed but money debited what to do</td><td>0</td><td>no</td></tr></table></div>
 
 <h2>Method and limitations</h2>

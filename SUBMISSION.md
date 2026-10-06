@@ -54,7 +54,9 @@ agents serving them) are shown for health and money questions.
 Labels come from two LLMs judging blind (no human labels; Cohen's kappa 0.66).
 Our first rubric failed its pre-registered held-out test (precision 0.37), and we
 report it. The rebuilt rubric was fitted on development data only and tested once
-on a fresh held-out set: see EVAL.md for the result.
+on 150 fresh pages: precision 0.57 [0.25, 0.84], recall 0.19, specificity 0.97.
+That is below our 0.70 target, but it beats every simple baseline, and it almost
+never removes a good page. Details in EVAL.md.
 
 ## Disclosures
 

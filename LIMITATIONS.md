@@ -70,10 +70,15 @@ all 200/150 items were labeled with `gemini-3.5-flash-lite` (a smaller model).
 ## Validation history
 
 The first held-out test failed (rubric v2: precision 0.37, n = 71) and is
-reported. The rubric was then refitted on development data and tested once on a
+reported. The second, on 150 fresh pages (114 agreed), gave rubric v3 precision
+0.57 [0.25, 0.84] and recall 0.19: still below the 0.70 target. Only 7 results
+were flagged in that test, so the precision interval is wide. Labeler agreement
+on the fresh set was lower (kappa 0.42). The rubric was then refitted on development data and tested once on a
 fresh held-out sample. The rubric is tuned for precision; at its operating point
-it catches roughly one third of low-quality pages (recall about 0.33), so shares
-of "low" results are lower bounds of what the labelers would call low. Where the
+it catches roughly one in five low-quality pages (test recall 0.19), so shares
+of "low" results are lower bounds of what the labelers would call low. The
+prevalence correction divides by that recall and is very unstable (per-engine
+corrected values range from 0% to 38%). Where the
 round-3 test provides sensitivity and specificity, a prevalence-corrected share
 (Rogan-Gladen) is reported next to the raw share.
 

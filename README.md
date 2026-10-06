@@ -43,7 +43,10 @@ non-platform results, with a 95% cluster-bootstrap interval over queries.
 | Google India (same queries) | 7.1% [2.2%, 13.7%] | 84 | 81% |
 
 If every unscored India result were ok the share would be 4.5%; if every one were
-low, 25%. Paired comparisons on the same queries (20 pairs each) found **no
+low, 25%. Because the filter catches only about one in five low-quality
+pages, 5.7% understates what the LLM judges would call low; corrected for the
+measured error rates (Rogan-Gladen) it is about 15%, a very uncertain estimate
+(recall was measured on only 21 low pages). Paired comparisons on the same queries (20 pairs each) found **no
 statistically detectable difference** between Google India and DuckDuckGo/Yahoo
 India, or between Google India and Google US (India − US: −11.7 points, 95% CI
 −26.1 to +1.7, p = 0.14).
@@ -79,11 +82,13 @@ We report the whole history, including what failed (details: [EVAL.md](EVAL.md),
   n = 71, below the pre-registered 0.70 gate and below the one-line baseline "no
   author and no date". That test set was then retired.
 - **Round 3 (rubric v3):** weights fitted on the 155 round-2 items (cross-validated
-  precision 0.72, recall 0.33), frozen, then tested **once** on 150 fresh results
-  never seen before. **Result: pending** (second labeler finishing).
+  precision 0.72), frozen, then tested **once** on 114 agreed results from 150
+  fresh pages never seen before (labeler kappa 0.42): **precision 0.57 [0.25,
+  0.84], recall 0.19, F1 0.29, specificity 0.97.** Below the 0.70 gate, but it
+  beats every baseline (best: F1 0.12), which v2 did not.
 
-The filter is tuned for precision: when it drops a result it is usually right,
-but it catches only about a third of low-quality pages. Treat a drop as
+The filter is conservative: it almost never removes a page the judges called ok
+(3 of 93), but it catches only about one in five low-quality pages. Treat a drop as
 "probably not a source to ground on", not as a verdict on a site.
 
 ## Use it
