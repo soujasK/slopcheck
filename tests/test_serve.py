@@ -164,7 +164,7 @@ def test_overview_and_rubric_endpoints(tmp_path: Path) -> None:
         assert json.loads(conn.getresponse().read())["overall_india"]["value"] == 0.05
         conn.request("GET", "/api/rubric")
         rubric = json.loads(conn.getresponse().read())
-        assert rubric["version"] == 3 and rubric["rules"]
+        assert rubric["version"] == 4 and rubric["rules"]
         weights = [r["weight"] for r in rubric["rules"]]
         assert weights == sorted(weights, reverse=True)
     finally:

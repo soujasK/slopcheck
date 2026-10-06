@@ -155,9 +155,9 @@ def test_near_dups_filled_across_serp_set() -> None:
     assert any("near-duplicate" in r for r in scores[0].reasons)
 
 
-def test_rubric_v3_flags_anonymous_off_query_sellers() -> None:
+def test_current_rubric_flags_anonymous_off_query_sellers() -> None:
     rubric = load_rubric(RUBRIC)
-    assert rubric.version == 3
+    assert rubric.version == 4 and rubric.status == "frozen"
     slop = score(
         "u",
         sig(has_author=False, has_date=False, sells_directly=True,
@@ -167,6 +167,13 @@ def test_rubric_v3_flags_anonymous_off_query_sellers() -> None:
     assert slop.band == "low"
     assert any("cover 25%" in r for r in slop.reasons)
     assert score("u", sig(query_title_coverage=1.0, query_text_coverage=1.0), rubric).band == "ok"
+    official = score(
+        "u",
+        sig(has_author=False, has_date=False, official_source=True,
+            query_title_coverage=1.0, query_text_coverage=1.0),
+        rubric,
+    )  # fmt: skip
+    assert official.band != "low"
 
 
 def test_protective_weight_and_unreadable_pages(tmp_path: Path) -> None:

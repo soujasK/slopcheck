@@ -25,7 +25,6 @@ from slopwatch.store import PAGES, RELEVANCE, SERPS, SIGNALS, read_jsonl
 
 GROUPS = (("google", "IN", "Google India"), ("duckduckgo", "IN", "DuckDuckGo India"),
           ("yahoo", "IN", "Yahoo India"), ("google", "US", "Google US"))  # fmt: skip
-HERO_QUERY_ID = "health-04"
 
 
 _EMOJI = re.compile("[\U0001f000-\U0001faff☀-➿⬀-⯿️‍]")
@@ -67,15 +66,25 @@ def story_data(root: Path) -> dict[str, Any]:
         counts = Counter(status(r) for r in group)
         grid.append({"name": name, "cells": [status(r)[0] for r in group], "counts": dict(counts)})
 
+    # Hero example: the Google India results page with the most results in the low
+    # band under the frozen rubric (ties: lowest query id). Chosen by rule, not by hand.
+    low_per_query = Counter(
+        r.query_id
+        for r in rows
+        if r.engine == "google"
+        and r.locale == "IN"
+        and platforms.kind(r.url) is None
+        and (s := scores.get((r.url, r.query_id))) is not None
+        and s.band == "low"
+    )
+    hero_id = (
+        min(low_per_query, key=lambda q: (-low_per_query[q], q)) if low_per_query else "health-04"
+    )
     hero_rows = sorted(
-        (
-            r
-            for r in rows
-            if r.query_id == HERO_QUERY_ID and r.engine == "google" and r.locale == "IN"
-        ),
+        (r for r in rows if r.query_id == hero_id and r.engine == "google" and r.locale == "IN"),
         key=lambda r: r.rank,
     )
-    query = next(r for r in rows if r.query_id == HERO_QUERY_ID)
+    query = next(r for r in rows if r.query_id == hero_id)
     from slopwatch.queries import load_plan
 
     query_text = {s.id: s.text for s in load_plan(data / "queries.yaml").specs}[query.query_id]

@@ -107,7 +107,7 @@ def test_slopwatch_client_annotate_mode_and_guards() -> None:
     client = SlopWatchClient(FakeSerpApi(), slop_filter=offline_filter(), mode="annotate")
     out = client.search({"q": QUERY, "engine": "google"})
     assert out["slopwatch"]["dropped"] == 0
-    assert out["slopwatch"]["rubric_version"] == 3
+    assert out["slopwatch"]["rubric_version"] == 4
     with pytest.raises(ValueError, match="JSON"):
         client.search({"q": QUERY, "output": "md"})
 
