@@ -1,0 +1,36 @@
+# Platform pages: results that are not articles, so the article-oriented signals
+# do not apply to them. Matched by host suffix. They are a separate class: kept
+# out of the label sample and the precision/recall metrics, and their share of
+# results is reported on its own. Frozen with LABELING.md, before labeling.
+
+video:
+  - youtube.com
+  - vimeo.com
+  - dailymotion.com
+
+forum:
+  - reddit.com
+  - quora.com
+  - stackexchange.com
+  - stackoverflow.com
+  - superuser.com
+  - justanswer.com
+  - answers.microsoft.com
+  - techcommunity.microsoft.com
+
+social:
+  - facebook.com
+  - instagram.com
+  - x.com
+  - twitter.com
+  - linkedin.com
+  - pinterest.com
+  - tiktok.com
+  - threads.net
+
+app_store:
+  - apps.apple.com
+  - play.google.com
+
+# shop: every domain in data/commerce_domains.yaml (shops) is also a platform of
+# kind "shop" when it appears as a search result itself.

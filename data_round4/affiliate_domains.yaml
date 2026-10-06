@@ -1,0 +1,71 @@
+# Affiliate detection lists. Matched by host suffix (a.b.example matches b.example).
+# A link counts as an affiliate link when ANY of these holds:
+#   - its host is in `redirect_hosts` (affiliate networks and shorteners)
+#   - its host is in `param_rules` and it carries one of that rule's query params
+#   - it has one of `generic_params` (any host)
+#   - its rel attribute contains "sponsored"
+# Sources: the networks' own public link formats. Freeze with rubric.yaml.
+
+redirect_hosts:
+  # Amazon / Flipkart short links (affiliate share links)
+  - amzn.to
+  - amzn.eu
+  - fkrt.it
+  - fktr.in
+  # Indian affiliate networks and deal aggregators
+  - linksredirect.com      # Cuelinks
+  - cuelinks.com
+  - ekaro.in               # EarnKaro
+  - earnkaro.com
+  - inr.deals              # INRDeals
+  - tracking.vcommission.com
+  - clnk.in
+  - myntr.it
+  - ajiio.in
+  - wishlink.com
+  # Global networks
+  - anrdoezrs.net          # CJ
+  - dpbolvw.net
+  - jdoqocy.com
+  - tkqlhce.com
+  - kqzyfj.com
+  - emjcd.com
+  - linksynergy.com        # Rakuten
+  - shareasale.com
+  - awin1.com
+  - prf.hn                 # Partnerize
+  - pntra.com
+  - pjtra.com
+  - pjatr.com
+  - gopjn.com
+  - avantlink.com
+  - sjv.io                 # Impact
+  - ojrq.net
+  - go.skimresources.com
+  - redirect.viglink.com
+  - rstyle.me
+  - shopstyle.it
+  - geni.us
+  - howl.me
+  - admitad.com
+  - alitems.com
+  - ad.admitad.com
+
+param_rules:
+  - hosts: [amazon.in, amazon.com, amazon.co.uk]
+    params: [tag]
+  - hosts: [flipkart.com, dl.flipkart.com]
+    params: [affid, affExtParam1]
+  - hosts: [myntra.com, ajio.com, nykaa.com, tatacliq.com, croma.com]
+    params: [affid, aff_id]
+
+# Any host. Values are checked where noted.
+generic_params:
+  - aff_id
+  - affid
+  - affiliate_id
+  - aff_sub
+  - irclickid
+  - clickref
+# utm_medium values that mark an affiliate link on any host
+affiliate_utm_mediums: [affiliate, affiliates, aff]

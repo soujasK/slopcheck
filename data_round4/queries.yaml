@@ -1,0 +1,49 @@
+# Round 4 fresh test queries (one-time test of frozen rubric v4).
+# Frozen and committed BEFORE any search. Google India only, 30 credits.
+# Kept apart from data/ so the measurement data is never overwritten.
+# No India-vs-US subset in this round (per_category 0).
+
+version: 1
+status: frozen
+
+subset:
+  seed: 2028
+  per_category: 0
+  ids: []
+
+plan:
+  - locale: IN
+    engines: [google]
+    queries: all       # 30 credits
+
+queries:
+  - {id: r4-health-01, category: health, text: "how to increase haemoglobin naturally", locale_neutral: false}
+  - {id: r4-health-02, category: health, text: "best time to take vitamin b12 tablets", locale_neutral: false}
+  - {id: r4-health-03, category: health, text: "home remedies for cough in children", locale_neutral: false}
+  - {id: r4-health-04, category: health, text: "is it safe to take paracetamol during pregnancy", locale_neutral: false}
+  - {id: r4-health-05, category: health, text: "symptoms of typhoid in adults", locale_neutral: false}
+  - {id: r4-health-06, category: health, text: "how to reduce cholesterol without medicine", locale_neutral: false}
+  - {id: r4-health-07, category: health, text: "best diet for pcos weight loss", locale_neutral: false}
+  - {id: r4-health-08, category: health, text: "normal bp range by age", locale_neutral: false}
+  - {id: r4-finance-01, category: personal_finance, text: "how to file itr online for salaried", locale_neutral: false}
+  - {id: r4-finance-02, category: personal_finance, text: "best fixed deposit rates for senior citizens", locale_neutral: false}
+  - {id: r4-finance-03, category: personal_finance, text: "nps vs ppf which is better", locale_neutral: false}
+  - {id: r4-finance-04, category: personal_finance, text: "how to save tax under section 80c", locale_neutral: false}
+  - {id: r4-finance-05, category: personal_finance, text: "is gold a good investment now", locale_neutral: false}
+  - {id: r4-finance-06, category: personal_finance, text: "home loan prepayment or invest", locale_neutral: false}
+  - {id: r4-finance-07, category: personal_finance, text: "how to apply for pan card online", locale_neutral: false}
+  - {id: r4-product-01, category: product_reviews, text: "best mixer grinder for indian kitchen", locale_neutral: false}
+  - {id: r4-product-02, category: product_reviews, text: "best geyser for bathroom", locale_neutral: false}
+  - {id: r4-product-03, category: product_reviews, text: "best ceiling fan with low power consumption", locale_neutral: false}
+  - {id: r4-product-04, category: product_reviews, text: "best budget smartwatch in india", locale_neutral: false}
+  - {id: r4-product-05, category: product_reviews, text: "best power bank under 2000", locale_neutral: false}
+  - {id: r4-product-06, category: product_reviews, text: "best washing machine under 30000", locale_neutral: false}
+  - {id: r4-product-07, category: product_reviews, text: "best double door refrigerator", locale_neutral: false}
+  - {id: r4-product-08, category: product_reviews, text: "best trimmer for men", locale_neutral: false}
+  - {id: r4-tech-01, category: tech_howto, text: "how to change aadhaar address online", locale_neutral: false}
+  - {id: r4-tech-02, category: tech_howto, text: "how to transfer pf from old account to new", locale_neutral: false}
+  - {id: r4-tech-03, category: tech_howto, text: "how to recover deleted photos on android", locale_neutral: false}
+  - {id: r4-tech-04, category: tech_howto, text: "how to block a lost phone using ceir", locale_neutral: false}
+  - {id: r4-tech-05, category: tech_howto, text: "how to download voter id card online", locale_neutral: false}
+  - {id: r4-tech-06, category: tech_howto, text: "how to check train pnr status", locale_neutral: false}
+  - {id: r4-tech-07, category: tech_howto, text: "wifi connected but no internet how to fix", locale_neutral: false}
