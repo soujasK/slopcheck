@@ -981,19 +981,29 @@ def demo(
 @app.command()
 def fit(
     out: Annotated[Path, typer.Option("--out", help="Where to write the fitted rubric.")] = Path(
-        "data/rubric_candidates/v3.yaml"
+        "data/rubric_candidates/v4.yaml"
     ),
+    version: Annotated[int, typer.Option("--version", min=1)] = 4,
+    holdout: Annotated[
+        list[str] | None,
+        typer.Option("--holdout", help="Label set(s) that must never be read (held-out tests)."),
+    ] = None,
 ) -> None:
-    """Fit rule weights on the development labels (main label set, all splits).
-
-    Procedure: slopwatch/fit.py and ANALYSIS_PLAN.md. Never reads a held-out set.
-    """
+    """Fit rule weights on all development labels: every label set under labels/
+    (all splits) except the --holdout set(s). Procedure: slopwatch/fit.py."""
     settings = Settings()
     rows, records = _load_scored(settings)
     relevance = read_jsonl(settings.data_dir / RELEVANCE, RelevanceRecord)
     base = settings.data_dir.parent / "labels"
-    items = load_sample(base / SAMPLE)
-    labels = load_labels(base / LABELS)
+    skip = set(holdout or [])
+    items, labels, used_sets = [], {}, []
+    for sample_path in sorted(base.rglob(SAMPLE)):
+        name = sample_path.parent.relative_to(base).as_posix()
+        if name in skip or (name == "." and "main" in skip):
+            continue
+        items += load_sample(sample_path)
+        labels.update(load_labels(sample_path.parent / LABELS))
+        used_sets.append("main" if name == "." else name)
     sig = row_signals(rows, records, relevance)
     xs, ys = [], []
     for it in items:
@@ -1005,8 +1015,8 @@ def fit(
     res = fit_rubric(xs, ys)
     coefs = ", ".join(f"{c.id} {v}" for c, v in zip(CANDIDATES, res.coefficients, strict=True))
     note_lines = [
-        f"Rubric v3: weights fitted on {len(ys)} development items ({sum(ys)} low), "
-        "round-2 LLM labels (slopwatch fit; procedure in slopwatch/fit.py).",
+        f"Rubric v{version}: weights fitted on {len(ys)} development items ({sum(ys)} low), "
+        f"LLM label sets {', '.join(used_sets)} (slopwatch fit; procedure in slopwatch/fit.py).",
         f"5-fold out-of-fold: precision {res.oof_precision}, recall {res.oof_recall}, "
         f"F1 {res.oof_f1}, flagged {res.oof_flagged}; precision floor "
         f"{'met' if res.met_min_precision else 'NOT met'}.",
@@ -1014,7 +1024,9 @@ def fit(
     ]
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(
-        rubric_yaml(res, version=3, note="\n".join(note_lines)), encoding="utf-8", newline="\n"
+        rubric_yaml(res, version=version, note="\n".join(note_lines)),
+        encoding="utf-8",
+        newline="\n",
     )
     load_rubric(out)  # validate
     for line in note_lines:

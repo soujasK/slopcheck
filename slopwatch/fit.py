@@ -23,7 +23,7 @@ from dataclasses import dataclass
 
 from slopwatch.models import Signals
 
-MIN_PRECISION = 0.70
+MIN_PRECISION = 0.80  # rubric v4: margin above the 0.70 gate
 MIN_FLAGGED = 10
 L2 = 1.0
 ITERATIONS = 1500
@@ -115,6 +115,12 @@ CANDIDATES: tuple[Candidate, ...] = (
         "near-duplicate of a page on another domain in the same results",
         lambda s: s.near_dup_group is not None,
     ),
+    Candidate(
+        "official_source",
+        ({"signal": "official_source", "eq": True},),
+        "official source (government, education or the organisation's own help pages)",
+        lambda s: s.official_source,
+    ),
 )
 
 
@@ -142,13 +148,15 @@ def fit_logistic(x: Sequence[Sequence[float]], y: Sequence[int]) -> tuple[list[f
 
 
 def rule_weights(coefs: Sequence[float]) -> list[float]:
-    positive = [max(0.0, c) for c in coefs]
-    total = sum(positive)
-    return [round(c / total, 4) if total else 0.0 for c in positive]
+    """Coefficients scaled by the sum of the positive ones. Positive weights raise
+    risk; negative (protective) weights are kept and lower it; risk is clipped to
+    [0, 1] when scored."""
+    total = sum(max(0.0, c) for c in coefs)
+    return [round(c / total, 4) if total else 0.0 for c in coefs]
 
 
 def risk(weights: Sequence[float], feats: Sequence[float]) -> float:
-    return min(1.0, sum(w * f for w, f in zip(weights, feats, strict=True)))
+    return min(1.0, max(0.0, sum(w * f for w, f in zip(weights, feats, strict=True))))
 
 
 @dataclass(frozen=True)
@@ -225,7 +233,7 @@ def rubric_yaml(result: FitResult, *, version: int, note: str) -> str:
         "rules:",
     ]
     for cand, weight in zip(CANDIDATES, result.weights, strict=True):
-        if weight <= 0:
+        if weight == 0:
             continue
         lines += [f"  - id: {cand.id}", f"    weight: {weight}", "    all:"]
         for cond in cand.conditions:

@@ -103,3 +103,15 @@ def has_about_contact(page: ParsedPage) -> bool:
 def check(page: ParsedPage) -> tuple[bool, bool, bool]:
     """``(has_author, has_date, has_about_contact)``."""
     return has_author(page), has_date(page), has_about_contact(page)
+
+
+_OFFICIAL_SUFFIXES = (".gov", ".gov.in", ".nic.in", ".edu", ".ac.in", ".edu.in", ".int",
+                      ".gov.uk", ".ac.uk", ".gov.au", ".mil")  # fmt: skip
+_OFFICIAL_SUBDOMAINS = ("support.", "help.", "docs.", "learn.", "kb.", "developer.")
+
+
+def official_source(url: str) -> bool:
+    """Government / education / intergovernmental host, or a support/help/docs
+    subdomain (an organisation's own documentation)."""
+    host = (urlsplit(url).hostname or "").lower().removeprefix("www.")
+    return host.endswith(_OFFICIAL_SUFFIXES) or host.startswith(_OFFICIAL_SUBDOMAINS)

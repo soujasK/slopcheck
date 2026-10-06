@@ -167,3 +167,39 @@ def test_rubric_v3_flags_anonymous_off_query_sellers() -> None:
     assert slop.band == "low"
     assert any("cover 25%" in r for r in slop.reasons)
     assert score("u", sig(query_title_coverage=1.0, query_text_coverage=1.0), rubric).band == "ok"
+
+
+def test_protective_weight_and_unreadable_pages(tmp_path: Path) -> None:
+    from slopwatch.signals.authorship import official_source
+
+    assert official_source("https://www.incometax.gov.in/x") and official_source(
+        "https://support.google.com/a"
+    )
+    assert official_source("https://health.harvard.edu/x") and not official_source(
+        "https://kotak811.bank.in/x"
+    )
+    path = tmp_path / "r.yaml"
+    path.write_text(
+        "version: 4\nstatus: frozen\nbands: {low: 0.5, mixed: 0.15}\nrules:\n"
+        "  - {id: a, weight: 0.6, all: [{signal: has_author, eq: false}], reason: anon}\n"
+        "  - {id: o, weight: -0.4, all: [{signal: official_source, eq: true}], reason: official}\n",
+        encoding="utf-8",
+    )
+    rubric = load_rubric(path)
+    assert score("u", sig(has_author=False), rubric).band == "low"
+    official = score("u", sig(has_author=False, official_source=True), rubric)
+    assert official.band == "mixed" and official.slop_risk == 0.2
+    assert score("u", sig(official_source=True), rubric).slop_risk == 0.0  # clipped at 0
+    text = " ".join(f"word{i} shared text body" for i in range(200))
+    h = f"{duplicate.simhash(text):016x}"
+    recs = [
+        SignalRecord(
+            url="https://a.example/1", html_hash="x", signals=sig(text_len=120), simhash=h
+        ),
+        SignalRecord(url="https://b.example/1", html_hash="y", signals=sig(), simhash=h),
+    ]
+    rows = [_row("https://a.example/1", "s1"), _row("https://b.example/1", "s1", 2)]
+    from slopwatch.score import score_rows
+
+    scored = score_rows(rows, recs, [], rubric)
+    assert ("https://a.example/1", "q") not in scored and ("https://b.example/1", "q") in scored

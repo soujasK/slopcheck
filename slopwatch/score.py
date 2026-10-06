@@ -71,7 +71,8 @@ class Rule(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid")
 
     id: str
-    weight: float = Field(gt=0, le=1)
+    # Positive = raises slop risk; negative = protective (lowers it). Never zero.
+    weight: float = Field(ge=-1, le=1)
     all: list[Condition] = Field(min_length=1)
     reason: str
 
@@ -139,7 +140,7 @@ def load_rubric(path: Path) -> Rubric:
 
 def score(url: str, signals: Signals, rubric: Rubric, query_id: str | None = None) -> Score:
     fired = [rule for rule in rubric.rules if rule.fires(signals)]
-    risk = round(min(1.0, sum(rule.weight for rule in fired)), 4)
+    risk = round(min(1.0, max(0.0, sum(rule.weight for rule in fired))), 4)
     return Score(
         url=url,
         query_id=query_id,
@@ -175,6 +176,9 @@ def score_all(rows: list[SerpRow], records: list[SignalRecord], rubric: Rubric) 
 
 
 RowKey = tuple[str, str]  # (url, query_id)
+# Pages with less readable main text than this are not scored (rubric v4): an
+# empty or JavaScript-rendered shell cannot be judged, so it is never guessed.
+MIN_READABLE_CHARS = 300
 
 
 def row_signals(
@@ -186,7 +190,7 @@ def row_signals(
     out: dict[RowKey, Signals] = {}
     for row in rows:
         key = (row.url, row.query_id)
-        if row.url not in page or key in out:
+        if row.url not in page or key in out or page[row.url].text_len < MIN_READABLE_CHARS:
             continue
         r = rel.get(key)
         out[key] = page[row.url].model_copy(

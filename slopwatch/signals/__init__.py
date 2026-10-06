@@ -34,6 +34,7 @@ def extract(url: str, html: str, lists: DomainLists) -> Extracted:
         commerce_ratio=commerce_ratio,
         listicle=commerce.is_listicle(page),
         sells_directly=commerce.sells_directly(page),
+        official_source=authorship.official_source(url),
         ad_scripts=ads.count(page, lists),
         has_author=has_author,
         has_date=has_date,

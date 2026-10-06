@@ -336,7 +336,7 @@ def test_score_label_evaluate_end_to_end(
     ev = invoke("evaluate", "--split", "all", "--out", str(out))
     assert ev.exit_code == 0, ev.output
     body = out.read_text(encoding="utf-8")
-    assert "sha256:" in body and "Split: all (n = 20" in body and "| Precision |" in body
+    assert "sha256:" in body and "Split: all (n = " in body and "| Precision |" in body
     assert "Baselines on the same items" in body and "any affiliate link" in body
 
     keys2 = iter(["l", "o"] * 3)

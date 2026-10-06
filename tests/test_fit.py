@@ -48,7 +48,8 @@ def test_logistic_learns_the_signal_and_is_deterministic() -> None:
     assert by_id["listicle"] < by_id["title_off_query"]
     assert fit_logistic(x, ys) == (coefs, fit_logistic(x, ys)[1])
     w = rule_weights([2.0, -1.0, 2.0])
-    assert w == [0.5, 0.0, 0.5] and rule_weights([-1.0]) == [0.0]
+    assert w == [0.5, -0.25, 0.5]  # protective (negative) weights are kept
+    assert rule_weights([-1.0]) == [0.0]
 
 
 def test_fit_rubric_threshold_and_yaml_roundtrip(tmp_path: Path) -> None:

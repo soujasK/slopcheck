@@ -123,6 +123,17 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   on the 155 development items with the same procedure before any round-3
   evaluation. The pre-stemming v3 is in git history.
 
+- 2026-10-06: **round 4.** Rubric v3 scored precision 0.57 on round 3 (gate not
+  met; EVAL.md). Round 3 is now spent and its 114 labels join development data
+  (269 items). Changes, from development-data error analysis, declared before
+  fitting: (1) pages with under 300 characters of readable main text are not
+  scored (they were scored as anonymous and off-query); (2) a new protective
+  `official_source` signal (gov/edu/int hosts, support/help/docs subdomains); (3)
+  rule weights may be negative (protective), risk clipped to [0, 1]; (4) the
+  cross-validated precision floor is raised to 0.80. Rubric v4 is fitted with
+  `slopwatch fit --version 4 --holdout round4`, frozen, then tested once on a fresh
+  round-4 sample whose URLs appear in no earlier sample.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

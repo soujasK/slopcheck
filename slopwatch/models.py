@@ -94,6 +94,9 @@ class Signals(_Frozen):
     near_dup_group: str | None = None  # filled at score time, across a SERP set
     # Own site sells (cart/checkout/buy button/product markup). Added in rubric v2.
     sells_directly: bool = False
+    # Government, education, intergovernmental or a support/help/docs subdomain.
+    # A protective signal (rubric v4): bylines are absent on such pages by design.
+    official_source: bool = False
     # Query relevance (per SERP row, filled at score time): share of the query's
     # content words in the title + headings / in the main text. Added in round 3.
     query_title_coverage: float | None = None

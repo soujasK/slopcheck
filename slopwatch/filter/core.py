@@ -28,7 +28,7 @@ from slopwatch.models import Band, RelevanceRecord, SignalRecord, Signals
 from slopwatch.pages import PageFetcher, make_excerpt
 from slopwatch.platform import PlatformList, load_platforms
 from slopwatch.queries import load_plan
-from slopwatch.score import Rubric, load_rubric, score
+from slopwatch.score import MIN_READABLE_CHARS, Rubric, load_rubric, score
 from slopwatch.signals import DomainLists, duplicate, extract, load_lists
 from slopwatch.signals.base import parse_page
 from slopwatch.signals.relevance import relevance
@@ -156,6 +156,9 @@ class SlopFilter:
             f = facts[url]
             if f.signals is None:
                 out.append(Assessment(url, None, None, (), f.reason))
+                continue
+            if f.signals.text_len < MIN_READABLE_CHARS:  # an empty shell is never guessed
+                out.append(Assessment(url, None, None, (), "too_little_text"))
                 continue
             sig = f.signals.model_copy(
                 update={
