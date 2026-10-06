@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers detailed, step-by-step instructions on recovering deleted WhatsApp messages and is authored by identifiable wikiHow staff.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted whatsapp messages\\\". The page is from wikiHow Tech, which is a how-to article with staff authors, co-authored by wikiHow staff, includes instructions. It appears to be a genuine answer, with identifiable organization (wikiHow). So label \\\"ok\\\". Reason: provides step-by-step instructions and is authored by wikiHow staff.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted whatsapp messages\\\". The page is from wikiHow Tech, which is a how-to article with staff authors, co-authored by wikiHow staff, includes instructions. It appears to be a genuine answer, with identifiable organization (wikiHow). So label \\\"ok\\\". Reason: provides step-by-step instructions and is authored by wikiHow staff.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297391,\"ec_transfer_params\":null,\"id\":\"chatcmpl-35e63d97-afe0-4e51-ac9d-781b170f3aa8\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":983,\"completion_tokens\":131,\"total_tokens\":1114,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.20890808105469}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:36:35.210019+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:36:33 GMT"
+  },
+  "key": "0504eaadbd80871c59ad110ee05f7e750f7d03117894459ebbcf0fe976f619ec",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

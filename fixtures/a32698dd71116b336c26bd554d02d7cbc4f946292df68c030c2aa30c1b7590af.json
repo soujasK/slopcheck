@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses normal post‑meal blood sugar levels for diabetics and includes a named author and organized content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page appears to be a blog article on diabetesknow.com, titled \\\"Blood Sugar Charts for Normal and Post-Meal Levels\\\". It includes author name (Ken Gri) and date. It seems to provide information about normal post-meal blood sugar levels, includes charts, FAQs, references. Likely an informational article, not just affiliate. It seems to answer the query. It has identifiable author and organization (diabetesknow.com). So label \\\"ok\\\". Reason: provides direct answer with author and sources.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal blood sugar level after eating for diabetics\\\". The page appears to be a blog article on diabetesknow.com, titled \\\"Blood Sugar Charts for Normal and Post-Meal Levels\\\". It includes author name (Ken Gri) and date. It seems to provide information about normal post-meal blood sugar levels, includes charts, FAQs, references. Likely an informational article, not just affiliate. It seems to answer the query. It has identifiable author and organization (diabetesknow.com). So label \\\"ok\\\". Reason: provides direct answer with author and sources.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297266,\"ec_transfer_params\":null,\"id\":\"chatcmpl-fe1f7330-1934-4019-ae02-ded20f6056ba\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":981,\"completion_tokens\":172,\"total_tokens\":1153,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.94072723388672}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:34:30.385336+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:28 GMT"
+  },
+  "key": "a32698dd71116b336c26bd554d02d7cbc4f946292df68c030c2aa30c1b7590af",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

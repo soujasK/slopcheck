@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official FDA page that directly lists OTC medicines for heartburn and acidity, providing reliable, authoritative information.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground an answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is FDA site about OTC heartburn treatment. It lists classes of OTC meds, antacids, H2 blockers, PPIs. It is an official source (US FDA). It answers the query by providing information on OTC options for acidity (heartburn) and possibly gas? It mentions antacids, etc. It is an official government source, with responsibility. So label \\\"ok\\\". Reason: official FDA page providing OTC heartburn treatment info.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground an answer to query: \\\"best medicine for acidity and gas without prescription\\\". The page is FDA site about OTC heartburn treatment. It lists classes of OTC meds, antacids, H2 blockers, PPIs. It is an official source (US FDA). It answers the query by providing information on OTC options for acidity (heartburn) and possibly gas? It mentions antacids, etc. It is an official government source, with responsibility. So label \\\"ok\\\". Reason: official FDA page providing OTC heartburn treatment info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297286,\"ec_transfer_params\":null,\"id\":\"chatcmpl-fbe4baf1-4831-400b-a4dc-32296c0f6dcd\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1013,\"completion_tokens\":160,\"total_tokens\":1173,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.14072036743164}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:34:50.835485+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:49 GMT"
+  },
+  "key": "446ec4c26881c35c66f06b5d123a5a511ecf8add0d49e9a3f8dca534734a277d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

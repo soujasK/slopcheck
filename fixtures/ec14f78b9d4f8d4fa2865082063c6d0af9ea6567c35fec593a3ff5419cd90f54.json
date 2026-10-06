@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a professional medical blog from Bass Medical Group that directly discusses vitamin D deficiency symptoms, providing credible health information.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is a blog post from Bass Medical Group, a medical practice. It discusses vitamin D deficiency symptoms, including fatigue, muscle weakness, etc. It is not specifically about women, but general. The query asks about symptoms in women. The page may still be relevant, as symptoms are similar across genders. The page appears to be a legitimate medical blog with author? Not shown but likely from a medical group. It has a date, appears to be a professional site. It is not a low-quality affiliate roundup. So label likely \\\"ok\\\". Reason: provides medically relevant info, from identifiable organization (Bass Medical Group). So answer.\\n\\n\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is a blog post from Bass Medical Group, a medical practice. It discusses vitamin D deficiency symptoms, including fatigue, muscle weakness, etc. It is not specifically about women, but general. The query asks about symptoms in women. The page may still be relevant, as symptoms are similar across genders. The page appears to be a legitimate medical blog with author? Not shown but likely from a medical group. It has a date, appears to be a professional site. It is not a low-quality affiliate roundup. So label likely \\\"ok\\\". Reason: provides medically relevant info, from identifiable organization (Bass Medical Group). So answer.\\n\\n\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297321,\"ec_transfer_params\":null,\"id\":\"chatcmpl-72c101ee-1d04-48a8-ae9c-ef2babbb4fdc\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":980,\"completion_tokens\":196,\"total_tokens\":1176,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.54527282714844}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:35:26.906471+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:35:25 GMT"
+  },
+  "key": "ec14f78b9d4f8d4fa2865082063c6d0af9ea6567c35fec593a3ff5419cd90f54",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, authored guide on debt elimination, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"how to get out of credit card debt\\\". The page is a guide on getting out of debt, includes steps, likely includes credit card debt advice. It is from financer.com, appears to be a personal finance site. It has author attribution: \\\"Written by Financer.com - Jul 13, 2026\\\". Not a named individual but organization. It seems to be a genuine guide, not just affiliate product roundup. Likely ok. It may contain affiliate links but primary purpose is to provide advice. So label ok.\\n\\nReason: page provides step-by-step guide to debt elimination, authored by Financer.com, a recognizable finance site.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"how to get out of credit card debt\\\". The page is a guide on getting out of debt, includes steps, likely includes credit card debt advice. It is from financer.com, appears to be a personal finance site. It has author attribution: \\\"Written by Financer.com - Jul 13, 2026\\\". Not a named individual but organization. It seems to be a genuine guide, not just affiliate product roundup. Likely ok. It may contain affiliate links but primary purpose is to provide advice. So label ok.\\n\\nReason: page provides step-by-step guide to debt elimination, authored by Financer.com, a recognizable finance site.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297277,\"ec_transfer_params\":null,\"id\":\"chatcmpl-63b09342-37cb-47ca-a263-a6d7ffe28d3e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":992,\"completion_tokens\":182,\"total_tokens\":1174,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.97254180908203}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:34:42.780808+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:40 GMT"
+  },
+  "key": "82cdb825e8930a430a7d7dc86d1dbd5db34fab320d043895370ff708c02cbf76",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

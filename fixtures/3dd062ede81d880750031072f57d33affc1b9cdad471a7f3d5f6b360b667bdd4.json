@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The wikiHow article gives step-by-step recovery instructions and lists a named author and reviewer, indicating responsible, content‑focused guidance.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted whatsapp messages\\\". The page is from wikiHow, titled \\\"How to Retrieve Old WhatsApp Messages on iPhone or Android\\\". It appears to be a step-by-step guide, with co-authors and reviewers listed, last updated 2025. That suggests identifiable responsibility (named author, reviewer). It's not a low-quality affiliate roundup. It's a how-to article. So label \\\"ok\\\". Reason: provides detailed instructions and has named author/reviewer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted whatsapp messages\\\". The page is from wikiHow, titled \\\"How to Retrieve Old WhatsApp Messages on iPhone or Android\\\". It appears to be a step-by-step guide, with co-authors and reviewers listed, last updated 2025. That suggests identifiable responsibility (named author, reviewer). It's not a low-quality affiliate roundup. It's a how-to article. So label \\\"ok\\\". Reason: provides detailed instructions and has named author/reviewer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297341,\"ec_transfer_params\":null,\"id\":\"chatcmpl-56e2289b-4371-40e1-bd60-a33c7ea8f4bb\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":926,\"completion_tokens\":156,\"total_tokens\":1082,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.09982681274414}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:35:46.165843+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:35:44 GMT"
+  },
+  "key": "3dd062ede81d880750031072f57d33affc1b9cdad471a7f3d5f6b360b667bdd4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

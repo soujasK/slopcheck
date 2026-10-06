@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed guide from a reputable tech site with a named author, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to speed up a slow windows 11 laptop\\\". The page is from Computerworld, an established tech publication. Title: \\\"How to speed up Windows 11 – Computerworld\\\". The article appears to be a guide with tips. It includes author name (Preston Gralla, Contributing Editor). So it is a genuine answer, with identifiable organization (Computerworld). So label should be \\\"ok\\\". Reason: reputable source, author, provides detailed steps.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to speed up a slow windows 11 laptop\\\". The page is from Computerworld, an established tech publication. Title: \\\"How to speed up Windows 11 – Computerworld\\\". The article appears to be a guide with tips. It includes author name (Preston Gralla, Contributing Editor). So it is a genuine answer, with identifiable organization (Computerworld). So label should be \\\"ok\\\". Reason: reputable source, author, provides detailed steps.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297155,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5696f209-2be6-47e0-9b74-99614c384f43\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1012,\"completion_tokens\":155,\"total_tokens\":1167,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.76799392700195}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:32:40.237659+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:32:38 GMT"
+  },
+  "key": "a39673667f152e496fb8fb7c7061e17fbf8d530dda739feaafb2f722e72a0287",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

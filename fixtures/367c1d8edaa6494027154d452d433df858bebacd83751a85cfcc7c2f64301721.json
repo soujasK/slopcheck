@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly discusses the value of term insurance and includes a named author, providing substantive analysis beyond affiliate links.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is term insurance worth it\\\". The page is a blog article comparing term insurance plans, includes discussion of term insurance, its benefits, claim settlement ratio, etc. It seems to answer the question about whether term insurance is worth it, providing analysis. It has a named author (R Rohan Mehra) and disclaimer, appears to be a genuine article, though includes affiliate links. That does not make it low. It is not a generic roundup with no analysis; it provides comparison and reasoning. So label \\\"ok\\\". Reason: article directly discusses term insurance value with author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is term insurance worth it\\\". The page is a blog article comparing term insurance plans, includes discussion of term insurance, its benefits, claim settlement ratio, etc. It seems to answer the question about whether term insurance is worth it, providing analysis. It has a named author (R Rohan Mehra) and disclaimer, appears to be a genuine article, though includes affiliate links. That does not make it low. It is not a generic roundup with no analysis; it provides comparison and reasoning. So label \\\"ok\\\". Reason: article directly discusses term insurance value with author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297053,\"ec_transfer_params\":null,\"id\":\"chatcmpl-243106d5-c391-4ac1-a800-25f843dba91e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1004,\"completion_tokens\":173,\"total_tokens\":1177,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.74072265625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:30:57.868942+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:30:56 GMT"
+  },
+  "key": "367c1d8edaa6494027154d452d433df858bebacd83751a85cfcc7c2f64301721",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

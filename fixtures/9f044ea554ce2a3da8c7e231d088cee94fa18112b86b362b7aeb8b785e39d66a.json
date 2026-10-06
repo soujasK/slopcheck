@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a guide with a named author that directly explains how to block spam calls on Android.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to block spam calls on android\\\". The page title: \\\"How to block spam calls on iOS and Android phones\\\". URL is inverse.com, a media site. The excerpt shows author name (Matt Wille) and date. Likely an article giving guide. That seems to answer the query. It's not purely affiliate; it's a guide. So label \\\"ok\\\". Reason: article provides instructions and has identifiable author.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to block spam calls on android\\\". The page title: \\\"How to block spam calls on iOS and Android phones\\\". URL is inverse.com, a media site. The excerpt shows author name (Matt Wille) and date. Likely an article giving guide. That seems to answer the query. It's not purely affiliate; it's a guide. So label \\\"ok\\\". Reason: article provides instructions and has identifiable author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297471,\"ec_transfer_params\":null,\"id\":\"chatcmpl-824524c0-6736-4c6c-89de-0b381fca2252\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":659,\"completion_tokens\":144,\"total_tokens\":803,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":30.786239624023438}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:37:54.053111+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:37:52 GMT"
+  },
+  "key": "9f044ea554ce2a3da8c7e231d088cee94fa18112b86b362b7aeb8b785e39d66a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

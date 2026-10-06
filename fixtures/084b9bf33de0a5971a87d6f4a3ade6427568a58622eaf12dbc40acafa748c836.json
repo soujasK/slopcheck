@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial roundup with affiliate links and no clear author or detailed analysis.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best laptop for students under 50000\\\". The page appears to be a product roundup list with affiliate links to Amazon. It is a \\\"Best Laptops Under 50000\\\" page on budgettech.in. It lists multiple laptops with specs, includes \\\"Check Price & Offers on Amazon →\\\". Likely a commercial affiliate site. Does it have identifiable author? Not shown in snippet. It seems primarily for affiliate marketing. The question: is it \\\"low\\\" (monetised referral) or \\\"ok\\\"? According to guidelines, product roundups with affiliate links can still be ok if they show testing, comparisons, etc. This page seems generic, just listing specs, no detailed review, no author. Likely low. So label low.\\n\\nReason: primarily affiliate product list without clear author or testing.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best laptop for students under 50000\\\". The page appears to be a product roundup list with affiliate links to Amazon. It is a \\\"Best Laptops Under 50000\\\" page on budgettech.in. It lists multiple laptops with specs, includes \\\"Check Price & Offers on Amazon →\\\". Likely a commercial affiliate site. Does it have identifiable author? Not shown in snippet. It seems primarily for affiliate marketing. The question: is it \\\"low\\\" (monetised referral) or \\\"ok\\\"? According to guidelines, product roundups with affiliate links can still be ok if they show testing, comparisons, etc. This page seems generic, just listing specs, no detailed review, no author. Likely low. So label low.\\n\\nReason: primarily affiliate product list without clear author or testing.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297083,\"ec_transfer_params\":null,\"id\":\"chatcmpl-29c5144f-5f25-441b-9e4f-efb51611826b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1005,\"completion_tokens\":214,\"total_tokens\":1219,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.5679931640625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:31:29.550601+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:31:27 GMT"
+  },
+  "key": "084b9bf33de0a5971a87d6f4a3ade6427568a58622eaf12dbc40acafa748c836",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

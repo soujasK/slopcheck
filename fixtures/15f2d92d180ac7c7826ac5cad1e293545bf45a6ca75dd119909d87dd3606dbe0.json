@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a genuine beginner investing guide from a named financial services organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is from capitacaribbean.com, appears to be a financial wellness guide with investing tips for beginners. It likely includes advice on starting investing, possibly with small amounts. It seems to be a genuine article, not just affiliate roundup. It likely has an organization (Capita Financial Services). There's no author listed in snippet, but organization is identified. It seems to be a legitimate informational page, not a product roundup. So label \\\"ok\\\". Reason: provides genuine investing guidance from a financial services organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to start investing with a small amount\\\". The page is from capitacaribbean.com, appears to be a financial wellness guide with investing tips for beginners. It likely includes advice on starting investing, possibly with small amounts. It seems to be a genuine article, not just affiliate roundup. It likely has an organization (Capita Financial Services). There's no author listed in snippet, but organization is identified. It seems to be a legitimate informational page, not a product roundup. So label \\\"ok\\\". Reason: provides genuine investing guidance from a financial services organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297158,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d50c2bd7-2fe0-4de1-9e54-2fab6549b9c1\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":998,\"completion_tokens\":162,\"total_tokens\":1160,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.79981231689453}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:32:42.639785+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:32:40 GMT"
+  },
+  "key": "15f2d92d180ac7c7826ac5cad1e293545bf45a6ca75dd119909d87dd3606dbe0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

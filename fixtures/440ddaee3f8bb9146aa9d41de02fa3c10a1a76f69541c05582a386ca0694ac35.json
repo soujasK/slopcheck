@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"RTINGS.com provides a detailed, tested ranking of budget wireless earbuds and is a clearly identified reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is from RTINGS.com, a reputable review site. Title: \\\"The 5 Best Budget Wireless Earbuds of 2026 - RTINGS.com\\\". The main text includes a lot of product list, seems like a review article. Likely includes testing, ratings. It has affiliate links but primary purpose is to review and rank earbuds, not just affiliate. It likely has identifiable organization (RTINGS.com). So label \\\"ok\\\". Reason: reputable review site with organized testing.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget wireless earbuds\\\". The page is from RTINGS.com, a reputable review site. Title: \\\"The 5 Best Budget Wireless Earbuds of 2026 - RTINGS.com\\\". The main text includes a lot of product list, seems like a review article. Likely includes testing, ratings. It has affiliate links but primary purpose is to review and rank earbuds, not just affiliate. It likely has identifiable organization (RTINGS.com). So label \\\"ok\\\". Reason: reputable review site with organized testing.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297179,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4e771cb4-15b3-4f71-b3b8-dbfdd7e83c20\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":857,\"completion_tokens\":160,\"total_tokens\":1017,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":38.1771125793457}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:33:04.991856+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:33:03 GMT"
+  },
+  "key": "440ddaee3f8bb9146aa9d41de02fa3c10a1a76f69541c05582a386ca0694ac35",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

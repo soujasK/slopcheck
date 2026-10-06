@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a directory of manufacturers, not a review or recommendation of the best air purifiers for Delhi pollution.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"best air purifier for delhi pollution\\\". The page title: \\\"Top Air Purifier Manufacturers in Delhi\\\". URL is justdial.com, which is a local business directory (India). Likely a listing of manufacturers, not a review or recommendation. The main text is empty (no text). So the page likely is a directory listing, possibly monetized referral. It does not answer the query about best air purifier for Delhi pollution. So label low.\\n\\nWe need reason: page is a business directory listing manufacturers, not providing recommendations.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"best air purifier for delhi pollution\\\". The page title: \\\"Top Air Purifier Manufacturers in Delhi\\\". URL is justdial.com, which is a local business directory (India). Likely a listing of manufacturers, not a review or recommendation. The main text is empty (no text). So the page likely is a directory listing, possibly monetized referral. It does not answer the query about best air purifier for Delhi pollution. So label low.\\n\\nWe need reason: page is a business directory listing manufacturers, not providing recommendations.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297425,\"ec_transfer_params\":null,\"id\":\"chatcmpl-56cc434a-0047-42aa-b7e7-7c29eb3e87f5\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":580,\"completion_tokens\":169,\"total_tokens\":749,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":29.977163314819336}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:37:09.012384+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:37:07 GMT"
+  },
+  "key": "aff228f5b08eb6e88d60dea3414efb60c3d7ab72e148eb36b2f54c2078b92674",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

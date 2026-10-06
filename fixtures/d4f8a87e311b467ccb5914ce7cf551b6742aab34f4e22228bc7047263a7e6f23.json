@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on recovering a hacked Gmail account and includes a named author, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to recover a hacked gmail account\\\". The page appears to be an article on ccm.net, titled \\\"Recover Gmail account: without phone number, recovery email\\\". It includes author name David Webb, date, seems to give steps. It's not just affiliate; it's a guide. It has a named author, organization (ccm.net). Likely \\\"ok\\\". Need to ensure not low: It's not a product roundup, it's a how-to guide. It seems to answer the query. So label ok.\\n\\nReason: provides step-by-step recovery instructions and has author.\\n\\nReturn JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"how to recover a hacked gmail account\\\". The page appears to be an article on ccm.net, titled \\\"Recover Gmail account: without phone number, recovery email\\\". It includes author name David Webb, date, seems to give steps. It's not just affiliate; it's a guide. It has a named author, organization (ccm.net). Likely \\\"ok\\\". Need to ensure not low: It's not a product roundup, it's a how-to guide. It seems to answer the query. So label ok.\\n\\nReason: provides step-by-step recovery instructions and has author.\\n\\nReturn JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297281,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a2b20940-f936-4a74-a1af-e9406c2b8c65\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":945,\"completion_tokens\":175,\"total_tokens\":1120,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.99982452392578}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:34:47.963207+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:46 GMT"
+  },
+  "key": "d4f8a87e311b467ccb5914ce7cf551b6742aab34f4e22228bc7047263a7e6f23",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page gives clear step-by-step instructions to check FASTag balance and is published by the identifiable organization Bajaj Finserv.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from bajajfinserv.in, a financial services site. It provides a guide on checking SBI FASTag balance, with steps. It seems to be a content article, likely with some affiliate or promotional aspects (Bajaj Pay). Does it have identifiable responsibility? The site is Bajaj Finserv, a known organization. The article likely has author? Not shown but organization is clear. It answers the query directly, providing steps. It's not just a product roundup; it's a guide. So label \\\"ok\\\". Reason: provides direct instructions and is from identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check fastag balance\\\". The page is from bajajfinserv.in, a financial services site. It provides a guide on checking SBI FASTag balance, with steps. It seems to be a content article, likely with some affiliate or promotional aspects (Bajaj Pay). Does it have identifiable responsibility? The site is Bajaj Finserv, a known organization. The article likely has author? Not shown but organization is clear. It answers the query directly, providing steps. It's not just a product roundup; it's a guide. So label \\\"ok\\\". Reason: provides direct instructions and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297232,\"ec_transfer_params\":null,\"id\":\"chatcmpl-926b4b98-099f-4613-b3ca-fff47aef8a73\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":978,\"completion_tokens\":184,\"total_tokens\":1162,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.6634521484375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:33:55.576991+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:33:53 GMT"
+  },
+  "key": "0f1b01b9a69031efcfad967140187f79092923042253ec8a00bf0b89ab2ff599",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

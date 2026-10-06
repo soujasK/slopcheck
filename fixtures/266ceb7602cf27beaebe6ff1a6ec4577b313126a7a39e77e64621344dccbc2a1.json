@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a product sales listing, not a comparative or informational answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best 1.5 ton inverter ac in india\\\". The page is a product listing for a specific 1.5 ton inverter AC (VarioQool) on cruiseac.com, an e-commerce site. It is selling product, not a review or comparison. The query asks for best 1.5 ton inverter AC in India. This page is a product page, not a comparative article. It is monetized referral (selling). Primary purpose is selling. So label low.\\n\\nWe need reason: page is a product sales page, not an answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best 1.5 ton inverter ac in india\\\". The page is a product listing for a specific 1.5 ton inverter AC (VarioQool) on cruiseac.com, an e-commerce site. It is selling product, not a review or comparison. The query asks for best 1.5 ton inverter AC in India. This page is a product page, not a comparative article. It is monetized referral (selling). Primary purpose is selling. So label low.\\n\\nWe need reason: page is a product sales page, not an answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297175,\"ec_transfer_params\":null,\"id\":\"chatcmpl-eeb1d8a7-283e-4f73-84b2-b4ef74630b74\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1070,\"completion_tokens\":167,\"total_tokens\":1237,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.431617736816406}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:33:01.360661+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:32:59 GMT"
+  },
+  "key": "266ceb7602cf27beaebe6ff1a6ec4577b313126a7a39e77e64621344dccbc2a1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

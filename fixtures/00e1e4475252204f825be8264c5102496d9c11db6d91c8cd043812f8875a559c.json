@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"It's a forum discussion thread, not a definitive, author‑identified guide answering the query\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground an answer to query \\\"best budget wireless earbuds\\\". The page is a forum thread on Famiboards about best budget Bluetooth earbuds for Nintendo Switch. It's a discussion, not a curated list. It may contain recommendations but not a structured answer. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is a forum thread, user-generated content, no clear author responsibility, likely low quality for answering. It's not a definitive article; it's a discussion. According to guidelines, such pages are likely low because primary purpose is discussion, not answering. Also may be considered low-quality content. So label low.\\n\\nReason: forum thread, not a curated answer.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground an answer to query \\\"best budget wireless earbuds\\\". The page is a forum thread on Famiboards about best budget Bluetooth earbuds for Nintendo Switch. It's a discussion, not a curated list. It may contain recommendations but not a structured answer. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page is a forum thread, user-generated content, no clear author responsibility, likely low quality for answering. It's not a definitive article; it's a discussion. According to guidelines, such pages are likely low because primary purpose is discussion, not answering. Also may be considered low-quality content. So label low.\\n\\nReason: forum thread, not a curated answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297289,\"ec_transfer_params\":null,\"id\":\"chatcmpl-dec60d5c-0751-4130-86d1-1ab80f14278e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1118,\"completion_tokens\":189,\"total_tokens\":1307,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":48.45888137817383}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:34:56.656832+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:54 GMT"
+  },
+  "key": "00e1e4475252204f825be8264c5102496d9c11db6d91c8cd043812f8875a559c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

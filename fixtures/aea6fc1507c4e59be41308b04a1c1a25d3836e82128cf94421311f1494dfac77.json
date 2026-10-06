@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with detailed advice and includes a named author and identifiable organization (Ramsey Solutions).\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure. Query: \\\"how to get out of credit card debt\\\". Page is from ramseysolutions.com, a personal finance site associated with Dave Ramsey. It has author name Jade Warshaw, date, content with advice. Likely an \\\"ok\\\" source: it answers the query, has identifiable author and organization. It's not purely affiliate; it's advice. So label ok.\\n\\nReason: provides detailed advice, author and organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure. Query: \\\"how to get out of credit card debt\\\". Page is from ramseysolutions.com, a personal finance site associated with Dave Ramsey. It has author name Jade Warshaw, date, content with advice. Likely an \\\"ok\\\" source: it answers the query, has identifiable author and organization. It's not purely affiliate; it's advice. So label ok.\\n\\nReason: provides detailed advice, author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297468,\"ec_transfer_params\":null,\"id\":\"chatcmpl-337541ed-394e-453d-9adb-250f7105b65f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1031,\"completion_tokens\":140,\"total_tokens\":1171,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.34980773925781}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:37:52.431357+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:37:50 GMT"
+  },
+  "key": "aea6fc1507c4e59be41308b04a1c1a25d3836e82128cf94421311f1494dfac77",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

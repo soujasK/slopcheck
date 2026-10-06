@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers post‑meal blood sugar ranges and is published by a reputable hospital, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query: \\\"normal blood sugar level after eating for diabetics\\\". The page is from Artemis Hospital blog, appears to be a health article with chart of normal ranges, includes post-meal (postprandial) blood sugar range. Likely answers query. It is an official hospital website, presumably with organization identification. There's no explicit author name in snippet, but organization is Artemis Hospital, a reputable medical institution. The page includes health advice, not just affiliate marketing. So likely \\\"ok\\\". Need to consider if page is primarily promotional? It includes contact info, but content is educational. So ok.\\n\\nThus label ok, reason: provides post‑meal blood‑sugar ranges and is from a reputable hospital.\",\"reasoning_content\":\"We need to decide label for this page regarding query: \\\"normal blood sugar level after eating for diabetics\\\". The page is from Artemis Hospital blog, appears to be a health article with chart of normal ranges, includes post-meal (postprandial) blood sugar range. Likely answers query. It is an official hospital website, presumably with organization identification. There's no explicit author name in snippet, but organization is Artemis Hospital, a reputable medical institution. The page includes health advice, not just affiliate marketing. So likely \\\"ok\\\". Need to consider if page is primarily promotional? It includes contact info, but content is educational. So ok.\\n\\nThus label ok, reason: provides post‑meal blood‑sugar ranges and is from a reputable hospital.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297381,\"ec_transfer_params\":null,\"id\":\"chatcmpl-92dda6ff-c494-43b7-9149-9639cc4bb4c1\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1058,\"completion_tokens\":195,\"total_tokens\":1253,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.958892822265625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:36:28.656913+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:36:26 GMT"
+  },
+  "key": "ad381aeba77f40655733c414a6458bbe8cd453bd9cdc3fff5e874448bc5bf654",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

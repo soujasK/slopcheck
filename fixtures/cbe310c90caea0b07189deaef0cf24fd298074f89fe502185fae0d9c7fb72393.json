@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Provides direct answers from named doctors on a reputable health platform\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"is it safe to take dolo 650 every day\\\". The page is a Practo consult Q&A. It shows multiple doctor answers, with names and credentials. It appears to be a health Q&A platform with doctors responding. This seems to be an \\\"ok\\\" source: it has identifiable doctors, organization (Practo). The content directly answers the question about dosage and safety. So label ok.\\n\\nReason: page provides answers from named doctors on Practo, an identifiable health platform.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"is it safe to take dolo 650 every day\\\". The page is a Practo consult Q&A. It shows multiple doctor answers, with names and credentials. It appears to be a health Q&A platform with doctors responding. This seems to be an \\\"ok\\\" source: it has identifiable doctors, organization (Practo). The content directly answers the question about dosage and safety. So label ok.\\n\\nReason: page provides answers from named doctors on Practo, an identifiable health platform.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297358,\"ec_transfer_params\":null,\"id\":\"chatcmpl-40235f76-9839-4494-adca-f02d3b609e50\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1131,\"completion_tokens\":140,\"total_tokens\":1271,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.53160858154297}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:36:01.741753+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:35:59 GMT"
+  },
+  "key": "cbe310c90caea0b07189deaef0cf24fd298074f89fe502185fae0d9c7fb72393",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

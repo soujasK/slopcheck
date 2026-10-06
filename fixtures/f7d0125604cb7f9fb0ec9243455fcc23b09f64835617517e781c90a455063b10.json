@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide with a named author and clear organization, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Beebom Gadgets, a tech site. Title: \\\"How to Transfer Data from Android to iPhone: Step-by-Step Guide\\\". Content appears to be a guide with steps, includes author name (Anshuman Jain) and date. It seems to provide detailed instructions. It's not a pure affiliate roundup; it's a guide. It likely has some affiliate links maybe but primary purpose is to answer the query. It has identifiable author and organization (Beebom). So label \\\"ok\\\". Reason: provides step-by-step guide with author and organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Beebom Gadgets, a tech site. Title: \\\"How to Transfer Data from Android to iPhone: Step-by-Step Guide\\\". Content appears to be a guide with steps, includes author name (Anshuman Jain) and date. It seems to provide detailed instructions. It's not a pure affiliate roundup; it's a guide. It likely has some affiliate links maybe but primary purpose is to answer the query. It has identifiable author and organization (Beebom). So label \\\"ok\\\". Reason: provides step-by-step guide with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297295,\"ec_transfer_params\":null,\"id\":\"chatcmpl-caaa18fe-aa4c-4eea-9a47-2ae065332591\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1012,\"completion_tokens\":168,\"total_tokens\":1180,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.65435791015625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:35:01.213518+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:34:59 GMT"
+  },
+  "key": "f7d0125604cb7f9fb0ec9243455fcc23b09f64835617517e781c90a455063b10",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

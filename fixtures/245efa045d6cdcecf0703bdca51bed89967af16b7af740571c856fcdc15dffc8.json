@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page lists specific SIP mutual fund recommendations for 2026 and is authored by the identifiable Scripbox financial advisory organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is titled \\\"Best Mutual Funds for SIP to Invest in 2026\\\". It lists funds with categories and returns. It appears to be a content page from scripbox.com, which is a financial advisory platform. Likely includes author or organization (Scripbox). The page seems to be providing a list of recommended SIP mutual funds for 2026. It may have affiliate links but primary purpose is to inform. It likely has identifiable organization (Scripbox). So label \\\"ok\\\". Reason: page provides specific recommendations and is from a named financial advisory site.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is titled \\\"Best Mutual Funds for SIP to Invest in 2026\\\". It lists funds with categories and returns. It appears to be a content page from scripbox.com, which is a financial advisory platform. Likely includes author or organization (Scripbox). The page seems to be providing a list of recommended SIP mutual funds for 2026. It may have affiliate links but primary purpose is to inform. It likely has identifiable organization (Scripbox). So label \\\"ok\\\". Reason: page provides specific recommendations and is from a named financial advisory site.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297299,\"ec_transfer_params\":null,\"id\":\"chatcmpl-82fd3136-3653-4e0e-bb26-ef284369dae0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1022,\"completion_tokens\":186,\"total_tokens\":1208,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.199806213378906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:35:03.777115+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:35:01 GMT"
+  },
+  "key": "245efa045d6cdcecf0703bdca51bed89967af16b7af740571c856fcdc15dffc8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

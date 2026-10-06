@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Indian Express article directly lists vitamin D deficiency symptoms in females with identifiable source\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is a web story from Indian Express, titled \\\"9 signs of Vitamin D deficiency in females\\\". It lists signs, seems to be a lifestyle article. Indian Express is a reputable news outlet. The page appears to have author? It says \\\"Lifestyle Desk\\\". That's an organization. It provides content directly answering the query. So label \\\"ok\\\". Reason: reputable source, directly lists symptoms for women.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page is a web story from Indian Express, titled \\\"9 signs of Vitamin D deficiency in females\\\". It lists signs, seems to be a lifestyle article. Indian Express is a reputable news outlet. The page appears to have author? It says \\\"Lifestyle Desk\\\". That's an organization. It provides content directly answering the query. So label \\\"ok\\\". Reason: reputable source, directly lists symptoms for women.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297304,\"ec_transfer_params\":null,\"id\":\"chatcmpl-7af545c7-2189-42dc-abfe-54ec700f1bf5\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":890,\"completion_tokens\":142,\"total_tokens\":1032,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":37.99983215332031}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:35:14.723694+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:35:12 GMT"
+  },
+  "key": "e82e4a097b2d1f17158e2c615c0d2781135b2cedd9ef0377e4ecd70541643470",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query and includes named medical authors and reviewers, indicating clear responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from \\\"all-about-beating-diabetes.com\\\". Title: Blood Sugar Levels After Eating: Normal, High & Dangerous. The page includes author: Dr. Albana Greca, MD, MMedSc. Medically reviewed by Dr. Ruden Cakoni, MD, Endocrinologist. Last medically reviewed: September 2026. So it appears to be a health information site with named authors and medical review. The content directly answers the query: \\\"normal blood sugar level after eating for diabetics\\\". It provides target <180 mg/dL etc. So it seems to be a genuine answer with identifiable responsibility. Not just affiliate. So label \\\"ok\\\". Reason: page provides medically reviewed answer with named doctors.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from \\\"all-about-beating-diabetes.com\\\". Title: Blood Sugar Levels After Eating: Normal, High & Dangerous. The page includes author: Dr. Albana Greca, MD, MMedSc. Medically reviewed by Dr. Ruden Cakoni, MD, Endocrinologist. Last medically reviewed: September 2026. So it appears to be a health information site with named authors and medical review. The content directly answers the query: \\\"normal blood sugar level after eating for diabetics\\\". It provides target <180 mg/dL etc. So it seems to be a genuine answer with identifiable responsibility. Not just affiliate. So label \\\"ok\\\". Reason: page provides medically reviewed answer with named doctors.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297056,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9e0ef228-599d-4f19-ba0e-6eba81598a6b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1015,\"completion_tokens\":201,\"total_tokens\":1216,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.99980926513672}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:31:04.136056+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:31:02 GMT"
+  },
+  "key": "54b7f37bde34929f1f447e508d671940b27d7e00bf02ad9d7691d613e2ad8eec",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

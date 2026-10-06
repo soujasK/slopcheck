@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed medical overview of grade 1 fatty liver symptoms and treatment and includes a named medical reviewer and clinic affiliation.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from gastroliver.co.in, appears to be a medical clinic website. The article is \\\"Understanding Grade 1 Fatty Liver\\\". It says \\\"Medically Reviewed By Dr Manish Kumar Gupta Written By admin\\\". So there is a named medical reviewer, and presumably the organization is a gastroenterology clinic. The content seems to answer the query: symptoms and treatment for grade 1 fatty liver. It appears to be a genuine article, not a product roundup. It may have some promotional aspects (clinic services) but primary purpose is to provide information. There's a named reviewer, and organization. So label \\\"ok\\\". Reason: article provides medical info with named reviewer and organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe page is from gastroliver.co.in, appears to be a medical clinic website. The article is \\\"Understanding Grade 1 Fatty Liver\\\". It says \\\"Medically Reviewed By Dr Manish Kumar Gupta Written By admin\\\". So there is a named medical reviewer, and presumably the organization is a gastroenterology clinic. The content seems to answer the query: symptoms and treatment for grade 1 fatty liver. It appears to be a genuine article, not a product roundup. It may have some promotional aspects (clinic services) but primary purpose is to provide information. There's a named reviewer, and organization. So label \\\"ok\\\". Reason: article provides medical info with named reviewer and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297453,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0db527c0-de29-4bf2-bf93-32857439d6e5\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1181,\"completion_tokens\":198,\"total_tokens\":1379,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":51.07705307006836}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:37:42.082706+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:37:40 GMT"
+  },
+  "key": "29dff3b0284811b614b3e13889c2f1683731b3b3c765b900306c70ee159e9f7c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

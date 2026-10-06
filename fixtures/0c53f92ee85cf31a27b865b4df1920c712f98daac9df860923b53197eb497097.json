@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Sharekhan provides a curated list of top SIP schemes for 2026, directly answering the query with identifiable organisational responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from Sharekhan, a brokerage, showing \\\"SIP WE LIKE\\\" list of top SIP picks, with ratings, etc. It appears to be a product recommendation page, likely with affiliate or promotional purpose. However, it does provide a list of SIP schemes, with data, presumably curated by their research team. The query asks for best SIP to invest in 2026. This page directly addresses that, providing top SIP picks. It is from a reputable financial services firm (Sharekhan). It likely has responsibility (company). So label \\\"ok\\\". Need short reason.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best sip to invest in 2026\\\". The page is from Sharekhan, a brokerage, showing \\\"SIP WE LIKE\\\" list of top SIP picks, with ratings, etc. It appears to be a product recommendation page, likely with affiliate or promotional purpose. However, it does provide a list of SIP schemes, with data, presumably curated by their research team. The query asks for best SIP to invest in 2026. This page directly addresses that, providing top SIP picks. It is from a reputable financial services firm (Sharekhan). It likely has responsibility (company). So label \\\"ok\\\". Need short reason.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297479,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c988fd37-562d-4c44-a28e-750c9a5b93a5\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1267,\"completion_tokens\":193,\"total_tokens\":1460,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":53.47249221801758}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:38:07.069911+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:38:05 GMT"
+  },
+  "key": "0c53f92ee85cf31a27b865b4df1920c712f98daac9df860923b53197eb497097",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

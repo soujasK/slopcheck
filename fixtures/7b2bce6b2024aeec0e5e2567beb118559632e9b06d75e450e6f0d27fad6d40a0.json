@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly lists vitamin D deficiency symptoms in women and includes a named author and identifiable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page appears to be an article titled \\\"10 Warning Signs of Vitamin D Deficiency in Women You Should Never Ignore\\\" on Sehat Tak Health News. It includes author name Rashmi, date May 7, 2025. It lists symptoms. It seems to be a health article, possibly with affiliate links? Not shown. The content seems to be providing information, not just product promotion. It has a named author, organization (Sehattak.com). Likely ok. Need to consider if it's low quality: Could be SEO content, but appears to be a health article with list of symptoms. No obvious affiliate. So label ok.\\n\\nReason: provides direct answer with named author and organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"vitamin d deficiency symptoms in women\\\". The page appears to be an article titled \\\"10 Warning Signs of Vitamin D Deficiency in Women You Should Never Ignore\\\" on Sehat Tak Health News. It includes author name Rashmi, date May 7, 2025. It lists symptoms. It seems to be a health article, possibly with affiliate links? Not shown. The content seems to be providing information, not just product promotion. It has a named author, organization (Sehattak.com). Likely ok. Need to consider if it's low quality: Could be SEO content, but appears to be a health article with list of symptoms. No obvious affiliate. So label ok.\\n\\nReason: provides direct answer with named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297439,\"ec_transfer_params\":null,\"id\":\"chatcmpl-39f3334d-5688-40a6-b569-25111d637e32\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":974,\"completion_tokens\":205,\"total_tokens\":1179,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.96799850463867}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:37:25.601656+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:37:23 GMT"
+  },
+  "key": "7b2bce6b2024aeec0e5e2567beb118559632e9b06d75e450e6f0d27fad6d40a0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

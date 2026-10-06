@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly compares index funds and actively managed funds and is authored by a named organization, providing a genuine answer to the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page appears to be a blog article from Wright Research, with author \\\"BB Wright Research\\\" and date. It seems to discuss the comparison, likely provides analysis. It is a content piece, not just affiliate roundup. It seems to be a genuine article answering the query. It has identifiable organization (Wright Research). So label \\\"ok\\\". Reason: provides direct comparison and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"index funds vs actively managed mutual funds\\\". The page appears to be a blog article from Wright Research, with author \\\"BB Wright Research\\\" and date. It seems to discuss the comparison, likely provides analysis. It is a content piece, not just affiliate roundup. It seems to be a genuine article answering the query. It has identifiable organization (Wright Research). So label \\\"ok\\\". Reason: provides direct comparison and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297106,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c50f069b-38a3-4fac-a365-26cdd1b17fda\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":973,\"completion_tokens\":152,\"total_tokens\":1125,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.32254409790039}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:31:51.572269+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:31:49 GMT"
+  },
+  "key": "d2cf563d44ba3e0170b9770d9e659c4b385cd1c2dabc23f0024063f7bfc55b2d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

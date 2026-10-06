@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"CNBC article offers concrete tips on paying off credit card debt and is from a reputable organization\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page is from CNBC.com/select, which is a content hub with affiliate links, but the article appears to give tips on clearing credit card debt, with some affiliate disclosures. It likely provides advice. Does it have identifiable responsibility? It's on CNBC, a reputable organization. The article likely has author name (not shown in snippet) but likely. It's not purely affiliate product roundup; it's advice article with tips. So label \\\"ok\\\". Reason: reputable source providing debt payoff advice.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get out of credit card debt\\\". The page is from CNBC.com/select, which is a content hub with affiliate links, but the article appears to give tips on clearing credit card debt, with some affiliate disclosures. It likely provides advice. Does it have identifiable responsibility? It's on CNBC, a reputable organization. The article likely has author name (not shown in snippet) but likely. It's not purely affiliate product roundup; it's advice article with tips. So label \\\"ok\\\". Reason: reputable source providing debt payoff advice.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297070,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9327cfaa-207f-4ad7-906c-274db86a8948\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":965,\"completion_tokens\":159,\"total_tokens\":1124,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.54527282714844}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:31:17.721012+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:31:16 GMT"
+  },
+  "key": "024e372c13e82d315f85595b0010a2c79152e7b6155166e8c5b500adb188dfdf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide with a named author and clear organization, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from blog.incogni.com, titled \\\"How to Stop Spam Calls (& Robocalls) on Android [2026] | Incogni\\\". Content appears to be a guide with steps, author named Adam Cholinski, updated Feb 7 2025. Incogni is a privacy-focused company (maybe a service). The page provides instructions, not just affiliate links. It may have some affiliate links but primary purpose is to provide guide. It has a named author, organization (Incogni). So likely \\\"ok\\\". It's not a low-quality mass-produced content; seems detailed. So label ok.\\n\\nReason: page provides detailed instructions and has a named author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from blog.incogni.com, titled \\\"How to Stop Spam Calls (& Robocalls) on Android [2026] | Incogni\\\". Content appears to be a guide with steps, author named Adam Cholinski, updated Feb 7 2025. Incogni is a privacy-focused company (maybe a service). The page provides instructions, not just affiliate links. It may have some affiliate links but primary purpose is to provide guide. It has a named author, organization (Incogni). So likely \\\"ok\\\". It's not a low-quality mass-produced content; seems detailed. So label ok.\\n\\nReason: page provides detailed instructions and has a named author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297122,\"ec_transfer_params\":null,\"id\":\"chatcmpl-caf8a1e1-7dd9-4866-a08b-1d4e854aea8f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1001,\"completion_tokens\":193,\"total_tokens\":1194,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.00890350341797}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:32:07.226213+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:32:05 GMT"
+  },
+  "key": "4decfd62adbde8c3385a5fd345d308f8b72abf0280464e3a130241e542f02e96",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about the term 'Side' and does not provide information on ashwagandha side effects.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"side effects of ashwagandha\\\". The page is Wikipedia article titled \\\"Side\\\". It's about the word side, not about ashwagandha. So not relevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page does not answer the query. So label low? The criteria: low if primary purpose is not answering query. This page is unrelated. So low. Reason: page about 'Side' unrelated to ashwagandha side effects.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"side effects of ashwagandha\\\". The page is Wikipedia article titled \\\"Side\\\". It's about the word side, not about ashwagandha. So not relevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The page does not answer the query. So label low? The criteria: low if primary purpose is not answering query. This page is unrelated. So low. Reason: page about 'Side' unrelated to ashwagandha side effects.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297066,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a2e31519-16d6-4c14-8947-faec80d8c8c9\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1021,\"completion_tokens\":164,\"total_tokens\":1185,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.667991638183594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:31:11.839766+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:31:10 GMT"
+  },
+  "key": "0a5d0237e24fc95a8716cc803c652a9b27225acbb0f9ef1dec43cd3f0ce3efd9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

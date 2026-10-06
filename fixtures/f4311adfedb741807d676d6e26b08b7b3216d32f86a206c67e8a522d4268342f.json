@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with a step-by-step guide and includes a named author, indicating identifiable responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to download e-aadhaar pdf\\\". The page is a step-by-step guide on how to download Aadhaar online, with author name Vjay, date March 4 2026. It appears to be a content site (revealthat.com). It provides instructions, likely not affiliate heavy. It has a named author, date, seems to answer the query. It's not obviously monetized referral. Could be a guide site. That qualifies as \\\"ok\\\" if it has identifiable responsibility (named author). The site may be a blog. The content seems to be original instructions. So label \\\"ok\\\". Reason: provides step-by-step instructions and includes author.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to download e-aadhaar pdf\\\". The page is a step-by-step guide on how to download Aadhaar online, with author name Vjay, date March 4 2026. It appears to be a content site (revealthat.com). It provides instructions, likely not affiliate heavy. It has a named author, date, seems to answer the query. It's not obviously monetized referral. Could be a guide site. That qualifies as \\\"ok\\\" if it has identifiable responsibility (named author). The site may be a blog. The content seems to be original instructions. So label \\\"ok\\\". Reason: provides step-by-step instructions and includes author.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297393,\"ec_transfer_params\":null,\"id\":\"chatcmpl-526bffe5-31aa-4896-a20a-911b0fff1123\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1015,\"completion_tokens\":197,\"total_tokens\":1212,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.727081298828125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:36:37.565534+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:36:35 GMT"
+  },
+  "key": "f4311adfedb741807d676d6e26b08b7b3216d32f86a206c67e8a522d4268342f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

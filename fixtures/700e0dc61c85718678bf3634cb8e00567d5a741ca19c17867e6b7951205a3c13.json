@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide with a named author and clear organization, directly answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to speed up a slow windows 11 laptop\\\". The page is an article from Beebom, a tech website, with author name Arjun Sha, date, seems to provide steps. It is a genuine guide, not just affiliate roundup. It may contain affiliate links but primary purpose is to give advice. It has identifiable author and organization (Beebom). So qualifies as ok.\\n\\nThus label ok. Reason: article provides detailed steps and has author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to speed up a slow windows 11 laptop\\\". The page is an article from Beebom, a tech website, with author name Arjun Sha, date, seems to provide steps. It is a genuine guide, not just affiliate roundup. It may contain affiliate links but primary purpose is to give advice. It has identifiable author and organization (Beebom). So qualifies as ok.\\n\\nThus label ok. Reason: article provides detailed steps and has author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791297197,\"ec_transfer_params\":null,\"id\":\"chatcmpl-db295638-3f8d-4ffc-8889-f1f5248b1dbd\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1016,\"completion_tokens\":151,\"total_tokens\":1167,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.62253952026367}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T14:33:20.346498+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 14:33:18 GMT"
+  },
+  "key": "700e0dc61c85718678bf3634cb8e00567d5a741ca19c17867e6b7951205a3c13",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}
