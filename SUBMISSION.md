@@ -51,7 +51,7 @@ agents serving them) are shown for health and money questions.
 
 ## Validation (honest)
 
-Labels come from two LLMs judging blind (no human labels; Cohen's kappa 0.66).
+Labels come from two LLMs judging blind (no human labels; Cohen's kappa 0.66 on development data, 0.42 on the fresh test).
 Our first rubric failed its pre-registered held-out test (precision 0.37), and we
 report it. The rebuilt rubric was fitted on development data only and tested once
 on 150 fresh pages: precision 0.57 [0.25, 0.84], recall 0.19, specificity 0.97.

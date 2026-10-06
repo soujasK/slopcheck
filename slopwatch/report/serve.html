@@ -430,7 +430,7 @@ tr.gone { display: none; }
       if (v.round2_test) html += kpi("First test", v.round2_test.precision.toFixed(2), "precision · below the 0.70 bar, rules rebuilt", "silt");
       if (v.round3_test) html += kpi("Fresh held-out test", v.round3_test.precision.toFixed(2), "precision · recall " + v.round3_test.recall.toFixed(2) + " · n " + v.round3_test.n, v.round3_test.precision >= 0.7 ? "accent" : "silt");
       else html += kpi("Fresh held-out test", "pending", "150 unseen pages being labeled");
-      html += kpi("Labeler agreement", "0.66", "Cohen's kappa, two LLM judges");
+      html += kpi("Labeler agreement", "0.42", "Cohen's kappa on the fresh test (0.66 on development data)");
       $("m-kpis").innerHTML = html;
     });
   }

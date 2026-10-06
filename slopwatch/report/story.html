@@ -385,7 +385,7 @@ tools = [web_search()]</pre>
   } else {
     html += '<div><span class="k">Fresh held-out test</span><span class="n">—</span><p>150 unseen pages, being labeled now. Reported as it lands.</p></div>';
   }
-  html += '<div><span class="k">Judges agree</span><span class="n">0.66</span><p>Cohen\'s kappa between the two LLM labelers.</p></div>';
+  html += '<div><span class="k">Judges agree</span><span class="n">0.42</span><p>Cohen\'s kappa between the two LLM labelers on the fresh test (0.66 on development data).</p></div>';
   el("verdict").innerHTML = html;
 })();
 </script>
