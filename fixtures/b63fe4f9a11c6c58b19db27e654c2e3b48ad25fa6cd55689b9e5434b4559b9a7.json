@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a detailed PCOS diet plan and is authored by a named registered dietitian, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best diet for pcos weight loss\\\". The page appears to be a blog post by a dietitian (registered dietician) offering a PCOS diet plan. It includes author name (dietitianreema) and claims to be a professional. Likely an \\\"ok\\\" source: it answers the query, has identifiable author/organisation (Reema's diet and wellness). It's not purely affiliate; it's a professional advice page. So label ok.\\n\\nCheck for potential low: Could be promotional, but still provides diet plan. The question: \\\"best diet for pcos weight loss\\\". This page is directly about that. It has author and organization. So ok.\\n\\nThus answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best diet for pcos weight loss\\\". The page appears to be a blog post by a dietitian (registered dietician) offering a PCOS diet plan. It includes author name (dietitianreema) and claims to be a professional. Likely an \\\"ok\\\" source: it answers the query, has identifiable author/organisation (Reema's diet and wellness). It's not purely affiliate; it's a professional advice page. So label ok.\\n\\nCheck for potential low: Could be promotional, but still provides diet plan. The question: \\\"best diet for pcos weight loss\\\". This page is directly about that. It has author and organization. So ok.\\n\\nThus answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306861,\"ec_transfer_params\":null,\"id\":\"chatcmpl-13277380-a5f3-46f1-a30a-8fd1d87b3452\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":988,\"completion_tokens\":196,\"total_tokens\":1184,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.79981231689453}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:27.465357+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:14:25 GMT"
+  },
+  "key": "b63fe4f9a11c6c58b19db27e654c2e3b48ad25fa6cd55689b9e5434b4559b9a7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

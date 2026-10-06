@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from a reputable health organisation (Baptist Health) and provides clear blood pressure ranges by age and gender.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TfAofFYnT0fkVgVksqn39tC12xImXWwxiJtWcHVnNo2IaGiFrEWItSI6L0mV7jvFO6WNzXZ00rmM06z/si3HYz+CbbfqsAnVam6+S7J/aA+I465DeAWWMv6U=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1088,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1129,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1088\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Ti7Fau65OIrijuMPmf6BkAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:22:25.466692+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:22:23 GMT"
+  },
+  "key": "68efe149075e43ccaf5f0299bc50ccba50954295ce5c20c9aaab8e026653cb5b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from a reputable news organisation clearly explains what CEIR is and how it is used to block lost phones.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TczF6h3YC0ggJ0eOuV7hgCGRQb58+VcdBlyDnlGYIZHx+whO7QBsvQeNGgMcj3u/Rc1S4IZUu6e8otw0UA8DHSUdUFHkZLuWgSZFHyda5krur77os+DVWcdk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 988,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1022,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 988\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kTLFaoryAqjijuMP84a0yA0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:40:36.779063+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:40:34 GMT"
+  },
+  "key": "7ff35350f8be9d9ebe5988d3c3bb5143fc4608d966317da5a3957fa3dc77bd8d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

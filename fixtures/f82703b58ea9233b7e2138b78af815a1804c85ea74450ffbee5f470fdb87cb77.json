@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a slide presentation on SlideShare with sparse information and lacks a comprehensive, authoritative breakdown for financial decision-making.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tm6FpsT02jRbwHRqPCBCEUzKdjirR6Yfpw3nwB5kWeF8Biw0OOaLIZN5QTGwj8gHVphO6Ka64KkyD0KjK4pkohXG1ERy+PhYhHaqpLtHN5ySZX3aQkyKHz5c=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1148,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1184,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1148\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"bi3FapaVH5bGjuMP58WuUQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:41.216152+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:39 GMT"
+  },
+  "key": "f82703b58ea9233b7e2138b78af815a1804c85ea74450ffbee5f470fdb87cb77",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

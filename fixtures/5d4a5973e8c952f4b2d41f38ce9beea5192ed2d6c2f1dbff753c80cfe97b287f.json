@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is published by a known telecommunications provider and provides direct, actionable troubleshooting steps for the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TeBYsNYf+xy/J8KHGVBgh1hU5xfvNkrKOcrRvAepZviAwy0rCjS+tRh3nwRoUyEaz00K5+O7e59NTHi4bDG7bXvA401eAEuWcgQ8tBPlBu3RYQb6lcYwBr8M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 978,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1016,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 978\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"1y3Fas7WIPP2juMPwuqHuAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:20:26.376789+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:20:24 GMT"
+  },
+  "key": "5d4a5973e8c952f4b2d41f38ce9beea5192ed2d6c2f1dbff753c80cfe97b287f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the WiFi no‑internet issue with fixes and is authored by an identifiable IT services organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"wifi connected but no internet how to fix\\\". The page appears to be a blog post from \\\"etech7.com\\\" about fixing WiFi connected but no internet. It includes some company info, likely a managed IT services provider. It seems to provide content addressing the issue, with causes and fixes. Does it have identifiable responsibility? The page includes company name, staff, contact info. Likely there is an author? Not shown in snippet, but there is company info. That qualifies as an organization. The content is directly answering the query. It's not a low-quality affiliate roundup; it's a service provider blog. So label \\\"ok\\\". Reason: provides direct troubleshooting steps and is from identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"wifi connected but no internet how to fix\\\". The page appears to be a blog post from \\\"etech7.com\\\" about fixing WiFi connected but no internet. It includes some company info, likely a managed IT services provider. It seems to provide content addressing the issue, with causes and fixes. Does it have identifiable responsibility? The page includes company name, staff, contact info. Likely there is an author? Not shown in snippet, but there is company info. That qualifies as an organization. The content is directly answering the query. It's not a low-quality affiliate roundup; it's a service provider blog. So label \\\"ok\\\". Reason: provides direct troubleshooting steps and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306958,\"ec_transfer_params\":null,\"id\":\"chatcmpl-37372b5e-9804-47ca-aba7-ace02be7522c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":946,\"completion_tokens\":200,\"total_tokens\":1146,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.73618698120117}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:04.333755+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:02 GMT"
+  },
+  "key": "35d793c77c06d4999d5dcfcae532a3419a82ac691bc5ff9d9f610df046452412",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

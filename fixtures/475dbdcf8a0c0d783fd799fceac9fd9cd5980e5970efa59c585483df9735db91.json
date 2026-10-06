@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is published by a recognized financial organization and directly answers the query with clear tax-saving sections.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjCuMsYewNKaDukYElIQXDRr1BgRLVHgJ0/Q9YTx3l3JzH+Senu5m60QpmFH/CbET4/X975sNvVHw8ASQ6H1Mg4z2HspjuP6x7LCQXFx5D88QsX772dfx/NQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1017,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1055,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1017\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"tC3FauS-IJj5juMP_tmBgAY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:51.217066+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:49 GMT"
+  },
+  "key": "475dbdcf8a0c0d783fd799fceac9fd9cd5980e5970efa59c585483df9735db91",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

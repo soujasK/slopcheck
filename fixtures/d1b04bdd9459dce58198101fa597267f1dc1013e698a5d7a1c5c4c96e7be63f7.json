@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a blog post by a named dietitian (Dietitian Reema) offering a structured PCOS diet plan for weight loss.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tr6KeF7D8uC6eY6NEgKonWN4lKq4UQdmH3ick9w9JXujRwfbAdfpZWCRdXS6zZuxWDKp3EIDJG7RdKX7XJ8HbcNxfR6mF7UjZ8j+2/JhJ/qItrTRPAvnjpyc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 947,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 984,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 947\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"lSzFarepDpj5juMP_tmBgAY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:03.748237+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:15:01 GMT"
+  },
+  "key": "d1b04bdd9459dce58198101fa597267f1dc1013e698a5d7a1c5c4c96e7be63f7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

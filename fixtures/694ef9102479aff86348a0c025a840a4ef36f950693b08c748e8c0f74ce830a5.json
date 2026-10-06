@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Peer‑reviewed article with named authors and institutions directly discussing paracetamol safety in pregnancy\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page is a scientific article from Acta Obstet Gynecol Scand, open access, with authors, institutional affiliations. It directly addresses paracetamol use in pregnancy, discussing safety. This is a credible source, with identifiable authors and organization. So label \\\"ok\\\". Reason: peer‑reviewed article with authors and institutions directly addressing safety.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page is a scientific article from Acta Obstet Gynecol Scand, open access, with authors, institutional affiliations. It directly addresses paracetamol use in pregnancy, discussing safety. This is a credible source, with identifiable authors and organization. So label \\\"ok\\\". Reason: peer‑reviewed article with authors and institutions directly addressing safety.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306870,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c4a7e75f-4434-4a7c-a299-73f99a45c89c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1087,\"completion_tokens\":139,\"total_tokens\":1226,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.063438415527344}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:34.590296+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:14:32 GMT"
+  },
+  "key": "694ef9102479aff86348a0c025a840a4ef36f950693b08c748e8c0f74ce830a5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

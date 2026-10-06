@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a detailed buying guide published by an identifiable manufacturer with a named author.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4MHF+D2J8FFpEfgsWtysHFLOC8gFKBnWSWd20EsRzKojXok7yQbnCbqrOc1wtuKkPSIpqjwt4V5qb+fa47Yjx72OH0bylj4Lz63MxbjqKxJjfxrzZUG234k=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 982,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1016,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 982\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"rDLFaovQO5mK4-EPj8-U8Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:41:05.706021+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:41:03 GMT"
+  },
+  "key": "7c0c764210eeb8e87795606d764c5d9f5f7bc66dca66b93701818cadce7c0cdd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

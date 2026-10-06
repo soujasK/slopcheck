@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a verified dietician, providing structured advice on managing cholesterol naturally with identifiable expertise.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TiulTZeI3JDUM7i3XwJFt6/GoG59GtyG/4n6MF9xITD70k2UBaXyg5mYZeOgmkaKmdN2xtKd8PKnjOL903exMyC+LC8+HQxsujHHiYsrHNym6N3KdRyOvJEg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 966,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 999,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 966\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"gy3FasrDHKTCg8UP4qHFkQc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:02.077016+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:00 GMT"
+  },
+  "key": "966e9a921bff8d1ccf520d1e402456fce4e035f7b169072cec8e456b7a7e00af",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

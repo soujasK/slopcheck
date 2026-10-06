@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Indian Express article gives a clear, author‑identified guide on transferring PF accounts, meeting the query with a reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to transfer pf from old account to new\\\". The page is an article from Indian Express, a reputable news outlet. It appears to be a how-to guide, with author \\\"Express Web Desk\\\". It likely provides step-by-step instructions. It is not a monetized referral; it's a news site with editorial content. So it should be \\\"ok\\\". The page has identifiable organization (Indian Express) and author. So label ok.\\n\\nReason: The page provides a detailed guide from a reputable source.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to transfer pf from old account to new\\\". The page is an article from Indian Express, a reputable news outlet. It appears to be a how-to guide, with author \\\"Express Web Desk\\\". It likely provides step-by-step instructions. It is not a monetized referral; it's a news site with editorial content. So it should be \\\"ok\\\". The page has identifiable organization (Indian Express) and author. So label ok.\\n\\nReason: The page provides a detailed guide from a reputable source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306910,\"ec_transfer_params\":null,\"id\":\"chatcmpl-69c018e8-ff39-4c7d-a4f3-14a5b72c3423\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1020,\"completion_tokens\":162,\"total_tokens\":1182,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.49980926513672}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:17.538169+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:15:15 GMT"
+  },
+  "key": "7c819a6a746c7a40d3d8a0905da57fcf360724dc59ed8c549b379bc635ea18c7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

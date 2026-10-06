@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"Page shows only navigation and product info, lacking substantive troubleshooting content for the query\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"wifi connected but no internet how to fix\\\". The page title suggests it's about that. But the main text we see is just a huge navigation menu and language list, no actual content about solutions. It appears to be a corporate site (lb-link.com) about WiFi modules, with maybe an article page but the snippet we have is just the header/footer repeated. No author, no visible content. Could be a low-quality page, maybe auto-generated. The primary purpose seems to be product promotion, not answering the query. There's no visible solution content. So likely low.\\n\\nThus label low. Reason: page appears to be a corporate product site with no substantive answer content.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"wifi connected but no internet how to fix\\\". The page title suggests it's about that. But the main text we see is just a huge navigation menu and language list, no actual content about solutions. It appears to be a corporate site (lb-link.com) about WiFi modules, with maybe an article page but the snippet we have is just the header/footer repeated. No author, no visible content. Could be a low-quality page, maybe auto-generated. The primary purpose seems to be product promotion, not answering the query. There's no visible solution content. So likely low.\\n\\nThus label low. Reason: page appears to be a corporate product site with no substantive answer content.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306937,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b6cd6f60-00d8-4dc3-8f6f-ab61d5a3fa81\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1030,\"completion_tokens\":186,\"total_tokens\":1216,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.45435333251953}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:41.669033+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:15:39 GMT"
+  },
+  "key": "01818b367bac137e3df6320de9ed241f9eea8bc6fb76d4e6b8a45b9e5e458d62",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

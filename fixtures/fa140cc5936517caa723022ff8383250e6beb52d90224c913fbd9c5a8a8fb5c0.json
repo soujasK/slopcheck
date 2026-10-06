@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article directly answers the query with detailed explanations and is published by a known health and nutrition brand.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKWMij9Z2Nz1JNHS+7wBRE8+BG9LTEewvGS0qzBc4YrooI+Ks7rh3NtWFwdlcekJlHqppKffVNqR8JhDeGJTd7NireTEVo5z+DgFneuzTSrZDxJaiiE4GRSA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 998,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1035,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 998\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Zy3FaureJdPWjuMP_5ja6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:34.294136+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:32 GMT"
+  },
+  "key": "fa140cc5936517caa723022ff8383250e6beb52d90224c913fbd9c5a8a8fb5c0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

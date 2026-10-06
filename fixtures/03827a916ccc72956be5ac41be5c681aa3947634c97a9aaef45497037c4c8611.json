@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides clear, direct instructions on how to use the official CEIR portal to block a lost phone.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ty8f/gd1fNNCMQ4FsjogiwrxxSrkzWGoVn6KOSj0PsuWBKC5PeYJgsZwye/nMDmgFTlLXnZobaNWZ7bsUG9Gjrd0SleWa6z61wwlGYbYtt6Dcwy7ZWDXsCGA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1026,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1066,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1026\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"-i3Fau63N6TCg8UP4qHFkQc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:21:01.573085+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:20:59 GMT"
+  },
+  "key": "03827a916ccc72956be5ac41be5c681aa3947634c97a9aaef45497037c4c8611",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

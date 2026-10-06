@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by Axis Bank, providing a clear, official guide on how to apply for a PAN card online.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TlkvwD+TRqOQsCjHMCNszYnVuVHF0yMyzok5HlwDdLfzX/k0Hc4xQ69xucUj6Za8z62fYaIQMNPLJdCtq43BeRIlb1HFin6/4Wq9qvtYIOJugkmEJHhIcDNQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 933,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 968,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 933\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"XzLFatmIO4rWjuMP_bea8QM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:39:47.448016+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:39:44 GMT"
+  },
+  "key": "4352107079e46b41baf2b54bcba5610fbb54452c7bfc77a9e30199c348532d92",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

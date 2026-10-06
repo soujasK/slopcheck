@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a named medical professional and directly addresses natural ways to reduce cholesterol.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TOajtpEXZ+aAv9HgsJd9ie7+7nfh8dQV40n4dZ7i0pGR0DeBO68F4QYetMLewQ9tt48zlTgg0bKvUHUL/jEfGA6kxLJmjY7AC5mW6re7qDDjuQN9pxTqmvmk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 964,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 993,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 964\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vyzFasmTFPP-g8UPvrCH6Ac\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:46.029798+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:15:44 GMT"
+  },
+  "key": "e2c7337eb71b8d0ba3018d02e298fa05778a9a8207d679c4bc6d0a4965cf6d6d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

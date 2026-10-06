@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official government portal providing direct and authoritative guidance on filing income tax returns.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWAZP9i32JrUpMCb9xuSz5zL13NMFSjKGz1b2r3Fdvs5QqzKjdR/BOl+c1YZlRD3N05lZev815jy6JQrWyGhimwCedGmnyGgaiqbGCMKEOvJLno2nSrG+3DU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1090,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1124,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1090\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"jizFaqPOF_j3juMPpZKFuAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:57.089625+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:14:55 GMT"
+  },
+  "key": "38c4c06d49be6b4af8a0c1f27d64b5415ad908459cdbee08fa7567342adfca7d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

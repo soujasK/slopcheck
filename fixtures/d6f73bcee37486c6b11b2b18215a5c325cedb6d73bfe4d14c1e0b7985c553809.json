@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear, step-by-step guide with an identifiable author and organization on how to download the official voter ID card.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TFwWg/X36j5dFP/eIM6+cg6HAyoXsgZjSvHN9/TNqK9kGafQdMQDIjawSGSI8ytpsu5+hKhPP0WKjecSqVcQJHCHnNcBg8a9Zn7xRQSjcXMjd1eTY+QNYjXs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1002,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kS3FatytJ4rWjuMP_bea8QM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:16.231807+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:14 GMT"
+  },
+  "key": "d6f73bcee37486c6b11b2b18215a5c325cedb6d73bfe4d14c1e0b7985c553809",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

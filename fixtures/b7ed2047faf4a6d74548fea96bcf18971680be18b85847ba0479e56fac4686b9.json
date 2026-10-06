@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly explains how to check train PNR status and is from a clearly identified organization (ixigo).\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check train pnr status\\\". The page is from ixigo.com, a travel portal, IRCTC authorized partner. It provides instructions on checking PNR status via website, app, IRCTC website. It seems to directly answer the query. It likely has organization (ixigo) and maybe author not named but organization is clear. It's not a low affiliate roundup; it's a service page. So label \\\"ok\\\". Reason: provides clear steps and is from identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to check train pnr status\\\". The page is from ixigo.com, a travel portal, IRCTC authorized partner. It provides instructions on checking PNR status via website, app, IRCTC website. It seems to directly answer the query. It likely has organization (ixigo) and maybe author not named but organization is clear. It's not a low affiliate roundup; it's a service page. So label \\\"ok\\\". Reason: provides clear steps and is from identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306835,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a060fe8b-0368-426c-a0a9-a985e63b454c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1005,\"completion_tokens\":156,\"total_tokens\":1161,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.61344909667969}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:13:59.201079+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:13:57 GMT"
+  },
+  "key": "b7ed2047faf4a6d74548fea96bcf18971680be18b85847ba0479e56fac4686b9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

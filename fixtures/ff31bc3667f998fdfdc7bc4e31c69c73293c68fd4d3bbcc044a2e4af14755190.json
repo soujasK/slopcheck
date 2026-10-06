@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from Amar Ujala provides a step-by-step guide with a named author from a recognized news organisation.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TXDTz5w0BTi4sbC3efVwd3AOhREAMjj5acPALiGKHOi9Ym05t2OC3gnIq0ZjtQMoBaJXbybPBOMTVyBk9va9/jAOmPoXZHW3X/s1BHw86p67D0WGp2D3BeHk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1176,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1211,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1176\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"gzLFauRsn7SDxQ--xqG5AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:40:22.729487+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:40:20 GMT"
+  },
+  "key": "ff31bc3667f998fdfdc7bc4e31c69c73293c68fd4d3bbcc044a2e4af14755190",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

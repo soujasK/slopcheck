@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from Harvard Health and reviewed by a medical doctor, providing authoritative information on blood pressure guidelines.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TcQY465NCpC6/mpHYtPesh990G0KF7lDqovdSfyHgXDWPqpB9ANRRdSH0uWWGa6f/IdwSLNv/+CYNM1K9cfZhZuie+BbRiJCUTYEZzeHGNMFZY0ia7NCj1Rs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 975,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1013,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 975\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"yi7FaoWfM9rFjuMPw9qNwAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:24:29.375463+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:24:27 GMT"
+  },
+  "key": "33223b6241acb6a361fd7bcf4bfff5e533df8368da2b8c95d2b1da589cf13de2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

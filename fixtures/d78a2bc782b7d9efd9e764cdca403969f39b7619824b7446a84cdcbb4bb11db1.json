@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a generic blog roundup page containing unrelated entertainment and promotional articles rather than a focused, authoritative review of budget smartwatches.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T8HWZHOhkudXC687UOAuq0N7ga1lw7Qo8mCk8Y3s6vJh/gcfKo+wnzUuQfvdOxVdyEe2x6ONX/Vy5lELwalWa97Gv3p/us3jCvrqEqFHfw5yerDDyS71LfAk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1049,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1092,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1049\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8y3FatWqIbfB4-EP_fiIkAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:20:54.279874+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:20:52 GMT"
+  },
+  "key": "d78a2bc782b7d9efd9e764cdca403969f39b7619824b7446a84cdcbb4bb11db1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

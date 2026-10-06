@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is a brand's e-commerce category page for trimmers rather than an informative review or guide answering the query.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4N9olSQM8SDdvTHfFb8NAcMT3qwARCMm9CTIhn5eKt8fQtVs7BMkXvDTQQ5ifxJKIrhxtNWlrTuJUKLj10jSwwKc29xY+x3irsNT57eJaClXnq/9BqtABFE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1536,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1578,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1536\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"uC7Fapy7JuvLqfkP7cqBgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:24:11.194368+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:24:09 GMT"
+  },
+  "key": "2b4e34f26ca216007ba7b5f0a419ea7d4256c31b0b1e202c0adb8d9f1e5206b6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

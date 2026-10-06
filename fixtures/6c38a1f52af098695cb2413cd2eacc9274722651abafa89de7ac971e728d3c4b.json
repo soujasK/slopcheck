@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article has a named author and fact-checker, providing safe and direct advice on using honey for children's coughs.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T82Ww4niQ9HS5+U4QMTOlxyIJRqs0Ko7OcovWYAwlwNkwjbW/z/BSuv/2ou93eKYnJiFTyj+JkOcbGrkXWoFj3rm3DJKuyELHyTYeCFrV45MrMeG5jHi6/M8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 988,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1025,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 988\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Ui3FatOeG-vLqfkPhcuBgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:13.057094+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:11 GMT"
+  },
+  "key": "6c38a1f52af098695cb2413cd2eacc9274722651abafa89de7ac971e728d3c4b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a product roundup and buying guide heavily monetized with affiliate links, lacking original hands-on testing or deep expert analysis.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBm4Jn8ZnzwmRSOl7E25MHfVjQ5hmnqZ2FAIzMyvHuxqThPqiaRhwRhWi+KJhpksV2qju79wIX1rvJx+pz63k6fgYJpg8YhrcwR2f49IUt2SSWVNHwFRYmmQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 982,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 982\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"cS7FapeEPa7VqfkPqdCu-A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:23:00.588041+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:22:58 GMT"
+  },
+  "key": "0fe4c80938c84c64b10ee47089c10fc845a15b5c1b15b6f4ec9ff39c99b5690b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

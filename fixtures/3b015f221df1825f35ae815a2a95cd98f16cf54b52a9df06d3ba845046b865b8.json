@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑named review and comparison of bathroom geysers, fitting the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best geyser for bathroom\\\". The page is a comparison article of top 6 horizontal geysers in India 2026, with author name Anup Nag, date, seems to have testing, data-driven reviews. It is a product review/comparison, likely includes recommendations. It has a named author, organization (GeyserLab). It is not purely affiliate; though may have affiliate links, but primary purpose is to review and compare. That fits \\\"ok\\\". The query is about best geyser for bathroom; horizontal geysers are for bathrooms. So page answers. So label ok.\\n\\nProvide reason: page provides detailed comparison with author and organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best geyser for bathroom\\\". The page is a comparison article of top 6 horizontal geysers in India 2026, with author name Anup Nag, date, seems to have testing, data-driven reviews. It is a product review/comparison, likely includes recommendations. It has a named author, organization (GeyserLab). It is not purely affiliate; though may have affiliate links, but primary purpose is to review and compare. That fits \\\"ok\\\". The query is about best geyser for bathroom; horizontal geysers are for bathrooms. So page answers. So label ok.\\n\\nProvide reason: page provides detailed comparison with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791307043,\"ec_transfer_params\":null,\"id\":\"chatcmpl-169c29c6-f595-4542-851f-f090ee14bbfe\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1019,\"completion_tokens\":189,\"total_tokens\":1208,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.308902740478516}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:17:30.144949+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:17:28 GMT"
+  },
+  "key": "3b015f221df1825f35ae815a2a95cd98f16cf54b52a9df06d3ba845046b865b8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

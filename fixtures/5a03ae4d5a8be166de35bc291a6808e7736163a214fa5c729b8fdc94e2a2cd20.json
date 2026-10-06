@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is an e-commerce store blog promoting only its own house-brand products as top picks.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TIMfjJ6lPcRraw1aMGofviW9VsbRQOoo/0S3EyEYGX9QBfBcnFTAFQY4nNesGj9Q/NVBlZcU9qgbG3tBPXwEMCO8knaHeiAX8H9C0TTNDL9ygMDAq5YwKcWw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1297,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1334,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1297\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"EC7FaoqsCaTCg8UP4qHFkQc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:21:22.701840+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:21:20 GMT"
+  },
+  "key": "5a03ae4d5a8be166de35bc291a6808e7736163a214fa5c729b8fdc94e2a2cd20",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

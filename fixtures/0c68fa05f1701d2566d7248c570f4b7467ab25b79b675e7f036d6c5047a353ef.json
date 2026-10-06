@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is an e-commerce brand category page showcasing only the manufacturer's own products rather than an independent review or comparison.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TqIKXxe+M1JoCmQVglE6/lEWWiUo2LQA83O9aGs0byQQQ8MN15hmaa0IdJm1NNU5STv2ab6cxE1Wtzx831YPU5OXm4Emro1gyYGcaz8ikXeaNf0xmy1kfCTs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1321,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1357,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1321\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"sSzFarXpHqHb4-EPxYyDgAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:32.186518+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:15:30 GMT"
+  },
+  "key": "0c68fa05f1701d2566d7248c570f4b7467ab25b79b675e7f036d6c5047a353ef",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

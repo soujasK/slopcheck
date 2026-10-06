@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official NHS health page that directly provides symptom information for typhoid fever\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"symptoms of typhoid in adults\\\". The page is NHS (UK National Health Service) condition page for typhoid fever. Likely includes symptoms section. The excerpt we have doesn't show symptoms yet, but typical NHS pages have a \\\"Symptoms\\\" heading. The page is official NHS, clearly an authoritative source, with organization. So label \\\"ok\\\". Reason: official NHS page provides reliable medical info including symptoms.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"symptoms of typhoid in adults\\\". The page is NHS (UK National Health Service) condition page for typhoid fever. Likely includes symptoms section. The excerpt we have doesn't show symptoms yet, but typical NHS pages have a \\\"Symptoms\\\" heading. The page is official NHS, clearly an authoritative source, with organization. So label \\\"ok\\\". Reason: official NHS page provides reliable medical info including symptoms.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306896,\"ec_transfer_params\":null,\"id\":\"chatcmpl-e8710b73-945a-4cec-848c-75f2cd4b4c34\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":987,\"completion_tokens\":137,\"total_tokens\":1124,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.745269775390625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:00.542008+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:14:58 GMT"
+  },
+  "key": "88c71a61a691bf11b89447f9af55bbbcb9764ca048467700a469d05eaee0ccb3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

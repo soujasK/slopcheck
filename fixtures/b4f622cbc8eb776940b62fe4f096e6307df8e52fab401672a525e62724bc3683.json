@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is provided by a known organisation and directly explains how to check train PNR status.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T2zlzNi3aez9O9raCwnfpqdTfCo0hQS/S9ms+hxAfDHXkiw4X/Qg8QaObXDhB8F4XjdxlCFBeVO72v/dCMDLZMMFWhIPzc3i0Eke+Mjy1J/LtMttWcT9I3UE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 993,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"8zLFav2zFPC0juMPooaDsAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:42:14.886336+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:42:12 GMT"
+  },
+  "key": "b4f622cbc8eb776940b62fe4f096e6307df8e52fab401672a525e62724bc3683",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

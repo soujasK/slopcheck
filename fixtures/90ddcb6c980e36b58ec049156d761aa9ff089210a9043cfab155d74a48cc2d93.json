@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a news article with a named author from a recognised organisation discussing Aadhaar address update rules.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TZcsl8KYm8xq3XY9fxfXVbzO79Adzq7lP2pqQC80eaTRhXcfYIJIYLPqgJ8hKViX9+6PLUlhoisrN9soBq9eNRvxIGuju4pbUaK8XmMYLNfd5Ohujj0RNJ4o=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 720,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 752,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 720\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JC7Fao29PKHb4-EPxYyDgAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:21:43.688291+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:21:41 GMT"
+  },
+  "key": "90ddcb6c980e36b58ec049156d761aa9ff089210a9043cfab155d74a48cc2d93",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

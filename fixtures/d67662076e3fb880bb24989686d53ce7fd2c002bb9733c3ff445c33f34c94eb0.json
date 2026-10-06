@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a traditional home remedy recipe with an identifiable organisation and author team.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T16XgHvEn6EH3emu5MKi8xhhTIwg+p/Y8TI8ro0WDvM2TdAGFoj92BKyiN4b3pOaQVYlJA1OEf+d1SPoJnsSM7p6Lq2M92sqB2UjK2N9i7ToKCfJfJUBWiKc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1053,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1086,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1053\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"YC3FaqK5Ke-UjuMP_qDPuAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:27.273993+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:25 GMT"
+  },
+  "key": "d67662076e3fb880bb24989686d53ce7fd2c002bb9733c3ff445c33f34c94eb0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

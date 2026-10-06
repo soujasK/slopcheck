@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a Yahoo Finance article with a named author that directly discusses gold's investment merits.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is gold a good investment now\\\". The page is from finance.yahoo.com, an article titled \\\"Is now a good time to invest in gold?\\\" by Dan McEvoy, dated Aug 17 2026, 5 min read. It includes analysis, quotes, data. It appears to be a genuine article providing analysis, not just affiliate. It has author name, organization (Yahoo Finance). So likely \\\"ok\\\". Need to consider if it's monetized referral? It mentions \\\"When you buy through links on our articles, Future and its syndication partners may earn a commission.\\\" That's a disclosure but not primary purpose. It's a news/analysis article. So label ok.\\n\\nProvide reason: article provides analysis with author and source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is gold a good investment now\\\". The page is from finance.yahoo.com, an article titled \\\"Is now a good time to invest in gold?\\\" by Dan McEvoy, dated Aug 17 2026, 5 min read. It includes analysis, quotes, data. It appears to be a genuine article providing analysis, not just affiliate. It has author name, organization (Yahoo Finance). So likely \\\"ok\\\". Need to consider if it's monetized referral? It mentions \\\"When you buy through links on our articles, Future and its syndication partners may earn a commission.\\\" That's a disclosure but not primary purpose. It's a news/analysis article. So label ok.\\n\\nProvide reason: article provides analysis with author and source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791307039,\"ec_transfer_params\":null,\"id\":\"chatcmpl-78d5646e-9d66-4372-8000-f2f5df192574\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":996,\"completion_tokens\":202,\"total_tokens\":1198,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.46345138549805}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:17:23.975292+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:17:22 GMT"
+  },
+  "key": "c46cc6fe56915f0d4124f1a5f47afb693c6784960722e6814853176f684c5d78",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

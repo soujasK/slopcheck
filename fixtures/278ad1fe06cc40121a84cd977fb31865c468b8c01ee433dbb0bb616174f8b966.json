@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official NHS page directly answers timing for vitamin B12 tablets with clear guidance\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best time to take vitamin b12 tablets\\\". The page is from NHS (National Health Service UK) - official source. It provides info on how and when to take cyanocobalamin (vitamin B12). It includes recommendation: best to take on empty stomach, at least 2 hours after meal and 30 minutes before eating again. That directly answers query. It has identifiable organization (NHS). So label \\\"ok\\\". Reason: official NHS page provides clear guidance on timing.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best time to take vitamin b12 tablets\\\". The page is from NHS (National Health Service UK) - official source. It provides info on how and when to take cyanocobalamin (vitamin B12). It includes recommendation: best to take on empty stomach, at least 2 hours after meal and 30 minutes before eating again. That directly answers query. It has identifiable organization (NHS). So label \\\"ok\\\". Reason: official NHS page provides clear guidance on timing.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306974,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a4722881-b6fe-495b-a688-67f0c5d54cd6\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1036,\"completion_tokens\":151,\"total_tokens\":1187,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.2588996887207}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:21.134331+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:19 GMT"
+  },
+  "key": "278ad1fe06cc40121a84cd977fb31865c468b8c01ee433dbb0bb616174f8b966",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

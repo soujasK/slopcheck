@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a well-structured troubleshooting guide from a recognized security organization with a named author and reviewer.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tzlsfm2asb2SI4mBHYo/wXklo1cZlwV/SBzX2BBHO8ea5+xA2BNcRoi2W4YrHCP8tW8a5r0lkmnh5ZXgPZFhXWlACLA0U/kepr7mcGWXfhyf9LFBRsJN95KA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 987,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 987\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"-jLFatP_LqTCg8UP4qHFkQc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:42:24.915692+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:42:22 GMT"
+  },
+  "key": "e952921cb4b9c67e194738c0c3a11e3cd09ba2d4ee9685b47674299321047f3d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

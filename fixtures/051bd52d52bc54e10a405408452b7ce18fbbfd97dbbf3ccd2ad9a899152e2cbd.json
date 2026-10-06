@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official support page from Samsung providing clear instructions on recovering deleted photos.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TyWONXdHtnt+8hLF5QYHU+Q/vpTzySbcizhZnM4PapLxf20bfk9rl0ElZqMJIou+/VT26K3CtaWVpmUnpZiOYZgGWbWzmhIRsjPVRbYcU1nAmThdyQSsFUJw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 990,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 1017,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 990\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"qizFaq6ZFfeijuMPpYOF4Q4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:24.961122+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:15:23 GMT"
+  },
+  "key": "051bd52d52bc54e10a405408452b7ce18fbbfd97dbbf3ccd2ad9a899152e2cbd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

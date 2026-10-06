@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a detailed, author‑named guide on a home remedy (honey) for children's coughs, fitting the query and showing clear responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"home remedies for cough in children\\\". The page is about using honey to treat cough & cold in child. It seems to be a blog post on parentune.com, with author name, fact-checked by someone, published date. It provides home remedy info. It appears to be a genuine article, not just affiliate. It may have some promotional aspects but primary purpose is to give advice. It has named author and fact-checker, so qualifies as \\\"ok\\\". The query is about home remedies for cough in children; honey is a home remedy. So page is relevant and credible enough. So label \\\"ok\\\". Provide reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"home remedies for cough in children\\\". The page is about using honey to treat cough & cold in child. It seems to be a blog post on parentune.com, with author name, fact-checked by someone, published date. It provides home remedy info. It appears to be a genuine article, not just affiliate. It may have some promotional aspects but primary purpose is to give advice. It has named author and fact-checker, so qualifies as \\\"ok\\\". The query is about home remedies for cough in children; honey is a home remedy. So page is relevant and credible enough. So label \\\"ok\\\". Provide reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306988,\"ec_transfer_params\":null,\"id\":\"chatcmpl-35a0e81a-870b-4ac7-b35e-4f6e2987592b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1009,\"completion_tokens\":193,\"total_tokens\":1202,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.263450622558594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:34.153866+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:32 GMT"
+  },
+  "key": "32d41cf7bd514864fa4a5a30f3f71d9a032e8260bbd1b0f901bf0bec830bad8f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

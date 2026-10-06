@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page content is dominated by financial product links and menus rather than a substantive guide on downloading a voter ID card.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tp00HiuLrPo0hBYfqGAMC+bsfq8CKCDns1zfDP7IT5tIt/+n+mVTNWxpdyhbP3i1g2W44l6++BpeQ3rtykkGqpQn2/TeRSCkW5+3EBuakTIVf6qpBg+2sfsI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 893,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 927,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 893\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"pTLFapjENZ6kg8UPgJvqqAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:40:57.649571+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:40:55 GMT"
+  },
+  "key": "55e89617d425bffb71ef868a4607668f55fdf7777de89ce0a06a8dc051c55cf2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

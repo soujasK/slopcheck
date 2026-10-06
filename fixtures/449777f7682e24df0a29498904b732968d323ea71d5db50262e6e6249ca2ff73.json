@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an unverified user-uploaded document on a document-sharing site with no clear medical author or authoritative backing.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TpTRiL1U6H7MbEjQRgzsTmGUMWaRqMtuqXnZacIFGnAzgWUENEmYvCPQpntNUMHuorYF2hw4DYsVNxLd3xK93BSKlzK/nsQwMLl5aDFWJ2F5ozxV/a0sHWok=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 968,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1004,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 968\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"FjPFavG9BIShg8UPktjvoQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:42:50.007458+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:42:47 GMT"
+  },
+  "key": "449777f7682e24df0a29498904b732968d323ea71d5db50262e6e6249ca2ff73",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

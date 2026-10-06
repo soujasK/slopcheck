@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article is written by a named author on a reputable financial news portal and directly compares NPS and PPF for retirement planning.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T3gyYsUgNcN2Q3Oe7yK0KLCa1XlmryioOHG/njXTg1pUTv/rBI0g+DvxulU1Mgbc7x/IO8JI7z1MdaxntDloJA4PSiIptwpNP658drPtQhsXGfm0zaBJqGEI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 996,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1038,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 996\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"4izFaqHaKevLqfkPhcuBgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:21.335599+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:16:19 GMT"
+  },
+  "key": "77552786017503637fa2d4c85e9f98b9295732f6573e99c3b7c035b36e69906c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

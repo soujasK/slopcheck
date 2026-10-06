@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The snippet only contains unrelated headlines and no instructions for updating the Aadhaar address.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TXhlI/g/e+k7fl795tkBzLbcKXC7lZSEUChKl5kVs2YqTE6XrnZV/qLSPrWlY4FHpvnyG5F2qtI32bj1SFgUFlN2rjoHAl1BCvfHu6Njrg1XAwuy5Yna4mH0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 737,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 764,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 737\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"My7FaqisNe3ag8UP2rjIqAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:21:58.534245+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:21:56 GMT"
+  },
+  "key": "b4453a7c1eba66a8beb431dfd673db8a9ac6d5887cb67452b5f7eeaafcab0b1f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

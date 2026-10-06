@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by Coverfox, an identifiable financial platform, and directly discusses senior citizen fixed deposit rates.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+0r9iVGkVm23CJzIsA5fiEbPEAwVc3UziMbbg4/fW3+3SPrw+YcTpZ2ZxWeljJLO0gCGRw3xLYN/irNnXBZm8IveGlrCYvfl7aHupsg7P5848LRRR3TCZhA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 942,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 975,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 942\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"mC3FarmlHZevjuMP8KiG8Ac\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:23.101836+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:21 GMT"
+  },
+  "key": "c469fd82ec51f9e3bd0b1dea43dc9db7a5fe39fa172a50512869430c9c8dc4a5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

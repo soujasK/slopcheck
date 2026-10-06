@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a peer-reviewed medical journal article from PubMed Central with clearly identified academic authors and institutions discussing the safety of paracetamol during pregnancy.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T/qUL0+OcjhxIeiC+RSDxTrb5O9/+2Vezszj86XGw6ldTWghV59llF9K+57lbdC/Ve03y4LtyCte9sxqeF9oyZT7mVONPQ8iJwvErLQaED/XbOZ+FpqbkNio=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1093,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1133,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1093\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"oyzFarvJF-vLqfkPhcuBgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:15:18.063385+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:15:16 GMT"
+  },
+  "key": "da1b7e6e7a59aa0066749c1c13c7166ce8f2458d3f6f30fe877563b91e8d5476",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

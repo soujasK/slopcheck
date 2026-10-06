@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is an official guide published by Ujjivan Small Finance Bank detailing the step-by-step process for filing ITR-1 online.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Td4SaGOKBb3oI4CqqXaYXE17hCwUTg4hxBfooV+y6v3fKvg7Ijm2HtCDdjV8l+ZXQuLnXcnZ6yqQ6tBUg0TYsegqeea+Tw2/pXGUl+aoB/BhdXrGtw4LJXOg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 963,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1011,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 963\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"IS3FapO5GJ_z4-EPo6-BqAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:17:24.022910+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:17:22 GMT"
+  },
+  "key": "65b8a8ab3046081d157ff6606bb26e57272e6e1d60ad8bca6b967ff2e29c6a53",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

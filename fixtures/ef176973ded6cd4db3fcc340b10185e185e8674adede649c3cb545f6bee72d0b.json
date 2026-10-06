@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a detailed review with a named author discussing testing results and specific models.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPlxEiqm1W3dm+dZ63GADhbnYgrx+2q0ZiKrESV0MB/v10OHS9HDz4/quLshKRXGqlzdPKUfcM+CHSCBaNZxePQhBPEggCzDeYTMzfC3AZio2WpeLLwqYuZ8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1017,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1051,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1017\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"rS3FaoaMHp_z4-EP1rCBqAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:44.402172+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:42 GMT"
+  },
+  "key": "ef176973ded6cd4db3fcc340b10185e185e8674adede649c3cb545f6bee72d0b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

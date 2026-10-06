@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is an e-commerce category listing page designed to sell products rather than provide an editorial review or guide for the best trimmer.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tb2hycgZHYW1cPFQMMu0+pZk7K0lYZbocrNnNAB1IbCeCxEPoik3RScnipPmEtfAYzuzf4wm8YdvK+v3Zfm0aB3AIUE7vHB/4twz6jw350+2dVg4eokkFnZo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1272,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1315,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1272\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"my7FavX-NezC4-EPyNjNuAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:23:42.515432+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:23:40 GMT"
+  },
+  "key": "4d43c874f740ef33e842587fb164b63e76de0f9dd88767be3abb711c241ce46c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic, low-effort product roundup likely curated for SEO purposes with minimal hands-on testing evidence.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TGWRgzb2uEYSPlO3Dby8qQEkFgCtqFmJWgQskR54KHr7LpWiC1dzEYRrWHGlH07f5iG5Q9kocFg5TMgSmKJ3E9EVYs0F+Xhpq10ksfhkAz18aShYJ4AOPwt4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1072,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1107,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1072\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"2yzFaoXpGfKwjuMP-euG2AU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:14.121693+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:16:12 GMT"
+  },
+  "key": "8adcf0a558c1a116db101ea8e821f1cf57caa9e122af6fead4a6aebaed9fec39",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

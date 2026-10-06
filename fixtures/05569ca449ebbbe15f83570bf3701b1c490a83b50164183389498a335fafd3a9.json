@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a clear, step-by-step guide from a known financial platform on how to transfer PF funds.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T5k5WWR4R+cVOU38Zc+pLPCsgbV/ZxN9OfnlmbDINhRY/uCvlN4xtazsmscpLPqIbcSIkbVwgBLika1wQNSuPFJAtQWKhfU6D+O9V5e0Cs3qcWa6WANrXhfw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 926,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 967,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 926\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"WS3FatqjKuvLqfkP7cqBgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:20.482687+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:18 GMT"
+  },
+  "key": "05569ca449ebbbe15f83570bf3701b1c490a83b50164183389498a335fafd3a9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

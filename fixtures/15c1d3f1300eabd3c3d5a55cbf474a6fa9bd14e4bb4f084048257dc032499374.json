@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a health library article from a reputable healthcare organization that directly discusses PCOS diets and nutrients, addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best diet for pcos weight loss\\\". The page is from Aster DM Healthcare, a health organization. It appears to be an article about PCOS diet plan, essential nutrients, effective diets. Likely includes diet recommendations, possibly weight loss. It is an official health library page, likely authored by the organization. It seems to answer the query. So label \\\"ok\\\". Reason: provides expert health information from a reputable healthcare organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best diet for pcos weight loss\\\". The page is from Aster DM Healthcare, a health organization. It appears to be an article about PCOS diet plan, essential nutrients, effective diets. Likely includes diet recommendations, possibly weight loss. It is an official health library page, likely authored by the organization. It seems to answer the query. So label \\\"ok\\\". Reason: provides expert health information from a reputable healthcare organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306962,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a60ad804-ef39-4fe2-9c34-dbd933c6bda7\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":997,\"completion_tokens\":148,\"total_tokens\":1145,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.813453674316406}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:06.382317+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:04 GMT"
+  },
+  "key": "15c1d3f1300eabd3c3d5a55cbf474a6fa9bd14e4bb4f084048257dc032499374",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

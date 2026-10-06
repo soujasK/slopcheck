@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Income Tax Department page directly addresses filing ITR-1 online for salaried individuals\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to file itr online for salaried\\\". The page is from Income Tax Department official website, titled \\\"File ITR-1 (Sahaj) Online | Income Tax Department\\\". It appears to be an FAQ about ITR-1 online filing. This is an official source, likely provides guidance. So label \\\"ok\\\". Reason: official government site providing relevant info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to file itr online for salaried\\\". The page is from Income Tax Department official website, titled \\\"File ITR-1 (Sahaj) Online | Income Tax Department\\\". It appears to be an FAQ about ITR-1 online filing. This is an official source, likely provides guidance. So label \\\"ok\\\". Reason: official government site providing relevant info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306859,\"ec_transfer_params\":null,\"id\":\"chatcmpl-15b7f647-c4ab-4bf2-a750-70f433040ecd\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1093,\"completion_tokens\":131,\"total_tokens\":1224,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.70888900756836}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:22.750799+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:14:20 GMT"
+  },
+  "key": "1d0cbccc01cb078943dc360bf16dde18c0a742ecf754e19e01951706dce13739",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

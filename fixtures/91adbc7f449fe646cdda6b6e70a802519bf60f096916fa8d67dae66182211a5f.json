@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a detailed comparative review of double door refrigerators with a named author, clear methodology, and transparent disclosures.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TaASnFr+Jyx23mm093w8KqHKi53y2rRSEegnt/jeHDA4qTrWzGwzv1R1a67FasUJAlhH4mNydZeeA9FB5ZJWrVX/t506qJRQhJx1JmELMmLPyFc8nam8CZ8U=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1088,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1128,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1088\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"dS3Faq6JHpbWjuMP1anlwA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:48.179477+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:46 GMT"
+  },
+  "key": "91adbc7f449fe646cdda6b6e70a802519bf60f096916fa8d67dae66182211a5f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

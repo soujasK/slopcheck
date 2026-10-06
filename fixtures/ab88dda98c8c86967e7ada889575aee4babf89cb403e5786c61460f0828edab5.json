@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides specific Android recovery steps and lists a named author, indicating genuine, accountable content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted photos on android\\\". The page title: \\\"5 Ways to Recover Deleted Photos on Any Device (2026)\\\". URL cleverfiles.com/howto/recover-deleted-photos.html. The main text includes a section \\\"How to Recover Deleted Photos on Android\\\" with methods. It appears to be a guide. Need to assess if it's \\\"ok\\\" (genuinely answers, identifiable author/organization). The page shows \\\"Written by Joshua Solomon Approved by Brett Johnson\\\". That's a named author and approval. The site appears to be a tech guide site (CleverFiles). Likely not purely affiliate; may have affiliate links but primary purpose is to provide instructions. So qualifies as \\\"ok\\\". Provide reason: has named author and specific Android recovery steps.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to recover deleted photos on android\\\". The page title: \\\"5 Ways to Recover Deleted Photos on Any Device (2026)\\\". URL cleverfiles.com/howto/recover-deleted-photos.html. The main text includes a section \\\"How to Recover Deleted Photos on Android\\\" with methods. It appears to be a guide. Need to assess if it's \\\"ok\\\" (genuinely answers, identifiable author/organization). The page shows \\\"Written by Joshua Solomon Approved by Brett Johnson\\\". That's a named author and approval. The site appears to be a tech guide site (CleverFiles). Likely not purely affiliate; may have affiliate links but primary purpose is to provide instructions. So qualifies as \\\"ok\\\". Provide reason: has named author and specific Android recovery steps.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306811,\"ec_transfer_params\":null,\"id\":\"chatcmpl-6348f4ca-c4ae-4f88-8e43-056b59fabf98\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":974,\"completion_tokens\":210,\"total_tokens\":1184,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.30890655517578}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:13:37.386494+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:13:35 GMT"
+  },
+  "key": "ab88dda98c8c86967e7ada889575aee4babf89cb403e5786c61460f0828edab5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

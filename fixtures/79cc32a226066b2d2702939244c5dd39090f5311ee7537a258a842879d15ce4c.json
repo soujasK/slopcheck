@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a geo-targeted financial product roundup focused on Kanpur rather than a comprehensive guide for senior citizens' FD rates nationwide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T3io8DInLYuV/bwJ853OeR30tw1dZTlzczX7jQqtflneiNQ95GPDaZq9mriKF/BxxixRUkbnjhQwKOWra7t7B4/lWj1LtRWYLDUD+K7O9VxKXwurNbAEoLh8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1256,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1293,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1256\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"5DLFaqf-N_7cjuMP6dDgyA0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:42:00.542141+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:41:57 GMT"
+  },
+  "key": "79cc32a226066b2d2702939244c5dd39090f5311ee7537a258a842879d15ce4c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

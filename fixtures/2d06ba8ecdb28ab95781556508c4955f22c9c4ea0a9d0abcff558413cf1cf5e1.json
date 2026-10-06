@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an authoritative source from J.P. Morgan Global Research discussing gold price predictions and market insights.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TVEcT9ByDLaplI0rVjSNUoaiIfUVqZB/wnVYF53w4Ho6ygrnw3AloY6SJJWYjd4o8yUUwBuLX3o7PagOfVUHO2/rxgRa1p57ntqpR5gdxqOcLF26bvJnDshs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 892,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 925,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 892\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3y7FaoqPLI7JjuMP5qqCiAY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:24:50.300218+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:24:48 GMT"
+  },
+  "key": "2d06ba8ecdb28ab95781556508c4955f22c9c4ea0a9d0abcff558413cf1cf5e1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

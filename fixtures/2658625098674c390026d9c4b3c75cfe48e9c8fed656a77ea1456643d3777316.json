@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query by providing a dedicated service and instructions to check IRCTC train PNR status from a recognized platform.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPZo+7R3THsQEnuCTZS5pxQX9pALUJrPsBLzfi/H/F7jgNdzGYM275ih5f+IoW0nnFr4KvP2dc2paLGF4AnLFiLrJA+iJS8iVJwyVJLJmdr19NEqaUKVBcEo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 974,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1011,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 974\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"TyzFauP7E-ilqfkPtuS5EQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:13:54.184971+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:13:52 GMT"
+  },
+  "key": "2658625098674c390026d9c4b3c75cfe48e9c8fed656a77ea1456643d3777316",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

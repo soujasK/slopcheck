@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly compares PPF and NPS with detailed information and is authored by a representative of a known tax platform.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TNwYjs+9dxfTbtWzs9Daxn9aob1L5uhknNTcHqS678OZRvwqtqje36n80AsyVkdpdoxJ57c1P5BykWUm9DQqzehPFUnt/5AEQ+6AeWSJ8e/l1umxgftYEVQU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1060,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1100,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1060\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"iC7FatCdI6-a4-EP25yf2A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:23:23.322468+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:23:21 GMT"
+  },
+  "key": "63d1b08eab08188874843c572b29ac15e9d53d615ed33de8eb353ade2f6d81ee",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

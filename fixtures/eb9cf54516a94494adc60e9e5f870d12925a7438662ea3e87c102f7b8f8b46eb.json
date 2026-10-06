@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Economic Times article directly discusses paying off a home loan versus investing and has a clear author and reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"home loan prepayment or invest\\\". The page is an article from Economic Times, a reputable news outlet, with author Chakravarthy V, ET CONTRIBUTORS. It discusses paying off home loan vs investing, likely answering the query. It has identifiable organization (Economic Times) and author. So label \\\"ok\\\". Reason: article directly addresses the question and is from reputable source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"home loan prepayment or invest\\\". The page is an article from Economic Times, a reputable news outlet, with author Chakravarthy V, ET CONTRIBUTORS. It discusses paying off home loan vs investing, likely answering the query. It has identifiable organization (Economic Times) and author. So label \\\"ok\\\". Reason: article directly addresses the question and is from reputable source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306972,\"ec_transfer_params\":null,\"id\":\"chatcmpl-252fd3fc-0af5-4b84-924b-0466ecc02d8a\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1041,\"completion_tokens\":132,\"total_tokens\":1173,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.12253189086914}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:16.431947+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:14 GMT"
+  },
+  "key": "eb9cf54516a94494adc60e9e5f870d12925a7438662ea3e87c102f7b8f8b46eb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

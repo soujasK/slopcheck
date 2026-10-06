@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author on a reputable financial platform and directly addresses current market conditions for investing in gold.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TkwethkuqJT3+JzGQxMW9XmS3lGxGx9LTrKcSs88B7M6LKDHE8FWnRCEW0MzcWpsdHIayok+utUorLF8SkhFne7vrjButVYJtNgrZV2dY3MIpYvzIHLSbPxQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1009,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1044,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1009\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ny3FasqEIJbWjuMP1anlwA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:30.163570+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:28 GMT"
+  },
+  "key": "7d153a09e290e4a9d57f6f079291f8f0e872535998a278dc04f14d0e52a179f4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

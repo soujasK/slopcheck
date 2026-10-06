@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"ClearTax is a recognized and reliable platform in India providing direct guidance and services for filing income tax returns online.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TdoyP2vFvYdvx1LkDaMtzDUemOgIbi3GXyGmB7x5haKlgVuRzbx9+g9V4eE6J+tO+RwWGlBkvawx/NfMmEZ2aj/a85MgKSyjUSh8OWpQ0gzTB2iJue5zY08g=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1052,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1085,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1052\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"wi3FaouAIMfRjuMP0sOKYA\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:20:05.293434+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:20:03 GMT"
+  },
+  "key": "b9ad93654ec79c4b46b77bac0eda630b6d987d002f6f8c85ddf544cdf4afc99f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

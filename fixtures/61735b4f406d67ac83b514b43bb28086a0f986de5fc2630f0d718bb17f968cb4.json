@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a manufacturer product category and promotional page rather than an objective guide or review comparing trimmers for men.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4C4MWurSJwdowlWYhl0BJXa8XspeZuq3U6vliiAqkPaiqlk5ZGdJrFJdihT5oNsgyW4VPL8pIasGu9SpmLChOFO1LbGsEMWO2LVWRTFEXNN9cPwZ06UKBUQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1075,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1108,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1075\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"Py7FarWeHeK4juMPj5OguQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:22:10.203041+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:22:08 GMT"
+  },
+  "key": "61735b4f406d67ac83b514b43bb28086a0f986de5fc2630f0d718bb17f968cb4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

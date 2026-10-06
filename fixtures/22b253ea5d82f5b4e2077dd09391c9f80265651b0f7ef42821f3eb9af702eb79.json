@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic buying guide style article with placeholder future dates and affiliate-style content typical of low-quality product roundups.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TYG1L5cxJ+BXFqxzvUkiFved2+VDsUTMVoQrQLW73pHfHup3ZFkPfRBTwvtF0nWy8Ngdc1n5tzj35O8D3BO8D+qZPfzpcVTxoJ9W6ztj8f6+ho23BSco9ZvY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1041,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1079,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1041\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fC3FaqC8H7-xjuMP8LiFqAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:18:55.300613+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:18:53 GMT"
+  },
+  "key": "22b253ea5d82f5b4e2077dd09391c9f80265651b0f7ef42821f3eb9af702eb79",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

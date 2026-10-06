@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official WHO fact sheet directly lists typhoid symptoms, meeting the query with a credible source\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"symptoms of typhoid in adults\\\". The page is WHO fact sheet about typhoid. It includes a \\\"Symptoms\\\" section listing prolonged high fever, fatigue, headache, nausea, abdominal pain, constipation or diarrhoea, rash. That's relevant. The page is an official source (World Health Organization). So label \\\"ok\\\". Reason: official WHO fact sheet provides symptom info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"symptoms of typhoid in adults\\\". The page is WHO fact sheet about typhoid. It includes a \\\"Symptoms\\\" section listing prolonged high fever, fatigue, headache, nausea, abdominal pain, constipation or diarrhoea, rash. That's relevant. The page is an official source (World Health Organization). So label \\\"ok\\\". Reason: official WHO fact sheet provides symptom info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306857,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9f9b87de-09fc-466f-a50b-d6b4b06de51e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":949,\"completion_tokens\":132,\"total_tokens\":1081,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.19527816772461}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:21.525996+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:14:19 GMT"
+  },
+  "key": "4559790fde132e187ead57da7e7752085e7677a4985ddae28ea5bcf79bfcec0d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

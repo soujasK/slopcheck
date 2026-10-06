@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a detailed, step-by-step guide with a named reviewer and official references on how to use the CEIR portal.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjWwOjK0BPfsxRBNozG5aifHbi43uZFe6R7RZsaVteZZPWTgLSWKdf0WKDmV+bmV57VqF/octSmw+9Jn8g75kiq9XtjsD4CSOjf20EVSsrgx0uVpgAjLKqeM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1024,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1063,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1024\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"BzPFavXdOomUg8UP78DloQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:42:35.472378+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:42:32 GMT"
+  },
+  "key": "e502fa4e1ad179fad3d2f5241ec5356f466935bcc46f31ab1c38b948133f2753",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

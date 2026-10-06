@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is published by Tata Capital Moneyfy and provides a direct, informative analysis of investing in gold.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TQeVLSi6GufS84cuUKSFjSNwHMEB1vKaMotp1RNeHdCHQxSV21rVAA4hG2ONvNFEkH3FQOLE7yUufDw9Z3ksuZXS5KSUaqtyOswvKh0Zr71ngfVMb6ik0wGM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1010,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1048,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1010\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3i3FasLFPJ_z4-EP1rCBqAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:20:33.649201+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:20:31 GMT"
+  },
+  "key": "f66d531e84f7250df872cdbf5924cc4d0715468b46bbaaa6c3bef5242021fee9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

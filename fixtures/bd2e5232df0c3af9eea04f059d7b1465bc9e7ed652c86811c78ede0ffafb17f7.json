@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized financial institution and provides a detailed, structured comparison between NPS and PPF.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T+RcuBQvUUBUmfnCvxucVZdwC3fsXO45v82mAqndgnchRTKmEsetIG0ampuQGEW9hZHxIWq0EIEK0jmQh8hNtuOJGTax9gciLqGhoklXY6Aj9i3e5WQrX3cA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1089,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1121,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1089\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_izFaqn-G6yajuMPjLnM4AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:49.017544+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:16:47 GMT"
+  },
+  "key": "bd2e5232df0c3af9eea04f059d7b1465bc9e7ed652c86811c78ede0ffafb17f7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

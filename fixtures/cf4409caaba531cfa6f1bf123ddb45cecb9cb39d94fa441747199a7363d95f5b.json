@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official NHS page directly answers safety of paracetamol in pregnancy with authoritative information\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page regarding query \\\"is it safe to take paracetamol during pregnancy\\\". The page is NHS UK official site, with title \\\"Medicines in pregnancy - NHS\\\". The content includes statement: \\\"The Medicines and Healthcare products Regulatory Authority (MHRA) has confirmed taking paracetamol during pregnancy remains safe and there is no evidence it causes autism\\\". This directly answers the query. It's an official source (NHS). So label \\\"ok\\\". Reason: official NHS page provides authoritative answer.\",\"reasoning_content\":\"We need to decide label for this page regarding query \\\"is it safe to take paracetamol during pregnancy\\\". The page is NHS UK official site, with title \\\"Medicines in pregnancy - NHS\\\". The content includes statement: \\\"The Medicines and Healthcare products Regulatory Authority (MHRA) has confirmed taking paracetamol during pregnancy remains safe and there is no evidence it causes autism\\\". This directly answers the query. It's an official source (NHS). So label \\\"ok\\\". Reason: official NHS page provides authoritative answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791306979,\"ec_transfer_params\":null,\"id\":\"chatcmpl-f3ab5e98-ace8-4e8b-9c1f-1570cfdea048\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":950,\"completion_tokens\":140,\"total_tokens\":1090,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.772552490234375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:16:30.058918+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:16:28 GMT"
+  },
+  "key": "cf4409caaba531cfa6f1bf123ddb45cecb9cb39d94fa441747199a7363d95f5b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

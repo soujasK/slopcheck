@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed buying guide with a named author and organization, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best washing machine under 30000\\\". The page appears to be a buying guide on electprime.com, with author \\\"Prashant\\\", date, seems to provide info, possibly affiliate links. It is a product guide, likely includes recommendations. It has a named author, organization (ElectPrime). It seems to be a genuine guide, not just affiliate list? It may have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: page provides a detailed buying guide with author and organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best washing machine under 30000\\\". The page appears to be a buying guide on electprime.com, with author \\\"Prashant\\\", date, seems to provide info, possibly affiliate links. It is a product guide, likely includes recommendations. It has a named author, organization (ElectPrime). It seems to be a genuine guide, not just affiliate list? It may have affiliate links but primary purpose is to inform. So label \\\"ok\\\". Reason: page provides a detailed buying guide with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791307042,\"ec_transfer_params\":null,\"id\":\"chatcmpl-976cb83a-e225-413c-ac29-1c90ef69022d\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":988,\"completion_tokens\":161,\"total_tokens\":1149,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.4134521484375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:17:25.590331+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Tue, 06 Oct 2026 17:17:23 GMT"
+  },
+  "key": "c5c76e46c95759fd7af4319f87100c36e2c089899fa4a503e9de64b73945db21",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

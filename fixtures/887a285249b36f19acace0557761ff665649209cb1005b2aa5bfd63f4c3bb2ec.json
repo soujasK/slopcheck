@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic financial aggregator page optimized for keywords with no specific list of current interest rates or named author/source.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TAg2YBZ1F6UKO6/b/4mB2TwfvWu6hcDhXke+1Gn1P/j2kSDiXl/kdxiOc9nLtxp9Ne2gSxzlr91Yj3d5JbN+uwBblZoC2chS4kFa9939eeUqEjotSoxS0Fb8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 920,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 956,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 920\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3TLFaqzjOMedjuMPmYXHqAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:41:55.215761+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:41:52 GMT"
+  },
+  "key": "887a285249b36f19acace0557761ff665649209cb1005b2aa5bfd63f4c3bb2ec",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

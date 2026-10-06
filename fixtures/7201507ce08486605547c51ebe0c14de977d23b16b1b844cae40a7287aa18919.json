@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is a peer-reviewed medical study hosted on PubMed Central with clearly identified authors and academic affiliations.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TuJCgeCzWzpjpQn4Zed+V85JsLiWx2XPEANFys3wSv8TgYVprKpMif76Id8+ctkPyqiOpTz4zXFjtkhHBK5xYE/twgNgzp+zBXznN0slQwX789ukgN8/sxN0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 999,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1030,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 999\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"eSzFaqGcHJbGjuMP58WuUQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:14:36.072617+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:14:34 GMT"
+  },
+  "key": "7201507ce08486605547c51ebe0c14de977d23b16b1b844cae40a7287aa18919",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

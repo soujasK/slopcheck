@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a detailed and helpful guide on Section 80C tax savings published by a financial services organization.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TCDwmvoHSVX5ZyDtGkRCl8pCjlW+qGB+U8W0ivT6VP/tmUXY6n9q+08vJ4saXatQuy9GzWKRGzIkkVOB34FNte9nyy2LWEnGvumN8hCUN3QKh9xZE5AdZgyo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 946,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 980,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 946\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"gC7FasafF5_z4-EPo6-BqAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:23:15.031764+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:23:13 GMT"
+  },
+  "key": "63c890e525047f65cf4fb59599ed016b446dc429e7d6fa5b066b2a20eb9ba127",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

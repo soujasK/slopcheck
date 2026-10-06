@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable news organization and provides a step-by-step guide on how to change the Aadhaar address online.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TDlruDjfgyqR4rSfD6JHt+Xn97wVVVvomNEMPQPNvclETNIHZdCUlogBBP7n/Mf0Va1auJlRZ80mFmRhKez6IIRKHTGE7wsBMIl5nOoFy4t+0fwh9xxD4XGY=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 838,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 876,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 838\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ii3FavjaJJj5juMP_tmBgAY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:19:09.469244+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:19:07 GMT"
+  },
+  "key": "254485cdc6f9a547d9f5c09919a5399776621e7113d90fbdf1d216da07c3fa7b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized financial institution (Axis Max Life Insurance) and directly explains deductions and investment options under Section 80C.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TfwXY+FBvNqgoZKXb2r00BeL09TeKHiRucKjoglHMGYUJwZmCOUBa4NzWheIyQ8oon6qhul9NCkhB+8zE8QHk9KClqGUjquirYfp1EzWjnyl2tGZeOEgK2Kc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1126,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1165,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1126\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ji7FaqGiCKicjuMP07OG8A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-06T17:23:28.754759+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Tue, 06 Oct 2026 17:23:26 GMT"
+  },
+  "key": "012e759a7df5b040ce1d813c273e15408f0f746140e4b7f5294d637f8fc0cf67",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
