@@ -66,7 +66,7 @@ from slopwatch.queries import Job, PlanError, load_plan, serp_params
 from slopwatch.report.observatory import build as build_report
 from slopwatch.report.observatory import compute as compute_overview
 from slopwatch.report.story import build_story
-from slopwatch.score import load_rubric, row_signals, score_rows
+from slopwatch.score import MIN_READABLE_CHARS, load_rubric, row_signals, score_rows
 from slopwatch.serp import ProjectLedger, SerpClient, SerpError
 from slopwatch.signals import load_lists
 from slopwatch.store import (
@@ -512,7 +512,8 @@ def label(
         items = draw_sample(
             rows,
             pages,
-            {r.url for r in records},
+            # pages too thin to score (MIN_READABLE_CHARS) are never scored, so not drawn
+            {r.url for r in records if r.signals.text_len >= MIN_READABLE_CHARS},
             queries,
             n=n,
             seed=seed,
