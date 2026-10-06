@@ -91,7 +91,7 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
             return resp.status, resp.read(), resp.getheader("Content-Type") or ""
 
         status, body, ctype = get("/")
-        assert status == 200 and "text/html" in ctype and b"SlopWatch Live" in body
+        assert status == 200 and "text/html" in ctype and b"SlopWatch Console" in body
         status, body, _ = get("/api/search?q=dolo%20650&engine=google-us")
         payload: dict[str, Any] = json.loads(body)
         assert status == 200 and payload["engine"] == "google-us" and len(payload["results"]) == 3
@@ -105,7 +105,7 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
 
 def test_page_html_is_self_describing() -> None:
     html = page_html().decode("utf-8")
-    assert "<title>SlopWatch Live</title>" in html
+    assert "<title>SlopWatch Console</title>" in html
     assert all(p in html for p in ("/api/start", "/api/step", "/api/answer"))
     assert "prefers-color-scheme: dark" in html
 
@@ -149,3 +149,24 @@ def test_answer_without_agent_explains(tmp_path: Path) -> None:
         pass
     st, body = app.answer(job)
     assert st == 503 and "GEMINI_API_KEY" in body["error"]
+
+
+def test_overview_and_rubric_endpoints(tmp_path: Path) -> None:
+    app, _ = make_app(tmp_path)
+    app.overview = {"overall_india": {"value": 0.05}}
+    server = make_server(app, 0)
+    port = server.server_address[1]
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        conn = http.client.HTTPConnection("127.0.0.1", port, timeout=10)
+        conn.request("GET", "/api/overview")
+        assert json.loads(conn.getresponse().read())["overall_india"]["value"] == 0.05
+        conn.request("GET", "/api/rubric")
+        rubric = json.loads(conn.getresponse().read())
+        assert rubric["version"] == 3 and rubric["rules"]
+        weights = [r["weight"] for r in rubric["rules"]]
+        assert weights == sorted(weights, reverse=True)
+    finally:
+        server.shutdown()
+        server.server_close()

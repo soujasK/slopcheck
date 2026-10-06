@@ -59,6 +59,8 @@ class App:
     serp: SerpClient
     slop_filter: SlopFilter
     agent: Agent | None = None
+    # Read-only views (Observatory, Method); computed once from committed data.
+    overview: dict[str, Any] = field(default_factory=dict)
     jobs: dict[str, Job] = field(default_factory=dict)
     _ids: itertools.count[int] = field(default_factory=lambda: itertools.count(1))
 
@@ -182,6 +184,23 @@ class App:
         started["results"] = [{**r, "slopwatch": job.scores[r["link"]]} for r in job.results]
         return 200, started
 
+    def rubric(self) -> dict[str, Any]:
+        r = self.slop_filter.rubric
+        return {
+            "version": r.version,
+            "low": r.bands.low,
+            "mixed": r.bands.mixed,
+            "rules": [
+                {
+                    "id": rule.id,
+                    "weight": rule.weight,
+                    "reason": rule.reason,
+                    "conditions": [c.model_dump(exclude_none=True) for c in rule.all],
+                }
+                for rule in sorted(r.rules, key=lambda x: -x.weight)
+            ],
+        }
+
     def _credits(self) -> dict[str, Any]:
         return {
             "session_spent": self.serp.ledger.spent,
@@ -227,6 +246,10 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
                 self._json(*app.step(arg("job")))
             elif parts.path == "/api/answer":
                 self._json(*app.answer(arg("job")))
+            elif parts.path == "/api/overview":
+                self._json(200, app.overview or {"error": "no measurement data"})
+            elif parts.path == "/api/rubric":
+                self._json(200, app.rubric())
             elif parts.path == "/api/search":
                 self._json(*app.search(arg("q"), arg("engine", "google-in")))
             else:

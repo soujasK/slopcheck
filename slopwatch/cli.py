@@ -64,6 +64,7 @@ from slopwatch.pages import PageFetcher
 from slopwatch.platform import load_platforms
 from slopwatch.queries import Job, PlanError, load_plan, serp_params
 from slopwatch.report.observatory import build as build_report
+from slopwatch.report.observatory import compute as compute_overview
 from slopwatch.report.story import build_story
 from slopwatch.score import load_rubric, row_signals, score_rows
 from slopwatch.serp import ProjectLedger, SerpClient, SerpError
@@ -886,7 +887,12 @@ def serve(
 
     else:
         console.print("serve: GEMINI_API_KEY not set; pages are scored but agent answers are off")
-    server = make_server(App(serp, live, agent), port)
+    overview: dict[str, Any] = {}
+    try:
+        overview = compute_overview(settings.data_dir.parent)
+    except (OSError, ValueError) as exc:  # the live search still works without it
+        console.print(f"serve: Observatory view unavailable ({exc})")
+    server = make_server(App(serp, live, agent, overview), port)
     url = f"http://127.0.0.1:{port}/"
     console.print(f"SlopWatch Live at {url}  (Ctrl+C to stop; up to {max_credits} credits)")
     console.print(credits_line(0, ledger))
