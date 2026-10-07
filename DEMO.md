@@ -74,6 +74,11 @@ repeats are free; 50 per session by default, `--max-credits N` to change):
 slopwatch serve          # opens http://127.0.0.1:8765
 ```
 
+Tip for recording: open a ready-made run with a link, e.g.
+`http://127.0.0.1:8765/?q=how%20to%20improve%20cibil%20score%20fast&engine=google-in`
+(cached, 0 credits). Press `/` to jump to the search box; the sun/moon button
+switches theme.
+
 Type any question. Results appear at once,
 each page is read and scored live, then the same agent answers twice side by side:
 without SlopWatch and with it, every citation marked clear or slop.

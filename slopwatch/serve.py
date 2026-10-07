@@ -219,6 +219,16 @@ def page_html() -> bytes:
     return resources.files("slopwatch.report").joinpath("serve.html").read_bytes()
 
 
+# Vendored front-end libraries, served from the package so the app works offline.
+STATIC = {"alpine.min.js": "application/javascript; charset=utf-8"}
+
+
+def static_file(name: str) -> bytes | None:
+    if name not in STATIC:
+        return None
+    return resources.files("slopwatch.report").joinpath("vendor", name).read_bytes()
+
+
 def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, format: str, *args: Any) -> None:  # quiet console
@@ -245,6 +255,13 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
 
             if parts.path == "/":
                 self._send(200, page_html(), "text/html; charset=utf-8")
+            elif parts.path.startswith("/static/"):
+                name = parts.path.removeprefix("/static/")
+                body = static_file(name)
+                if body is None:
+                    self._send(404, b"not found", "text/plain; charset=utf-8")
+                else:
+                    self._send(200, body, STATIC[name])
             elif parts.path == "/api/start":
                 self._json(*app.start(arg("q"), arg("engine", "google-in")))
             elif parts.path == "/api/step":

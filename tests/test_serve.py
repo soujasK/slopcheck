@@ -96,6 +96,9 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
         payload: dict[str, Any] = json.loads(body)
         assert status == 200 and payload["engine"] == "google-us" and len(payload["results"]) == 3
         assert get("/nope")[0] == 404
+        status, body, ctype = get("/static/alpine.min.js")
+        assert status == 200 and "javascript" in ctype and body.startswith(b"/*! Alpine.js")
+        assert get("/static/../serve.py")[0] == 404 and get("/static/other.js")[0] == 404
         assert get("/api/search?q=")[0] == 400
     finally:
         server.shutdown()
@@ -108,6 +111,7 @@ def test_page_html_is_self_describing() -> None:
     assert "<title>SlopWatch Console</title>" in html
     assert all(p in html for p in ("/api/start", "/api/step", "/api/answer"))
     assert "prefers-color-scheme: dark" in html
+    assert '<script defer src="/static/alpine.min.js">' in html  # vendored, works offline
 
 
 def test_start_step_answer_workflow(tmp_path: Path) -> None:
