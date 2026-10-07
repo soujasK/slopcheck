@@ -100,3 +100,15 @@ export const api = {
   overview: () => get<Overview>("/api/overview"),
   rubric: () => get<Rubric>("/api/rubric"),
 };
+
+export interface Peek { query: string; engine: EngineKey; cached: boolean; cost: 0 | 1; can_run: boolean; session_left: number }
+export interface Suggestion { q: string; cached: boolean }
+
+export const live = {
+  peek: (q: string, engine: EngineKey, signal?: AbortSignal) =>
+    fetch(`/api/peek?q=${encodeURIComponent(q)}&engine=${engine}`, { signal }).then((r) => (r.ok ? (r.json() as Promise<Peek>) : null)),
+  suggest: (q: string, engine: EngineKey, signal?: AbortSignal) =>
+    fetch(`/api/suggest?q=${encodeURIComponent(q)}&engine=${engine}`, { signal })
+      .then((r) => (r.ok ? r.json() : { suggestions: [] }))
+      .then((d: { suggestions: Suggestion[] }) => d.suggestions),
+};

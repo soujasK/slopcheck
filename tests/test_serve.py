@@ -178,3 +178,26 @@ def test_overview_and_rubric_endpoints(tmp_path: Path) -> None:
     finally:
         server.shutdown()
         server.server_close()
+
+
+def test_peek_and_suggest_never_spend(tmp_path: Path) -> None:
+    app, rec = make_app(tmp_path)
+    app.known = [
+        "is it safe to take dolo 650 every day",
+        "dolo 650 dosage for adults",
+        "best sip 2026",
+    ]
+    status, p = app.peek("dolo 650 daily", "google-in")
+    assert status == 200 and p["cached"] is False and p["cost"] == 1 and p["can_run"]
+    assert app.serp.ledger.spent == 0 and not any("serpapi" in str(r.url) for r in rec.requests)
+    app.start("dolo 650 daily", "google-in")  # now cached
+    assert app.peek("  dolo   650 daily ", "google-in")[1]["cached"] is True
+    assert app.peek("", "google-in")[0] == 400 and app.peek("x", "bing")[0] == 400
+    status, s = app.suggest("dol 65", "google-in")
+    assert status == 200 and [r["q"] for r in s["suggestions"]] == [
+        "dolo 650 dosage for adults", "is it safe to take dolo 650 every day"]  # fmt: skip
+    assert app.suggest("", "google-in")[1] == {"suggestions": []}
+    assert app.suggest("zzz", "google-in")[1] == {"suggestions": []}
+    spent = app.serp.ledger.spent
+    app.suggest("dolo", "google-in")
+    assert app.serp.ledger.spent == spent  # suggestions only look at the cache

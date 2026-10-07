@@ -966,7 +966,13 @@ def serve(
         overview = compute_overview(settings.data_dir.parent)
     except (OSError, ValueError) as exc:  # the live search still works without it
         console.print(f"serve: Observatory view unavailable ({exc})")
-    server = make_server(App(serp, live, agent, overview), port)
+    known: list[str] = []
+    for d in (settings.data_dir, *sorted(settings.data_dir.parent.glob("data_round*"))):
+        try:
+            known += [s.text for s in load_plan(d / "queries.yaml").specs]
+        except (OSError, PlanError, ValueError):
+            continue
+    server = make_server(App(serp, live, agent, overview, known=sorted(set(known))), port)
     url = f"http://127.0.0.1:{port}/"
     console.print(f"SlopWatch Live at {url}  (Ctrl+C to stop; up to {max_credits} credits)")
     console.print(credits_line(0, ledger, live=True))

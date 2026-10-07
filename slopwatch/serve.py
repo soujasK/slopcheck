@@ -62,6 +62,8 @@ class App:
     agent: Agent | None = None
     # Read-only views (Observatory, Method); computed once from committed data.
     overview: dict[str, Any] = field(default_factory=dict)
+    # Questions already searched by this project (query plans); powers suggestions.
+    known: list[str] = field(default_factory=list)
     jobs: dict[str, Job] = field(default_factory=dict)
     _ids: itertools.count[int] = field(default_factory=lambda: itertools.count(1))
 
@@ -178,6 +180,38 @@ class App:
             ],
         }
 
+    # -- as-you-type (read-only, never spends) ---------------------------------------
+    def _cached(self, query: str, engine_key: str) -> bool:
+        engine, locale = ENGINES[engine_key]
+        return not self.serp.would_spend(engine, serp_params(engine, locale, query))
+
+    def peek(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:
+        """Would this exact search come from the cache (free) or cost a credit?"""
+        query = " ".join(query.split())[:MAX_QUERY_CHARS]
+        if not query or engine_key not in ENGINES:
+            return 400, {"error": "query and a known engine are required"}
+        cached = self._cached(query, engine_key)
+        left = max(self.serp.ledger.cap - self.serp.ledger.spent, 0)
+        return 200, {"query": query, "engine": engine_key, "cached": cached,
+                     "cost": 0 if cached else 1, "can_run": cached or left > 0,
+                     "session_left": left}  # fmt: skip
+
+    def suggest(self, prefix: str, engine_key: str, limit: int = 6) -> tuple[int, dict[str, Any]]:
+        """Known questions matching every typed word (word-prefix match), cached ones first."""
+        if engine_key not in ENGINES:
+            return 400, {"error": "unknown engine"}
+        words = [w for w in " ".join(prefix.lower().split()).split(" ") if w]
+        if not words:
+            return 200, {"suggestions": []}
+        hits = []
+        for text in self.known:
+            toks = text.lower().split()
+            if all(any(t.startswith(w) for t in toks) for w in words):
+                hits.append(text)
+        rows = [{"q": t, "cached": self._cached(t, engine_key)} for t in hits[: limit * 3]]
+        rows.sort(key=lambda r: (not r["cached"], len(r["q"])))
+        return 200, {"suggestions": rows[:limit]}
+
     # -- one-shot (API / scripts) ---------------------------------------------------
     def search(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:
         """Start, score every result, return everything in one response."""
@@ -286,6 +320,10 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
                 self._json(200, app.overview or {"error": "no measurement data"})
             elif parts.path == "/api/rubric":
                 self._json(200, app.rubric())
+            elif parts.path == "/api/peek":
+                self._json(*app.peek(arg("q"), arg("engine", "google-in")))
+            elif parts.path == "/api/suggest":
+                self._json(*app.suggest(arg("q"), arg("engine", "google-in")))
             elif parts.path == "/api/search":
                 self._json(*app.search(arg("q"), arg("engine", "google-in")))
             else:

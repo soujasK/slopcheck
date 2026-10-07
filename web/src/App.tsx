@@ -42,6 +42,7 @@ export default function App() {
   const [credits, setCredits] = useState<{ session_spent: number; session_cap: number } | null>(null);
   const [focusSignal, setFocusSignal] = useState(0);
   const [toast, setToast] = useState<string | null>(null);
+  const [mood, setMood] = useState<"idle" | "clean" | "slop">("idle");
 
   useEffect(() => { api.rubric().then(setRubric).catch(() => {}); }, []);
   const matchers = useMemo(() => protectiveMatchers(rubric?.rules ?? []), [rubric]);
@@ -71,7 +72,12 @@ export default function App() {
 
   return (
     <TooltipProvider>
-      <Tabs.Root value={view} onValueChange={(v) => changeView(v as View)} className="min-h-screen">
+      {/* ambient glow that follows the live result: teal when the agent's top 5 is clean, ochre when slop was in it */}
+      <motion.div aria-hidden="true" className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[520px]"
+        animate={{ opacity: view === "search" && mood !== "idle" ? 1 : 0.55,
+          background: `radial-gradient(60% 70% at 50% -10%, color-mix(in srgb, ${mood === "slop" ? "var(--risk)" : "var(--clean)"} ${mood === "idle" ? 7 : 16}%, transparent), transparent 70%)` }}
+        transition={{ duration: 0.9 }} />
+      <Tabs.Root value={view} onValueChange={(v) => changeView(v as View)} className="relative min-h-screen">
         <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur-md backdrop-saturate-150">
           <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-3 px-4 py-2.5 md:gap-5 md:px-6">
             <a href="#search" onClick={(e) => { e.preventDefault(); changeView("search"); }} className="flex items-center gap-2.5" aria-label="SlopWatch home">
@@ -106,7 +112,7 @@ export default function App() {
 
         <main className="mx-auto max-w-[1240px] px-4 pb-16 pt-6 md:px-6 md:pt-8">
           <Tabs.Content value="search" forceMount hidden={view !== "search"} className="outline-none">
-            <SearchView isProtective={isProtective} onCredits={setCredits} focusSignal={focusSignal} toast={flash} />
+            <SearchView isProtective={isProtective} onCredits={setCredits} onMood={setMood} focusSignal={focusSignal} toast={flash} />
           </Tabs.Content>
           <Tabs.Content value="overview" className="outline-none">
             <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}><ObservatoryView /></motion.div>
