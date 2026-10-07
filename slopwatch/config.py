@@ -63,6 +63,9 @@ class Settings(BaseSettings):
         default=None,
         validation_alias=AliasChoices("GEMINI_PAID_API_KEY", "SLOPWATCH_GEMINI_PAID_API_KEY"),
     )
+    # Judge C on Vertex AI instead of an API key: the Google Cloud project to bill
+    # (auth from the active `gcloud auth login`).
+    vertex_project: str | None = None
     cloudflare_api_token: SecretStr | None = Field(
         default=None,
         validation_alias=AliasChoices("CLOUDFLARE_API_TOKEN", "SLOPWATCH_CLOUDFLARE_API_TOKEN"),

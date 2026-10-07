@@ -62,6 +62,7 @@ from slopwatch.llm_label import (
     GeminiBackend,
     QuotaExhausted,
     RunStats,
+    VertexGeminiBackend,
     agreement_report,
     audit_report,
     label_items,
@@ -671,7 +672,12 @@ def llm_label_cmd(
     # Judge C uses GEMINI_PAID_API_KEY if set, else GEMINI_API_KEY (fine once that
     # key's project has billing; a free-tier key stops at its daily quota).
     c_key = settings.gemini_paid_api_key or settings.gemini_api_key
-    if labeler == "c" and c_key is None and mode is not CacheMode.REPLAY:
+    if (
+        labeler == "c"
+        and c_key is None
+        and settings.vertex_project is None
+        and mode is not CacheMode.REPLAY
+    ):
         err_console.print("llm-label: judge C needs GEMINI_PAID_API_KEY or GEMINI_API_KEY")
         raise typer.Exit(EXIT_USAGE)
     items = load_sample(_labels_dir() / SAMPLE)
@@ -715,6 +721,13 @@ def llm_label_cmd(
                 http,
                 settings.gemini_api_key,
                 model=model or GEMINI_MODEL,
+                min_interval=min_interval,
+            )
+        elif labeler == "c" and settings.vertex_project:
+            backend = VertexGeminiBackend(
+                http,
+                settings.vertex_project,
+                model or JUDGE_C_MODEL,
                 min_interval=min_interval,
             )
         elif labeler == "c":

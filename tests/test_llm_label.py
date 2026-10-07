@@ -19,6 +19,7 @@ from slopwatch.llm_label import (
     CF_PRIMARY,
     CloudflareBackend,
     GeminiBackend,
+    VertexGeminiBackend,
     agreement_report,
     audit_report,
     item_prompt,
@@ -467,3 +468,28 @@ def test_cli_judge_c_requires_paid_key(monkeypatch: pytest.MonkeyPatch, tmp_path
     assert r.exit_code == 2 and "GEMINI_PAID_API_KEY or GEMINI_API_KEY" in r.output
     bad = CliRunner().invoke(app, ["llm-label", "--labeler", "z"])
     assert bad.exit_code == 2
+
+
+def test_vertex_backend_uses_bearer_token_and_hides_project_and_token() -> None:
+    calls: list[str] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        assert request.url.host == "aiplatform.googleapis.com"
+        assert "/projects/my-proj-not-real/locations/global/" in request.url.path
+        assert request.headers["authorization"] == "Bearer TOKEN-not-real"
+        assert "x-goog-api-key" not in request.headers
+        return httpx.Response(200, json=gemini_response('{"label": "low", "reason": "x"}'))
+
+    def token() -> str:
+        calls.append("t")
+        return "TOKEN-not-real"
+
+    rec = Recorder(handler)
+    with make_client(rec) as http:
+        backend = VertexGeminiBackend(http, "my-proj-not-real", "judge-model", token=token)
+        reply = backend.ask(system_prompt(GUIDE), item_prompt(item()), attempt=0)
+        assert parse_reply(reply.text) == ("low", "x") and reply.model == "judge-model"
+        again = backend.ask(system_prompt(GUIDE), item_prompt(item()), attempt=0)
+        assert again.from_cache and len(rec.requests) == 1 and calls == ["t"]
+        dump = " ".join(http.cache._db.iterdump())
+        assert "TOKEN-not-real" not in dump and "my-proj-not-real" not in dump

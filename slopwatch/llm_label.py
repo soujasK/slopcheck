@@ -20,6 +20,8 @@ from __future__ import annotations
 import json
 import logging
 import re
+import shutil
+import subprocess
 import time
 from collections.abc import Callable
 from dataclasses import dataclass, field
@@ -55,6 +57,11 @@ CF_PRIMARY = "@cf/openai/gpt-oss-120b"
 CF_FALLBACK = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 CF_URL = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+# Vertex AI (same request/response format; OAuth token from the gcloud login).
+VERTEX_URL = (
+    "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global"
+    "/publishers/google/models/{model}:generateContent"
+)
 DEFAULT_NEURON_BUDGET = 9500.0  # stay under the 10,000/day free allocation
 
 OUTPUT_RULES = (
@@ -168,18 +175,25 @@ class GeminiBackend:
     def key_value(self) -> str | None:
         return self._key.get_secret_value() if self._key else None
 
+    def _urls(self) -> tuple[str, str]:
+        url = GEMINI_URL.format(model=self.model)
+        return url, url
+
+    def _auth_headers(self) -> dict[str, str]:
+        return {"x-goog-api-key": self._key.get_secret_value()} if self._key else {}
+
     def post_paced(self, payload: dict[str, Any], headers: dict[str, str]) -> CachedResponse:
         """Paced request; 429s wait and retry; a daily-quota 429 raises QuotaExhausted.
         Cache hits are never paced."""
-        url = GEMINI_URL.format(model=self.model)
+        url, cache_url = self._urls()
         for wait in (*RATE_LIMIT_WAITS, None):
-            if self.http.would_hit_cache("POST", url, payload):
-                return self.http.post_json(url, payload, headers=headers)
+            if self.http.would_hit_cache("POST", cache_url, payload):
+                return self.http.post_json(url, payload, headers=headers, cache_url=cache_url)
             gap = self._clock() - self._last
             if gap < self.min_interval:
                 self._sleep(self.min_interval - gap)
             self._last = self._clock()
-            resp = self.http.post_json(url, payload, headers=headers)
+            resp = self.http.post_json(url, payload, headers=headers, cache_url=cache_url)
             if resp.status not in TRANSIENT_STATUSES:
                 return resp
             if resp.status == 429 and (
@@ -212,8 +226,7 @@ class GeminiBackend:
                 },
             },
         }
-        headers = {"x-goog-api-key": self._key.get_secret_value()} if self._key else {}
-        resp = self.post_paced(payload, headers)
+        resp = self.post_paced(payload, self._auth_headers())
         if resp.status >= 400:
             raise HttpError(f"Gemini HTTP {resp.status}", resp.status)
         data = resp.json()
@@ -231,6 +244,54 @@ class GeminiBackend:
             output_tokens=int(usage.get("candidatesTokenCount", 0))
             + int(usage.get("thoughtsTokenCount", 0)),
         )
+
+
+class VertexGeminiBackend(GeminiBackend):
+    """Gemini on Vertex AI, billed to a Google Cloud project. Auth is a short-lived
+    OAuth token from ``gcloud auth print-access-token`` (refreshed every 45 min);
+    the project id is kept out of the cache key and fixtures."""
+
+    name = "vertex"
+    TOKEN_TTL = 45 * 60.0
+
+    def __init__(
+        self,
+        http: HttpClient,
+        project: str,
+        model: str,
+        *,
+        token: Callable[[], str] | None = None,
+        **kw: Any,
+    ) -> None:
+        super().__init__(http, None, model, **kw)
+        self.project = project
+        self._token_fn = token or gcloud_access_token
+        self._token: tuple[str, float] | None = None
+
+    def _urls(self) -> tuple[str, str]:
+        return (
+            VERTEX_URL.format(project=self.project, model=self.model),
+            VERTEX_URL.format(project="{project}", model=self.model),
+        )
+
+    def _auth_headers(self) -> dict[str, str]:
+        now = self._clock()
+        if self._token is None or now - self._token[1] > self.TOKEN_TTL:
+            self._token = (self._token_fn(), now)
+        return {"Authorization": f"Bearer {self._token[0]}"}
+
+
+def gcloud_access_token() -> str:
+    """Access token of the active gcloud login (never logged or stored)."""
+    exe = shutil.which("gcloud")
+    if exe is None:
+        raise RuntimeError("gcloud CLI not found; install it or unset SLOPWATCH_VERTEX_PROJECT")
+    out = subprocess.run(  # noqa: S603 - fixed args, exe resolved by shutil.which
+        [exe, "auth", "print-access-token"], capture_output=True, text=True, timeout=60
+    )
+    if out.returncode != 0 or not out.stdout.strip():
+        raise RuntimeError("gcloud auth print-access-token failed; run `gcloud auth login`")
+    return out.stdout.strip()
 
 
 class CloudflareBackend:
