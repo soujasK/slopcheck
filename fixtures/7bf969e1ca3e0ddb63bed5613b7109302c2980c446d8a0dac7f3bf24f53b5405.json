@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Financial Express article directly discusses prepaying a home loan versus investing and is authored by a recognized news organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"home loan prepayment or invest\\\". The page title suggests it's about Home Loan Prepayment Vs Investment, which directly addresses query. Need to assess if page is \\\"ok\\\" (has identifiable responsibility, author, organization) vs \\\"low\\\". The site is Financial Express, a known news/financial website. Likely article has author and is not purely affiliate. So likely \\\"ok\\\". The snippet shows typical news site with many headlines; likely article content includes analysis. So label ok.\\n\\nReason: page from Financial Express provides analysis on prepay vs invest, with identifiable organization.\\n\\nThus output.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"home loan prepayment or invest\\\". The page title suggests it's about Home Loan Prepayment Vs Investment, which directly addresses query. Need to assess if page is \\\"ok\\\" (has identifiable responsibility, author, organization) vs \\\"low\\\". The site is Financial Express, a known news/financial website. Likely article has author and is not purely affiliate. So likely \\\"ok\\\". The snippet shows typical news site with many headlines; likely article content includes analysis. So label ok.\\n\\nReason: page from Financial Express provides analysis on prepay vs invest, with identifiable organization.\\n\\nThus output.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338242,\"ec_transfer_params\":null,\"id\":\"chatcmpl-624b9b9d-368c-455b-9d95-b972385e7aca\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":790,\"completion_tokens\":176,\"total_tokens\":966,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":37.13621520996094}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:27.084364+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:23 GMT"
+  },
+  "key": "7bf969e1ca3e0ddb63bed5613b7109302c2980c446d8a0dac7f3bf24f53b5405",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

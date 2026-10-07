@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a product catalog aimed at selling refrigerators, not an editorial answer with identifiable author or organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best double door refrigerator\\\". The page appears to be a product collection page on betterhomeapp.com, showing a list of double door fridges, marketed as \\\"Best Double Door Fridges Bought by Brand Managers and Leaders in India\\\". Likely an affiliate e-commerce site, with product listings, maybe affiliate links. Primary purpose is to sell products, not to provide editorial review. It claims \\\"smarter way to shop than looking at reviews\\\", but it's essentially a product listing with price and add to cart. No author, no editorial content, just product catalog. This is monetised referral. So label low.\\n\\nWe need to provide reason: page is primarily a product listing/affiliate sales page, not a genuine answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best double door refrigerator\\\". The page appears to be a product collection page on betterhomeapp.com, showing a list of double door fridges, marketed as \\\"Best Double Door Fridges Bought by Brand Managers and Leaders in India\\\". Likely an affiliate e-commerce site, with product listings, maybe affiliate links. Primary purpose is to sell products, not to provide editorial review. It claims \\\"smarter way to shop than looking at reviews\\\", but it's essentially a product listing with price and add to cart. No author, no editorial content, just product catalog. This is monetised referral. So label low.\\n\\nWe need to provide reason: page is primarily a product listing/affiliate sales page, not a genuine answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338216,\"ec_transfer_params\":null,\"id\":\"chatcmpl-6a330f74-89f6-44ce-b08e-be4e70f6571b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1112,\"completion_tokens\":201,\"total_tokens\":1313,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":49.08615493774414}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:04.498099+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:01 GMT"
+  },
+  "key": "0157655925b4914873ff87cfe498a1a8a15c0766497fd8272c98ab1dfe359285",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

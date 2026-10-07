@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Income Tax Department page gives direct instructions for applying for a PAN online\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to apply for pan card online\\\". The page is from Income Tax Department, titled \\\"Instant e-PAN | Income Tax Department\\\". It provides info on instant e-PAN, steps, FAQs. This is an official government source, clearly answers how to apply for PAN online (via instant e-PAN). It has identifiable organization (Income Tax Department). So label \\\"ok\\\". Reason: official government page providing instructions.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to apply for pan card online\\\". The page is from Income Tax Department, titled \\\"Instant e-PAN | Income Tax Department\\\". It provides info on instant e-PAN, steps, FAQs. This is an official government source, clearly answers how to apply for PAN online (via instant e-PAN). It has identifiable organization (Income Tax Department). So label \\\"ok\\\". Reason: official government page providing instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338180,\"ec_transfer_params\":null,\"id\":\"chatcmpl-13356175-48b6-4578-ad6a-2a091f8c2a08\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1055,\"completion_tokens\":137,\"total_tokens\":1192,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.908897399902344}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:25.231493+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:22 GMT"
+  },
+  "key": "f8a11bef972bafeaccddb1eb27c0189fcd0fce7e34f69834d2f6b543f979cfe0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

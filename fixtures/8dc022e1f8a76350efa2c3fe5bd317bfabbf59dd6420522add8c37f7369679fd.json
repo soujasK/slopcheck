@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a detailed, authored list of affordable smartwatch brands in India, directly addressing the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget smartwatch in india\\\". The page is a list of top 10 affordable smartwatch brands in India 2024. It seems to be a content article, likely with some affiliate links maybe but primary purpose is to inform about affordable smartwatch brands. It has author name (Pardeep Sharma) and date, and appears to be from analyticsinsight.net, a tech news site. This seems to be a genuine article answering the query. It likely qualifies as \\\"ok\\\". Need to consider if it's monetized referral? Could have affiliate links but not evident. The primary purpose is to provide information, not just referral. So label \\\"ok\\\". Provide short reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best budget smartwatch in india\\\". The page is a list of top 10 affordable smartwatch brands in India 2024. It seems to be a content article, likely with some affiliate links maybe but primary purpose is to inform about affordable smartwatch brands. It has author name (Pardeep Sharma) and date, and appears to be from analyticsinsight.net, a tech news site. This seems to be a genuine article answering the query. It likely qualifies as \\\"ok\\\". Need to consider if it's monetized referral? Could have affiliate links but not evident. The primary purpose is to provide information, not just referral. So label \\\"ok\\\". Provide short reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338268,\"ec_transfer_params\":null,\"id\":\"chatcmpl-b65e9d7b-cd1b-47b5-ab89-798b6ea68762\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":998,\"completion_tokens\":189,\"total_tokens\":1187,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.640724182128906}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:52.735518+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:49 GMT"
+  },
+  "key": "8dc022e1f8a76350efa2c3fe5bd317bfabbf59dd6420522add8c37f7369679fd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

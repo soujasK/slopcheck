@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"TP‑Link’s official blog provides a detailed troubleshooting guide directly answering the query and is authored by a named editorial group.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"wifi connected but no internet how to fix\\\". The page is from TP-Link blog, titled \\\"Wi-Fi Connected, But Still No Internet? Complete Fix Guide\\\". It appears to be a guide with steps. It is authored by \\\"TP-Link Editorial Group\\\". That's a named organization (TP-Link). The content seems to directly answer the query, providing troubleshooting steps. It's not a product roundup; it's a guide. So likely \\\"ok\\\". The page is an official brand blog, providing advice. It has identifiable responsibility (TP-Link). So label ok.\\n\\nWe need to provide reason: e.g., \\\"The page is a TP-Link guide that directly addresses the issue with troubleshooting steps and has a clear author.\\\"\\n\\nReturn JSON.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"wifi connected but no internet how to fix\\\". The page is from TP-Link blog, titled \\\"Wi-Fi Connected, But Still No Internet? Complete Fix Guide\\\". It appears to be a guide with steps. It is authored by \\\"TP-Link Editorial Group\\\". That's a named organization (TP-Link). The content seems to directly answer the query, providing troubleshooting steps. It's not a product roundup; it's a guide. So likely \\\"ok\\\". The page is an official brand blog, providing advice. It has identifiable responsibility (TP-Link). So label ok.\\n\\nWe need to provide reason: e.g., \\\"The page is a TP-Link guide that directly addresses the issue with troubleshooting steps and has a clear author.\\\"\\n\\nReturn JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338182,\"ec_transfer_params\":null,\"id\":\"chatcmpl-5d7b011b-9e71-4bbd-ab20-9107476d7678\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":999,\"completion_tokens\":205,\"total_tokens\":1204,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.763450622558594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:27.840812+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:24 GMT"
+  },
+  "key": "a243a2921a189258bc51adede5dbed2ac95cf291c091d085bf5910bb90ab2ea6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a clear step-by-step guide to updating Aadhaar address online and includes a named author, indicating genuine informational content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to change aadhaar address online\\\". The page is from digit.in, a tech news site. It provides step-by-step guide. It has author name Ichha Sharma, date, seems to be a genuine guide. Not purely affiliate. It references official UIDAI website. The purpose is to inform, not monetized referral. So likely \\\"ok\\\". It has identifiable author and organization (Digit). So label ok.\\n\\nReason: page provides step-by-step instructions and has a named author.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to change aadhaar address online\\\". The page is from digit.in, a tech news site. It provides step-by-step guide. It has author name Ichha Sharma, date, seems to be a genuine guide. Not purely affiliate. It references official UIDAI website. The purpose is to inform, not monetized referral. So likely \\\"ok\\\". It has identifiable author and organization (Digit). So label ok.\\n\\nReason: page provides step-by-step instructions and has a named author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338256,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d6975128-9306-4ac3-b1af-c6b86f155c06\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":984,\"completion_tokens\":161,\"total_tokens\":1145,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.28617858886719}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:41.974142+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:38 GMT"
+  },
+  "key": "6f90d1f4c245490a184f865dc89fc7e3fda401ce41a75856700f188dbc3344bc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

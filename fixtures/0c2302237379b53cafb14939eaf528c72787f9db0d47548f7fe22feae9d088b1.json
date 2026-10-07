@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article explains CEIR and how to block a lost phone, with a named author and clear source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page is an explainer article about CEIR, includes description of how it works, mentions that portal enables users to trace and block lost phones. Likely provides steps? The excerpt shows explanation but not step-by-step instructions yet. However it likely includes instructions later. The page is from boomlive.in, an Indian news site. It has author name (Hera Rizwan) and date. It's not purely affiliate. So it seems \\\"ok\\\" as it answers query and has identifiable author. So label ok.\\n\\nReason: article explains CEIR and how to block lost phone, with author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page is an explainer article about CEIR, includes description of how it works, mentions that portal enables users to trace and block lost phones. Likely provides steps? The excerpt shows explanation but not step-by-step instructions yet. However it likely includes instructions later. The page is from boomlive.in, an Indian news site. It has author name (Hera Rizwan) and date. It's not purely affiliate. So it seems \\\"ok\\\" as it answers query and has identifiable author. So label ok.\\n\\nReason: article explains CEIR and how to block lost phone, with author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338266,\"ec_transfer_params\":null,\"id\":\"chatcmpl-3ab11698-f53d-43e7-9792-43dada2043f2\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1003,\"completion_tokens\":187,\"total_tokens\":1190,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.663448333740234}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:51.150073+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:47 GMT"
+  },
+  "key": "0c2302237379b53cafb14939eaf528c72787f9db0d47548f7fe22feae9d088b1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

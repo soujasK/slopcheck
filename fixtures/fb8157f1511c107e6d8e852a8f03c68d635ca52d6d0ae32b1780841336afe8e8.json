@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a finance‑company promotional site with loan listings, not a genuine guide on downloading a voter ID card.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"how to download voter id card online\\\". The page title: \\\"Voter ID Download Online: How To Download e-EPIC | Bajaj Finance\\\". URL is bajajfinserv.in, a finance company. The main text is a huge list of loan products, not about voter ID. Likely a landing page with affiliate/marketing content, not providing actual instructions. It seems not a genuine answer; it's likely a low-quality page, maybe SEO. So label low.\\n\\nReason: page is primarily about loans, not providing voter ID download instructions; appears promotional.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"how to download voter id card online\\\". The page title: \\\"Voter ID Download Online: How To Download e-EPIC | Bajaj Finance\\\". URL is bajajfinserv.in, a finance company. The main text is a huge list of loan products, not about voter ID. Likely a landing page with affiliate/marketing content, not providing actual instructions. It seems not a genuine answer; it's likely a low-quality page, maybe SEO. So label low.\\n\\nReason: page is primarily about loans, not providing voter ID download instructions; appears promotional.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338270,\"ec_transfer_params\":null,\"id\":\"chatcmpl-4ca7b3dd-3019-4ca9-997d-eb227797c7c3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":917,\"completion_tokens\":174,\"total_tokens\":1091,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.04073715209961}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:55.751621+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:52 GMT"
+  },
+  "key": "fb8157f1511c107e6d8e852a8f03c68d635ca52d6d0ae32b1780841336afe8e8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

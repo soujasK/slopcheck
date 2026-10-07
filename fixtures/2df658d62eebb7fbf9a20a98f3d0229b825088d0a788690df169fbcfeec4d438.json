@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an Avast article with a named author that directly explains how to fix Wi‑Fi connected but no internet.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label for this page as source for query \\\"wifi connected but no internet how to fix\\\". The page is from avast.com, a security company. Title: \\\"How to Fix the 'Wi-Fi Connected But No Internet' Issue\\\". It appears to be an article with author Oliver Buxton, reviewed by Ellie Farrier, published Sep 5 2025. It likely provides troubleshooting steps. This seems to be a genuine answer, with identifiable author and organization (Avast). So label \\\"ok\\\". Reason: article directly addresses issue, has named author and organization.\",\"reasoning_content\":\"We need to decide label for this page as source for query \\\"wifi connected but no internet how to fix\\\". The page is from avast.com, a security company. Title: \\\"How to Fix the 'Wi-Fi Connected But No Internet' Issue\\\". It appears to be an article with author Oliver Buxton, reviewed by Ellie Farrier, published Sep 5 2025. It likely provides troubleshooting steps. This seems to be a genuine answer, with identifiable author and organization (Avast). So label \\\"ok\\\". Reason: article directly addresses issue, has named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338310,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2f3f7b65-783b-4371-b92b-dc699721d267\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":986,\"completion_tokens\":166,\"total_tokens\":1152,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.69072723388672}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:58:35.175265+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:58:31 GMT"
+  },
+  "key": "2df658d62eebb7fbf9a20a98f3d0229b825088d0a788690df169fbcfeec4d438",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

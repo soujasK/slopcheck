@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed, author‑identified guide on using CEIR to block a lost phone, citing official sources.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page appears to be a guide on CEIR mobile block, with detailed steps, author named Sumit Tiwari, reviewed, fact-checked via .gov.in circulars, includes official portal link. It seems to be a genuine informational article, not just affiliate. It has named author and references official sources. So label \\\"ok\\\". Reason: provides detailed answer with identified author and official info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page appears to be a guide on CEIR mobile block, with detailed steps, author named Sumit Tiwari, reviewed, fact-checked via .gov.in circulars, includes official portal link. It seems to be a genuine informational article, not just affiliate. It has named author and references official sources. So label \\\"ok\\\". Reason: provides detailed answer with identified author and official info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338314,\"ec_transfer_params\":null,\"id\":\"chatcmpl-012085de-a54d-42bb-ab39-eac964e704cc\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1028,\"completion_tokens\":151,\"total_tokens\":1179,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.004356384277344}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:58:39.686509+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:58:36 GMT"
+  },
+  "key": "97efebfe8b9499d3adbeac504d4f6e4eaecec69bc454d35a0d2391e8aac568e8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

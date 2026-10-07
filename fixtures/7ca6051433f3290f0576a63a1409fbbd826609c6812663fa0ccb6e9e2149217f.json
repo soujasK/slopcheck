@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a news article with a named author that explains how to update Aadhaar address online.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to change aadhaar address online\\\". The page appears to be a news article from ABP Live (news.abplive.com) about government simplifying Aadhaar address update rule. It likely contains instructions. It has author name (Vinita Bhat) and date. It's a news article, not affiliate. It seems to answer the query. So label \\\"ok\\\". Reason: provides info and has identifiable author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to change aadhaar address online\\\". The page appears to be a news article from ABP Live (news.abplive.com) about government simplifying Aadhaar address update rule. It likely contains instructions. It has author name (Vinita Bhat) and date. It's a news article, not affiliate. It seems to answer the query. So label \\\"ok\\\". Reason: provides info and has identifiable author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338161,\"ec_transfer_params\":null,\"id\":\"chatcmpl-cc8954f5-fe57-445d-8788-402a50b0a5b8\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":729,\"completion_tokens\":142,\"total_tokens\":871,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.87713623046875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:06.363603+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:03 GMT"
+  },
+  "key": "7ca6051433f3290f0576a63a1409fbbd826609c6812663fa0ccb6e9e2149217f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

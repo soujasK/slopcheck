@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Cleveland Clinic article directly answers the question with expert input\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"best time to take vitamin b12 tablets\\\". The page is from health.clevelandclinic.org, which is Cleveland Clinic's health blog. It includes a specific statement: \\\"When is the best time to take vitamin C and vitamin B12? ... Take water-soluble vitamins on an empty stomach with a glass of water... best time to take vitamin B12 is in the morning, so it won’t affect your sleep.\\\" This directly answers the query. The page appears to be authored by Cleveland Clinic, with a named doctor (Rodolf... MD). It's an official medical organization, non-profit. So it's \\\"ok\\\". Provide label ok with reason.\\n\\nCheck for any signs of low: It's not a product roundup, it's a health article. So ok.\\n\\nThus output JSON.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"best time to take vitamin b12 tablets\\\". The page is from health.clevelandclinic.org, which is Cleveland Clinic's health blog. It includes a specific statement: \\\"When is the best time to take vitamin C and vitamin B12? ... Take water-soluble vitamins on an empty stomach with a glass of water... best time to take vitamin B12 is in the morning, so it won’t affect your sleep.\\\" This directly answers the query. The page appears to be authored by Cleveland Clinic, with a named doctor (Rodolf... MD). It's an official medical organization, non-profit. So it's \\\"ok\\\". Provide label ok with reason.\\n\\nCheck for any signs of low: It's not a product roundup, it's a health article. So ok.\\n\\nThus output JSON.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338135,\"ec_transfer_params\":null,\"id\":\"chatcmpl-77aae23b-d11d-4248-9141-616fb31bbf33\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1035,\"completion_tokens\":202,\"total_tokens\":1237,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.70435333251953}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:55:40.479732+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:55:37 GMT"
+  },
+  "key": "0c0fd285e2570e1aa30fca2bb652bc1ef03cecd9c7720073199873e427f5869d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article from a reputable news site provides clear step‑by‑step instructions on using the CEIR portal to block a lost phone.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page is from livemint.com, a reputable news site. It provides steps to block/track device on CEIR portal, includes details. Likely has author? Not shown but likely news article with author. It's not affiliate. So label ok.\\n\\nReason: page directly answers query with steps and is from reputable news source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to block a lost phone using ceir\\\". The page is from livemint.com, a reputable news site. It provides steps to block/track device on CEIR portal, includes details. Likely has author? Not shown but likely news article with author. It's not affiliate. So label ok.\\n\\nReason: page directly answers query with steps and is from reputable news source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338177,\"ec_transfer_params\":null,\"id\":\"chatcmpl-35319c44-3582-4a47-b5e8-42ba8456452e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1040,\"completion_tokens\":140,\"total_tokens\":1180,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.63616943359375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:22.139165+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:18 GMT"
+  },
+  "key": "2b3d1cf31c84b6f90aee69e9619fdda36e39782d032c59cdafc1e1527df8b0b1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

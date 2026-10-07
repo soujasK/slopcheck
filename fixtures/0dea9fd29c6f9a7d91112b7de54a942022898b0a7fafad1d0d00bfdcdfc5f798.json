@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a product catalog for buying trimmers, not a review or guide answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best trimmer for men\\\". The page is an e-commerce collection page on tirabeauty.com listing many trimmers, with filters, prices, etc. It's primarily a product listing for purchase, not a review or guide. The purpose is selling. That is monetised referral. So label low.\\n\\nWe need reason: page is a product listing e‑commerce site, not a review or guide.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best trimmer for men\\\". The page is an e-commerce collection page on tirabeauty.com listing many trimmers, with filters, prices, etc. It's primarily a product listing for purchase, not a review or guide. The purpose is selling. That is monetised referral. So label low.\\n\\nWe need reason: page is a product listing e‑commerce site, not a review or guide.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338214,\"ec_transfer_params\":null,\"id\":\"chatcmpl-12d86398-30cb-4d5b-9c4c-f2334c9c9aac\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1222,\"completion_tokens\":137,\"total_tokens\":1359,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":48.222503662109375}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:58.951195+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:55 GMT"
+  },
+  "key": "0dea9fd29c6f9a7d91112b7de54a942022898b0a7fafad1d0d00bfdcdfc5f798",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

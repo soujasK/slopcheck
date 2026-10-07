@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial product catalog aimed at selling geysers, not a guide or review answering the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best geyser for bathroom\\\". The page is a collection page on Bajaj Electricals website, showing many geysers for home, with filters, etc. It's an e-commerce product listing, likely with affiliate or sales purpose. The query is about best geyser for bathroom; the page is a product catalog, not a review or guide. It is primarily for selling. So likely \\\"low\\\". The page does have brand Bajaj, but it's a commercial listing. The primary purpose is to sell, not to answer the query with recommendations. So label low.\\n\\nReason: page is a product catalog aimed at sales, not a guide.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best geyser for bathroom\\\". The page is a collection page on Bajaj Electricals website, showing many geysers for home, with filters, etc. It's an e-commerce product listing, likely with affiliate or sales purpose. The query is about best geyser for bathroom; the page is a product catalog, not a review or guide. It is primarily for selling. So likely \\\"low\\\". The page does have brand Bajaj, but it's a commercial listing. The primary purpose is to sell, not to answer the query with recommendations. So label low.\\n\\nReason: page is a product catalog aimed at sales, not a guide.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338211,\"ec_transfer_params\":null,\"id\":\"chatcmpl-bb5d8888-74ae-4171-aff1-20dd61a35ccb\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1168,\"completion_tokens\":185,\"total_tokens\":1353,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":49.77705383300781}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:56:57.076555+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:56:53 GMT"
+  },
+  "key": "12559bec1f9c807028105c4a8e084484961cde19c48ba55efee06ce4a650b71d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a peer‑reviewed journal article from the Spanish Pediatric Association discussing paracetamol use in pregnancy, providing expert, sourced information.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page appears to be an article in a peer-reviewed open access journal \\\"Anales de Pediatría\\\". Title: \\\"Consumption of paracetamol during pregnancy\\\". Likely a scientific article discussing safety. This is an official source, with identifiable organization (Spanish Pediatric Association). So it's \\\"ok\\\". The page is likely a research article, not a product affiliate. So label ok.\\n\\nWe need short reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page appears to be an article in a peer-reviewed open access journal \\\"Anales de Pediatría\\\". Title: \\\"Consumption of paracetamol during pregnancy\\\". Likely a scientific article discussing safety. This is an official source, with identifiable organization (Spanish Pediatric Association). So it's \\\"ok\\\". The page is likely a research article, not a product affiliate. So label ok.\\n\\nWe need short reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338113,\"ec_transfer_params\":null,\"id\":\"chatcmpl-a92ed7fa-b163-44e5-b623-ca7d55617738\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":987,\"completion_tokens\":158,\"total_tokens\":1145,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.17708969116211}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:55:18.530459+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:55:15 GMT"
+  },
+  "key": "9f3a221b0f379308d326a94fed872d29a63f32654f45d9be94decc26380ccc57",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a product catalog for selling trimmers, not an editorial answer or review of the best men’s trimmer.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best trimmer for men\\\". The page appears to be an e-commerce product listing for Vega brand trimmers. It's a shopping page with many items, prices, \\\"Add to Cart\\\". No editorial content, no reviews, no comparisons, just product listings. The purpose is selling. This is monetized referral (direct sales). Not a genuine answer. So label low.\\n\\nWe need reason: page is product listing, not providing answer.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best trimmer for men\\\". The page appears to be an e-commerce product listing for Vega brand trimmers. It's a shopping page with many items, prices, \\\"Add to Cart\\\". No editorial content, no reviews, no comparisons, just product listings. The purpose is selling. This is monetized referral (direct sales). Not a genuine answer. So label low.\\n\\nWe need reason: page is product listing, not providing answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338226,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8186a57f-2d22-43d5-8798-726e33362712\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1363,\"completion_tokens\":149,\"total_tokens\":1512,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":53.52701950073242}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:10.994367+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:07 GMT"
+  },
+  "key": "e29e783d3e67c56b41c0c48aa8baab8e7ab8cf568667207107539411218fd66f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

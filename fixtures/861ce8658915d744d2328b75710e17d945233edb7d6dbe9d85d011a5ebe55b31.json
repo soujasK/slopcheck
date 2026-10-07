@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed answer about normal blood pressure ranges by age and gender and is authored by the Lupin Diagnostics organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal bp range by age\\\". The page is a blog post from Lupin Diagnostics, a diagnostic lab in India. It appears to provide information about normal blood pressure range by age and gender, includes author \\\"By Lupin Diagnostics\\\" and date. It seems to be a genuine informational article, not just affiliate. It has a named organization. Likely \\\"ok\\\". Need to consider if it's low: It's a commercial diagnostic lab, but providing health info. Not obviously affiliate product roundup. It seems to answer query. So label ok.\\n\\nReason: provides age-based BP ranges and has identifiable organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"normal bp range by age\\\". The page is a blog post from Lupin Diagnostics, a diagnostic lab in India. It appears to provide information about normal blood pressure range by age and gender, includes author \\\"By Lupin Diagnostics\\\" and date. It seems to be a genuine informational article, not just affiliate. It has a named organization. Likely \\\"ok\\\". Need to consider if it's low: It's a commercial diagnostic lab, but providing health info. Not obviously affiliate product roundup. It seems to answer query. So label ok.\\n\\nReason: provides age-based BP ranges and has identifiable organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338240,\"ec_transfer_params\":null,\"id\":\"chatcmpl-dbcff1ef-3dc0-4b82-a9af-bb976c239f92\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1026,\"completion_tokens\":180,\"total_tokens\":1206,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.917991638183594}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:25.754892+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:22 GMT"
+  },
+  "key": "861ce8658915d744d2328b75710e17d945233edb7d6dbe9d85d011a5ebe55b31",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

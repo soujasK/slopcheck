@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Harvard Health article with a named medical author provides authoritative BP guideline information\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"normal bp range by age\\\". The page is Harvard Health article about new blood pressure guidelines. It likely includes information about normal BP ranges, possibly by age. It is an official reputable source (Harvard Health Publishing). It has author (Howard E. LeWine, MD). So it's \\\"ok\\\". The question: is the page an AI agent should ground an answer on? Yes, it's a reliable source with identifiable author. So label ok.\\n\\nProvide reason: reputable Harvard Health article with author, provides BP guidelines.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"normal bp range by age\\\". The page is Harvard Health article about new blood pressure guidelines. It likely includes information about normal BP ranges, possibly by age. It is an official reputable source (Harvard Health Publishing). It has author (Howard E. LeWine, MD). So it's \\\"ok\\\". The question: is the page an AI agent should ground an answer on? Yes, it's a reliable source with identifiable author. So label ok.\\n\\nProvide reason: reputable Harvard Health article with author, provides BP guidelines.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338231,\"ec_transfer_params\":null,\"id\":\"chatcmpl-865f3fd7-bb2d-4395-9378-981aee3886a8\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":973,\"completion_tokens\":153,\"total_tokens\":1126,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.39072799682617}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:20.371630+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:17 GMT"
+  },
+  "key": "2b4529cebfa68b69895b47ca9beda2b1dbf07a0ef067728ab711c002c2f77e7d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official EMA page directly addresses safety of paracetamol in pregnancy with clear, authoritative information\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page is from European Medicines Agency (EMA), an official regulatory body. It provides official recommendation that paracetamol can be used in pregnancy, no increased risk, etc. It has identifiable organization (EMA). So it's \\\"ok\\\". Provide label ok with reason.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"is it safe to take paracetamol during pregnancy\\\". The page is from European Medicines Agency (EMA), an official regulatory body. It provides official recommendation that paracetamol can be used in pregnancy, no increased risk, etc. It has identifiable organization (EMA). So it's \\\"ok\\\". Provide label ok with reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338244,\"ec_transfer_params\":null,\"id\":\"chatcmpl-2bd837f2-86d1-4f0e-9353-f305fe602fc0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":980,\"completion_tokens\":120,\"total_tokens\":1100,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.36345672607422}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:28.425620+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:25 GMT"
+  },
+  "key": "1f3a8f8410b3a25ec2ad97dd2ef26d7193d2532b0718cd18676969b5c24b8951",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

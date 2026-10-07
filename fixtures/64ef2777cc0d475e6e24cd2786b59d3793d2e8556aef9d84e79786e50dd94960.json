@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on applying for a PAN card online and is published by the identifiable organization Axis Bank.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to apply for pan card online\\\". The page is from Axis Bank blog, titled \\\"How to Apply for a PAN Card Online & Offline | Axis Bank\\\". It appears to be a guide explaining steps, referencing NSDL and UTIITSL, etc. It is a blog post on a bank's website. Likely has author? Not shown in snippet, but could have author name. The page seems to provide genuine instructions, not just affiliate. It's a bank's site, likely trustworthy. So label \\\"ok\\\". Reason: provides direct answer and is from identifiable organization (Axis Bank).\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to apply for pan card online\\\". The page is from Axis Bank blog, titled \\\"How to Apply for a PAN Card Online & Offline | Axis Bank\\\". It appears to be a guide explaining steps, referencing NSDL and UTIITSL, etc. It is a blog post on a bank's website. Likely has author? Not shown in snippet, but could have author name. The page seems to provide genuine instructions, not just affiliate. It's a bank's site, likely trustworthy. So label \\\"ok\\\". Reason: provides direct answer and is from identifiable organization (Axis Bank).\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338249,\"ec_transfer_params\":null,\"id\":\"chatcmpl-683e33ac-1e40-4607-a56f-573a12bc91b0\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":943,\"completion_tokens\":179,\"total_tokens\":1122,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.20891571044922}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:34.430800+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:31 GMT"
+  },
+  "key": "64ef2777cc0d475e6e24cd2786b59d3793d2e8556aef9d84e79786e50dd94960",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

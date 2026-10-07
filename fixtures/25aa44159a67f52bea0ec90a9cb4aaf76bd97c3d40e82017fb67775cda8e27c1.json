@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a brand’s sales page for LG double‑door refrigerators, not an independent review or recommendation.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best double door refrigerator\\\". The page is LG India product listing for double door refrigerators. It's a commercial product page, not a review or comparison. It is primarily for selling LG double door refrigerators, includes marketing copy, FAQs. The query asks for \\\"best double door refrigerator\\\" – likely a consumer looking for recommendations. This page is a vendor product page, not an independent review. According to guidelines, pages whose primary purpose is monetised referral or sales are low, unless they provide genuine answer with testing. This page is a brand's own site, marketing. So label low.\\n\\nReason: page is a commercial product listing, not an objective review.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"best double door refrigerator\\\". The page is LG India product listing for double door refrigerators. It's a commercial product page, not a review or comparison. It is primarily for selling LG double door refrigerators, includes marketing copy, FAQs. The query asks for \\\"best double door refrigerator\\\" – likely a consumer looking for recommendations. This page is a vendor product page, not an independent review. According to guidelines, pages whose primary purpose is monetised referral or sales are low, unless they provide genuine answer with testing. This page is a brand's own site, marketing. So label low.\\n\\nReason: page is a commercial product listing, not an objective review.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338283,\"ec_transfer_params\":null,\"id\":\"chatcmpl-72dfeaf4-85bd-4fab-836c-5e634cca5d0e\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":993,\"completion_tokens\":189,\"total_tokens\":1182,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.481632232666016}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:58:08.301440+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:58:05 GMT"
+  },
+  "key": "25aa44159a67f52bea0ec90a9cb4aaf76bd97c3d40e82017fb67775cda8e27c1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

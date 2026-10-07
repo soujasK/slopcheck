@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed buying guide with a named author and organization, directly addressing how to choose a geyser for home use.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best geyser for bathroom\\\". The page is a buying guide on how to choose the right geyser for home, includes steps, likely includes recommendations. It is from goldmedalindia.com blog, author named Utsavi Tank, date, etc. It seems to be a genuine article, not just affiliate list. It may contain product recommendations later. The primary purpose is to guide selection, not just affiliate. It has identifiable author and organization (Gold Medal India). So label \\\"ok\\\". Reason: article provides buying guide with author and organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best geyser for bathroom\\\". The page is a buying guide on how to choose the right geyser for home, includes steps, likely includes recommendations. It is from goldmedalindia.com blog, author named Utsavi Tank, date, etc. It seems to be a genuine article, not just affiliate list. It may contain product recommendations later. The primary purpose is to guide selection, not just affiliate. It has identifiable author and organization (Gold Medal India). So label \\\"ok\\\". Reason: article provides buying guide with author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338272,\"ec_transfer_params\":null,\"id\":\"chatcmpl-16b21a1f-119f-4b32-bff8-ef4ba67f9219\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":993,\"completion_tokens\":172,\"total_tokens\":1165,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.322540283203125}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:57:57.706663+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:57:54 GMT"
+  },
+  "key": "055c8377b245309780bf7a90b0b6769a50726479eb95f88e5beedcd6f4675586",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

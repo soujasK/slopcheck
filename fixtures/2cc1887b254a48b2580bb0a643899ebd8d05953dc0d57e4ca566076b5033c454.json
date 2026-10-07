@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page gives a clear guide on blocking a lost phone via CEIR and includes a named author and identifiable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Smartprix, a tech site. Title: \\\"Block lost phone: How to block or unblock lost phone using Know Your Mobile App or CEIR website? - Smartprix\\\". Content appears to be an article explaining steps. Author named Shivangi Agarwal, date. So there is identifiable author. The page provides instructions. It's not purely affiliate; Smartprix is a product review site but also publishes guides. This seems to answer query. It has author, organization (Smartprix). So likely \\\"ok\\\". Need to consider if content is thin or scraped? It seems original. So label ok.\\n\\nReason: page provides detailed instructions and has named author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Smartprix, a tech site. Title: \\\"Block lost phone: How to block or unblock lost phone using Know Your Mobile App or CEIR website? - Smartprix\\\". Content appears to be an article explaining steps. Author named Shivangi Agarwal, date. So there is identifiable author. The page provides instructions. It's not purely affiliate; Smartprix is a product review site but also publishes guides. This seems to answer query. It has author, organization (Smartprix). So likely \\\"ok\\\". Need to consider if content is thin or scraped? It seems original. So label ok.\\n\\nReason: page provides detailed instructions and has named author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791338144,\"ec_transfer_params\":null,\"id\":\"chatcmpl-caa502f0-3f5f-41c9-adf6-f6df0a54f982\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1028,\"completion_tokens\":193,\"total_tokens\":1221,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.86799240112305}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-07T01:55:49.401565+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Wed, 07 Oct 2026 01:55:46 GMT"
+  },
+  "key": "2cc1887b254a48b2580bb0a643899ebd8d05953dc0d57e4ca566076b5033c454",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}
