@@ -134,6 +134,15 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   `slopwatch fit --version 4 --holdout round4`, frozen, then tested once on a fresh
   round-4 sample whose URLs appear in no earlier sample.
 
+- 2026-10-07: **round 4 result** (reported after the one-time test, no change to
+  rubric v4): kappa 0.53, 102 agreed items; precision 0.88 [0.53, 0.98], recall
+  0.30, F1 0.45. Gate met; F1-above-every-baseline not met ("no author and no
+  date" F1 0.47). Round 4 is now spent. Reporting change, not a model change: the
+  observatory shows rounds 2 and 3 as measured at the time (recomputing them on
+  round-4 signals would not be the tests that were run), and the prevalence
+  correction now uses round-4 sensitivity and specificity, the test of the
+  current rubric.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

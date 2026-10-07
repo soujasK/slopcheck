@@ -7,26 +7,35 @@ truth = items where both agree on ok or low.
 
 ## Summary
 
-| | Round 1 (300-char excerpt) | Round 2 (2,000 chars of main text) |
-|---|---|---|
-| Labeler agreement (Cohen's kappa) | 0.47 | 0.66 |
-| Agreed items | 141 | 155 (13 items not labeled by B: daily quota) |
+| | Round 1 (300-char excerpt) | Round 2 (2,000 chars of main text) | Round 3 (fresh) | Round 4 (fresh queries) |
+|---|---|---|---|---|
+| Labeler agreement (Cohen's kappa) | 0.47 | 0.66 | 0.42 | 0.53 |
+| Agreed items | 141 | 155 (13 items not labeled by B: daily quota) | 114 of 150 | 102 of 128 |
 
 | Rubric | Development | **Test precision** | **Test recall** | **Test F1** | n |
 |---|---|---|---|---|---|
 | v2 (= v2c), round-2 test | dev F1 0.56 | 0.37 [0.19, 0.59] | 0.35 [0.18, 0.57] | 0.36 | 71 |
-| **v3, round-3 fresh held-out test** | CV precision 0.72, recall 0.33 | **0.57 [0.25, 0.84]** | **0.19 [0.08, 0.40]** | **0.29** | 114 |
+| v3, round-3 fresh held-out test | CV precision 0.72, recall 0.33 | 0.57 [0.25, 0.84] | 0.19 [0.08, 0.40] | 0.29 | 114 |
+| **v4, round-4 fresh held-out test** | CV precision 0.80, recall 0.29 | **0.88 [0.53, 0.98]** | **0.30 [0.16, 0.51]** | **0.45** | 102 |
 
-**Gate (test precision >= 0.70): not met in either round.** Each test split was
-evaluated once and is reported as is.
+**Gate (test precision >= 0.70): met by rubric v4 on round 4** (point estimate
+0.88; the 95% interval is wide, lower bound 0.53, because only 8 pages were
+flagged). Not met by v2 (round 2) or v3 (round 3). Each test set was evaluated
+once and is reported as is.
 
-**Usefulness criterion (pre-registered: test F1 above every baseline):** met by
-rubric v3 on round 3 (F1 0.29 vs best baseline 0.12), not by v2 on round 2 (0.36
-vs 0.40). Rubric v3 is conservative: specificity 0.97 (3 of 93 ok pages flagged),
-recall 0.19 (4 of 21 low pages caught).
+**Usefulness criterion (pre-registered: test F1 above every baseline): not met
+on round 4.** The one-line baseline "no author and no date" scored F1 0.47 vs
+the rubric's 0.45, by flagging far more pages (28 vs 8) at much lower precision
+(0.43 vs 0.88). Rubric v3 met this criterion on round 3 (F1 0.29 vs 0.12); v2 did
+not on round 2. Rubric v4 is conservative: specificity 0.99 (1 of 79 ok pages
+flagged), recall 0.30 (7 of 23 low pages caught).
 
-Round-3 labeler agreement was lower than round 2 (Cohen's kappa 0.42 vs 0.66;
-114 of 150 items agreed).
+Round 4 used 30 new Google India queries, collected separately
+(data_round4/), so its pages and queries share nothing with development data.
+Rounds 2 and 3 are spent and are development data for v4. Signals changed for
+round 4 (pages under 300 characters of main text are not scored; new
+`official_source` signal), so the round-2 and round-3 rows above are the
+results as measured at the time, not recomputed.
 
 ## Round 2 test split (rubric v2, one-time evaluation)
 
@@ -117,3 +126,46 @@ Baselines on the same items:
 - false negative: labeled **low**, scored **ok** (the site sells products on this page (cart, buy button or product markup)) https://www.cruiseac.com/home-air-conditioners/split-inverter-ac/varioqool-3d/cwcvbk-vq3d185/
 - false positive: labeled **ok**, scored **low** (no named author; no author or date; title and headings cover 0% of the query's words; main text covers 0% of the query's words) https://www.kotak811.bank.in/insights/savings/how-much-to-save-for-emergency-fund
 
+## Round 4 fresh held-out test (rubric v4, one-time evaluation)
+
+<!-- rubric v4 (frozen) sha256:87d60918426f; 102 labels -->
+## Split: all (n = 102, unsure excluded)
+
+| Metric (class = low) | Value | 95% CI (Wilson) |
+|---|---|---|
+| Precision | 0.88 | [0.53, 0.98] |
+| Recall | 0.30 | [0.16, 0.51] |
+| F1 | 0.45 | |
+| Specificity | 0.99 | |
+| Share labeled low | 0.23 | |
+
+Confusion matrix (rows = hand label, columns = scored band):
+
+| label \ band | ok | mixed | low |
+|---|---|---|---|
+| ok | 65 | 13 | 1 |
+| low | 8 | 8 | 7 |
+| unsure | 0 | 0 | 0 |
+
+Baselines on the same items:
+
+| Method | Flagged | Precision | Recall | F1 |
+|---|---|---|---|---|
+| **SlopWatch rubric** | 8 | **0.88** | **0.30** | **0.45** |
+| any affiliate link | 6 | 0.50 | 0.13 | 0.21 |
+| no author and no date | 28 | 0.43 | 0.52 | 0.47 |
+| 'best X' listicle | 7 | 0.71 | 0.22 | 0.33 |
+| random (same flag rate) | 8 | 0.23 | 0.08 | 0.12 |
+
+### Largest errors (up to 10)
+
+- false negative: labeled **low**, scored **ok** ('best X' listicle pattern) https://kitchendeals.in/best-mixer-grinder-for-south-indian-cooking
+- false negative: labeled **low**, scored **ok** ('best X' listicle pattern) https://www.herzindagi.com/your-picks/home-solutions-electronics/top-washing-machine-under-30000-powerful-efficient-and-budget-friendly-9305
+- false negative: labeled **low**, scored **ok** (no signals fired) https://www.mymoneymantra.com/fixed-deposits
+- false negative: labeled **low**, scored **ok** (the site sells products on this page (cart, buy button or product markup); thin main text (330 chars); contains affiliate links (2)) https://desiutility.com/appliances/kitchen/mixer-grinder-guide
+- false negative: labeled **low**, scored **ok** (the site sells products on this page (cart, buy button or product markup); 'best X' listicle pattern; no about or contact page linked) https://www.cashify.in/webstories/best-budget-smartwatch-in-india
+- false negative: labeled **low**, scored **ok** (main text covers 0% of the query's words; thin main text (594 chars)) https://www.financialexpress.com/life/technology-aadhaar-card-update-2025-how-to-change-address-in-aadhaar-card-online-check-step-by-step-guide-here-3896139/
+- false negative: labeled **low**, scored **ok** (title and headings cover 33% of the query's words; no about or contact page linked) https://www.scribd.com/document/942106504/How-To-Improve-Your-Haemoglobin-Levels-Naturally-12-New
+- false negative: labeled **low**, scored **ok** (the site sells products on this page (cart, buy button or product markup)) https://ambraneindia.com/collections/power-banks-under-2000?srsltid=AU7gw4Wp3ZkF0nv3MQQB21-aFo5uaX-6wSBANKRnRFvB4TX7tIGieSiL
+- false negative: labeled **low**, scored **mixed** (no named author; no author or date) https://religaredigital.in/apply-new-pan-card/
+- false negative: labeled **low**, scored **mixed** (no named author; no author or date) https://www.shriramfinance.in/fd-schemes/50000-fd-senior-citizens-interest-rate-for-5-year
