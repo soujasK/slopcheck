@@ -214,3 +214,36 @@ def test_live_filter_keeps_longer_agent_text_in_memory_only() -> None:
     assert len(f.excerpts["https://a.example/x"]) <= 300
     assert 300 < len(f.agent_texts["https://a.example/x"]) <= AGENT_TEXT_CHARS
     assert offline_filter().agent_texts == {}  # committed data never carries long text
+
+
+def test_cli_search_spends_from_live_ledger_not_research_cap(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Any
+) -> None:
+    """A full research ledger (cap reached) must not block live questions."""
+    import json as _json
+
+    from typer.testing import CliRunner
+
+    from slopwatch.cli import app
+    from slopwatch.config import PROJECT_CREDIT_CAP
+
+    research = tmp_path / "research.jsonl"
+    research.write_text(_json.dumps({"credits": PROJECT_CREDIT_CAP}) + "\n", encoding="utf-8")
+    live = tmp_path / "live.jsonl"
+    monkeypatch.setenv("SLOPWATCH_LEDGER_PATH", str(research))
+    monkeypatch.setenv("SLOPWATCH_LIVE_LEDGER_PATH", str(live))
+    monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
+
+    def send(self: httpx.Client, request: httpx.Request, **kw: object) -> httpx.Response:
+        if request.url.host == "serpapi.com":
+            return httpx.Response(200, json={"organic_results": [
+                {"position": 1, "title": "Y", "link": "https://www.youtube.com/watch?v=1"},
+            ]}, request=request)  # fmt: skip
+        return httpx.Response(404, request=request)
+
+    monkeypatch.setattr(httpx.Client, "send", send)
+    r = CliRunner().invoke(app, ["search", "any new question at all"], env={"COLUMNS": "200"})
+    assert r.exit_code == 0, r.output
+    assert "credits: 1 spent" in r.output and "live searches so far 1" in r.output
+    assert len(live.read_text(encoding="utf-8").splitlines()) == 1
+    assert len(research.read_text(encoding="utf-8").splitlines()) == 1  # untouched

@@ -145,8 +145,11 @@ SerpApi is the data source and the integration target: 100 searches across
 ([SERPAPI_USAGE.md](SERPAPI_USAGE.md): engines, parameters, credits per stage),
 a live `search` command, and a `SlopWatchClient` that plugs into
 `serpapi-search-tools` so filtering happens inside SerpApi's own agent tools. A
-hard project credit cap (140) is enforced against a committed ledger; 103 were
-spent, including 6 probes (3 on Bing, which returned unusable India results).
+hard research credit cap (140) is enforced against a committed ledger; 133 were
+spent (100 measurement, 30 for the round-4 test, plus probes; 3 on Bing, which
+returned unusable India results). Live questions (`serve`, `search`) use your own
+key and a separate local ledger, so they never count against that cap; `serve`
+allows 50 new searches per session by default (`--max-credits` to change).
 
 ## How it works
 

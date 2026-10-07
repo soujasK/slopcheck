@@ -62,6 +62,7 @@ def _isolate_env(monkeypatch: pytest.MonkeyPatch, tmp_path_factory: pytest.TempP
     monkeypatch.setenv("SLOPWATCH_CACHE_PATH", str(tmp / "cache.sqlite"))
     # The real ledger is committed project state; tests must never append to it.
     monkeypatch.setenv("SLOPWATCH_LEDGER_PATH", str(tmp / "ledger.jsonl"))
+    monkeypatch.setenv("SLOPWATCH_LIVE_LEDGER_PATH", str(tmp / "live_ledger.jsonl"))
     monkeypatch.setenv("SLOPWATCH_FIXTURES_DIR", str(tmp / "fixtures"))
 
 

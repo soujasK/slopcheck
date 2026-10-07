@@ -35,6 +35,11 @@ class CacheMode(StrEnum):
 PROJECT_CREDIT_CAP = 140
 # Per-command default; anything larger must be asked for explicitly (--max-credits).
 DEFAULT_RUN_CREDITS = 10
+# Live use (`serve`, `search`) is anyone asking their own questions with their own key.
+# It is recorded in a separate, git-ignored ledger so it never eats into the research
+# cap above; the real limit is the user's SerpApi plan plus the per-session cap.
+LIVE_CREDIT_CAP = 100_000
+LIVE_SESSION_CREDITS = 50
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -68,6 +73,8 @@ class Settings(BaseSettings):
     fixtures_dir: Path = REPO_ROOT / "fixtures"
     # Append-only, committed record of every credit spent (feeds the project cap).
     ledger_path: Path = REPO_ROOT / "data" / "serpapi_ledger.jsonl"
+    # Live searches (serve / search): local only, not committed, not part of the cap.
+    live_ledger_path: Path = REPO_ROOT / ".slopwatch" / "live_ledger.jsonl"
     data_dir: Path = REPO_ROOT / "data"
 
     max_credits: int = Field(default=DEFAULT_RUN_CREDITS, ge=0)

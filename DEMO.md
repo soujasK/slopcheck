@@ -67,7 +67,8 @@ that its sources do not answer the question: Google's top 5 simply has nothing o
 CIBIL. For the other seven nothing is dropped. All 8 are in DEMO_RESULTS.md; the
 filter's effect is on what the agent reads, shown live next."
 
-Live, for any question (1 credit per new search; cached repeats are free):
+Live, for any question (1 credit of your own SerpApi plan per new search; cached
+repeats are free; 50 per session by default, `--max-credits N` to change):
 
 ```bash
 slopwatch serve          # opens http://127.0.0.1:8765

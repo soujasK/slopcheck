@@ -9,7 +9,7 @@ fetching, scoring, evaluation, reporting and filtering cost no credits.
 |---|---|
 | Hard project cap (constant `PROJECT_CREDIT_CAP` in `slopwatch/config.py`) | **140** |
 | Measurement collection (below) | 100 |
-| Development probes and agent demo | ≤ 40 |
+| Development probes, agent demo and round-4 test queries | ≤ 40 |
 
 Every billed request is appended to [`data/serpapi_ledger.jsonl`](data/serpapi_ledger.jsonl)
 (timestamp, engine, request hash, redacted params, credits). The cap is checked
@@ -18,6 +18,12 @@ and survives a deleted cache. Each command also has a per-run cap (`--max-credit
 default 10) and prints `credits: N spent by this command; project ledger X/140`.
 Cache hits and replays cost nothing. `slopwatch doctor` shows the ledger total and
 the SerpApi account balance (via the free Account API).
+
+**Live use is separate.** `slopwatch serve` and `slopwatch search` answer anyone's
+own questions with their own key. They record spend in a git-ignored
+`.slopwatch/live_ledger.jsonl` and do **not** count against the research cap, so a
+fresh clone can search any question (limited by the user's SerpApi plan and a
+per-session cap: `serve --max-credits`, default 50; `search` spends at most 1).
 
 ## Engines and parameters
 
@@ -95,7 +101,8 @@ key and spends no credits.
 | Probe: DuckDuckGo India (health-03) | 1 |
 | Probe: Yahoo India (health-03) | 1 |
 | Measurement collection (97 searches; 3 probes reused from cache) | 97 |
-| **Total** | **103** of the 140 cap |
+| Round-4 held-out test: 30 fresh Google India queries (`data_round4/`) | 30 |
+| **Total** | **133** of the 140 cap |
 
 The Google, DuckDuckGo and Yahoo probes are jobs in the plan, so the full
 collection reuses them from the cache: it needs 97 more credits, not 100. The 3

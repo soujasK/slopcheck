@@ -276,9 +276,9 @@ tr.gone { display: none; }
 
   function credits(d) {
     if (!d || !d.project_cap) return;
-    $("cr-project").textContent = d.project_spent + " / " + d.project_cap;
-    $("cr-bar").style.width = Math.min(100, d.project_spent / d.project_cap * 100) + "%";
-    $("cr-session").textContent = "this session " + d.session_spent + " / " + d.session_cap;
+    $("cr-project").textContent = d.session_spent + " / " + d.session_cap;
+    $("cr-bar").style.width = Math.min(100, d.session_spent / Math.max(1, d.session_cap) * 100) + "%";
+    $("cr-session").textContent = "this session · repeats are free · " + d.project_spent + " live searches in total";
   }
 
   // ---- live search -------------------------------------------------------------

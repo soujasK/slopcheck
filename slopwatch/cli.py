@@ -26,7 +26,14 @@ from rich.table import Table
 
 from slopwatch import __version__, pipeline
 from slopwatch.cache import Cache
-from slopwatch.config import DEFAULT_RUN_CREDITS, PROJECT_CREDIT_CAP, CacheMode, Settings
+from slopwatch.config import (
+    DEFAULT_RUN_CREDITS,
+    LIVE_CREDIT_CAP,
+    LIVE_SESSION_CREDITS,
+    PROJECT_CREDIT_CAP,
+    CacheMode,
+    Settings,
+)
 from slopwatch.demo import Source as DemoSource
 from slopwatch.demo import ask_agent, run_demo
 from slopwatch.demo import load_questions as load_demo_questions
@@ -122,9 +129,13 @@ def open_cache(settings: Settings, mode: CacheMode) -> Cache:
     return Cache(settings.cache_path, mode=mode, ttl_seconds=settings.cache_ttl_seconds)
 
 
-def credits_line(spent_this_run: int, ledger: ProjectLedger) -> str:
+def credits_line(spent_this_run: int, ledger: ProjectLedger, *, live: bool = False) -> str:
     try:
-        total = f"project ledger {ledger.spent}/{ledger.cap} ({ledger.remaining} left)"
+        total = (
+            f"live searches so far {ledger.spent} (separate from the research ledger)"
+            if live
+            else f"project ledger {ledger.spent}/{ledger.cap} ({ledger.remaining} left)"
+        )
     except ValueError:
         total = f"project ledger {ledger.path} is UNREADABLE"
     return f"credits: {spent_this_run} spent by this command; {total}"
@@ -812,7 +823,7 @@ def search(
         err_console.print("search: --engine google|duckduckgo|yahoo, --locale IN|US")
         raise typer.Exit(EXIT_USAGE)
     settings, mode = _settings_and_mode(cache_mode)
-    ledger = ProjectLedger(settings.ledger_path)
+    ledger = ProjectLedger(settings.live_ledger_path, cap=LIVE_CREDIT_CAP)
     with (
         open_cache(settings, mode) as cache,
         HttpClient(
@@ -827,7 +838,7 @@ def search(
             page = serp.search(engine, serp_params(engine, locale, query))  # type: ignore[arg-type]
         except SerpError as exc:
             err_console.print(f"search: {exc}")
-            console.print(credits_line(serp.ledger.spent, ledger))
+            console.print(credits_line(serp.ledger.spent, ledger, live=True))
             raise typer.Exit(EXIT_CREDIT_CAP) from None
         f = SlopFilter.live(PageFetcher(http, max_bytes=settings.page_max_bytes))
         results = [{"position": r.rank, "title": r.title, "link": r.url} for r in page.organic]
@@ -846,7 +857,7 @@ def search(
         table.add_row(str(r["position"]), risk, str(s["band"] or "-"), r["link"], why)
     console.print(table)
     console.print(f"kept {len(kept)} of {len(results)}")
-    console.print(credits_line(serp.ledger.spent, ledger))
+    console.print(credits_line(serp.ledger.spent, ledger, live=True))
 
 
 @app.command()
@@ -854,7 +865,7 @@ def serve(
     port: Annotated[int, typer.Option("--port", min=1, max=65535)] = 8765,
     max_credits: Annotated[
         int, typer.Option("--max-credits", min=0, help="SerpApi credits this session may use.")
-    ] = DEFAULT_RUN_CREDITS,
+    ] = LIVE_SESSION_CREDITS,
     open_browser: Annotated[bool, typer.Option("--open/--no-open")] = True,
 ) -> None:
     """Local web app: search anything, watch the filter remove slop (127.0.0.1 only)."""
@@ -864,7 +875,7 @@ def serve(
     if settings.serpapi_api_key is None:
         err_console.print("serve: SERPAPI_API_KEY is not set (put it in the environment or .env)")
         raise typer.Exit(EXIT_USAGE)
-    ledger = ProjectLedger(settings.ledger_path)
+    ledger = ProjectLedger(settings.live_ledger_path, cap=LIVE_CREDIT_CAP)
     cache = Cache(
         settings.cache_path,
         mode=CacheMode.LIVE,
@@ -896,7 +907,7 @@ def serve(
     server = make_server(App(serp, live, agent, overview), port)
     url = f"http://127.0.0.1:{port}/"
     console.print(f"SlopWatch Live at {url}  (Ctrl+C to stop; up to {max_credits} credits)")
-    console.print(credits_line(0, ledger))
+    console.print(credits_line(0, ledger, live=True))
     if open_browser:
         import webbrowser
 
