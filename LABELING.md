@@ -117,6 +117,13 @@ drawn with seed 2027 from scored, non-platform results. Same labelers, models,
 guide and protocol as round 2. Used once, as the test for the model developed
 on the 155 round-2 items. Files: `labels/round3/`.
 
+## Round 5 (declared 2026-10-07, before any round-5 search or label)
+
+Out-of-domain check of frozen rubric v4 on government services, scams and
+safety, legal rights, and education and exams (ANALYSIS_PLAN.md). The labeler
+guide above is used verbatim, unchanged; same two labelers and models, same
+2,000 characters of main text. Labels go to labels/round5/.
+
 ## Process rules
 
 - The 200-item sample is drawn with a fixed seed (`slopwatch label --n 200 --seed 7`)

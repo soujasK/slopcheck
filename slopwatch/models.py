@@ -12,7 +12,17 @@ EXCERPT_MAX_CHARS = 300
 # bing is kept for the recorded probes; SerpApi Bing returned unusable India results.
 Engine = Literal["google", "bing", "duckduckgo", "yahoo"]
 Locale = Literal["IN", "US"]
-Category = Literal["health", "personal_finance", "product_reviews", "tech_howto"]
+# The last four were added for the round-5 out-of-domain test (data_round5/ only).
+Category = Literal[
+    "health",
+    "personal_finance",
+    "product_reviews",
+    "tech_howto",
+    "government_services",
+    "scams_safety",
+    "legal_rights",
+    "education_exams",
+]
 Band = Literal["ok", "mixed", "low"]
 LabelValue = Literal["ok", "low", "unsure"]
 # Why a SERP row has no signals. Unscored rows are reported, never guessed.

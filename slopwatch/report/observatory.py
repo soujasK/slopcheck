@@ -30,6 +30,10 @@ CATEGORY_NAMES = {
     "personal_finance": "Personal finance",
     "product_reviews": "Product reviews",
     "tech_howto": "Tech how-to",
+    "government_services": "Government services",
+    "scams_safety": "Scams and safety",
+    "legal_rights": "Legal rights",
+    "education_exams": "Education and exams",
 }
 
 

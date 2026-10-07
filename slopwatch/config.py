@@ -32,7 +32,7 @@ class CacheMode(StrEnum):
 
 # Hard ceiling on SerpApi credits this project may ever spend, counted from the
 # committed ledger. Not configurable: raising it means editing code in review.
-PROJECT_CREDIT_CAP = 140
+PROJECT_CREDIT_CAP = 180  # 140 until 2026-10-07; raised by the author for the round-5 test (32)
 # Per-command default; anything larger must be asked for explicitly (--max-credits).
 DEFAULT_RUN_CREDITS = 10
 # Live use (`serve`, `search`) is anyone asking their own questions with their own key.

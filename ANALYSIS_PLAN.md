@@ -143,6 +143,22 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   correction now uses round-4 sensitivity and specificity, the test of the
   current rubric.
 
+- 2026-10-07: **round 5, out-of-domain check** (declared before any round-5
+  search). Question: does the frozen rubric v4 transfer to four topics it was
+  never fitted or tested on: government services, scams and safety, legal
+  rights, education and exams (8 Google India queries each, frozen in
+  data_round5/queries.yaml; 32 credits; project cap raised from 140 to 180 by
+  the author for this). **Nothing is tuned:** rubric v4, its signals, weights,
+  threshold and domain lists are unchanged; data_round5/rubric.yaml is a copy of
+  v4. Same labelers, guide (verbatim) and 2,000-char protocol as round 4. Label
+  sample: 100 readable results, seed 2029, URLs in no earlier sample
+  (`SLOPWATCH_DATA_DIR=data_round5 SLOPWATCH_LABEL_SET=round5 slopwatch label
+  --n 100 --seed 2029`). Reported once, whatever the result: precision, recall,
+  F1, specificity with Wilson intervals; the same baselines; per-topic counts
+  (descriptive only, too small to test). Same gate (precision >= 0.70). A failure
+  means "not validated outside the original four topics" and is reported as such;
+  round 5 is not used to refit anything before the deadline.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

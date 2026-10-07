@@ -1,0 +1,52 @@
+# Round 5 out-of-domain test queries (one-time check of frozen rubric v4 on topics
+# it was never fitted or tested on). Frozen and committed BEFORE any search.
+# Google India only, 32 credits. Kept apart from data/ and data_round4/.
+# "how to apply for passport online in india" was searched live on 2026-10-07
+# before this round was declared and is deliberately excluded.
+
+version: 1
+status: frozen
+
+subset:
+  seed: 2029
+  per_category: 0
+  ids: []
+
+plan:
+  - locale: IN
+    engines: [google]
+    queries: all       # 32 credits
+
+queries:
+  - {id: r5-gov-01, category: government_services, text: "how to apply for new ration card online", locale_neutral: false}
+  - {id: r5-gov-02, category: government_services, text: "pm kisan beneficiary status check", locale_neutral: false}
+  - {id: r5-gov-03, category: government_services, text: "how to renew driving licence online", locale_neutral: false}
+  - {id: r5-gov-04, category: government_services, text: "national scholarship portal registration process", locale_neutral: false}
+  - {id: r5-gov-05, category: government_services, text: "how to apply for income certificate online", locale_neutral: false}
+  - {id: r5-gov-06, category: government_services, text: "how to change name in voter id card", locale_neutral: false}
+  - {id: r5-gov-07, category: government_services, text: "ayushman bharat card eligibility check", locale_neutral: false}
+  - {id: r5-gov-08, category: government_services, text: "how to get birth certificate online", locale_neutral: false}
+  - {id: r5-scam-01, category: scams_safety, text: "how to check if a loan app is rbi registered", locale_neutral: false}
+  - {id: r5-scam-02, category: scams_safety, text: "work from home job real or fake how to check", locale_neutral: false}
+  - {id: r5-scam-03, category: scams_safety, text: "kyc update sms scam what to do", locale_neutral: false}
+  - {id: r5-scam-04, category: scams_safety, text: "how to report cyber fraud in india", locale_neutral: false}
+  - {id: r5-scam-05, category: scams_safety, text: "is it safe to share otp with bank customer care", locale_neutral: false}
+  - {id: r5-scam-06, category: scams_safety, text: "how to identify fake upi payment screenshot", locale_neutral: false}
+  - {id: r5-scam-07, category: scams_safety, text: "telegram part time job task scam", locale_neutral: false}
+  - {id: r5-scam-08, category: scams_safety, text: "how to get money back after online fraud", locale_neutral: false}
+  - {id: r5-legal-01, category: legal_rights, text: "landlord not returning security deposit what to do", locale_neutral: false}
+  - {id: r5-legal-02, category: legal_rights, text: "how to file consumer complaint online", locale_neutral: false}
+  - {id: r5-legal-03, category: legal_rights, text: "how to file an fir online", locale_neutral: false}
+  - {id: r5-legal-04, category: legal_rights, text: "what to do if police refuse to register fir", locale_neutral: false}
+  - {id: r5-legal-05, category: legal_rights, text: "legal notice to employer for unpaid salary", locale_neutral: false}
+  - {id: r5-legal-06, category: legal_rights, text: "daughter rights in father property after marriage", locale_neutral: false}
+  - {id: r5-legal-07, category: legal_rights, text: "how to file rti application online", locale_neutral: false}
+  - {id: r5-legal-08, category: legal_rights, text: "how to get free legal aid in india", locale_neutral: false}
+  - {id: r5-edu-01, category: education_exams, text: "neet cutoff for government mbbs seat", locale_neutral: false}
+  - {id: r5-edu-02, category: education_exams, text: "jee main percentile vs rank", locale_neutral: false}
+  - {id: r5-edu-03, category: education_exams, text: "cuet ug syllabus", locale_neutral: false}
+  - {id: r5-edu-04, category: education_exams, text: "best courses after 12th science without neet", locale_neutral: false}
+  - {id: r5-edu-05, category: education_exams, text: "upsc prelims eligibility age limit", locale_neutral: false}
+  - {id: r5-edu-06, category: education_exams, text: "nirf ranking engineering colleges", locale_neutral: false}
+  - {id: r5-edu-07, category: education_exams, text: "scholarships for indian students to study abroad", locale_neutral: false}
+  - {id: r5-edu-08, category: education_exams, text: "is it worth taking a drop year for jee", locale_neutral: false}

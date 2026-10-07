@@ -223,7 +223,7 @@ def test_collect_then_replay_offline_is_identical(
     monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
     live = invoke("collect", "--max-credits", "100", "--yes")
     assert live.exit_code == 0, live.output
-    assert "credits: 100 spent by this command; project ledger 100/140 (40 left)" in live.output
+    assert "credits: 100 spent by this command; project ledger 100/180 (80 left)" in live.output
     serps = (data_dir / "serps.jsonl").read_bytes()
     rows = read_jsonl(data_dir / "serps.jsonl", SerpRow)
     assert len(rows) == 1000 and {r.rank for r in rows} == set(range(1, 11))
@@ -240,7 +240,7 @@ def test_collect_then_replay_offline_is_identical(
     replay = invoke("collect", "--cache-mode", "replay")
     assert replay.exit_code == 0, replay.output
     assert "100 cached, 0 would spend" in replay.output
-    assert "credits: 0 spent by this command; project ledger 100/140" in replay.output
+    assert "credits: 0 spent by this command; project ledger 100/180" in replay.output
     assert web.requests == []
     assert (data_dir / "serps.jsonl").read_bytes() == serps
 
@@ -249,13 +249,13 @@ def test_collect_stops_at_cap_with_exit_3(
     data_dir: Path, web: Recorder, monkeypatch: pytest.MonkeyPatch, tmp_path: Path
 ) -> None:
     monkeypatch.setenv("SERPAPI_API_KEY", "test-key-not-real")
-    # 75 credits already used: the project cap allows only 65 more
+    # 115 credits already used: the project cap allows only 65 more
     (tmp_path / "ledger.jsonl").write_text(
-        "".join(json.dumps({"credits": 1}) + "\n" for _ in range(75)), encoding="utf-8"
+        "".join(json.dumps({"credits": 1}) + "\n" for _ in range(115)), encoding="utf-8"
     )
     result = invoke("collect", "--max-credits", "100", "--yes")
     assert result.exit_code == 3
-    assert "project SerpApi cap reached: 140/140" in result.output
+    assert "project SerpApi cap reached: 180/180" in result.output
     assert len(read_jsonl(data_dir / "serps.jsonl", SerpRow)) == 650
 
 
@@ -297,7 +297,7 @@ def test_collect_single_job_probe(
     result = invoke("collect", "--job", "health-01/google/IN")
     assert result.exit_code == 0, result.output
     assert "1 searches in plan; 0 cached, 1 would spend" in result.output
-    assert "credits: 1 spent by this command; project ledger 1/140" in result.output
+    assert "credits: 1 spent by this command; project ledger 1/180" in result.output
     rows = read_jsonl(data_dir / "serps.jsonl", SerpRow)
     assert {r.query_id for r in rows} == {"health-01"} and len(rows) == 10
 

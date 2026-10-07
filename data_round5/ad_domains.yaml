@@ -1,0 +1,86 @@
+# Ad-serving, header-bidding and third-party tracking domains. Matched by host
+# suffix against <script src> and <iframe src>, and as plain substrings of inline
+# scripts (e.g. "googlesyndication.com" inside an inline loader). The signal counts
+# DISTINCT domains from this list referenced in the page's static HTML, so a site
+# that loads 20 bidder scripts from one exchange counts once.
+# Scripts injected later by JavaScript are not seen (limitation).
+
+ads:
+  - doubleclick.net
+  - googlesyndication.com
+  - googleadservices.com
+  - googletagservices.com
+  - adservice.google.com
+  - amazon-adsystem.com
+  - adnxs.com
+  - criteo.com
+  - criteo.net
+  - taboola.com
+  - outbrain.com
+  - mgid.com
+  - pubmatic.com
+  - rubiconproject.com
+  - openx.net
+  - casalemedia.com
+  - indexww.com
+  - adsrvr.org
+  - media.net
+  - moatads.com
+  - yieldmo.com
+  - sharethrough.com
+  - teads.tv
+  - smartadserver.com
+  - 33across.com
+  - adform.net
+  - bidswitch.net
+  - lijit.com
+  - sovrn.com
+  - gumgum.com
+  - triplelift.com
+  - districtm.io
+  - onetag-sys.com
+  - clmbtech.com          # Colombia (Times Internet)
+  - vdo.ai
+  - izooto.com            # push-notification ads
+  - ezojs.com             # Ezoic
+  - ezoic.net
+  - mediavine.com
+  - adthrive.com          # Raptive
+  - freestar.com
+  - pub.network
+  - playwire.com
+  - primis.tech
+  - connatix.com
+  - adpushup.com
+  - growthrx.in
+  - zedo.com
+  - infolinks.com
+  - propellerads.com
+  - popads.net
+  - adsterra.com
+
+trackers:
+  - google-analytics.com
+  - googletagmanager.com
+  - connect.facebook.net
+  - scorecardresearch.com
+  - quantserve.com
+  - hotjar.com
+  - clarity.ms
+  - chartbeat.com
+  - parsely.com
+  - newrelic.com
+  - nr-data.net
+  - segment.com
+  - mixpanel.com
+  - snap.licdn.com
+  - ads-twitter.com
+  - analytics.tiktok.com
+  - bat.bing.com
+  - permutive.com
+  - lotame.com
+  - crwdcntrl.net
+  - bluekai.com
+  - demdex.net
+  - everesttech.net
+  - omtrdc.net

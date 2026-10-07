@@ -17,10 +17,10 @@ def test_doctor_offline_without_key(tmp_path: Path) -> None:
     result = runner.invoke(app, ["doctor", "--offline"], env={"COLUMNS": "200"})
     assert result.exit_code == 0, result.output
     out = result.output
-    assert "0/140 spent" in out
+    assert "0/180 spent" in out
     assert "frozen: 40 queries, 100 searches" in out
     assert "not set" in out
-    assert "credits: 0 spent by this command; project ledger 0/140 (140 left)" in out
+    assert "credits: 0 spent by this command; project ledger 0/180 (180 left)" in out
 
 
 def test_doctor_replay_mode_reads_fixtures(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -85,7 +85,7 @@ def test_doctor_reports_bad_inputs(tmp_path: Path, monkeypatch: pytest.MonkeyPat
 def test_doctor_warns_when_budget_short(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     ledger = tmp_path / "ledger.jsonl"
     ledger.write_text(
-        "".join(json.dumps({"credits": 1}) + "\n" for _ in range(120)), encoding="utf-8"
+        "".join(json.dumps({"credits": 1}) + "\n" for _ in range(160)), encoding="utf-8"
     )
     monkeypatch.setenv("SLOPWATCH_LEDGER_PATH", str(ledger))
     result = runner.invoke(app, ["doctor", "--offline"], env={"COLUMNS": "200"})

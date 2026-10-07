@@ -7,7 +7,7 @@ fetching, scoring, evaluation, reporting and filtering cost no credits.
 
 | | Credits |
 |---|---|
-| Hard project cap (constant `PROJECT_CREDIT_CAP` in `slopwatch/config.py`) | **140** |
+| Hard project cap (constant `PROJECT_CREDIT_CAP` in `slopwatch/config.py`; 140 until the round-5 test was declared) | **180** |
 | Measurement collection (below) | 100 |
 | Development probes, agent demo and round-4 test queries | ≤ 40 |
 
@@ -15,7 +15,7 @@ Every billed request is appended to [`data/serpapi_ledger.jsonl`](data/serpapi_l
 (timestamp, engine, request hash, redacted params, credits). The cap is checked
 against this committed ledger **before** each network call, so it holds across runs
 and survives a deleted cache. Each command also has a per-run cap (`--max-credits`,
-default 10) and prints `credits: N spent by this command; project ledger X/140`.
+default 10) and prints `credits: N spent by this command; project ledger X/180`.
 Cache hits and replays cost nothing. `slopwatch doctor` shows the ledger total and
 the SerpApi account balance (via the free Account API).
 

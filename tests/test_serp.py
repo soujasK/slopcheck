@@ -171,9 +171,9 @@ def test_project_cap_is_hard_across_runs(tmp_path: Path) -> None:
     assert ProjectLedger(path).spent == 3
 
 
-def test_default_project_cap_is_140(tmp_path: Path) -> None:
+def test_default_project_cap_is_180(tmp_path: Path) -> None:
     ledger = ProjectLedger(tmp_path / "l.jsonl")
-    assert ledger.cap == 140 and ledger.spent == 0 and ledger.remaining == 140
+    assert ledger.cap == 180 and ledger.spent == 0 and ledger.remaining == 180
 
 
 def test_missing_key_only_matters_on_cache_miss(ledger: ProjectLedger) -> None:
