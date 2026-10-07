@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is an informational guide by a recognized financial institution (Aviva Life Insurance) directly detailing the deductions and investments eligible under Section 80C.\\\"\\n}\",\n            \"thoughtSignature\": \"EvgCCvUCAWkUfRO4BgzKn7k59SA+keovJoTNiccQcpf3mnI8DX7SR8X3ovxQ4xmpVTqjtQ/cdw/C3FcfjakX7IOFTaKdSFfw20/wUQyaM2Y+HRMxKWHvr48r7HqDvOIkZFU5seaY8bwCPZ28Jn4BXqiKCbrfp5Gbtcx3oM+GT6gGw+kg4gQnr++Zyj90UDKdl3IXdTW8jy7H8lrE57QGDzziXpC+N+HWFR6krweWs62bV8vADf1Ox631adQXk+qzbuSZr05m233bfqrbwd/xW48gBwqBz+tglZuf4De9IVMeCdSNFOW+BxtIilp7dS30EN2CPj+9pKRl3zXNWtltMGDjlltr6cvrxy3TluMuovtcrHNGshvERl8emnLZauMXOkx4hHByWDmjV8oniZobGYSsWyBIKfh2GNjw78+8uEkP3x89NNPjdyVZfANPTmTz9PZug6JFXhDLqKDrHkTThf6soNN5Z+Bq16UXP4cgtyedmuLcbN3gAwQG5w==\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 996,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1099,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 996\n      }\n    ],\n    \"thoughtsTokenCount\": 55,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"responseId\": \"pSXGaq2-J5j5juMPzcnFwQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T10:57:48.353064+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 10:57:44 GMT"
+  },
+  "key": "bfd2b123220df32e2e735b7dc7b73c2f0c7523819ea72c766217626a77abdfc7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent"
+}

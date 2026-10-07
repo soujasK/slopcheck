@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an established ticketing service that clearly explains and provides a tool to check IRCTC PNR status.\\\"}\",\n            \"thoughtSignature\": \"ErgDCrUDAWkUfROoPplUICgS2mE4/0Xhh4eb/67wCXdhcE2V4LEQ2434ebHIOztpn1bCjdsreVPfotbEJ15JzUqEmCY1DxOrjnEL1sQhhljY8R+8bUD8YL7bnQ5gGHP4Z9zinSZB0gIt4RW5leS4NO6hs0NmLtHIvkICXxZcB8iSrFwoJglP/pzncOQtar6TxApTiGem+2x4jAQ5LjuIx8pIdtm5j/a5vzJkIhDA3r5bHXk0x50+p1i2fAYI5wDkTyfiNw+cn7n2h3RjV97gHZHk0IR0RU8vNangidbgatN529vMZ6vuMU8geC5Pf2j7n/kcocFxhG/tDUBfj+stPd5HNDKHvQOgAOJaor2iYjafJzvLshRNkHpvcnrbXQajZPxv1OMeokmL0RPDwFcoUHQwMmgWe9mq46cNyQGDc029VqJ7CXQWqcF9OlRPhokyN4pYzWzp55DB50Un+3bKhbBVGESlR0jSsYkADJTwpVKeM3jF/fuo/iCF3R1svIp+qGKDRY1Yugs+K1ZcfGt/BtkYD6XiFcrKWMFgleWYzfj183ELS0LtydrkObwoF0bQ3MN8Xs5gK+3QRMc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 974,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1078,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 974\n      }\n    ],\n    \"thoughtsTokenCount\": 70,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"responseId\": \"qSXGaoH2GvGqjuMPyIeOqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T10:57:52.148193+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 10:57:48 GMT"
+  },
+  "key": "2b87eaca2eac066062df76443e6bbd6c1a787a59e7bfdf8bb877e64a4092d9a2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent"
+}

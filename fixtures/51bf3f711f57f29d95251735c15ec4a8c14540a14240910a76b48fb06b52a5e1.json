@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is from an authorized IRCTC partner that provides clear, step-by-step instructions on checking train PNR status.\\\"\\n}\",\n            \"thoughtSignature\": \"EvsCCvgCAWkUfRMVB/Eg8IaBCQW7ufZRgzzViy9qcI4BVpz5hXMYjB+flP+ROR6IR2nNCGfPS3vrd2+hoLV/F9VfRSIVmlxkiMRJYoWS3rNP0wG98cmhzCtFKqa43MFDUrsEjxqDjwNeIp+0ybDCaU9Ab8fmPq4ohUfdbn2iJCC7KZWbK9hZFAFFGbTxf465gppzqNV7V3qHeF7A+NlbvqUWAu217Z/owxhtRt9Geu56cgAxg1z/taikRTIBMLth1FB+o6TvpBEuIvrHmwwA81EmWebfvpxXlqq2Gc5avsS9bTFCuWpQVCEffAlkVOrTAUeR4Y/zNfp5aM2juXhr8JVTPoF0Cr8jwCfPf+y9RflWWaeh8KfJdmTd2b2a689ElNYKMy/RZiAyQ85qjGZOGwOOyM+RUlbS1PrVE/qU3vqEuA3vNrmzMIjx0eB6Fmu1jSqKd/VbJYonP/J/jlMbDlUGdiDl+H3GjjfDylV8VjhgJHyOXKA87vRr2nLYiQ==\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 976,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1086,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 976\n      }\n    ],\n    \"thoughtsTokenCount\": 67,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"responseId\": \"vyXGaqSXMdLL4-EPz6f4mAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T10:58:18.364797+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 10:58:15 GMT"
+  },
+  "key": "51bf3f711f57f29d95251735c15ec4a8c14540a14240910a76b48fb06b52a5e1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent"
+}

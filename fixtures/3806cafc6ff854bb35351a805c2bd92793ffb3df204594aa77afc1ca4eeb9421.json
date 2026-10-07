@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is an unverified parenting blog offering pediatric medical and health advice without medical authority, credentials, or citations.\\\"\\n}\",\n            \"thoughtSignature\": \"EusHCugHAWkUfRNTT2ogb/56bTvxFYozHsA12vQPrRTaVjI2vQXDkfEVvgP8XtyAEmWBLS/a0Cy9Ff9yRwzTyNqJxTzbxa9Sf8syA+yTafdcRnxesjPpMHvH2oYVL4G4ydiANSkfqdaISphYuT3q1SbRMIW/R/KX3WZY9AcmI1opjgMsg1Vvbm2jcw+DRDs5TX7bDyDfga8cI2paMxVr3lY6LN2hVwuXsWzqcT/siGudFPg+lHZ1DSROHYeWt8QME5H0ZnRvx5/pHkn9HWnsyGPz4JWdELJZkvISf8rrsN5/oJQd5Td1dvcEGFpsWgLZYr6DcVUWd6pdbp3KKSrD2f/8+VqJjTVJ82XpjhenMgexKiYppQfMfGQmwTMm5M90shKrvY3X1O9fT0xYFNfuJBoPGqD3ixXAmSY99YA528z8Cqifo41yJgZBH4+ykwXH1csm6vDugqeqQ5yhqr5Ua4ZKCVJoBbDf25WeiN0Nazu2HBtDxbXxhLKSIrIToX3PZbArMoOehD0yoO+VpP8AeiP9ELTNGnZS43MhPZJ06Kz1QnVEP9uzc8/ZNTtJiy9HduKnFY3ENDidXK0qR8cN48nlCz1wKWmYLq7Xpp5ENEAKwVzFSoeYHwzKPdBJAXxoc2Dp5pxtguXND9hKEInq2AvQCzZ59RGbbjdJUdA97a/P66AXA6kZelKyAp1LnmdXsJ1wVwEB5w8u5EZCRreKhUF3aFJmSXmwBJTQBw7IUJ7HOqMnAX3uunJdZM/v3F/tHNn9McXdwN0RiJ6qVhxr26fy1Jy45qnomkEH/CKdiP01tVaRB3lPc168J1+P9GPV/biMuQRy9JF0GjV2wcyK9poahuwzRJKwuI4yzGZDl3Tje4f1G5SJXmAg3XwEj6NqgbkSastq9xB2aj4UtZel5zh9J74qklmcajFoSVtMrG3B637V31KJNRpl8cvh8Yn8/8EgpAoty2do7gCatok51EbAqvBB1q0BGnrw3j15rw8dQWGjipeJwWp9vCiHBG3UHd0Ol52J4iyVFbuh799Rrc+3pthbMso5JrqTSIQ44M+IuqPA6Z7uyaP360HSu9cePASeiN9rNSSd5fpiv5uFY1jkNFJGauNTFuGNGdgMf4GseBT7kMDh8KoL9sYp7T28gngafoiqQoeu6UAPpeZLpO+fCJM33TiULs19yHUhE9L1THu8Qhkf3air2kiiuP0Kkn5ZqlBHokHcNoo/cxJ9PTXn0E3BU/zBJq7UZahaDfpn1Ghdi9Pf6f5hOuUoSJAo3VRA6Ikyaot5lc5Qu39NLUcdHYwkJ/hzIX+z9S2F/UeiHYcno/A3mAOwKI5Vcw==\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1007,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1225,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1007\n      }\n    ],\n    \"thoughtsTokenCount\": 179,\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"responseId\": \"cCXGaqC1G5TTg8UP7syo0A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T10:56:55.304645+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 10:56:52 GMT"
+  },
+  "key": "3806cafc6ff854bb35351a805c2bd92793ffb3df204594aa77afc1ca4eeb9421",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent"
+}
