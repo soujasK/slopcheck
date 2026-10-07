@@ -668,8 +668,11 @@ def llm_label_cmd(
         err_console.print("llm-label: --labeler must be a, b or c")
         raise typer.Exit(EXIT_USAGE)
     settings, mode = _settings_and_mode(cache_mode)
-    if labeler == "c" and settings.gemini_paid_api_key is None and mode is not CacheMode.REPLAY:
-        err_console.print("llm-label: judge C needs GEMINI_PAID_API_KEY (environment or .env)")
+    # Judge C uses GEMINI_PAID_API_KEY if set, else GEMINI_API_KEY (fine once that
+    # key's project has billing; a free-tier key stops at its daily quota).
+    c_key = settings.gemini_paid_api_key or settings.gemini_api_key
+    if labeler == "c" and c_key is None and mode is not CacheMode.REPLAY:
+        err_console.print("llm-label: judge C needs GEMINI_PAID_API_KEY or GEMINI_API_KEY")
         raise typer.Exit(EXIT_USAGE)
     items = load_sample(_labels_dir() / SAMPLE)
     if not items:
@@ -717,7 +720,7 @@ def llm_label_cmd(
         elif labeler == "c":
             backend = GeminiBackend(
                 http,
-                settings.gemini_paid_api_key,
+                c_key,
                 model=model or JUDGE_C_MODEL,
                 min_interval=min_interval,
             )

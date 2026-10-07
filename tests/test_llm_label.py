@@ -462,7 +462,8 @@ def test_cli_judge_c_requires_paid_key(monkeypatch: pytest.MonkeyPatch, tmp_path
     from slopwatch.cli import app
 
     monkeypatch.delenv("GEMINI_PAID_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     r = CliRunner().invoke(app, ["llm-label", "--labeler", "c", "--cache-mode", "live"])
-    assert r.exit_code == 2 and "GEMINI_PAID_API_KEY" in r.output
+    assert r.exit_code == 2 and "GEMINI_PAID_API_KEY or GEMINI_API_KEY" in r.output
     bad = CliRunner().invoke(app, ["llm-label", "--labeler", "z"])
     assert bad.exit_code == 2

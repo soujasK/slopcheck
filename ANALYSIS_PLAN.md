@@ -169,6 +169,11 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   evaluate --labels-from c`). C's labels never replace the primary ground truth,
   are never used to fit or change anything, and the primary results stay as
   reported. Every C result is reported, including any that look worse.
+  *Amended the same day, before any C label:* judge C is `gemini-3.7-flash`,
+  because `gemini-3.8-flash` did not answer a one-word prompt within 120 s on
+  this key (3.7-flash: 7 s). It is still a full Flash model, a tier above
+  labeler A's Flash-Lite. Judge C uses GEMINI_API_KEY unless GEMINI_PAID_API_KEY
+  is set.
 
 ## 5. What will not be claimed
 

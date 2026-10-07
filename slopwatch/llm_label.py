@@ -45,10 +45,12 @@ MAX_ATTEMPTS = 3
 # (GenerateRequestsPerDayPerProjectPerModel-FreeTier), too few for 200 items by
 # the deadline; labeler A uses the newest Flash-Lite model instead (2026-10-03).
 GEMINI_MODEL = "gemini-3.5-flash-lite"
-# Audit judge C (declared 2026-10-07): the originally planned stronger model, on a
-# paid key. Its labels never define ground truth and are never used for fitting;
-# they only check the A+B labels and the rubric against a stronger reference.
-JUDGE_C_MODEL = "gemini-3.8-flash"
+# Audit judge C (declared 2026-10-07): a stronger full Flash model than labeler A.
+# Its labels never define ground truth and are never used for fitting; they only
+# check the A+B labels and the rubric against a stronger reference. Declared as
+# gemini-3.8-flash, switched before any C label because that model did not answer
+# within 120 s on this key (a one-word prompt), while 3.7-flash answered in 7 s.
+JUDGE_C_MODEL = "gemini-3.7-flash"
 CF_PRIMARY = "@cf/openai/gpt-oss-120b"
 CF_FALLBACK = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 CF_URL = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}"
