@@ -1,11 +1,11 @@
 {
   "as_of": null,
-  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"Some of the best water purifiers combine multiple technologies, such as the Kent Ace 8 L RO + UV + UF + TDS Purifier, which features a multi-stage filtration system.\\\", \\\"cited\\\": [4]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TraZtUhIdhr06d5h5qh0kFRwi7UllgxDKFlbgeuOcWFNhUYZEKpe5IfpzGPr6O1j8FJ9nQRGt57cBfvkW9ZvURSvjh3YgDej+l1tLifAZuHbbzW5ig6cPcvE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 514,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 562,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 514\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"TvvBauDQDv_Fg8UP1e-duAo\"\n}\n",
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"Some of the best water purifiers combine multiple technologies, such as the Kent Ace 8 L RO + UV + UF + TDS Purifier, which features a multi-stage filtration system.\\\", \\\"cited\\\": [4]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TvtAQzuAhOImwAt4xoD9+M+NS6Buu1X5Ubnr0ZhaWkaQjt/E9pa4pVbFFvTouHRMaMWhgXtmOuZJ1iCzEj5aZzIYAlMpNuGicI3MyVuCYl8X1UUNxaJIpZcI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 514,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 562,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 514\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"5qnFatiMEPP-g8UPuraH8Ac\"\n}\n",
   "cost": 0,
-  "fetched_at": "2026-10-04T07:08:00.725309+00:00",
+  "fetched_at": "2026-10-07T02:09:46.084230+00:00",
   "headers": {
     "content-type": "application/json; charset=UTF-8",
-    "date": "Sun, 04 Oct 2026 07:07:59 GMT"
+    "date": "Wed, 07 Oct 2026 02:09:42 GMT"
   },
   "key": "97dab979f4ae437b451a2dd49eeeaa4b2b8ed7e9a7c6d725cf10ac26dd71ea54",
   "method": "POST",

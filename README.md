@@ -35,21 +35,22 @@ non-platform results, with a 95% cluster-bootstrap interval over queries.
 
 | | Share with low-quality signals | n scored | coverage |
 |---|---|---|---|
-| **India, all engines** | **5.7%** [3.2%, 8.7%] | 441 | 79% |
-| Google India | 9.2% [4.9%, 14.4%] | 184 | 81% |
-| DuckDuckGo India | 3.4% [0.7%, 6.3%] | 148 | 77% |
+| **India, all engines** | **4.5%** [2.2%, 7.2%] | 426 | 77% |
+| Google India | 7.1% [3.3%, 11.7%] | 170 | 75% |
+| DuckDuckGo India | 2.7% [0.0%, 5.8%] | 147 | 77% |
 | Yahoo India | 2.8% [0.0%, 6.9%] | 109 | 81% |
-| Google US (locale-neutral queries) | 20.3% [10.8%, 30.3%] | 69 | 66% |
-| Google India (same queries) | 7.1% [2.2%, 13.7%] | 84 | 81% |
+| Google US (locale-neutral queries) | 15.6% [6.3%, 25.4%] | 64 | 61% |
+| Google India (same queries) | 6.6% [1.3%, 13.5%] | 76 | 73% |
 
-If every unscored India result were ok the share would be 4.5%; if every one were
-low, 25%. Because the filter catches only about one in five low-quality
-pages, 5.7% understates what the LLM judges would call low; corrected for the
-measured error rates (Rogan-Gladen) it is about 15%, a very uncertain estimate
-(recall was measured on only 21 low pages). Paired comparisons on the same queries (20 pairs each) found **no
-statistically detectable difference** between Google India and DuckDuckGo/Yahoo
-India, or between Google India and Google US (India − US: −11.7 points, 95% CI
-−26.1 to +1.7, p = 0.14).
+Scored with rubric v4. If every unscored India result were ok the share would be
+3.4%; if every one were low, 27%. Because the filter catches only about three in
+ten low-quality pages, 4.5% understates what the LLM judges would call low;
+corrected for the error rates measured on the round-4 test (Rogan-Gladen) it is
+about 11%, a very uncertain estimate (recall was measured on only 23 low pages).
+Paired comparisons on the same queries (19 pairs each) found **no statistically
+detectable difference** between Google India and DuckDuckGo/Yahoo India, or
+between Google India and Google US (India − US: −9.3 points, 95% CI −24.2 to
++3.9, p = 0.24).
 
 **Findings**
 
@@ -65,8 +66,8 @@ India, or between Google India and Google US (India − US: −11.7 points, 95% 
 3. **The web is closing to crawlers:** 22% of pages refused us (403s, robots.txt)
    and 14 answered *402 Payment Required* (pay-per-crawl). US publishers block
    more (66% coverage vs ~80% for India).
-4. **The top result was never in the low band** on Google India; ranks 2-9 were
-   5-17%.
+4. **Low-band pages appear at every rank** on Google India, including the top
+   result (5%, n = 22); no rank stands out (0-12%, small n per rank).
 
 ## Validation (labels from two LLMs, not humans)
 
@@ -81,15 +82,21 @@ We report the whole history, including what failed (details: [EVAL.md](EVAL.md),
 - **Round 2 (rubric v2): failed.** Test precision 0.37 [0.19, 0.59], recall 0.35,
   n = 71, below the pre-registered 0.70 gate and below the one-line baseline "no
   author and no date". That test set was then retired.
-- **Round 3 (rubric v3):** weights fitted on the 155 round-2 items (cross-validated
-  precision 0.72), frozen, then tested **once** on 114 agreed results from 150
-  fresh pages never seen before (labeler kappa 0.42): **precision 0.57 [0.25,
-  0.84], recall 0.19, F1 0.29, specificity 0.97.** Below the 0.70 gate, but it
-  beats every baseline (best: F1 0.12), which v2 did not.
+- **Round 3 (rubric v3): failed the gate.** Fitted on the 155 round-2 items,
+  frozen, tested once on 114 agreed results from 150 fresh pages (kappa 0.42):
+  precision 0.57 [0.25, 0.84], recall 0.19, F1 0.29. It beat every baseline.
+- **Round 4 (rubric v4): passed the gate.** Fitted on all 257 development items
+  (cross-validated precision 0.80), frozen, then tested **once** on 102 agreed
+  results from 30 brand-new Google India queries (kappa 0.53): **precision 0.88
+  [0.53, 0.98], recall 0.30 [0.16, 0.51], F1 0.45, specificity 0.99.** The
+  interval is wide (8 pages flagged). The one-line baseline "no author and no
+  date" reached a slightly higher F1 (0.47) by flagging 28 pages at precision
+  0.43, so the pre-registered "beats every baseline on F1" criterion was **not**
+  met.
 
 The filter is conservative: it almost never removes a page the judges called ok
-(3 of 93), but it catches only about one in five low-quality pages. Treat a drop as
-"probably not a source to ground on", not as a verdict on a site.
+(1 of 79), but it catches only about three in ten low-quality pages. Treat a drop
+as "probably not a source to ground on", not as a verdict on a site.
 
 ## Use it
 
@@ -150,7 +157,7 @@ queries.yaml ─► SerpApi (google / duckduckgo / yahoo, IN + US) ─► top or
                      │
                      ▼
 deterministic signals: author/date, query relevance, sells-directly, affiliate,
-ads, thin text, near-duplicates  ──►  rubric v3 (weights fitted, frozen)
+ads, thin text, near-duplicates  ──►  rubric v4 (weights fitted, frozen)
                      │                         │
                      ▼                         ▼
            observatory report          filter + agent adapters

@@ -42,7 +42,8 @@ agents serving them) are shown for health and money questions.
 
 - **Data source:** 100 searches across the `google`, `duckduckgo` and `yahoo`
   engines with India and US locales, collected through a cached client with a hard
-  credit cap and a committed spend ledger (103 credits). Every response is
+  credit cap and a committed spend ledger (133 credits, including 30 searches
+  collected only for the final held-out test). Every response is
   committed as a fixture, so the whole analysis replays offline with no key.
 - **Integration:** `SlopWatchClient` wraps SerpApi's client inside
   `serpapi-search-tools`' `web_search` tool, filtering `organic_results` before the
@@ -51,12 +52,16 @@ agents serving them) are shown for health and money questions.
 
 ## Validation (honest)
 
-Labels come from two LLMs judging blind (no human labels; Cohen's kappa 0.66 on development data, 0.42 on the fresh test).
-Our first rubric failed its pre-registered held-out test (precision 0.37), and we
-report it. The rebuilt rubric was fitted on development data only and tested once
-on 150 fresh pages: precision 0.57 [0.25, 0.84], recall 0.19, specificity 0.97.
-That is below our 0.70 target, but it beats every simple baseline, and it almost
-never removes a good page. Details in EVAL.md.
+Labels come from two LLMs judging blind (no human labels; Cohen's kappa 0.66 on
+development data, 0.42 and 0.53 on the two fresh tests). Our first two rubrics
+failed their pre-registered held-out tests (precision 0.37, then 0.57), and we
+report both. The final rubric was fitted on development data only and tested
+once on 30 brand-new Google India queries: **precision 0.88 [0.53, 0.98], recall
+0.30, specificity 0.99** (n = 102). That meets our 0.70 precision target, though
+the interval is wide; a one-line baseline ("no author and no date") reached a
+slightly higher F1 by flagging 3.5 times as many pages at half the precision.
+SlopWatch almost never removes a good page and misses most bad ones. Details in
+EVAL.md.
 
 ## Disclosures
 

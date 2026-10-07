@@ -1,11 +1,11 @@
 {
   "as_of": null,
-  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"The provided sources do not contain information on how to improve a CIBIL score.\\\", \\\"cited\\\": []}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjmIABYLl+pwsOQ8z8gSMhwKngA/t5H2Rpp+X/wnA4l2KSUepkQConKLe+wJYSVCBbae8xBZ7F9xESeEh/+niwQGAbNKuyh/GP1VgYPLSKZ4VmS0DCvUw+6A=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 420,\n    \"candidatesTokenCount\": 26,\n    \"totalTokenCount\": 446,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 420\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"MvvBauq5CYLRg8UPldKn2Ak\"\n}\n",
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"The provided sources do not contain information on how to improve a CIBIL score fast.\\\", \\\"cited\\\": []}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TcRvcpoKcBJO+6MDJtIAWshrLpJ/Fh8Re2UsVKd6s7u0DVh1ImbS1UgGnzQ9FDVjCnTU+/0m1iLxKwbQuyA8VQRtk2qqQUdFZp/x5k/D+jV1C1/yqwpBc0Sg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 420,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 447,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 420\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"yqnFapjrFf-KqfkPiPnXwAY\"\n}\n",
   "cost": 0,
-  "fetched_at": "2026-10-04T07:07:32.598478+00:00",
+  "fetched_at": "2026-10-07T02:09:18.565477+00:00",
   "headers": {
     "content-type": "application/json; charset=UTF-8",
-    "date": "Sun, 04 Oct 2026 07:07:31 GMT"
+    "date": "Wed, 07 Oct 2026 02:09:15 GMT"
   },
   "key": "c9e56926c3064b29e8e3489cad8508cf7e0c22e530e3fac524e5205a12beb5e7",
   "method": "POST",

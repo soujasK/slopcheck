@@ -177,7 +177,7 @@ a { color: var(--clean); text-underline-offset: 3px; }
     <p class="eyebrow">The finding</p>
     <h2>Slop in India does not look like spam.</h2>
     <div class="kinds">
-      <div><h3>Nobody signs it</h3><p>No named author was the strongest signal of a page the judges called slop.</p></div>
+      <div><h3>Nobody signs it</h3><p>A missing named author was one of the strongest signals of a page the judges called slop.</p></div>
       <div><h3>It answers another question</h3><p>Pages that barely mention what was asked still rank.</p><p class="eg">A UN climate report ranked #2 on Google India for "best 1.5 ton inverter ac".</p></div>
       <div><h3>It is selling to you</h3><p>Pharmacies and brands ranking their own blogs for health and product questions.</p></div>
     </div>
@@ -378,14 +378,16 @@ tools = [web_search()]</pre>
   var v = D.validation, html = "";
   if (v.round2_test) html += '<div><span class="k">First test</span><span class="n fail">' + v.round2_test.precision.toFixed(2) +
     "</span><p>precision. Below our 0.70 bar, so we rebuilt the rules.</p></div>";
-  if (v.round3_test) {
-    var r3 = v.round3_test;
-    html += '<div><span class="k">Fresh held-out test</span><span class="n' + (r3.precision < 0.7 ? " fail" : "") + '">' +
-      r3.precision.toFixed(2) + "</span><p>precision, " + r3.recall.toFixed(2) + " recall, on " + r3.n + " pages never seen in tuning.</p></div>";
+  if (v.round3_test) html += '<div><span class="k">Second test</span><span class="n fail">' + v.round3_test.precision.toFixed(2) +
+    "</span><p>precision on fresh pages. Still below 0.70, so we refitted once more on development data.</p></div>";
+  if (v.round4_test) {
+    var r4 = v.round4_test;
+    html += '<div><span class="k">Fresh held-out test</span><span class="n' + (r4.precision < 0.7 ? " fail" : "") + '">' +
+      r4.precision.toFixed(2) + "</span><p>precision, " + r4.recall.toFixed(2) + " recall, on " + r4.n + " pages from 30 new queries never seen in tuning.</p></div>";
   } else {
-    html += '<div><span class="k">Fresh held-out test</span><span class="n">—</span><p>150 unseen pages, being labeled now. Reported as it lands.</p></div>';
+    html += '<div><span class="k">Fresh held-out test</span><span class="n">—</span><p>128 unseen pages, being labeled now. Reported as it lands.</p></div>';
   }
-  html += '<div><span class="k">Judges agree</span><span class="n">0.42</span><p>Cohen\'s kappa between the two LLM labelers on the fresh test (0.66 on development data).</p></div>';
+  html += '<div><span class="k">Judges agree</span><span class="n">0.53</span><p>Cohen's kappa between the two LLM labelers on the latest fresh test (0.42 and 0.66 on earlier rounds).</p></div>';
   el("verdict").innerHTML = html;
 })();
 </script>

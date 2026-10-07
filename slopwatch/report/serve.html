@@ -428,9 +428,11 @@ tr.gone { display: none; }
       }).join("");
       var html = "";
       if (v.round2_test) html += kpi("First test", v.round2_test.precision.toFixed(2), "precision · below the 0.70 bar, rules rebuilt", "silt");
-      if (v.round3_test) html += kpi("Fresh held-out test", v.round3_test.precision.toFixed(2), "precision · recall " + v.round3_test.recall.toFixed(2) + " · n " + v.round3_test.n, v.round3_test.precision >= 0.7 ? "accent" : "silt");
-      else html += kpi("Fresh held-out test", "pending", "150 unseen pages being labeled");
-      html += kpi("Labeler agreement", "0.42", "Cohen's kappa on the fresh test (0.66 on development data)");
+      if (v.round3_test) html += kpi("Second test", v.round3_test.precision.toFixed(2), "precision · rubric v3, below the bar, refitted", "silt");
+      var t = v.round4_test;
+      if (t) html += kpi("Fresh held-out test", t.precision.toFixed(2), "precision · recall " + t.recall.toFixed(2) + " · n " + t.n + " · rubric v4", t.precision >= 0.7 ? "accent" : "silt");
+      else html += kpi("Fresh held-out test", "pending", "128 unseen pages being labeled");
+      html += kpi("Labeler agreement", "0.53", "Cohen's kappa on the latest fresh test (0.42 and 0.66 on earlier rounds)");
       $("m-kpis").innerHTML = html;
     });
   }

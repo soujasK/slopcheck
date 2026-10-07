@@ -1,482 +1,405 @@
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://acibademinternational.com/blog/blood-sugar-levels-after-eating-normal-ranges-spikes-and-what-your-numbers-mean/"}
-{"band": "low", "reasons": ["8 affiliate links (density 0.89)", "contains affiliate links (8)", "89% of 9 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://allaroundkitchens.com/best-air-fryers-for-a-family/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://americancreditfoundation.org/articles/get-out-of-debt-without-hurting-credit/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://amstradworld.com/product/amstrad-megalo-series-ac-1-5-ton-5-star-inverter-split-air-conditioner-amsi2055hd/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://apps.apple.com/us/app/messages/id1146560473"}
-{"band": "mixed", "reasons": ["thin main text (1071 chars)", "mostly boilerplate (88%)"], "slop_risk": 0.2, "url": "https://arogyadham.in/blog/best-ayurvedic-treatment-for-hypertension/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://ashrayahospitals.com/blog/stages-of-fatty-liver-disease-management/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://ask-ayurveda.com/hi/questions/13758-how-does-ayurveda-help-in-managing-and-treating-hypertension-high-blood-pressure"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://askdocdoc.com/questions/27796-dolo--action-time"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://ayurwayayurveda.com/treatment-for-high-blood-pressure/"}
-{"band": "low", "reasons": ["no author or date", "mostly boilerplate (69%)", "no named author"], "slop_risk": 0.5, "url": "https://bankofbaroda.bank.in/digital-products/other-digital-services/fastag"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://basketoption.insure/blog/is-term-insurance-worth-it"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://bedgear.com/blogs/mattresses/best-mattress-for-side-sleepers-with-back-pain?srsltid=AU7gw4VvidHPIgK4KbaQMIIPKqCFLZ_2JsmFhiQK3KY9Wnerp3wdJUpb"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://beebom.com/how-block-spam-calls-android/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://beebom.com/how-speed-up-windows-11/"}
-{"band": "ok", "reasons": ["contains affiliate links (1)"], "slop_risk": 0.1, "url": "https://believeintherun.com/shoe-reviews/best-running-shoes-for-beginners/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://bgapc.com/are-over-the-counter-heartburn-medications-safe/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://biologyinsights.com/vitamin-d-deficiency-in-women-causes-and-symptoms/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://biznext.in/blog/tag/pf-balance-check-with-uan-number/?srsltid=AU7gw4WzmX0Vopv8RBoQh7EcKaG-0V7VDysjnXVyIyu429OPWbM5p5b7"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://blallab.com/blogs/home-remedies-to-reduce-uric-acid-naturally"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://blinkmoney.in/blogs/how-to-start-investing-with-small-amounts"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://blog.bankbazaar.com/tip-to-stay-away-from-credit-card-debt/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://blog.incogni.com/stop-spam-calls-on-android/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://blog.ipleaders.in/link-aadhar-card-pan-card/"}
-{"band": "mixed", "reasons": ["mostly boilerplate (63%)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3, "url": "https://bodhishop.in/blogs/news/withania-somnifera-exploring-the-wonders-of-ashwagandha?srsltid=AU7gw4WSaz4CVfMQStan12NH0h9HFZwvyLArpRERXLqHhLVpyEMMkskj"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://budgettech.in/best-laptops-under-50000/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://buechnerinsurance.com/blog/5-reasons-term-life-insurance-makes-sense-for-every-stage-of-life/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://buy.hitachiaircon.in/e-shop/product-details/hitachi-signature-magnum-grey-5600swxl-1-5-ras-x518pcdigm-tr/862"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://calculwise.com/blog/emergency-fund-how-much"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://calcwise.finance/emergency-financial-planning/emergency-fund-complete-guide/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://cardinsider.com/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://ccm.net/apps-sites/email/1031-how-to-recover-gmail-account/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://cfieducation.in/blogs/a-beginners-guide-to-start-investing-in-your-20s/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://cleartax.in/s/emergency-fund-invest"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://cslifestyle.in/guides/best-air-fryer-india-2026?srsltid=AU7gw4UnESWuD7mNCGWWYNubWTXzQz6lpJc_UsFRTZ5Cz4b2yre3_qHA"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://curelohealth.com/blog/dengue-diet-foods-to-boost-platelet-count"}
-{"band": "ok", "reasons": ["contains affiliate links (1)"], "slop_risk": 0.1, "url": "https://cybersecurityguides.net/guides/recover-hacked-gmail"}
-{"band": "low", "reasons": ["5 affiliate links (density 0.71)", "contains affiliate links (5)", "71% of 7 outbound links go to shops"], "slop_risk": 0.6, "url": "https://dailytrendsdeals.in/best-air-fryer-under-5000-in-india/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://dhan.co/mutual-funds/mf-to-invest/best-sip-to-invest-in-2026/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://diabetesaction.org/questions-blood-sugar"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://diabetesknow.com/management/blood-sugar-charts/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://directdawai.com/blog/gas-acidity-indigestion-remedies"}
-{"band": "low", "reasons": ["no about or contact page linked", "thin main text (1264 chars)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.45, "url": "https://discussions.apple.com/thread/256354477"}
-{"band": "mixed", "reasons": ["mostly boilerplate (76%)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3, "url": "https://dosaze.com/blogs/llms/the-best-mattress-for-back-pain-isnt-what-most-people-think"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://dowfurniture.com/blogs/furniture-blog/how-to-choose-a-mattress-that-supports-better-recovery?srsltid=AU7gw4Xu4UmtOKZNjCL5ScKNN6RgCVoPSayV3_aKGRbhSJHhxNj6Z-Q_"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://drajayyadav.in/blogs/understanding-grade-1-fatty-liver-causes-symptoms-diagnosis-and-reversal-strategies"}
-{"band": "low", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.55, "url": "https://drfone.wondershare.com/whatsapp/android-whatsapp-recovery.html"}
-{"band": "low", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.55, "url": "https://drfone.wondershare.com/whatsapp/whatsapp-recovery.html"}
-{"band": "ok", "reasons": ["contains affiliate links (1)", "no about or contact page linked"], "slop_risk": 0.15, "url": "https://economictimes.indiatimes.com/wealth/invest/how-much-emergency-fund-is-enough-for-you/why-you-need-an-emergency-fund-before-any-investment/slideshow/123183807.cms"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://ecovacsindia.in/?srsltid=AU7gw4W8fgMXTM045ix_TeIcJGTUhbucmvJbVhsT7LIj4uQPLtvRrpIS"}
-{"band": "mixed", "reasons": ["no about or contact page linked", "thin main text (0 chars)"], "slop_risk": 0.2, "url": "https://egovernance.vikaspedia.in/viewcontent/e-governance/online-citizen-services/government-to-citizen-services-g2c/all-about-aadhaar/how-to-link-pan-with-aadhaar?lgn=en"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://emergencyfundcalculator.com/emergency-fund/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://emergencyfundcalculator.com/how-much-emergency-fund-do-i-need/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://en.androidayuda.com/applications/Tutorials/How-to-recover-deleted-WhatsApp-conversations-step-by-step/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://en.androidguias.com/How-to-block-spam-calls-on-android-effectively/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://en.wikipedia.org/wiki/Emergency!"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://en.wikipedia.org/wiki/Side"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://en.wikipedia.org/wiki/Weight"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://famiboards.com/threads/the-best-budget-bluetooth-earbuds-for-the-nintendo-switch.2813/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://financefunda.in/blog/best-term-insurance-plan-india-2026"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://financer.com/personal-finance/get-out-of-debt/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://findbrief.com/speed-up-slow-windows-laptop/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://finlecture.in/mutual-funds/index-funds-vs-actively-managed-funds/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://flypped.com/health-fitness/dolo-650-tablet-uses"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://forum.mattressunderground.com/t/time-for-a-new-mattress-best-mattress-for-lower-back-pain/13482"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://foundationwealth.in/blog/index-funds-vs-actively-managed-funds-the-honest-comparison"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://gadgets.beebom.com/guides/how-to-block-spam-calls-on-android"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://gadgets.beebom.com/guides/how-to-recover-deleted-whatsapp-chat"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://gadgets.beebom.com/guides/how-to-see-deleted-whatsapp-messages"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://gadgets.beebom.com/guides/how-to-transfer-data-from-android-to-iphone"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://gastroliver.co.in/blog/understanding-grade-one-fatty-liver/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://getvitaminlab.com/cms/blog/nutrients/top-10-signs-you-may-have-a-vitamin-d-deficiency/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://ghc.health/blogs/all-about-men/ashwagandha-health-benefits-side-effects-and-how-to-use?srsltid=AU7gw4X2KbcStgAWNF7kKCPGx_4akkbuWs0yomkLbbCCC7U_xfG_h56z"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://growthvine.in/elss-vs-ppf-vs-nps-comparing-indias-tax-saving-instruments/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://groww.in/blog/how-to-invest-in-stock-market-with-little-money"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://groww.in/blog/index-funds-vs-mutual-funds"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://groww.in/mutual-funds/category/best-sip-mutual-funds"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://guhancapitals.in/blog/old-vs-new-tax-regime-2026-comparison"}
-{"band": "ok", "reasons": ["thin main text (548 chars)"], "slop_risk": 0.15, "url": "https://gujarati.abplive.com/news/india/epfo-tips-new-uan-number-forgotten-this-is-how-you-can-know-your-pf-balance-check-920232"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://health.clevelandclinic.org/what-is-ashwagandha"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://hellodoctor.com.ph/infectious-diseases/dengue/how-to-increase-platelet-count-in-dengue/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://hitechdiagnosticcentre.com/vitamin-d-deficiency-test/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://how.finance/how-much-should-i-have-in-an-emergency-fund/"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://in.dreametech.com/collections/robot-vaccums?srsltid=AU7gw4Vs8Gq-9ENMJiZ8Zn3Rhj5Cnh2E_KEkuVqP0KA7KuEdu1kOamEz"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://indiaclear.com/aadhar-card-free-download-e-aadhaar-2019-uidai-gov-in/"}
-{"band": "mixed", "reasons": ["no about or contact page linked", "thin main text (1487 chars)"], "slop_risk": 0.2, "url": "https://indianexpress.com/web-stories/miscellaneous/9-signs-vitamin-d-deficiency-females/9987676/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://investor.vanguard.com/investor-resources-education/understanding-investment-types/index-funds-vs-actively-managed-funds"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://itradda.com/new-tax-regime-vs-old-regime-which-is-better-for-salaried-class/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://itsourcecode.com/blogs/how-to-recover-hacked-gmail-account-2026/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://jamesandco.in/best-laptop-under-50000-for-students/?srsltid=AU7gw4VRE1emNAdcVpfrqCbDwbZRbj-RBSQoO3vYuhuLrAhgF3BeZ0Kp"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://jioinsure.in/term-insurance/blog/should-you-buy-term-insurance-for-your-stay-at-home-spouse"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://johnryanbydesign.co.uk/ask-the-community/question/best-mattress-for-chronic-back-pain-2/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://joinditto.in/articles/life-insurance/is-term-insurance-good/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://joinditto.in/articles/term-insurance/is-term-insurance-worth-it/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://jumpp.finance/blog/financial-management/personal-finance/how-to-start-investing-with-little-money/"}
-{"band": "low", "reasons": ["no author or date", "thin main text (237 chars)", "mostly boilerplate (77%)", "no named author"], "slop_risk": 0.65, "url": "https://kingkoil.in/faq/best-mattress-for-back-problems"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://kitchendeals.in/best-air-fryer-under-%E2%82%B95000-in-india-2026"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://kumaranhospitals.com/effective-diet-strategies-to-enhance-platelet-levels-during-dengue/health/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://kuvera.in/blog/best-sip-mutual-funds-to-invest-in-2026/"}
-{"band": "low", "reasons": ["no author or date", "thin main text (683 chars)", "mostly boilerplate (84%)", "no named author"], "slop_risk": 0.65, "url": "https://lakhisarai.nic.in/department/7-ro-list/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://leadingfile.com/blog/aadhaar-card-download/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://learn.mdsdiabetes.com/wiki/postprandial-blood-sugar-what-is-normal-after-eating"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://learn.microsoft.com/en-us/answers/questions/680614/how-can-i-get-my-hacked-account-back-they-changed"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://lifeinsurance.adityabirlacapital.com/articles/savings-insurance/how-to-begin-your-financial-investments/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://livlong.com/blogs/health-and-wellness/ease-your-stomach-by-gastric-problem-using-ayurvedic-medicine"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://maharashtratimes.com/lifestyle-news/health-news/foods-for-reduce-high-uric-acid-naturally-from-blood-as-per-health-experts/articleshow/112327488.cms"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://marathi.economictimes.com/wealth/personal-finance/upi-payment-failed-money-deducted-refund-steps-guide-rbi-rules/articleshow/133310193.cms"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://masalamonk.com/10-ashwagandha-side-effects-you-should-know/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://medlineplus.gov/prediabetes.html"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://midwestpainclinics.com/9-vitamin-d-deficiency-symptoms-you-should-know/"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://mobiletrans.wondershare.com/iphone-transfer/transfer-files-from-android-to-iphone.html"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://mobiletrans.wondershare.com/whatsapp-restore/recover-deleted-whatsapp-messages.html"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://moneykit.in/emergency-fund-calculator/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://moneyview.in/credit-card/best-cashback-credit-card-in-india"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://monumoney.in/calculators/emergency-fund-calculator"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://my.clevelandclinic.org/health/diseases/15050-vitamin-d-vitamin-d-deficiency"}
-{"band": "low", "reasons": ["no author or date", "thin main text (229 chars)", "no named author"], "slop_risk": 0.6, "url": "https://myaccount.google.com/intro/recovery/email"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://mydiagnostics.in/blogs/diabetes-cardiac/blood-sugar-levels-after-meals-what-s-normal-and-what-s-not"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://myhealthopedia.com/ashwagandha-health-benefits-side-effects-uses/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://naga.com/eu/academy/invest-with-little-money"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://naturalremedyideas.com/vitamin-d-deficiency-symptoms-for-women/"}
-{"band": "low", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.55, "url": "https://neobest.in/blogs/news/lower-back-pain-when-you-wake-up-heres-what-your-mattress-might-be-doing?srsltid=AU7gw4U4uCKXxX8zhKdXLERMPt-n5F6JyyzmUzPfbq9KrOF1no09a8IF"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://news.laodong.vn/ban-tin/loai-rau-cho-nguoi-bi-gout-giup-giam-axit-uric-tu-nhien-1588501.ldo"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://news.laodong.vn/suc-khoe/5-cach-de-giam-axit-uric-vao-buoi-sang-va-buoi-toi-1587309.ldo"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://omshreeayur.com/treatments/blood-pressure/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://patient.info/bones-joints-muscles/osteoporosis-leaflet/vitamin-d-deficiency"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://pharmeasy.in/blog/home-remedies-for-acidity/"}
-{"band": "low", "reasons": ["no author or date", "mostly boilerplate (81%)", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://pharmeasy.in/molecules/ashwagandha-492768"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://platform.edu21-improve.com/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://powerbean.in/how-to-speed-up-windows-11-the-ultimate-performance-optimization-guide/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://primadiagnostics.com/vitamin-d-deficiency-symptoms-in-indians-10-signs-you-are-low/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://primeinvestor.in/reports/is-it-time-to-move-from-active-funds-to-index-funds/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://qa.cus.zetapp.in/blog/best-online-shopping-credit-cards-in-india-2024"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://quid.money/blog/8-easy-ways-to-check-fastag-status-online-and-offline"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://redcliffelabs.com/myhealth/dengue/ways-to-increase-platelet-count-in-dengue-naturally/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://revealthat.com/aadhaar-download/"}
-{"band": "low", "reasons": ["5 affiliate links (density 0.83)", "contains affiliate links (5)", "83% of 6 outbound links go to shops", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.75, "url": "https://reviehub.in/5-best-budget-wireless-earbuds-in-india-2026-tested-ranked/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://rishabhospital.com/blog_details/dengue-fever-platelet-count-symptoms-danger-levels-how-to-increase-platelets-fast"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://runkituk.co.uk/best-carbon-plate-running-shoes-2026-uk/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://runrepeat.com/uk/guides/best-for-beginners-running-shoes"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://runtothefinish.com/running-shoes-for-beginners/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://salaryinhand.in/compare/20-lpa-old-vs-new-tax-regime"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://salaryslip.org/pf-balance-check-with-and-without-uan/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://savesage.club/blogs"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://scienceinsights.org/side-effects-of-ashwagandha-from-mild-to-serious/"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "mostly boilerplate (94%)", "no named author"], "slop_risk": 0.45, "url": "https://scripbox.com/mutual-fund/best-sip-mutual-funds/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://sehattak.com/10-warning-signs-of-vitamin-d-deficiency-in-women-you-should-never-ignore/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://share.upmc.com/2023/05/vitamin-d-deficiency-signs/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://shuddhi.com/blog/ayurveda-solution-for-high-blood-pressure/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://shuddhihiims.com/ayurvedic-treatment-for-high-blood-pressure/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://side.inc/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://sleepopolis.com/best-mattress/best-mattress-for-back-pain/"}
-{"band": "low", "reasons": ["no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.6, "url": "https://support.apple.com/en-gb/118670"}
-{"band": "low", "reasons": ["no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.6, "url": "https://support.apple.com/en-in/104965"}
-{"band": "low", "reasons": ["no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.6, "url": "https://support.apple.com/en-us/104965"}
-{"band": "low", "reasons": ["no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.6, "url": "https://support.apple.com/en-us/118670"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (210 chars)", "mostly boilerplate (90%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/accounts/answer/58585?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (1235 chars)", "no named author"], "slop_risk": 0.65, "url": "https://support.google.com/accounts/answer/6236295?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://support.google.com/accounts/answer/6294825?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://support.google.com/accounts/answer/7682439?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (182 chars)", "mostly boilerplate (78%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/accounts/community-guide/399409055/how-to-attempt-hacked-google-account-recovery-2026?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (182 chars)", "mostly boilerplate (74%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/accounts/thread/336222993/recover-my-hacked-gmail-account?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (182 chars)", "mostly boilerplate (74%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/accounts/thread/396554904/recover-hacked-gmail-account?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (182 chars)", "mostly boilerplate (74%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/accounts/thread/402016154/recover-hacked-gmail-account?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (178 chars)", "mostly boilerplate (73%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/android/thread/128311367/how-to-block-spam-calls-on-my-android-phone?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://support.google.com/chrome/answer/7682439?hl=en"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (182 chars)", "mostly boilerplate (74%)", "no named author"], "slop_risk": 0.7, "url": "https://support.google.com/drive/thread/10159558/how-to-get-back-deleted-whatsapp-messages-and-voice-notes"}
-{"band": "low", "reasons": ["no author or date", "thin main text (182 chars)", "mostly boilerplate (78%)", "no named author"], "slop_risk": 0.65, "url": "https://support.google.com/googleplay/thread/16194698/in-app-purchase-failed-with-upi-but-amount-deducted-how-to-request-for-refund?hl=en"}
-{"band": "low", "reasons": ["no author or date", "thin main text (179 chars)", "mostly boilerplate (73%)", "no named author"], "slop_risk": 0.65, "url": "https://support.google.com/mail/thread/431791147/how-can-i-recover-my-hacked-gmail-account?hl=en"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://tech.yahoo.com/computing/articles/14-easy-fixes-windows-11-114514155.html"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://techcommunity.microsoft.com/discussions/windows11/best-way-to-speed-up-a-sluggish-windows-11-pc/4546637"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-speed-up-or-slow-down-a-video-on-windows-11/4542663/replies/4542688"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-speed-up-windows-11-and-make-it-run-faster/4483282/replies/4484794"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://techmitra.in/how-to-speed-up-a-slow-windows-pc/"}
-{"band": "low", "reasons": ["12 affiliate links (density 1.00)", "contains affiliate links (12)", "100% of 12 outbound links go to shops", "'best X' listicle pattern", "no about or contact page linked", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 1.0, "url": "https://theairfryerinsider.com/best-compact-air-fryer/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://themoneyjournal.in/article/index-fund-vs-active-fund-which-is-better-in-india-2026"}
-{"band": "low", "reasons": ["6 affiliate links (density 0.29)", "contains affiliate links (6)"], "slop_risk": 0.45, "url": "https://theruntesters.com/the-best-running-shoes-for-beginners/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://thetechgorilla.com/how-to-block-spam-calls-on-android/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://thetechgorilla.com/how-to-transfer-data-from-android-to-iphone/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.15, "url": "https://tradebrains.in/money/5-best-credit-cards-for-maximum-online-shopping-benefits-in-2025/"}
-{"band": "low", "reasons": ["30 affiliate links (density 0.86)", "contains affiliate links (30)", "86% of 35 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://truedime.in/best-laptop-under-50000/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://trufinops.com/resources/blog/ppf-vs-elss-which-is-better.html"}
-{"band": "low", "reasons": ["contains affiliate links (1)", "no named author"], "slop_risk": 0.4, "url": "https://tt.tennis-warehouse.com/index.php?threads/best-running-shoes-under-130.668302/latest"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://wallethub.com/edu/cc/how-to-pay-off-credit-card-debt/40625"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://wellbeingnutrition.com/blogs/gut-detox-cleanse/8-natural-antacids-to-replace-medicine-safely"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://wellbeingnutrition.com/blogs/gut-health/ayurvedic-remedies-for-gas-and-acidity"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://wiretel.in/emergency-funds-how-much-to-keep-and-where-to-park-it-personal-finance/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.33fuel.com/blogs/default-blog/vitamin-d-deficiency-symptoms"}
-{"band": "low", "reasons": ["12 affiliate links (density 0.50)", "contains affiliate links (12)", "50% of 24 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://www.aarp.org/health/healthy-living/best-mattress-back-pain/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.aflac.com/resources/life-insurance/term-vs-whole-life-insurance.aspx"}
-{"band": "ok", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.15, "url": "https://www.airtel.in/blog/mobile-phones/top-10-best-mobile-phones-under-20000-in-india-a-comprehensive-guide/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.all-about-beating-diabetes.com/blood-sugar-levels-after-eating.html"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.com/Best-Sellers-Robotic-Vacuums/zgbs/home-garden/3743561"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/Water-Coolers-Filters-Cartridges-RO/s?rh=n%3A1380262031%2Cp_n_feature_twenty_browse-bin%3A12618051031"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/best-phone-under-20-000/s?k=best+phone+under+20%2C000"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/budget-earbuds/s?k=budget+earbuds"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/cheap-wireless-earbuds/s?k=cheap+wireless+earbuds&page=2"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/earbuds-low-price/s?k=earbuds+low+price"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/gp/bestsellers/kitchen/1380610031"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.amazon.in/s?k=best+laptops+under+50000+with+graphic+card"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.analyticsinsight.net/cybersecurity/how-to-recover-a-hacked-gmail-account-in-2026"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://www.android.com/google-messages/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.android.com/intl/en_uk/articles/stop-spam-calls-android/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.androidauthority.com/how-to-block-spam-calls-855621/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.androidauthority.com/recover-google-account-3055551/"}
-{"band": "low", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.55, "url": "https://www.aosmithindia.com/product/z2-pro/?srsltid=AU7gw4VsBmIrDXTB71GmcBUI6CZx7MKO9rmboIj0KuiW1g23qZUATYyS"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.apollocradle.com/blog/healthy-food/vitamin-d-deficiency-signs-and-symptoms"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "no named author"], "slop_risk": 0.4, "url": "https://www.apollopharmacy.in/blog/article/ayurvedic-medicines-for-acidity-and-gas-relief"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.apollopharmacy.in/omesace-20-mg-capsule-10-s/health-queries/i-am-suffering-indigestion-bloating-acidity-abdominal-pain-uneasiness-my-left-upper-abdomen-and?srsltid=AU7gw4VkRqT59X9RV5hEyiAtEgwtu2PqT62Q-C6ALJVXnagRFRqh6rIu"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.apollopharmacy.in/prazomed-40-mg-tablet-10-s/health-queries/how-can-i-keep-my-stomach-healthy-and-free-gas-and-intestinal-ulcers-and-what-medications-should-i?srsltid=AU7gw4XNpzXeNVKAM4oLpNqUoffipE2JkKZ7_xUnr8kRyogbMFt_ukz1"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.artemishospitals.com/blog/blood-sugar-normal-range"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.asurion.com/connect/tech-tips/how-to-transfer-apps-from-android-to-iphone/"}
-{"band": "mixed", "reasons": ["mostly boilerplate (71%)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3, "url": "https://www.bajajfinserv.in/how-to-check-bajaj-pay-fastag-balance"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.bajajfinserv.in/how-to-check-sbi-state-bank-of-india-fastag-balance"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.bajajfinserv.in/insurance/pros-and-cons-term-life-insurance"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.bajajfinserv.in/investments/best-mutual-fund-sip-plan"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.bajajfinserv.in/link-aadhaar-with-pan"}
-{"band": "mixed", "reasons": ["thin main text (1473 chars)", "mostly boilerplate (94%)"], "slop_risk": 0.2, "url": "https://www.bajajfinservmarkets.in/discover/best-shopping-credit-cards-in-india-for-2025"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.bajajfinservmarkets.in/stocks/how-to-start-investing-in-stocks-with-little-money"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.bankbazaar.com/pan-card/link-aadhar-pan-card.html"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.bassmedicalgroup.com/blog-post/vitamin-d-deficiency-fatigue-symptoms"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.bbrief.co.za/2024/08/01/what-are-the-side-effects-of-ashwagandha/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.bestpricebuys.com/best-robotic-vacuum-cleaners-in-india"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/liver-fatty-liver-disease"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.botanical-online.com/en/diet/how-to-lower-uric-acid-treatment"}
-{"band": "low", "reasons": ["18 affiliate links (density 0.50)", "contains affiliate links (18)", "50% of 36 outbound links go to shops", "thin main text (1429 chars)", "mostly boilerplate (94%)"], "slop_risk": 0.8, "url": "https://www.businessinsider.com/guides/kitchen/best-small-air-fryer"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.capitacaribbean.com/financial-wellness/additional-investing-tips-for-beginners-2/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.cardexpert.in/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.ckbhospital.com/blogs/grade-1-fatty-liver"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.ckbhospital.com/blogs/importance-of-vitamin-d"}
-{"band": "low", "reasons": ["6 affiliate links (density 0.27)", "contains affiliate links (6)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.cnbc.com/select/clear-credit-card-debt-before-the-new-year/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.cnet.com/home/kitchen-and-household/best-robot-vacuums-our-labs-tested-47-models-and-only-these-made-the-cut/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.cnet.com/tech/mobile/best-cheap-budget-wireless-earbuds/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.computerworld.com/article/1617815/how-to-speed-up-windows-11.html"}
-{"band": "mixed", "reasons": ["'best X' listicle pattern", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.35, "url": "https://www.consumerreports.org/appliances/air-fryers/best-small-air-fryers-from-consumer-reports-tests-a6852184036/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.covenanthealthcare.com/ch/bloodsugarlevels"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.credihealth.com/blog/12-best-medicine-for-acidity-and-gas"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.creditassociates.com/blog/debt-solutions/how-to-get-out-of-credit-card-debt/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.75, "url": "https://www.croma.com/home-appliances/air-treatment-devices/air-purifiers/c/1075?srsltid=AU7gw4WjXuSu9XOesWg_xQhPS3Sw6AWprumoAkyl8saEJhB4yJ8RIwcf"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.cruiseac.com/home-air-conditioners/split-inverter-ac/varioqool-3d/cwcvbk-vq3d185/"}
-{"band": "low", "reasons": ["no author or date", "thin main text (597 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.dbs.bank.in/in/treasures/articles/learning-centre/index-funds-vs-mutual-funds"}
-{"band": "ok", "reasons": ["54% of 13 outbound links go to shops"], "slop_risk": 0.15, "url": "https://www.digit.in/features/laptops/best-laptops-under-50000.html"}
-{"band": "low", "reasons": ["thin main text (1065 chars)", "no named author"], "slop_risk": 0.45, "url": "https://www.digitalindia.gov.in/initiative/fastag/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.doctronic.ai/blog/best-otc-medicine-for-bloating-and-gas/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.dspim.com/knowledge-hub/personal-finance-guide/goal-based-investing-what-it-is-and-how-it-can-help-you-build-a-better-portfolio/index-funds-vs-actively-managed-funds"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.emacweb.org/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.emergencysavingscalculator.com/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.emergencyusa.org/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.eternalhospital.com/title/normal-glucose-levels-what-should-glucose-levels-be-after-eating"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://www.eurekaforbes.com/c/air-purifiers?srsltid=AU7gw4UWzwOGUZdALN8LHzW7O64zLWWzDVhn52h7hv882sKpiVOLtO1J"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://www.eurekaforbes.com/c/vacuum-cleaners/robotic-vacuum-cleaner?srsltid=AU7gw4X06V4hZ8gpQa65M6tLDq8QPDEdtfvy3cDfywrsER4j7DOTAQIJ"}
-{"band": "low", "reasons": ["17 affiliate links (density 0.71)", "contains affiliate links (17)", "71% of 24 outbound links go to shops"], "slop_risk": 0.6, "url": "https://www.everydayfamilycooking.com/best-small-air-fryer/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.experian.com/blogs/ask-experian/credit-education/how-to-get-out-of-debt/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/over-counter-otc-heartburn-treatment"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/breast-implants-certain-labeling-recommendations-improve-patient-communication"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/obesity-and-overweight-developing-drugs-and-biological-products-weight-reduction"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.fepblue.org/news/2021/05/06/01/07/What-Are-Normal-Blood-Sugar-Levels"}
-{"band": "ok", "reasons": ["mostly boilerplate (76%)"], "slop_risk": 0.05, "url": "https://www.fidelity.com/learning-center/personal-finance/micro-investing"}
-{"band": "ok", "reasons": ["mostly boilerplate (70%)"], "slop_risk": 0.05, "url": "https://www.fidelity.com/viewpoints/personal-finance/save-for-an-emergency"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.financetoolspro.com/guides/mutual-fund/index-funds-vs-active-funds-india.html"}
-{"band": "mixed", "reasons": ["thin main text (816 chars)", "mostly boilerplate (92%)"], "slop_risk": 0.2, "url": "https://www.financialexpress.com/money/old-vs-new-tax-regime-in-2026-new-rules-change-calculations-which-option-saves-more-now-4184671/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (1010 chars)", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.9, "url": "https://www.flipkart.com/dr-mom-acidogas-syrup-acidity-gastritis-heartburn-relief-200ml-suitable/p/itm0b2a8ae3dda32"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.flipkart.com/q/best-mattress-for-back-pain"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.flipkart.com/q/cleaning-robot"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.flipkart.com/q/earbud"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.flipkart.com/q/robot-vacuum-cleaner"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.fonetool.com/phone-transfer/transfer-data-from-android-to-iphone-after-setup.html"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.foxbusiness.com/money/get-rid-of-credit-card-debt-for-good"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.gaiaherbs.com/blogs/seeds-of-knowledge/ashwagandha-side-effects"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.geeksforgeeks.org/techtips/how-to-block-spam-calls-on-android-phone/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.geeksforgeeks.org/techtips/see-deleted-messages-whatsapp/"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.getamplifylife.com/learn/blog/why-you-dont-need-term-life-insurance"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.goodfinancialcents.com/how-to-invest-small-amounts-of-money/"}
-{"band": "low", "reasons": ["18 affiliate links (density 0.45)", "contains affiliate links (18)", "55% of 40 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a71593976/best-air-fryers-review/"}
-{"band": "low", "reasons": ["14 affiliate links (density 0.40)", "contains affiliate links (14)", "49% of 35 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/g73833436/best-small-air-fryer/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.hdfclife.com/insurance-knowledge-centre/about-life-insurance/building-the-right-emergency-fund-how-much-is-enough?srsltid=AU7gw4WCTsBwY6aUDAlGOYUBunfKQGvnTIBuPHJnr6x8TYpaJt6GEsOQ"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.health.harvard.edu/diseases-and-conditions/over-the-counter-antacids-for-heartburn"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.health.harvard.edu/medications-and-treatments/ashwagandha-benefits-side-effects-and-safety-concerns"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/and-after-effect-eating-blood-sugar"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/blood-sugar-level-chart"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/blood-sugar-levels-chart-by-age"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/fasting-glucose-normal-range"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/normal-glucose-level-after-eating"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/how-to-reduce-uric-acid"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/medicine-for-gas"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/nutrition/vitamin-d-deficiency-symptoms"}
-{"band": "mixed", "reasons": ["thin main text (527 chars)", "mostly boilerplate (95%)"], "slop_risk": 0.2, "url": "https://www.healthshots.com/healthy-eating/nutrition/how-to-reduce-uric-acid-levels/"}
-{"band": "mixed", "reasons": ["thin main text (527 chars)", "mostly boilerplate (96%)"], "slop_risk": 0.2, "url": "https://www.healthshots.com/healthy-eating/nutrition/morning-foods-to-reduce-uric-acid-levels/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.hindustantimes.com/india-news/link-pan-card-and-aadhaar-via-income-tax-portal-or-sms-a-step-by-step-guide-101620885546016.html"}
-{"band": "low", "reasons": ["5 affiliate links (density 0.16)", "contains affiliate links (5)"], "slop_risk": 0.45, "url": "https://www.hindustantimes.com/technology/choosing-the-right-air-purifier-key-features-that-matter-most-amid-delhi-s-rising-pollution-101762226708215.html"}
-{"band": "low", "reasons": ["5 affiliate links (density 0.16)", "contains affiliate links (5)"], "slop_risk": 0.45, "url": "https://www.hindustantimes.com/technology/delhi-air-pollution-how-many-air-purifiers-should-i-have-in-my-home-101762057232051.html"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.home.saxo/learn/guides/diversification/index-funds-vs-actively-managed-funds"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.hopkinsarthritis.org/patient-corner/disease-management/role-of-body-weight-in-osteoarthritis/"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "no author or date", "no named author"], "slop_risk": 0.55, "url": "https://www.housegyan.com/blog/best-robot-vacuum-and-mop-cleaners-in-india"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.houzz.com/discussions/5498604/suggest-me-a-good-mattress-for-people-with-back-pain"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.howtogeek.com/these-hidden-windows-11-settings-instantly-made-my-pc-faster/"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "no author or date", "mostly boilerplate (93%)", "no named author"], "slop_risk": 0.6, "url": "https://www.icici.bank.in/personal-banking/blogs/investments/mutual-funds/best-sip-plan-to-invest"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.idfcfirst.bank.in/customer-care-sr/fast-tag"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.igeeksblog.com/how-to-transfer-data-from-android-to-iphone/"}
-{"band": "low", "reasons": ["no author or date", "mostly boilerplate (64%)", "no named author"], "slop_risk": 0.5, "url": "https://www.indiainfoline.com/knowledge-center/share-market/how-to-invest-in-the-stock-market-with-little-money"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.indiatoday.in/impact-feature/story/what-are-the-pros-and-cons-of-term-insurance-is-buying-a-term-plan-a-good-idea-2438119-2023-09-20"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.indiatoday.in/information/story/heres-how-you-can-check-your-account-balance-using-different-methods-1814632-2021-06-14"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.indiatv.in/paisa/personal-finance-forgot-uan-number-password-how-to-check-epf-balance-check-step-by-step-process-793827"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.insurancegeek.com/life-insurance/term-vs-whole-life-insurance/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.insurancegeek.com/life-insurance/types/term-life/"}
-{"band": "mixed", "reasons": ["thin main text (377 chars)", "mostly boilerplate (61%)"], "slop_risk": 0.2, "url": "https://www.inverse.com/input/guides/how-to-block-spam-calls-on-ios-android-phones"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.ionos.com/digitalguide/server/configuration/speed-up-windows-11/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.ipcc.ch/sr15/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://www.justdial.com/Delhi/Air-Purifier-Manufacturers/nct-10011641"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.keytradebank.be/en/our-blog/investing-when-you-dont-have-much-time"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://www.kotak811.bank.in/insights/savings/how-much-to-save-for-emergency-fund"}
-{"band": "low", "reasons": ["16 affiliate links (density 0.34)", "contains affiliate links (16)", "34% of 47 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://www.livemint.com/gadgets-and-appliances/best-air-fryer-for-family-top-picks-with-spacious-capacity-and-versatile-cooking-features-for-convenient-everyday-meals-11789382439522.html"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.lokmat.com/sakhi/fitness/natural-ways-to-reduce-uric-acid-in-the-body-how-to-lower-uric-acid-levels-naturally-a-a648/"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://www.lybrate.com/topic/ashwagandha-benefits-and-side-effects/health-feed/questions"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medanta.org/patient-education-blog/diabetes-level-chart-normal-prediabetes-diabetes"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medanta.org/patient-education-blog/how-to-reduce-uric-acid-at-home-the-simple-guide-you-need-today"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medanta.org/patient-education-blog/normal-glucose-levels-after-eating"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicalnewstoday.com/articles/325317"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicinenet.com/14_signs_of_vitamin_d_deficiency/article.htm"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicinenet.com/normal_blood_sugar_levels_in_adults_with_diabetes/article.htm"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicoverhospitals.in/articles/vitamin-d-deficiency-in-women"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.minitool.com/android-recovery/recover-android-whatsapp-messages.html"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.miraeassetmf.co.in/knowledge-center/index-funds-versus-mutual-funds"}
-{"band": "ok", "reasons": ["mostly boilerplate (79%)"], "slop_risk": 0.05, "url": "https://www.moneycontrol.com/technology/6-tried-and-tested-tricks-to-speed-up-a-slow-windows-laptop-photo-gallery-13627734.html"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.moneylion.com/learn/debt/credit-cards/how-to-get-out-of-credit-card-debt"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.moneyunder30.com/start-investing-with-little-money/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.morningstar.in/posts/25434/how-to-deal-with-credit-card-debt.aspx"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.mortein.co.in/expert-advice/expert-prevention/low-platelets-these-foods-will-restore-them/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.myanmol.com/post/ppf-vs-elss-which-tax-saving-investment-is-right-for-you-in-2025"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.mybanktracker.com/blog/investing/index-funds-vs-managed-mutual-funds-166190"}
-{"band": "low", "reasons": ["3 affiliate links (density 0.17)", "contains affiliate links (3)", "'best X' listicle pattern"], "slop_risk": 0.55, "url": "https://www.mymillennialguide.com/start-investing-with-little-money/"}
-{"band": "mixed", "reasons": ["'best X' listicle pattern", "thin main text (1425 chars)", "mostly boilerplate (90%)"], "slop_risk": 0.3, "url": "https://www.mymudra.com/blog/best-credit-card-for-online-shopping-in-india"}
-{"band": "low", "reasons": ["10 affiliate links (density 0.24)", "contains affiliate links (10)"], "slop_risk": 0.45, "url": "https://www.ncoa.org/product-resources/sleep/best-mattresses-for-back-pain/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.nerdwallet.com/insurance/life/learn/who-needs-life-insurance"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.nerdwallet.com/personal-loans/learn/pay-off-credit-card-debt"}
-{"band": "low", "reasons": ["no author or date", "mostly boilerplate (92%)", "no named author"], "slop_risk": 0.5, "url": "https://www.nichd.nih.gov/research/supported/IMPROVE"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.nollahealth.com/learning/acid-reflux-non-prescription-medication"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.nourish.com/blog/how-long-does-blood-sugar-stay-elevated-after-eating"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.nyvo.money/resources/financial-planning/emergency-fund-india"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.onepaisa.in/articles/index-funds-vs-active-funds-india-comparison"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.onmanorama.com/lifestyle/health/2025/04/18/indians-take-dolo-parcetamol-like-gems-healthy-dosage.html"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.pathkindlabs.com/blog/heres-how-to-increase-your-platelet-count-naturally"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.pharmacytimes.com/view/treating-acid-reflux-with-over-the-counter-medications"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.pocketful.in/blog/how-to-invest-in-stock-market-for-beginners/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.popsci.com/diy/how-to-stop-spam-calls/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/dolo-6-times-per-day-is-dangerous-can-dolo-be-taken-within-an-interval-of-4-hrs-each-doc-advised-to-take-at-an/q"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/gastric-acidity-i-m-deepthi-i-was-getting-severe-acidity-burning-sensation-can-u-please-prescribe-any-medication-or/q"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/mild-fever-how-many-dolo-650-tablets-can-v-take-for-a-day-can-i-take-4-tablets-per-day-is-ot-cause-any-side/q"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/soft-mattress-back-pain/t"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.precize.in/blogs/investing-basics-guide-beginners"}
-{"band": "low", "reasons": ["14 affiliate links (density 0.88)", "contains affiliate links (14)", "88% of 16 outbound links go to shops"], "slop_risk": 0.6, "url": "https://www.producthunter.in/home-appliances/best-robot-vacuum-cleaners-india"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (0 chars)", "no named author"], "slop_risk": 0.65, "url": "https://www.prudential.com/personal/life-insurance/find-life-insurance-policy/term-life-products"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.quorumfcu.org/learn/five-strategies-to-help-shrink-credit-card-debt"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.ramseysolutions.com/debt/how-to-pay-off-credit-card-debt"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.reliancedigital.in/collection/mobile-phones-between-20000-to-30000"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.reliancedigital.in/collection/mobile-phones-between-rs-10000-to-20000"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.republicworld.com/india/why-popping-dolo-650-like-candy-could-be-hurting-you-more-than-helping-us-doctor-explains"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.resetera.com/threads/cheap-wireless-earbuds-recommendations.593250/"}
-{"band": "mixed", "reasons": ["no about or contact page linked", "thin main text (0 chars)"], "slop_risk": 0.2, "url": "https://www.roblox.com/"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "no about or contact page linked", "thin main text (987 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.rtings.com/air-fryer/reviews/best/small"}
-{"band": "low", "reasons": ["'best X' listicle pattern", "no about or contact page linked", "thin main text (1171 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.rtings.com/headphones/reviews/best/cheap-wireless-earbuds"}
-{"band": "ok", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.15, "url": "https://www.rtings.com/running-shoes/reviews/best/beginners"}
-{"band": "low", "reasons": ["21 affiliate links (density 0.49)", "contains affiliate links (21)", "51% of 43 outbound links go to shops", "'best X' listicle pattern"], "slop_risk": 0.7, "url": "https://www.runnersworld.com/beginner/g45653268/best-running-shoes-for-beginners/"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.runnersworld.com/uk/gear/shoes/a32170097/beginner-running-shoes/"}
-{"band": "ok", "reasons": ["mostly boilerplate (84%)"], "slop_risk": 0.05, "url": "https://www.runningshoesguru.com/guide/best-running-shoes-for-beginners/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.runningxpert.com/en/inspiration/running-shoes-for-beginners"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.runweekly.com/best-running-shoes-for-beginners/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.sarvodayahospital.com/blog/fatty-liver-symptoms-causes-and-effective-treatment-options"}
-{"band": "low", "reasons": ["21 affiliate links (density 0.60)", "contains affiliate links (21)", "77% of 35 outbound links go to shops"], "slop_risk": 0.6, "url": "https://www.scarbir.com/guide/best-cheap-wireless-earbuds-for-phone-calls"}
-{"band": "low", "reasons": ["22 affiliate links (density 0.65)", "contains affiliate links (22)", "79% of 34 outbound links go to shops"], "slop_risk": 0.6, "url": "https://www.scarbir.com/guide/best-tws-under-100"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.scripps.org/news_items/7374-what-causes-vitamin-d-deficiency"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.settlepro.in/how-to-get-out-of-credit-card-debt-fast-in-india"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.share.market/buzz/mutual-fund/elss-vs-ppf-vs-nps/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.sharekhan.com/mutual-funds/sip-we-like"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.sidebysideva.org/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.sidebysideyouth.org/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.sikayetvar.com/en/nsdl-payment-bank-us/nsdl-payment-bank-upi-failed-but-money-deducted-how-can-i-get-refund-and-proof-q-31607"}
-{"band": "mixed", "reasons": ["'best X' listicle pattern", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.35, "url": "https://www.sleepadvisor.org/best-mattresses-for-back-pain/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.sleepfoundation.org/best-mattress/best-mattress-for-back-pain"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.soundguys.com/best-wireless-earbuds-under-100-20397/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.soundguys.com/best-wireless-earbuds-under-200-73754/"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.stash.com/learn/emergency-fund-complete-guide/"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.sterisonline.com/blog/best-medicines-for-acidity-gas-amp-indigestion-your-complete-guide-to-digestive-health"}
-{"band": "ok", "reasons": ["no about or contact page linked"], "slop_risk": 0.05, "url": "https://www.stockgro.club/blogs/mutual-funds/best-sip-plans-mutual-funds-in-india/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.stylecraze.com/articles/unexpected-side-effects-of-ashwagandha/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.supwell.com/supbeat/best-running-shoes-for-beginners"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.swellfp.com.au/post/ways-start-investing-small-amounts"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.syncios.com/android/transfer-data-from-android-to-iphone.html"}
-{"band": "low", "reasons": ["10 affiliate links (density 1.00)", "contains affiliate links (10)", "100% of 10 outbound links go to shops", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.75, "url": "https://www.talkofthehouse.com/best-air-fryers/"}
-{"band": "mixed", "reasons": ["no named author"], "slop_risk": 0.3, "url": "https://www.tdinsurance.com/products-services/life-insurance/life-guide/is-term-life-insurance-worth-it"}
-{"band": "low", "reasons": ["23 affiliate links (density 0.55)", "contains affiliate links (23)", "55% of 42 outbound links go to shops", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.85, "url": "https://www.techgearlab.com/topics/smart-home/best-robot-vacuum"}
-{"band": "low", "reasons": ["16 affiliate links (density 0.21)", "contains affiliate links (16)", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.theverge.com/gadgets/932425/best-robot-vacuum-mop-reviews-buying-guide"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.thrivent.com/insights/investing/how-to-start-investing-with-little-money"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.throwpillow.in/post/which-air-fryer-is-good?srsltid=AU7gw4U1dWtWorEWFf00VaPSV4HL-dkwAtD97B_y-Huh-gCBxTmMhLjc"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnowhindi.com/utility-news/failed-upi-transaction-but-money-deducted-check-what-to-do-article-108268954"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnownews.com/business-economy/personal-finance/how-to-check-epf-balance-using-uan-number-heres-a-step-by-step-guide-article-108724437"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnownews.com/health/5-morning-habits-that-help-keep-uric-acid-levels-regulated-article-118616751"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.trivitron.com/blog/easiest-ways-to-maintain-normal-platelet-count-in-dengue-fever"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.trustedreviews.com/best/best-cheap-earbuds-4382625"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.un.org/en/climatechange/science/climate-issues/degrees-matter"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.unep.org/resources/limiting-overshoot-navigating-exceedance"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "no named author"], "slop_risk": 0.5, "url": "https://www.ursulakleguin.com/message-about-messages"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.venturasecurities.com/blog/escaping-the-credit-card-debt-trap/"}
-{"band": "low", "reasons": ["no author or date", "no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.7, "url": "https://www.walgreens.com/store/c/antacids/ID=361507-tier3"}
-{"band": "low", "reasons": ["no author or date", "no about or contact page linked", "thin main text (208 chars)", "no named author"], "slop_risk": 0.65, "url": "https://www.walmart.com/c/kp/arch-support-running-shoes"}
-{"band": "ok", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.1, "url": "https://www.wasatchpeaks.com/blog/11-best-ways-to-pay-off-credit-card-debt-fast-wasatch-peaks-credit-union"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wealthredefine.in/how-to-start-investing-at-25-with-30k-income-for-long-term-growth/"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.webmd.com/diet/vitamin-d-deficiency"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.webmd.com/obesity/healthy-weight"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.webmd.com/vitamins-supplements/ashwagandha"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Invest-Small-Amounts-of-Money-Wisely"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Reduce-Uric-Acid-Fast"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Retrieve-Old-WhatsApp-Messages"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Speed-Up-Windows-11"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Speed-Up-a-Slow-Windows-Computer-for-Free"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.tech/Recover-Deleted-Messages-in-WhatsApp"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://www.wildfoods.co/blogs/content/ashwagandha-side-effects?srsltid=AU7gw4UREYkxhfmoVIAbX9EKPlkX8zdVS3ysk-VvkOAhFoboeFNQBSYK"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.wrightresearch.in/blog/index-funds-vs-actively-managed-funds/"}
-{"band": "low", "reasons": ["no author or date", "no named author"], "slop_risk": 0.45, "url": "https://www.xerve.in/prices/s-headphones-and-earphones/t-earphones"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/8LskqpsGtXA"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/Llb6e-DzqFk"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/MZ9K26rNL_g"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/Q0_GoGeJB6w"}
-{"band": "mixed", "reasons": ["'best X' listicle pattern", "thin main text (134 chars)"], "slop_risk": 0.25, "url": "https://www.youtube.com/shorts/Qrn5Ak3N_Hg"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/Uk7_LxQ7jNM"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/XAXvGQkcG4c"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/fJZiVwSUy20"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/jIX6RPSYbvM"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/sbTdFkMs0wk"}
-{"band": "ok", "reasons": ["thin main text (134 chars)"], "slop_risk": 0.15, "url": "https://www.youtube.com/shorts/vB4ymSyiER0"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=-t7ZdEfYDes"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=09WtGnMDNjo"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=1EsCm1ugWP8"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=1Pxmy9S8EPs"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=2xf4LrBDyRY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=3U-aAolflpc"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=3an_0CSGPaY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=5-LoByt_q_Q"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=59NKYdFlPCA"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=6nojRzHj0CE"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=8gjOXAjeisY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=BOBwQva4dlg"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=DFPjBWmKrFY&xstg=CAMSBhUD_LL2Hw%3D%3D"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=DLjyfDthadI"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=G_OPGSxUT7Y"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=GeFbR8J_dMw"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=Iil5lbLGGmE"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=Irc9VRUZzRY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=LdEonQ_XlZk"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=OoCubeDarrI"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=RTJIFYxNAKE&xstg=CAMSBhUD_LL2Hw%3D%3D"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=SJ71CioyQtY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=So1DRwHJO1E"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=TiofOhGuFH0"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=UnimiNYX2qg"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=VdvOnLrXOMQ"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=ZBsCvpg61uU"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=b0kXOo0rSgw"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=bEQPnnauguA"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=bnmcwtFv8wY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=dnKb2IcM2aY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=eNV3ZoOAhSU"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=gG_7BPEpDcY"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=hGFjMoBRhiw"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=hcOqSofbGF8"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=ipM9SRa9kCI"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=jazK8OjvBqQ"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=kCt3ypKyrlE"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=pGai34_nxL4"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=qHJS-xRYUsU"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=ry7PJEqyxVc"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=vcdPfD_XVKA"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=wUiPAI8MslQ"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=xMDaF2r0_Yg"}
-{"band": "low", "reasons": ["no author or date", "thin main text (134 chars)", "no named author"], "slop_risk": 0.6, "url": "https://www.youtube.com/watch?v=xZpTFH5mpDM"}
-{"band": "ok", "reasons": [], "slop_risk": 0.0, "url": "https://www.zdnet.com/article/how-to-transfer-data-from-android-to-an-iphone/"}
-{"band": "low", "reasons": ["no about or contact page linked", "thin main text (1135 chars)", "no named author"], "slop_risk": 0.5, "url": "https://www.zeebiz.com/personal-finance/video-gallery-how-to-check-epf-balance-online-with-uan-number-54419"}
-{"band": "low", "reasons": ["contains affiliate links (1)", "'best X' listicle pattern", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.45, "url": "https://www.zenzdeal.com/blog/best-air-fryer-in-india/"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://yourhealthier.com/blogs/blog/ashwagandha-side-effects"}
-{"band": "mixed", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.25, "url": "https://zeelabpharmacy.com/blog/medicines-for-gas-in-india"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://acibademinternational.com/blog/blood-sugar-levels-after-eating-normal-ranges-spikes-and-what-your-numbers-mean/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (8)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://allaroundkitchens.com/best-air-fryers-for-a-family/"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://americancreditfoundation.org/articles/get-out-of-debt-without-hurting-credit/"}
+{"band": "ok", "query_id": "product-02", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://amstradworld.com/product/amstrad-megalo-series-ac-1-5-ton-5-star-inverter-split-air-conditioner-amsi2055hd/"}
+{"band": "mixed", "query_id": "tech-06", "reasons": ["title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "no about or contact page linked"], "slop_risk": 0.4597, "url": "https://apps.apple.com/us/app/messages/id1146560473"}
+{"band": "ok", "query_id": "health-05", "reasons": ["main text covers 20% of the query's words", "thin main text (1071 chars)"], "slop_risk": 0.1651, "url": "https://arogyadham.in/blog/best-ayurvedic-treatment-for-hypertension/"}
+{"band": "ok", "query_id": "health-09", "reasons": ["title and headings cover 40% of the query's words"], "slop_risk": 0.2089, "url": "https://ashrayahospitals.com/blog/stages-of-fatty-liver-disease-management/"}
+{"band": "mixed", "query_id": "health-05", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://ask-ayurveda.com/hi/questions/13758-how-does-ayurveda-help-in-managing-and-treating-hypertension-high-blood-pressure"}
+{"band": "mixed", "query_id": "health-04", "reasons": ["no named author", "no author or date", "title and headings cover 33% of the query's words"], "slop_risk": 0.485, "url": "https://askdocdoc.com/questions/27796-dolo--action-time"}
+{"band": "ok", "query_id": "health-05", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://ayurwayayurveda.com/treatment-for-high-blood-pressure/"}
+{"band": "mixed", "query_id": "tech-05", "reasons": ["no named author", "no author or date", "title and headings cover 33% of the query's words"], "slop_risk": 0.485, "url": "https://bankofbaroda.bank.in/digital-products/other-digital-services/fastag"}
+{"band": "mixed", "query_id": "finance-07", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://basketoption.insure/blog/is-term-insurance-worth-it"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://bedgear.com/blogs/mattresses/best-mattress-for-side-sleepers-with-back-pain?srsltid=AU7gw4VvidHPIgK4KbaQMIIPKqCFLZ_2JsmFhiQK3KY9Wnerp3wdJUpb"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://beebom.com/how-block-spam-calls-android/"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://beebom.com/how-speed-up-windows-11/"}
+{"band": "ok", "query_id": "product-09", "reasons": ["contains affiliate links (1)"], "slop_risk": 0.0, "url": "https://believeintherun.com/shoe-reviews/best-running-shoes-for-beginners/"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["title and headings cover 0% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.491, "url": "https://bgapc.com/are-over-the-counter-heartburn-medications-safe/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://biologyinsights.com/vitamin-d-deficiency-in-women-causes-and-symptoms/"}
+{"band": "ok", "query_id": "tech-02", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://biznext.in/blog/tag/pf-balance-check-with-uan-number/?srsltid=AU7gw4WzmX0Vopv8RBoQh7EcKaG-0V7VDysjnXVyIyu429OPWbM5p5b7"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://blallab.com/blogs/home-remedies-to-reduce-uric-acid-naturally"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://blinkmoney.in/blogs/how-to-start-investing-with-small-amounts"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://blog.bankbazaar.com/tip-to-stay-away-from-credit-card-debt/"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://blog.incogni.com/stop-spam-calls-on-android/"}
+{"band": "ok", "query_id": "tech-01", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://blog.ipleaders.in/link-aadhar-card-pan-card/"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://bodhishop.in/blogs/news/withania-somnifera-exploring-the-wonders-of-ashwagandha?srsltid=AU7gw4WSaz4CVfMQStan12NH0h9HFZwvyLArpRERXLqHhLVpyEMMkskj"}
+{"band": "ok", "query_id": "product-05", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://budgettech.in/best-laptops-under-50000/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://buechnerinsurance.com/blog/5-reasons-term-life-insurance-makes-sense-for-every-stage-of-life/"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://calculwise.com/blog/emergency-fund-how-much"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://calcwise.finance/emergency-financial-planning/emergency-fund-complete-guide/"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://cardinsider.com/"}
+{"band": "ok", "query_id": "tech-10", "reasons": [], "slop_risk": 0.0, "url": "https://ccm.net/apps-sites/email/1031-how-to-recover-gmail-account/"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://cfieducation.in/blogs/a-beginners-guide-to-start-investing-in-your-20s/"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://cleartax.in/s/emergency-fund-invest"}
+{"band": "ok", "query_id": "product-10", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://cslifestyle.in/guides/best-air-fryer-india-2026?srsltid=AU7gw4UnESWuD7mNCGWWYNubWTXzQz6lpJc_UsFRTZ5Cz4b2yre3_qHA"}
+{"band": "ok", "query_id": "health-02", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://curelohealth.com/blog/dengue-diet-foods-to-boost-platelet-count"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["contains affiliate links (1)"], "slop_risk": 0.0, "url": "https://cybersecurityguides.net/guides/recover-hacked-gmail"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (5)"], "slop_risk": 0.0, "url": "https://dailytrendsdeals.in/best-air-fryer-under-5000-in-india/"}
+{"band": "mixed", "query_id": "finance-01", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://dhan.co/mutual-funds/mf-to-invest/best-sip-to-invest-in-2026/"}
+{"band": "mixed", "query_id": "health-03", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "title and headings cover 29% of the query's words"], "slop_risk": 0.4419, "url": "https://diabetesaction.org/questions-blood-sugar"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://diabetesknow.com/management/blood-sugar-charts/"}
+{"band": "ok", "query_id": "health-01", "reasons": [], "slop_risk": 0.0, "url": "https://directdawai.com/blog/gas-acidity-indigestion-remedies"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "thin main text (1264 chars)", "no about or contact page linked"], "slop_risk": 0.0847, "url": "https://discussions.apple.com/thread/256354477"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://dosaze.com/blogs/llms/the-best-mattress-for-back-pain-isnt-what-most-people-think"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://dowfurniture.com/blogs/furniture-blog/how-to-choose-a-mattress-that-supports-better-recovery?srsltid=AU7gw4Xu4UmtOKZNjCL5ScKNN6RgCVoPSayV3_aKGRbhSJHhxNj6Z-Q_"}
+{"band": "mixed", "query_id": "health-09", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://drajayyadav.in/blogs/understanding-grade-1-fatty-liver-causes-symptoms-diagnosis-and-reversal-strategies"}
+{"band": "mixed", "query_id": "tech-06", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3913, "url": "https://drfone.wondershare.com/whatsapp/android-whatsapp-recovery.html"}
+{"band": "mixed", "query_id": "tech-06", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3913, "url": "https://drfone.wondershare.com/whatsapp/whatsapp-recovery.html"}
+{"band": "ok", "query_id": "finance-06", "reasons": ["contains affiliate links (1)", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://economictimes.indiatimes.com/wealth/invest/how-much-emergency-fund-is-enough-for-you/why-you-need-an-emergency-fund-before-any-investment/slideshow/123183807.cms"}
+{"band": "low", "query_id": "product-07", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://ecovacsindia.in/?srsltid=AU7gw4W8fgMXTM045ix_TeIcJGTUhbucmvJbVhsT7LIj4uQPLtvRrpIS"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://emergencyfundcalculator.com/emergency-fund/"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://emergencyfundcalculator.com/how-much-emergency-fund-do-i-need/"}
+{"band": "ok", "query_id": "tech-06", "reasons": [], "slop_risk": 0.0, "url": "https://en.androidayuda.com/applications/Tutorials/How-to-recover-deleted-WhatsApp-conversations-step-by-step/"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://en.androidguias.com/How-to-block-spam-calls-on-android-effectively/"}
+{"band": "mixed", "query_id": "finance-06", "reasons": ["title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.491, "url": "https://en.wikipedia.org/wiki/Emergency!"}
+{"band": "ok", "query_id": "health-10", "reasons": ["title and headings cover 33% of the query's words"], "slop_risk": 0.2089, "url": "https://en.wikipedia.org/wiki/Side"}
+{"band": "mixed", "query_id": "health-08", "reasons": ["title and headings cover 17% of the query's words", "main text covers 17% of the query's words"], "slop_risk": 0.491, "url": "https://en.wikipedia.org/wiki/Weight"}
+{"band": "ok", "query_id": "product-06", "reasons": [], "slop_risk": 0.0, "url": "https://famiboards.com/threads/the-best-budget-bluetooth-earbuds-for-the-nintendo-switch.2813/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://financefunda.in/blog/best-term-insurance-plan-india-2026"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://financer.com/personal-finance/get-out-of-debt/"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://findbrief.com/speed-up-slow-windows-laptop/"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://finlecture.in/mutual-funds/index-funds-vs-actively-managed-funds/"}
+{"band": "ok", "query_id": "health-04", "reasons": [], "slop_risk": 0.0, "url": "https://flypped.com/health-fitness/dolo-650-tablet-uses"}
+{"band": "ok", "query_id": "product-08", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://forum.mattressunderground.com/t/time-for-a-new-mattress-best-mattress-for-lower-back-pain/13482"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://foundationwealth.in/blog/index-funds-vs-actively-managed-funds-the-honest-comparison"}
+{"band": "ok", "query_id": "tech-09", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://gadgets.beebom.com/guides/how-to-block-spam-calls-on-android"}
+{"band": "ok", "query_id": "tech-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://gadgets.beebom.com/guides/how-to-recover-deleted-whatsapp-chat"}
+{"band": "ok", "query_id": "tech-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://gadgets.beebom.com/guides/how-to-see-deleted-whatsapp-messages"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://gadgets.beebom.com/guides/how-to-transfer-data-from-android-to-iphone"}
+{"band": "ok", "query_id": "health-09", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://gastroliver.co.in/blog/understanding-grade-one-fatty-liver/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://getvitaminlab.com/cms/blog/nutrients/top-10-signs-you-may-have-a-vitamin-d-deficiency/"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://ghc.health/blogs/all-about-men/ashwagandha-health-benefits-side-effects-and-how-to-use?srsltid=AU7gw4X2KbcStgAWNF7kKCPGx_4akkbuWs0yomkLbbCCC7U_xfG_h56z"}
+{"band": "ok", "query_id": "finance-05", "reasons": [], "slop_risk": 0.0, "url": "https://growthvine.in/elss-vs-ppf-vs-nps-comparing-indias-tax-saving-instruments/"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://groww.in/blog/how-to-invest-in-stock-market-with-little-money"}
+{"band": "ok", "query_id": "finance-09", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://groww.in/blog/index-funds-vs-mutual-funds"}
+{"band": "low", "query_id": "finance-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://groww.in/mutual-funds/category/best-sip-mutual-funds"}
+{"band": "ok", "query_id": "finance-02", "reasons": [], "slop_risk": 0.0, "url": "https://guhancapitals.in/blog/old-vs-new-tax-regime-2026-comparison"}
+{"band": "ok", "query_id": "tech-02", "reasons": ["main text covers 50% of the query's words", "thin main text (548 chars)"], "slop_risk": 0.1651, "url": "https://gujarati.abplive.com/news/india/epfo-tips-new-uan-number-forgotten-this-is-how-you-can-know-your-pf-balance-check-920232"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://health.clevelandclinic.org/what-is-ashwagandha"}
+{"band": "ok", "query_id": "health-02", "reasons": [], "slop_risk": 0.0, "url": "https://hellodoctor.com.ph/infectious-diseases/dengue/how-to-increase-platelet-count-in-dengue/"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://hitechdiagnosticcentre.com/vitamin-d-deficiency-test/"}
+{"band": "ok", "query_id": "finance-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://how.finance/how-much-should-i-have-in-an-emergency-fund/"}
+{"band": "low", "query_id": "product-07", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://in.dreametech.com/collections/robot-vaccums?srsltid=AU7gw4Vs8Gq-9ENMJiZ8Zn3Rhj5Cnh2E_KEkuVqP0KA7KuEdu1kOamEz"}
+{"band": "ok", "query_id": "tech-04", "reasons": [], "slop_risk": 0.0, "url": "https://indiaclear.com/aadhar-card-free-download-e-aadhaar-2019-uidai-gov-in/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["thin main text (1487 chars)", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://indianexpress.com/web-stories/miscellaneous/9-signs-vitamin-d-deficiency-females/9987676/"}
+{"band": "ok", "query_id": "finance-09", "reasons": ["no named author", "no author or date", "no about or contact page linked"], "slop_risk": 0.2448, "url": "https://investor.vanguard.com/investor-resources-education/understanding-investment-types/index-funds-vs-actively-managed-funds"}
+{"band": "ok", "query_id": "finance-02", "reasons": [], "slop_risk": 0.0, "url": "https://itradda.com/new-tax-regime-vs-old-regime-which-is-better-for-salaried-class/"}
+{"band": "ok", "query_id": "tech-10", "reasons": [], "slop_risk": 0.0, "url": "https://itsourcecode.com/blogs/how-to-recover-hacked-gmail-account-2026/"}
+{"band": "ok", "query_id": "product-05", "reasons": [], "slop_risk": 0.0, "url": "https://jamesandco.in/best-laptop-under-50000-for-students/?srsltid=AU7gw4VRE1emNAdcVpfrqCbDwbZRbj-RBSQoO3vYuhuLrAhgF3BeZ0Kp"}
+{"band": "mixed", "query_id": "finance-07", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://jioinsure.in/term-insurance/blog/should-you-buy-term-insurance-for-your-stay-at-home-spouse"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://johnryanbydesign.co.uk/ask-the-community/question/best-mattress-for-chronic-back-pain-2/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://joinditto.in/articles/life-insurance/is-term-insurance-good/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://joinditto.in/articles/term-insurance/is-term-insurance-worth-it/"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://jumpp.finance/blog/financial-management/personal-finance/how-to-start-investing-with-little-money/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://kitchendeals.in/best-air-fryer-under-%E2%82%B95000-in-india-2026"}
+{"band": "ok", "query_id": "health-02", "reasons": ["title and headings cover 33% of the query's words"], "slop_risk": 0.2089, "url": "https://kumaranhospitals.com/effective-diet-strategies-to-enhance-platelet-levels-during-dengue/health/"}
+{"band": "ok", "query_id": "finance-01", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://kuvera.in/blog/best-sip-mutual-funds-to-invest-in-2026/"}
+{"band": "low", "query_id": "product-04", "reasons": ["no named author", "no author or date", "title and headings cover 20% of the query's words", "main text covers 40% of the query's words", "thin main text (683 chars)", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.52, "url": "https://lakhisarai.nic.in/department/7-ro-list/"}
+{"band": "ok", "query_id": "tech-04", "reasons": [], "slop_risk": 0.0, "url": "https://leadingfile.com/blog/aadhaar-card-download/"}
+{"band": "ok", "query_id": "health-03", "reasons": ["no named author", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.0282, "url": "https://learn.mdsdiabetes.com/wiki/postprandial-blood-sugar-what-is-normal-after-eating"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["no named author", "no author or date", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.146, "url": "https://learn.microsoft.com/en-us/answers/questions/680614/how-can-i-get-my-hacked-account-back-they-changed"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://lifeinsurance.adityabirlacapital.com/articles/savings-insurance/how-to-begin-your-financial-investments/"}
+{"band": "ok", "query_id": "health-01", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://livlong.com/blogs/health-and-wellness/ease-your-stomach-by-gastric-problem-using-ayurvedic-medicine"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://maharashtratimes.com/lifestyle-news/health-news/foods-for-reduce-high-uric-acid-naturally-from-blood-as-per-health-experts/articleshow/112327488.cms"}
+{"band": "ok", "query_id": "tech-03", "reasons": [], "slop_risk": 0.0, "url": "https://marathi.economictimes.com/wealth/personal-finance/upi-payment-failed-money-deducted-refund-steps-guide-rbi-rules/articleshow/133310193.cms"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://masalamonk.com/10-ashwagandha-side-effects-you-should-know/"}
+{"band": "mixed", "query_id": "health-03", "reasons": ["no named author", "no author or date", "title and headings cover 0% of the query's words", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.3549, "url": "https://medlineplus.gov/prediabetes.html"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://midwestpainclinics.com/9-vitamin-d-deficiency-symptoms-you-should-know/"}
+{"band": "low", "query_id": "tech-08", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://mobiletrans.wondershare.com/iphone-transfer/transfer-files-from-android-to-iphone.html"}
+{"band": "low", "query_id": "tech-06", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://mobiletrans.wondershare.com/whatsapp-restore/recover-deleted-whatsapp-messages.html"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://moneykit.in/emergency-fund-calculator/"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://moneyview.in/credit-card/best-cashback-credit-card-in-india"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://monumoney.in/calculators/emergency-fund-calculator"}
+{"band": "ok", "query_id": "health-06", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://my.clevelandclinic.org/health/diseases/15050-vitamin-d-vitamin-d-deficiency"}
+{"band": "ok", "query_id": "health-03", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://mydiagnostics.in/blogs/diabetes-cardiac/blood-sugar-levels-after-meals-what-s-normal-and-what-s-not"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://myhealthopedia.com/ashwagandha-health-benefits-side-effects-uses/"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://naga.com/eu/academy/invest-with-little-money"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://naturalremedyideas.com/vitamin-d-deficiency-symptoms-for-women/"}
+{"band": "mixed", "query_id": "product-08", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.3913, "url": "https://neobest.in/blogs/news/lower-back-pain-when-you-wake-up-heres-what-your-mattress-might-be-doing?srsltid=AU7gw4U4uCKXxX8zhKdXLERMPt-n5F6JyyzmUzPfbq9KrOF1no09a8IF"}
+{"band": "mixed", "query_id": "health-05", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://omshreeayur.com/treatments/blood-pressure/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://patient.info/bones-joints-muscles/osteoporosis-leaflet/vitamin-d-deficiency"}
+{"band": "ok", "query_id": "health-01", "reasons": ["main text covers 50% of the query's words", "'best X' listicle pattern"], "slop_risk": 0.2124, "url": "https://pharmeasy.in/blog/home-remedies-for-acidity/"}
+{"band": "low", "query_id": "health-10", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "main text covers 33% of the query's words"], "slop_risk": 0.7912, "url": "https://pharmeasy.in/molecules/ashwagandha-492768"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://powerbean.in/how-to-speed-up-windows-11-the-ultimate-performance-optimization-guide/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://primadiagnostics.com/vitamin-d-deficiency-symptoms-in-indians-10-signs-you-are-low/"}
+{"band": "ok", "query_id": "finance-09", "reasons": ["title and headings cover 40% of the query's words"], "slop_risk": 0.2089, "url": "https://primeinvestor.in/reports/is-it-time-to-move-from-active-funds-to-index-funds/"}
+{"band": "ok", "query_id": "finance-04", "reasons": [], "slop_risk": 0.0, "url": "https://qa.cus.zetapp.in/blog/best-online-shopping-credit-cards-in-india-2024"}
+{"band": "mixed", "query_id": "tech-05", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://quid.money/blog/8-easy-ways-to-check-fastag-status-online-and-offline"}
+{"band": "ok", "query_id": "health-02", "reasons": [], "slop_risk": 0.0, "url": "https://redcliffelabs.com/myhealth/dengue/ways-to-increase-platelet-count-in-dengue-naturally/"}
+{"band": "ok", "query_id": "tech-04", "reasons": [], "slop_risk": 0.0, "url": "https://revealthat.com/aadhaar-download/"}
+{"band": "ok", "query_id": "product-06", "reasons": ["contains affiliate links (5)", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://reviehub.in/5-best-budget-wireless-earbuds-in-india-2026-tested-ranked/"}
+{"band": "mixed", "query_id": "health-02", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://rishabhospital.com/blog_details/dengue-fever-platelet-count-symptoms-danger-levels-how-to-increase-platelets-fast"}
+{"band": "ok", "query_id": "product-09", "reasons": [], "slop_risk": 0.0, "url": "https://runkituk.co.uk/best-carbon-plate-running-shoes-2026-uk/"}
+{"band": "ok", "query_id": "product-09", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://runrepeat.com/uk/guides/best-for-beginners-running-shoes"}
+{"band": "ok", "query_id": "product-09", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://runtothefinish.com/running-shoes-for-beginners/"}
+{"band": "ok", "query_id": "finance-02", "reasons": [], "slop_risk": 0.0, "url": "https://salaryinhand.in/compare/20-lpa-old-vs-new-tax-regime"}
+{"band": "ok", "query_id": "tech-02", "reasons": [], "slop_risk": 0.0, "url": "https://salaryslip.org/pf-balance-check-with-and-without-uan/"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://savesage.club/blogs"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://scienceinsights.org/side-effects-of-ashwagandha-from-mild-to-serious/"}
+{"band": "mixed", "query_id": "finance-01", "reasons": ["no named author", "main text covers 0% of the query's words", "'best X' listicle pattern"], "slop_risk": 0.3707, "url": "https://scripbox.com/mutual-fund/best-sip-mutual-funds/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://sehattak.com/10-warning-signs-of-vitamin-d-deficiency-in-women-you-should-never-ignore/"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://share.upmc.com/2023/05/vitamin-d-deficiency-signs/"}
+{"band": "ok", "query_id": "health-05", "reasons": [], "slop_risk": 0.0, "url": "https://shuddhi.com/blog/ayurveda-solution-for-high-blood-pressure/"}
+{"band": "ok", "query_id": "health-05", "reasons": [], "slop_risk": 0.0, "url": "https://shuddhihiims.com/ayurvedic-treatment-for-high-blood-pressure/"}
+{"band": "low", "query_id": "health-10", "reasons": ["no named author", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words"], "slop_risk": 0.6493, "url": "https://side.inc/"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://sleepopolis.com/best-mattress/best-mattress-for-back-pain/"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.2299, "url": "https://support.apple.com/en-gb/118670"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.2299, "url": "https://support.apple.com/en-in/104965"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.2299, "url": "https://support.apple.com/en-us/104965"}
+{"band": "ok", "query_id": "tech-08", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.2299, "url": "https://support.apple.com/en-us/118670"}
+{"band": "mixed", "query_id": "tech-10", "reasons": ["no named author", "no author or date", "main text covers 50% of the query's words", "thin main text (1235 chars)", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.2798, "url": "https://support.google.com/accounts/answer/6236295?hl=en"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["no named author", "no author or date", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.146, "url": "https://support.google.com/accounts/answer/6294825?hl=en"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["no named author", "no author or date", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.1147, "url": "https://support.google.com/accounts/answer/7682439?hl=en"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["no named author", "no author or date", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.1147, "url": "https://support.google.com/chrome/answer/7682439?hl=en"}
+{"band": "ok", "query_id": "tech-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.1029, "url": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows"}
+{"band": "ok", "query_id": "tech-07", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://tech.yahoo.com/computing/articles/14-easy-fixes-windows-11-114514155.html"}
+{"band": "ok", "query_id": "tech-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://techcommunity.microsoft.com/discussions/windows11/best-way-to-speed-up-a-sluggish-windows-11-pc/4546637"}
+{"band": "ok", "query_id": "tech-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-speed-up-or-slow-down-a-video-on-windows-11/4542663/replies/4542688"}
+{"band": "ok", "query_id": "tech-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-speed-up-windows-11-and-make-it-run-faster/4483282/replies/4484794"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://techmitra.in/how-to-speed-up-a-slow-windows-pc/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "contains affiliate links (12)", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0902, "url": "https://theairfryerinsider.com/best-compact-air-fryer/"}
+{"band": "ok", "query_id": "finance-09", "reasons": ["title and headings cover 40% of the query's words"], "slop_risk": 0.2089, "url": "https://themoneyjournal.in/article/index-fund-vs-active-fund-which-is-better-in-india-2026"}
+{"band": "ok", "query_id": "product-09", "reasons": ["contains affiliate links (6)"], "slop_risk": 0.0, "url": "https://theruntesters.com/the-best-running-shoes-for-beginners/"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://thetechgorilla.com/how-to-block-spam-calls-on-android/"}
+{"band": "ok", "query_id": "tech-08", "reasons": [], "slop_risk": 0.0, "url": "https://thetechgorilla.com/how-to-transfer-data-from-android-to-iphone/"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://tradebrains.in/money/5-best-credit-cards-for-maximum-online-shopping-benefits-in-2025/"}
+{"band": "ok", "query_id": "product-05", "reasons": ["contains affiliate links (30)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://truedime.in/best-laptop-under-50000/"}
+{"band": "mixed", "query_id": "finance-05", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://trufinops.com/resources/blog/ppf-vs-elss-which-is-better.html"}
+{"band": "low", "query_id": "product-09", "reasons": ["no named author", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words", "contains affiliate links (1)"], "slop_risk": 0.6075, "url": "https://tt.tennis-warehouse.com/index.php?threads/best-running-shoes-under-130.668302/latest"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://wallethub.com/edu/cc/how-to-pay-off-credit-card-debt/40625"}
+{"band": "low", "query_id": "health-01", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.724, "url": "https://wellbeingnutrition.com/blogs/gut-detox-cleanse/8-natural-antacids-to-replace-medicine-safely"}
+{"band": "ok", "query_id": "health-01", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://wellbeingnutrition.com/blogs/gut-health/ayurvedic-remedies-for-gas-and-acidity"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://wiretel.in/emergency-funds-how-much-to-keep-and-where-to-park-it-personal-finance/"}
+{"band": "ok", "query_id": "health-06", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.33fuel.com/blogs/default-blog/vitamin-d-deficiency-symptoms"}
+{"band": "ok", "query_id": "product-08", "reasons": ["main text covers 33% of the query's words", "contains affiliate links (12)", "'best X' listicle pattern"], "slop_risk": 0.1706, "url": "https://www.aarp.org/health/healthy-living/best-mattress-back-pain/"}
+{"band": "ok", "query_id": "finance-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.aflac.com/resources/life-insurance/term-vs-whole-life-insurance.aspx"}
+{"band": "ok", "query_id": "product-01", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.airtel.in/blog/mobile-phones/top-10-best-mobile-phones-under-20000-in-india-a-comprehensive-guide/"}
+{"band": "mixed", "query_id": "health-03", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.all-about-beating-diabetes.com/blood-sugar-levels-after-eating.html"}
+{"band": "low", "query_id": "product-07", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 33% of the query's words", "no about or contact page linked"], "slop_risk": 0.6867, "url": "https://www.amazon.com/Best-Sellers-Robotic-Vacuums/zgbs/home-garden/3743561"}
+{"band": "low", "query_id": "product-04", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 0% of the query's words", "main text covers 20% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/Water-Coolers-Filters-Cartridges-RO/s?rh=n%3A1380262031%2Cp_n_feature_twenty_browse-bin%3A12618051031"}
+{"band": "low", "query_id": "product-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/best-phone-under-20-000/s?k=best+phone+under+20%2C000"}
+{"band": "low", "query_id": "product-06", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 0% of the query's words", "main text covers 0% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/budget-earbuds/s?k=budget+earbuds"}
+{"band": "low", "query_id": "product-06", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 0% of the query's words", "main text covers 0% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/cheap-wireless-earbuds/s?k=cheap+wireless+earbuds&page=2"}
+{"band": "low", "query_id": "product-06", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 0% of the query's words", "main text covers 0% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/earbuds-low-price/s?k=earbuds+low+price"}
+{"band": "low", "query_id": "product-07", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 33% of the query's words", "no about or contact page linked"], "slop_risk": 0.6867, "url": "https://www.amazon.in/gp/bestsellers/kitchen/1380610031"}
+{"band": "low", "query_id": "product-05", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "no about or contact page linked"], "slop_risk": 0.9688, "url": "https://www.amazon.in/s?k=best+laptops+under+50000+with+graphic+card"}
+{"band": "ok", "query_id": "tech-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.analyticsinsight.net/cybersecurity/how-to-recover-a-hacked-gmail-account-in-2026"}
+{"band": "low", "query_id": "tech-06", "reasons": ["no named author", "no author or date", "title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "no about or contact page linked"], "slop_risk": 0.7358, "url": "https://www.android.com/google-messages/"}
+{"band": "ok", "query_id": "tech-09", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.android.com/intl/en_uk/articles/stop-spam-calls-android/"}
+{"band": "ok", "query_id": "tech-09", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.androidauthority.com/how-to-block-spam-calls-855621/"}
+{"band": "ok", "query_id": "tech-10", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.androidauthority.com/recover-google-account-3055551/"}
+{"band": "low", "query_id": "product-04", "reasons": ["no named author", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 40% of the query's words"], "slop_risk": 0.6002, "url": "https://www.aosmithindia.com/product/z2-pro/?srsltid=AU7gw4VsBmIrDXTB71GmcBUI6CZx7MKO9rmboIj0KuiW1g23qZUATYyS"}
+{"band": "mixed", "query_id": "health-06", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.apollocradle.com/blog/healthy-food/vitamin-d-deficiency-signs-and-symptoms"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["no named author", "main text covers 50% of the query's words", "'best X' listicle pattern"], "slop_risk": 0.3707, "url": "https://www.apollopharmacy.in/blog/article/ayurvedic-medicines-for-acidity-and-gas-relief"}
+{"band": "ok", "query_id": "health-01", "reasons": ["title and headings cover 25% of the query's words"], "slop_risk": 0.2089, "url": "https://www.apollopharmacy.in/omesace-20-mg-capsule-10-s/health-queries/i-am-suffering-indigestion-bloating-acidity-abdominal-pain-uneasiness-my-left-upper-abdomen-and?srsltid=AU7gw4VkRqT59X9RV5hEyiAtEgwtu2PqT62Q-C6ALJVXnagRFRqh6rIu"}
+{"band": "ok", "query_id": "health-01", "reasons": ["title and headings cover 25% of the query's words"], "slop_risk": 0.2089, "url": "https://www.apollopharmacy.in/prazomed-40-mg-tablet-10-s/health-queries/how-can-i-keep-my-stomach-healthy-and-free-gas-and-intestinal-ulcers-and-what-medications-should-i?srsltid=AU7gw4XNpzXeNVKAM4oLpNqUoffipE2JkKZ7_xUnr8kRyogbMFt_ukz1"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.artemishospitals.com/blog/blood-sugar-normal-range"}
+{"band": "ok", "query_id": "tech-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.asurion.com/connect/tech-tips/how-to-transfer-apps-from-android-to-iphone/"}
+{"band": "ok", "query_id": "tech-05", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.bajajfinserv.in/how-to-check-bajaj-pay-fastag-balance"}
+{"band": "mixed", "query_id": "tech-05", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.bajajfinserv.in/how-to-check-sbi-state-bank-of-india-fastag-balance"}
+{"band": "mixed", "query_id": "finance-07", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.bajajfinserv.in/insurance/pros-and-cons-term-life-insurance"}
+{"band": "ok", "query_id": "finance-01", "reasons": [], "slop_risk": 0.0, "url": "https://www.bajajfinserv.in/investments/best-mutual-fund-sip-plan"}
+{"band": "mixed", "query_id": "tech-01", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.bajajfinserv.in/link-aadhaar-with-pan"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["thin main text (1473 chars)"], "slop_risk": 0.0, "url": "https://www.bajajfinservmarkets.in/discover/best-shopping-credit-cards-in-india-for-2025"}
+{"band": "mixed", "query_id": "finance-08", "reasons": ["main text covers 50% of the query's words"], "slop_risk": 0.2821, "url": "https://www.bajajfinservmarkets.in/stocks/how-to-start-investing-in-stocks-with-little-money"}
+{"band": "ok", "query_id": "tech-01", "reasons": [], "slop_risk": 0.0, "url": "https://www.bankbazaar.com/pan-card/link-aadhar-pan-card.html"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.bassmedicalgroup.com/blog-post/vitamin-d-deficiency-fatigue-symptoms"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.bbrief.co.za/2024/08/01/what-are-the-side-effects-of-ashwagandha/"}
+{"band": "ok", "query_id": "product-07", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.bestpricebuys.com/best-robotic-vacuum-cleaners-in-india"}
+{"band": "ok", "query_id": "health-09", "reasons": ["no named author", "no author or date", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.146, "url": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/liver-fatty-liver-disease"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.botanical-online.com/en/diet/how-to-lower-uric-acid-treatment"}
+{"band": "ok", "query_id": "product-10", "reasons": ["thin main text (1429 chars)", "contains affiliate links (18)"], "slop_risk": 0.0, "url": "https://www.businessinsider.com/guides/kitchen/best-small-air-fryer"}
+{"band": "low", "query_id": "finance-08", "reasons": ["no named author", "title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.6493, "url": "https://www.capitacaribbean.com/financial-wellness/additional-investing-tips-for-beginners-2/"}
+{"band": "ok", "query_id": "finance-04", "reasons": [], "slop_risk": 0.0, "url": "https://www.cardexpert.in/"}
+{"band": "ok", "query_id": "health-09", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://www.ckbhospital.com/blogs/grade-1-fatty-liver"}
+{"band": "ok", "query_id": "health-06", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://www.ckbhospital.com/blogs/importance-of-vitamin-d"}
+{"band": "ok", "query_id": "finance-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "contains affiliate links (6)"], "slop_risk": 0.1912, "url": "https://www.cnbc.com/select/clear-credit-card-debt-before-the-new-year/"}
+{"band": "ok", "query_id": "product-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.cnet.com/home/kitchen-and-household/best-robot-vacuums-our-labs-tested-47-models-and-only-these-made-the-cut/"}
+{"band": "ok", "query_id": "product-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.cnet.com/tech/mobile/best-cheap-budget-wireless-earbuds/"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.computerworld.com/article/1617815/how-to-speed-up-windows-11.html"}
+{"band": "ok", "query_id": "product-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "'best X' listicle pattern"], "slop_risk": 0.1633, "url": "https://www.consumerreports.org/appliances/air-fryers/best-small-air-fryers-from-consumer-reports-tests-a6852184036/"}
+{"band": "low", "query_id": "health-03", "reasons": ["no named author", "no author or date", "title and headings cover 43% of the query's words", "main text covers 0% of the query's words"], "slop_risk": 0.7671, "url": "https://www.covenanthealthcare.com/ch/bloodsugarlevels"}
+{"band": "ok", "query_id": "health-01", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.credihealth.com/blog/12-best-medicine-for-acidity-and-gas"}
+{"band": "ok", "query_id": "finance-10", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.creditassociates.com/blog/debt-solutions/how-to-get-out-of-credit-card-debt/"}
+{"band": "mixed", "query_id": "product-03", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "no about or contact page linked"], "slop_risk": 0.4778, "url": "https://www.croma.com/home-appliances/air-treatment-devices/air-purifiers/c/1075?srsltid=AU7gw4WjXuSu9XOesWg_xQhPS3Sw6AWprumoAkyl8saEJhB4yJ8RIwcf"}
+{"band": "ok", "query_id": "product-02", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.cruiseac.com/home-air-conditioners/split-inverter-ac/varioqool-3d/cwcvbk-vq3d185/"}
+{"band": "mixed", "query_id": "finance-09", "reasons": ["no named author", "no author or date", "main text covers 40% of the query's words", "thin main text (597 chars)"], "slop_risk": 0.4412, "url": "https://www.dbs.bank.in/in/treasures/articles/learning-centre/index-funds-vs-mutual-funds"}
+{"band": "ok", "query_id": "product-05", "reasons": [], "slop_risk": 0.0, "url": "https://www.digit.in/features/laptops/best-laptops-under-50000.html"}
+{"band": "ok", "query_id": "tech-05", "reasons": ["no named author", "title and headings cover 33% of the query's words", "thin main text (1065 chars)", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.1201, "url": "https://www.digitalindia.gov.in/initiative/fastag/"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["main text covers 50% of the query's words"], "slop_risk": 0.2821, "url": "https://www.doctronic.ai/blog/best-otc-medicine-for-bloating-and-gas/"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.dspim.com/knowledge-hub/personal-finance-guide/goal-based-investing-what-it-is-and-how-it-can-help-you-build-a-better-portfolio/index-funds-vs-actively-managed-funds"}
+{"band": "mixed", "query_id": "finance-06", "reasons": ["title and headings cover 25% of the query's words", "main text covers 25% of the query's words"], "slop_risk": 0.491, "url": "https://www.emacweb.org/"}
+{"band": "ok", "query_id": "finance-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.emergencysavingscalculator.com/"}
+{"band": "low", "query_id": "finance-06", "reasons": ["no named author", "title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.6493, "url": "https://www.emergencyusa.org/"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.eternalhospital.com/title/normal-glucose-levels-what-should-glucose-levels-be-after-eating"}
+{"band": "ok", "query_id": "product-03", "reasons": ["no named author", "no author or date", "no about or contact page linked"], "slop_risk": 0.2448, "url": "https://www.eurekaforbes.com/c/air-purifiers?srsltid=AU7gw4UWzwOGUZdALN8LHzW7O64zLWWzDVhn52h7hv882sKpiVOLtO1J"}
+{"band": "ok", "query_id": "product-07", "reasons": ["no named author", "no author or date", "no about or contact page linked"], "slop_risk": 0.2448, "url": "https://www.eurekaforbes.com/c/vacuum-cleaners/robotic-vacuum-cleaner?srsltid=AU7gw4X06V4hZ8gpQa65M6tLDq8QPDEdtfvy3cDfywrsER4j7DOTAQIJ"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (17)"], "slop_risk": 0.0, "url": "https://www.everydayfamilycooking.com/best-small-air-fryer/"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.experian.com/blogs/ask-experian/credit-education/how-to-get-out-of-debt/"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["title and headings cover 0% of the query's words", "main text covers 50% of the query's words", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.3296, "url": "https://www.fda.gov/drugs/understanding-over-counter-medicines/over-counter-otc-heartburn-treatment"}
+{"band": "mixed", "query_id": "finance-03", "reasons": ["title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.3296, "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/breast-implants-certain-labeling-recommendations-improve-patient-communication"}
+{"band": "mixed", "query_id": "health-08", "reasons": ["title and headings cover 17% of the query's words", "main text covers 17% of the query's words", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.3296, "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/obesity-and-overweight-developing-drugs-and-biological-products-weight-reduction"}
+{"band": "ok", "query_id": "finance-06", "reasons": ["main text covers 50% of the query's words", "no about or contact page linked", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.1207, "url": "https://www.fda.gov/vaccines-blood-biologics/vaccines/emergency-use-authorization-vaccines-explained"}
+{"band": "ok", "query_id": "health-03", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://www.fepblue.org/news/2021/05/06/01/07/What-Are-Normal-Blood-Sugar-Levels"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.fidelity.com/learning-center/personal-finance/micro-investing"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.fidelity.com/viewpoints/personal-finance/save-for-an-emergency"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.financetoolspro.com/guides/mutual-fund/index-funds-vs-active-funds-india.html"}
+{"band": "ok", "query_id": "finance-02", "reasons": ["main text covers 0% of the query's words", "thin main text (816 chars)"], "slop_risk": 0.1651, "url": "https://www.financialexpress.com/money/old-vs-new-tax-regime-in-2026-new-rules-change-calculations-which-option-saves-more-now-4184671/"}
+{"band": "low", "query_id": "health-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "thin main text (1010 chars)", "no about or contact page linked"], "slop_risk": 0.8518, "url": "https://www.flipkart.com/dr-mom-acidogas-syrup-acidity-gastritis-heartburn-relief-200ml-suitable/p/itm0b2a8ae3dda32"}
+{"band": "mixed", "query_id": "product-08", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.flipkart.com/q/best-mattress-for-back-pain"}
+{"band": "mixed", "query_id": "product-07", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.flipkart.com/q/cleaning-robot"}
+{"band": "mixed", "query_id": "product-06", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.flipkart.com/q/earbud"}
+{"band": "mixed", "query_id": "product-07", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.flipkart.com/q/robot-vacuum-cleaner"}
+{"band": "ok", "query_id": "tech-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.fonetool.com/phone-transfer/transfer-data-from-android-to-iphone-after-setup.html"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.foxbusiness.com/money/get-rid-of-credit-card-debt-for-good"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.gaiaherbs.com/blogs/seeds-of-knowledge/ashwagandha-side-effects"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.geeksforgeeks.org/techtips/how-to-block-spam-calls-on-android-phone/"}
+{"band": "ok", "query_id": "tech-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.geeksforgeeks.org/techtips/see-deleted-messages-whatsapp/"}
+{"band": "low", "query_id": "finance-07", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://www.getamplifylife.com/learn/blog/why-you-dont-need-term-life-insurance"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.goodfinancialcents.com/how-to-invest-small-amounts-of-money/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (18)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/a71593976/best-air-fryers-review/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (14)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.goodhousekeeping.com/what-to-buy/kitchen-products/g73833436/best-small-air-fryer/"}
+{"band": "low", "query_id": "finance-06", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "main text covers 25% of the query's words"], "slop_risk": 0.5151, "url": "https://www.hdfclife.com/insurance-knowledge-centre/about-life-insurance/building-the-right-emergency-fund-how-much-is-enough?srsltid=AU7gw4WCTsBwY6aUDAlGOYUBunfKQGvnTIBuPHJnr6x8TYpaJt6GEsOQ"}
+{"band": "low", "query_id": "health-01", "reasons": ["no named author", "title and headings cover 0% of the query's words", "main text covers 25% of the query's words", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.5192, "url": "https://www.health.harvard.edu/diseases-and-conditions/over-the-counter-antacids-for-heartburn"}
+{"band": "ok", "query_id": "health-10", "reasons": ["official source (government, education or the organisation's own help pages)"], "slop_risk": 0.0, "url": "https://www.health.harvard.edu/medications-and-treatments/ashwagandha-benefits-side-effects-and-safety-concerns"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/and-after-effect-eating-blood-sugar"}
+{"band": "ok", "query_id": "health-03", "reasons": ["title and headings cover 43% of the query's words"], "slop_risk": 0.2089, "url": "https://www.healthline.com/health/diabetes/blood-sugar-level-chart"}
+{"band": "ok", "query_id": "health-03", "reasons": ["title and headings cover 43% of the query's words"], "slop_risk": 0.2089, "url": "https://www.healthline.com/health/diabetes/blood-sugar-levels-chart-by-age"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/fasting-glucose-normal-range"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/diabetes/normal-glucose-level-after-eating"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/health/how-to-reduce-uric-acid"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.491, "url": "https://www.healthline.com/health/medicine-for-gas"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.healthline.com/nutrition/vitamin-d-deficiency-symptoms"}
+{"band": "ok", "query_id": "health-07", "reasons": ["thin main text (527 chars)"], "slop_risk": 0.0, "url": "https://www.healthshots.com/healthy-eating/nutrition/how-to-reduce-uric-acid-levels/"}
+{"band": "ok", "query_id": "health-07", "reasons": ["thin main text (527 chars)"], "slop_risk": 0.0, "url": "https://www.healthshots.com/healthy-eating/nutrition/morning-foods-to-reduce-uric-acid-levels/"}
+{"band": "ok", "query_id": "tech-01", "reasons": [], "slop_risk": 0.0, "url": "https://www.hindustantimes.com/india-news/link-pan-card-and-aadhaar-via-income-tax-portal-or-sms-a-step-by-step-guide-101620885546016.html"}
+{"band": "ok", "query_id": "product-03", "reasons": ["contains affiliate links (5)"], "slop_risk": 0.0, "url": "https://www.hindustantimes.com/technology/choosing-the-right-air-purifier-key-features-that-matter-most-amid-delhi-s-rising-pollution-101762226708215.html"}
+{"band": "ok", "query_id": "product-03", "reasons": ["contains affiliate links (5)"], "slop_risk": 0.0, "url": "https://www.hindustantimes.com/technology/delhi-air-pollution-how-many-air-purifiers-should-i-have-in-my-home-101762057232051.html"}
+{"band": "ok", "query_id": "finance-09", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.home.saxo/learn/guides/diversification/index-funds-vs-actively-managed-funds"}
+{"band": "low", "query_id": "health-08", "reasons": ["no named author", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words"], "slop_risk": 0.6493, "url": "https://www.hopkinsarthritis.org/patient-corner/disease-management/role-of-body-weight-in-osteoarthritis/"}
+{"band": "ok", "query_id": "product-07", "reasons": ["no named author", "no author or date", "'best X' listicle pattern"], "slop_risk": 0.2064, "url": "https://www.housegyan.com/blog/best-robot-vacuum-and-mop-cleaners-in-india"}
+{"band": "ok", "query_id": "product-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.houzz.com/discussions/5498604/suggest-me-a-good-mattress-for-people-with-back-pain"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.howtogeek.com/these-hidden-windows-11-settings-instantly-made-my-pc-faster/"}
+{"band": "ok", "query_id": "finance-01", "reasons": ["no named author", "no author or date", "'best X' listicle pattern"], "slop_risk": 0.2064, "url": "https://www.icici.bank.in/personal-banking/blogs/investments/mutual-funds/best-sip-plan-to-invest"}
+{"band": "low", "query_id": "tech-05", "reasons": ["no named author", "no author or date", "main text covers 33% of the query's words"], "slop_risk": 0.5582, "url": "https://www.idfcfirst.bank.in/customer-care-sr/fast-tag"}
+{"band": "ok", "query_id": "tech-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.igeeksblog.com/how-to-transfer-data-from-android-to-iphone/"}
+{"band": "mixed", "query_id": "finance-08", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.indiainfoline.com/knowledge-center/share-market/how-to-invest-in-the-stock-market-with-little-money"}
+{"band": "ok", "query_id": "finance-07", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.indiatoday.in/impact-feature/story/what-are-the-pros-and-cons-of-term-insurance-is-buying-a-term-plan-a-good-idea-2438119-2023-09-20"}
+{"band": "ok", "query_id": "tech-02", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.indiatoday.in/information/story/heres-how-you-can-check-your-account-balance-using-different-methods-1814632-2021-06-14"}
+{"band": "ok", "query_id": "tech-02", "reasons": [], "slop_risk": 0.0, "url": "https://www.indiatv.in/paisa/personal-finance-forgot-uan-number-password-how-to-check-epf-balance-check-step-by-step-process-793827"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.insurancegeek.com/life-insurance/term-vs-whole-life-insurance/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.insurancegeek.com/life-insurance/types/term-life/"}
+{"band": "ok", "query_id": "tech-09", "reasons": ["main text covers 50% of the query's words", "thin main text (377 chars)"], "slop_risk": 0.1651, "url": "https://www.inverse.com/input/guides/how-to-block-spam-calls-on-ios-android-phones"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.ionos.com/digitalguide/server/configuration/speed-up-windows-11/"}
+{"band": "low", "query_id": "product-02", "reasons": ["no named author", "no author or date", "title and headings cover 0% of the query's words", "main text covers 0% of the query's words"], "slop_risk": 0.7671, "url": "https://www.ipcc.ch/sr15/"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["title and headings cover 25% of the query's words"], "slop_risk": 0.2089, "url": "https://www.keytradebank.be/en/our-blog/investing-when-you-dont-have-much-time"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (16)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.livemint.com/gadgets-and-appliances/best-air-fryer-for-family-top-picks-with-spacious-capacity-and-versatile-cooking-features-for-convenient-everyday-meals-11789382439522.html"}
+{"band": "ok", "query_id": "health-07", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.lokmat.com/sakhi/fitness/natural-ways-to-reduce-uric-acid-in-the-body-how-to-lower-uric-acid-levels-naturally-a-a648/"}
+{"band": "ok", "query_id": "health-10", "reasons": ["no named author", "no author or date", "no about or contact page linked"], "slop_risk": 0.2448, "url": "https://www.lybrate.com/topic/ashwagandha-benefits-and-side-effects/health-feed/questions"}
+{"band": "mixed", "query_id": "health-03", "reasons": ["main text covers 29% of the query's words"], "slop_risk": 0.2821, "url": "https://www.medanta.org/patient-education-blog/diabetes-level-chart-normal-prediabetes-diabetes"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.medanta.org/patient-education-blog/how-to-reduce-uric-acid-at-home-the-simple-guide-you-need-today"}
+{"band": "mixed", "query_id": "health-03", "reasons": ["main text covers 57% of the query's words"], "slop_risk": 0.2821, "url": "https://www.medanta.org/patient-education-blog/normal-glucose-levels-after-eating"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicalnewstoday.com/articles/325317"}
+{"band": "mixed", "query_id": "health-06", "reasons": ["main text covers 50% of the query's words"], "slop_risk": 0.2821, "url": "https://www.medicinenet.com/14_signs_of_vitamin_d_deficiency/article.htm"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicinenet.com/normal_blood_sugar_levels_in_adults_with_diabetes/article.htm"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.medicoverhospitals.in/articles/vitamin-d-deficiency-in-women"}
+{"band": "ok", "query_id": "tech-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.minitool.com/android-recovery/recover-android-whatsapp-messages.html"}
+{"band": "mixed", "query_id": "finance-09", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.miraeassetmf.co.in/knowledge-center/index-funds-versus-mutual-funds"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.moneycontrol.com/technology/6-tried-and-tested-tricks-to-speed-up-a-slow-windows-laptop-photo-gallery-13627734.html"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.moneylion.com/learn/debt/credit-cards/how-to-get-out-of-credit-card-debt"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.moneyunder30.com/start-investing-with-little-money/"}
+{"band": "mixed", "query_id": "finance-10", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.morningstar.in/posts/25434/how-to-deal-with-credit-card-debt.aspx"}
+{"band": "mixed", "query_id": "health-02", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.mortein.co.in/expert-advice/expert-prevention/low-platelets-these-foods-will-restore-them/"}
+{"band": "ok", "query_id": "finance-05", "reasons": [], "slop_risk": 0.0, "url": "https://www.myanmol.com/post/ppf-vs-elss-which-tax-saving-investment-is-right-for-you-in-2025"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.mybanktracker.com/blog/investing/index-funds-vs-managed-mutual-funds-166190"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["contains affiliate links (3)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.mymillennialguide.com/start-investing-with-little-money/"}
+{"band": "ok", "query_id": "finance-04", "reasons": ["thin main text (1425 chars)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.mymudra.com/blog/best-credit-card-for-online-shopping-in-india"}
+{"band": "ok", "query_id": "product-08", "reasons": ["contains affiliate links (10)"], "slop_risk": 0.0, "url": "https://www.ncoa.org/product-resources/sleep/best-mattresses-for-back-pain/"}
+{"band": "ok", "query_id": "finance-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.nerdwallet.com/insurance/life/learn/who-needs-life-insurance"}
+{"band": "ok", "query_id": "finance-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.nerdwallet.com/personal-loans/learn/pay-off-credit-card-debt"}
+{"band": "low", "query_id": "finance-03", "reasons": ["no named author", "no author or date", "title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "official source (government, education or the organisation's own help pages)"], "slop_risk": 0.637, "url": "https://www.nichd.nih.gov/research/supported/IMPROVE"}
+{"band": "ok", "query_id": "health-01", "reasons": [], "slop_risk": 0.0, "url": "https://www.nollahealth.com/learning/acid-reflux-non-prescription-medication"}
+{"band": "ok", "query_id": "health-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.nourish.com/blog/how-long-does-blood-sugar-stay-elevated-after-eating"}
+{"band": "ok", "query_id": "finance-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.nyvo.money/resources/financial-planning/emergency-fund-india"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.onepaisa.in/articles/index-funds-vs-active-funds-india-comparison"}
+{"band": "ok", "query_id": "health-04", "reasons": ["title and headings cover 33% of the query's words"], "slop_risk": 0.2089, "url": "https://www.onmanorama.com/lifestyle/health/2025/04/18/indians-take-dolo-parcetamol-like-gems-healthy-dosage.html"}
+{"band": "ok", "query_id": "health-02", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.pathkindlabs.com/blog/heres-how-to-increase-your-platelet-count-naturally"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.491, "url": "https://www.pharmacytimes.com/view/treating-acid-reflux-with-over-the-counter-medications"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.pocketful.in/blog/how-to-invest-in-stock-market-for-beginners/"}
+{"band": "ok", "query_id": "tech-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.popsci.com/diy/how-to-stop-spam-calls/"}
+{"band": "ok", "query_id": "health-04", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/dolo-6-times-per-day-is-dangerous-can-dolo-be-taken-within-an-interval-of-4-hrs-each-doc-advised-to-take-at-an/q"}
+{"band": "mixed", "query_id": "health-01", "reasons": ["title and headings cover 25% of the query's words", "main text covers 50% of the query's words"], "slop_risk": 0.491, "url": "https://www.practo.com/consult/gastric-acidity-i-m-deepthi-i-was-getting-severe-acidity-burning-sensation-can-u-please-prescribe-any-medication-or/q"}
+{"band": "ok", "query_id": "health-04", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/mild-fever-how-many-dolo-650-tablets-can-v-take-for-a-day-can-i-take-4-tablets-per-day-is-ot-cause-any-side/q"}
+{"band": "ok", "query_id": "product-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.practo.com/consult/soft-mattress-back-pain/t"}
+{"band": "ok", "query_id": "finance-08", "reasons": ["title and headings cover 25% of the query's words", "no about or contact page linked"], "slop_risk": 0.1776, "url": "https://www.precize.in/blogs/investing-basics-guide-beginners"}
+{"band": "ok", "query_id": "product-07", "reasons": ["contains affiliate links (14)"], "slop_risk": 0.0, "url": "https://www.producthunter.in/home-appliances/best-robot-vacuum-cleaners-india"}
+{"band": "mixed", "query_id": "finance-10", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.quorumfcu.org/learn/five-strategies-to-help-shrink-credit-card-debt"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.ramseysolutions.com/debt/how-to-pay-off-credit-card-debt"}
+{"band": "low", "query_id": "product-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 33% of the query's words"], "slop_risk": 0.718, "url": "https://www.reliancedigital.in/collection/mobile-phones-between-20000-to-30000"}
+{"band": "low", "query_id": "product-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "main text covers 33% of the query's words"], "slop_risk": 0.7912, "url": "https://www.reliancedigital.in/collection/mobile-phones-between-rs-10000-to-20000"}
+{"band": "ok", "query_id": "health-04", "reasons": ["title and headings cover 33% of the query's words", "no about or contact page linked"], "slop_risk": 0.1776, "url": "https://www.republicworld.com/india/why-popping-dolo-650-like-candy-could-be-hurting-you-more-than-helping-us-doctor-explains"}
+{"band": "ok", "query_id": "product-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.resetera.com/threads/cheap-wireless-earbuds-recommendations.593250/"}
+{"band": "ok", "query_id": "product-10", "reasons": ["no named author", "thin main text (987 chars)", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.rtings.com/air-fryer/reviews/best/small"}
+{"band": "ok", "query_id": "product-06", "reasons": ["no named author", "thin main text (1171 chars)", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.rtings.com/headphones/reviews/best/cheap-wireless-earbuds"}
+{"band": "ok", "query_id": "product-09", "reasons": ["'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.rtings.com/running-shoes/reviews/best/beginners"}
+{"band": "ok", "query_id": "product-09", "reasons": ["contains affiliate links (21)", "'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.runnersworld.com/beginner/g45653268/best-running-shoes-for-beginners/"}
+{"band": "ok", "query_id": "product-09", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.runnersworld.com/uk/gear/shoes/a32170097/beginner-running-shoes/"}
+{"band": "ok", "query_id": "product-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.runningshoesguru.com/guide/best-running-shoes-for-beginners/"}
+{"band": "ok", "query_id": "product-09", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.runningxpert.com/en/inspiration/running-shoes-for-beginners"}
+{"band": "ok", "query_id": "product-09", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.runweekly.com/best-running-shoes-for-beginners/"}
+{"band": "ok", "query_id": "health-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.sarvodayahospital.com/blog/fatty-liver-symptoms-causes-and-effective-treatment-options"}
+{"band": "ok", "query_id": "product-06", "reasons": ["contains affiliate links (21)"], "slop_risk": 0.0, "url": "https://www.scarbir.com/guide/best-cheap-wireless-earbuds-for-phone-calls"}
+{"band": "ok", "query_id": "product-06", "reasons": ["contains affiliate links (22)"], "slop_risk": 0.0, "url": "https://www.scarbir.com/guide/best-tws-under-100"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.scripps.org/news_items/7374-what-causes-vitamin-d-deficiency"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.settlepro.in/how-to-get-out-of-credit-card-debt-fast-in-india"}
+{"band": "ok", "query_id": "finance-05", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.share.market/buzz/mutual-fund/elss-vs-ppf-vs-nps/"}
+{"band": "ok", "query_id": "finance-01", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://www.sharekhan.com/mutual-funds/sip-we-like"}
+{"band": "low", "query_id": "health-10", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words"], "slop_risk": 1.0, "url": "https://www.sidebysideva.org/"}
+{"band": "mixed", "query_id": "health-10", "reasons": ["title and headings cover 33% of the query's words", "main text covers 33% of the query's words"], "slop_risk": 0.491, "url": "https://www.sidebysideyouth.org/"}
+{"band": "mixed", "query_id": "tech-03", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.sikayetvar.com/en/nsdl-payment-bank-us/nsdl-payment-bank-upi-failed-but-money-deducted-how-can-i-get-refund-and-proof-q-31607"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "'best X' listicle pattern"], "slop_risk": 0.1633, "url": "https://www.sleepadvisor.org/best-mattresses-for-back-pain/"}
+{"band": "ok", "query_id": "product-08", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.sleepfoundation.org/best-mattress/best-mattress-for-back-pain"}
+{"band": "ok", "query_id": "product-06", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.soundguys.com/best-wireless-earbuds-under-100-20397/"}
+{"band": "ok", "query_id": "product-06", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.soundguys.com/best-wireless-earbuds-under-200-73754/"}
+{"band": "ok", "query_id": "finance-06", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.stash.com/learn/emergency-fund-complete-guide/"}
+{"band": "low", "query_id": "health-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.5091, "url": "https://www.sterisonline.com/blog/best-medicines-for-acidity-gas-amp-indigestion-your-complete-guide-to-digestive-health"}
+{"band": "ok", "query_id": "finance-01", "reasons": ["no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.stockgro.club/blogs/mutual-funds/best-sip-plans-mutual-funds-in-india/"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.stylecraze.com/articles/unexpected-side-effects-of-ashwagandha/"}
+{"band": "ok", "query_id": "product-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.supwell.com/supbeat/best-running-shoes-for-beginners"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.swellfp.com.au/post/ways-start-investing-small-amounts"}
+{"band": "mixed", "query_id": "tech-08", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.syncios.com/android/transfer-data-from-android-to-iphone.html"}
+{"band": "ok", "query_id": "product-10", "reasons": ["contains affiliate links (10)", "'best X' listicle pattern", "no about or contact page linked"], "slop_risk": 0.0, "url": "https://www.talkofthehouse.com/best-air-fryers/"}
+{"band": "ok", "query_id": "finance-07", "reasons": ["no named author"], "slop_risk": 0.1583, "url": "https://www.tdinsurance.com/products-services/life-insurance/life-guide/is-term-life-insurance-worth-it"}
+{"band": "ok", "query_id": "product-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "contains affiliate links (23)"], "slop_risk": 0.1912, "url": "https://www.techgearlab.com/topics/smart-home/best-robot-vacuum"}
+{"band": "ok", "query_id": "product-07", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "contains affiliate links (16)"], "slop_risk": 0.1912, "url": "https://www.theverge.com/gadgets/932425/best-robot-vacuum-mop-reviews-buying-guide"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.thrivent.com/insights/investing/how-to-start-investing-with-little-money"}
+{"band": "ok", "query_id": "product-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.throwpillow.in/post/which-air-fryer-is-good?srsltid=AU7gw4U1dWtWorEWFf00VaPSV4HL-dkwAtD97B_y-Huh-gCBxTmMhLjc"}
+{"band": "ok", "query_id": "tech-03", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnowhindi.com/utility-news/failed-upi-transaction-but-money-deducted-check-what-to-do-article-108268954"}
+{"band": "ok", "query_id": "tech-02", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnownews.com/business-economy/personal-finance/how-to-check-epf-balance-using-uan-number-heres-a-step-by-step-guide-article-108724437"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.timesnownews.com/health/5-morning-habits-that-help-keep-uric-acid-levels-regulated-article-118616751"}
+{"band": "mixed", "query_id": "health-02", "reasons": ["no named author", "no author or date"], "slop_risk": 0.2761, "url": "https://www.trivitron.com/blog/easiest-ways-to-maintain-normal-platelet-count-in-dengue-fever"}
+{"band": "ok", "query_id": "product-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.trustedreviews.com/best/best-cheap-earbuds-4382625"}
+{"band": "mixed", "query_id": "product-02", "reasons": ["title and headings cover 0% of the query's words", "main text covers 0% of the query's words"], "slop_risk": 0.491, "url": "https://www.un.org/en/climatechange/science/climate-issues/degrees-matter"}
+{"band": "mixed", "query_id": "product-02", "reasons": ["title and headings cover 0% of the query's words", "main text covers 0% of the query's words"], "slop_risk": 0.491, "url": "https://www.unep.org/resources/limiting-overshoot-navigating-exceedance"}
+{"band": "low", "query_id": "tech-06", "reasons": ["no named author", "no author or date", "title and headings cover 25% of the query's words", "main text covers 25% of the query's words", "no about or contact page linked"], "slop_risk": 0.7358, "url": "https://www.ursulakleguin.com/message-about-messages"}
+{"band": "ok", "query_id": "finance-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.venturasecurities.com/blog/escaping-the-credit-card-debt-trap/"}
+{"band": "low", "query_id": "health-01", "reasons": ["no named author", "no author or date", "the site sells products on this page (cart, buy button or product markup)", "main text covers 25% of the query's words"], "slop_risk": 0.7912, "url": "https://www.walgreens.com/store/c/antacids/ID=361507-tier3"}
+{"band": "ok", "query_id": "finance-10", "reasons": ["'best X' listicle pattern"], "slop_risk": 0.0, "url": "https://www.wasatchpeaks.com/blog/11-best-ways-to-pay-off-credit-card-debt-fast-wasatch-peaks-credit-union"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.wealthredefine.in/how-to-start-investing-at-25-with-30k-income-for-long-term-growth/"}
+{"band": "ok", "query_id": "health-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.webmd.com/diet/vitamin-d-deficiency"}
+{"band": "mixed", "query_id": "health-08", "reasons": ["main text covers 50% of the query's words"], "slop_risk": 0.2821, "url": "https://www.webmd.com/obesity/healthy-weight"}
+{"band": "ok", "query_id": "health-10", "reasons": [], "slop_risk": 0.0, "url": "https://www.webmd.com/vitamins-supplements/ashwagandha"}
+{"band": "ok", "query_id": "finance-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Invest-Small-Amounts-of-Money-Wisely"}
+{"band": "ok", "query_id": "health-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Reduce-Uric-Acid-Fast"}
+{"band": "ok", "query_id": "tech-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Retrieve-Old-WhatsApp-Messages"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Speed-Up-Windows-11"}
+{"band": "ok", "query_id": "tech-07", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.com/Speed-Up-a-Slow-Windows-Computer-for-Free"}
+{"band": "ok", "query_id": "tech-06", "reasons": [], "slop_risk": 0.0, "url": "https://www.wikihow.tech/Recover-Deleted-Messages-in-WhatsApp"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://www.wildfoods.co/blogs/content/ashwagandha-side-effects?srsltid=AU7gw4UREYkxhfmoVIAbX9EKPlkX8zdVS3ysk-VvkOAhFoboeFNQBSYK"}
+{"band": "ok", "query_id": "finance-09", "reasons": [], "slop_risk": 0.0, "url": "https://www.wrightresearch.in/blog/index-funds-vs-actively-managed-funds/"}
+{"band": "low", "query_id": "product-06", "reasons": ["no named author", "no author or date", "title and headings cover 33% of the query's words", "main text covers 33% of the query's words"], "slop_risk": 0.7671, "url": "https://www.xerve.in/prices/s-headphones-and-earphones/t-earphones"}
+{"band": "ok", "query_id": "tech-08", "reasons": [], "slop_risk": 0.0, "url": "https://www.zdnet.com/article/how-to-transfer-data-from-android-to-an-iphone/"}
+{"band": "ok", "query_id": "tech-02", "reasons": ["no named author", "thin main text (1135 chars)", "no about or contact page linked"], "slop_risk": 0.01, "url": "https://www.zeebiz.com/personal-finance/video-gallery-how-to-check-epf-balance-online-with-uan-number-54419"}
+{"band": "ok", "query_id": "product-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)", "contains affiliate links (1)", "'best X' listicle pattern"], "slop_risk": 0.1215, "url": "https://www.zenzdeal.com/blog/best-air-fryer-in-india/"}
+{"band": "ok", "query_id": "health-10", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://yourhealthier.com/blogs/blog/ashwagandha-side-effects"}
+{"band": "ok", "query_id": "health-01", "reasons": ["the site sells products on this page (cart, buy button or product markup)"], "slop_risk": 0.233, "url": "https://zeelabpharmacy.com/blog/medicines-for-gas-in-india"}

@@ -1,11 +1,11 @@
 {
   "as_of": null,
-  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"In females, vitamin D deficiency can cause symptoms such as fatigue, depression, bone pain, deep body aches, weight gain, and menstrual irregularities like irregular periods or worsened PMS symptoms due to hormone imbalance [1], [4], [5].\\\", \\\"cited\\\": [1, 4, 5]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TsukoUMvaJsveEyeqTW5lY+ncxr53yE/zVFWS9tMQZ8S4hQ05QtbQOA2Dyr6sNBpUHr6PepIasBySPmevvLLTVEbriJ3tkj9xekaVqCo0ixtmT4J4pYn3ztk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 643,\n    \"candidatesTokenCount\": 65,\n    \"totalTokenCount\": 708,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 643\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"K_vBap2JE4rGg8UP9NnEmQo\"\n}\n",
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"answer\\\": \\\"In women, vitamin D deficiency can cause menstrual irregularities, worsen PMS symptoms due to hormonal imbalances, and lead to weight gain alongside fatigue [5]. Other general symptoms include bone pain, deep body aches, and depression [1, 4].\\\",\\n  \\\"cited\\\": [1, 4, 5]\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPig/etdfihGg7jII8CVQnu+en/parZ7bM8nCSnR9/FjQxA/MKFBM72sbQ5U4mNildWLLIMUgyBZC4JcEiToGEtJJnVUvCkBR7WCjXUojgjOzJI9rLSqOIno=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 643,\n    \"candidatesTokenCount\": 72,\n    \"totalTokenCount\": 715,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 643\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"w6nFapbqFpmK4-EPj8-U8Qk\"\n}\n",
   "cost": 0,
-  "fetched_at": "2026-10-04T07:07:25.944152+00:00",
+  "fetched_at": "2026-10-07T02:09:11.694010+00:00",
   "headers": {
     "content-type": "application/json; charset=UTF-8",
-    "date": "Sun, 04 Oct 2026 07:07:24 GMT"
+    "date": "Wed, 07 Oct 2026 02:09:08 GMT"
   },
   "key": "e18b4039ebee5984479535abdcbbea7589927cd39a16c993faec9d07ffc096a8",
   "method": "POST",

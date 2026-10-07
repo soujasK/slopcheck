@@ -43,15 +43,17 @@ vary by day, user and location; this is one snapshot, not a trend.
 
 ## Coverage (pages that could be scored)
 
-482 of 681 unique pages (593 of 822 SERP rows, 72%) were fetched and scored.
-The rest are reported as unscored with a reason, never guessed: 81 refused our
+482 of 681 unique pages were fetched; 405 of them had at least 300 characters
+of readable main text and were scored (since rubric v4, thinner pages are
+reported as unscored rather than scored as anonymous and off-query). Of the 660
+non-platform SERP rows, 490 (74%) are scored. The rest are reported as unscored with a reason, never guessed: 81 refused our
 crawler with HTTP 403, 14 answered 402 Payment Required (pay-per-crawl), 68 are
 disallowed by robots.txt (Reddit, Quora, Facebook, LinkedIn, Instagram among
 them), 13 were unreachable, and a few were too large, not HTML or had a broken
 robots.txt.
 
-Coverage is not uniform: 72-81% of rows for the India engines but only 56% for
-Google US, where several large publishers block crawlers. Every comparison in
+Coverage is not uniform: 75-81% of article rows for the India engines but only
+61% for Google US, where several large publishers block crawlers. Every comparison in
 the report shows its coverage next to it; low-quality shares are computed over
 scored rows only.
 
@@ -60,27 +62,33 @@ scored rows only.
 Ground truth comes from two LLMs (Google `gemini-3.5-flash-lite`, Cloudflare
 `@cf/openai/gpt-oss-120b`) labeling blind; only items where both agree count.
 There is no human labeling and no inter-rater check against a person. Agreement
-between the two was Cohen's kappa 0.47 with a 300-character excerpt and 0.66
-with 2,000 characters of main text. Using only agreed items favours clearer
+between the two was Cohen's kappa 0.47 with a 300-character excerpt, 0.66
+with 2,000 characters of main text, and 0.42 and 0.53 on the two fresh test
+rounds. Using only agreed items favours clearer
 cases. LLM judges share training data and may share blind spots. Labeler A was
 planned as `gemini-3.8-flash` but its free tier allows 20 requests per day, so
-all 200/150 items were labeled with `gemini-3.5-flash-lite` (a smaller model).
+all items in every round were labeled with `gemini-3.5-flash-lite` (a smaller model).
 13 round-2 items were not labeled by B (Cloudflare daily quota) and were dropped.
 
 ## Validation history
 
 The first held-out test failed (rubric v2: precision 0.37, n = 71) and is
 reported. The second, on 150 fresh pages (114 agreed), gave rubric v3 precision
-0.57 [0.25, 0.84] and recall 0.19: still below the 0.70 target. Only 7 results
-were flagged in that test, so the precision interval is wide. Labeler agreement
-on the fresh set was lower (kappa 0.42). The rubric was then refitted on development data and tested once on a
-fresh held-out sample. The rubric is tuned for precision; at its operating point
-it catches roughly one in five low-quality pages (test recall 0.19), so shares
-of "low" results are lower bounds of what the labelers would call low. The
-prevalence correction divides by that recall and is very unstable (per-engine
-corrected values range from 0% to 38%). Where the
-round-3 test provides sensitivity and specificity, a prevalence-corrected share
-(Rogan-Gladen) is reported next to the raw share.
+0.57 [0.25, 0.84] and recall 0.19: still below the 0.70 target. The rubric was
+refitted on all development data (rubric v4) and tested once on a third fresh
+sample from 30 new queries (102 agreed): precision 0.88 [0.53, 0.98], recall
+0.30. That meets the 0.70 target on the point estimate, but only 8 results were
+flagged, so the interval is wide and its lower bound (0.53) is below 0.70. The
+pre-registered "F1 above every baseline" criterion was not met on that test ("no
+author and no date": F1 0.47 vs 0.45). Three test rounds means three looks at
+fresh data; each test set was used once, but the overall process is not a
+single pre-registered test.
+
+The rubric is tuned for precision; at its operating point it catches roughly
+three in ten low-quality pages (test recall 0.30), so shares of "low" results
+are lower bounds of what the labelers would call low. The prevalence correction
+(Rogan-Gladen, using round-4 sensitivity and specificity) divides by that recall
+and is unstable (per-engine and per-topic corrected values range from 5% to 20%).
 
 ## Signals
 
@@ -99,12 +107,13 @@ articles.
 
 ## Statistical power
 
-Engine and locale comparisons are paired over 20 queries; only large differences
+Engine and locale comparisons are paired over 19-20 queries; only large differences
 are detectable. "No detectable difference" is not "no difference".
 
 ## Agent demo
 
 8 pre-registered questions, one Gemini call per condition, sources limited to
-committed text (titles, snippets, excerpts of at most 300 characters). The
-filter dropped a top-5 source for 2 of 8 questions; the demo shows the mechanism,
+committed text (titles, snippets, excerpts of at most 300 characters). With rubric
+v4 the filter dropped a top-5 source for 1 of 8 questions and changed the
+cited sources for none; the demo shows the mechanism,
 not a measured effect on answer quality.

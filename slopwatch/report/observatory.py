@@ -55,6 +55,20 @@ def _share_dict(s: Any) -> dict[str, Any]:
     }
 
 
+RECORDED_TESTS: dict[str, dict[str, Any]] = {
+    "round2_test": {
+        "n": 71, "precision": 0.37, "precision_ci": [0.19, 0.59], "recall": 0.35,
+        "recall_ci": [0.18, 0.57], "f1": 0.36, "specificity": None,
+        "baselines": [{"name": "no author and no date", "precision_low": None, "f1_low": 0.40}],
+    },
+    "round3_test": {
+        "n": 114, "precision": 0.57, "precision_ci": [0.25, 0.84], "recall": 0.19,
+        "recall_ci": [0.08, 0.40], "f1": 0.29, "specificity": 0.97,
+        "baselines": [{"name": "no author and no date", "precision_low": 0.15, "f1_low": 0.12}],
+    },
+}  # fmt: skip
+
+
 def _eval_dict(rep: Any) -> dict[str, Any]:
     return {
         "n": rep.n,
@@ -82,24 +96,29 @@ def compute(root: Path) -> dict[str, Any]:
 
     # --- validation -------------------------------------------------------------
     validation: dict[str, Any] = {}
-    items2 = load_sample(labels_dir / "sample.jsonl")
-    labels2 = load_labels(labels_dir / "labels.jsonl")
-    v2_path = data / "rubric_candidates" / "v2c.yaml"
-    if items2 and labels2 and v2_path.exists():
-        s2 = score_rows(rows, records, relevance, load_rubric(v2_path))
-        sig2 = row_signals(rows, records, relevance)
-        validation["round2_test"] = _eval_dict(
-            evaluate(items2, labels2, s2, split="test", signals=sig2)
-        )
-    items3 = load_sample(labels_dir / "round3" / "sample.jsonl")
-    labels3 = load_labels(labels_dir / "round3" / "labels.jsonl")
+    # Rounds 2 and 3 are reported as measured at their one-time evaluation (EVAL.md;
+    # commits 6f7fec8 and earlier). Signals changed for round 4 (thin pages are no longer
+    # scored), so recomputing them today would not be the test that was run.
+    validation.update(RECORDED_TESTS)
+    # Round 4 (fresh queries, own data dir) tests the current rubric; its sensitivity
+    # and specificity drive the prevalence correction.
+    data4 = root / "data_round4"
+    items4 = load_sample(labels_dir / "round4" / "sample.jsonl")
+    labels4 = load_labels(labels_dir / "round4" / "labels.jsonl")
     sensitivity = specificity = None
-    if items3 and labels3:
-        rep3 = evaluate(
-            items3, labels3, scores, split="all", signals=row_signals(rows, records, relevance)
+    if items4 and labels4 and (data4 / SIGNALS).exists():
+        rows4 = read_jsonl(data4 / SERPS, SerpRow)
+        records4 = read_jsonl(data4 / SIGNALS, SignalRecord)
+        relevance4 = read_jsonl(data4 / RELEVANCE, RelevanceRecord)
+        rep4 = evaluate(
+            items4,
+            labels4,
+            score_rows(rows4, records4, relevance4, rubric),
+            split="all",
+            signals=row_signals(rows4, records4, relevance4),
         )
-        validation["round3_test"] = _eval_dict(rep3)
-        sensitivity, specificity = rep3.recall_low, rep3.specificity
+        validation["round4_test"] = _eval_dict(rep4)
+        sensitivity, specificity = rep4.recall_low, rep4.specificity
 
     # --- shares -----------------------------------------------------------------
     articles = [r for r in rows if platforms.kind(r.url) is None]
@@ -319,29 +338,34 @@ def _validation_html(v: dict[str, Any]) -> str:
             'date". This test split was then retired and its labels became development '
             "data.</p></div>"
         )
-    r3 = v.get("round3_test")
-    if r3:
-        met = r3["precision"] >= 0.7
-        base = {b["name"]: b for b in r3["baselines"]}.get("no author and no date")
+    for key, title in (
+        ("round3_test", "Round 3 fresh held-out test (rubric v3)"),
+        ("round4_test", "Round 4 fresh held-out test (rubric v4, current)"),
+    ):
+        r = v.get(key)
+        if not r:
+            parts.append(
+                f'<div class="card"><h3>{title}</h3>'
+                "<p>Pending: labels for this held-out sample are not complete.</p></div>"
+            )
+            continue
+        met = r["precision"] >= 0.7
+        base = {b["name"]: b for b in r["baselines"]}.get("no author and no date")
         parts.append(
-            f'<div class="card {"ok" if met else "warn"}"><h3>Round 3 fresh held-out test '
-            f"(rubric v3): gate {'met' if met else 'not met'}</h3>"
-            f"<p>Precision <b>{r3['precision']:.2f}</b> [{r3['precision_ci'][0]:.2f}, "
-            f"{r3['precision_ci'][1]:.2f}], recall <b>{r3['recall']:.2f}</b> "
-            f"[{r3['recall_ci'][0]:.2f}, {r3['recall_ci'][1]:.2f}], F1 {r3['f1']:.2f}, "
-            f"specificity {r3['specificity']:.2f}, n = {r3['n']}."
+            f'<div class="card {"ok" if met else "warn"}"><h3>{title}: '
+            f"gate {'met' if met else 'not met'}</h3>"
+            f"<p>Precision <b>{r['precision']:.2f}</b> [{r['precision_ci'][0]:.2f}, "
+            f"{r['precision_ci'][1]:.2f}], recall <b>{r['recall']:.2f}</b> "
+            f"[{r['recall_ci'][0]:.2f}, {r['recall_ci'][1]:.2f}], F1 {r['f1']:.2f}, "
+            f"specificity {r['specificity']:.2f}, n = {r['n']}."
             + (
                 f' Baseline "no author and no date": precision {base["precision_low"]:.2f}, '
-                f"F1 {base['f1_low']:.2f}."
+                f"F1 {base['f1_low']:.2f}"
+                + (" (higher F1 than the rubric)." if base["f1_low"] > r["f1"] else ".")
                 if base
                 else ""
             )
             + "</p></div>"
-        )
-    else:
-        parts.append(
-            '<div class="card"><h3>Round 3 fresh held-out test</h3>'
-            "<p>Pending: labels for the fresh held-out sample are not complete.</p></div>"
         )
     return "".join(parts)
 

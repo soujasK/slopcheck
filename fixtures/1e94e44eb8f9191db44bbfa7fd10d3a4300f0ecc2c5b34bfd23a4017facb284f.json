@@ -1,11 +1,11 @@
 {
   "as_of": null,
-  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"Members of the Employees' Provident Fund Organisation (EPFO) can check their PF account balance using their UAN number online, via SMS, or through a missed call facility.\\\", \\\"cited\\\": [3]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T82o5c77rqaSN64HyBCk8WOCp1vVOZd4cjw5/2wtQE5GWAJkT75j/pr0oiJrX1awfqfZ1SCzUKHFAnXb11mO/bgrIkcdIBZIJTA/nDMKD/NQlK5tZ6/xLDe0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 721,\n    \"candidatesTokenCount\": 45,\n    \"totalTokenCount\": 766,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 721\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VfvBapqkBMyrg8UPt_jRkQU\"\n}\n",
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"Members of the Employees' Provident Fund Organisation (EPFO) can check their PF balance using their UAN number online, via SMS, or through a missed call facility.\\\", \\\"cited\\\": [3]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T3P12KBsYOP4ZLA+NW0VYBtIuJFJyWCNMqwDbwZb/5youadfHr2HjW4rFb4nDTvF9Pswf1IIKD/s8zhN/loEW/FttvXLWjXpdH9aStigfkz62UWC2dd1XELs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 721,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 765,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 721\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7anFaoHsHNDh4-EPp7OquAs\"\n}\n",
   "cost": 0,
-  "fetched_at": "2026-10-04T07:08:07.518664+00:00",
+  "fetched_at": "2026-10-07T02:09:53.779224+00:00",
   "headers": {
     "content-type": "application/json; charset=UTF-8",
-    "date": "Sun, 04 Oct 2026 07:08:05 GMT"
+    "date": "Wed, 07 Oct 2026 02:09:50 GMT"
   },
   "key": "1e94e44eb8f9191db44bbfa7fd10d3a4300f0ecc2c5b34bfd23a4017facb284f",
   "method": "POST",

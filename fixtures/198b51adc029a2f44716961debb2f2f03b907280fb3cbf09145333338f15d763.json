@@ -1,11 +1,11 @@
 {
   "as_of": null,
-  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"answer\\\": \\\"No, taking Dolo 650 every day or excessively like candy is not safe and can be harmful to your health [3, 5]. Overuse of paracetamol can lead to health risks, so it should only be taken as directed by a healthcare professional.\\\", \\\"cited\\\": [3, 5]}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TjwCGRX1//0pD4/44SznZoWfHPjzcUnneOMLapaqFquWVheyIalePRIqhcIDqRo2XMHkzUyRmN5/VNob9/Bzfe2V/+ZLeIvl7OfdTqtBvAlLcM9FJr7G2kA4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 741,\n    \"candidatesTokenCount\": 68,\n    \"totalTokenCount\": 809,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 741\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"H_vBaviMJKDag8UP7P6K-QM\"\n}\n",
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"answer\\\": \\\"No, it is not safe to take Dolo 650 every day or excessively like candy. Overusing paracetamol can be harmful, and taking too many doses or ignoring proper intervals is dangerous.\\\",\\n  \\\"cited\\\": [1, 3, 5]\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T9e/YbUE+T13UHnsLH4IzxV1BmGRFjuo+7AWS9LfKrFLhEGV7vYs/ZPuDDnUdYF/0W317eH5YzHYWYJ+sTZzWIPEmQYseuO7j3ExYcY7HyK1K61aOeFLcGJo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 741,\n    \"candidatesTokenCount\": 64,\n    \"totalTokenCount\": 805,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 741\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vKnFauzqIPz9juMP5-CLwAU\"\n}\n",
   "cost": 0,
-  "fetched_at": "2026-10-04T07:07:14.075668+00:00",
+  "fetched_at": "2026-10-07T02:09:04.846496+00:00",
   "headers": {
     "content-type": "application/json; charset=UTF-8",
-    "date": "Sun, 04 Oct 2026 07:07:12 GMT"
+    "date": "Wed, 07 Oct 2026 02:09:01 GMT"
   },
   "key": "198b51adc029a2f44716961debb2f2f03b907280fb3cbf09145333338f15d763",
   "method": "POST",
