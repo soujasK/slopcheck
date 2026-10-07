@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The content is from a reputable healthcare system and provides a detailed blood pressure chart categorized by age.\\\"}\",\n            \"thoughtSignature\": \"AY89a18RaD60o5TPFbrN7xfu+HpOYww9G7GUKTYPdN5UtUnKEmZyFWASzU6SXjuW7xhgY4Tu+Pcb//t/yMhf5Y0wv2S1sMVb5NIqTfxDvfA7X2AzPdNXOojNMb5vReT3s8v2NZ4mIRUnVCux//jBIKezPa42Li7NPyLV+0cVT9s4gjGBMbkFifHYLoGjE5EJadgqunG+wF57VCB376CZQtl6EicoVQlwAURXkc5DnZCfn7uw2tiBrSeDzAI8IXzbhuMG6nGjUy44r2NRQDPOdYZkWapwZ+hqToaKFR0d1fLprsHXlJz+rTtmtKJMsiOWC2VXC1hlVf3/OlqsdY9abwI6AsPtG611i1pi2GjyzV2DR3LB/zKKDfVoGIQnAx61kdLmM3/IhdBVq/9jbmqnGh3bC1Y/VjMW+skW/3a1Wpwi1Gve/JA51QoXIbm7LBV8KB7U09fZ7qdtnp1lkQ3T5jER/z+Z6uSfLIXSsP0DLULVg1fU63E4kmn8vpH8+Yk=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1167,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1261,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1167\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 64\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:44.054600Z\",\n  \"responseId\": \"sGjGasiqA5-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:50.049800+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:49 GMT"
+  },
+  "key": "daba5b340912853c2c44555c80fea070c7235f0c70eb07d96aed67c7289f533b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

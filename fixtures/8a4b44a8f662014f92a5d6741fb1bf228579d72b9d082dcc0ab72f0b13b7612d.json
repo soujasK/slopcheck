@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"This is an e-commerce brand product listing page rather than an objective or comprehensive guide evaluating the best geysers.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+V/M1Uw2VMZ89+VKUDnCAqMhZvrCZL1/kWGRvJKt9XZcR5e3GKbbWRkKUMXalHcG/Ety83LP5X57u5ehIGE1TtZYfiqsM/2A4PZPbMcqzPi/doaJF/OXFL/2mZoYkx+6yDLv8UeCLh2SRUIFoBh/Nb/9BxgIrzmBJr0Nn1odIiXTQwixzUdgJDlqDboRJEpBdJGb1UuDctDMYXLxFrHb5jCpjGEEpordb3RYXXfiFNOAZY214KYebu8Yf054IQ0blKSFdN7bryZv1MylXL6SaS1oNKpVexxdpqlKPHde7tCJ5wfWfuV7V6VxIZ5gsXsK1gwMPNJlvj8t5ssCvNlWGLmDLnhdWoAtn2skU1ReYMFke0BekaOiyw8QyKvRPtqm4C+SvdI9i9PXHOXl2Xn62YZKKxXJlPFGkmLG8X2RovIOJrgXy5Cp6J7sRWYZkHzticSOUNFfNtAUFD4jai3sEkXzStekGrte3BGcMOxWnKoYLi6pn7c1h33ix0yExvXqGCo05ffKDdsYyHEl9aiY0Qye6KavAHJA1JwmOYixpLMS/OTKiAmaldrvT4fvK+f04sFKvKd6MB0DOySWOlNThclGrndDqbpDyk8CEAKGKKRQ9AAGKy9CdPAEjnEwqPpBWeguncME0GOs5cKSyfJyD6b7lRcXIHKRGQJW39ZV1dCJWJeApCM6dI6Pb5e7N6HScCMiuLWUinvD2iDo2CVJBiTPnvDcxYVc/h3W3XOdj3rfnkxanASnnG6/HeP+voB24D/7dF1IBNdcYLhVMQRhcaHHNauaCGwTkPPV/XWwCM4E13bL+aNid62Yie92taNtyjMmmfYLwYoqKXW0zkrldZ7k49Y6ReKjS2c0qoehPn2l3c8ffk28R3HsYEZ3LBtaWGoPS0OFO1CyDlBjdbZEDA5LpHMnxCPlpSqdQk6Z8TrmjM94GqyRriUc/z3Y5BpRj9FhEt+1dqV8WvuqJxk62klprBb0if1wCy\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1233,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1405,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1233\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 140\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:29.902013Z\",\n  \"responseId\": \"3WjGav2GN4ng8vUPgYaHwQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:35.050335+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:34 GMT"
+  },
+  "key": "8a4b44a8f662014f92a5d6741fb1bf228579d72b9d082dcc0ab72f0b13b7612d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

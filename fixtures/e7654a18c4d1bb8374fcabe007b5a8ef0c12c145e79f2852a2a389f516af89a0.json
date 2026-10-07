@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official help page from Google providing instructions on how to find and restore deleted photos on Android devices.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+BKdb54g1+YUAGdQdg2YR2Kb93/UPF0JPawlDdkZhAymriApUxfc4cHecAuPM013UB06rIE8V1TBy2IzbBBU81+1T52CNFQ5Ta58r3xW3icQCoD4YOBqF/XJeW9d8yFFLRNCDtbYKQ0p8IkQUQ6AxAwPvTF4pza3Kqct0tjiBDgIPIftHDZ569BXTXAmycBeLXob/niiiMDr+dqr6vHNA2SraYiR7PQLDaZSdhFCXSlXuS+M1NO0VVmHdUvkQCQgv4qNzhAsl1P6Pm45V5nw27sTLbOgsDlexfpcD9h6DskgVSSZnQelTOAqAXqr3/D7BVacDfVSt+eZORCKV9MDKFr5XKtDSwWQpcGHsPIRxG+AkvoavjmlWqnP3QJ6x2iCZWZZO7FBMNGIKz+I/UsYq4hyxwXNr9mGc+zhfhulGJYdb9z1sF6/M+/u1WoAa4BVFby7lrh0vl7LmDA2sZHN/Xq1K7hXYpuTtMotbmFQuopDn2hPujmN4RXgJT4HaLBpFeSONfEzPa3WbQ14SH\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1052,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1151,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1052\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 60\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:12:38.951747Z\",\n  \"responseId\": \"ZmHGasOLOvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:13:11.626149+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:13:10 GMT"
+  },
+  "key": "e7654a18c4d1bb8374fcabe007b5a8ef0c12c145e79f2852a2a389f516af89a0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

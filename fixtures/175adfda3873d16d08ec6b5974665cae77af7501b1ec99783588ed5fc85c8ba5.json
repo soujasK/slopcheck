@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an authoritative fact sheet from the World Health Organization that directly outlines the symptoms and details of typhoid fever.\\\"}\",\n            \"thoughtSignature\": \"AY89a19w90u3EZkEe7Sll1eNCgdiP90nL8O172EHcnzZ7vyr3eb+rzeCaXqtnU5Mf7ftZD1T0cEJOEKv2xIt9n8lwrzPloNghtMSu16FHQK0Y/GJlIvarLA89aTF6cBinMHDNdyzyddkCvIUH+UR5aoZiP6J5XwAQ/rin1dlW5Kkw/e5CT1pTIewdInzY90D6jyXeYr/T4W8+aTuKSyWqA29T73v4OAmo0XVU89d/AxtR0yKy/rSjeXOmGn1K4qf3TziHb+JWcFTWoAOSJcGo7dJC8eboECVNGLdbmYrA/0EA4c+gCgpmFpMrfal0of1hOeRQlu6jQueWNsypM6TizwS8cY2MG9J2gJO04kKGt0xYOnYDpr52AP273/+M7WQek6kntHzoF/DyKCTjrQuRK029kWfcupCjbjvUStY0QBnBnea1KhCEfRvDMZ5uJAL+09QTPo=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 978,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1062,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 978\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 50\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:19.192321Z\",\n  \"responseId\": \"F2HGasHeC7CR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:11:30.225727+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:11:29 GMT"
+  },
+  "key": "175adfda3873d16d08ec6b5974665cae77af7501b1ec99783588ed5fc85c8ba5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

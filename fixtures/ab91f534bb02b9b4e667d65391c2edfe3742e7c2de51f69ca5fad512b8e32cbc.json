@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"It is an informative guide provided by a reputable major bank directly answering how to apply for a PAN card online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/C1uAxsT3ISglIBcBjgLgDTEEEDv3TJ4XWjL9ydQNqXeBFlEX+lMcmck2ExmpD1LZYCiDKL1ZxwJZGd1NcQxnejksVe2ELik03mIGo46RXVcaB+gHIaDqdVkgZCMzZCDudkkXSpV8n7FDmmoNfKqA31PEAChwjlWBBh+4hrET/euCnnJbluIaYw/bYCsS+SSWn7u8QZACT7DAF2DQzPR/6glYkTgmjSBZK+Z1GcnRb05HhPxef7ybKKEPEx1LNMHvFBknwvr9cZ2Te2qR/i6Sc8U80elTbpU3tc61mrgzee2XyhkCxGvn1se3oygcYS5N1hlfRuSzePU7gKn0Mp0AVzWv9ZWxCg/fXyPLxW3bcW50u2PNb1PlVifUjMiDgLnt8qfsK1wde4t+sDzKulA9BHll8Bzkn9F6K6rsOTkCQdJKtgx3cZhWd8knoSkX7wUIuQNcNIYOp0hfqOZ4LHgXuPSs6HN9ojWSRYCI6wxyMD2CkVmvTni49\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1012,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1109,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1012\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 64\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:55.805049Z\",\n  \"responseId\": \"b2nGarmRMcjo8vUPwLnFuA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:58.641147+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:57 GMT"
+  },
+  "key": "ab91f534bb02b9b4e667d65391c2edfe3742e7c2de51f69ca5fad512b8e32cbc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

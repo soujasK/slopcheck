@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The guide comes from a reputable internet service provider (Airtel) and provides relevant troubleshooting steps for the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19TNzcJDUwTebLFGqSi3WVXWpWzSIlHQJYc1IBGeNVZSXEyXY8nGKwKq1JxRkCwxE+ts+OpGncnTBtlRXot61k59vnz5K4IhVH3vuZu4gGL0GXtuEBnzjGX8SVrGUwr1IVhgQUs2rll1a+bvjiL+8oFUHaGT0cueXHLfi2t+2k5SY1wMqo971CPLfH1Modul8u7rLkeeDZc7a6ncoRweRZu4ML827PurnibOQF4NXy/Ataq39y7P8TYg5dw0fjrjrSAtIrY4rZWAN8jLqT0GYvNMPzm9Ai6v5o3XbmbjevPYUT4O6Behrbqersdq8GvTDP5dHEYTnnzF/gl5KbVb1J+TfCkCqUJ60fimuyXGgO6P9fZSGumsTSqDLgW3anSGzVN0IU7CNqdkd0wZ4t2HvMK8VwhCqtG7BGXz/Ew+l6tWsllDieqNT08wNVKM2BowaXO5r2ZWR1OCndBBXazzZzLbaqAvjU+UgJYOTAXKdHwqJjRMCCuoB0euQJE/6Q4++u2o2Gx4vXIAS1rML44c24FS0yR8d51TDipiXM5qe1SsMvnIDz58Nc4DuBpUrn1yXhy5S0sm/Zzw1HRGLpb1dhhhKRrD2/wZJMJPFZlkDKHE9G6Ij/LzfgSyBxTM/NBUevVYThgaXuD7S6Tllt5klhs3T1SiLcUU7EQjN3VILobc5SteTPu8QsoN5mq7bwUV3hj2OKTHaRmJfP05Dcjgk98135TRMOA+18tAc0mdz2agRyho4YVmCD/uNVQ76iJRSSd1dQ6dWUXFDiA4hXQ1XWX1qznQ+fZ0eA5acPP13gdKvehlOEnUA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1057,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1227,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1057\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 136\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:36:35.237303Z\",\n  \"responseId\": \"A2fGave9Dsjo8vUPwLnFuA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:36:43.842031+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:36:43 GMT"
+  },
+  "key": "cd33322ba704a1c529635fbbb8655380918b5c0a466a9490dd64c3f9b4b60b1e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

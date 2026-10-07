@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a relevant and structured PCOS diet guide for weight loss from an identified nutrition organisation.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/+gdXvsNWUa1sPO1xed45fugq7SRs380BaAYwUAPpu0d9enmRIhGbd99il1DG6zExRldvfrSQI0I5m0TnwWCUWfDeNJqIjuXdj2GRsTANSUIc9Og+GEsteu8NPo+8MVMnaWvcdLKUO13Wmk/KkBew+1rb/wyf60WzGMd6cXVBXNdHHbyOFSfyo+y/cZlg7WEjB6j2ldWla9osGeCPz3NfsE8nU3c5lgXKgKGwcifedHbNaX7PulIqf5bX2pth6uJpARyFziOeFjzY+OGHQFj9GLb4YZmLMXc1HzQnMBT1RP7pFsuVqzOeVyR46wt1ZEdvYiVaXnwsuxMPDOSjCtjS/tWa3w1okcoQfDOXz6CtzD0jJ/+qBOZEyMEWuXnOWGRmcldnvXxYmzKns5nBHYIv9sdg69aeH++R4p5Srb7Lh/NK+y0euSKnqcdz0qiUoBgJyXupebCl0TK1lbc6e++SOU/ua0gaPrNSqGb0g3IoKLL+lSyTy2pxpAWUD8KTZqxwiZvPmOw68V16a2ZANkTIVbkoJiVGKLS8cxtvyOvK1q2MlYSCsMjC32JC9S7mVdbetTXRbufQ3QYhXBtTswxbrj8avaQX0fZJOeF0kM/fgSDg0IQ63/7gPBFm/kCGKk67SyrfMKKMLQz1QHPIXttM=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 991,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1107,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 991\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 86\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:49:02.837165Z\",\n  \"responseId\": \"7mnGaq2MM-bq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:49:22.256617+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:49:21 GMT"
+  },
+  "key": "9b6e892db8829c971bbc84d662c355b20067b0cb6a9f0c20ae7c4db85ce4471a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

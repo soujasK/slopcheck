@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a mass-produced programmatic SEO landing page targeting a specific city with generic national bank FD rates.\\\"}\",\n            \"thoughtSignature\": \"AY89a19P2LrkO/P4TkI7GmZnbbj0+cPDNLaDVLDcMFosP3Oj2NWgYqxFeq9899rdlhxi80ytoZUt/tEx+bwheXaCOVIianlevSLaBnP/TZnGx4cpRz2L3aB/XDWuiFsbuchjlZzGTTqgA5NTqh3qBclbs5wxpsKBB/l2+O4IzYU/eYN6Lc0HEiQo29+Lk1JkKJ73aNzj0tUvDRSeUUpyxCPtUn6PWMVncP/4CbOfY5PmE9Fgm+zrdK7VPpYO2zkhmrnJ/E2ksOSvNEu/F2Km6oIAruLspglcN4k5S+w8MQE7CyPnqQNAnDXeRpGDCPzocCGynEHw1a4RDC70qtaBMUwVg5HY4JSKBf/pADMFtA9YtnU7QhqeMs8scFfuKLXY+12XY0h1m4xDgpQ5YYaUDq06ETOSee2vIiNx9/59MdAPcliaxxgeY0d1Mh2TAsn+8Wrub6jL8aPeudyKQNhzHECKvojRZAiuKv4VtDURNvD1kWO00R5qoW6WowHYn2v/XpB6ONEjrypVoB/Ryx11ZCcEmTdQY7x40N6Zk/xaQGW6LL1pXEI1PJvR5WMXtOcpyrtEl8dtUrFr1kmeian+yNvWYWHCbXY3lZb5AgL4he5DFkp2+RfIupVu0OB8+jvJUthMQw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1335,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1444,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1335\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:51:41.102067Z\",\n  \"responseId\": \"jWrGarOdBruDoLAP6MPuqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:51:47.997457+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:51:47 GMT"
+  },
+  "key": "1fa3ec46af537f14bfffff6582d2d2f57780ee675e769467dbacafcaf6a24974",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

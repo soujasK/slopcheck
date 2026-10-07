@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides relevant, step-by-step guidance answering the user's query about using CEIR to block a lost phone.\\\"}\",\n            \"thoughtSignature\": \"AY89a19041S8Kg2389fTlwOLYHZfH1DqwAhLMZaig66FxkEAiU7J4zPQ42jII/QDft1+yzb2vJAklYHP63F6tzXdMwfaCnT51mjX/KUE2y3OpZGex6KQmNS0+u+uW9Nqp0vFLIpfzQNOQAb3FLLhT1954bK4jzoz63G0lOe2fEgBm7Kq708b8SIes6uikqiOAlmKQR0q7gcjuiyoMsEX6bhvJMBE911NcP/LL3P3tKiAwtF1UxZKyzDuU4588W+pjfRC75USXipcGuACgeddR1mP53U/qD/1OZF5yXG+OUpmIeMbmM9d/Eo9lvbt4uxm4I38u6YiHTKf1i3Zo1Rtf21N59mMAg0WXNsw01ibh+4k5EnDhmUi7Yq6AKPoAqNLPzSXUVvq9AtRDgPt3mUo+JEBCt1NamZlM+/ZXCM2cmFs2xMQO8A4IkH7ubHvTYTDBniMfQwdssQ8N8HYtnqznr5Y0A==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1105,\n    \"candidatesTokenCount\": 45,\n    \"totalTokenCount\": 1212,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1105\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 45\n      }\n    ],\n    \"thoughtsTokenCount\": 62\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:41:29.793742Z\",\n  \"responseId\": \"KWjGao65MP-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:41:32.545751+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:41:31 GMT"
+  },
+  "key": "b4b13af1fd1f51bde27c8a988d7f3014b583e77e818d4c1f51fd7092c3ada3ad",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

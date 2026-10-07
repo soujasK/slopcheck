@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an official Microsoft Q&A support thread that provides clear, relevant troubleshooting steps to resolve the issue.\\\"}\",\n            \"thoughtSignature\": \"AY89a19POeNEev9n0VJXH+eVUgXSORWD2eDn+pwD/6xMa/FuvcdhP0u5thjxPhW93N2+746GfO/FWtJTo8zl8SBfhSA/DgnhquaKrlP9MsBcixQ3ze+we8KkxK3HHinQE/HmMC1X13SeDUnzQ0ffzEsYbz1UCvdie1Bof1snP2SumsnaXo9GJZcHGzyDLSa6Eek40+6kD9DDdxmwPjgU575bqVsDEXe/CtzxD0OebgpzgFB1y1M3aYTu4hcuI/V5oCMMsXLmzqNASa+c1lpqfTYIYhkE4wVNgqQ88aStuJ6dqIzSzI6DmDCO/aHA5jsOxZC1PpMciWJ0W9rvy3LqlLMH7m/lD9Z7fmvrZ2jn2CTKTY17UsiKivk5frg9sOCRlTiwiDEuSn69Jwnej6BcVq1ColckS/TW1gIlRVSgPNRI5bxIXSmUaM402hNB2OOogd0YGDpU5mRJKf4ZlDfkPW+JZ3CKzqWD+ZSlQzv0XHHeCmTZf7HEuwFNTk795HCv7ldBBGkdUN7TEfxFTc+GDPSrMMV7F+dS+r0MPlSLsbul63d1\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1131,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1238,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1131\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 73\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:10:15.421568Z\",\n  \"responseId\": \"12DGasDdGY7h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:10:56.411164+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:10:55 GMT"
+  },
+  "key": "b32238cdb353dd4b70aad399f71f2ef42c73621581d3677d810e5160de511cbe",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

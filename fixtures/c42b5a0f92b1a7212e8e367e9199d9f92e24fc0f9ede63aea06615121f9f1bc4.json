@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly analyzes whether to prepay a home loan or invest, published by a well-known financial news organization with clear attribution.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/ZcwLrvc/fKNW7jQg4Gkok0fz5EgbpTF1ovPF3n7ylDWxO5ywxjlGk5ZQbgm/fSniAsJcStB9JiqyFvSnS7GQiTOWKMFC/z1YOnxNy9ru80M9XZ8WMKQ670ZDvG4rHddEucqFBO6yIe5IYVgBxtiblydazOnyqHtO8usHK64CYgrQvBEaporXzI9OdO4xIfJmD7wn1Ur5G+OZjN+/wmf5jTcELIdJDcnpuCN+8lRDpgytbjlWhi7cjp+xFv7i//7gI4VRKIx49IJS5D2sG4uXirCDrdQbTiMzBDqN3kuY7qIc1xlBbYFbX5vtDgoOwNbleBWsYI7CUPCoqr6NymtZ6Upu4fMgM4QuYH8vEw61ugPIOS0SJw2NIgpJbJPa6n3YRhe7AN4ymBEuSk1Wk2oef/qbDtiRdtHkLzumCguMnU+gJweDbk0KGGNUTsdWLjU7Nm6IWzAYxS2nsHpp+67wjj9rkbkVzTfJ/ZxKzAMjjNZSru1VlqNI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1098,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1191,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1098\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 55\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:21:24.226662Z\",\n  \"responseId\": \"dGPGaubqDbHh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:21:27.466093+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:21:26 GMT"
+  },
+  "key": "c42b5a0f92b1a7212e8e367e9199d9f92e24fc0f9ede63aea06615121f9f1bc4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

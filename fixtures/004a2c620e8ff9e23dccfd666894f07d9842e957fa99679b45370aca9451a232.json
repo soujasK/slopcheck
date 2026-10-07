@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an affiliate marketing roundup with generic buying advice and future-dated SEO placeholders, lacking evidence of hands-on testing.\\\"}\",\n            \"thoughtSignature\": \"AY89a18wRVH0BkPQmGFNHHRyesQyxuW85o72qp7ElTX2GJzY52Lj/PjR2qJnBps6aS82js5V1ck7pXfdJxMOBqCNOEtM/5FYglZ1JoxBThfEhDqkrbnlokNNVFkwJkzElPUER6rNJIiNlTbUzU85vDgQsoJX8l4hJQMCtdgb1l2ou9CSyd4j4sgmLe3u0zs3KDyGXBdRbyt6DKrChmwPyQ9VLEexOQKd1N0HH/Nu92tIDZ6cwlb3psbmTwyCQnmlUWH/1A7DMvK0gXsHaU7kyj4X8P2CgXNQIX45qxfLNbNYgAP9LhreYpTRZaX0HBp8+TMEd8iJxm7vgh57DK3KVi1PExiHlB95mK5IiR41oyZngxlifo1ysHqepQAH4BK8NgWABiIVCyK2V6acmglLSy3lZdQMhJtWtkMfbhnhL43MqCmyvnBB8ZXDc4mTEKHPNfs1kugbgY6oG7ZqM4jhDCkx/Tw5VDGy/lOKpBD/3cg3MN7a2NvTPYE8dIy4Yle3PoE0HLkfK4CrNF3o+aLpByY/ITZvOXbjLn2NsXhLByhh9+JvYmtdpzEbi195sq5/+sr3BuqX0s/UVQWYLPJMvUSIXRKs2PuhSLGqJCr+xpBS2t8S9YTnjJTLIbJtXEtZNDd+I9w=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1061,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1181,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1061\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 83\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:01.459737Z\",\n  \"responseId\": \"wWjGatmHHNmBoLAP1Ze8qQ0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:07.682481+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:06 GMT"
+  },
+  "key": "004a2c620e8ff9e23dccfd666894f07d9842e957fa99679b45370aca9451a232",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

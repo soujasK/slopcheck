@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an official tool and informational guide from Paytm, an authorized partner for checking Indian Railways PNR status.\\\"}\",\n            \"thoughtSignature\": \"AY89a18PTEcsCmlJElxxCyxkeJBerLUm9T6KrPPOTOuHOuIgO2IABrECAuTFvY/qOtxoRdVqWdF6cmd1gT2r3KgjlIKO9fd81uCkqfXoOQDKmoqmwDot20rfh+97qHLvL2tn4kfYOw8npiZqRpTZxGioGT9fLSfInHCqFF+OtLJY72Xe4z8uv0fxzUcy74lJlnxhzzhfJMQcOCgZdCN2ZwDsLp5jySRol9Zzl+u4dLgrjhls3BRXGmmexvfS4M3rl02b8Npn7tub2tv5EYaL6OBQjEepvObaYkahWU6KNoqkg8+E0SXdNtsKdK2pXUlq2K0PI1QU+2x4dj01ztQB5/D0tP2EWeL9nrZd2OaaToMll4/yfji6P7Z1vuen1bmB0kf4E/SK9lIDOdPcH/D+aJO0eQ0kZTxDCSKHaAh8G6Qmf4k22XJ3kU15M/ERPgt5PnP4W9AWJU6FGyqgO3BA/BitLy2zk8BlZ6oLqZcBZPm4vAz1DDl8r7/VXPNSqQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1039,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1135,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1039\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 62\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:53.285221Z\",\n  \"responseId\": \"OWHGaqW0EbHh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:12:31.641273+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:12:30 GMT"
+  },
+  "key": "35bec64595d6cf665a5e8fd5303e71c2d2c6f25fc4702f304c226286c9c2a7ae",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

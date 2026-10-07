@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an established IT services company and provides direct, relevant troubleshooting guidance for the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/IbGqOjneXeVElkd0j87mGzBvtG7Y67aLnMcamyya1iK7ErMq2Ncyq5Cuf0QyJBERgvx+UTfwCIDstYkD8CUds7+lZInvXo/ZoNrdES7REKlPAuuqUMUojhNpgOJQuOmATN75Z3JPZE1OE/rLs2RDKmMLsSqSXl1MU2P06oxJ+JSvcY2WVdT6kIxTFRfBWbmbIt4QVx1Bqxjy1eCYJ7A6LAvvpmgyqrmxqTQfj3XD6nfTd9HqZB4Ed447TEU8WPgtQLGlMkACm/AqJhgQc6UDulYcuVREpq2x7RrT8X58G5f+CJtO09ZgR430PQlp1NlD4PQkadU+WWHmg5SOhfu/j6fWNmHyl5hZOdDBZOobP1mn+C5Kau17wGCDS7Ka7enDflT9ckrw06aQR3ycoKa+sx2f/wT/4jkJT1JXOVVbjTcFSzBktR0HW1tI3AgYimmijTR6xMS6wz0t1TJUFb7XO6syymW/I13EcOR8qbjND6t+AXKtnlK7GQjYOYB8v5f1neQ2ltoDZScM9KV1s/QXyemAzy+jqFDdwu/jE7Zlrp15KR2pvSSSuYjRYiHivcMnlsCjB7Mf5JbJYZzVFjumubaejjlu6hjeauPoFwhxfn6pfTfMn2wcvTtt+aRqi8pWGQ8Bs14AmaDV+Z7tX/WeL4nJnOxJXzm0aqAiba60x/of/VWLL\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1004,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1132,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1004\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 96\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:23:39.831735Z\",\n  \"responseId\": \"-2PGavfhMqezi9sPuK_uyAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:24:17.608342+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:24:16 GMT"
+  },
+  "key": "8b193737ddb15091f2c55cbaf881f6ff505792e3ac0024980477236613220bba",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

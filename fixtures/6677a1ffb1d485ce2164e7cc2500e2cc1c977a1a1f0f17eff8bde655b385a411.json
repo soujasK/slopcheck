@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the troubleshooting query and has a named author from an identified IT company.\\\"}\",\n            \"thoughtSignature\": \"AY89a19tlKTXK612r7BKUWV1Mz/eJizaYRDKb7rrTv9ggftmdYSlJaFEFO4UyH9+Cma9wlgd2lVsAnSA9pQGgjFTQmMUZotpNOAbejM/l7xv0NxlNG9KDIteYmlidVLbOrO4+yEbpEKOCkkbuu8qHnTiCpz6qQuA7fO81BGUX9HeOFTEHY5UvojVm6ooQePqz2tnSI5jzT+8f1m58f9yg914Agv8muZc0tI8Jy5+PBjpuTB4Oh+jLITPfeceDUi06bbE2/ZiPks9YzsRwmXEw2DMdmKWI2T9ftLsX9pU6eNUvrPs9CM7DEO53H6zN9Te/fZBjc8DLDBqcZeqOiv7Co4hh6csPsiArcciBmHGk4KqS4b75McaQT9YeEavU3o6SvnNXaSVBM5zAxavHs9yrOfTM5NAzdg6X/vr/zewILqWsESrUvbnh4Atsgcwg+bJWWWR4L3oIpHECTNHER8jE2aBb/kXtOOVDgUy06K3noLGzsQ/+QWk589coOEaXhVaJn5c\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1060,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1150,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1060\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:15:29.618886Z\",\n  \"responseId\": \"EWLGaobjJZ-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:15:32.653313+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:15:31 GMT"
+  },
+  "key": "6677a1ffb1d485ce2164e7cc2500e2cc1c977a1a1f0f17eff8bde655b385a411",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

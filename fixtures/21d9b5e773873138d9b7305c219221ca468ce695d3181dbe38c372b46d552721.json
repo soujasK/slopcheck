@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a named professional dietitian and directly addresses diet principles and meal planning for PCOS weight loss.\\\"}\",\n            \"thoughtSignature\": \"AY89a19y4/Busi02JswJiA/T7DjHtDzFr2tlhJDygrFh/uDS0buEUW5YdVGQSYeLIt1N8fDyVKnVkw53Q5rkMwFH9wKJ+8YoAdz09XnYSZwj+vR3QEXYYpdxywD/zYggrt/uCxIprosxeR/NDe/YJ1T7DkcLmQg3Ewvo/4gah9vKMOqhFFEUG9Hl+cTFhzUxFVIfIg+hObXZJ57feKTLkulEOJN1N4GWfXQAVmiSV2hwMzaJT05nvuZjqE0AixuND6akjUBcDsdZuSMtDN5OrbzG2QJ0+dBe5ugztxPEuQg10BPGj9umEzNzuvvuTZw9ZavMKPleoAa5pa4kY2iF+z3M9fR5FvJ3BFr6Fm1i02bB8UpoRWtsjvxIxlWcnnmbB8l9/G/RFXFdNFpNRJcMQNnQW2JLm61GcNQ2cI1/IEIALFTqbD7Cl0AuXrdhxXZCZznGsBPfWRhXHzqVhnwLeWV+CUIw/5oi/ytc1Tfk7jaNlyai37LCYJ6NBLWCP1z7w1ZvoGYDy50NF1FobHFGCWnC9a+C/v9OaTsd2UI7U0bibc/bmVKPA3sz0n5wYM4qlmn+6HZOhZrH2gpJm+b6N6vSILlsVf773xPZlqno3mDT5l/9TecIPc1vhVbsxEpVYWK7/Xe6Mr7zqfPTMS12E4HvUVGy8jw/5lvNdbh7iTJX7JC7Q3i4VxknqLck5t++/mNqSHGTU4pr4HTw/YMVvXyrz4yhIeblVKfl88ulPBDNvtumvl+D/7hViJF+0thVtzgr/g==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1026,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1178,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1026\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 119\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:50.995871Z\",\n  \"responseId\": \"NmHGap_kPO3Fi9sPuoPz0AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:11:53.956717+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:11:53 GMT"
+  },
+  "key": "21d9b5e773873138d9b7305c219221ca468ce695d3181dbe38c372b46d552721",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

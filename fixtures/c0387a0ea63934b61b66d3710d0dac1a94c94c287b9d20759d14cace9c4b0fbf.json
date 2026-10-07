@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official news release and guidance from a regulatory health authority (European Medicines Agency) directly answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19hDvYXj+8iad5Cs6UL8RYPH8IbU01s8CCrlHfj+csfJRlxNe+RpOsT0jc8NBXsHA+Sw+lK3JmYXRp/tvI2Oi1tViSFA4lHaRCRLIQVgACLcRA//IsChaHtbra1XzvjXsz8IPeuV1RgBkkCxVaQ1q92yXHTLfQh1UqNpjGXo6f/XeDJWZoW1hnL7LboIu2rSx3nQfzLZxGB7toMWFzE3hy1HyTA7ZTYOT2ZbfetZTEypTB/wpoReizCaW2nRdtvn2x8bjpBHqeI1Ux/bpfqT2VrkEEDbxA2KbcXM3ZR4DNFLykIhd7thDarv/zPvsZYucyCCBp6YY9QunPjpm39+MlcW+ABU7TFM+m6jTIwDgiZJQolFzB+f2FT4GhkoTce5utWSP0msbIIWM9fxHMzazUa3FHuyzkU1GxbqyxgAFfxp9y9U/JhSUTzAwUvacq3LXm2jIxcyeKcFQT5bFUiX2+nkGbLVCCL5Lq3RZS/y2M/6H1w4jTKuieB6dqC9ohs1VC2eBYCRs/S35oT/9a1X+PgWqpEQfrLWw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1022,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1117,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1022\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:23.307037Z\",\n  \"responseId\": \"T2nGat3eEvmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:26.589098+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:25 GMT"
+  },
+  "key": "c0387a0ea63934b61b66d3710d0dac1a94c94c287b9d20759d14cace9c4b0fbf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

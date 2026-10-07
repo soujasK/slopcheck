@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official government user manual explaining how to file ITR-1 online for salaried taxpayers.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+k6ZcdUTtJmV2hw14/DEMEmnHfTIEmhuljuL35roCBpAtB2MqEvGnok4rlygviMUWpXH2+UJwNJhj9GMaykrVdr7J99J8yZ5Ci0EJr5d+fJrRvxyajlC1U1Uhw7RD6aMM4ZsO0/dbsFkeVdz5gB3ddGX5+q7twCNccz0i5TefIdNZ7ALL8AwVj7+IzThCXNZ4xpebHe0MkHHMk51Z7Y9Mziunxmm6dUJFVTMa4+QFQDQioCAl7IDE6Qw2/lENbabWd+/7P2CFUqS9/YRnwTkSisoogA1GfWNbO5QRUEq4vPRTkmiY0sigpDs8KMGjS3Az/mkjfLGXw3/W+p43ghyTbWDOy09a/ysmMBASXugpnQX/Yy2k1bzIo0ReAP9PBxqGACi/zoX7yq6vXAIQx8xL+BTlutCvBp+ffcC8CvR0IgSeP+7rsfD1scdrjQ+DLdeFAGCzXRmTf0H7JrPbWnvMPpLUbSVg0g/iXr8MHRjIep3fYruRCnsA7s039ZJTDljHUTul4AbL6JiCz8AmUp0ojYEBkYVB8TG8RuviHRPYWBVCGNOU7IHBBbxrwfIHX04EFeVB75gIn\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1093,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1206,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1093\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 76\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:48.518004Z\",\n  \"responseId\": \"pGnGavTOH4ng8vUPgYaHwQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:48:05.552365+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:48:04 GMT"
+  },
+  "key": "732b01a1be56d2da84646e201fd2a746bba94ddac2803f149a314e1dca661529",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

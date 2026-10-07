@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a reputable financial news publication with a named author directly addressing the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/tyKjsdvBzppqsB5SQVUcamdwFeEpkQCeMBQwxx6s9dkQ21EQLLXQYo68k90KZ/GFXQo87/zla0rFya4luDXJhMDbgvcvpn3hCL3Wl5XWHDGXs8MxxnFYNGMMTIrLLIQWILemL7huDDfR14B5iIfA8w654Vy5NYmJ8cU7I1FGUXQ+F7vNYUpg6IKh3DZFhkVeFpwdocXHz1K5DaeTBUwen/ZpoXgBqMBE3Ix7rRdZU74TygX6aUGhXBsB/JqD4oWcMjd8ht++1k7PF7JBXOGVenb5TcN7WEdI1jhfSZ1TIN2frnlX43Ux7M/o51cNcPXTg8mdB2NPnKyINl8ndS0Ykgcx9UWVSl8HOO18r7rf1/tsJsLu0UVcFQKJgD5DQet16XMk2I7Dt5Z51iQChoNgZRoKEWdba0kM354KXDd27GUxGI0Qx37xVleKYfVfgrFv+6+RN8WjlACNZAR6Ps6TE3PGqDWQWkOaQdjL1Cy6GoQ2JpaBvlBgDlSRGXrSwl+Y2bD8nXUiNAhSFHM09Zi3CPqEBv3b+NZAu4b12C3fuSNIYU2qrSOE/LrA8e99adfE+x0HLBr5+2fJubPM8Fe9XNmE/JWKovs4ajTZx5YYZKmjAnGuJpH7+KfR9M3H6VErm3IlAznawqA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1125,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1232,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1125\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 78\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:26:27.175745Z\",\n  \"responseId\": \"o2TGaoHdConDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:26:32.756614+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:26:31 GMT"
+  },
+  "key": "7bed2dbd4ccd553530448fccacdfd8aa856da709d8ce5c47f7cb76a9a07e7794",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial institution and directly answers the query regarding Section 80C tax deductions and instruments.\\\"}\",\n            \"thoughtSignature\": \"AY89a18WOuc3UYHoOBGvXzmgyezZiUjdLeVojhj6+K5Wlydd8TatTVfsdbfY9GZ9YFuGdS7gSB+4TK3KIKAJP3m/Bv1EFESrt52MY8F+LymujGVPaYR42fu2PB+kkZ4eRPWsoS0mvoQ2LL3PHb2g3oVnW+8QrPurpACy41mINfK/NdUt4pBUNkLXZGkBjFpE9gBanqc3Fubt3QtoFX7XPE3jf1wHXqYRfwb4CAw1012wNU3ojdFGvNe9TjnmtjgklEespFiHsakWvE9XraKl4pgvtMwVvDPCk4YgjyJu2QNewLKKsMnQGN/BVSMTkK+GzfMnzzERbQRxWr98OQg7QSMOwf5bORnte8GHv4W0m8qq4tDt450oExXja7t4w7jQ8t2UlyybnQ4+oSghIqoIbo6hft8gxefArq0CZyYJA+7ng7/K+u3KpKmTNa6Dd6Bwl9RsACWGw11ucHmFK6wpZycnC2aMHe1xIqw5Jet0FyxpcTPI2zTqIdA4k3DwS4Vm9g3ewf2jEmWoAeFQmkomNVRQpoRIf/XSVORmMxV5t461LnZq86A4RHLB+zyR1DW3SH1MUmPkCL2k9QBrqdMNALWnTl9iy1RPtpeYXykCEPtuO4xjgIYFibf81H99wL74WiC/CNr/xCAZxWPSAA54PHI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1205,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1323,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1205\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 82\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:27.503898Z\",\n  \"responseId\": \"22jGatrgHvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:30.500910+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:29 GMT"
+  },
+  "key": "b19f9ba781b120d51b655b4cf242ab0d0a6380956774519e90a6d53445c1f67a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

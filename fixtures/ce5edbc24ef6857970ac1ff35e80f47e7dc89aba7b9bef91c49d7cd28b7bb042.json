@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly compares NPS and PPF with clear explanations and examples, posted by an identifiable author on a recognized tax platform.\\\"}\",\n            \"thoughtSignature\": \"AY89a18JMzuU9qrB6uxDDFTDCIeOgDwlMlk3Db6gC9lZIwvVq+uRlEkb4nlNm8lQhtfEi+QKvoyWapcJYT/RIgWzPev8LpWe7pvmKzK7g9tIjHIqUGZBVurMgaqdYz9taL3bJ7/xP12WH+4wATojTJs7JLMXDJHOEhu3xF4r47UDPYAKpX0812QWZgPqvzdMUk0FX0RMBgAbf18ouhRAR4nQZv4UzSRZUgJriOa/xNHZ5aWXx4SLhHQsbT53D3vNl9OgapMfn/t2ql5TiKcBzwGswxivk6posX4wxAFRlbZ0AUgNgOeO68yz3RqcPM2EZTkOhy8uG7YfTj0giLiX1JTyYOP+SfgYtO5P3Ny2aotWM4DSyk7dFzpZwmO9cZ7cMKCzESsv1SDtdn/mG6Z3T9TMrzqSsyQZAGznjBylCXapjs55omJAFxZvZmTHs2NVpBgQDtE0ersuRgBVe6PsOCls9j0gRbwmw5UciJgUYjtyJkLwjwvg9WkM1Se5m0pzqOm7I9EQTqAHL96sRVmad/0VkW2qj5tVQC/HMCFCUbaXM4FxbPqM0UUjODlIm6HqsstjkKysCmE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1139,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1260,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1139\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 85\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:21.634114Z\",\n  \"responseId\": \"1WjGaoLaJp6c8vUPmtXQkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:28.128110+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:27 GMT"
+  },
+  "key": "ce5edbc24ef6857970ac1ff35e80f47e7dc89aba7b9bef91c49d7cd28b7bb042",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

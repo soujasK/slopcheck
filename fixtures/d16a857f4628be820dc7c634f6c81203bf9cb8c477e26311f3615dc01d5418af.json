@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with clear medical information published by a recognized diagnostic healthcare organization.\\\"}\",\n            \"thoughtSignature\": \"AY89a18liZw9ZuUafdzvvxrtbbseNTUrQYMnJ1W4Jav7qN/poL4HoiR75sDLfYb6FL3HOHRm8xSqh606es0SYfEH500O4/cPtLvf1mpcz4ht9RkMGL6pa1g7ymoT5VVJ5avs7GrV3mC4zG+5bo6ibeoC0ME8zQSKjDhqAWPirbVrhKhoSSDtKBG99M5FBiVBW0emCYWFQE3tuXhlXI2PyoDu4W5G+S+vvvQLm2KjQAJA7LqsTE20vgPc2KvbB9xJJE2L7O4VteNx3CDNxf9BThtk0266+Y38pSukLMxe178cNw/QbqarKeRi+PkaBz0Q5k54sQsCGi3+leuI6SO4R8o2VUME18gKbmKGuo/j88Bk65WPu2n4MJ8B+/lEvYUhksNpMtjb7AgFxYKei8ltS0q0Q322jVgA1Uk+G4HHjslZFXKZe5JtbhW4NRmpYjtRwtuV151QI6H0vvYmrTOe66KDqf+pUNyNzzG1jU6qIK5OdYntyO2WA/a5DlI5A6L26lRWHg2wMel5ESlFGfB3vbB4Jk2+Zee8pMJ0V0RI6mgtkxRXcg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1102,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1192,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1102\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:13.747860Z\",\n  \"responseId\": \"RWnGatTSLbuDoLAP6MPuqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:18.716528+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:17 GMT"
+  },
+  "key": "d16a857f4628be820dc7c634f6c81203bf9cb8c477e26311f3615dc01d5418af",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

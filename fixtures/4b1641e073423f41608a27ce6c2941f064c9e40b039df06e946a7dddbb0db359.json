@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an educational investment article from a reputable financial institution (Fidelity) directly addressing the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+x4hGYS4nVNvDu6x+SADX7puQbFw5qypYUk6HZNjlviIb+74Koom6w/Rk9OacS+2ZCPu0egA3NKoGUmjC9evHp9vbLfB5wFmXnxnfiVMc39YBShMXnnCggb8R00UronZ/R8epTwqWx7G0s4e85jBfKGZiuO7zxkbxgxnsbIr2qzlPwFMAbMyfB04ekJsObhTsrUnmCPjvkh3lglVeXl9N+ZXFe+4uePNw/aF5qECSh42NwwUz88/NsEvDvulPvZnK2zUqv6T+bf3NNOpvKYgJaNf43hDzlrQG54jjJR9hoL9MnYs8jdsz+AYXI6uBkX33Bt9/UoKPyziYazusejtKeOa3+J3BTg68sAER5ksjI9X7ekrTU3w5lB6ZF6Zwmq+YxZJSzummBKQt6n0uzIsMLqEItaZbGonaU3byWZdKsy23zKtyO8VE21+/kNU/JWz5Y/gB8TvQ9sWMjY3wyQtQy00oq3BFABe+udFPQv3GR335txp8iPgWsvfB06YeY0qbaVUjkP/mCsUnSmGCOdtQV97PEife9NvAitP6kwpuUI7CLwg5kxI+8gsMM2N2v6FkdFupablsssPmO52ryKvM11CBqJR2KwJQATmnJGSeyfeVYCZY=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1038,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1146,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1038\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 76\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:42:52.619784Z\",\n  \"responseId\": \"fGjGaojqJaezi9sPuK_uyAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:01.753402+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:00 GMT"
+  },
+  "key": "4b1641e073423f41608a27ce6c2941f064c9e40b039df06e946a7dddbb0db359",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

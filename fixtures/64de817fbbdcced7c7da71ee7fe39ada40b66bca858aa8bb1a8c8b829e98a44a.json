@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional landing page for an investment platform rather than an informative guide on senior citizen fixed deposit rates.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/7B1cSv4k1lVu72CWsb1fAfmC0ScmQhkHe+xSsPF9bFtq8/bdAjTQWKAF9jFqYFT7clYlnZjS76Gqxe85pZk85ehx8axWs4BjHBzoXNplb/dutDPg8+uxagTy0lD4/TDajHS2EdI6nJ3kSnAAInhB33DIo3eGb8X9CA7TNIvcYnuk9G1RX9K3rh9JaF8mDG6GNEM9yB8A9I/WuDNpSZzdoqCxQOds2LtNZ8/z4G7tB6qEZGllASrlTP5oJzc/xUN1SXLoBFKP826hD+a4laaMp/JufuDKm9/d0Guvmu+p2vfR39aLPTKcAuiKIYHeHgf0uaDifs965Ag5pavBhzLMG3wV3GiqMYO21BpWcrACfF0Z4CDplcjwCf3ZwG2oRL1O2Vde3TPjUqyVNmmwcu5APpaOqnYR0jyDYYzNRdOqQrLQnimfw9NW8JvaZ4aed9UnFnC1rtXY4tiubYw468hKpE40Lfza0DXGIAY5gk7GAekyJB2cdUZHajq4+Hqig9ryMp+QKzj8TzsgnZl1rpC+SdYPkWxTk3/Lu6wAkfdtu0/hxbhTl76zbUj9ik4JOO8ISn7kISnuLBdQv5j9/l3K4BS13TxiENg8MIuW6i3jEu4If/QK2FH7qbnnvoOX0HObh9W6j8HJkeXAQQpe/GJM0FQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1005,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1115,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1005\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 76\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:36:25.773053Z\",\n  \"responseId\": \"-WbGar2XL52t7PkPz77e6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:36:35.871781+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:36:35 GMT"
+  },
+  "key": "64de817fbbdcced7c7da71ee7fe39ada40b66bca858aa8bb1a8c8b829e98a44a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

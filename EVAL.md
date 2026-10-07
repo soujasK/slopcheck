@@ -169,3 +169,58 @@ Baselines on the same items:
 - false negative: labeled **low**, scored **ok** (the site sells products on this page (cart, buy button or product markup)) https://ambraneindia.com/collections/power-banks-under-2000?srsltid=AU7gw4Wp3ZkF0nv3MQQB21-aFo5uaX-6wSBANKRnRFvB4TX7tIGieSiL
 - false negative: labeled **low**, scored **mixed** (no named author; no author or date) https://religaredigital.in/apply-new-pan-card/
 - false negative: labeled **low**, scored **mixed** (no named author; no author or date) https://www.shriramfinance.in/fd-schemes/50000-fd-senior-citizens-interest-rate-for-5-year
+
+## Audit judge C on round 4 (secondary, declared before C labeled anything)
+
+The ground truth above is "A and B agree", where A is a small model
+(gemini-3.5-flash-lite). A stronger model, judge C (`gemini-3.7-flash`, on
+Vertex AI; same guide, same prompt, same 2,000 characters, temperature 0),
+labeled the same 128 round-4 pages blind. C never defines ground truth and was
+not used to fit or change anything (ANALYSIS_PLAN.md, 2026-10-07).
+
+| Check | Result |
+|---|---|
+| Cohen's kappa C vs A / C vs B | 0.72 / 0.52 |
+| A+B agreed labels that C confirms | **94 of 102 (92%)** |
+| A+B "ok" that C calls low / unsure | 5 / 1 of 79 |
+| A+B "low" that C calls ok / unsure | 1 / 1 of 23 |
+| Rubric v4 precision with C as reference | **0.89 [0.56, 0.98]** (primary: 0.88) |
+| Rubric v4 recall with C as reference | 0.21 [0.11, 0.36] (primary: 0.30) |
+
+Reading: the stronger judge largely confirms the ground truth, and the rubric's
+precision holds against it. Recall is lower against C, which calls more pages
+low (39 of 128 vs A+B's 23 agreed). Against C's labels two one-line baselines
+reach a slightly higher F1 than the rubric (0.33): "'best X' listicle" (F1 0.37,
+precision 0.90 on 10 flagged) and "no author and no date" (F1 0.34). Rubric v4
+gives listicles a negative weight, fitted on development data; this audit
+suggests that weight is wrong on fresh data. Not acted on: round 4 is spent and
+nothing is refitted on it.
+
+<!-- rubric v4 (frozen) sha256:87d60918426f; 128 labels; reference = audit judge C, secondary -->
+### Rubric v4 against judge C's labels: split all (n = 122, unsure excluded)
+
+| Metric (class = low) | Value | 95% CI (Wilson) |
+|---|---|---|
+| Precision | 0.89 | [0.56, 0.98] |
+| Recall | 0.21 | [0.11, 0.36] |
+| F1 | 0.33 | |
+| Specificity | 0.99 | |
+| Share labeled low | 0.32 | |
+
+Confusion matrix (rows = hand label, columns = scored band):
+
+| label \ band | ok | mixed | low |
+|---|---|---|---|
+| ok | 67 | 15 | 1 |
+| low | 23 | 8 | 8 |
+| unsure | 5 | 1 | 0 |
+
+Baselines on the same items:
+
+| Method | Flagged | Precision | Recall | F1 |
+|---|---|---|---|---|
+| **SlopWatch rubric** | 9 | **0.89** | **0.21** | **0.33** |
+| any affiliate link | 7 | 0.57 | 0.10 | 0.17 |
+| no author and no date | 32 | 0.38 | 0.31 | 0.34 |
+| 'best X' listicle | 10 | 0.90 | 0.23 | 0.37 |
+| random (same flag rate) | 9 | 0.32 | 0.07 | 0.12 |

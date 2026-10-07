@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"The page is an e-commerce catalog listing products for sale rather than an authoritative review or comparison answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19S9W+iPP8tEW+ISY1aFyzO9cPsTyMtblsk6frFQEYjBp/k93ryKv5uJX8DJ+JZ5Cf59uXyWBOedh2eIShPq8hkmQ/5TSVo1KBaihQ4onwrj8rn1JAYu8wy4Miogw9aazp/q/bbU57jVcFIxd6BUV5jG7sT9eCXD/oFyQ4S3046sUihVuF7+rlZRwehyWJVXVsmrRG9pvejPNFUf3l6fawYdVZDypeLKrP89WqL9Nv9fL9t7j8r8uHP07eQlzC9jLjestTdjVgZ5CT/l6MXOXYSSvwBI9bAsQYNvaEF4VxEX0WyB33fYeSsFfGITEx5SL1fSi623PafqT78eLu4xVIeLIv9epKy9574MkPyGUhr3AB+JbEF6ekt6h/xS+N3ThvVlzN1nJaGcIKVJJEHf0x7+HNcE4AGDDI/GKQrsjNkM0B2jcg3eRpH9cH/ziQHcn9VXflHQOjfHBwjqjI4TfwGtSDxsFUsIo0uusPkuK7ZQSInhfWqOT7hNBhD2n1EsoblXEsK+HfG2NIHicyWZmOae+KhfiG7NW/N1ay/TmBhbPTKLAoP0QYk5PYb8lLTUe0DK3ndKIinbVRd8guZ/g7PsoI2vHjgF+iExtgNxUri0oXCR3bTlFCi1rlnjzk6kliLEaLYyWXXCAOHBrITG+5wT8ii6+2oz8hV2dQgHl3xvAcX7w54ui2CIofNSt1JFwr6hyIU7fZQlg879ylP0titaU2vohFQOmOnRkFxTIINgxvMcHhfMpVCmYeDhR2Gc3lRNijf2/1a4Vx1vJjozvV9TpKXFrqFkzXKmDtrovMliO7UCmfffPmdCvi3XWrmRuxwe823ucJlNauzQw0csSwzHanFwT9NonkKnRowm7aUBn+lCHbVtVTzXY8xDzRvTc3iFJQCoTQffPOgwKQkRjrtQirleJib6/uI54CFTVBDlomRoOpC35vUsOkQzTqN7sgH7Pt6nj3zR1NLFRgKMkaVVJKd6mS8rkp/QC3gyNJa0MJmM455GjCnDyBRgfbQAnq5csrShHoUQoANYU7MP8pu7Pkm2Bt4dIkWEmht2qHZLgnEk95MkHvgwqWUUsQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1351,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1523,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1351\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 141\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:34.426243Z\",\n  \"responseId\": \"4mjGaoOCGqeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:47.235228+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:46 GMT"
+  },
+  "key": "1cf73bf9f6c2e8a6c569aedaeb09b3ed69f3e9a5b5f7fb039ccfb5aaefa3e3be",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

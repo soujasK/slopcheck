@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official government portal providing authoritative guidance on how to apply for an Instant e-PAN online.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19bfSXEOi/tAGLwc7qIoNx+ddeWcsvfq+k5cnIfmYvx6KmZ8e3xeGlL35GxQoQRdhg0ZYeBrQD+zgAdyEQtPGg6TdQjc+yUblIr4In4TnJ0/zPKAwURsmHVoKpI9cXzvjSx/ByNrD2Qmcle38bVMhGOHvq7vLHx5l4zApp7mKH6LGW8sKRxfzYJaCRTXna3aFtdmR1w8u8lJXLNX2wvoTaMJh69jh3Nx2KYn2I2u/gstp/iKCQE2rH8VfCPMFNtm7G9HZ4hTcZYWkpNeeTV1jcU5fJ6nqGvQcJbMF92mV8ZLATjQOemOJp6MStjCSRuPSiSLBwwTANObVkkcN8tvYPAk+iFqqKkuO9qvTbiAPLvVyAoCpLPSe5QBumSsD31UAwmZj1tqw3x1J8qNL3Rw0nfDWCegrWbq8Z8kOegEcPsGJfmLJnHIRh9AHfyVtyjm6wfWWNSEdLYGutXAazqMKi2fw0AFC1lvpnVziRhfHwCeDKY3FUyNvP6Q6/GFuGT9oaf8EzeDnpB\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1137,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1244,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1137\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 69\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:49.423739Z\",\n  \"responseId\": \"tWjGarvuGcjo8vUPwLnFuA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:52.503706+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:51 GMT"
+  },
+  "key": "51a2775a46b209494153eb92ce9c1300adde38bb396bbb20e37c733060440d2b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

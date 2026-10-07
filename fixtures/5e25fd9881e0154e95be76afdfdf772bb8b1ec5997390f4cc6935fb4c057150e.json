@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page specifically focuses on tax-saving methods other than Section 80C, failing to answer the user's query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19hw71vJbl+nCZXrr7s0A7tWnw+uWTJ3LJqaV5zUd0nWwNpzUmG/eSZ8WbICebH6WP1YgsLtZMV7RLXPI83BdeMgbsu3YOI/3bf6mtl3M1OZhZzQeQSslsR3UwB+/yvMixw13rS1nq03FvX4GBwiVXAiEiqk4k3UczE5VNlBYNxZ1d97INflWO1LhNDksH4Bq2R50P3Dr7J81rqKOBx44hjjxnkdv/5Iry4rSAXWVollYZjrwtHEm0LoNMPyGfc2CuP8iEdNz0eJedqPjnEb8LrQH5jPTME6jbPi5TT6LHKZJidHilsQLFyWp6gM+n1znPsY1hE4pCuYbaFRA7W/fJ3DcbWVvCN2w5Bedpfma1JPTLr16rIQz5E1O63OYiHpLYCn+HCjRLF6Lvt9nq3VTMN+MGpG2gCUj9CFGLIjVmR9SoTYRsde5uYdVD04mnUlL75TgyEXOcVcsg3DRC0x4+XxuqJ8LMUWnn7NAf0/bDxVw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1096,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1224,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1096\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 91\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:34:09.754297Z\",\n  \"responseId\": \"cWbGavmELqeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:34:17.166744+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:34:16 GMT"
+  },
+  "key": "5e25fd9881e0154e95be76afdfdf772bb8b1ec5997390f4cc6935fb4c057150e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

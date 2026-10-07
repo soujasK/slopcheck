@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The guide is published by a recognized banking institution to directly explain filing ITR-1 online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/ObcxfRDpcI/gD6dqyduo3yS58l6k/vzczAD/KnyWj8SgKL5yFWQVDDLPD/74A1K3EF6BrRoY31JUrp9FGg2YxMYUcoonANtl8m2lZ/z9puNDhni4ksr8XBLb/kkviAmrozYefjSF7bcPd/4uvA4wx272JyyBIgnvpYs+wQUKg92Yx3MseosPjCFDcy0/dCak3BSoNirQkitNjYaJNV7eZ37/o4brkMNhLoNX18Jva/Al64Es5qCskuX4fBVHZMW9EyzPNh/bVETPKdigNdpXuhJjTVh/eQ9B8t0cJN5eZbg0ijyliJDpiTgr3H1DHt5geDq0m7sJ9mR3S33vvszlUdWXiypcWj56XbsfAzgjBpR7JY7/qk914JRlODi09cD9/OwpcHrrS3WYqyd6V/Ln561X5NJeopfnHxdvSwSa7bPLGJxtFZNv2Awy9eFjrrYtDN35ZBcki4Y5IuD9/gasbmbvzPHyihfuekRcIpzaL5CgSrQdS9GrMvTYMsl6a3VSMiUZ3VSTFrZPFNCLxVybj+Tkzxt+8W2PuvYTVF/Fm0x9u2dY11liBBv07WLtM9bXWjiJntGkO81XTHeklmHoWECnyFlQugQ3kQ8gN10iau9hXnSKrSc/K9Wibmskbb/b9IleNAXqEs/KOSkO8CyPTRVHWoprGfGxP1j303i1irGFpNYBTVjiQF5wOPysIF2Cajs4h8rCBz0+2kJr+FMlCZPl3E7O9ENzxLlnHnY9n6L2mCRHwyQ1nFBITxt17+3jesAzQst7POmLmBA6gw+dtyBNBfJ9+uWoQWKBOk+PQxX2rR0Vvh2CcyAKjVeanpX1STyf8Bx1H+vF2o0E6j/xmqDeUW00ls7IkROfAahHiI0dSNB54MwVZDNOBqT2er0ZD5woTvCTeS3w5Rt3JevUkIAKWcD29yocoZ+2FitYlg4RCCUCpPPjGUZh8ZCqB1KHNrcLu5r/9yUI+F28oAZdOmSqOnmxcQ7ZnU7IpTh9izKYwqxU+CPbjPkj7prFc1jqpaqID18/bpyJsCXf8XFI9SQWC+WpuDHh/p5yWyrJLvADj5E7LWmvZiezsxBgUQEjtgbBFo/Odj4+rOLogVlJGE6sXCvhSPRKYAw5O6ZwKlE73xpVZzPM9vPGAJxbgA5TA2YGzGJMKVei8OoapVJLuTF4=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1042,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1263,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1042\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 191\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:21:26.837414Z\",\n  \"responseId\": \"dmPGaqaOM7uDoLAP6MPuqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:21:39.546415+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:21:38 GMT"
+  },
+  "key": "4b8b185c4de9638557dae0e0ba68ae235286a7c48ab24bfdb3dfa67560652f75",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

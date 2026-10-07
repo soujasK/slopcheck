@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"This is content marketing on a commercial supplement brand's blog without an identified qualified author.\\\"}\",\n            \"thoughtSignature\": \"AY89a19nOM3bFr0munGRXpaLPvecWw8Xm2y40HGN4GgYu//PFhYcNVwoYFDaUI10XeDRKKLHrtYnJO/e65xPL4sK1txwGFEet34fVNxbwbrOv6h6vFv9EPu4Q4SzUMxAFqeDl4REtuJastay5a6s8BS7Cjyy6KG2by3B9TJdCner2vpXMmeAaQp8knjEKWwnEcXnIRH6K7qy0tnwfuDg3j2Rfa5oliwvUyTpnGHt2+S0YlFrOHK0rD3IbvJucAmwQ+/NoaAsK2xvUjJ+TTpeq0NmZJCIA/1tIvJHfs+KKMnbRFBd+38kqQnCYGVgLag7a3USGZNBH9YAL4SyACKnp9xFJ4qAepXO1P7YIF4ex45mfnNG6xuGHUDqVHIQ/Df8oapeoASz0QeyUdOOI1DbN1LVbDOyN/pCW3By7cEEcgNYi0gT7BCdMgys3KFpajrsMGFbn8ytpl8hnX9vt7JNRIyFk9KYjZL7D8oHmnVo8fbTqTdyi2xF4y3Yc+efM2zKBdsiIv0h3lJRAhTE/tEnF++NeNcT3NiN31XLLp8oEZsEiCJwtoMQm5ZC7eVWrKpVncZAgJLl1eXnnsJLK+qVO2ChvdO2dZJOLvWKcCIlI2sDjXhXBHbt8p1C7B0qK7NvghPoDF6QlO1MHTk65l+OpMJL1ilkh0+//qcUBJ5NsAcpEShleRMDzlPlYpol8dHRVMDYD1DyPEr2pIalh32WQ4LLXaK7KUUITdHKBVF7WCOBsWqSnDXJuSdA6Gah2gfLce47tYwuTEC00hPtRbcpj9m2mLfWb1FikBICw2IEX02jQ7Uu1w==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1077,\n    \"candidatesTokenCount\": 26,\n    \"totalTokenCount\": 1217,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1077\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 26\n      }\n    ],\n    \"thoughtsTokenCount\": 114\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:28:33.472685Z\",\n  \"responseId\": \"IWXGau3sHJzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:29:54.784264+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:29:53 GMT"
+  },
+  "key": "770a3e36841cf02eba97ecaedf48a6d37af75b090bdb1d884b8501c0393827bb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

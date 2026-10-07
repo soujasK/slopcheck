@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is the official Protean (formerly NSDL) online portal for applying for a PAN card.\\\"}\",\n            \"thoughtSignature\": \"AY89a197aZy000ZtVpMfy6nazhWgGyB2Zi83z/SbaNThrNcbZbEE1qSqfz7Cu2nVZ9IKZ4Kr+nxdqiOBtwR8DqW5gwC+3BXCeqU6sPD3Z9KomUguCT74uEuWhakLydKCcsHdjwlaaWZwcowbvkeleOln6DZBkAgL+X/OmajoyjG0p44ZzgzRQBCYRlyX9V7l9UFQ6dMP4C3inkA21DmGji1UcipdS7IAafwgkSsn+TKjq0QI8vaOmYiNyVopZFB6bS3fzuZeyCl/73AMOeCRoVoaXPZMmqrxCOrsWoIf6soUTlbz2bk62VEypVyX2l63eVtAH+zUIgl4kFZTeY9CiCw8zTN85QAP47yJBdDuH8iHa3jRXbsvrMMAan6uvWLAn9wjWHyC3IRYWCBd7yoEkYACTPB5U5FSgFkVhB5+zBoI5i8HcGVSyNwRgtu1OU558FJ/17eTAPs4uXnICh+usgnAyr653Kx/UmcM0GFm+iwWLf7WCVgDF5f+wn2JpXG6h8gEsxt2rA63vZMtZFPi1jDE1DiEEfPeBWtdbogfziuvKL2ZVaDlODZiM2yI3PBzK6Ni5xYgMgkhvZLQpcWHOvVlep6+VSaBoN5EOV7i\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1072,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1193,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1072\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 90\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:36:10.960058Z\",\n  \"responseId\": \"6mbGarrMOraqrtoPxYnM-Q4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:36:26.407443+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:36:25 GMT"
+  },
+  "key": "7b82645bac922b50b8ec1401e2bb8f22b0a42e3b35fae354f796eb208a73c884",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

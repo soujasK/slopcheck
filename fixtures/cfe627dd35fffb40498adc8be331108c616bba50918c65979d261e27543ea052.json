@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized financial services organization and outlines eligible deductions and investment options under Section 80C.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+IokHCqE/4fUOt7QH2Z/wWRLc/VbUwbqbVKbYup42XZ3caN34kVIopri2knBxGdXfoZKVjunmE30JwGvYt9Mu84QESosLQUmQNP2pofDSckOAEjoNR70U6EDBnsdbMo4MyjZ2uCSJ/e3w2hF4ssXVdZf4fMN9anaO+PuJXDmr0bSnWJnH0FRkN98TimDRs6baN6/thouiTPhRuJKLvQT32KYwuU44ux0L1VHgcRkAXGxC+w5zorNHheuMt3FCldhC+CB5vdpa2HSDIuHSKsrMhjSrN9FzG4pVe2WeImaJ6HMNmgUmBArFShPB+BXghKZ1l/iTKmW+HizsbMyAT7ULKyRRB/UDb6NuvI9XO6zu3nHGuRL5QOsMk5ENpPzIro1xOjOmZjH29IGS+4VNZEDyHvjFyYBm1KXtEZEPRR+u2aOwcIJy7AhguEVew4pfOnJ32bbFwFhrjKG+Nxs6blPwGNakU3QntSkBvowXB9O6d6RGBxSnVl+HG8mPmVBLINQoC+gRu+cPh6p+070wn9LQOBSYb7ekCKKKVy512/bOH3wJW/XFvfur768B1DWnrmI6sKkMEMNa3RqiCbtMLQRP0ZZw4ddKmq5RXL96Ok8afOJNdwj0j08E=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1095,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1209,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1095\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 79\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:49.916311Z\",\n  \"responseId\": \"8WjGatf2N-bq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:54.170645+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:53 GMT"
+  },
+  "key": "cfe627dd35fffb40498adc8be331108c616bba50918c65979d261e27543ea052",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

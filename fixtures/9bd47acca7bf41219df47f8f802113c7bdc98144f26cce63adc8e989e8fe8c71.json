@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official Google Help article providing direct, authoritative instructions on restoring deleted photos on Android.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/5+UkIcY7VQ1bB1JLK6FulDwHAqplo+nRAT0yRejxMPs5XVDs6b62bUepHzdQmNs2ioBVRTSlt73r6qyyTvF4D3oFcphT6EZrZ++nqKnkKC5FKD/JeO1qsIA8qloxoIx0mYOSMvMg5gdfXDrxw45ZSTlN/sLuOKQguvJxSiJ5i6O7E7NK8qtaoGvSy11i1G4BJtJXFGD+WntyuS4eEuxm35AiVIXO+tYds87UcHtOeVCcmA+cXLq7TnufRFcJZXaZUArjyXhmw022n/2+qWg3SkUg556jm3OfWZKzXiuTKhLjYMO3ErmZVX5vVQbebP0NXLDg5Vx7/ab3kC/AE8U1ej65mAZNEfdZXfJlL3jktmuSumA5axflmCsEU7wuJTOp4qeoaSdIx0Jn3vFvTVj8z+OItyjHcP8Uh0GkcnooKZGI2bFseyuzinCEcp/PWPJw5X2rLcQ1DwV8ORZglb3watLS0kGx6cmn5IbUbqPpxHVp2KQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1065,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1153,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1065\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 58\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:22.192441Z\",\n  \"responseId\": \"mmjGarnfC_md8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:41.764757+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:40 GMT"
+  },
+  "key": "9bd47acca7bf41219df47f8f802113c7bdc98144f26cce63adc8e989e8fe8c71",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

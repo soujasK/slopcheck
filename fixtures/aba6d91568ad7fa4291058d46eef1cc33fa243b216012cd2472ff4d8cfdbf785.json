@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"The page is generic SEO content marketing from a brand blog with future-dated text and lacks specific product recommendations or testing.\\\"}\",\n            \"thoughtSignature\": \"AY89a19f6Slm5G6MRgwNDF1lWZE51fyOY3vUp7r8nZRxGrMi86EByDItStCaAVj+Eo3ltbTYWWc5hyEAjOBf8CFe2xsmNYzTCpdVkRnomHbJk6kdNHy7FvzfFQrEfoNL+o7XVhUK+7d6Z9msWQUCjFFWJd3DrBtV9ZIIzuSdpOkwaOmP6dIoarb2DLj2j7snnVdIBd1fbGzT6qS2ABCYbrtadBkPn8VZNiWvrRVd3j68Gvk34OXJcSbFfsfPYngDWruX/+oc0CftLzlI1QTIr7IFBZPo/7K5kdV2ATJKBD8P9MYAN0x3cL7monecuwGspNtUDrmhxvunoiVSciGeD/oS/KgpMMtZQFvErnUVqdzxCLW1nbMnflqtWgfRLg7p/8ZkxRMiSwDT5oaU8uAAlyFW8Rw5/lh+0NMB4uupjzM37FTxvtzA8rWyTAEflI2W8RlgcscvtY+VgGCHZEVt9qQPgTaQvadN/BWrR8k2EQVsF5uRq3w2z9HrrPZGaVDM876r/CIJPRt973b4blCfQEhNhLz2qbi2k5uG9hHqCprFeF6Cg4EJkXHs/W2H0dTpbGdBQezH3pH9I2yyKpY3UlzFobJMvjKq+1YtKjnxSFtYwhA42k3BnWtCF8L2JF6hJyag6Jn0wuHReEWgENgNz031YrF+r8u3bf11dAvbj4nZiUWBg6sBCSJGZ9aIEhdOqZplN4oPyal7HwwOZbVga4H9XqdThz2X+us8a+cHKHECBv1hGRyOpG1CnwuYYJYID8ak2kp3C/afK4jH1IbR5ZUQajM4xmg/kLQmhCCkegJSrC9V+EryZHrCaylXFFT2jBp3qx1gQW8P/IZldBpWSsWAx5EP1ONvhSrPBH8MlnZlnGvKa60nhki2UaQAD3hc1196yV+k2GbfuINnuYaGnpulYoyswg0FqpKdfOq+snPZkxOwOK1qhzOrwtZkhVreIyaq9yY4QJN2djQQ7AdV+ThEhC/wyQlGp8SItvIGB8pJjRdl3hXzV027ZVz58SiCjaYuuRPpvcLpvnnlmF8Fyw0edgmzR3qkXXmCqZM2lnmnraqLyE5uOpwM4miowTkQs+DtMiy+2TyVp11mRQ4T\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1074,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1277,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1074\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 171\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:41:31.930884Z\",\n  \"responseId\": \"K2jGasToOObq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:41:55.242317+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:41:54 GMT"
+  },
+  "key": "aba6d91568ad7fa4291058d46eef1cc33fa243b216012cd2472ff4d8cfdbf785",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

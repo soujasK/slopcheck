@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly answers the query with clear advice on home remedies, provides safety warnings, and has a named author and fact-checker.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/m8hP4Nx1Hap9VIw0AivOL1Ld0C9NP954NpDl3sXJgavsceg/nxSiJ9GwMf/w/h3RkJS8AzduC+zwVsJm2vt3BZvIIpf5HsXyeLcdbNEwKQqu4DyKDk80ZJGMNIVInKhsvwsaLqkO4/1uI26tveOAOOemelYt59791vIqi26Fvou4RPG/rQFQFaLV0mbFNWTsklZ53zvRet8vL36Y5jkznY4SVYWPrzf7bUZ5oSoBb9x1xr8KB0GG42L63cY+ayQmCOpRHwz+iKlnHrwOTga2SdSTER8H8D7ON2eOFUNxX95QKvFGlAuk6ai0wDjsrRFhh0osJHafe4xXOBBzV8b3Et9sknPPo6P8H9Cpzq/kA9QML+RXwPxLCm8wFBNOBwI5l4UMQuQ3SDz10TruzSITCQ8zHSCT3j2R3pgErO9WpnJFsGwv5Ils9ltgBgv/GqCobMwrmVA3Oxo4kq8cB1UrsycGRh7GDJuL+/o9cLVHJ3wnJk/nLUDg77fPHSdzgBlKClmzR5gZcJKufdl1Wxv5uKAViQa/W2ThjvHyt9RY5rEXEHCqkh24XuLcrLCZkVXg7saqv2rmMu2bp8/xaoQERj+Qm8qO8f6afIifj4pimlLl5GHM/fOIN+wUb2qB/0isdTEtOBKTEZKApnSro3LnAqfLmLKaMxGrkvOPKW4ruGGh8AB+kAsrLTcUHwuKANNE339Q=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1067,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1209,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1067\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 104\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:26:50.230872Z\",\n  \"responseId\": \"umTGatiLDvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:27:51.646697+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:27:50 GMT"
+  },
+  "key": "31241afd1550115bd6c926a27e2377fefdfa727d8a42dee60c11b2118c64c9a2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

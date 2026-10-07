@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The guide comes directly from a reputable networking hardware manufacturer (TP-Link) and provides clear, authoritative troubleshooting steps for the issue.\\\"}\",\n            \"thoughtSignature\": \"AY89a19Rg2GsRqYJ0lo5zPzixbpRvGoiKT31ScjJmuHq9qQR2fLR/sKX6q6ugD3q4hPql2R9cCl8y3/rqOmo/SLslR98YXtqcJYeKTdH7BONN6VsExmD+17B4vB7vUh1HsPDJRXe8sDeeX2+grbVcT7QeFhwEvuVv+50tZySUGCfR5XpdBVlJ3Q4O4XkKmdiZsRJfVhpmtTxgpelp6qdqQVLnbdB7/nolLMYpDZN9PRisN/YXEKfigxdNmCZvDnDQ4DnN+9CNqhZv93IeQx3pLxfH2j4PxPme69sYLP0lPdG+h/JPZv+1H0w6vOjxMXBU6oFvNoFWGxSC8AsTGSHxuK6VWUYWej5cj5EaERORlG2dVpBmiyq+FNi0broiF2gkIO9a9S38u8czUpyHjmU8mfXuvfW8FL2lqh8yAe2wNsq+Whr2/AWg6SHYGpb8bTock3m3uERAyOQGLeZVMrIjiXGNhAyrfPN/t+nQa9nbhPl++aHsi2Ua8GgBzI5bI0zHhbHaOjFA12PxBZQFGQIMrQT9CmMaHY+syWU9A37brmaF8RRHcrXm6Jn1EBPDW6ie0Apb5eU54SY6V7zZBrDX9OeNC1p52u0sXaJh3tH/5ljl6o6RQcw/+/gng4TOZ9+4oRnLpjUJjguZyOTFO3G9rSffA5VwbDfXqe5B1MyWWphIb/EhzxB8h8zMHUWPMLpXz+MY44OdEOybzr1iSNrs5RNMCyRlUNM998DxXfVyMBEMGUlzTjWkrG1Hc4w1Svy/dheCbVFkIqkhInvxz/Xj7JB6hInL9o3nV+RvjJD7rIb9AE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1102,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1273,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1102\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 134\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:51.861954Z\",\n  \"responseId\": \"t2jGaoLONMHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:55.179826+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:54 GMT"
+  },
+  "key": "b5a8d25c200be5bc323c9a843e463067cab6ce49e1db864ea40d1352edb3fcae",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

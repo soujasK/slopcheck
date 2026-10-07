@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an e-commerce product collection listing designed to sell products rather than provide an objective, well-researched guide.\\\"}\",\n            \"thoughtSignature\": \"AY89a19/GmzBm9Orf1oqYFmzpdYMl9XkV6aT38NBfsWuxiigFCeMnsDzA4+7cD8wsx4mCI53Axt3xH8HLd5oRjMC/sc4NWW5nEtWFUwiwmYk7JtC2Z79a2HlTUzAkMPQ9MoWg+SEsl5WVGevybchXMe85lkUN00HUpK0Xc0I0IlgUN9GkB8jiiQYhfygavCpSfRVoXRwK5gmkfHsgtEo2h0CaUl3JuIl9sQfPaRqB0yO0MYAFkGlxlcOHLaOOgLPjmGxM8hKSpjKjvaaKgq57qXmrYJYHs+c9zxYbJY4blBv/8O22DUeEA+GXD2sMaw6KcVsyBakd/gJHNLeyboiSVCRGuEN/eV8p8y4UaPGRx9hik+cHVmLUcDdQSasxuQ1uooiTM2w9++CdPmD3W1wT9yxicFVUVERLmJZuOlewjlb5wC07cY/OdhbHwuKXYJF9FoMO37Dl2H5ntCMjyQf5JfHjHLyUWJ9WEDWqzsUcPKGcZME2HFDT1vOpf3ychk2yxeuFyLQpH2CtxEZy5S3K0OBnSx+cLwvbrPqRxAD5PRPDm1Ip0glbAgmpYtpaOeyBWLz3Mh5SIr6Jf7taDtCU3MlJf4cWfI+pCJZqAZphQE8N3qtfxN6QCd0OdgIwsg+sPS+jLQjKK0iEig16C+EWNHGDsPlYOub5quajF9zNyuhITv64O6k10z7ZTtpvkE4eoBDKgRMthHKlodVHMhDEV82Ap5pvjXqHAP4aqHIbZbotSKiZUqtEtMwF1ZeytqN5gKD5sObyoIPsjPsNS8Pl80yKSQyJKb65yOq9bWW1xL7oez4cb2UOu5SpwVdS48g6CIXFDGdabc31kjPpIo9e5UVrAxvRquCH5WhPewZWXVFZm28YSVWoSpl/xkxhsZ9RebhDu92uuRW5qI3xj8KMX0P5RkD1zev\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1215,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1390,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1215\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 137\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:46.631813Z\",\n  \"responseId\": \"7mjGaoXIJv-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:50.507521+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:49 GMT"
+  },
+  "key": "09741bf3feaba44ace43ad85f2cdf844d4fc84d528526ad9199b5fb30be91eb8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

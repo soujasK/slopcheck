@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with relevant dietary guidance from a healthcare/maternity organization.\\\"}\",\n            \"thoughtSignature\": \"AY89a184t0AGIoC25L6/zcFugfq9vLUQkaOk3exlSyXK40o6NPppCUgl39Qt2RmMPolyhkumlZ9e7uBF6Q+avmpRWj7ErYFbjRtYisvehsb+x7v5YkJ/PUj6vIIm2SODOXuCk5lclLSen/5429hh2DWPZ0JuJbK+Lz3BgT22/X7O0chLkurdZBNmhHFlKxr/81g2KDSPUsMwEYqnmL74X5azBNvV9UvvxHkqBMVTipmOBqLVLA0AMQVpZBK6BKpbdAShKgKZThsy94V9lqNz2cUniTEwkQIWmifRnRCUd4tr8PcWjel9prWP9Nb6LU1agTg2xH5s4UoxGfsYE23v/YgObxRQrMMH4nuE3AWdLVX9K3mm40z0DXoS1tuv1Q9jQ0c7WrscKSytZJz6gZk/0opY+dvIjzGpziNkj+SrXsA8uwKGXmu9IY8UDZiuRe8hcOTupnbB/URe2x7CvK8UDt9S40G/9CqpEqNSXDJWpLu76Giia71HTSp25HfzXHZ6rxq7o4bA1Le2EIXKD6M6xzbCjHwOFjHJ5p5pUrYN0fOEc4LqmQiOekPYbg/DDytg8ef1zL9GvEidECq2b8kfutAP4R+T9ctX9B1iB24ffwUJldk/h+KYVCwF30p4+n04duGV2/c7fh3qi92EqqY5T0kx55tKBhmT6zh8bXSUQ/jXqYfGAjnHYETVxpimWkr1tPPZPLUrLIQSfNauOF5PJg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1039,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1167,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1039\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 99\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:52:15.224724Z\",\n  \"responseId\": \"r2rGatTbDZ-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:52:46.839551+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:52:45 GMT"
+  },
+  "key": "97b820697a275fb8cfdeea5e1cb9ae37521acdfafa70f987aea44cbb522b8b98",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

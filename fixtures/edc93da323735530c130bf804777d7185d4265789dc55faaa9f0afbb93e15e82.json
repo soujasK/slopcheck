@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is an informational guide published by a reputable financial institution (Ujjivan Small Finance Bank) explaining Section 80C tax-saving options.\\\"}\",\n            \"thoughtSignature\": \"AY89a196xTgv9rxKUjS5qCokib8N6TKrNqmrPCOGeydsRgMHedlw5IjTn04WohdCDMXJ6MXnTCK2IfI6/YbmPK8kKDaZtP61w+HjeCulTXaINSCIhwyv/PJY8UjwhoHS8dsmcEb463eO4+OUEN7mdPMVKoK0M4eaqEjUOz24S/kw0bvnhxyS2eNdfzWwLi3wsqxV4toA9tclxpkHl+dh32m8YGMeJr3YJeHPtwjGz4atx1iWxfYsp9FxWD3YP8F/krJCkoDdP22I9A4hXtZYuTb4Z59vFbV0DX/PIa3mMRmdyiRrQG8sHlWKWgZlqcO6g6WQy+ZL1ZEruwO9DXoyYP19YbP9zu0stlTxTJHyce23yasm5iListQ6vrpTvU3DRDeEHdsKEWgiMfBBLXaLnxw5TpwwJWyQGkAkg+MttopI/65mLYqy3l00/dYcZw2PfcTWlDWGh3oEEDK8WpTojUmukJij18vLeTDL5tRduJuEV/pTj4oP4w4/66P0iuwSbacFIfwXzmz3uElpPaKSnJpTvlRCa7ITCKLK1sP23nn5nKVIFGmZ/EOCYL5M/pdQoi773uwujYb7hq2KDNjLIZvxttusAaFQLKknLR5gSUQPBkPGWnxPmLuRkC/LfHpIreXxIOzgoqpgguj/GuvVX4lE5ijswV7XhFgkq+YjPxZVaYfmRsFCwTNVQ/jKkXFHkLJfpPX22+yfVCoQzVhK5iIZDrm0kSfoN+zqIWRxGM0SqyYErG1c2dl6a3ykZ/8dQtBIXqrvpJgjbzLck5Dm1eE3MZCKvSdieqzcLPUrEkSGscDbQ4NPXOqOOWXS2g4DXB9E19S7/ahw6ykQ/FJS3Bnqz/9ZIQjBrVhntb0Q2JbgxLyfERmyI3YtVIG5w0gjho6Mzhw/+VXsiTMfAD5o4+HUXyUG/Tu7B8M71wiZ5jT7VT3WfzcslisYzgXo0ReUOOMj/byv6w/Sq6aeB5SXft6qLYsMGqHsVgxeRp/B9PvPISWt54lrWcwSEJPP98ZZoXoY37xyThpB9q21S7xZI82OZXqLpPPwrsqjU/0go+wU+PF/uc4Qe0ILnd5c3Std2qFDc7sTyy6/LraD+ufeEC0NOOsfGMwiEDlZ/n4VA85oAEZwJuWxlEAJKtq9f+FuwKMAH3MVOiw0Vfg7+Hxl9QMRaRXG\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1038,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1272,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1038\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 42\n      }\n    ],\n    \"thoughtsTokenCount\": 192\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:19:06.373557Z\",\n  \"responseId\": \"6mLGarXmFv-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:19:44.503306+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:19:43 GMT"
+  },
+  "key": "edc93da323735530c130bf804777d7185d4265789dc55faaa9f0afbb93e15e82",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

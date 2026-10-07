@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is authored by a named healthcare professional and directly addresses natural and dietary approaches to reducing cholesterol.\\\"}\",\n            \"thoughtSignature\": \"AY89a18dOWlVTjC2ADsMM9WjWVaPgFp2edLXjzWSPXJ9BHfgfNXINOAYES9VAFuoMaWKZFB0+AI3oiQkSnnxLIokEC6Ls14uQRuJMeOAu4FoTRbL2NLtB6t5e1MKOrEkgqnWl3YlOSkboXnS9jPSEEh4lz2n/Sj74BmClCZn//uNL52Z4UvmOToWTRyf0w8HF2iMJeXsUDlsUKaupAX8+xD+ewgC7JcBue51jR5zf9vWX5/gycQhyNrlXInEjL2glb6XB5rosQV5ctif06UQPUo+VAV+nlZrGVU+vDVfBoEyxepuir5hNSlUQlsN4j9fbSyjmtVyoQwCRjORphnjL/QRWx75ZqP2JfdU18Uyl0PYpQJTRoTOYMBmJShTz48MnhK9+YdIG2MtuuY0WhzqD/48d0oAmHmyNfzSrkIr2hAAR2b11tmqESkBbFD6kqP/zlTAovlL3sQk/VMCGXBxQnZIceBa5b89TtwfuKHsqR3pMy9vHfWU6D10EUjx1fgFn/ythge2mI0Y2ACzNAx59tdEx+Ln2I3RwFk5AKg59yuKdt+0x/Ahl8brp2TnKMAYC4s2Qh91RMoIsP8rL1wf7Ucma+cZQWjd\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1043,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1147,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1043\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 73\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:13:10.995616Z\",\n  \"responseId\": \"hmHGaqDiPPmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:13:50.158728+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:13:49 GMT"
+  },
+  "key": "7afd43e0e76bf8703ef5fc77e08d89d1c089699e423d7c8d4474ea322bb4600c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

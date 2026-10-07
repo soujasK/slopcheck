@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official support page from Samsung providing clear, step-by-step instructions to recover deleted photos on Android devices.\\\"}\",\n            \"thoughtSignature\": \"AY89a18wRh8TdVbSP9awKdkSQPM1E3D7EzZGAzbrFM6QmM/46s/nRGewMjSh+Qz4sHw0bOutv4pXsxPLLr64R9C/9+zNDPF2/b4arWP/HNzCLQNVN/rYgif1yKBv633bvewQKEloPa1DXnfEnuUEULuhavSnZPy0cCVO6AeucMEfxX4H4CgkgUHyLaHWnkxAf8JEp5GKN1981vNKicwW/mZFC0PFmpFiprHK6B09KwcrjXTJz6yj2U4/kNyzKk9w/A9ojE8yb4GDDDyNN6o45gRsCeUOih6O84xO9BmxBGQHUGwDXh0B83mNaQq3iE5yd4VtCGb2RO281xgDdWDW5aE2qswTrfS4fZ/eVAvdfL0/IjwVZHRgypd4kudvpk2ahAr0X0ijjdCR2/HYiyqYZ9AZnW6xep/xk/n1fpRLyPI5vNOfc3dlnwjH7C66wYdg5yuZWfQKke/0zZ2tO6uCdKKjYNzpZAp2m056nlP565XIUvxPtA90l1kziIIsmI8OR0AiLKWQX0417gwy+vP7ICYMh69WMcX5/sjxTx+8mK7DThGgCObSgg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1069,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1168,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1069\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 63\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:12:33.767025Z\",\n  \"responseId\": \"YWHGarHoLong8vUPgYaHwQ4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:12:37.568061+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:12:36 GMT"
+  },
+  "key": "aa4cf63a4d1ea9cef01cc1c6ad5281b5e573b9d89436a9e9f9b86f51a87e55e9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a well-structured buying guide written by a named author on a recognized electrical brand's website.\\\"}\",\n            \"thoughtSignature\": \"AY89a19vQSvIK7W6ERJTj9lHkms0QRXyNFxmLZENSvSTEoL4uiF9hKKpJgEnQ13CUGAtluVqab3RmKKQEwhpQYplMcmd3PAX7kTQ2FFMGBcy3H67KQZIFHn7SP9XTRBUhtXA/7I7yM+2QLy0xw+6c66WDfDaqgAhVWhUA/8Bhwyv4Dxv8gfl0AWhkIFevO0c+5rb1L/Br87roRdTbD/UfxgZuEArAJD9j2Ki3z49l9a9V8gEb3FQLxA8kA/OHFjFr7lfrbYWOzd7Pt/7xqfLGKf9AN+HHUkEA9C0x4oFy38BBS6Ka9A2pG+rHXqyjk5Mxun6z3thnK/5rAcWdAd0hGSGzs68qjGtdAEZeD/1v72nmINLxldl2yd5y0TZ1r6nhFOC3070QCQZQ5s3JoPE10lcJhfUqCY8hMhtbLFvO18wf7XAr52jPxysVQAqFHeIpmdR+6WnRBLtAg63xNc+JPCv+yINb3CHl7smt7Wj51VNREePv3OIq8y+ug9zm9p38tvedxp3r/DZUjvsaNmA550ewZAJgsgSUhge4g7wd4EBn/dmFXWV3Sa4F3raujxZCa3bDBZ269RwfYImLCDd764tPsHZl8YI2SpGSL2cHDBLyG/+BpXX4Kjd7LzKV3g=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1061,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1183,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1061\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 88\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:48:43.860345Z\",\n  \"responseId\": \"22nGarnBNP-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:49:03.308896+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:49:02 GMT"
+  },
+  "key": "597ffd05ec9c562f5142ee87f032905ed1263ef1eee12bd3f8c2aee3dae2575a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

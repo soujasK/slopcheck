@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a tag/archive page containing article snippets rather than a full article answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19nej9xMowakPZQnv4hCX65270UYV/pkPI1QrK7RVLc2EgpRvR/dpSJKRwPnlxWHXDMpCpminjdCiULq1TVpZ3Alw6LYmx58cmFjCSOeWzNaeoj99cIgrWhIqB4W9ghPvHgAg0IqBQUoqLJ+JgatrPRI2MgZVaT9/5Y78+hJIwLig7uHRsOdNRRZ7RYdhUSnf4RkiE8PatrMc9ZuYxVrzkP0awcn5Fsxg8P5E24iOEI0//xrDbJ7szSfXjD1o6MIChUtAjy7275+/WSlTBFrR6t+iPWY2cdbH9XPi4jGKdNlmBaaGRf2I9rYr/HtM3/hGoTDJVDkwr+Um1FK8CKyDq3HiLstES17s6+BtOYussdgdmyAjjjVAUU6hkw5nUj4nkfOyGXQJU8kvUMT1bq2ywzpzkULTydkP2o2PC3W8ydjGu+rgc9USUnvcxERHmDjwdyZEJhT2V4N9uKU8xz26JCe1DMvTUJCcghW+7jtTnZTi3VpLRtZfLrpGswQTn1UBawGbVkY8lS/jwGGwZbvF4a9GF5qIJN/y0+Hgwcop5xWu/z\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1018,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1126,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1018\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 78\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:51:11.190188Z\",\n  \"responseId\": \"b2rGauzNC-3Fi9sPuoPz0AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:51:18.184337+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:51:17 GMT"
+  },
+  "key": "5ea034c5a387c81b33ac8d13b3456d73d6dcf529187424480ac26f96a0604db2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

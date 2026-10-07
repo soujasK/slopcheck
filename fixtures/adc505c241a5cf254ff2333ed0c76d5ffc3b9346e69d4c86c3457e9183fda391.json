@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is primarily an SEO landing page for a train food delivery service rather than an authoritative or comprehensive guide on checking PNR status.\\\"}\",\n            \"thoughtSignature\": \"AY89a18oObCDhmQIBlck1x4YUp2Elo3fwouC0PFgUCiUJ+A1WS6qKUcEUiEkZrmHgRIp3LgkwOCR8HQqA0RvKqJSTxASgLMnBcFOIqyObAQvyRLAqiSr7ScXLZ+Geg+Qi+kC6+Q0OxZ3+qfVhFu6nPto/161lsSYFcG643gSZU2+qVUMw7EWC3hczQyMZgPCTXyqEZo/Qw3uktGkm2XQ2m+Iexam1HikCMBeI0obIkUMQUQOLOQFIpdyq+TV+0LukMvUd+8v+pv4+4FtlwpuxnDlPv6sUBe1CWWs6fHjxWToijj8FHxahUU8HMZecUvbG9iSsEOT8yvjG+oIWj5uq3yz61q0fbPSr4lv0vtNCNrhfJkQje/O9bvAP8sef10OQAj5ClHQTYvftfJojvnUdBZHICv0+GN6iDiL669cvpHSk29VYXQnpOdIA44hvoGjn414BK8kl4pT1PyxYm2jpmhQF6fO5QaE6cFvDkAekFB4mOayvsrcMyfQsPsLOCxW5RRgxnfvCR6QEfvJAflVWM5UCNAIdk+6QazY+Vufdg+J5S+ub6hKasueRFHiotfTHH01eL25vIT+oEVPqKEpU0Clf/pr0mLpmemR/ADL/LZ914mX+f+FGn0xeBd8+Qa6ZRP9Wm1gvqRA5SJIR5PB1QAF7roR76GDnnlY5g2M9C4E0SWss70er66Wj6TcsbaPkAWkH2NuRnTcOzhyEJT2s6C3O2cOaAoxyqaJ/ftuknx/LOOV2ckM5n8cqpziGj81imN1QI8oviPfvkS3zwMJbefmaRpAsb6oICsL6y4MdlnOCZnROIqvVkB9FfDhqq9qprWcQhaH5evaf2GZcZWQupsobsqg7DvYvs1pnuI0D837JwLkVOWgaLTMhxOOtdQwuDmgBbhQ3y/mDpSTYO/yniLjTPSSGr6nayqrF61IesY9BG+EPLc4jAYjN6QZazOZHSeCmmfVowJzrjgzP0B57oEPfFJzEvtRXNFV8tKo+InB1LI4QA6OXpPvSNIi+o8K9mmPIYtyZWVhl4VepRh9ot4rwmS4GXf6rHW1JNPQUtODzsiwZXXHcqEJY5XR7SdJrr0v0pmu7xAw4NI44qkdI5br0+f9hXnxxV4IWlWPxwtn/fQq/6UnoZ4gQ0PigidOiAom4RNrFK9zl4s72JaA88ddWTtfpWQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1074,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1290,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1074\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 178\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:10:06.761403Z\",\n  \"responseId\": \"zmDGaru8LtmBoLAP1Ze8qQ0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:10:11.355808+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:10:10 GMT"
+  },
+  "key": "adc505c241a5cf254ff2333ed0c76d5ffc3b9346e69d4c86c3457e9183fda391",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

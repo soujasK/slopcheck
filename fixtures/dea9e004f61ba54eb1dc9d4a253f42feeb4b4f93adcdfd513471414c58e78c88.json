@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official government portal providing authoritative guidance on filing income tax returns online for salaried individuals.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a190rN1h6IFuH7RDNMn4eu8epfDRZmt5UaHaBfKkLnoo0ntROt5EU4D2pHwJcATQPHdhVY7Db8jOpSEyNPD4XvYWITLyoyoYQpEWC+JpKSerZ3wQ6f83Y78KsINK0v/bPgU0vc/h0dmCWAF3uUgMfNTMB2Qh4knv1d0EbAFIcpEzYz8dUKPJtZZeSonjz+ZbPZg+NGK3q+h8/MnowbFIsfjnyqaXnfHwG4G2oqzazeZdkF6rijl8HDSnV0PYoJjY8/38+MrgxwePd2inM272wUCl5oiRRbSHeIn8EDxPApU2n0aySBtULyMmLMqAIH4+8LR47a6fgx67qV6kv/2r479m+Vl636lF0IAyGibBKHUjENswvQNeCKX98ExmTBx6ACgbI/cMq5vbeiZZIlYLnOHAwr9fNTZm/XuvXBhUmCDN3uusb0K78EOMkVP+xKayW8+LelJpM8zc48CNv6Vns+S53wtLp2cl2SklXRYMzLIqXfy/VEdWQafij+15SduOJUmAGttBJlDdSbiZwmOwDzDdHII56unFQgQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1249,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1357,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1249\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 72\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:26.445799Z\",\n  \"responseId\": \"UmnGaueaG7Hh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:33.298822+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:32 GMT"
+  },
+  "key": "dea9e004f61ba54eb1dc9d4a253f42feeb4b4f93adcdfd513471414c58e78c88",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

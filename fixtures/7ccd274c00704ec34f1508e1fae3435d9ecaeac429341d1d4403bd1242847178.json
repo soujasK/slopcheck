@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The snippet only displays sidebar headlines and navigation links without the actual article content.\\\"}\",\n            \"thoughtSignature\": \"AY89a196bsztgqERz7HwsTWAKGgJk3sITS9gi5yCllWRzlBgr6bRNhBqihzJ2LzWUmd+B7bch9/Pmo3dezunIdZF3K8t2XqUN/S0hqbi49dYrPuudVMNYoqRUy7hgnrEnDN+rUYT6zN2FYiJNCaApME13ZFh6ult3gY2H9ANi0QwHP3t09xydF8Ji8XcHDNyyf6CUKeVd6ya8qXfMqv9gjzo8bGLlnjwrLNoIgHoxTyGTA9TEpTdYEt5/8nIOjRbV8qH1CJV/2J+npY3x6uPf+y90BKFxc3w8CxIRLmqOm3GaE+cbhJUAPA2fCwdAPwYx4gTxMq0whcpcZPsakSO+C53lkvubbWT4J/uuBh7gsyCiUnM9KI62hIFYn7OBFyOiRtBHx2hLfi3/Qw3k29lTx2Ek7CdsaL9Ev+renlkn9T/ZDrs5w+4Msa9MTRrbd5nSKkQNnoMhHgbcXstn5SHzdyP6Y6T0K5uQWHIvknuOFtg9cTo2FRVlDdkX1IH2Jmr6zXqTGgdRU+ivSMouw/E7j5Hpvzat7dw4lGybTgHpkbrPnkjpj5VmNeRTLRNbF6PN2FKf5etY3sgXVXjWPpSYgk3POqj6FRHT8gkZsAwqSD4fLHuZZMJy+xW3uIMURaDqbQ7TSiZJEw3Lul1zt08WrHbY9W/Ljva41jXGTjA+RDR2upPL0C1BR8+apQQSvDQ5Dw/4w4bVhXe6Q6yluWCQD/TjcOXu5Ledm1LSw/AcRPtNmarlpvGynr6ct4orYTJAhDm+FuHg/3gzmmLHON014Rqoubbf9cMMN1+ys8iCNMG8bcscQxkfC3mBq0EpTG0MoBa6eqkya7wjwwnUG+w/jNM8VewTBAvQ0cgVJDGSrP0i7KORpTOqOt82x8MFL4mQtVoG2tJ8D3PR1z/do7fJ5QcmfsFmXZpcZFA6G04B3htvahEjmJT6RIsGPPOlY2dm/e2DtTgOU13qkVzhc/ldSn4wsWgpANTRCaF/HgdLsV6bsRfAE6QHb9AZEbGjKqT+kqYe4CTstuLH+WpYUIQAsfQp0mQHf5ZLGqMt1MLIG2rNjA9/kgMQdGJ6rt2ky3aI4hdL/uazpubOh9r5uBosuYpCEjSj8B4jYBk9H/Da7UNHcYuHa8DDf41CkQvYZ36PYu46hbwLOhvgVf4eZDqD9TfrYbsxE3kzNepBBe3CyLowd3KfJGgCx0dy5fVZ2D9du66+9BzwfhkkUAmO1DFIHibdFIvvlczp7RHkO4B9ntLO2JALsJqp7ahkvKnNNOPCektjmYAJHgBKR4XKkK7rNfLQZQUGp+jrOJhitKABKBUu17YIPGsL7dcEyeroDy4GGIrdOsGk6T2dNJ6khxIpzb9h/NKYKgEKr4Rskd9kYH565KAZEb0JIp6Ye1Ig6TygPdBLKhTnGPpGuR/X8S8HVw9KVcO2Q65cHnZc//1/g==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 860,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 1117,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 860\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 27\n      }\n    ],\n    \"thoughtsTokenCount\": 230\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:18.787665Z\",\n  \"responseId\": \"SmnGatGJMI7h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:22.739534+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:21 GMT"
+  },
+  "key": "7ccd274c00704ec34f1508e1fae3435d9ecaeac429341d1d4403bd1242847178",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

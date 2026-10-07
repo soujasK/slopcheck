@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Protean (formerly NSDL) is an official authorized portal for online PAN card applications in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a19uB35/tykYmnEpeWuDwy42wtbUdxcnRD1qPSirkmgtNqhnF5UxnM9yjQ4UNbbhT4d7m0fkT661i3AmV952NmHrTCSn2f6lzgtFpsLZXDofoBmeVSEZ8Lze6E6RMUTzMX51DnGHmz/Tvjb+niUdQ2vlxLkH01K6HrXRzHqukCq6CImrxlFi6M20+lPqgQ2pyZkNoXfi4dVbMojeU3IEAyUeke8a7fvqjE89l2RK3x+8E+nredy7ZQXTCIP78LO+p175VBgkb+Hy0MBQDhXg9qJ4KEQG6Dm2Dk9fQFGJDgMs9I1Ww9KFF1pbNsEdJkhSA27S8ff9SNzFFwBcOZrx0j0YeepH90Re8x58dE041yOeh4u2gEqjjvf/jC7qvMxSo8shFIzLpbTI4wBElfstgHeois4hA2ougs7NYoG25IopnMMFVVCvaewo4uX4JgnHcx0HphaJ8+0N680nbqsc9upWfb6HZoNs9rwonwL7C7BaBR694i+AHnCYCtGYJpcPhm92RBtAOgs8Rls5GFKwjip1CpAaoWK+Y1SFP9ks26kCBWb8duUf52O6ayMq+bHKVb/1hRkibRKVa9cNJrYNdZhkOY/HYQ1ZW7s8f8I+NhXU9NsvD9KPjxV71FRA/HxPxeU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1034,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1141,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1034\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 76\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:38:57.188560Z\",\n  \"responseId\": \"kWfGapDBC-3Fi9sPuoPz0AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:38:59.839018+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:38:59 GMT"
+  },
+  "key": "49e3600e954e56fbb203f816498bef5c3b764c3aa41d29999be36bc109a6a182",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author on a reputable financial platform and directly analyzes whether gold is currently a good investment.\\\"}\",\n            \"thoughtSignature\": \"AY89a18iUrlaXi1xVRQDOt7q6bDLSFWdkPbzVjOqgs3q00E3ujcPidOq6GQ+16mCrncYdyCiuYQB0k4xnMUCjm+umCtzRsGfyUznP94C7e7br4WIb6MquR/OSwJbOJvYPFY33i5QptZNERpYDnXOK2NFUlFcDAcnX6bENJBrGHSrz7EBU114zs9Q076CaGjRKigKUqmy8nLxB01m86ijR6HSpZEcO3bMTRI2I500J6f3q6O9ID3xw+4ELBCYQTGKJL87seRRv4bK5i9g4AHLV1pB0dqDi7r987U60Vv8TTkNXaw+rLzfQq4DgoV267Pe9CoWWLYGoGPbeOcwtKLyNhbY53WAW7DCHv0wHqc1FevtllnqFoOTfVwq8DQdgBu8o4E84ScQnxgMYDutHbofNGziIQZW83gwhKQNmtUd70hfpx6423DSiqSg6vFQFuDQwddmkCh4su1wIpp4MPjnTVRra/TRK2/LwdzMF/MXq3Mgpv89viOGhtxgi7Rq115YAaQljnT7XDP2YYaudzt5nZHLv++K8DPGRbXM7B6Bww==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1088,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1197,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1088\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 74\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:32:47.320176Z\",\n  \"responseId\": \"H2bGarDFE5-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:32:50.992929+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:32:50 GMT"
+  },
+  "key": "21beeb2bcf5b77ac593806aa388d66e68a3a5b471c77c42aa3437df8e0f32171",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

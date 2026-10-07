@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is a medically reviewed article from a reputable healthcare organization (Cleveland Clinic) directly detailing symptoms and facts about typhoid fever.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19zl3C17AWawap/NicVOYI5PjcOCG0siAfxT3PXiw+TLaiIDKKEEuAz2sjgkdFiwneHP+aYvBQeNDPkLmsTM2UwHdKUofVJZxicq8IaQWOhxZurqZqRDB+D2XmoqJgPDGLii/uwpzul4W3OBjHicbEvlRrWBMtwjdgVvYSHopVzyzkfuuCAJoVI5YRCklz/vjglebujb9OgXGNHJEwQsmIRW211w2LSEZN8/tM7pv1jbjC7n1tHLoeVzQOHCweb51+BxQJn9qFnpzhaErg+nbceruRGRaABgpnmoeGyYwXp+CiSq47BX4LJ5fn7mH/b1dgzsSvwWP4oPp6QoYAlUBw2xpu6GiYDzDWDRyq2rs1YAM5/ffRrZnO+riIyJcBMirP0u9HrPl9BwS0DMtjbz/MU51JsYpJStDNBQqdK5LkZayZWw8ZudrLmJcSPRvKtJXbHWcWFlRV8wcZjEJsUBoQArHyFPEMF4P5N1Bj5evEYlspjMk+0bNpGWnCzCsRG9yuihx8jO+GLbG6fNMHHckX+Ilf1WcBZ+ZO/KyK9VIUgR6hZ9BRXKIzxh3EmO69n7H9xp7vx2BtWl7LAbEE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1048,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1166,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1048\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 41\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:16.644123Z\",\n  \"responseId\": \"FGHGapuoJ52t7PkPz77e6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:11:19.851435+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:11:19 GMT"
+  },
+  "key": "e8740a022e6e68be9aff6083bf45481ecc4bf5a2c761eb81c4c436785773c5ac",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

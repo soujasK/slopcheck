@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable health authority with a named medical reviewer and addresses blood pressure guidelines and age-related thresholds.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+RNfHfyAEFTvg8QtiP2eKtaASRDJ50uMMOfJtgW6uCMwrLsRwczDBlVQ1cZ+88AJvD+vhuDTIOfJIrfUGOah0NBlFSZQpqwp2DM7qkqoKSkfpTvQ+snz0yy5AqgqZqbqBXKrteoOfgt31QHDhq2hTB1scXLVskD6oq0Ud7xVEZx2enUVG6cZfyW3H+WadLUZv/J44/DKouYxNeC0zTHWY0SJPW3/yH1dvr0RM5VeNhLxukKLMJ+r5ybtxheUceJMWv5sgahXIjwFt33NeviI5IXm5WJdY25cEHva0j+KX/8pw2fk6xo1EtMoI2kCW6xNR5WyRfw2ACjzBK92fd1cXA3F3igeqlAB0b1l+6cKGfP1UZK029FsI91SoK5Ffjw/LSUHonR3cjkSTO3046SqxFEkDz8Q9wCdl21vja79VDltWE8Bwk/+KKlBhInR070j1g4LX/0W9cSwmnHq20xGp8VI8USWjDLfQLPz9pm0JT7aw7y4fJfCdwh231k3Vzc1GKwC4UlEx1Y9je3IerRfY3ae8u3mHU1DNoUMopqdnHJM4mTelwJCObUnHod3lCnTbrykh/lWhrP/2Cc44kTgyKoltcwDZ1f0sO0ZQoabKFNgfLKu9vDHnpnerejg7amv0NufUmXuTnWT1L4y4b9h8LSHwb\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1054,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1179,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1054\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 90\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:45:04.688979Z\",\n  \"responseId\": \"AGnGatOGKqezi9sPuK_uyAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:45:10.222293+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:45:09 GMT"
+  },
+  "key": "af38075dd363cacbaa9262734a636c78304bbc74748f2c46d0e31061c6c65d2c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

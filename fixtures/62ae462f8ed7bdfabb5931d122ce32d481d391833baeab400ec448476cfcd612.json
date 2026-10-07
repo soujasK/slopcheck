@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is a peer-reviewed academic medical study hosted on PubMed Central with clearly identified authors directly addressing the query topic.\\\"}\",\n            \"thoughtSignature\": \"AY89a18g/UiwQBujNaE3UjNg0gHb9YPXGdlMreUJwUclnrmW9NFMPirw+uUr+tZlVhqimayFZI0+73iJBpt5v2I1HAdGOa335NOa9/WzQz/o+f8T9FDhobv1UmkCIOY7czx0dpQMWV7FlpvU18KGizPrCabSwCaupdhNUNE8QJVM8eOWTFieUbP6AZ9LcUHac0m4LUi8qjI2efCvJDJdmR91Uzu7GiDYKspPAHsOlgEmRTdiHe9KhTmmyKyySmvLZhXxzM/YIcxprqQLAQ13ZQZt6Ea1Cejd/yOA/s86veV/aHikU3KeDCrFLi2g0PFUznepwYB5tAsIFTO1xVv+yZbCsgBeYn5U2GfswgSEsWuakhATxGbWB5wzEyTkeChdIh0NOLYVmlfrm2MC86atb8fp/vz8KqzZTu+HYiOLf0cfVoD4CPUOzTyfswEsN/YrxO/SWAzd0N3GU5n7C4QBe/j4MqDADkTm5sppHYbXSxw7AgTDwBvvxRezvqesMGQ2gqmDJ74sqEWvMyYbNZJKxKDmLtenQVrwWaZX7CUhQwb4sGjkOJ13lY/384pOFHl5nFI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1078,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1175,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1078\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 63\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:13.467592Z\",\n  \"responseId\": \"EWHGaojFHObq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:11:17.266265+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:11:16 GMT"
+  },
+  "key": "62ae462f8ed7bdfabb5931d122ce32d481d391833baeab400ec448476cfcd612",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

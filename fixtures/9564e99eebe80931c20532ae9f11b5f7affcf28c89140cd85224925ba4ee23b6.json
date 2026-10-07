@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"This is a single-brand commercial product listing page aimed at selling Samsung products rather than providing an objective recommendation for the best double door refrigerators.\\\"}\",\n            \"thoughtSignature\": \"AY89a18+Ts1+SBHfaBEn3p57HeuCqcExPqUjp2FBMhXs10O3p5+S8WBGe3p5+yGnm7dOcqOrEUAP6mTwd4/z1nq9cFLMQxY6oyDAIojgYIow4Pk7NbxinNip6oZ7mPo3ZE50kp9TAzsj1PklQ0iYG90+2vWD/8GVFAva1r5T38vSaOsfpXdYdbOYVXQCa15BXdfa6rgNCOqJTnfl4GCFjo/epklW7QLxP4ietlqkPnk+0SjDEHSpS0CejT4qUcdTcrIQcEUJS2KNtbz7HDx+jKajlo7QwWBh/v5LedYum57OzCh/8m5Ui2dcNsb1n7dd5KG0AWejci8P6a2+uk5uWuLkrbpz2hiMNVG5HIByYbAOBd04gM2uMtoaxTUHqZNp3xVu81daagE83Paoo8Ifh8oByWfqksZH8HQj3i24VWEsk3yjTndIuTEdB1rjd00qnXc5+1K4O/WaCgs7rXG4KfYHYqssxCLvLSnBs+JSp5vFdrszquiHiaS66OJ39b8A3YMeC8VBOAJvIQqfmTjxFo6d4vMtlnK/ZCUH3gI9RAulQdjx1z7/5EsvaG5IyUaAZY/AYMgAXwnc2JGVNa1+N+WU4LJIUvz1bzcJhAP6iyUCDuKQwPlQeeXunC9yZkNJhulFZVyGQrb4g7oZ2Fa40e6FmaVA1LdYb920mjFWASJP6IVBsHYMgX0ibRtUXUxQCvpPbCM6k2mW53YLI33JRt5PQmK8wl++2Xt7g2YJtDy6uL7owI4djoSYbLSws36Y3WkxeON8rMkxhuLFdp1n0aIRHjCXhx0ISEqHL0BOESM2Bdt009wycYNE2Wm0Whjxrav+H56PY7cjflnqv06L72URnFcbZj9jlR8h42ao0e5PqVb/S46fC6qFFMXk4EL1L+VtvMgTCfj/h9U9u4icgtPunArMnCxi2AYKNB4frRJQoG/gUzeXm38kwAfIiGluhkKNCznkD+hI5AC2ubBpmb2bVpodHOV1RcDSMMHkbTWdz+sUMnx9msvOUdXZoLvJexxecSHCRKytqjpX3gNcqosq5++LPcSTL8eKi2qVcrVlbpdKeCKuIMRn1SQVvFpLyZZJFRURmoMq1sWDysj8rRvyfaGAfWIBQtvFx6A1M2CVbRdMXwB4bG2FcS2fgI+SUfN/fS8Fia1QukT/DsT1/XjYQkAORjiuYbOVQyr04GJwY9IYLCNB9mw7E0Y6naj6CEA5vDH4KOQz9EPYvt+8xr6HEubhbwB0U+Zh9g6PDk0LE3xs9h1RbH4TLm9Ss3FIP6FkGAq52556AUXtq2/bZjmMspb9g40BKWLgXA5kwKnzoiok5XokY8Mwn0m20vgk3/WwVNwHSVIC/JeGhXu5omAof1+dMp7W/QGNa5HLWZKMxRmqZSs13B+NyW7JuiPmKs4PlT9UxJBjoqh2c/hazTETd4/g5zvVrPqRCWmU+cYervCs1T2V977iy00A3P5/Jnruy4jRGYisuamAVIS84K1ZaSToat9Rg0pgzI3btBct3JA2atdAquobWEXtzpnYX7cIbtiVdTUSkvvZ\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1026,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1282,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1026\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 220\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:54.531821Z\",\n  \"responseId\": \"umjGau26IP2k7PkP1K282QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:58.450103+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:57 GMT"
+  },
+  "key": "9564e99eebe80931c20532ae9f11b5f7affcf28c89140cd85224925ba4ee23b6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

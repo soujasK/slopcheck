@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a single-brand e-commerce product collection page rather than an objective product comparison or review.\\\"}\",\n            \"thoughtSignature\": \"AY89a19o+3H2FVlZHb5SbeiLSGvnj+zcMoeo4UVzwkFR9PpvuEWzbjkhfaObggVpBP46upnrOzA/vdrITeaYiJgJuMtaP3cvVjCGIiIuyk2Az+MGOuGTR8kpbjn8PdrRnMv6z/3eL/0A1e2jCX3cNsf+/WGvoU8WOIO5q68NXvL1hs2d3CMuAbDycn7yIuE6Z8IaLt+aqZwjAKEs5PIaymC1vNSqxFAxgBBG/hTkYt2vAvUgggUCl2H6o1Su+5fOgv4HdhW9Nywb69LeCsuFkuo/EQGhMa7vAuw/h7nkF5wSJl4PaCOIdJe2RdY67NFBTizWE5QNJKnrp69ZZ35MUotYX2F0rnHM4he7iX0AfAYEixHUk5pTJ0wWdHZSEZUE4RILsXxuY/aU3D9iTIOwYOZrGHoK4wWERfKzyN9LsH/Y0j6L6+Fza0Wr1R/grFguqJL0cJA82ZGJbiSmO+3mDy94Ny6YanLi5ygT2vSLTM7nSq/AhXG5CxrwapapCHrNvFI4TxZaUMtQ3S/OT6OMlV4SRjDTULRiPD7aDOJ6WNduvugbGVkad2rmq+6THGSpDDRnlXdYJDxM0DUpruFWigAQO3s6CU5qa25i5gS845fDL1IDnE45r8kPIvqPzZAy4bfJLUnqAiSpqxAaXSqR\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1400,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1527,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1400\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 95\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:12:36.904197Z\",\n  \"responseId\": \"ZGHGaoWYN8Ph8vUPsbGQyAI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:12:39.619509+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:12:38 GMT"
+  },
+  "key": "3cc1d3d8d7856870f3b1036487c648ea49c078f4c6fe4bf5e9779b283614e393",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

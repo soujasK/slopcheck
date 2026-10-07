@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The content is generic, mass-produced SEO buying guide filler with dated spam and lack of specific testing or substantive reviews.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/pCh9S8uNo7YAQ6s390FwRhnIj9zomHHOFJWkN5yy97aH1M03d9HHE4TQbd+jAQkLbw0F8VuvMkxmYwK/IaEG6Y4jFWkXZ0iyu1SW3T/BguCFXRLtqGgPYoTPQ+36AqR4SZn9ZqjIfIdo1dVgSLcvFFSt1KbB1a8GdqV9Ly/X/RK58a5nrZiFlF8o5nktpie0ajUbbq1M/l+rhONWws98y7yTjQJ4XZq7G+EejPaqJqm5oUpDHdjiSd5+J94JUyENbV0s+W7G9DAp69o8bTi0/jh3Qk6V7HkJn+0U6HExLvDnVBYvder2eI4I7aAAHPe+RspF+Zuol5lz5CS+/CHNsofrdziPzz0kQcx/mGqqh71OeNbpKTTqNnAExa6BRIFqPKh6uS+Me72JzTcr7qTkIaouf6cyIXs4K2a/rLpBEzI69kq5knbzygbERGIYendE9Bu6CRv/364NgIwiSQRDODXD/j0V1qqWiYBE6/aKTbIQ6ipwTP5Z8ne4EX1+htwF7S1/jWelQdsqJFPyvE7OZOrTl7vpHGsZwC2L93iiliJcB1BZ2q25b57KNBDA+JlpCAOcaV5+0rL7CgLpCAcXbqMf6TXOrDxFXNg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1076,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1198,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1076\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:32:50.377587Z\",\n  \"responseId\": \"ImbGavOFF7uDoLAP6MPuqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:33:47.544807+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:33:46 GMT"
+  },
+  "key": "070de46f171ea3990a96c3196f173d31d5e18f0ccfd53c3a9c1ff83aa699a57d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

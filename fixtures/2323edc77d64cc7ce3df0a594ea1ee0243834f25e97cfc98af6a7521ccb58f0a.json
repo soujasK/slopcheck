@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear, relevant comparison of NPS and PPF published by an identifiable financial organisation (HDFC Securities).\\\"}\",\n            \"thoughtSignature\": \"AY89a1+uL4Eqz24lVmtqLdsRAKhHUijKGWiJH/8YFTUh1qssHpd0ApsmNAisjJ7FMOAXrKLV/+hJit/kjy4xupcPcde0hydOS1SV0+AMP5F14nNeSvIK2MulpippKkroi532n25Do4/IHqFhaDKrYhJ9sYQyBbrv7sRUc6hUKgDKnH2gsznPfqe6h9c4KILcpNFshQYcTYyN6COItX/7Z4+Oe0WgYPjojvaqeuPHpYKCqnxBVIypFZbmYdQseBeo10bs+dK7KiYiX5BVZeG6Km+3JAAeRPHb6uy8TXyVzUVTlylH5q6A5FWYD8puQ0RZUO1tB9AQUgFlOqVhFPhw8IEf8CmiMDWPKptXbc3BtWApX1lsh4LH+cN4cXcW79aJJTGfWVHixNbfmpM7wiN89aUJbv+F+EQb9RrBxsD9jT6SCbKNAuzQeOLSpKEL4XzqoXQ6g2zo3Xdu8zvBz/RYFvR2//PdVFN1CS++DJyhmX6PRzHaxyglQMnHHUju2X9HBJjkmg1bWhiO8LeSwKVamXfMEjPQCiEUv+GnwEQ61Uxad0+QhK9dyxL7YWQotu2cSt/iqGqbSe3FiKZTdv+k33NvYT6Uft+WUXwg7RuhFOael17zZLKTOjw2Qnga96MJJKCCOuskZt413coDK8fyIDxIB4lEgBe7sWf6dLH9O6UJ1mVOy8bSVLT6YOXhtKif9y7zNKnh/PriJ/lKINw1NAIMkyvNXznhFt9As88+ztsrDLmnvvMQMvlcZe7XsjAWYQBuWOE7dJ9bi4+GhOm3kA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1227,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1365,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1227\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 103\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:29:54.150009Z\",\n  \"responseId\": \"cmXGavmTCbCR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:30:00.948068+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:30:00 GMT"
+  },
+  "key": "2323edc77d64cc7ce3df0a594ea1ee0243834f25e97cfc98af6a7521ccb58f0a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article is an informative explainer from a named journalist and reputable news outlet detailing how CEIR works to block and track lost phones.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1/7uTmjHrY3o/Yt7nWriAHvAnVOWnWhHayAuKy+JyVOxBN+R30kOOaS556fkK78PQBgVCgSpp5+u5FkcNWjgx9BpkvBfb0QSl9OwWMbQhAe4vKx3Io4Wg3eboJ0Zi0doGcKOEpt1zLZ45++CgfrykZGCc4khFWB3o1NbTHcxtD9fQs4fPOaXcHPMpnAFtiPmsdDfPQnpRm4KDP7VycL9CBaBxzxi2LjYbLw8aqx8dD/AHgv5PXSOghUsdU0lLDdBxulpPacdlnQ59lqILR08oNDcVu4CpwT/svIwTZ9D1BO43ftOP/LS2uufZjQokj9qzuCawd/ZbU2JQtAFeHfK1W/29pVUmmxWkeenImR0DOUhq7tdvtN09Q0bKz3sjFueiLrzqoYuSvvEVP0jhrFbqW9tqgB6zPDZXuI0WnvA96So0lbVq9RYnu3pfVJUo77u9MukBeDopiYBFFw2Md91uRFrkGNnFJUkbEPU/CqksLqQllOOwyXYesCrQ2r0mlBpgjzZrp5THxkYUWSOJh5oSErlpE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1067,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 1182,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1067\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 44\n      }\n    ],\n    \"thoughtsTokenCount\": 71\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:41.140510Z\",\n  \"responseId\": \"nWnGat7JCJ6c8vUPmtXQkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:44.232721+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:43 GMT"
+  },
+  "key": "20b1edaea6a25aa3035c6725d0a5b664d91144efa2750f84695ba6f599eef937",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

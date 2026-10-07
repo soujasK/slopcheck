@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a superficial web story slideshow with thin, generic product blurbs designed to drive site traffic and sales.\\\"}\",\n            \"thoughtSignature\": \"AY89a18CO5tUle6RJSU597XSjDLyehrsihhUoeUeuDr0TczBbTipp2QiwOzi9tRe8aB4enWqCLGJLrCF9O0jjXyFad05hH0G+yl6jYcUvXayiOw00dTyZNiPER2WpaoeqbiSLfPh+qZ2+o3nWVlmucXLxHPmjxtgnWVnfMrImWFo0aM0dfu+2xVOV7ZaKsWbVGq/ISb65n85aH5aePkRC3gLxder3ryTiSxbfzoZk+zYpsZIvUv2NGnyIxvMEGQ1UygWGVeHhss+VTYjgURHf+MDbxTqPcMQhRu8onDGqSQZ+5Nz4lDhpIUVSYAJYRsuRgqnL1u4gmqmhWd9foM5GNiNxQeaYZf2gZF3TWtltO9DxMLv8e8AV4FDlH5M/ZSzUqmgeVQxuETp1pHBpSaQRL+TLl1DKJ3X5OLOpeZ3N9FlOJEsRGsR/Ns8heaQt802e39Ay0PFEzmb8QImHR1TJyljNC02sun6R97QJ7jbB8JvwxxmgvChKWbvCzxvZWFceHz9eSuaRO+CYyZAZJzxWJ+JpCfqxmY9rQvq2jS3q2MG7zAngbFfZAJhz1Bjr5eCSzjLDX0Xqv5lxpHWYWDovZqUG9QmfPiTq20HJJ0pQ4bb98w=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1093,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1206,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1093\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 79\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:59.353959Z\",\n  \"responseId\": \"c2nGaqfNFcHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:02.576237+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:01 GMT"
+  },
+  "key": "bf4146bfaa31df387f5672382f7c892f3d114d273b94b088bdce3f4907bcbb77",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

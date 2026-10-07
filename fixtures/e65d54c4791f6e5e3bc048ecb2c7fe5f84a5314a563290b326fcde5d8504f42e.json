@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page provides outdated financial rate information from 2019 paired with promotional lead-generation forms.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/zkfp9Xkf3Ey+KInZxGUxW3p1iRbm9Bznl6+Wtq0BK3hI01QfyLyAjLKh+4q30/n8M5psjLWYdVa9q2Pr3J6KDJJQCCDA+osz4XNqNYMrVyR/OOpMtDUUBsTMMhl5/WdIPzcdFBJ36vHMLnNb3oSz3odpEVwszFvtDibEuedx8aXtN5VFRKiqcXCfIjw9+ozZpIlOKjmmd75y3uW81+aw9MCEt/9L0rUyLWn16OoVrJeoeu5mSVvw4dvUduXtcP90ggo3gmdw2BGyQJBJhaFNIr+ihc1sMuAbpoOvNN5VkSZXlnRaV/oKIm98Ca2VtnnV+4MtR6zGAVt8MeAbMlO8vSLOnm3XUEAE9kxSb6VyY6WjO6WcvQT1am+Er996Wt33qT5NKne97oE4nEv1VodFZKgyPsfSsP9DLnwtu5uXJC6oTEypqqL/e5BFBgNckYrvWjz7G1a5IhMQQYt7L2OgPO8x42cXP84FXaMFC6E4tbv1Frf5Mztb+zZp6K7yE78CNbUK3FKgEqDFPK6vItdPatrSZQKmFyL1Op4pVKx2XqC7894E=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1021,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1125,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1021\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 72\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:32:04.187791Z\",\n  \"responseId\": \"9GXGao-7C_md8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:32:47.955488+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:32:47 GMT"
+  },
+  "key": "e65d54c4791f6e5e3bc048ecb2c7fe5f84a5314a563290b326fcde5d8504f42e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

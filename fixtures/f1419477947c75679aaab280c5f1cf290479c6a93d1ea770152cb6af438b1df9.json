@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author for a reputable financial news organization and directly compares NPS and PPF.\\\"}\",\n            \"thoughtSignature\": \"AY89a193ofoKU4Wcz19QTMb+VNIFur+STGNnDx4ZHBXyDqDjsr/YXxkRWhLb7nhOK0inJL7HrE2C1dd/L6+jml6OBd1aHjUJ5sL+bSz4jmsfGCuQ4Oak4CMYOdpqiIh6UmJ9PcsZC+0Zjmy9B47trGmoUMOHYAuNF63DdXVes7Nf/aVU+C6ZadWeaztiHr+XoQUW4uCmj8OsZJEpwOptJZdpKxIEPrXhvGAAg3/VKCbCLCZtUNGoWW5Poi2PjaOyifO8Rsq7fPGhIcjDXjTtymKTtJyotMA2i+bv5b37n9E+jOJKvuFjA45zOzjauovw0En2IenxDuCabIkesqNNYyW36d0eXIOtE2zWt+/GGoHEn4gSV2tquJ1g+viXa4Klyn3FYyoq2TCNMPY/FysrJUczsU4hJtRjG7G16Oj9b/1PiQ3GekjJ2R8ElSI38mtH+vieaRRuYKn5nkjYLVQqe3bUGT63NYJpGFu+NwA+Tc2mupVRa55ZblCieZqOxwguOpz88t9aYb8lXesC8T4=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1075,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1176,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1075\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 68\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:18:51.883818Z\",\n  \"responseId\": \"22LGaur4NZzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:19:01.782926+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:19:00 GMT"
+  },
+  "key": "f1419477947c75679aaab280c5f1cf290479c6a93d1ea770152cb6af438b1df9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official guidance page from the NHS that directly answers how and when to take vitamin B12 tablets.\\\"}\",\n            \"thoughtSignature\": \"AY89a19kUABaZVsbQ56T4mdpn3mHgQBJeiZyJ40r4A0FIdoh3nlV55gEwuxJGZoUcXmwIdoGdh+dWrH6SpHeeWRn0MHJy41kkeYJEVEBW1oG7ajxibwRJ+nMgLpxgFaTAgqbOq9cw4i+s/IQay8bor5OlLWl5gu0YxSnWIyOaLpTfOiM72HHSb0qIb02FddR3WjcmOi8dnxXF47g4XErQlCJTMRXI6quj/zSw4SpkFMbBcP4VG0JEI+KwcSvRavFdzoUubmpMAXvnAck5I7wVRBMG55FBXwjN3+A82h62IaqXZ2RkjnCJEHLcA+onr+t8fnW2Lh7Hmw3nwmGGpmrNsjYYxOz+vQczMjvfsxc4DH51ZzmGT7ZVMc8mMOUICucGZliFodLdnrcOzjAEk+vw/tUKlvFbhoickX5t313HMgLNKU68YphsN7abLnqA9k7GmxYIFwar0A4qksG3AveTOMDN9WW6LSmyrckTPlj8TSPiuEgdjG0kKhr3+WWLm7qLsf53T2TeUb+d8SYvHXiaNEz/pGHNwzn0cOCAA0iqkOxhoXODSrrHgdbr5AFd5rTodbg6o4BfV+GBrZ3MJZBVUmwGQscAaY=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1118,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1240,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1118\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 88\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:26:32.100390Z\",\n  \"responseId\": \"qGTGaqaQBrHh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:26:48.741675+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:26:47 GMT"
+  },
+  "key": "c3eb1374e76d4e71717286865d35d8e26ba7519047c13b2bc764a1cf15621b3e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

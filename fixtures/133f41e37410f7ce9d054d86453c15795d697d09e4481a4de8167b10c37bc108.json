@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"low\\\",\\\"reason\\\":\\\"The extracted text consists entirely of promotional navigation links, and the article specifically covers tax saving beyond Section 80C rather than under it.\\\"}\",\n            \"thoughtSignature\": \"AY89a182zPpiA91MbVuoFQIbpaO2wZLUfCx0f+pYjQkTB2jnCcJ5jsdhlLlmEvzCNA1ACBRmWN/eWwzGl5zJGQ7HSJtWi37NnpvKJcnYxRHyil+ZnBLYYcMqEsoAhrph68kli4m+FzVBLy4hymCXY2HcM6pnuRTWz/2mVRZGbSymL0lTjWtzd0WsEtR9k+Yf4lrfoRkgX7p3ROyYh1GeykuDdvs0GEIdZbRuQSUJqz4/XYeG7YD4W5k+LfITspGbYsHw0sOtbpIImllAVnUBcYuiay0nDr8XyM+bMazCyFNTTWFUvlZO4tAHzZE6Dnk4gySh+0jZVW0mTQTzL6+1hBYO30kcOuIqCUvdajWvbM2906CrvpUbaiBgFw+TNaRfLysPl7N71gTGyu42LkUqFlWojIUtaF61wWt8/eoOYRWbiAMqQDyouJ/yYe+6UuAcKGsYEA2PT/EcoTX0FsL1N/b6Y1T2fhzy2kCK6U4ReOUZfi02m6EXtSk1ENTTDTndxOJxhbq2imbasCNu48cu6MysJuXU/D3kcJbEfmKfE9bL0RWU00b3FbGUGK3a2dJvPaZEqDEFwsyzOIkXyb8uhgHhmIGPfvyjZMTKPaYKnMAvBqvDQRymlOvpY8jqUYCKyi5SWa+zR0o7Z75yB9ETI7ppjiSVmtJ+HsT9wnuFaYn9834oZ+2kgHupSH2utfrfUshBzzpx405I8dU7+UKhbONFituD2M/HNxFEb3y63K7RxyWaedBluQZtEvLWh7d5PPe6y2zRoz7XX+c1g9NyXFY1x16Rw36/iKfkSzpVg8SnN2O/aTtIRpVe1Y+0vv6tXyglWgFQhEftBVf7qqFfY0HeYRtHuwNV48FhGBsG52TdGKZWP5EfJuNUSuyGi2NHylR2DcTqv6Se7N/vcniZpMtVsfMjbcbJ9eBCvAoi81dIDeQXVqP3Nk/iW16ZM/WN2T7FBuQztzlPsldKShEf35vB8uHr35QOlyxVVL4450G7nqkkR/X14MQkc0bGzWBko6KKrLFQosClxRwrfojXo0MeLJ6Xyxk+RZWE2YiRskJjDFP1NiLeFL03PHuQP6ACfus3o9WR7DTw4xwhPyA4ejxgcg/qf4AnPwgoG2+8SapjLNFG9C64HJheO0SE3m7JS9vKYzgbEp1r6KvFL3xWtGVC\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1070,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1301,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1070\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 195\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:50:16.034893Z\",\n  \"responseId\": \"OGrGas2QAonDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:51:04.241847+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:51:03 GMT"
+  },
+  "key": "133f41e37410f7ce9d054d86453c15795d697d09e4481a4de8167b10c37bc108",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

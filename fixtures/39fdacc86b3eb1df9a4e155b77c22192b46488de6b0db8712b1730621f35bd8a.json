@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by an identifiable medical doctor and directly answers the query with dietary and lifestyle advice for lowering cholesterol.\\\"}\",\n            \"thoughtSignature\": \"AY89a18bvpH+h0t90xjK1PewScXSBmWk/Yx7uDD3beygrLPdt5b5FL9RZ+8WlKm1rKOP+HDPhGbeB76tDc//O50TOONh6GxDpISuJnTGKSaIoAeugskA8NOQRxJ3rTHz73KyBcL2ZiHlNiB2SSWoRVACE4cDZdIrlFWQFKHcRwlCHeh+4i/7QvDnJ/xmfz+XxMdQNn9KlSyrdljPDBZGzACMIoKj9KELOuqlyEuN+FxeOfPyhT26OfikWMaWOsWBdB8HMOoxQQCslz1cbnSi2HzMv2fyokss0lf8qCPOxxrhdNEBMift57Ol45KqrCsMZEATCSl0Ivwp6aBaHJ3AppQU0RC5L4Cv4RJ7/l/senB57nB9LBYYOMJKuWePrLDilr+rdKrap9UIPfkoMDPwXk57YsRIYhO6IgF3AOA56MG4bvCF0apMWudXQB8xARjglxdAqnC+t57npq+eH0cEDC5/dwdyzuOvYOZUmUU3JHkhKkUNiJ7cPbGzejx4QuR4yTcZvzyt1SQnqzzu3PFckfGpnlTepCNbhCzhjH0s6g==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 993,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1089,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 993\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 62\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:53.546508Z\",\n  \"responseId\": \"9WjGasytIZzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:57.594190+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:56 GMT"
+  },
+  "key": "39fdacc86b3eb1df9a4e155b77c22192b46488de6b0db8712b1730621f35bd8a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

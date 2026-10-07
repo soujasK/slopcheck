@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic affiliate product roundup with rewritten promotional product specs rather than original testing or analysis.\\\"}\",\n            \"thoughtSignature\": \"AY89a1++ElTRAEzR8IWNvN3EtdRL3MXQi7qgqHYD0KVg270/98RJmhBXMkYU6mXoAWQmmVHOosafp2ixiB4yI8Qq1k8SpoZJuM/R7pb9d9SY6wSWcxxZoLmdUwhkYQliO56WyXhj+mrD1P9cx/Zjt7XdJD6OVY2IJcamudYSWC8cGQLgYQINF3uXgCsbAgoXfjk1e/Zfh1qzHXLYHJpEI9MPrpvvz/UQUnFKISCdXl29FfXibgqoT6bhe7p8OR6rCKep3mO0OIavEEIHgD400rvzhrzn7MrkLsecBvGBZOyVTbwAqiYWdgFu0NdLvR99uRnnkjuzJmtnoQ3kngVxb2PbYoI944Q7RRho5mIshwpk+CZIA/QOy5+qRP43ufNBYPGjEK6ormaiJz0xMjw5iopRL7em89oSuKdJX5S1x61K5sUnvB4XfZx5Pw45k8nMav4xnoMyGRe2dZ3OUXe1MxRhEWc6GcMrTZL/qqXILLR/i15Vm0/9jUCRDk4BKZeO1X8gpqBUOU2bd4BURMxv1yhlABV1QNPNHWbDweia8KN7X/R2n+qz1aj9C/XkzZ5iqGZNQ3oIicjbGnHEsj8YFiIfeNn5deff/54wXpoa6/iVFNN9rJRxa08fX3GPHeHaY4nnqvBrt66SHanQCFFznldIaZAH5oq7itBL5kBc0xM67Q4G4Q27RGoWUBcnK5l3mFIQrKclfOjCEW0Wje4WW/sijToIXQAp6dtYKT4zU+EV+j+Bl/CqY+jHq3Lv/7aSceQf7B268cFduUVXhBGKAQe4JFtdmfISjcqYC/vtDJpF2pmfcTxBmp2MyUQzNguBx+SUpwR5CfyduPRkPDUIIx+Yj6QB4f68mpR1c/fkVlaqi8SOQ4nvacUMyQbsmHhXT0l+hhA893E22/TnRg4SmI41kqQcwYOqiwoOZNOQqUrbLgpli6s99RCUmhpErE4QIryXaDWnqXstgNTwvmG52aHSE13iNQ2PMMNriVZQ68PTHeyX1WVtaS1/OssTwul6nVZBSP/ynz2u6+l7wNZQzKi96ZO+KSTVkEz8S5ZcaGUx/jy39rSOctsKvOCuuuNl60rx/fm4S95CR4EIsnI6iPfm5biySqGAl9zroUYrC4fXhcGE29wp8EggyYwyAR0i8ZKNT9Ec1mQAnJpkp4Znle1eG6dfSDOCMbvM/2/BnRXKpVof9zRuN98u04Y6XlfMy1IT1U8/DUzGlAS5Lu/KnsodgjSUxH3bvQO0bdgOTOgiibTuSoH+8vlHHbYUf91dG0KH/AKY9WrgGPLRLGTjeN2heLuHKJOJnH9BRIxpLm1b2jN06kZ978uaFuD62uPHyN4aI6GS24FbQQ4Q/hw/pWNjwzD1YeE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1105,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1343,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1105\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 207\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:10:10.710050Z\",\n  \"responseId\": \"0mDGaqKrK9Tl8vUP35LymAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:10:16.066252+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:10:15 GMT"
+  },
+  "key": "df6ede45deae20c8cda2cbd5a6042a4a4106357f9257c0f6addc94aca046048f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

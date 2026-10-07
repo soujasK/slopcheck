@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page contains generic, SEO-padded content without providing specific fixed deposit rates to answer the query directly.\\\"}\",\n            \"thoughtSignature\": \"AY89a19MN57okjdr9jImt8LkQJXiRR3AbsSdcxtwaodwiCke20MGVGcII81X9XLJWJVJ71B+ac85SxgMDxFDsUZcfRFxojhug76bL2yuNjVec9gjz/xjGY+h0ApcgDr/LriGTrDH5WPff4dNa1YDMUAb/zig3wviel6Nqg5XbfKVt+mvaGZosypjig0vGg5Aqkw/OyFpdrnuTHk+JaRWXbpInSv9T7CF2zOI8pkO/5chEIs/JcmtaNYxfr0KFPOk+rVuWtaghcG5L7oKpnJj0tdmoZQiUVU0/1OXKIbAp0CrF+chaFr6RgQQslv1j6DxuEgVmIYzPWaQcfXDwYnQyU63EvgWvVB6Z9Qv++BWjvRPVUh8H3KZ0rcG1c4sJJfhjuwcR4axrvIJ+g24EgE0GuLMV4H/hfMmTGCjKAuB5x+aCnNwGjNDHJwYBpj4jzF6u1+KDPJCPdONc7AnHRg9ADe5Hhd4CFEXX0zYZkL0Jgacs+xhMU6DqwEu8kIMW4NnNLus2DV6VhCBO+8LrkSykD96XJMHEEgjjdyjxzfIR9UpwpM+W7vpci4DPH5vny5xww6/TRqAcRdDN4NBkvm5xbRL0UkNwKjlu69/nAE3WVwNMYW7MoXoSbnk/fPJk01h09thCZ1Y9gA8Vroqb34IN2BhnwyFGSek76JBKepRRW7N7pp/m6vpsdchnJwIIoeR3oNr+KhBqiVPNpyj2L+RQUkKrb2byKJMx90bVDlVJdnsI9/FqHdzZEnzDsY5VyQtyqL1QeCdTw6DYznDkvDAvAPubfZghiEgldFaG3zDD+5ZIYUYDgkaxNoyb0IptMz6kSeCKj82pGTRTCfLLmOD3jRjZptqsRTEbG4ouxJj5DAjUFe+lKv5MW+i7I2kFUr+j9Olzw0mJ7KeLlmm9skc+w1sOWtFOHNxBOANiOB5Igqc1AvZElnASEo7wRvkBkTujEToCxBbEDeFsgT/z2KeXpnw4e0dY7trFTAPCfmu6rRuqweFDr5x9ycucyvRiKhe5OkEtAYDLH/HuaGvlRxclVj4InT/yZ5EuwJO\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 999,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1187,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 999\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 156\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:51:17.622148Z\",\n  \"responseId\": \"dWrGasT8JbCR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:51:41.530474+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:51:40 GMT"
+  },
+  "key": "743627f232536e5fbcb3f88e60d7f1dc42a079792514369c95624e68735836dd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

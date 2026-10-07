@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a reputable financial institution and directly provides a detailed comparison between NPS and PPF.\\\"}\",\n            \"thoughtSignature\": \"AY89a19VPocdyAfRsmW74gl0PM11dOj3joxNuepRxitcEBDLMuUh5WfKS/Cyhtagrk52PJBEF3A3nZytV6ROfJZGRv6irQULrO5BTOTaKEPXBhcyo4nvZONZAQ3SP4To+D1EcuJ0KQ+Oe5kBJyeHByBur/GY2re0vQys8RwYPyeE+oSn1T5FmYurCYsoG8QvISB3pwMNjdmX8h9izOUCpnnxeIyl9HUG2T85QVP00ujmi1CjGe7ihn+3EmSaUNVJ2b8QmMsq2XZZFK4fEB2XsKYfw9233R2/CWigDaLXQ5v7bHNvw0GQ93b+Hkwi6fOuBnfduK1K3CuwkIn9aR0S+w1gnSEkmj3FntSyEHtnEpRgTPMYqspWUNf1S3evWXboUnaUslFf5ybgBO3w9ttPQW41n2AGQceT8heZFkNBb45xwxpnqVA2wyDuR6N0Vt8fuSFKewLrkfDMnIY7lCu0wvlgvuVD2drCEfRTv0svzl00RjN8FixZetDG77gk75F4bXyqA6vA7szmrw56YHrVsnvIX7xFR97qsHrPjv1FziS48qI39KON0U0J2iNYpo4ejYJDbrw9PfZ000n6EGSr2XRMrs8BplIc9qmxFqe7MQvGfDPAT0oCriaINYjeU54Txk/DOBk6CesHeOJ94w+DO5mroQTMn7E830BAzuyX+O4uJXXGEr6O3hoVfSmquWeTAQA=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1168,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1293,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1168\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 93\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:20:27.982845Z\",\n  \"responseId\": \"O2PGar3-O47h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:20:34.540952+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:20:33 GMT"
+  },
+  "key": "2a449b422a5f6b4a0758b59b0f175e3f2714f10290b9cf2d1d0729e753db1a8c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

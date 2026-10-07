@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official government help page from the Income Tax Department explaining how to file ITR-1 online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/WJBGU8/PIupCNi/PA2O7vB7bi/bmxdEeptWGHxP3/nM6qRRISwsT7eXRSWUjTxDe1CSgr9dUwPOv4RS5mkw9Yq0CwHkEmzy1irsmLu/mceNQyo25IZnLRuzcRvlq7dKsZssRMssCKsadxfn+NoNX45fh2Nk4wXwltJVpgl83d8zQZwZ0roc0woM9uQOe4TJCPpG5uAzrwHjEJa765hUuAi7cA47hfCOMKF77bIHJbT1GQ79/QEcIWsmyJfWzwCVFY4ecYdG9MVBiZcxLsuACqw9JFFkKRooYWBAg8URuv6wQRJGs0ORXbAn1hcYlet/Ch0DZB6bOyj3PvIgmn4rqWlJEI91IrOg5B42u3jWUDtqIzvYU8nOto1qSLpKK/Ccc8yEwQceasaJ9AWW8V1hA0h9J8mtozl8hkU/PuhdcrtcSNyBD0soHJD4+3aonSfQH+5wn0TfBt9IkhXKaOhpAnF5cYVJOqyDQ80d46LrdDN00gcAjy2DBkRw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1169,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1271,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1169\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 69\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:11:29.558923Z\",\n  \"responseId\": \"IWHGasuOIsHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:11:51.635413+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:11:50 GMT"
+  },
+  "key": "64445d85e859236c7d981ef8f68b820ddc410cc0959b024f7a2044694a116178",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

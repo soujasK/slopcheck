@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article directly addresses the query regarding vitamin B12 timing and provides named author and reviewer attributions along with citations.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1/7tzxjmMdPtgo3cnzSTDdoI+Q7KSclsKpbl435n4yknHJQhsZMSXqW8Tdc51k+VvX8+UlhLOG2l3Qx4XAlR2pN3E/fydKh6Cnw7T4UjRUCtl4/VkG5zmuZYNqknfnW7NMPVfUwigsRHjKO+vJCIwtPlmLiWA1Yt42shEYbrd0OAhOB70pQjsOps44pbi1E6P3LN1Nc/S/HxDgh6wgBbqc8WGmJE6zFqa0eoPQfDGkYjfDMSIElVbmC9KlMAmLayyxdryd4Bii0I8HuS0foZoLt5A/Rx+mZK8zDvrvEGUxTW/6Ez06e1PDHxs4MEapvkOaG8/UJvL7NiH+cjZr1WkbxokUhdrYYOBBI2RL5NFwr4riFS0qhNfFnyZi9C5SUP1WWqH+ZrwLg6tg2grNGZzzgHxWcNgjWIChuc2f/lDtdOljF39MgefTowENmmp1GQo6Psx3wpJ/WuvUUrI5lsqVqFZJqk46WhDoAnZ4KsY3ABdi4UHK3ckIlGcljLtJQ+/mB8HUK3WaVGvN73Cc8VsLiK/VCsBOy6zUt13htb5q7cWbNTSRHVa/ATArUL5V8XgUU+76IzyW7qUEwZXE3arKpSSqo5oRe8DDnhSpEuwNhF1g6ZxG+xXEYzzBNvnbQrY8yeNfRbxZdNQa79AgLkSaATGSkjKyL092+szxqVcd5WtZMYdExr/C/vlERMJX36n+EpQO1ImZ9PTVI7CsujAO1oIpTg/HKvD55ZUMbep1NuSca3HAuwpMdRWbwhBHri4q363zt5Fk67nlPL7U=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1132,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1292,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1132\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 41\n      }\n    ],\n    \"thoughtsTokenCount\": 119\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:46:33.593948Z\",\n  \"responseId\": \"WWnGapygJJ-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:46:55.344136+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:46:54 GMT"
+  },
+  "key": "16e91a64341e29a23bea2370946266e9871405a47c3355c4643978ad29984875",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

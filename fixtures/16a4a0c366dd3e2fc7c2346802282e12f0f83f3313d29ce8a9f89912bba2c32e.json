@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a promotional blog post from a store exclusively recommending its own branded products rather than an objective product roundup.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19kCB5SfMHZmBi1DtxpchsFcm5LVBlhzmp98SLBdIbaVCu+lc9u/3nSoqv1Ggeg0RiDWyWQc9I5OVv/3giQZ4quwsxu08cZTyCBl8WbtnH355R9quVHFup/Eku5PPWwdghK10TSbSnoeGtV6Cww8wjncs/yssrSZTlZWOHnQ2qjnOXFTVn+8b3v8n2tU+as/11V5EV6EhuslrQDvZozzFsc+Ib+bECuEpA3GiR7S71I4C2481UBck6J+NEPGaWAYlQdCMl515Ey03FtVdJIg9DBunU5ODpK8NbNb6xN8dzm+HzEaP03rPlB/44TJ8Y05LS/uJlFLtV3C13EF9e2DfQEEx8xVnZlfZcNoVWQP8RLEPM6zi9dqEMRIY2Vt3pEw5g8MeG1U0IRYNzpMyTBZi63n0ucePoVZtyQszQmVdoUHCXWHJmRo6m6ZeY+BrmHdyN+2TgSxdYzmW4+hpDVsnDF5ANHikrSoyPcG7hWITIqG1s9LbFeAxqmzSqaGI/QFrB8BRauBN+sNB9zCyjZ4smRHR0KnUsX+yCdNbYfN3ebGS3gZg7NC9q1zNewQCTogd4lZLAydYArRwRQ1tzDAfUJJl+3h5xZjgRBDk5dwD4EpoWSSBX2YCekHsSv+AiaWYqikTctGbh25yhPp+Rlh0tOzY7Iwp6epN4jF6RTAbyEAKtGWe7A8QXsxnfHm+9ZhEU/0aJKp1055uSQy4F7N1afpOoCobZliM9/4SUK2j2dWyVJzYoCFAyV62u1JQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1376,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1543,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1376\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 40\n      }\n    ],\n    \"thoughtsTokenCount\": 127\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:42:29.921795Z\",\n  \"responseId\": \"ZWjGasOhONTl8vUP35LymAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:42:50.573224+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:42:49 GMT"
+  },
+  "key": "16a4a0c366dd3e2fc7c2346802282e12f0f83f3313d29ce8a9f89912bba2c32e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

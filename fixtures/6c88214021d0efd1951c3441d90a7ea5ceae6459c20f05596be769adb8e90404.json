@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a reputable news outlet and provides clear, step-by-step guidance on transferring PF online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+m/oE4nfUHumsd8WxUGJx4+ORGRcRXSTJsyI1KR0ZUxeFMVNkobrHrgn97vh/MACu53eGVtR8Rr8RKR82vuolRQufYl4x0hTSfvS8EcXEI2atodVeQjAoLE/syUEpjQmqae2A6xjmBGH6ZqshZNUmV4lyVQSJH+6BnsNiIiqEQ13iUXBipDMMoiypDkRytHytjvJjFT1nPqzOpjO4u1bsUeZ9cYlCFg9bMKcdHvsVmiLKhHs/AVv2yjKAjz2WWUq0+AHPx7Xksrm4x3Vw4Sl4s72RhPvVLiXr/Hsr7QZ964plxksWcVfa38enzIcY0KJgOjD2mGIov6TGJTgZ+nKq3mNla++hUM6XKwN+FqP7+iqM0V/ArpGg0iKGjwMqF2N0xbkZtoYLwpK+xrD7a9ecru8p8CwA/xF0rElb1qFgDXaksYG0IWP9qKxW6Bpl6E/bAR0/yGzmrBTnCHnuNEm/cl1SYHeSuUj+/OBcJcxGtiloK54Kl/MW7iCFDF2gIP0K34fXxQbw=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1090,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1192,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1090\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 68\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:19:01.148993Z\",\n  \"responseId\": \"5WLGaoGMCZ2t7PkPz77e6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:19:07.009215+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:19:06 GMT"
+  },
+  "key": "6c88214021d0efd1951c3441d90a7ea5ceae6459c20f05596be769adb8e90404",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

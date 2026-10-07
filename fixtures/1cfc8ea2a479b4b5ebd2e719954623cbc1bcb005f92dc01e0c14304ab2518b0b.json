@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic financial aggregator and lead-generation portal filled with SEO text rather than specific, well-sourced rate comparisons.\\\"}\",\n            \"thoughtSignature\": \"AY89a186PwyFQ/jfQTdFv/AsGKC4kf9lzOVt0LpYZlSCtxcVhex6dvwPeUNfFEFggCIi8LEV5bsK8/8UDHlAunfcc7qkLrxtJj+89s8E8LjIK4dasXTkX373KQzWZDgRz+8KCE7MDsRRTgB+DTvSMxtC1SF0NMimP1aBH44W3/AcljgVpFl27C4vBXGvX6zoRen4c0k6UYn8+ftsbPyN5WV/hWOiuNW9JPUc4e5bnpx2mUgHQsm/a9Vl5x+EL914sK+v4WKgbW6HGc5+hMJJJWj114jxz5L/1buo981RgZjzNsjQCnobgcIXiv7MiAxgGn3wLI2F2ymiTJ1XElOjsQRxDwur2WafHzp/9TDyVma/d/S6b5iumBSiVSrRXFs3zK130Qcb0X2M/p/iYOxYWQAmHRoCuiG5mMol1sUzd6LWmzDVYPDK97XKI0gz4V0UfWzLu9lffQtQWINXO3vslswzpNJj+00sXeN2+yhu3hab6XrTgzX53vm9II85/DpVtwLZoEpJN20+9DZBNGjZW8sdUX4N1l6KVDNtRdKxtITh/1EnFOt9moGmgsbVueh91VKUUOS26Gj94OKHgGc3BhBNKDA48judXIDeHMtgj5gV8IAMleO8L7PUa5J2kSM91LPFnDe28YLJtvWEkTbcJh6RlTAMspmMi0f14eNTFK4u3bE9pvqw2K/plIYX0NUNrG6P23yJGXfDy3chTSnnX8vNxXG3FxjLNjiYq0V62pBlWxYJzCYqcQogfL0QnOftkPR8bQvHXu/icSAsPRb1pDGlZhoExA2PqiC+xV/hjfbGew+DFoVULLUdBdcILFCxhjOS+p+TlRdpvMhvivVm4+iZoGsa++sejjZLUGNR6PlVLEhq+Rz1Q9wRI6u4eT5upP8+Zuo=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 982,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1147,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 982\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 128\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:57.846707Z\",\n  \"responseId\": \"vWjGavPWM5CP7PkPzNOywAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:02.047708+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:01 GMT"
+  },
+  "key": "1cfc8ea2a479b4b5ebd2e719954623cbc1bcb005f92dc01e0c14304ab2518b0b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

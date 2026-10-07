@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an automated product catalog/filter tool rather than an editorial guide or grounded review answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a184H+xWvDuXM1IYZ6nEoApO9psQ0LUx1vTyuVOUZQjYgGaBXgegJTARSEAeA2v8YhEjKXVhivqcIqsf8VffZZhMBS67AnMDg4DalPzehGvJqun+UyFMMGBiC6mstr56eHeZOsrOm0/4rSMYB1O28rscnseFGuzH/TUs4nuHnnWR4tq7XAqV47BpjnRpUs6+Mh8J6m1cHVTUcoF7xn6hmlm7x/a+GTThFF5EpQxOCiE/ZyYY2oeztSWqRxKelCpJG/htB3feOcFvT5MBy7tMvtt1uRZeXJYUVO+fKOHhsDu1E7iC6qX3TSdxcV13EUbn2xsuPttwgEdnT6ZHDDxwPbb8Otz7w/ABNq7jUP/n9moG+lFbsxPrmeSbbJ7AZoxaUlov5uGbgO2pQ4OOJ2M2iIi3b6NvAAsHyieDR2kjjhkF8qtwSMoIcTyNYlg9+BZ+HZ+C9PHNttapdKp5UsGp17wxB5m47n2SJdkLTRU69jVhEfF7fZV//2majP2rywePN4A3zw/TmON1V1m/60qO+uMHYUM1p6b2i4n1nKeZaFawb0spZExLLx6EfIWK2geS07jjciPN1ZTa\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1291,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1407,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1291\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 83\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:29.142618Z\",\n  \"responseId\": \"kWnGapraCNmBoLAP1Ze8qQ0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:36.214611+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:35 GMT"
+  },
+  "key": "a4e09d74181cc96c4cda3941fcc4f7e602717e5cfc2dd459810d0b9cbe394fa0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

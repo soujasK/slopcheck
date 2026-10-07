@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a commercial promotional landing page for tax filing services rather than an instructional guide answering how to file.\\\"}\",\n            \"thoughtSignature\": \"AY89a18MA/f4NdSrdBdTRb/F1mZ0ne7QG64u7rBk9TPV+VWl3w1KIJAKN3qrqWJqAwvzx86Ih2uJNXy+4hy6Ot6feKAGwvGMd5TJ86w0T2BA7OC32llJ0OS7hAelmstrDE2WK+DqdM0yLIqPP/8xtSAvIFB5KSXMzUVfVb/ByVgOWcMCRZR2GWM9pFN3Ev8xkzc5JFJ8bupQjzCQnvKqb2IRO5+w8ljLfxbIQ4s4fkH/skN80ftC9+yGTnJoCKHW1BcEA27toWmI1+VXNuclr9zZi0S168Y5iMVvAlN3UqK8cENYP1JwXjsHrdGD4hXHN8GYNjO2chQZ5FZnP9fyX5cKft3ytvq7BrQ9toWTDg0e3hlBZyAAs4Nh+XO556yfMaD4IS2a6ab++zC70jLtRZxYSTVIlAWc6RSwit5D8fz6+OAHjlD1NZQyDOIg0lIS6SVrADT6b/X0QXvppvj8hGVybDqoesREbrtOgJQWRhT9DiJSMXgvmaMleVkCZA37avORsDDqS18cvLH1VljB09etA/ggztiUo2YtnMLPl+kBxw6O719Rd80T7/DSFrTMrTm5YFtuMaV+znbl+aOcXvCx2GfP6YpecbGR6Gh34XO0Hw/wtNlVmeW+GadVcRwYEy0vyAcZLOQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1131,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1252,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1131\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 89\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:34:28.101553Z\",\n  \"responseId\": \"hGbGarGZBo7h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:36:11.413433+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:36:10 GMT"
+  },
+  "key": "3bbd4e43cc5a1a032b470e746aacc3b65b2ba5052fc2b7533d686b638bb45c19",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

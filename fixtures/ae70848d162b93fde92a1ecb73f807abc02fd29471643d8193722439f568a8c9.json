@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a step-by-step guide from a reputable news organization (ABP Asmita) explaining how to update an Aadhaar address online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+VnRcPJo/jmDLaZK0KCKgWNkUTnAmikAHg11l6hM/FldoZF4kzNI95j+0dHSUlB8l0fhL+lTpEchdXFkMvdqKeEJExpGp39wLJfZ/1qcIK9T5+RBSVpdN7PVXyaiQJzsaB4MSaJ8rtVdmxih4HdN3fZCIE5/LJXE6ZUiEXR11T/DQhjUgoIf6WsJw6dLMcnH5h3B4oQoceE+I0+2/dpi0D9JtDrsD31dxVQeNJdcWqSkAh2b2z5NLSFlricBe8hTBqebbyoVG2ajaUb39EvD9zagdb5uO4/jGZJkN7fcTn7lr2ZeBoow/2P1VCKgLZOagASoKOo/Z0r9hYy5pRM6YozTTe3WRzjdttgpgLIU78ZLCsk0IhjfZhnKvI60njLgXzx2vS/cclhwoltZojtHq4s7i5cyuQMpu8ZP57i6RGjAaiqfbgIJgZBzxmHjLKOaipol/Rli8Ge6l10Lo83IdatcO07/wC4LEn3qImUuSCaC76cvCQpv/WJRKC4FxmraTaZJQWmUoLihNpwPKteJtRWiXsqfA/KHFMTRWpur2sMO0AvyskfvCwFG7lpv9aENZEkbIP4kuW/WUN0H+57ZsjjMOoyNMfylz3k0tjJT/lv3OvhnWLxIGh/GQzItms0q0MYHjsnNS68rMm1PwByGbA5HL34eRSgKCMNkiXpwa/vUmbZ6e/wU6fYtgfUXjvmvyfrc/rAqZTyhGIfAyxF8iMPjAWejOQWAtzCtg8uDBkdTiKdKp1gw13qgY4PVzgtGlaxD4I1oa/aRAzbbNTYAJ/3Z22p0NOG9aJ4g0gH1Ga9LILsk6GfJDbgNygIabJdi6b8571usedWOmZrZ2n4MQ8ZmGpckw6zRM+gwuZfSz5iHo1PZPvPCFtIE0Odda905CsUASnNQHLjyYEbkpdA7/ZjjtCo0/bZulRoahUaSjCLVinARM78JKvRx7EuMXoXSGqkkZkpN5kQJfD9HtMCtvwkhNy5sDUClkGSwNbSA7dyhO+wJsPp7PayHp3WCXEy+7N+A+kIg4nQS6ZOy2LxoQw\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 917,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1109,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 917\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 42\n      }\n    ],\n    \"thoughtsTokenCount\": 150\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:31:01.438917Z\",\n  \"responseId\": \"tWXGaoXlGubq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:31:46.177167+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:31:45 GMT"
+  },
+  "key": "ae70848d162b93fde92a1ecb73f807abc02fd29471643d8193722439f568a8c9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

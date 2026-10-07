@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article is from an established news organization with a named author, providing a direct step-by-step guide on how to update an Aadhaar address online.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+LWMRS25VZY1oBrwzxahZwmUvMDIUw49o0QSSD5ymxqLGiXcSrqAtPE0eK/5D24z4mlKEFNkX9hsK2PLhIwYTtFOsAQ4qPwAuaig0bYwOZYhdBv9RzwUq4bcn/7dmi00P+n/2V01jYKc/EdttWpXfP2q7ekDYgcwvqQQ8NZpgwwDRvuSy8aufwldAHrsp8Ap2bxSxus+nV/NzfDHCT3nSpD4G3eH6pQ5tYOrv7e51/ikUZuUc9g0FwBNQEyg2yizwO4KQvS5QYraMpKYkX8bojq1aS+p/tOGK8lmVH0ebh6a3r88662kPcIDLCq3RpzzyCE+CBXp8hC8jLKUYBOs7s6s7XF9vBXuMdMhOD2NyOnMy9lGaPe0GnVy19a4Tx0jQW5vDLOVoF2npsQnqQ1Y3X4tYGhFeDOugujzzGCL6ik+w3Nc29lFamfSyP7x4ZuSOGiXSTLdP0PFuR1kcuEhVRKzt0eiMy1T7asSE38zn+QrERemOBCqh65YeKVcM0XlA6MmgPk1gkbxNacCHl14L1/9aBzRWsussflMAQ56HPOHE5YiRnHk7Yd2zDOVHoCVnkYp4dI82kvYOp6EQt0YdYrLRJy/M9WwRwQmYYDFlrkg8EVkP1SuSI62sQGcSdY3HDzM+jtjHfy4gobJk5FE0yko/Cv+eHAaN2ZZ6LAA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1255,\n    \"candidatesTokenCount\": 49,\n    \"totalTokenCount\": 1391,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1255\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 49\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:35.698325Z\",\n  \"responseId\": \"l2nGatXPKsPh8vUPsbGQyAI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:38.954977+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:38 GMT"
+  },
+  "key": "a07b6016b576d17c2df818552a46ef707cef5e79e039b84940b41b03081f8152",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

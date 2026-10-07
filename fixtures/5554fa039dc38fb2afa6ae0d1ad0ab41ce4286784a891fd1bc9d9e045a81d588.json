@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from an established travel platform providing clear and accurate instructions and a tool to check IRCTC PNR status.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+ov+zCNBlkBwfK+gfjVNoHPBXbp7B9KNCEa2Fc93UA3t+FXRTkxO8TYGtFlzNY3CWcTFdzQbcJ9eZgCnL+DUw2FzZ3dTbKQOYJTq+Uqe5GC6ixl0ttG4ASQBm8rkPeIrV44r4UgxWizGwnZxQkp/AZFGY1wxstTHP0jYx5xqRycZmchdCJiXyvoXjez5M6PR+gg1c9c4XJ0LnC6ye6N0379vAmMaX3WuEBLYL0MJFZPaa1y4HAhjNISDQILLgYqsRTAFV+zAnsB/k5Am8DSRXGsPu46sVq6cIvN6CrwXZ4+D9hexgbkf5Z1FgXov3CVH8l82DouJOKzSe5ZyqgbinO1KxZViirnyiBhpcxQYsEWBMQL+sFplDmfbQgswErzHJD71qkjU/9maEm85a/hszRYzFSg1hN5n3g49B3P7GDkQRugm/J7w9Ql1YLGFtQtVUGARpZHJyu3nhA9ebMcIZbJ98lLvvVOEuJdRY6GeGUDwnFul89csypjLZbXDsWPqC8Ihqenu1a92WUPgU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1042,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1142,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1042\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 65\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:52:01.741822Z\",\n  \"responseId\": \"oWrGar6jLfmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:52:10.068130+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:52:09 GMT"
+  },
+  "key": "5554fa039dc38fb2afa6ae0d1ad0ab41ce4286784a891fd1bc9d9e045a81d588",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

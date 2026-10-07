@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The main text provided consists of unrelated blog listing snippets and does not contain the actual article content about typhoid symptoms.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/fso6ZBDdV0tjHzDGwbdQhYtASgq6BwBfnXFKTS2ATyEkIbk6iAeCOadqeLQkFM3rEiHm0wv1O2bX0rcYPRiaKKTTuxsJ5/+cjueUZ28UEZWeApklkCWuHtLJhHYUXyL/GqJaXRhjFu+UCIqFu5EEDXEWhDQS2QduD+/+L1ig5AFNPgRoxUJBckDhEsOKv2K4LOi9bbM1STVIR7N0l8t++7sIU4RkHOC9fXnY+Zlne9SOo69wFh+Q23KdEvO3VW3ZEW9gHgv8BVPszLC+Nf0iRU+NBk3vCTAzrd3OXUQAJfKbLdC4RQgP0ZHv1m1OFQTaM8qHOHBvLjGMfhgUT+/ffIQfyTc2lobVD0cMHfZtpBPLc3hftDTO96wcrYrweFa3GIeEDpTqls5Kibo/PmA+X3FFirRDdGy47Ks0PhgPU9JABOa+897hpi/64BHDTsTv7Gr2+JFIIo/nBSYQQfUiYZfyBEryfzo9F2rjQLUsDAkT0P/zDpsEs/EYxyZePHhEayI6uYv5tEXGSC0ond3xCRj5PAmYCa+OM6OZgiHi6GCS8ArSfVF2PHOffq2koEcJmXfQ+V2/8uE3e+W4TluCfSx435N48ipAO/Fui3xFvZQJ3SpO43rHIXIbQNGi9m00/7N1NaZ64W6SiB0aFk7UUpYHL/skehxyCCySuMiNb/CJxO5FUqmt0jsxtx+e5iGLjpkwrcKlCyYsucUbbV5XvZHdVGRDrrLB78y54LZ55HBEa44UlDy9nxeQ6k6C1BH4x53YBKB50PclKGsecrwsRq0FOAnsV9feF+gEmLQ6TODgaa8VSNha1wP6/mvRVe1ThFiz64ZO9ugwSE8eAz30+wEwhLizopgrKOD/MggaNOsSNez/pTpyZI9UeMPsQ2ieCBM1RjUCiW3GvRgNtYfVsZ3VglHsHEnKQ17o/JlyleW5hjTFDSrjFb2w236+0DQaoJec+1/qZHA4APFQcdzziyBBB4yp/15+N5d4Uir7CV9DDEnurL9VxrcaZCjzVX0ycgA6ZpMinR+jhE3UO3qmUsjlqjVI34TVuMGtM\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 871,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1058,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 871\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 153\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:20:58.427540Z\",\n  \"responseId\": \"WmPGapSMGvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:21:24.820403+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:21:24 GMT"
+  },
+  "key": "d5323916ed2e5872b339ffd9dc69e55c252eb0ccccf3c80a8a5a0059fb079da5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

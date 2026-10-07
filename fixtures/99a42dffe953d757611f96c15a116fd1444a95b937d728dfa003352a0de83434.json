@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article is authored by a medical professional, provides relevant dietary guidance for PCOS weight loss, and clearly answers the query.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a18ocOIEjHi0HHQlqUR60Wbw+6FYS/yo0gZzs9ufUw3u/eFmkG9CXYwIDdYdRbJdGVq/D5yFo31IZh+zVYLRa5hVUN+e9RWMbhfbQ7ec9Ex7kpYgyjKabEnbN/BxOq2qbvdddG20mlZc/9yHZjVn2L4SSHHt7WPBMrX9DlGsSQXMKU0QZ3AViGE6HGglXQxB0gxqp/1UJfurryeQ0iDzB1Or6gVGbtHlX+/s+3A3aNUdWJH7oIQ2fR1v9HKo6cVIOe00/NVExT2CSKHXhEGENBNhElYObNFkr/IGYR/3bfwusSMnOTqZKiSCTWaLldnCr0ZzNOkpcOUcXe92XBemPNWxdFQwJjuewQDCnuypIqX1hkj3Szz0ekY+hEFkMisqEcRB0RT5laLwCHxzoZRIuV9XirEnHPGHImZmAqM9zMfOeWN9JYmlT+NYmpne8XyPZmmdJ0vQND3Uq29pQc1LNuOe1TeX5tSsNtbx9lrGi+0BJpRvjJIqKB1TfuOfZnIUCCVHZXerdRQZDrgSxROmxMZeLCEmNlutGxaoVqseXneFqYXxvn+yKvCct5hlDSwLc1s8TSEmf9YJwe/jowRLxyDpzj/U4/HQmHh4/JxCxviGm/qSR5rOmLSroLsD\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1016,\n    \"candidatesTokenCount\": 41,\n    \"totalTokenCount\": 1151,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1016\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 41\n      }\n    ],\n    \"thoughtsTokenCount\": 94\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:19:43.861732Z\",\n  \"responseId\": \"D2PGaqTMNMHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:20:28.625293+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:20:27 GMT"
+  },
+  "key": "99a42dffe953d757611f96c15a116fd1444a95b937d728dfa003352a0de83434",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

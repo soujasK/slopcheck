@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query on lowering cholesterol naturally and is verified by a named dietician.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/bnRiv/fXd6X2UAFJQeCfCtSnmnJqf4D/et0pcKEQ9wSZwxOj9qfSvgD6AQ5Qz4qCPo7CA/F/e42jfsVPEZgOeibRCHG0bk0gS3q4b1uw6qEB5m5OQDS+w1Ql6t5e9QOPY0Bgl29HPn+TQ1rU1Aytr7RT3zZITrXjrKgGKiShNSyWayx8T7L0/5b+wwv0eeftWjNxrIzFbAfZdbwhGJB/Kvfeaax1tMbU3w7zSr1002qX63OTJHI4L5mhh3a3b8T85s1WXgNHLtCAgjzQzt/7tq8nAePZdE9ZwDBmSdRwLSbSP+x/dZ2rPKUrVJTGkhZlJjWqzSYYwCPR90HhLpX2Olr2Kw9ynM6lp5YQ3O/bEGRZkbjYgd2Zmbux17RAju1vxZQnjHMC3r/ZLXx6QsP0K+qbCQUkOWV1WmkmhovXIo5jNEqqcGCVoLL03F0YMt3c6It67j5PQ3U05IhcX6luNsu8U9LeMgCI3pHV2rm23FdhsDHtPP2GhP1+gsTi3cmKjbwpHYjWlkIxtotf1QtcKMhWQtDEh3ayrHis9c1KChdFKLSCLV+1+fW2tT6Zg4Qhr/k8TRUjV7I9l0DnvAf5njWH7qayK7pUQ+V9olBzsCYouyYgJAuXs1tUw2xMs3OOY/gz9K7VeuE8VMD1OCqAm\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1045,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1164,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1045\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 88\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:30:59.168192Z\",\n  \"responseId\": \"s2XGaoCiCqezi9sPuK_uyAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:31:02.065397+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:31:01 GMT"
+  },
+  "key": "11ba644153c305248f504d6ca673070167b9671773f0ad809cf3af4d40ee8ede",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

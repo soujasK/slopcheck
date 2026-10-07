@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is a single-brand commercial product listing page intended for sales rather than an objective guide to the best geysers.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a18G+LKIxk/y0UnC06ZOr10nxmkFeyOdkuOq/aGmJAN9QKXj7YRZCFifpgYoFTGJQho4ME6z5sHazONnkdstkIfzFdZIGfYKPUbXVBn/CpdCdD6mKP/zG+vDH/Vvxo/NL1zAEcpAA7A84eoL+CItU4D2xpG9O6Tu4WANAR3GHt1KnEsH7TDgZ48PA3dyfV7V45m/57fBrseedsmeGb8+pk6RH5Ux7wWyYESXdRzOflZNIXbRkxUVp6PIoLcyBa78Igh90zJyPoewmLbLzHEtTT7NbHvMRpGBbCNkopM3p6hPi2e8RzSPLn/u7fX1TQdCwfqOwcQzAIEd00foE0NNUeQlumE5a88ThC+XaseEG0kLR+rT0U5jhv+h6lNhm1pU0SxHuo/uHwmv+ZR2Yj2okE45Za7+pxVzgKNkY0AI/2xCrgxihgdKtJvag8qTNrcfPncAtWhMsKu3bH0w6Ho8jUyvOd85B5Y3vk6hvH7rLl4XJYUNhJhEyliauHTXqZRuLROGUuUhxz5++lxEOSKXhUU1m3rFJCwaQ2FimEG9lzOGLvllMY/rUjh5h2x8asoo4YQNYSmPqHXmz58Sp01+Yy8zJbFUNLPQZXw6TxJYq4jOFQBo8YipCuz0OJ5Zcm2HCswrOCm4VAXCF1vz7wvt60Nhomf58q8FQxBY2bLU7L6AFvdGsBAkEamnMJSeiI+rTu/md7aOOSM0na5/fyWKckI7mbcjs+wLurK4sqXFgUlP91Iv0hS3HYhve7aIsCAy1QmcTAYSUyzB5NBUWcSozPy/GMhHsKhwYkJJGmQ77uWxG2k3sWx/CmDoK3J0Bhmq7hMLALjvm2JtGZHomTB8ZwHhNlpc2qJG/uqwS2dy2wdqrsewljW2OTMPsp1oFAeB1szf7D38wUe1q5dD/haxtcLQskD8/6C/WQKC+t8/3ZEVJMAUK6LUFbYgtjhbG0anbJ6lTxWwMAaxYSA6twDdICBY/3DEdLWjKPkr9z4FjmrCG4rszuwGqFaVHwT0f1/qkGxO5az83V04kuTv288IV4dSDznYQ2CJiaLcYaPWBdxWpWdAxJzFxhw7Fr2Ba2JS7DMyGksoyVbfCqS2wYC0g8m8ofbYNE1SdRJAfhet16VwAx+K\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1141,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1349,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1141\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 42\n      }\n    ],\n    \"thoughtsTokenCount\": 166\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:51:47.602629Z\",\n  \"responseId\": \"k2rGaoXkJI7h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:52:01.894221+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:52:01 GMT"
+  },
+  "key": "376fd66a4702fa497e6c4196b040537f0cc22a3653a9efcf4475352b31611162",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

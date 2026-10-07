@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a reputable news outlet and provides clear, step-by-step instructions directly answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a19Erkjyql+160vclme2vy+Z1APlZ1XUAVrswDnpUIIdMjnYfe+3tp9minPk6M8hbX/wYxeszTVg5Y5RfZ5wA78evI/eQGTWRWVYFkcc4sBzOLtXjh3tXX6RlQPSSu8N948/XQnHV0GWPPzvhoXIc9IKJbz5TDHnhya/KfLZGFj+pGSuaQhS4hrrUhiwfvdM/TkAf84OOp7zKYqHXHh7t8K5R4/suI1h/ZZHVhqOODTUOvbQsfPZvKjrtUXQ3/+YxwBqXZdm/d11Fuo1c/x/pYKZ4mQ5LSPJc5NZlaaVBghOc41dIjSX1VuwSBOGyLgPQk0x7xjmqYKyp0xLQ1c5Y42Re5jJCdW7TGv2dzqGsc5eWsN9bGcQANVLd+IyRAdFgIY9ZKFflI2G1XYUBjp4H+Iw3UYj3VmlEMnJ6mFT7J2rkuTHrKcN2aRztRJexJ00+oUY3MVMwmm8jeLWHdmYnXESlxCAZxtDqTynz5qHI/9tp6wwVswYx5yov6U=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1129,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1227,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1129\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 64\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:41.221852Z\",\n  \"responseId\": \"rWjGapzFDbHh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:44.679211+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:43 GMT"
+  },
+  "key": "9fd308f8980752274c91bd435f66799a66234a357d98b92922dd9c23554a9d09",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

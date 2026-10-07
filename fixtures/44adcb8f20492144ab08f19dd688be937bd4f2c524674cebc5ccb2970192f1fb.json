@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is an e-commerce store blog providing generic pediatric medical advice primarily to promote its own products without medical credentials.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/DhLP3TsNRueVIABYTJhncZLfC4iZpGriX/w3nW9zjNM+Gcq57uPa1WFrPUj0AEdA7j7mBez+YyDQLCMWwhpHO9Mhc29eE/TuttlQnQhFCPWLZ1jcHJnfG7Sh+wcNbDvogNBbNw8RA8UnGFaOwS78/rt+q/TLn/b76FlIf1MLRAP3B35gKAF6wzrCmHUZgQWWvcXTrNGVHcQlt6UOBloALUT+zYwIdiUuegh81sWM1i7+qNRIDGj+ScDcAOTkHg6kb9HhS2zMIqTR14J4bSC57YgZ18wL3VTVkdL++MF8RNs1xtb3I9aDHl5xB6NGNNCV6wFtPCsaMLwQAnWDnXzYnLSedCeCPGCSJ1JQ1QDmChLCt+FHh2wgewyTga8T2i+SClomjJMRHfwijY5E3Z0XiIYJ571DRhdrfO7z+226RKkHyo7f8u+Od/k8hjRZVjKF15JZtq1eP74/QA2Jz1RG6S9FYLCP//GgmQsga8xEDbJstEhOP0CdNjcXA6aC5Innd3u2e0iEte6nX8L+/opGj+Vr3D6ZJCv0iT3h9n1AXtlPlZjypQ2d46cAtOTg+wGRF95t1UazHXTUp5YO6ZSmqgJI8MJFz+9aluqPiNK9aJ0JX5RqRhRYcnfBL0jrqHSQ1DDY89TqsWk72ZpHd0UnwKnNVeHMj4KCGeRk5k1Lm4EjuKDrzROVF7t0gJKPlW94BvsFEo+gBeLwZhLpSrmI4eebxEgfGMhPwcsTQh/rv4Yv3GTFF6Nc625JEZ1AF/ZjUyptSzREALC/4mhNx7aRa8OwRHY/WNK0N6G7w0MVIlpXHdhnCxkdhJJjtTSLB19RWZYHEtSVBKevH4T0au2/hBlnvFO4gJM2savFKrO05DOgn6aVSVA6JeOzJ8620IkffT2pNzAoOCI1gCNjQECZjxW1aqKgxPnDQRYOTWOPXwS3y+rweCDU2TYqnB+9HQkysIoUMC33tqxPE1FM68hunR+QffjtL/xWR9UgLow==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1090,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1263,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1090\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 139\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:42:49.951869Z\",\n  \"responseId\": \"eWjGar2MOonDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:42:53.020944+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:42:52 GMT"
+  },
+  "key": "44adcb8f20492144ab08f19dd688be937bd4f2c524674cebc5ccb2970192f1fb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

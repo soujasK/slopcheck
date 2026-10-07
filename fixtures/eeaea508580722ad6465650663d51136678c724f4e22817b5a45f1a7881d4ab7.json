@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an established financial planning organisation and directly compares NPS and PPF features and tax benefits.\\\"}\",\n            \"thoughtSignature\": \"AY89a19Hl+qTOX0wLCixtTUW01apFtM1az0/En+r5VE6XE65dM7h8boCec1VOTDEOu/SHzaWqFs06yuEqLlhNu5mASgnzmWGoaBSVeLOfbtk04S40VJ10B7i6iGF88TlSLDPQP+inGKRV1xhdmxsKelv52grxlIKl3WS2vMqihfGa8MHKrvTkMHNektIupBNUtZ9imS/EL/+YOZe8dx9D9PyhYQqzXPN7xOJyTFhWj3xo8iw2nCT7jQm6VeCRvbON9ZFiy9tWNAz1yUzw82//4H/z3CzqyVh77YCugHwtIunYBDOgUovnvxmZUdKYDZYxo1378Q9QLAWfi54pVr2zdqd4z/zL3Ltol0MauMKSea78bZdfJaP1gOHsAKtHZvYKcmmgKQS7BnqvXjibDPXICWsLDkuUqpR/AYWm34ZYZbiVA69ekQ21Z7q8DMEG5pfRlh8xuYeu/se1IusfvVRNdNxZQOOj2VuDHlqnwz/MeAX8tHIIU96IWle0RIi3/4KOl/MSWBfE3YIEZXtOcH6P0PiLkU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1092,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1187,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1092\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 62\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:45:01.608088Z\",\n  \"responseId\": \"_WjGatiOJYnDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:45:05.277247+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:45:04 GMT"
+  },
+  "key": "eeaea508580722ad6465650663d51136678c724f4e22817b5a45f1a7881d4ab7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

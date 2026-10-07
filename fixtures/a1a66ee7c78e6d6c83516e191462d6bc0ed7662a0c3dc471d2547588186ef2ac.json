@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\":\\\"ok\\\",\\\"reason\\\":\\\"The page is a news report by a named author on a major news outlet detailing the Aadhaar address update process.\\\"}\",\n            \"thoughtSignature\": \"AY89a18YKL++2U9Ml+AWZTiZenpAbUhiohFcxI/AEvs4aM4TP157jIn6okiYVnIOPvuaUnSERlSn8oTI48gQG4p57GSbaWwPjgS44SF1btKyWVujaJkQ+XWV1g7Wgv+5eakgn3cYs9qOSCaojak60fX3qeHzFLtf8LIWt2G41+/9NDxZvk56QHmhXwdGJvEr90Q1HSmvQVj5a3j7777+41waGPa7kgt3NYjoWViO2hGHs86F5YhTuVnNbLzDki2QCgh8oHN3BwM+UfUir+WWV2HE0qrgV8cbHsza4IDFvuvH5q/tlLvk0iWyLajDjr/K7qtlQqYH7BgKtAzs34OyB3sJLM082KxRjkXT7XUY+QWTGRsdplRLEKX4KEyTkRHt067tBe2MiwRqFK+5bdZBBOcfk+xEiX3YDXcBHZ6VwtBeASgcPERwvW3ROgj8wHva635N6T68qoHpgx1uOn59hyc1m2SZzB0D1bXOTI+9QDMUcjBLz7aIXyjv5CLAfH42DdaYgg7WyhtoehFF9uE5bORIJ9ZZDCtzZE49QS56tFK8uUYKrBmG1zb3AAjGqHJf7NUPAs1AWXL0MIIxDPBEr25t1gnWvMcuweakg8U=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 799,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 911,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 799\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 81\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:01.121522Z\",\n  \"responseId\": \"hWjGarK1B-3Fi9sPuoPz0AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:04.043760+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:03 GMT"
+  },
+  "key": "a1a66ee7c78e6d6c83516e191462d6bc0ed7662a0c3dc471d2547588186ef2ac",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses the troubleshooting query, is published by a reputable cybersecurity company (Avast), and credits named authors and reviewers.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+oGWh1sJYgqDOQLMPoKFLL/fEI7bju5eoYZTXuUcPu/Qi8OCmSJwfYZRH4CjO9/NuOw7WU5lxpyFEppUFeCagy/h4bWOUdZg+89rHue20qUltol86LtMttBspOzSZEvuycgv/NvneW0sjvFdKySdaxJAEmjy9GjWXdKNOod73tWZ1B2N08t2hpfhqPPItLpDzzELFDKDOgDlf2/yd2ds1V/wH5GF6Qae6yJbiIwz/mYbLh03D0SPrkIb8DqDCLiCuzG2lHvLFUI2UastsLpfuyz2rHveGjCBYeLIJB9BQ1U9pMBQ3IvKDnPTx+/IIP1HhPaOwFA017p+CLlFuYTSU4hRwp9lvqW77t+Jy7GQ3z4ZXt3IGAAmyJCdsUcEYNz3ZrIAEq7Mioe9Q7XLMch1+az9k+q8wg0xW8E25o0Ei8JghRyXSXxJ9FVUkf0kNdKxPIqyDFOw/l6++naN1AnvUH8IKS6Wxzz1MH7Z9oJ66HNSj+yqwt/WE9wsV457oYAFQkqV6esvsMZFfEkjcnAMg9fhHD+yhuZhMW1ErYi4b3MAR596MVyx4IwQoiaZzgyJSGZDG3DUbXE0/K+Q==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1066,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1180,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1066\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 43\n      }\n    ],\n    \"thoughtsTokenCount\": 71\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:52:09.573811Z\",\n  \"responseId\": \"qWrGavOCI7Hh8vUPrM_M-Qo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:52:15.000545+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:52:14 GMT"
+  },
+  "key": "08b24a1ef1500d06fb238865e819129c3e8ed63ea732eb68dba4a4caf7efc703",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

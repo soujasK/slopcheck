@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a structured buying guide with transparent evaluation methodology and identifiable authorship.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a194QLTljYHW8+C71vTRKBQqXPVpEGj0DhgMFb/93SwrnfpKYhS966aQGIx4Jw5WMkABX7DZwW8kTlXzE9Exz8rY4N1Z3QQUsCvZ7zxd0vEyGmYVcn21wZ7XbU8vKqBM2w9Q6N/fCbcuGtU83nQI+eawPC/rDYqNhjqg+FZcD+HoTkhAM4LuK3ycS+4Q3+AtfU20rIFwvejc2hlLOhGc5ix8bjfjGDO4X2wnROfkD6trQzQ5MiyzaCnbodX48AqBDFxXlteS5mPrVPreqvlg75kAo6TDmCfOmSfBlZb/ZzogmvSXLo02ztIIs4hTrLGiljioCcZLrwIMGa6j3qEGcSTAPOYkVfmzelM4zT6Na0gZhgQD5rLVdMBxzeYrw4EutM5i+gaflpAavpMizOHMHDp64gEt+EmWbUQE871cvLl1J+IlbhYZfcTKk90l56TE+Fm4iMZcmf+5qyptuOMv9XF5l5Tp4QEzOEUBN0+B2JZx0COdx6i+MOhcmlnt8nH9AHYRKkkbSJj/ze8+IJS0Mm92Ckv+pLsW7t4ctZbIIfNXJ3uXAsg4qan1X56+zH2ZQh+W15hIkrBrbxPWtHYGd3J9BQa4EulJj0j9TcXz0ffVhA8KW3jM0bCdpKPRQBtv4KFMt1fzcURwjJ2UR42ame889GOvOV6y1n3ee4Xt8Dd/mhJUtfBkgN6hVnSJgu9fPVMnHKPo2Wd2vC4+jNVOGKrtvXv3pJtE36FDiNynu/BSllRFvbZxMHjRoj1PgU5n5r099L5boqX8QsvO1QiHKY8D0rdxKmuh+YbNAOAt226m/eXiq421rKjGuKQaYN0EC5NnjLfDoNvKJmkgoRMv4Sa/6Fj452UP7tjlgd7gNXSV2nnQqJiNVZKuWkT4xWYo4O2RnB98Fl+uncMMB92zHalnyrXDM7T7gUi022VuBScsBaLghdNwCx4q5dUFqKM77iMXCnMqeT8p3N+fNAp1fNTag46TWWUnjd6Rk2n6FQYDn/Fyr40eW9sW7PQFG21hQh84J0gl1fUWUILoNxlmIUMEXUcw7Su3rMG6zUb2ingfy1N+7cZ+muymYqZ/LnRSs1f1iFNSALDi\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1120,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1318,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1120\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 166\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:30:07.152733Z\",\n  \"responseId\": \"f2XGap2pCaPWyAPP2-D5BQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:30:59.813144+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:30:58 GMT"
+  },
+  "key": "57c97b58673ddca4017a6d8c58b49c36cc5544ab49c87b2cec221491ba7d0e66",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

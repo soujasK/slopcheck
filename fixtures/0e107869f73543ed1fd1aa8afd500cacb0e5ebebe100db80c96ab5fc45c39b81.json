@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with medical guidelines and is written and reviewed by identified medical doctors.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/Kp1BthyKb5vs6W7LGBn+8NiakH9sIYwv/XLX68+DdcSWraGgNo0v6cubWG6LaHz2jgF6fmW0FB9GWpIkFKiTbhRv8xGDPT/5vhsyjI9VGnsJmKXtsmuf5KnKJQaHo+qOdRGjZS0q5B+y/eAH2bq6WQw9EhN0/BVwA/gzmcDrY7/X5FEojBvSJu4sfrINjOd245+kex5s6luL9oqw0s2fOJlXQXM9JLDD2ZXmdMmxP+aW1p/ncAonjmq1EgacATVHo6+mbTcZhvQL6vJ9g2i23kQwbhO4XpNHEt4Dz90MeynhywliIFKITeC8z44cELMyadaJNcx+2m+EEzbchjV7IIv33SVYqwZ7CmrgTzQTJB/h8ZwTlzNUJxRID8+xde9vQbzhjAiUVaBsbh/8MiOZcJZMhlJCQKIDPxkRyk8SaZIxQ3ROQLn47cR0IGFImhHPXAWqQQ0/qu+3IiYCKtv+jXHB0gnL0d0tktZJUGifsp0/7obVrWM1E+SNEbPbeWHAn2J89ekasdQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1147,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1251,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1147\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 74\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:38.395743Z\",\n  \"responseId\": \"mmnGat-TGJ2t7PkPz77e6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:41.695069+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:40 GMT"
+  },
+  "key": "0e107869f73543ed1fd1aa8afd500cacb0e5ebebe100db80c96ab5fc45c39b81",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

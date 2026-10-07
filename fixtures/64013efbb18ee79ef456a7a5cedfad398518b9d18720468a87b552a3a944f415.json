@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The guide provides accurate, step-by-step instructions on downloading an e-EPIC from the official portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+fh9QJgoMS+viMCdOtxPQvmko1OsEOwYNTLjY7dFc1WvRYIubOJkyZwEY561NTYtUZpumZpz5JY6jMeWQT7y6ZufW7lv6PRzdPJcbulLafXgpz07WEI/4yUJ86FZGYqQP+mI24VYvEKrSL03SH1kwE/8i0SqAEwZ2754NUBz5NTFTtz85RGi2Ni/D9AUQUnc4fPVQBdnshdkfcK5nFkXZJaMnBnopJwguUuI2awHm8LC9mqrbdyRygk6zBVU49sCMPLGmyBq0PmjBMN5AV3GWIOTh7kCmGe52AwszDxOEP7RhI+i53hQ4s3Yk5O6qdq8KuubMqqPq+DmTfyEum7Eg03WIud8KizQR/nO5LvRR64NewQi7pOQsnJISnIqhY+Mx5do0B/E1cwXNeml8QajYA/bHwf4YUaKMSKKQtDC6mU7foLgB9HtsAlsWY52BIr6jRX31UR5yNDUkcJ9gLX63iezPJrKD2C5ZobjMQhpE0JmE/vVQNC0Oeg3CH7qK+B2oJt8eEZA/V9pAADNhmOhnWTB1QP8UjT50D7cAwZ3qzVOT/fOH1kR3WXaBrf8qrllL2RLMtmn+7aGPkBhmmp+J1n5VdMCIFHlw/qNLqjkmpy1tIdjJ2oEKyX6Cc3SLQ5fss\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1042,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1171,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1042\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 95\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:31:45.541317Z\",\n  \"responseId\": \"4WXGaoWFIZCP7PkPzNOywAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:32:04.826281+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:32:04 GMT"
+  },
+  "key": "64013efbb18ee79ef456a7a5cedfad398518b9d18720468a87b552a3a944f415",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

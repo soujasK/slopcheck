@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides specific, comparative recommendations and testing insights for water heaters.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/1MDr62BuJaotTtGGE1Rn/O36Lszw2ABLIk/IYNQqS3UbZ9Kz6KuwFp1BNz1GT1Wd9DQ8jJZ4QLMXzSQZOPKKH/0AwV0NwpgW+I3QCyTQ7FEe95aRUz36z9Rc+LusK4T63hN7IxPd4HpUMWu5uKq7ym15kw7fY/LdvmGHaasm7CAg+2AVV5GhbJrS8czCJH2cATmcPB22HLOr1cF3bwlVp9XBvibydUcJcF4gQVTA2r9k3HdpfDd1CypXC1KRiWKWh/CmhnR7o2/p5bvZlcewIDHoj+GrmO0D8Yp32I0VnBrHdhsw/yNRmPxTq1j0ugqVMpHHEzuVLJpnpKUmovXYlh8gTGZEywahYSHue18aMsWFsa4zN+/V4tD4SkVqcKegGDj/t5uzp7Da4+DmF1VOr7jvEUYx1FbvZ50NmcADzgWWj2IAioVh3CHSX3USAdkV7rGYxMh6QAR9wLF3G9b6vvPgDL65fQl0hMBd6IT3IQaVD4Ubi3hiB6s9D/YSS55ecYVhU4DrvsTvrsNFUZxzAp0z11PycddnP1U097eQqchhLeStYt5HHGzjWSjj+vNSUXRAPWMfjdoTrP+giBNxvlH73V7gGMph/P/AUaz9kX+q+ZZmnoFp3GwOQ/WOmZ1+nCEIS9JeaCM+jxgzIav9X/dlt3rqt1H1mjRXp84WaUeAG2vS6KhMiKZQPV0touwlqFfkeV6uCuHwvuH42hXfcOpg7Gtj6qJqKEkdrjDXh5D8kvgt3tiEm9tjkUmOZCjoGpJE+NCAC+OVtLlr+GujrY2iVEVFxXrWkZqGvHj+F7IfaK4aCGOamBY+lZvvIGOEwlNdIA5r93KsbePK3keWyb4p6kiTqYzbxetnl3U1wLF8+rkUcRPmOykPRcMKMWx/IzwAOCcsZo/jSQqg2ekgOSOZJWTLpngaMzE4lp0MB3XLqYsJKMZINwsdhs+CsZPvxtwBh2rXnKECMUMrMDJZg5AqsGbqs\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1096,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1281,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1096\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 153\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:33:46.947784Z\",\n  \"responseId\": \"WmbGasjsOaPWyAPP2-D5BQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:34:10.379198+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:34:09 GMT"
+  },
+  "key": "30515fedb5e98a64f1eb3f3b18b3dc1e9e3ccd1b8cd6aa4ecae178780579aaa0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

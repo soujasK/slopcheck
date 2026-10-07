@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly provides a specific home remedy for children's cough, written by a named doctor.\\\"}\",\n            \"thoughtSignature\": \"AY89a18fPIxrwRbzR8oX6NPLVtHjIP8u9tmWdg2G5SJlW0V7qFq9g9TEDsuF0ZbeRY1qKkR4FZCQDEaTZsu0X0WIGJy6eU/67ucelFbnS+8dMyIWZGI4fDfI+CNVelZXz52ytad6NoIZLjPmmK7C4+jaeH/vF6AVi95jZOzQm8we7J9/VPUGqSPMdT26/QgFoHJjCkxAJ+SbHjA2+N4/Ri9V2hylEXYQlA2ZgkX5vNje1FIdj5vzP8Pqw+OEBKLCxMB6UWcZrlpn3AG9q/g8k3GKXkx/K1q9qO1Kx1om8/kCnj+R6qSZ4hCl5l+UbY8S/b9H7XXbOVw5iu2hRDkU8/Kg6Vtk2cNL23gtY7gmB1Wwmmai5siveAAhsUve4czatuPc7JvO4oCpxga5Xc7V+aijFFoBRhB1TAng04Lbq0UHL0nm3dKIV+Oj+drkiti7PFMnB64R0WmCYORf1mm1NS0j8D5YkKiDsxCbxdDYwW3byhZek9FKZPJd8K5/3Km4HzyKFJY9wRVLhIWQfZZNzlaRS9hZQoc4nw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1090,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1190,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1090\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 69\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:13:49.527360Z\",\n  \"responseId\": \"rWHGaoCYIKeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:14:17.419999+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:14:16 GMT"
+  },
+  "key": "0e28294c06d3b01f797ce63b1b781a0e562460556334812381d5a42974a280aa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The content relies entirely on an unverified personal anecdote and lacks reliable medical sourcing or professional review for pediatric health advice.\\\"}\",\n            \"thoughtSignature\": \"AY89a18DZP7udLSs+oK1yyLCoY9VXSRdFzLvGyKGu7iBS4ERSc7GSqFwfWd8Q4rrw6EjV1DaTXKUbFjsuHH3LsT/FPW4PkNqYa41X8H4+NOEsEEtfQlrgdx8G0jT15rSVmJYh/6tIduAtzLfMWgvVPl2L01Y+VRLb9Qo6gj/pNP7+i2V/dABdEpg+HW+rNd0O8z0cUV6kO5Xb9FH57sCeE77E5zFzP/cNYQ5iTmV57zIRVPlB+X24kmrs+I284PaLK7LWIiNYMFXUeF7sh+lJPGiuySaX0hjKDVOtNjZ69sNxAr8YvZTxmiYOcI+Xq/h2Yj4Igv/juVnAd+kd4W2eu+eETF34UffIyTL+cEeN0VM24iQjYcEJOwsT6wZMPZ5i0MNdO/tmhZhtXvZ5qSfrhstFmqbWomb6pPjPdJEYAOTS0NIaMm72P9f+2KwECFHfRNgvYqUD31YZcPqfU4iV45wuwLxa1BLGC7F+RVLAMZuWcHytUjtx0saZH+A8MLrJUb7wWWGKjYCLNIbCtPDb+gMVy7dwRH2ppIeQDu2XjTE/34/FoMrOTtJgzJU+I8zu13rCvhDYKEiU95PmUZ298LdSqH/mJENhwuW2Nb68q0G/SVNKMydp9Gp/7WiRRCwTIrKA/i0FSkVC8tagbR57HHiglUy6ncE6W6EiFE1edhNdYQ7dWWgGqQAqZxZIEGmAQaxhp6+YvjE7M11znLOhVSPGoWTjfh1FulGNVcNYENppcQQ89TeCPlvO3G1cZcw0LlTQhu1d9NlLzVOlxtJym6rmd8NimyAOP8lqqKHAU8yMkJVpt0IHdj+f/CmYgUsj/qW2jp//c9W1QRAziSkPZQqb/2SGFpM9ZQ2XVqCWcF4+8OeIookLSKbel4avawrY+bxpHN4jGel9PRYKFJgJDpifhXG/8+5DgUgCiVBoRFjFfdnmX5cI290vN1dNFA6wiatkNFhwwVeD7lio22XIOgMSXJS9pREnzyE91i1dSP6MwPaHTmQVrSlYWuKVNHX3qIwZUGLNFx7s9pmKSKW+vbLIzjVgbnW2B6gONWOJhgwHeSjN/eU7ajes84VQEXL27ZI6U99OgwPt+T/dyY07DMHYYXf3F+aHtUJ/gDUP7+XXo15lFr88zTsA9jxw6P4xJggLug5eamF\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1081,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1290,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1081\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 175\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:41:54.596599Z\",\n  \"responseId\": \"QmjGave0JJzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:42:30.548887+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:42:29 GMT"
+  },
+  "key": "3f7362beae454d2736b3926375d49d1493700ca740647e595b2c81ce927513b8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

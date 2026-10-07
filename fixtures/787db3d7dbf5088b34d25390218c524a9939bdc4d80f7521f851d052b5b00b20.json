@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with clear, detailed steps referencing official government procedures and features a named reviewer.\\\"}\",\n            \"thoughtSignature\": \"AY89a18VayxVL0mz6ouo7vsN4Pkwm3SO4ETspl8JKbzQOy70sAAZgNIOuoeqaN1kwfG3LAq1IAUZTj7aIQybW5aZ4VsbOqvTClUDggFGF/y1lAlSMRRCLRMmlCT85Q08b9hZP4Iau/nL43VrgYJtC08E44bIh4LRAZ3q+Yy395Ih+sNuVQdFaihNvK7dAKN1WjWAlmPLAvXTgzEW5X3JdMRrxGpJtIhi0k5qZ9efW1PEq4Ih0+As72gPD63C/1Qkt3WawClecIpjO+1VdOyqX2V+BcBkbhmm5fRWPQz4+mIY/ihhRMmh50IJhxMqgm9C8I6slY8Mg1doVBM63Id8Hm37DS93sbl4M7iwzROp07le1qRNOZnWuDlb93A01onse5Zt+W3DkZUNzyCSFvT8aswUz0ToMmTtgy7qd+eR+BeSxDPFm5G/NUAxfF7/zogzVdXJ4WcA7uK0peq1kOBpEzhQntmgpKpDoHk3Sp/h5JV3bJd8CjONK1TFOjvvBgv8JYIA\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1103,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1202,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1103\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 67\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:52:46.459141Z\",\n  \"responseId\": \"zmrGaoWDHMjo8vUPwLnFuA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:52:52.377557+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:52:51 GMT"
+  },
+  "key": "787db3d7dbf5088b34d25390218c524a9939bdc4d80f7521f851d052b5b00b20",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

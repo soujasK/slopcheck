@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page contains direct answers to the query provided by named, verified dietitians and nutritionists.\\\"}\",\n            \"thoughtSignature\": \"AY89a19FSOa6RZzIEiD2ot5boWZZMjuZHjVqJ4YvOmByuF5czO6DheyGaYtKi3tahuZan96rVG/1GdHrEdRY64kbmz1f7UA5QxCkp2AKZfKnrUcDRDw4duVhCJEM1DT2PF9ejrwiW4IhoOWncesFkOzwxWH0PjhE4GePND4pGFno2pNtBr67uoNkTGpg/GPm1SmpbrA2C1yyrXI7+GK+DcxVBZ9SZoofAFmCjgdDNyBdC9NsM9grkuok4n5VmtwihG6p/Q3Xx4L2CV2p1OmVxZ/62wiwfMJXfJZ97CcEVSHv2/YDXS73WfoEcSHhrkqMCAxKxuMCLFd83cdBtFisa5vLhf06WKg9bG2Gc+oGMw61819FYQ06Kz+H280zkapjLJq/fxI09uM3TPkdS/V2kNyDjq1Gcr8Q8vsWIXUfz2GU1CVPWC2VNHPjc+a0UcQbYjEiE6CON3jlue7xod8KRNuvtylMudteXhuRZI0AfIzfZ8XcK7/C5v2fUStmNieTCFkeoeiQ7syDV/1i0l9A6bERIkSFC0BabZ0PB54KUZRLdzf5vK8aNdMoTlXt54fQzBRF/GeqFupmezzFs6Ia730x5ium2zpUa3lAny/dyvVlNF++xeYh/dU4OYAaiE9f8vil6rFl9RRkFThTk9Kcf/fxCoGuKYTYw6QeccYGsiX+kwc=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1103,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1216,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1103\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 82\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:43:03.398960Z\",\n  \"responseId\": \"h2jGavCsGLCR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:43:07.886930+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:43:07 GMT"
+  },
+  "key": "b48edc692f7a2f9c58d7de0f8ff851db98944f6f13d4844dd8da7bd398777580",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

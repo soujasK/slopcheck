@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly answers the query with clear details on Section 80C tax-saving options and is published by an identifiable financial services organization.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+Psy7qmG1SJ79g6WzS04QdUUZTXtepLQ6XTu33pP8Aaybs7oaDBhlTIG6XcGhZtvQh2rX3GYQDpGR+T9iUjRdv+goP+v5znf8SK+b5sDFch49TLJZ8Pi5XQA3jbx6WTq40vMzrpYQ+FrlyBJDrcowJ0RAaVGqfvXQ2epTvehwVrREuA5rKSULKpUCrD3Ow6zIXr+0zcR9/Kt2/zcZTuIlym9hcOY75k+pIOPuV88gSMLc1V+F9yJU6WnlD9I7dObBV2wlPbYfwCU4LA+3BN5A5ejgZo9BXe9eb6p5pYvPEhyeppSO7NHLTqxhdAWQTqO3JOM9VySe+aKYnc5TgYgPFhbhkTY2PrKvLjTzWG/LpmFbxnQzoSUIPBsk5p9of1VtceRtlIPNjBE/Hq5w/NLoejIKsHGZlSVdnXy1OpHICTgoJkoyLhabCsTjoxCXe7T0ZARQ5d/f4RghxyUGbM6qfqvUoMC8Uv1TzFGU27nmFgPPRGgVOl6EqwvxdYlaKERC7FQ5tj3E0rv6aVGWCWJ3vdWIn/sbchG0yy1l58xNPOlGTuAP8Dds6S3DjquGwkL53b7NIv58rsbcT1dXi9Taa174D1dZZjfVupcbGUh060kwZ0DmGJawHWmUhD8B2CdCuVw/+xk42dRCmCRs2RgD8kWobAyPa42ClEt09n/wwoDi7GLvsYZUliVoV0SEqPOYcO5XiT1Gd/1DOBCpyLyTcEP8Slj/xT2Ts5vNjnaxG\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1025,\n    \"candidatesTokenCount\": 46,\n    \"totalTokenCount\": 1170,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1025\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 46\n      }\n    ],\n    \"thoughtsTokenCount\": 99\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:44:14.000434Z\",\n  \"responseId\": \"zmjGarIDna3s-Q_Pvt7oDQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:44:22.230363+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:44:21 GMT"
+  },
+  "key": "9809c45d557ed98a593df58d0550996646efeeca4fecc20091d74809f5465d41",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

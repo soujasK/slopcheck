@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author on an established tech publication and directly provides step-by-step instructions answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/pJNQ+GchzBpqEp/Uixe+G0icAS01/pwLXpZ0E/wFjUUqkuLWnPPoVbcSUXEqKNZ/LzKcLIde5CyN1ErJdIjqg8UUYAzsWiRECp4JdSFnDer41jkGVVONBwSraRZSyhj/KiM7SWoFRWU9xQEmJF4vnGWTVgSJ+hPs+USpZChLOkWX908/ktymxAQpOEKRSnk7Bjd9xKaaZVqGDClsKF6P7OWiYbYGkQuUHImaAIs477ZqMkvfMctl5fYZjfPEF33BMOXS3GhN7VHp1nphhveOSyJtiMxV/XnIy9eGX/cqQz3IhmJjKu6RFWJdc1+iPm/Tbsnk/edJ26dlSAWTL+DefxcunJt/RiXgBoPabVmXhnbaFdLHDxVhtYn7Fzzvvj3tJRSaJhH0rTBkeVM2rpNrSMU+AUCl4sXxtQOQQhde+pBuaYzEaKO9vKblJ81h74g2jE/FCL4kJG6svrQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1062,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1160,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1062\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:21.000685Z\",\n  \"responseId\": \"iWnGaq0FkI_s-Q_M07LACQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:29.612855+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:28 GMT"
+  },
+  "key": "bc2a48346d590c790e7902443b5382807724272b9c3308ba0170217c1c2e2b49",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

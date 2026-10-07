@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is a peer-reviewed scientific medical article with clearly identified authors that directly discusses paracetamol safety during pregnancy.\\\"}\",\n            \"thoughtSignature\": \"AY89a18NRp4LRhtjWAE+KSLi54JteJHZjTztaWojynsakEJu060leB+WDU7F3VZxiMf9ajeex0b944E7gtOHX8r1cmfyF3+UCgnODxHiaz/lB9X8FzwDMvpLkiZOl2PAw9USuBAKgyO6K6Ht1TidMeH+SmyNKDN8HgYRYYd07P6wQCretb2AA5yZTv/mIoveHPZPt+nO9/1K/8tNb4IV/1kTmSsOggC+3/2BMod1SFtRsjgLJd8TPkQ42lTkC7YChnTiLRJVjns8R4fmMkiYMsXpJXhh3G0vZVMm1YQBMcTNNN9CsGgsij7Qlx7/eLRQaM40iyWJ15K/H4WbGUgU/lEwsQCXBqVhAwr9bHhQIq5u94+tG5ZGdRNt3TsPPg2gcM1TGEzwcGzxLTG8qNNed9fsgD+z8G+qcdXQCGT4z+tbCWNhHJr+cgansNvpC/rLrk6ZayucG8A/YZP+AKj0cpICrcCrXLrEC9n8sxFnQClYO7vqZGPQZuV5GRLiCWc/cyB9pPZnQqOs6nDu8Ur8aTn3qWvsyfC6gyHsXs1T+n6As08BO2V9gupTP0AAhQX48B4p4hLkxYhl0eD1tJNFueensW/ws/qCulz6qDNOXIhGs3GIh1lZH+WYbS3NnygP36fKAHFuUSv4T/nnZCqrhT+mBZROzi83KXGsn6PlcvD5HXPzgsnbznmMYQpdtlc=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1172,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1285,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1172\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 80\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:12:30.982377Z\",\n  \"responseId\": \"XmHGaun6O_2k7PkP1K282QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:12:34.408691+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:12:33 GMT"
+  },
+  "key": "7b64c634e41ec35b0c1ba109bd17e29ab397bd4d29649919dd4c2ff513fd4c95",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

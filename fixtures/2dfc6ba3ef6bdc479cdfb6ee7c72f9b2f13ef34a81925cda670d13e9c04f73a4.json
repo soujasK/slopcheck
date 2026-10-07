@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from the NHS, an official public health authority, and directly addresses the safety of taking paracetamol during pregnancy.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/hzdVDwoo7BLjY01PeLuRypHPgAgLOVevNayxc2Z5Gl9ey6wYDhJgZpZ4SJmup/xWKbvmscXTY4RwiOyAR2Ax6XPSoCQnZBHHA9NzcvMJlOfXqzEGyzrz+w9dUTQPwPhlua0MjtIDLNYMCSqJDRWwl7lULi/+fDHtdR6vMPkLwd6S/bKbPkqhzZ9l/aIfNT5DJFWqB6rOYAQ5JlZq9FajQ9NZfoaaR5SZv2906ch3iyBJzkWBEuRLjRRMADHnkag/na+eXt7i9si5yyjNoinuGfOLi3FQjT4SJapWXd3n+HyxKALVi3M4ITI6RvV6p5WnL0oeFXz/BCnIAUMOtbkTJiNN9+W+Z8CMj93t3OhaDNuuDSSHsJ/+Z681G0/pY/esTyKSS5xia9aTMIPXqV4kjTmyftugEeqou8A534e3IUc418PmKs8Qg1UXYNqHCDL+awKRGEeKNiJTe6OGYROA8BupreuKubMVMhbtrLIsuxQ2p1FieO/pfM/vruyTJPTgJhC1MW+8QY/dv1EFzkEk9bqWZalsxyAIVKMQAHraf\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1008,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1111,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1008\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 67\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:26:48.100601Z\",\n  \"responseId\": \"uGTGavmRBu3Fi9sPuoPz0AI\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:26:50.879298+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:26:49 GMT"
+  },
+  "key": "2dfc6ba3ef6bdc479cdfb6ee7c72f9b2f13ef34a81925cda670d13e9c04f73a4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

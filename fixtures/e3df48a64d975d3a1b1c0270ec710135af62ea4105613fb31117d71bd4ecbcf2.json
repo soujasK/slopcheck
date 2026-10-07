@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"It is an encyclopedic, well-maintained article explaining the fundamentals, history, and risks of gold as an investment.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/bXag1pYvm98HoUAfEUJ3zyPMPMC4nVgtrWQ7Tmr50X/GfUZSXHoEBBc/a+ebwcf69ZS3AlVLg05AE8SVSHjPNBxuXEovvPQf2SrXax4Dv1p/93J9OMoVo/Ma9dC695vGKA+bsn65yaBLRlznz4itwfj+fHOxNecCgFqTZXUOAQgOeVOFSxDlu9gTcniLv0An8N+nxbOBIKC++7pN4GY7GeGa2UIHvHlgjXoO/osWsRS2ZxK3v/aK3a7zjJNsWlMyDHG3x630sLqwRFDCACqpqE4pwG4khP55PyyyQkqWqhsVlSO+IhSun+/nCp8hVin5WGtNGS0VKBFGXhVHTBkFM6Gw7Cxogg6mzj4PupLozNBdP42wrf1XZLD1lDO/dEMYVPL7j70yXrFl7bZxTAa4uSLuW/213k2jwz81jeKgoQyGifE/wDIvY3kEBLWDwTO5oNVZGFd5QCHtaYUvK22E92K8vRQeqBDwO6Qz1F3AEZlGwsQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1063,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1159,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1063\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:49:21.813450Z\",\n  \"responseId\": \"AWrGaorTMZzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:49:41.195099+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:49:40 GMT"
+  },
+  "key": "e3df48a64d975d3a1b1c0270ec710135af62ea4105613fb31117d71bd4ecbcf2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

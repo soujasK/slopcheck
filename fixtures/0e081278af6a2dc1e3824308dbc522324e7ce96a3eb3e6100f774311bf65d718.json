@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an established financial services platform and directly analyzes whether gold is currently a good investment.\\\"}\",\n            \"thoughtSignature\": \"AY89a18hIYgT7PizrVQYfz6aZVrKUWZekzTkQZieee2gYAsKaMXftNhY0KWIlGL7+uaftkIdwb1KZFS3y64z/wQxU/mr10NFXVNxyboLa6FQNX7BXaMRU4dJkB2hgLne8twXdI1u5GNdoX0lo9rr4ReIGTlMA1kjTCDYlAUV0/fmF/ooUQs290bbP0Sw0HKtB3jDQU17njksCKjX7yzUCmyd2mnSwuP2QhzJq5YTM72VtRMD/mbErxYpIKIwKwTb8tr7X3y0bDohex9AL9eBtIbACi3FgDwBvqIhzmS0NDiZdf2zN7SitfpKeKBPGuxjikUS8SlwKn4iKYsmr+2I0LGgs4V3QHCUIESPXih5EjeLD6Dl/3pngJ5lonUT+dnlvr3BIqz2+rTa/iqVXrHN22/OdwdmfAgacJt3MrFX72QhrsLRElbQ3eLgRsSirMeHLl0vD07BUXwH9a3ZZ6kyQbCjlwWlhftnSOtGVH6VjumWT4Vt2SRnFl3xyoYDUuoRpuhzV4CPMUTdRWWYsIOxALJBui5iZ/61Ajt8l/MXyVzTD/LJGX9A842YrP6WNzM9KlI2oidE2vAjffH8EX5AGD3cXIZllPQmx72DYA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1089,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1192,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1089\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 71\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:36:43.201826Z\",\n  \"responseId\": \"C2fGauKoDKPWyAPP2-D5BQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:36:52.536054+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:36:51 GMT"
+  },
+  "key": "0e081278af6a2dc1e3824308dbc522324e7ce96a3eb3e6100f774311bf65d718",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

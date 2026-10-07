@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The provided text contains only navigation boilerplate and menu items without the main article content.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+xX3aOSrwv7nET6syPPir/9e9lCZzuucI3O/VCBEzTKNcqj3FGE/IBNF3GDsIxabsbHG7YXsjgzo+KMUQ2eZv3yaCE5INQqlH08bJAkM37nq9aPxH6T7y1NunmYPUymZaA+ZPQjBYw2ncM9Fa2EvPAFcdz+OLXxR5Rb7RyNovVFClAzWQzhfFF3HY5NVSy142K0KwVGvpVQBLkm2wcBvbIC06VWIKZt9JCICcSZCRY2yJwBSdi9Klfpi7ca42LemFIlIWJqfj1r6OWCKmXyV42yM2VT5BFnPs0eTdeO65TgekNEbtiUpXp3/vQFne8q+NsbgTHsmiwHSDbLT7uAbyLpXxdUpg5OlcPI6Cdui2eCY/un5a5rwO+ygFIaoDD3krT1964YWAU87XGAhVe2DW0KH/FB5qyPwEYc1ExrttNjYNcRyx2oDdHx82hvuMEvv8mWoOKeypX78/ZKgnDLwkWy/Zbnc9Pzia5gw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 957,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 1035,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 957\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 28\n      }\n    ],\n    \"thoughtsTokenCount\": 50\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:47:02.407437Z\",\n  \"responseId\": \"dmnGao3vGP2k7PkP1K282QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:47:21.049862+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:47:20 GMT"
+  },
+  "key": "dc1d5d62e63702e6a555182562244c90e2f83affc10d93e3179c2da3a073ddf6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

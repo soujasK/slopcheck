@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The provided text only contains navigation links and contact info, making it impossible to evaluate the actual article content.\\\"}\",\n            \"thoughtSignature\": \"AY89a186miGSSlJ7joSJkYt2XNcufNlJ5JV96bktWxJM8icYk/o82yNWxAMHAC+GWUqPN/xdtpOcS3tHw1NJ0HTXAt1oXLjj7lmEd7W0xxyOIURy3dIpd3H1/BvEih25reXMmSOEtXub+ZENz/GPzPYv9JAG0ssb7lAuiZGN/N2QKEml6/gbh0YiSIlqS4tQjyFfZektzBLhTZ9WSsWYoR6rpsqHPSYERUvQpl0vyiHwhCajg6kOfLs/nNvVJOzIVAS/dvPmaezrgLXLKXgFtI+oEyP6Fb159V0L8PtDs54a6qZh4y2eqm0CNhKXOI9IOUqpYo8W4aQRvCx7sWZmI4BI1wyZ7F704SoEfulltzVqjppHqsi+JKffCuPeBrimsF5Ne2jNwyy+I/qAgX53wzkFC+HrD+LmEvGJBOGMXlKQUrzgmQE5+aAWq1zRJ+F1xK9sqYUu2ToFs1P6wWMEeLoWso+C7r5y2GV5eZBcNIaTDjxI6F5iIKYLCCZ4iY6P6u20Mbp6ppXn9NyaKkbWf8V/sj/DVtXFXuVIcd6yga99dt5iTyiYKaoraEk+ZaeXcPOZKooemkSXi9GQPw5QpYzxWmEUXbf1btFn/jGeuY3WqbWa0+4oij1KU/JV50zwEYLxSm9QTJE3HcH7yIPUl5bTgq1wqJg8pnxoyUgTOuBTpJQ73hnD87YnvhFiZOrHiGgwHsPtUU7XJ6FNS0o1nDsXmHArRd0e3qMC+639ReF1jA9I6E5SvEvglH9z8wk8IFQtiRoZF0qMVJmEJQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 877,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1034,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 877\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 124\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:51:03.706585Z\",\n  \"responseId\": \"Z2rGapmQK6ezi9sPuK_uyAc\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:51:11.693298+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:51:10 GMT"
+  },
+  "key": "5cc24d2231da35cfa5c6d99adc7193b140ecb1effd2b40592de83ef126cce754",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

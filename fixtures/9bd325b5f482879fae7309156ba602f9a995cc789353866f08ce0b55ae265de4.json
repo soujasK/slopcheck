@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized healthcare organization and directly answers the query with clear information on blood pressure ranges.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/MSPW7cm7DptHvesisfUBzwY/bg6z84ZFBeE27TpS4BKAfWEODfmfPqowhe0897E1OaoThk/MKFAhjPWD/mYIMvtARrEH+J2srl91cn1Xi2Jbkl3ILp/ieKoShj9edN4ZlfFh4HI20BbKhPe4ORICd5yn/HYovxTLSFJvL5k+sWTgTEevw4mV77JZcS5Q8kHOgSMXc+PvDrSSiVQ/dVG9Xr+awlPP84Y7qZrl/fkiw9c8kMYFtS96faSLXMGprsmHmNu8ykK67wo+EV3JXnzesrPHZ/khpPlJulRUw8nfdVBs5N8FoL64224CogBvb3+X/uM/xecyGs0KAwI4dIW++JNLg3rVEZskZkCAN0mSEITjlH5+9W1OaJQmy8c7OziTRk3jQtFNsC5tVaYfQjq+Ru3DateBffwnv7E4GQRxgL5t+7DiJPROMK8KNvTYxzvud2ThPV8Ab2eyrDXhCSrg0cBgnJZC1moPOPUWpag2xO9BH41w/V+27SZOI7HFWyx4MGiUaVVt+nI0gXMPN+aG/CF7ZeObhaCOkQpsGbdDgUW3fYP03c3a44Luzl2ULe7ygbJFPzHIHFRkTbJwxk7duRvkLZ/nScIqTNNezQ+9/8H3Io3PbClVlDsmiS1LxM4PzF91k8WG4utZI7U0B/xhXJF7nrznvGBy0B3j/jjNasYA2Mz3WGjCzZXtztmSEQkgtXBRTjcDlOm4O7CVCaLSW17f/+DU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1049,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1178,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1049\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 96\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:20:33.907254Z\",\n  \"responseId\": \"QWPGavavN9mBoLAP1Ze8qQ0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:20:41.213488+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:20:40 GMT"
+  },
+  "key": "9bd325b5f482879fae7309156ba602f9a995cc789353866f08ce0b55ae265de4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

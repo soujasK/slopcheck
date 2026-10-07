@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is an authoritative guide on typhoid fever from an official public health body (NHS).\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a182SgYN9GvA4SLK/2eKbmx4ZGdSjRnqT6kTT+oViRsyvLvnlSMaMeuQdlb0AuuVsv42aaCTpphkJii4y+SAjBAyJQqBilfT796kSrelb8LAxG7UtBIS9cSgRSrXT01mMTOo52UZHXZvK/xkq/WsgnwUtusRyYW3ihRQkqDp8JVrPx0sSXrvCiqjn/vrqNhyX1Wib4CdYL5TPB0g/XkyhivCruoTBMZUCeiCAZGKTd60IQgCee8CnbCaRurLPxS+/sK+uncEGj455NLKbxHikz2fT8UdcZXthgZ+jirzZnHhEH9/9Nx3gTd3ZczqPGoCdSBqsFyqck5FDg6ywCfxhMNOovxEgzESix3gw5ulMPpgXRbTnpQK9hr5SYTZzskYnOLzbYibZ4RLSEeIPcwyExvhpXcot6U0L8epnV9iBzLJkXcY3cxaxa5y7uFjmg5C4tzdClfEwjtdmYPo1PDA/NI5aduGch/qtqMGooErFcgeR0JxWKzGpT3wjEToEeUROafBjqrHi4y/hvSsFIVR9ldJWtc=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1027,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1131,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1027\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 69\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-07T15:14:16.920973Z\",\n  \"responseId\": \"yGHGao2bOLuDoLAP6MPuqAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-07T15:15:29.292038+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Wed, 07 Oct 2026 15:15:28 GMT"
+  },
+  "key": "70feaa821b8d75f711ceaa551e8629f710147e9f2a48916b830713718f1b4ca8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}
