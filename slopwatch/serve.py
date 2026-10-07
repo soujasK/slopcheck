@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import re
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -215,18 +216,30 @@ class App:
         }
 
 
+# The console is a React app (web/), built into slopwatch/report/app/ so it ships in
+# the wheel: no Node needed to run it, and no network (fonts and libraries bundled).
+APP = resources.files("slopwatch.report").joinpath("app")
+ASSET_TYPES = {
+    ".js": "application/javascript; charset=utf-8",
+    ".css": "text/css; charset=utf-8",
+    ".woff2": "font/woff2",
+    ".woff": "font/woff",
+    ".svg": "image/svg+xml",
+}
+SAFE_ASSET = re.compile(r"^[A-Za-z0-9._-]+$")
+
+
 def page_html() -> bytes:
-    return resources.files("slopwatch.report").joinpath("serve.html").read_bytes()
+    return APP.joinpath("index.html").read_bytes()
 
 
-# Vendored front-end libraries, served from the package so the app works offline.
-STATIC = {"alpine.min.js": "application/javascript; charset=utf-8"}
-
-
-def static_file(name: str) -> bytes | None:
-    if name not in STATIC:
+def asset(name: str) -> tuple[bytes, str] | None:
+    """A built asset by bare file name (hashed by Vite); None if unknown or unsafe."""
+    suffix = name[name.rfind(".") :] if "." in name else ""
+    if not SAFE_ASSET.match(name) or suffix not in ASSET_TYPES:
         return None
-    return resources.files("slopwatch.report").joinpath("vendor", name).read_bytes()
+    f = APP.joinpath("assets", name)
+    return (f.read_bytes(), ASSET_TYPES[suffix]) if f.is_file() else None
 
 
 def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
@@ -234,11 +247,13 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
         def log_message(self, format: str, *args: Any) -> None:  # quiet console
             return
 
-        def _send(self, status: int, body: bytes, ctype: str) -> None:
+        def _send(self, status: int, body: bytes, ctype: str, *, immutable: bool = False) -> None:
             self.send_response(status)
             self.send_header("Content-Type", ctype)
             self.send_header("Content-Length", str(len(body)))
-            self.send_header("Cache-Control", "no-store")
+            self.send_header(
+                "Cache-Control", "public, max-age=31536000, immutable" if immutable else "no-store"
+            )
             self.end_headers()
             self.wfile.write(body)
 
@@ -255,13 +270,12 @@ def make_handler(app: App) -> type[BaseHTTPRequestHandler]:
 
             if parts.path == "/":
                 self._send(200, page_html(), "text/html; charset=utf-8")
-            elif parts.path.startswith("/static/"):
-                name = parts.path.removeprefix("/static/")
-                body = static_file(name)
-                if body is None:
+            elif parts.path.startswith("/assets/"):
+                found = asset(parts.path.removeprefix("/assets/"))
+                if found is None:
                     self._send(404, b"not found", "text/plain; charset=utf-8")
                 else:
-                    self._send(200, body, STATIC[name])
+                    self._send(200, *found, immutable=True)
             elif parts.path == "/api/start":
                 self._json(*app.start(arg("q"), arg("engine", "google-in")))
             elif parts.path == "/api/step":

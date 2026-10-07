@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "@fontsource/bricolage-grotesque/latin-600.css";
+@import "@fontsource/bricolage-grotesque/latin-700.css";
+@import "@fontsource/ibm-plex-sans/latin-400.css";
+@import "@fontsource/ibm-plex-sans/latin-500.css";
+@import "@fontsource/ibm-plex-sans/latin-600.css";
+@import "@fontsource/ibm-plex-mono/latin-400.css";
+@import "@fontsource/ibm-plex-mono/latin-500.css";
+
+/* Semantic tokens. Components use only these (via the Tailwind theme below).
+   Data colors validated with the dataviz palette checker in both themes:
+   risk = raises slop risk (ochre), clean = clear / protective (teal). */
+:root {
+  --bg: #f3f5f4; --surface: #ffffff; --surface-2: #f8faf9; --surface-3: #eef2f0;
+  --line: #e1e7e5; --line-2: #cdd6d3;
+  --ink: #0f1f1d; --ink-2: #44554f; --ink-3: #6f7f7a;
+  --risk: #b46d24; --risk-ink: #8f5216; --risk-soft: #f8ead9;
+  --clean: #008a70; --clean-ink: #006b57; --clean-soft: #dff2ec;
+  --info: #2c4a72; --info-soft: #e8eef6;
+  --ring: #008a70;
+  --elev: 0 1px 2px rgb(15 31 29 / .05), 0 10px 30px -12px rgb(15 31 29 / .14);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1312; --surface: #111c1b; --surface-2: #152220; --surface-3: #1a2a27;
+    --line: #1f302d; --line-2: #2c433f;
+    --ink: #e6eeeb; --ink-2: #a8b7b3; --ink-3: #7a8b86;
+    --risk: #c47a2c; --risk-ink: #e6a564; --risk-soft: #34240f;
+    --clean: #1f9d84; --clean-ink: #5fd0b5; --clean-soft: #10302a;
+    --info: #a9c1e6; --info-soft: #17243a; --ring: #5fd0b5;
+    --elev: 0 1px 2px rgb(0 0 0 / .35), 0 12px 32px -12px rgb(0 0 0 / .55);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1312; --surface: #111c1b; --surface-2: #152220; --surface-3: #1a2a27;
+  --line: #1f302d; --line-2: #2c433f;
+  --ink: #e6eeeb; --ink-2: #a8b7b3; --ink-3: #7a8b86;
+  --risk: #c47a2c; --risk-ink: #e6a564; --risk-soft: #34240f;
+  --clean: #1f9d84; --clean-ink: #5fd0b5; --clean-soft: #10302a;
+  --info: #a9c1e6; --info-soft: #17243a; --ring: #5fd0b5;
+  --elev: 0 1px 2px rgb(0 0 0 / .35), 0 12px 32px -12px rgb(0 0 0 / .55);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-risk: var(--risk);
+  --color-risk-ink: var(--risk-ink);
+  --color-risk-soft: var(--risk-soft);
+  --color-clean: var(--clean);
+  --color-clean-ink: var(--clean-ink);
+  --color-clean-soft: var(--clean-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-ring: var(--ring);
+  --shadow-elev: var(--elev);
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { @apply bg-bg text-ink font-sans text-[0.935rem] leading-relaxed min-h-screen; }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+  ::selection { background: color-mix(in srgb, var(--clean) 28%, transparent); }
+}
+
+@utility tabular { font-variant-numeric: tabular-nums; }
+@utility eyebrow { @apply font-mono text-[0.7rem] font-medium uppercase tracking-[0.14em] text-ink-3; }
+
+@keyframes shimmer { to { background-position: -200% 0; } }
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-3), var(--surface-2), var(--surface-3));
+  background-size: 200% 100%;
+  animation: shimmer 1.3s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

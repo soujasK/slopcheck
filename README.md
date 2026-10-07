@@ -138,6 +138,14 @@ Every result keeps its reasons, e.g. `0.63 low: no named author; no author or
 date; title and headings cover 33% of the query's words`. Platform pages and
 pages that cannot be fetched are never dropped; they are marked `not_scored`.
 
+**The console (`slopwatch serve`)** is a React 19 + TypeScript app (Vite,
+Tailwind CSS 4, Radix UI, Motion) in [`web/`](web/). Its production build is
+committed in `slopwatch/report/app/` and ships in the package, so running it needs
+no Node and no network (fonts and libraries are bundled). To change the UI:
+`cd web && npm install && npm run dev` (proxies the API to a running
+`slopwatch serve`), then `npm run build`. Open a ready-made run with a link such as
+`http://127.0.0.1:8765/?q=how%20to%20improve%20cibil%20score%20fast`.
+
 ## How it uses SerpApi
 
 SerpApi is the data source and the integration target: 100 searches across

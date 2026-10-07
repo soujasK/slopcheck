@@ -11,3 +11,5 @@ dist/
 build/
 .slopwatch/
 .env
+node_modules/
+web/*.tsbuildinfo

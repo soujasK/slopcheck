@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import http.client
 import json
+import re
 import threading
 from pathlib import Path
 from typing import Any
@@ -96,9 +97,13 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
         payload: dict[str, Any] = json.loads(body)
         assert status == 200 and payload["engine"] == "google-us" and len(payload["results"]) == 3
         assert get("/nope")[0] == 404
-        status, body, ctype = get("/static/alpine.min.js")
-        assert status == 200 and "javascript" in ctype and body.startswith(b"/*! Alpine.js")
-        assert get("/static/../serve.py")[0] == 404 and get("/static/other.js")[0] == 404
+        html = get("/")[1].decode("utf-8")
+        js = re.search(r'src="/assets/([^"]+\.js)"', html)
+        assert js, "built index.html must reference a hashed JS bundle"
+        status, body, ctype = get(f"/assets/{js.group(1)}")
+        assert status == 200 and "javascript" in ctype and b"/api/start" in body
+        assert get("/assets/../serve.py")[0] == 404 and get("/assets/missing.js")[0] == 404
+        assert get("/assets/evil.exe")[0] == 404
         assert get("/api/search?q=")[0] == 400
     finally:
         server.shutdown()
@@ -109,9 +114,8 @@ def test_http_server_serves_page_and_api(tmp_path: Path) -> None:
 def test_page_html_is_self_describing() -> None:
     html = page_html().decode("utf-8")
     assert "<title>SlopWatch Console</title>" in html
-    assert all(p in html for p in ("/api/start", "/api/step", "/api/answer"))
-    assert "prefers-color-scheme: dark" in html
-    assert '<script defer src="/static/alpine.min.js">' in html  # vendored, works offline
+    assert '<div id="root"></div>' in html and 'src="/assets/' in html  # built React app
+    assert "fonts.googleapis.com" not in html  # fonts are bundled: works offline
 
 
 def test_start_step_answer_workflow(tmp_path: Path) -> None:
