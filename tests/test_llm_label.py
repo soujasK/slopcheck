@@ -20,11 +20,13 @@ from slopwatch.llm_label import (
     CloudflareBackend,
     GeminiBackend,
     agreement_report,
+    audit_report,
     item_prompt,
     label_items,
     load_guide,
     parse_reply,
     render_agreement,
+    render_audit,
     system_prompt,
 )
 from slopwatch.models import Label, Signals
@@ -433,4 +435,34 @@ def test_cli_context_main_requires_snapshots(
     r = CliRunner().invoke(app, ["llm-label", "--labeler", "a"])
     assert r.exit_code == 2 and "no snapshot cache" in r.output
     bad = CliRunner().invoke(app, ["llm-label", "--labeler", "a", "--context", "nope"])
+    assert bad.exit_code == 2
+
+
+def test_audit_report_compares_judge_c_with_ground_truth() -> None:
+    items = [item(i) for i in range(4)]
+    a = {it.key: _lab(it, lab) for it, lab in zip(items, ["low", "ok", "ok", "low"], strict=True)}
+    b = {it.key: _lab(it, lab) for it, lab in zip(items, ["low", "ok", "low", "low"], strict=True)}
+    c = {
+        it.key: _lab(it, lab) for it, lab in zip(items, ["low", "low", "ok", "unsure"], strict=True)
+    }
+    agreed = {(x.url, x.query_id): x for x in agreement_report(items, a, b).agreed}
+    rep = audit_report(a, b, c, agreed)
+    assert rep.n_c == 4 and rep.n_agreed == 3
+    assert rep.c_on_agreed == {
+        "ok": {"ok": 0, "low": 1, "unsure": 0},
+        "low": {"ok": 0, "low": 1, "unsure": 1},
+    }
+    text = render_audit(rep, "judge-model")
+    assert "never used for fitting" in text and "C confirms 1 of 3 agreed items (33%)" in text
+
+
+def test_cli_judge_c_requires_paid_key(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
+    from typer.testing import CliRunner
+
+    from slopwatch.cli import app
+
+    monkeypatch.delenv("GEMINI_PAID_API_KEY", raising=False)
+    r = CliRunner().invoke(app, ["llm-label", "--labeler", "c", "--cache-mode", "live"])
+    assert r.exit_code == 2 and "GEMINI_PAID_API_KEY" in r.output
+    bad = CliRunner().invoke(app, ["llm-label", "--labeler", "z"])
     assert bad.exit_code == 2

@@ -45,6 +45,10 @@ MAX_ATTEMPTS = 3
 # (GenerateRequestsPerDayPerProjectPerModel-FreeTier), too few for 200 items by
 # the deadline; labeler A uses the newest Flash-Lite model instead (2026-10-03).
 GEMINI_MODEL = "gemini-3.5-flash-lite"
+# Audit judge C (declared 2026-10-07): the originally planned stronger model, on a
+# paid key. Its labels never define ground truth and are never used for fitting;
+# they only check the A+B labels and the rubric against a stronger reference.
+JUDGE_C_MODEL = "gemini-3.8-flash"
 CF_PRIMARY = "@cf/openai/gpt-oss-120b"
 CF_FALLBACK = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
 CF_URL = "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}"
@@ -375,7 +379,7 @@ def label_items(
     return stats
 
 
-Labeler = Literal["a", "b"]
+Labeler = Literal["a", "b", "c"]
 
 
 @dataclass(frozen=True)
@@ -459,5 +463,58 @@ def render_agreement(rep: AgreementReport) -> str:
         f"test ok {rep.agreed_by_split['test']['ok']} / low {rep.agreed_by_split['test']['low']})",
         f"dropped: {rep.dropped_disagree} ok/low disagreements, "
         f"{rep.dropped_unsure} with an 'unsure'",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+@dataclass(frozen=True)
+class AuditReport:
+    n_c: int  # items judge C labeled
+    kappa_ca: float | None
+    kappa_cb: float | None
+    n_agreed: int  # A+B ground-truth items that C also labeled
+    c_on_agreed: dict[str, dict[str, int]]  # ground truth -> C label -> count
+
+
+def audit_report(
+    a: dict[tuple[str, str], Label],
+    b: dict[tuple[str, str], Label],
+    c: dict[tuple[str, str], Label],
+    agreed: dict[tuple[str, str], Label],
+) -> AuditReport:
+    """How a stronger judge (C) sees labels A and B and their agreed ground truth."""
+
+    def kappa(x: dict[tuple[str, str], Label]) -> float | None:
+        keys = [k for k in c if k in x]
+        return cohen_kappa([c[k].label for k in keys], [x[k].label for k in keys])
+
+    table = {g: {v: 0 for v in ("ok", "low", "unsure")} for g in ("ok", "low")}
+    n = 0
+    for k, lab in agreed.items():
+        if k in c and lab.label in table:
+            table[lab.label][c[k].label] += 1
+            n += 1
+    return AuditReport(len(c), kappa(a), kappa(b), n, table)
+
+
+def render_audit(rep: AuditReport, model: str) -> str:
+    def k(v: float | None) -> str:
+        return "undefined" if v is None else f"{v:.2f}"
+
+    t = rep.c_on_agreed
+    same = t["ok"]["ok"] + t["low"]["low"]
+    lines = [
+        f"Audit judge C ({model}; labels never used for fitting or ground truth)",
+        f"items labeled by C: {rep.n_c}",
+        f"Cohen's kappa C vs A: {k(rep.kappa_ca)}; C vs B: {k(rep.kappa_cb)}",
+        "",
+        "A+B ground truth vs judge C:",
+        "",
+        "| ground truth \\ C | ok | low | unsure |",
+        "|---|---|---|---|",
+        *(f"| {g} | {t[g]['ok']} | {t[g]['low']} | {t[g]['unsure']} |" for g in ("ok", "low")),
+        "",
+        f"C confirms {same} of {rep.n_agreed} agreed items"
+        + (f" ({same / rep.n_agreed:.0%})" if rep.n_agreed else ""),
     ]
     return "\n".join(lines) + "\n"

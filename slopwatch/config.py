@@ -57,6 +57,12 @@ class Settings(BaseSettings):
     gemini_api_key: SecretStr | None = Field(
         default=None, validation_alias=AliasChoices("GEMINI_API_KEY", "SLOPWATCH_GEMINI_API_KEY")
     )
+    # Paid (billing-enabled) Gemini key for audit judge C only; free-tier limits make
+    # the stronger model impractical on GEMINI_API_KEY.
+    gemini_paid_api_key: SecretStr | None = Field(
+        default=None,
+        validation_alias=AliasChoices("GEMINI_PAID_API_KEY", "SLOPWATCH_GEMINI_PAID_API_KEY"),
+    )
     cloudflare_api_token: SecretStr | None = Field(
         default=None,
         validation_alias=AliasChoices("CLOUDFLARE_API_TOKEN", "SLOPWATCH_CLOUDFLARE_API_TOKEN"),

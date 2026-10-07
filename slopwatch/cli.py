@@ -57,14 +57,17 @@ from slopwatch.label import (
 from slopwatch.llm_label import (
     DEFAULT_NEURON_BUDGET,
     GEMINI_MODEL,
+    JUDGE_C_MODEL,
     CloudflareBackend,
     GeminiBackend,
     QuotaExhausted,
     RunStats,
     agreement_report,
+    audit_report,
     label_items,
     load_guide,
     render_agreement,
+    render_audit,
 )
 from slopwatch.models import Page, RelevanceRecord, SerpRow, SignalRecord
 from slopwatch.pages import PageFetcher
@@ -559,11 +562,20 @@ def label(
 def evaluate(
     split: Annotated[str, typer.Option("--split", help="dev | test | all")] = "dev",
     out: Annotated[Path | None, typer.Option("--out", help="Append the report here.")] = None,
+    labels_from: Annotated[
+        str,
+        typer.Option(
+            "--labels-from", help="agreed = A+B ground truth; c = audit judge C (secondary)"
+        ),
+    ] = "agreed",
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Precision/recall/F1 for "low" against hand labels. Tune on dev only."""
     if split not in ("dev", "test", "all"):
         err_console.print("evaluate: --split must be dev, test or all")
+        raise typer.Exit(EXIT_USAGE)
+    if labels_from not in ("agreed", "c"):
+        err_console.print("evaluate: --labels-from must be agreed or c")
         raise typer.Exit(EXIT_USAGE)
     settings, _mode = _settings_and_mode(cache_mode)
     rows, records = _load_scored(settings)
@@ -572,7 +584,9 @@ def evaluate(
     relevance = read_jsonl(settings.data_dir / RELEVANCE, RelevanceRecord)
     scores = score_rows(rows, records, relevance, rubric)
     items = load_sample(_labels_dir() / SAMPLE)
-    labels = load_labels(_labels_dir() / LABELS)
+    labels = load_labels(
+        _labels_dir() / LABELS if labels_from == "agreed" else _llm_labels_path("c")
+    )
     report = evaluate_labels(
         items,
         labels,
@@ -583,7 +597,10 @@ def evaluate(
     digest = hashlib.sha256(rubric_path.read_bytes()).hexdigest()[:12]
     text = (
         f"<!-- rubric v{rubric.version} ({rubric.status}) sha256:{digest}; "
-        f"{len(labels)} labels -->\n" + render_markdown(report)
+        f"{len(labels)} labels"
+        + ("; reference = audit judge C, secondary" if labels_from == "c" else "")
+        + " -->\n"
+        + render_markdown(report)
     )
     n_twice, kappa = self_agreement(labels, load_labels(_labels_dir() / RECHECK))
     if n_twice:
@@ -621,7 +638,10 @@ def _neurons_today(usage_path: Path, labeler: str) -> float:
 
 @app.command("llm-label")
 def llm_label_cmd(
-    labeler: Annotated[str, typer.Option("--labeler", help="a = Gemini, b = Cloudflare")],
+    labeler: Annotated[
+        str,
+        typer.Option("--labeler", help="a = Gemini, b = Cloudflare, c = audit judge (paid key)"),
+    ],
     budget: Annotated[
         float, typer.Option("--neuron-budget", help="Cloudflare neurons allowed today.")
     ] = DEFAULT_NEURON_BUDGET,
@@ -629,7 +649,7 @@ def llm_label_cmd(
         float, typer.Option("--min-interval", min=0, help="Seconds between Gemini requests.")
     ] = 7.0,
     model: Annotated[
-        str | None, typer.Option("--model", help="Override labeler A's Gemini model.")
+        str | None, typer.Option("--model", help="Override labeler A's or C's Gemini model.")
     ] = None,
     context: Annotated[
         str,
@@ -644,10 +664,13 @@ def llm_label_cmd(
     cache_mode: CacheModeOpt = None,
 ) -> None:
     """Blind LLM labeling of labels/sample.jsonl (validation only, never scoring)."""
-    if labeler not in ("a", "b"):
-        err_console.print("llm-label: --labeler must be a or b")
+    if labeler not in ("a", "b", "c"):
+        err_console.print("llm-label: --labeler must be a, b or c")
         raise typer.Exit(EXIT_USAGE)
     settings, mode = _settings_and_mode(cache_mode)
+    if labeler == "c" and settings.gemini_paid_api_key is None and mode is not CacheMode.REPLAY:
+        err_console.print("llm-label: judge C needs GEMINI_PAID_API_KEY (environment or .env)")
+        raise typer.Exit(EXIT_USAGE)
     items = load_sample(_labels_dir() / SAMPLE)
     if not items:
         err_console.print("llm-label: no labels/sample.jsonl; run `slopwatch label` first")
@@ -689,6 +712,13 @@ def llm_label_cmd(
                 http,
                 settings.gemini_api_key,
                 model=model or GEMINI_MODEL,
+                min_interval=min_interval,
+            )
+        elif labeler == "c":
+            backend = GeminiBackend(
+                http,
+                settings.gemini_paid_api_key,
+                model=model or JUDGE_C_MODEL,
                 min_interval=min_interval,
             )
         else:
@@ -761,6 +791,22 @@ def agreement() -> None:
     rep = agreement_report(items, a, b)
     write_jsonl(_labels_dir() / LABELS, rep.agreed, key=lambda lab: (lab.url, lab.query_id))
     console.print(render_agreement(rep), markup=False)
+
+
+@app.command()
+def audit() -> None:
+    """Audit judge C against labelers A and B and their agreed ground truth (secondary)."""
+    c = load_labels(_llm_labels_path("c"))
+    if not c:
+        err_console.print("audit: no judge C labels; run `slopwatch llm-label --labeler c` first")
+        raise typer.Exit(EXIT_USAGE)
+    rep = audit_report(
+        load_labels(_llm_labels_path("a")),
+        load_labels(_llm_labels_path("b")),
+        c,
+        load_labels(_labels_dir() / LABELS),
+    )
+    console.print(render_audit(rep, JUDGE_C_MODEL), markup=False)
 
 
 @app.command("filter")

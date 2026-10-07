@@ -159,6 +159,17 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   means "not validated outside the original four topics" and is reported as such;
   round 5 is not used to refit anything before the deadline.
 
+- 2026-10-07: **audit judge C (secondary analysis)**, declared before judge C
+  labels anything. The A+B ground truth comes from a small model
+  (gemini-3.5-flash-lite) agreeing with gpt-oss-120b. Judge C is the stronger,
+  originally planned `gemini-3.8-flash` (paid key; same guide, same prompt, same
+  2,000 chars, temperature 0), run on the round-4 and round-5 samples. Reported:
+  kappa C vs A and C vs B; how often C confirms the A+B agreed labels; and
+  rubric v4 precision/recall with C's labels as the reference (`slopwatch
+  evaluate --labels-from c`). C's labels never replace the primary ground truth,
+  are never used to fit or change anything, and the primary results stay as
+  reported. Every C result is reported, including any that look worse.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.
