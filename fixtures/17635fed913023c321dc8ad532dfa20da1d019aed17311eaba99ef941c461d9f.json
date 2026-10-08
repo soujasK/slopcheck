@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official government portal page outlining the requirements, fees, and procedure for driving licence renewal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+6AMd1NMOv4uTVBMjZUTC1MHqDLCIE+m5tZ+WxrTWyzXrKE1lFCe9I49/NNRlKdbhDMYgFqPqRyc6AsftRXeiu64X0gNwcwJtl50y6ViGB34PFg5oUvnl4tjYOfCaOkgZuK0ki4C+qwOygVDLOYir4fZiKFexhak5QdGY5LcX+jo5mPC2ekd/FjT2BypLG0ELx7AWTmIfK5BChSw5WCYcxAY4/zCQX2dc8Hwed65Zh2aB4NHf/EuPeP9QuxxnBwt37Q7x7x/Tw0fFX6GvQWvGcOhpE9XeAbOWYgApILP4VcItb/+jJKJWruFcD5zAxHUUHdYsk7LM4F2AsMcQa6cFSUu/0FgqdhKQpZiRN7wDWtDRze0cI0DJX12KpENZnjYg6U7wWkMPJHoF9zTv8yeoYcPdtMkGag2WukvTK6T2H2j5ZhNkpOmUfWWzeWEZJDVZ4icKxi/pu0dUCFE8uMyU4T74jlqzi2qIcMWVbU541be0bSZBluspIQymnSwCCGd8B9sLsZW67DkcYKcldWIw33clSjzP+yF50TPQ0nLCa9jfpLihw27vOJjtWKI/+M2jzUXrPAJGthX7AsqHAzGPpC+tRwMcAGriBOtH2kQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1069,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1174,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1069\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 74\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:52.141389Z\",\n  \"responseId\": \"fDrHas3QCI7h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:56.038856+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:54 GMT"
+  },
+  "key": "17635fed913023c321dc8ad532dfa20da1d019aed17311eaba99ef941c461d9f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

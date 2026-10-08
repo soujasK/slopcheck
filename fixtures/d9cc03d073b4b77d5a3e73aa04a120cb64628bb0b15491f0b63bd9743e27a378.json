@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a job listing directory and does not provide information or guidance on how to identify real versus fake work-from-home jobs.\\\"}\",\n            \"thoughtSignature\": \"AY89a18IZuW+zxFt6thhUpiPGmFP0HUvbB1N99cPKAvne04LdicIsIyjnB5eMNMTuvS1EBg8TbdKGnSpxvHuUxh/RyT/f0gsa30VFQp5+9ouCH7UX72v4F6RL63rnFFiscLx6a8KP8m/qfoMRzj+6zaKpeIUwUFQnr3aOICvJf9h45QOevZ4FEB1ksaHlNGqQE+CveZu9G0n5NaRo7FuuUFiSeDI68ytbSGYZZRltv8UTpXCFyDFQPjNyPbrdUcSwU0nAM+jZ9AjgFQljeRJJXzJm5GbGUmx+SpMMGTC3nL2wcH/YFADRq8qn373w9hMJH+el7UaSL0it1mTKH2o4uqepOohQF3QQIWxFETihg7ouyhhEt/pxx7w+yK/Nir5Dfw9DFv5NBZa5VAOBndz+pYQAtj31zuhi+LL1VvDqQtLqZe/+V8m3TsNyw7+KANm4UFsIrHgxPZHqmj4X1GaOSSzOZkUtcVRqFv1YVNl3VHRWfdDVNzgvagyNrgYjw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1117,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1219,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1117\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 63\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:46.627565Z\",\n  \"responseId\": \"KjvHau2mJvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:51.142097+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:49 GMT"
+  },
+  "key": "d9cc03d073b4b77d5a3e73aa04a120cb64628bb0b15491f0b63bd9743e27a378",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

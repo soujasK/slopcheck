@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with relevant medical course options from an established university website.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/7cie9Pi1HNRU0pJwcjhQ0PDdo5klAgxqVHKz+zIDYRn0k5gExjB+JwomtgAdPeenqpOm8e8KgyD2l0iQNhsrEFhV/uqW77mlzydutVOF5omNuo5ez0IvLO0ruXP+T3+PCbIAz1zYU/nrUvz5pCsabvQdOtQQYbvZ7TqwCUyTmftpQmjxdff+yhj0i6RSPO+kUJBA32U0oyFPWDBy1ZncZm65d4TOaGHUCNHAu51Hx+c4ShidplJhnTw3PMBRwZTgbe6hVvXTeqonJvPRfgX06xv6OR9MXDZqUZrfowGui42vgWIIofVuue9EQ2egQIjBNnFSvCmN/Di33Lru7ceY9bGAFEDafEvQ3w0gM65+pakSgLEhx7QOqhFrYHmtrEpnm40Dp6gPb+b4z8rChJdiq5i/KhKtGFpdpjWlYSn/StZnyEOqefPr9HxBh/kQMmhylmk/dD+obQaRXsNpvg/zqMwQ+CUWQiwASz4NRqbAyP9lpoxzsYZdLsFg5ECzy/ZzcU5suWmxZSGwGa38b+bEIpA8rEOBGRaZMNe7mpdbbasThFaD7CewOhk39/ABVUAT2vfq6wXS1dr4zphcfyk5eCvcE4JwfeF+bQa2miqSgGHRZfw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1026,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 1143,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1026\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 28\n      }\n    ],\n    \"thoughtsTokenCount\": 89\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:38.986202Z\",\n  \"responseId\": \"qjrHatqYPPzt8vUPjI3f6Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:43.547750+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:41 GMT"
+  },
+  "key": "097a7f64e9ac396132964783dfd21f3c29bdd294fe4cee0363fef00ed7fd6491",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional landing page for an unofficial third-party service aiming to solicit paid agent services rather than providing reliable official guidance.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+KEyEoHcjuEkjE8WxQutZBKEXOtEbeDRBOfMFLxp0Vvz/Ff59q49FZmTZd/Cu43OyE391IACI+P862g0HKKrKkDGl+D5fgP1YFu0Xu3jCjZ059hUueX1XU7/Ypx99MFCNXT/elKY4yi/Dwi46fqSuOIK4I7a/yYGoYvq9mhv+J+wSWPBY8COBpcbxSRvgMhA2tUed/hy58FSjMGPkWlLZm9Aw5FovzwVJFV854SbAYRlrgBwEva1/nOOHKd07NTavvJnXLvS5CY54C0Nna7qkUt4lANvRYYDJx2c3VctzGpSe/pNLDLRRLcLM4HEwq1bNwT0fxRba61uZf0yZgJPWBRuAb4OKPmOFooQHShYtVvpnlhhTo7NIW+znEmv+cKWVGCbp1MYGTyHyyXTTvcdjIA7UWRoIZbC/l4XsTkOKvKDRptzEGtCXJenplgvRTgR8OfRpNeG+Smp1hRSasHQOY+8Ujniw4GsY5aLaR8iEAbWoeSknVPmH6NzMU9rlMdaZGDuGGfPKN4SuhQhgVww07Ct6ofRIInAZq6xrFXXwvn1ihbLWZI7CnfB8L3AMZrMJpUPAPxK8qY48R+D5I4Gi3aellasMJOgplTV12oihNTOEp1GgtNbUzIgOD/CThmKQLVwg=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1005,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1122,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1005\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 79\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:57.442937Z\",\n  \"responseId\": \"gTrHarmEG9mu7PkPgOfQ6A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:01.569151+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:59 GMT"
+  },
+  "key": "1f914f9172d39fd9665b81ab4931fc425d6501659d8bf8d2bed8ec5d7d36d6e9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

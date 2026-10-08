@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and provides relevant information answering the query about Ayushman Bharat card eligibility and status checks.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+WR70tEfzo/evIakYaJH5DWHC6Ic3u9NZTzss2h4RJIA0KGATCzFv9/g0sEyF6rPIrCWiETDH80QVJM0V73UHaKymcBCrqJ0YDOgXYiOIR15F3Bh4JrPDNnSdaipPkmUTPtaLTBmA2Q2AlO+h0D5fQNUaQyBAsp24ysZu904jemCqhK0gf8OdMtEX++HozUCdeIFG0BqcVtAle6wHyNaDB58BqJyx8fLPhpvVawk4SEP4w9EFMkPOYd4yvD9cvqB4ab3bH5QxQm+0gcRJ2iLnevxVo/glOoUKv6TgwINqDYFYHarF9r9IBybzwaMEJIT6GONehzrs+m8DY7yd/Npr5H1Jf+F2t+GNooLFoLxhJfwP819woC9wHxKYjoz4Q6cncWGXj7TzzzVQcoaOWxCG1gubzv2NAmXuvY1gioxn1W62y9/w83HiBR6M/AHsOjzNMIOHdWOj6bN8PHeOmNjg0TfKtHd20lHmkw05ON2uTnqFb0qLH7q+Eh6uzyvDw1XNZKEHKojiiBx5mVq/GTq3XyMutS2aQJRBzz7wAzo45g0qggXRXoe6Vqg01bQzdNKIvHvqJafRKivLHLz4WTAIeMmwf0KLAlSUL5BK5T4ZlZ/mQiMgCK3egI7dy46zBTGcS9H9z9r6ufUPycXj9CxcFlUY1OGPPdHTk0ki041Z5ZsoI51ezd/xGC9HNZ4Q=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1051,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1173,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1051\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 86\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:49.341949Z\",\n  \"responseId\": \"eTrHar3vFLK_i9sPl7nvUA\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:53.582103+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:51 GMT"
+  },
+  "key": "f60ec9c96a4955aa93688972d69862d9f169725e2a7418bbdd13f14413ae4df2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

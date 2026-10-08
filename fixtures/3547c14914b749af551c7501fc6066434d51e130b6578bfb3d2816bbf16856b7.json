@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by an identifiable legal professional (Advocate Uday Singh) and provides relevant legal information regarding remedies for unpaid salary in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a1856ov1d82q1ySvqS24qK4xIRxawKaTFjJ5B8IIfUOjSN7r+MjSIaQcctuu2iI9MOuszIMs7GU8Q4c+kD9RE6FgO0lEYVz5T/AKh1FVC2jY21iRjR7dXmqJHvpSp950Mi4PaKyA1Tnh6PgEwEyA+E3TzePFvnoaNEVO8maXwS0j9uLs9BWNTWm4U1I8aYM7+WScabSemPZ9pR1PA2H5f7AfocESnsDx1ijbR63ccual6v0gaGIP13bLbvam8G70KplNZO8KKI/08JAmOFzzQxQEFzRzVktwbYmoeNfIKik7sTW756QAdCwDs8metiayfy2Y31bQFjOblv3oAnWdLEfBLdIgBrADZncDl4+JVfu/hyAfXvVF8ADvF1eC32HWSzeeZbCZQyBJcjIZ3dbR0dbpoIsgwiUZCTsZaqItq7j87jgDIvOuwaZGq4SIXUc9eRk5z5AsuB3nbyS8x2he09PG5WVBH8owjwZidGF9F+7KH1epaEOCwvd8Wlb35w/+nIsFpEls/4NENGBixv5jp5ncABZySbKm8dvcWXMzuLApFKgLM/YkoDF9+ayuuvHGcqj+DyIbGDNk4Upnl1zp9slr8+NcpSkr0FyAzJa5/7AxnDadkEvnZ6xtMoj33dYPFyBIgrDMo3Rq/vhgNgc2cUFiDPUxfQdxqL1zmGBnc8nsLktsvswSSa8uBms//gSINuwc1uh4cDYotB7S8OH6zmuZJSd6J5vCCIKtAhjV5REfNZ2zD2+zLdvjZsk7kYc7dF09Oua7bgd+9vsZe+V/zXUTCVQhI8YEmxPwUtID5fFkmkZXw6dUu1PUHjDSdJIR7gVT\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1025,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1188,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1025\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 40\n      }\n    ],\n    \"thoughtsTokenCount\": 123\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:45.656922Z\",\n  \"responseId\": \"sTrHapqMKPSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:51.332796+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:49 GMT"
+  },
+  "key": "3547c14914b749af551c7501fc6066434d51e130b6578bfb3d2816bbf16856b7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

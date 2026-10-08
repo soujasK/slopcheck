@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses the legal property rights of married daughters in India and is provided by an identifiable legal platform.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19Pm1xltcRd3Egkl09KtK8u+od6JUZPMMy0Cea6pxjJy9xdy+4oDUD9u7lJ+HfrVeMP+LBJFODATeSnYRxN0CQVGRCJ9v+aw9mKANLAmikR026nXTurrs/HM1bxMwlMzsetDG5b20N8Ne+JTojx8y5Sqx8cMVKFr7Pd3BUi0r7DbhfO+vl3kOK9M+vkBhVXIrwd9jtzyaR2sBowQHBSunl/ssX3bNPtgg/gdXAUxLZ+qYchKp7OvsZMa95sYk7B142AXEWVOIpwNGW8NdIeNq6cXM4zAlErw3fQoKNWWW8PCARcOQyTGW/99M9dxx49pTu40tt97Af+OSwhEpR5xpRrPa+o7s5eCYYNXF6N5qyPhYR3RUlqdd8BaHdzs+5zl7pdQ6Y3FjzRv62GePLgMTAl9sAPJpWV723vWkA9F/TbZ40bygCiXhbC1rAMj2Qi14olJ4u2xu4KU0AhGce3v+xCCS4o2Z9/M9cjvcfVTn0WjccxRW2+xmKwVEzmU6AAepA6gAKaFTnbKdnDpntUL9NjsquvVnSPBNCUQ7xDL5F8GhyUTOR8ZXmY4pMdtS0JPIPLFTMciSqfzc+GaVCKdDnhF8+MDE27rLqMY2+UPjAPG0Q3O+haC+tsHfQMI3p4nJ2m9cOJovhOM59b6JSH7fRWg2JRyFdJ7/VP7iaGTJ5PPIZy6WS+h2E+yxxqAXhbsH7agFGb8AFBGPmg/l3RuGVfPorWsP8sToPU9tAMjabnPrCXjvjzbF5SqPJ4RixMPtQp2A==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1044,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1180,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1044\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 97\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:10.897831Z\",\n  \"responseId\": \"QjvHaqfmNtzRi9sP5q-AkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:15.206332+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:13 GMT"
+  },
+  "key": "f6b81a49ad72d6b5a1366f3cfb2e90152bf4ff7731e2d8e34a3816a8d8e52f11",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

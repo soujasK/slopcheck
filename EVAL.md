@@ -299,3 +299,47 @@ Baselines on the same items:
 - false negative: labeled **low**, scored **ok** (no about or contact page linked) https://www.homes247.in/blogs/govt-scheme-ayushman-bharat-yojana-1211
 - false negative: labeled **low**, scored **ok** (no named author) https://complaintforum.in/tag/how-to-file-a-consumer-complaint-online-in-india/
 - false negative: labeled **low**, scored **ok** (no named author) https://consumerlawyer.in/legal-services/chennai/file-consumer-complaint-online
+
+### Audit judge C on round 5 (secondary)
+
+| Check | Result |
+|---|---|
+| Cohen's kappa C vs A / C vs B | 0.58 / 0.44 |
+| A+B agreed labels that C confirms | 69 of 83 (83%; 92% in round 4) |
+| Rubric v4 precision with C as reference | 0.56 [0.27, 0.81] (primary: 0.56) |
+| Rubric v4 recall with C as reference | 0.14 [0.06, 0.29] (primary: 0.25) |
+
+The stronger judge agrees less with the ground truth on these new topics than on
+round 4, and calls more pages low (38%). Against C's labels the one-line
+baseline "no author and no date" has a higher F1 than the rubric (0.35 vs 0.23).
+Both checks point the same way as the primary result: on these topics rubric v4
+is precise only about half the time and misses most low pages.
+
+<!-- rubric v4 (frozen) sha256:87d60918426f; 100 labels; reference = audit judge C, secondary -->
+#### Rubric v4 against judge C's labels (round 5): split all (n = 93, unsure excluded)
+
+| Metric (class = low) | Value | 95% CI (Wilson) |
+|---|---|---|
+| Precision | 0.56 | [0.27, 0.81] |
+| Recall | 0.14 | [0.06, 0.29] |
+| F1 | 0.23 | |
+| Specificity | 0.93 | |
+| Share labeled low | 0.38 | |
+
+Confusion matrix (rows = hand label, columns = scored band):
+
+| label \ band | ok | mixed | low |
+|---|---|---|---|
+| ok | 47 | 7 | 4 |
+| low | 25 | 5 | 5 |
+| unsure | 5 | 1 | 1 |
+
+Baselines on the same items:
+
+| Method | Flagged | Precision | Recall | F1 |
+|---|---|---|---|---|
+| **SlopWatch rubric** | 9 | **0.56** | **0.14** | **0.23** |
+| any affiliate link | 1 | 1.00 | 0.03 | 0.06 |
+| no author and no date | 22 | 0.45 | 0.29 | 0.35 |
+| 'best X' listicle | 3 | 0.33 | 0.03 | 0.05 |
+| random (same flag rate) | 9 | 0.38 | 0.10 | 0.15 |

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a known educational platform, has a named author, and directly addresses the UPSC eligibility criteria and age limits.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/rzqJy3lGEDjOJ3AN12DJka7nJmpowEJQs6GzvOJXVr7QD4YQaH7kLOQGfd4Qipsa6DDX4Lrd2WbBEx+HDMwD0kuaIddWmrnI22bt0zis5PGyGAGhHWIK15AxAZMxfvQfWom/RETqiFAv4iKmKWZ/md1lHkicsQOTzo7I4B4AN7WNjFx4INHtNhcLnIJw9eXto25PSVbCSrJoUQBb26Bzg/QBparefcqnpCL5dbDYl3BlL8or3sB5YH5FG384Her8B+Bl54TqDA2IHU2k7DKhexB3WouzspuyX/otOeB7AJfx7aDrcmFC+s8MiNFypz3u2xX/s6aIm3NnEu3sHbCAWQfngoy1U7hkn+D7Na7DgkyXaweOVFUqMgV5kHtx/DbT01K4bvH+oXyKoWC7iASn5VCVSoC6c1YGz4i4DGEYjNpPJ+k9HKUsark+3ANNIjXheHBislQ/2um75V+g1eb5KOyDC6ScJbEkuSV+rP7dNqyu33VvYP3rmYtWHW2+X38GbqmTCDdERxFejwZfUpYP68qaVfMB2Yt35hhG9uZFkhKu3Yd8F9Y3NvcsAs/wlxe+Gls94r0xENisdbNt2VU2mjUpP4MSlzMkteg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1083,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1206,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1083\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:33.362131Z\",\n  \"responseId\": \"aTrHapONFoSc8vUP152u8A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:37.000284+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:35 GMT"
+  },
+  "key": "db6795286ca6bf70b9956ce8483094c2caeb08a0c3ad0c4c760d00d2dc79a44f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author from a known education consultancy and directly addresses scholarships for Indian students studying abroad.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/dsEoq+eFIWcH+5h3QwlXR4NO3pmY0eB/FRjMrUot1EO9zQ4lJLtREuIX0GI/ucH8wa2po2TbmTYbSgnXn1cSUpl4oRmdGXshTkHJIoRd4jTAaAG3fApYii1Aaz9NJUJnqEeQx0jCUbJamG7r8GNcfR1/4zf7gR+E+0saBKwk+b0z+EvDOwyNneKounEkqKom2gXjUcT5l+e1bCqhuIwYL/1zjyvoPMUCvpaRlPYBme1ttO5zXnvf+INXfb++Zn8979azJYb6yM1qDrwiQMlSH7RlPHPhKfw2lBPhp7bxRU57oeYfkCEM4pp2yphcn9uwylQ7Ksnog8KNjNFLE6Mkn1xreUfDt3LUhu40ss2aj7iG0lOCSnhxPXSzNhfswG/pWFqQApt56K8u9+kLihPaEqQ7m2p0jcCSJIJz1Q/g21GpxpAXR963PFS2DWt0C6/iIeBGQHx0yHenGBA9hu6JNnZNVS60XUEdYBb62gITK5UrqGB6Vuo3yCrent/46F5z6l+w8Jqg7O15nhfoFD9INfdkkTf1oES9TWkUGr+f3zqMlruyCVgZYAGUdxmnpmrH1FmVqM1UUBOl2qwXg+6Egy3Eud/7fN5qtavMV4c1z6/CGfg7dlxg9W6qBYXL0cGZRDnlW++ARh9UROG8+N6HYI4W8uhj68hnSa/90rGRia7LZSEmRRoNbzy5X2N7LFJ+CposNXUwWAtXLbswGL3GRTl5NoA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1046,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1177,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1046\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 97\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:24.490131Z\",\n  \"responseId\": \"YDrHapP1HfCO7PkPiMGugA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:29.430132+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:27 GMT"
+  },
+  "key": "f2772da11a407b2e789bc88b596549e248bbea0a0c9170d6d5f968de58d24895",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an SEO-driven aggregator portal with keyword-stuffed, promotional content rather than authoritative NIRF rankings data.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+YJ0dC/EJrm4zRuzDZFaC1cVFrTcL0sKNofWLC9q0YBPeEqtjHjmac/e/zEjfgb6Lzus0kTxn6vWCBi1x5Da00+TvCj5L6MLkNiEMuUpFhmlSTkwJvL2iEl4rjN/IFZHcTevbQyrS1MyGjqacjYVk40rPtnHd5bx1bC+iCcyuR7XpxfPVeWupyCbqtFbSjo8PXLhOENNtVd3u7HQFozeqjNDN8SNZ2XnxwomI9AGOflItLDnnSCg7Fadf1d1qpEvam77bLLpqalVyHfSaWf9y1gX1R6J5M+v2IGj0zK+qo+K/f3CiDZyO2gF57aIJkxLa7+NhcRBG/iJFcA9rpsI9+ALsF3y/NwsF9XZx3anrJutEuWnfI6WhaSbgkalrrgfQPHUJl39Em/VttA26xPeS2tYUlaVhou/zrwExiIqyNndedZvLKvO+d2fZZdbAZhQIEL5+c4XSSzs+L8drIzIIb1h/B1ZtdMm1mbsORO5DwrbCU6gVP9XypYQciDHFliXiCqO0dyK2lNzQqcbPTcAI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1107,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1209,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1107\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 66\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:46.831742Z\",\n  \"responseId\": \"7jrHav7hMvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:50.723202+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:48 GMT"
+  },
+  "key": "d42d2e21f241da38f8d1d3be335272152901853d988ddee09b9ef87417f1ca79",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

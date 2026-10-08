@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is authored by an established law firm and provides substantive procedural information on filing an e-FIR.\\\"}\",\n            \"thoughtSignature\": \"AY89a19YF86sEHleqAtTRPnJFA9IRmLmBHkEOVGY128HD0OIJMN1eroQf6KA5icsKqkCE+iqrt85Q/kflvJm4Q9NqHIoXdpkP2ioKWZkTizzi/4ayD5+xN2kgbzJ/FVuTgFW6G+H7FfIMyd9xsQh3u6K/oW4AFfQpIpax18wNycYlYsVMM5J4MyVWuRngllyacKP8+dc9yOrInci2o/Y23ST98WhOHihrELbIqG1Q0x1v8XedmvWKNsjHHf7eqHrTZVzJ3FNcvadP0IQG12DQfTrU1cTQ0qAyw1MaawVpvAt8JjduWaWLcl6T2kyTfm+lVxC4mjmJvyV4aM377vEvG6g/B45KAIBEgcuiSweFcbsKGFAnC8ruVCim/hPAl1PbtxXHc4hgTY5Jyz10uDC1cV9mai15x7j88fS929SZ0u4axr0e3sVAnPApuNfUqG1XBVr8PCCMFPIM6L2Z9C9HTVIyD9rp8ydfQ007IV2LpAMDfO7Ycn0VYWscNzxu9fzAxw5I2Zis0PYZCeBrq8eSPBZh61ArrlRJu1M4bZnneIevCzC2s58fhQWEfxQDge7pYpimSm0rRmmERqNJz4QEzh7G5NPw8+doHx9SLS0XuSswzUi+dGHHXFexmqQO+HUFAZHKTOOl3De3LOGmbiwE8h/646yi2wIot5L8Nx0zr81zfo3A6obCtvR5l7axbng\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1070,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1204,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1070\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 102\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:06.543748Z\",\n  \"responseId\": \"xjrHaoSYIdmu7PkPgOfQ6A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:10.482697+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:08 GMT"
+  },
+  "key": "9fd284ded86f2549298f5e4c79ca793527bf9a9da9f257081daff79709336716",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

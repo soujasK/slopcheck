@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an identifiable educational institute and provides clear, detailed eligibility and age limit criteria that directly answer the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/5nxoD0fQAB9xw2EBgzY/sQWwIF7sk55SlYtZLIdeqILUHjS8sLZd/ju2J5EN+hbZ80kFS1hrq9cTCV17OmnJNEAI/bydnYtCOng74Ttq2dhQ4Mgr2YRB+Eu8aHz6mS4DSGAjafgjl7GWU6oArR8fYcytQfV++2HO3+5U8jeh6KhDCCBlGpFpIqJzOcl1AptOFadVYqvNsxh26MtarvlIhIkRK5oJOWABIc+8JTSBw7okEplNdMKpgd9oBaGKkAoHWzjdDwYtZnskpupxLzEY76BzBibxJOPiXHL1noDJIKHfJ8svNAk0ykt5IquMXwQL6oAsK2ugrUzN4IsY3RYJm0gVA9ULeecFHi47xfsjHTcYPSjEY18pqtmDwT8y/MeMYVeV7JXyeSs5tybfjucPtBaXy7gx4SwjohunQrQ+0rTxCxo9tkoR/z1+vx3/rmToSptNLxOOTSShz+Wawup7WoWzDw2sdUSZSOFLxrWyxbNJ+9TA=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1111,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1203,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1111\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 56\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:37:52.449476Z\",\n  \"responseId\": \"QDrHasS3G86P7PkPk7GygQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:37:56.340540+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:37:54 GMT"
+  },
+  "key": "a7d4662631fe561cd004a9d14bd2e9a495bb52e53cec69daf66b973126a8ba0f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

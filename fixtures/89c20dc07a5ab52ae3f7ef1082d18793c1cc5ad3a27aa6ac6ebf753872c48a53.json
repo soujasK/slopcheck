@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is authored by a named individual on a relevant cybersecurity company blog and directly addresses how to spot fake job scams.\\\"}\",\n            \"thoughtSignature\": \"AY89a19wLYPCVH3qw7xOCuAsebQRm2eXrlthqScyLp3PCkRD6DRGnUWkzmpns3xsEmrSgkGXfhrA1/FHuid5gacgFyvAeQ0a2c11vR/NrBW9Rm+QZvN9ez9ALpbA5odPK3yrY08m1JoZPfKNFm6+XY0pK/5iDVB9i/NedBkIli0bk9hkC6gvexpS7pcJU0EbSI7DFon3k+I6Jt1gHx2D0lE5bT0nYNGp+IbYU2SiRI9WSPx8E9seFdWsD81T84Fume3DjaP/W0RF7RPpo97zFFVnPwMSoBZrAfUpQed61sWXd+9VP+M4a1Bm9NIyrX3He3jh3HTuXK4hiHB6cQ7N3BjmI1vB/B2Kh3OnGVk7OP2jDr+Ep3pPWHjvdI1YhnGgVhCTPQZR+yW5GRHW1IR589upUy1Sddkfq/woLtlKehYolbQR1f2dsdsqX9TSgyEhAnCSeD3jjHQVGk0vABFNrs/aBEfaqlZgWviNKKG2+f7uNH0YmdsVSCfo/MOrfoQV7gX9qpNt25+u7Mz9CBph9VmGDcdieMagALNvKrC4/WQ6PnCw6SNkzMBvL5UKBKdbY8M58AOJxh0QYlvNmLScEva+crky0mC7tQ3tfRKSQU71XsY2af0=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1096,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1209,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1096\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 78\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:12.082453Z\",\n  \"responseId\": \"VDrHapWEBebq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:25.939603+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:24 GMT"
+  },
+  "key": "89c20dc07a5ab52ae3f7ef1082d18793c1cc5ad3a27aa6ac6ebf753872c48a53",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

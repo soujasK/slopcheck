@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial third-party filing service and department directory rather than an instructional guide answering how to file an RTI.\\\"}\",\n            \"thoughtSignature\": \"AY89a18n/ow2pODi8i2d1Eey/x8euTs8ZHjETgH/qSMaeH/4L9LfYwImznqevCM0ScCmJqMWRpsf3SS6EZ7zNyLACxjDpGDoTTDP+1ywdrYh2sAKhtGqtZp2f+mQwrMJDrNi2tQ76WfmG33vhMQDZXut5MqTtRqPvjjyxitDDxo8C4zwWI/YbT73JDWq8pfmkonaan1K5zOmkv/aB/0LDw3064po3JvAmBflTeynS2kpH1oxOuDPEOZ6VANgOQh3HDsGWkgGbiU4E/dNUZ8g0tXHPVtrNGO7cbv7EcW/dWmdFGwJ5CW49b6dwV9azyyITFNOekzi0y8GV7a/yGujwIkHFaBvZgXbbQwOTVxtcYNVpnJ0YE6qPMqBwtigbmtg3Vpxw98SsySIOmxhr8e2cEO9T86aTrQ4qr2Ldk83ZaCK9TMgfnePm8Dmzq69YYYOl/5hXtywbLjNOMmyQwEY4pLCQIqitEy+bC/JEx2vTppDTm/ZEzXibUdOYPGr7Uhg5mCaSohdwPkN6SoR7vvjuds/lQgywYJHkpJ6kmzP03gREfGA3GUd2ooY8QFeKcpkgR/KwHL4zgGWQYkjomkSozrq56TrfvrTfP7Ri4e7ZdCQgoJ6LdirsA5e0rZ8OloAhLqVlsU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 978,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1101,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 978\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:01.370561Z\",\n  \"responseId\": \"lTnHaoHPFp-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:06.571709+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:04 GMT"
+  },
+  "key": "4741af7eb10bdeb303cdca70f50ec45c2bd1598c6e1dfb1229833192649c51ab",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

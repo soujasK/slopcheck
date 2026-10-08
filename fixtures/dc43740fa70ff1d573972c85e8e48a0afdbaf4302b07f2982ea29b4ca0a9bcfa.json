@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides detailed, state-specific cutoff analysis and rank distribution data for MBBS admissions from a specialized medical admissions portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+A2Wxm+YcfECeMzYWDh0Ach7lKU+hofaWWBNTS3/NBFlmc68RHoC+IQuZ0YLYbGbI5Bw5JUVwWd0mjnv/DueV1VeI9YYuRUoZi+lyE1xz1jhOdO1tq9BdPpgcoJEhTBmkyq6X00EOGOjGQYwIw2LqbbY4U/IjBQHTMxbRXmRGoLeMeLG5gBuucQDA+P6qX/UJ0z4nEL9QqOdWxeTDVvMfzqDK0HoFeXTGPVZw1/O6hQIAkA6IFxk+Z1yamg08bhVH0MGItMexcc/b5xTLpBmaG08ecIIY3htuC1yOQSc0E1X5YdrJqUlnEmXcX+vXOeyO1vPAkV/uIStM2teUj9us5Twa7rVLNoRvhHqVSj+nfwhf+Ek7o/MPD3ENDx3hSzMobQGk/0lrbFzmfLnX9elhd71M+LGK2davUcKB0BzexoQ7CpxCb3wW2Z4Rtso5q/PnPVXKV+jRQ3pZgz04KqEbMEi8YK+kz7Bcxf7wAIMlxLXa6GufWqXNUecptHpFRUtZ3b1Ruhzc4mR3IWTUl5isVH+EFdQz5p08UXnQH3q3LRp2ZPaqy+s9X7mlMon8aIy939FexUn7JfGqpKzzz/su67XdjRMwPNxhkhLWuviqSdfqJkBH523uL26WAcLOUldiCPunAebspw9l0aQjdNUZp2PZOvB/ByacBy+49lYzq0DNIZ1MGD4yCFvTv76dJYjnbok+s8CNo/2kOgnvH+22jBFmK0ucZcpWlU6KKg6ssYOOOp9jMTiMdimeulOaxI60NuBS87ye+cY0sGo7y3yvNyl2tf790W3KOVmV83IcJe8uYZt4K//qPwMZHaSePldreHTwC18K1B/y6tqWo39ATur228gySaLaSxqkjyMEqC5zRcZyAw1/x0kRSJ0SlnE2znVxc9mURg3VhkVEmlD1LnIXAWuLVCo2RUJf9JyK3lYWcqKcblXl35qdMIgUV7IKpHS63PBBSFIcZLZYS31q2Ee+p72PBuWPjhaLq7QkJZlrU64fH81d/PPuYULrFmQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1283,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1453,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1283\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 135\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:23.442379Z\",\n  \"responseId\": \"1zrHaouAG4m7i9sPoYey2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:27.993230+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:26 GMT"
+  },
+  "key": "dc43740fa70ff1d573972c85e8e48a0afdbaf4302b07f2982ea29b4ca0a9bcfa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a detailed breakdown of the CUET UG syllabus with a named author from an established educational coaching platform.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a18WvCJqeOv7Oa7CuxjJ0Bwe4qgQ9yq7/hl7k9xhMNaANWVP/ybfHeUGujUTZCknQ/DJKCCyvn4bvIhybFTJw3GLNGZVjIFEAeUdwjLfW+QiN3UsMur2gkZTmJXJn5l71kODY9/CGAn+jGQF+IYrXmLIcdQccwGxkGhGmR+uzVX3r5ePKhy4LYiwOMXCZS/64cjiV32dU4JqFMs0TOHLErS/u3PdXz01CTnLuVjtPjIVdc30kPVDzxiIiVDO8ZS/wcQVWcCqTRMeGBVBp1gBmp2W4gqXpZozRCqW9ZC1OMX7YMfF0Ydekh8YZ/cE20Th5X8DrNvGJNC8pYLZAlBfoHexBGBnb0dcNUXu8DqgljhfDff2q0gFx+GDQjaFWfALtH9K0qxY8ojyiLzrr4JW6VOxaX6lbX/j3SjvQi2Ei9uqqwyboL7g0IYFhce3B5l6uiCUGNN6Z16b0ekTKSTAxds07SPP4mbWecDXAq/ajR8R4nuxwJZYS8C1N9cjshdrRuuZW5NNGH7LkKJXmIS27sT+h5ecxRMiJTAIEMI0rXHGgoTImcs4JYKT3Y+ndrNduWQOqF/CHbnGW5EBBHKoFSD2jSYRNEidsty+UEO0NCQdNy+bOw1yowi1/QPAxFPwXY9ovfpt/AaiMENgMLSTt+WMAM3kRp7orXZtmxK+lL+Gq+NbglDfsqDo31Z0FlSxYeQhl4V4En4jX78v64arD1ZLsaCZybEUTzgeyPsSofJTRAxLIptXq6qsJu1RyOqq9wkPq4FQh0sD/S4xZBz3WTnlHEKRfxEshefZexVaR/p6wfz8vzny2BpY/Agudqh9xIFwZ6RX/q/ab8kltiTWrecjqvrz2DKpDvfaMcWKaNk5noReSqoi0B2orSCEhmSNLXThQGAQP/9O3GETJUAZmeje0gN5XUFA1T/Lu3t8HRWADyEj5yKHI1nz8wXxVeVM/jIzzITFa26we0NREvs8W5Q+WewwgG7FruT7PiZFd7TO6IaQMB9CLgxCo3sqGlnAgMg01qx93570qUfQqkN808wDryo7L1NqrLbwQr3eRRieL6PRJAk8dP8S2Ux9HiNfUxycsdcrBb2abYXGZWWK3uGclFCYycrRvnmPVX/vI6D25zXLRegxNUmpYTiNp0HtzAyzpPWKeC+PYAG1yqHvCRMGD71KVHWSUfGWDCXyNPLq7p1LmrUA36ARKBxjZ8MqGAZQVRTj2cQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1159,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1409,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1159\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 40\n      }\n    ],\n    \"thoughtsTokenCount\": 210\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:27.962169Z\",\n  \"responseId\": \"YzrHavncOpfc8vUPjJDCqQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:32.691232+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:30 GMT"
+  },
+  "key": "74f7c9bc34dbbe9b9eab5abddd186afbbffffb8bd33bd5d6263e10d5524f345d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

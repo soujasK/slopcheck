@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is mass-produced SEO content by a test prep company filled with keyword stuffing for distant future exam years.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1/jUd6V7pnN6Pute/EW6eJGDv3VoFJFgUOeIOAC2sTf+/LuBJvcPOt7N7uFVLA1BUYnRtaZ2+CQVEz9W0mNcjBY+ttAZcyRouTwynccml2/aHzEFD//BwWx3ab+vVucTakFQutxmSCBqlCBsw0xd7C7jhhVb4qP2XFPU3Ap7ZC422PICLi1OzDXmcJ22FNLYJJEyU6Ha+oBvTGhZBL2ZWqOug00PmCyAStJTQEiaxEtrq9wffKi8TIBOd4SHUaq2Zr9LWduIwrryE8gM8RhB0/GxTHgckucVXglm84OmEvz4enXj570kcwz+bhWOu5JTltN/IuJ7572+n7u28TWT0lE/HXVAv65nWwp6Ljmmt0uhqmZpM0etM0YMmSXSeqIzJ4BYA/H1BqzqLbTux56vnRupqpNbZcQShr5swXwLlffzRftC/ZwilWXuNepfYVyOBzQmhttp0NeUiKEROpiapP+7ZOjSWqaXWXKX38na2eCri2jnWg1dnc0fTeiHZMOFMn0iNuBMHVdnN/7AjHCfCJfuOkfOm6QJIwJyi4RMsm50j9FkjMb7EV3oc2anr4puHb2ohouizl3bKZNeTC52yKiTetdj0pgRNvZOjp/LWAFObKMXUFGNdiKxP64HNX4pYK3Tfjwgr9v9QVIVHEFXZTsUo7M/pk8M1a8tZfxs+2IXgcQaS4gcJPfhYBQ0rC/TMHsoyyRnsu4nzXPp0y1sj8CVKGNG5WOfAMMnFNiKb/z+QA2YXrbdZp4nnuIm7wMWzZci8j9adQMjdVgomwokZBnG04/2N+qkNS4dvJkT4WziQ9TQqh0YfrmujdX+2QvSSdBSPtqiF71occAVdNY5CRfteeadLHgAyRU0EB88F9qoZWwz2Gy23CG8v/K3235knJ5taeP99EK13LpuiqnzcNIB6sP22tw9qU4XJowTnFBuFVLeGYts7OcjZ2quZ/tRXN/Vr9oqYkzKKHA7Ql/ZdqBvPYFZKqnlbBKSnCqTperXGHujeCusOjScBVfB/yLvAA=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1063,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1282,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1063\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 180\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:28.867554Z\",\n  \"responseId\": \"3DrHauL5NLCR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:34.137234+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:32 GMT"
+  },
+  "key": "d4c6b6cd292cdfbc758ab0244901b42cec11b4dd908908d63f748388bf9ef582",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

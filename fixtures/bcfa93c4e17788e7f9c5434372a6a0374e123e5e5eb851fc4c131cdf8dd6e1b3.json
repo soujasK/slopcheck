@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional marketing article primarily designed to drive admissions and leads for Chandigarh University programs.\\\"}\",\n            \"thoughtSignature\": \"AY89a18T92XHn5XLKC1TyRox+3E2vxgpzLnPzVgaAjkS9XtvCy/Kj2nhc48hXJ60/9zPM47WcAdfuw1D5Sp5B7o+KWAMjjKOpe1nqXn5RsnVuCemXe/xO5CLAVD/e3OR8lC+jFKSiZzMGfyLKbAX3w8Cji8jhGeYp7XOR6K+q6AnAMuwiA7//jxhqiYMOTXe+nOIqcgPwDWFNJQOxFlCctJufKYAElaXjgcZ/fIH1CMEpqs/GLaryBoXNaiBbwQQYBKARxA2Pe6vPOOAnHuBzDMVt6IfRfEfFA9ThkLuMWseDrNacmvQdWuxMolht5368EFRMXFGP70bIJGUsAPhJap58mbNHmvjBZzdWRyJrlUlvywF+Mhe/yEWb/mpAeQPUnJexYw2jwN96XW3HnM5cHG0mnag4aJL/0Dsuub66DPhZnT2ECSuch2neJ6fCG2IquLr/FfNwJ7J/FCNhfvV4KRKSgdaj9LzCpN+TJ7hHeBvDPr5E9SGDg/QsmnR2ENKqREmnr3PFuV0sYxif6tOF13SMO20zadrg3SDYkpEqJISaTC+ZO7xSFPtWGwId2JjF5if+kAQFiX8WZ9pyZzXAFu60I/8/FnOCR/igwXuC6s3YBybg3gC/KqjUyBbJV7aUROVhTDTILodpf3EuHhxrXpyafO+ZEwF7P7HMwxxIByQFAGy6PwGYj5UXZc=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1102,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1213,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1102\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 81\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:10.955363Z\",\n  \"responseId\": \"yjrHauOnOp-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:14.990485+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:13 GMT"
+  },
+  "key": "bcfa93c4e17788e7f9c5434372a6a0374e123e5e5eb851fc4c131cdf8dd6e1b3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

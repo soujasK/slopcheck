@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the CUET UG syllabus with detailed subject breakdowns and has a named author on a recognized education portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a18hDNA+WB1f3PTWsLCu7p15dVLitCGB/Td7ay7LsYZ+1iIIflroKWQdhaFhOuSA5SU54lcIr93cZIbD4NSkf4PtbSaonYiB6LQaDV8YqPhtKeFVk0uBnUrwoZEINg2kzLscG1S/0ktiXCSk2NOk4D9PUsfN8r2lgdryir+XQ7ogptayAaUrXPc8H+E4Pk3wzJF2S/OVLuRH4khV+E07hOsUgBbZ6CQL+hQPJxRH7+ZuLHCjMVdNjEKSF7+docCWzIYovUR/v2kRisrJqNsXWLywVWG8fcL38wLhlhXdn8ofLeCPMxXkULIo2AIV2nuJQleBg09UGxlCmtDvtYMzKY4FKcDikdUl3NI4bO7hwjZK6DRN4R6tC1frQ34LP35039ksN3A4skTNNVmlmibIY0dtJvHtL77LyGdj4RifjlQORdffS14aRPiLfApaRDfxN5uOQmp0l+pW8N4Xa/xApIX9/QqY1vACVuq3hxrjErRIiojYs1cmXumio0TAI9Ckxy7AYyLjiHy0pju/1zTCLhKuC+2foeVnHpy3GZiOOL0crBrykvPSyi8hxvq+v5Esl5PZJC/PrQP7+KlhlnHjhb1oxOMWikFlvb7OIKyc9Gb28uh3ip+tWUBCB1PzE8UnqIUB7Yah3oHrVxLaD26wthe6HuaFKHjoUNIQ26RQztD3mqD1elEDY5/ALWv+TeZ/mjiWhj2xGmcpG1h6jQFxTg988zenGE8=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1097,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1237,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1097\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 105\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:27.291008Z\",\n  \"responseId\": \"FzvHasDhEZ-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:31.596337+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:29 GMT"
+  },
+  "key": "a4037a642dfe19934b5c2d2461cfa526bcb2e3e8915669c7da2059ce094eb2a1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

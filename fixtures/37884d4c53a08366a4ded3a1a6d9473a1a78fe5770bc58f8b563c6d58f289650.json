@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page is a legitimate blog post by a named author, but the provided text focuses on general job search strategies rather than specifically how to verify if a job is real or fake.\\\"}\",\n            \"thoughtSignature\": \"AY89a19iegfF1pDMDelHCL/eHUAbPe9frM2ZGP9EPJBGQwdEhGjWQyZEFkjVi+aHzSnJUhugw9oACmpKBda8icGxsoKHVqmnfPXYHcYnBJy6dTnWaUF+L2T5Dj72jvQMMjLNVt2fuL4HO9wbgVzbOrDBkyYiCiYQCcRiGJIOe6XrocUjd/O6oJU55ARptz6WvyrlMSIwhyhwXxXGLXy1oy1eehlJMtD/wTX3aYDbZ3YkaLb4jXL2ubzEeWShlaJUT7ET/DxhQOPzLO70efw39uzujqHidvfHdFoQXrAN71oQPW0W8J2FCMKVVWoE4JckAsV6A+upru3bMGH06F7JKzI/ZMMbUEoVpN0+4oMYyP0KDCLFu+0Ds93Ufo0sR/xn0XB0IhyAZPsmPTu7/6PR091ulWtb9xb/qLtPjqpzrdstQcSBLASgXR+nTg0WaZLLJdy7tWVSUas8xvCNWch286bifqGAbP9QMGJFFjp2m8OS6q8ZFNQxAR2oE+3rDpLGU3LHMPn65sHZWY9eyARZFxuLi9BpZvjiWpavgvXTbOPs5QJXq7FRsSsWryygxXclcwnCMEnEW5w1gi7APXpCOH/TLQhKYGHCIMI9mz2xHfyEd7yov2WAby2T2kMAoun89dqUd3Xk7AZ8SvKeQ57iYgvOhVtbpufU/BuTZ+4HFcaCOVEajkUojzwNyy0TxMDJMZUqwPTgoGn500RgS299KQAqktxwzBSOLTiVAWUfyNAA6lOjyzwKqmRah0HXA4/FzYUgtMNrYMkhI99pE1FHY4s1LV2o7YKBSwcaOI6sglWSOtxsh2BWAs77uagL7+aSArEpauWqMEo23CSw9IVu2ZZPZkxXHy2lmkCMNoNaVlPXBQX3P/iMIBPkUFNAzKYS2ElCq8RA3ywRaUR5AiUOI35ScbNK9i+wkHFqH9+iIYPW86Nzd000uJaXKDNzKrWn3WhntQe3VR0T9M5/5nGYj3LQwwIBln375IEvKrV15vjNsrzJHs66CXURHfXVVxA7fLcJWonh99yDUzDAjCQn8I8RA30GWXOfXRwRbg/Ug0SkQNRRV01VIXKmTbVbMP6rTkINS5cMnj0qAetlkyIikM440W5x4SRym2CLcm1l0ILR8/gzHbcRFmz4LrzX2wDe5sGwRYI0DTiP1vjs9xaYZ+bJmxizVNkBP3osfBfHshrE5h/XFwviYj+HCYj3iwd00E6R9+PwE1AqtG0H3mkNrQ0RVQkqFab6G9LmNH3QRF3MNAcxy1i3s+Scv0oN0omg8sgWYMDB+U0CHMOLHi8+nYjUDulg\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1026,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1288,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1026\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 48\n      }\n    ],\n    \"thoughtsTokenCount\": 214\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:16.783827Z\",\n  \"responseId\": \"0DrHatPrL9zRi9sP5q-AkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:21.542118+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:19 GMT"
+  },
+  "key": "37884d4c53a08366a4ded3a1a6d9473a1a78fe5770bc58f8b563c6d58f289650",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

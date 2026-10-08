@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The content is completely irrelevant to the query, discussing European Commission State aid policy rather than legal aid in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+5BEsIArhDFDjYArhamDgNThp88dnihFn49jgFsBDBCp/UaqADHEFqnHQQApDge87AbboF3fna3RhoUyC0L8680akwBPfagUPsbMrIQF6xiyLXckmBk4JiCZ3emPMJc0cbDblxUkd924ZvlspjDJLxJPqbT5wwGdNdkf0ikg20Phf8qJq4CEDgUMiopWrX7J5gutg+t79GNTIROe2/6zMp70P1oc1iH5bkkDs2DmulrXDa34LCzYX4u5ty/1cAjc8XExYUAol3NOfRBp0FrR6acpzobrJjXWUN65yHIcEoRzh6dPb9dteDyY2SWCDenHdCN0I1WPudD1U+SrBJFqSFD1SCEhwO7gRkhvS1xLcjJKH051lRbsu9PQVqRl+khcpnnR68BgQ0NMEjwen4IcAyUuJa\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1028,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1111,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1028\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 50\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:38.408417Z\",\n  \"responseId\": \"bjrHauH2GLjk8vUPw_ThuQM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:42.127608+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:40 GMT"
+  },
+  "key": "7ca9701d0e0726c7835a802ef6a314562f2f47387a549ea4741a51f6ce639c0e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article is written by a named author from an established educational portal and directly addresses the cutoff marks required for government MBBS seats.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1/s8a0VNfvJbsytSoV9xm6THOtUu20lKBXbjgZD7PSbRpvviTKdcz/cprsEhMpVglEa7rg8jy+qDBcnE72oaE07GsCy6a+ecYencf5tt6Pr+JQOTKJ4qquJ+iTkPfH9McxacDV8f+y3q+kYnqx+nUZOy8Y5L/lr05H/oC/K32nrqvTYGHLeBjQ1sHJMycSf5uKdJsA39auOYlYM2HmvXlzAvjd6xwz3XTmMcVPRTH85OHumtHNyrLEL3ro5pJ6WRbwhlptMJoGU2/0dseleHDKSa+MLsZGlp3CmVTYqoJTZmgUFuExTtcLdy6f8PL4Y2qp1Pgrn9Ka8zwfZV/8jJKgTkiBdiIb+kgqnj6HXmw1qFxKNEQGgSsXEeCS/lrBW86AKMQpYVwWdFUbmVn5CrB8HylzziqHl2eloL4Wp4Rd8noxqg72TQTkbJzM8j0/1oGMVfyNrmq3XRv336PaK+9GkC6w+ZSOD0vbwtfDhy2KQL1UbaiZYTfYHHgifKGYphPw/t8MjFdlW+6v0Zl/AE4njj8r8XyUNF6TVYWx2T/nVfUUQwel2OarcAkvh\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1069,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1176,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1069\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 42\n      }\n    ],\n    \"thoughtsTokenCount\": 65\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:31.240927Z\",\n  \"responseId\": \"ZzrHap_aDvzt8vUPjI3f6Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:34.846129+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:33 GMT"
+  },
+  "key": "f965e1aa9a3e8847a850b20d4f818938222bf39d13b85380fa5c298fa0aa839d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

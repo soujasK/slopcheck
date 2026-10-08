@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a recognized university and directly addresses career and degree options after 12th science without NEET.\\\"}\",\n            \"thoughtSignature\": \"AY89a196OC4NlxPAaH1KJcQzWutXscM8lE2PVANSidcrRtf7nsqBYDw+onjVaH1ykTxgdp2wQpoGUCAArXdogyZejFx4h1duE9PPs7ow4IIVmmHPiJwMShnAInDES+Dnq7WuA6z4hFRc8ecb1qwc/LQ06bbDs0tANqYyJh8PiEWB2ZO1IiDJgvo8PKZwqPMcV4E8F7+xB8YoIfpHkWrInUv2jEHVyxrjx2+nTKHsHrq2qGMObLoDaUtffPke/BQ3DVL8dbEjok1RvfgVX4cmOWRMFMusuRVSqWyFvjnjhjgf+07Muojn4Uc37iq0igJzNPobsH0nsRyyTNdynkbLLOZ2QX6/6Ja9nH7ZwNOALCI9gxhFfzyfnrC02haAy2vL9WO35tRFCjlwR6kfJcYap4aLllJoF0MVZSvGd7B8VNWGZeFrALoH3ceY3szRREoY8ClDcoYpBLMyt9vevzD3+UREov5Mi67DcrGkhRnsyOXyVakxGtrf2mEzy6HLtxfJ1uEGHnkQ5rM3Zw2HzxRJOnag5PBoB8/jwBexL6Esho3JUtCntrzWNiHEF5SJoWhPren5flIq9aIwvqYh3m7g/kY4vyEhOnqgKwt17XR2AeGrZYE+/TnrIQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1036,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1148,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1036\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:08.812633Z\",\n  \"responseId\": \"jDrHatnMMdzRi9sP5q-AkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:14.380995+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:12 GMT"
+  },
+  "key": "09401c7b9367be8b257588b42666b33ea40f90ce391deeb35000ffc356724ea9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

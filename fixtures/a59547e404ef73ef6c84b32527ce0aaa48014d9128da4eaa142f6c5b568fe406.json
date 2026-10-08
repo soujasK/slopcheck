@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is the official government portal of India's National Legal Services Authority (NALSA), which manages and provides free legal aid.\\\"}\",\n            \"thoughtSignature\": \"AY89a18bmoTJcjEHqhdXYzFE0UemKLHAzosFP6ksCwfK7ZUYIucFyiYx90/mc060jJWUnYncCE+ijYL8Mx+T6Y+VWfR4RC1hMdUiDkAdZQX9YA4nQAwVwTL9S5QGHc9sOEGWs165ZgTLkNyNbytM0eBPNpAC8lLg09oNOHNiPxKw/hMsU60pNBbWrzPqvzEHv7QVZrhF2GJmBP+3H54J3hPjz8dF5pgD95PfIWkOKWDeECZPVF8U8a4vzedkcBvNCDzc1KehseIi1Gp3mW4vige/LxXrmWbuoO4GNhmosw+suAbKsGkSZCXNH/1OqGXEjXYkZk/BY4gYeu8JfmPa1ih0zrkHllrC9s65TmI+cX7SkHjxy4bwFU3t58v4rME2KPnzWcld/GSDnqrsPXD9HA3oLLzOAgYQbQ/Q9zW9dAJyDy7stNZGuCL9IKyUGjSWANMCbIgH0p/keuZPmU08a/SkVcPTyxSj8vU1A3BN6ECHS9mCrhYI194URxSdiDM3ijCAMQklOWlbVeCbWcd8JDGyzObjzVw/kGT4g+h6E9c=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1053,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1158,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1053\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 68\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:12.889962Z\",\n  \"responseId\": \"kDrHauqoNonDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:16.213237+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:14 GMT"
+  },
+  "key": "a59547e404ef73ef6c84b32527ce0aaa48014d9128da4eaa142f6c5b568fe406",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is an unofficial third-party web tool with suspicious future fact-check dates rather than an official government portal for checking PMJAY eligibility.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/DmN5AjRpYIzjBZu/njocgdjUTpJzBUoucCfcxTGryuoR5Z3DOetvJuB9sVlYH0cAVOK6JpgFEzcnbJ7RHtdMisREszohTQY+jFfV55DQCezJWfcEYcjoKHs5CLIVrvscDIxgABwTco4BftKb/TOGOVjs11S6QB69FUQyy8XaTx2LzddhuPUfQB5uFq2nlj30u23CMXdY0MsO/3XQHZcZvbrm6b38NpJ/MbW6t64twcbmBSpc7VOCdSh/kBvWoOGewMCM4lbGhv9Les3cpwkC1BIVvhoBwZ7svO17PTzNqGT59RLbB2jiisRLD89jbZXZCGG7URT3qEwtQLvNxpNh+g2Ig09pwfTLGI/ai66KJw3cVbWNjp6NBCAyGRvjUQvEUszRXMPBO9H0Pr61rkdiXFKGrpbBN++aAMLNoxUVMd9dqhQdGHocjEjlok28yng8O0zeC+LxEH2/2ixJFyWxP7DzvN1Ht/1uxUQAjr+1omaNOfoVD8DG/xoG4JZTX/M31WPjTDEAszxZsWiwjVrbRG78CHY0ntdX1+Wj1idifQFdp44AQefmSCYTPUZtLgp2TUolIupmtQCVPTN22U8qUS8LyVW4gHpYLlXq7XwY5Nyi14XKnYjLxuBr8LIpFJFHH/Z8OlZ6OR3LGy1Z0SBT7jPUXC5ubQcy215sLrhuzH3INXOQeshqiFJtSKdEJEMlDqwiPCRc6mnoQ2vxvxJXu4FyMTBUMwRAGbVaolkxCQoGR2JFRaFcjLmmY6v69lpPvERft+AIz7Z1xpdkPRjtCZ+zgZo+YV1XqLcjvB+bFE8B3+Q==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1080,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1274,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1080\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 40\n      }\n    ],\n    \"thoughtsTokenCount\": 154\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:30.157465Z\",\n  \"responseId\": \"GjvHapnOCebq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:35.269267+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:33 GMT"
+  },
+  "key": "edeec089b2887da8f8897be5653ad22cf20386d97c5110d4884615d1e5a0625c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about Google Career Certificates for job training and does not answer how to apply for a government income certificate.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/ajRFFsu7upjP+3Jd2/rZNAYPh4Q38+jdYzHhKRJqECrONnfoOqaCS7FfTQAxJsh/9WycXG1inDv5+CWESPRh2DWlKDTqNIb3Fh+kfI3enpAjG/7gMf4yAVFxwfkH6uDY2JTh/0oAmjEvgdUufSz+4IVzU/ifeIUNQsGcwN3Zk0bwHizfHCxfTBkV2ejzztDtSOwLLgygYRRIFUS7qpuMwSGx0Xf5jQ8yfJA79YlK5eusksSE/7QWXfsLRmIZ7awB8zQq29IuhMrUvTLrBQtY0W38yR6pFAjfjhVysDDkA5C1EkJAFd87vyiH1cN8mLCxi/1/+kSi+hp0vNKCfA9Q7XGLQqPZCBN31EASEKUV5Q5iNTrXmlFVsX9q9LJIxRY4IhoQLIYfRP/wuxQ2zb8TzgJLsrasCPgXaj18FCck8P1k3QiE3GFWn5OQjnn3feelQ0OVkpzRrXdNpyndKEdWw46jOmsjmzhgavFLYsUNKMHkekZcQUUar24A4PgXdhPW6LPuahSo8mJsz\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1063,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1158,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1063\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:27.950799Z\",\n  \"responseId\": \"nzrHao-EOsHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:31.777001+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:30 GMT"
+  },
+  "key": "7d3e805044f8d4162f46209f5e347809904e41c1e5e2b053f45c4e114dc83e0c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides detailed, informational guidelines and FAQs on how to file an RTI application online via the official portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/8rmizfJSSs0YkPdGKud+NQqMe56JdI5D3IBfcj97jQbKN+HUm5BnkMwHQt70Xlsl/x/bQfrjIPuI2+hPSyWTY2/QhkH54Ko06tl65/MmSdT0qpTtbxH+BDrhvNYk5YGaevFhe1fySxyBIhAUX+0YjXWJtgthMstJFb7x3wCaPoAUWxGzWQb0jpHBwnNBQCZxmZwgBjnJGxSfDnwbOo0QKEV/1kd/U0cylsYWQTvPsLm+L33FFWmGlOFoRkRzChsZpIkzg23BM5OJie5TkXEqhIe1d29WHk1lYTkGTMPj4w/VvZgvlityNT47V5p9k+dT6Bq9SBKQGspAW1NZL5DJ/0yWp3OrtD+aOdfU5jKeAhBJI9g5mJcwlJfhHi+WpLs07gWU2qhyhz+ElLycShrJYivylPLK+BjvwnjWOI6Tc5g7vKZV9G2AvAqlqO0vw3edAnmjVcsydCUg/buhrPJk7pU1OQx+DzkBXnmdJDpLSIC1wrKPe6/FpoKKtekPm1H7coKMYNHrbgQ2FgK3dv+uwU5JzlFfRD1R5VG5lNXigitdSc/XevIwGPSIvbKS7d4HpV9gUj2yga/1spsaPXGR62MaDsKoR/1AODTJjrB04/6umpbeWUVFAGz8xWdiTL2WrfJKnLNBLMefVz59wDIg5fPs/Un0KaUxxbWso9EXXS6Qsp9deODNWlqjBtS8=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1029,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1154,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1029\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 92\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:14.732272Z\",\n  \"responseId\": \"kjrHavDYLIm7i9sPoYey2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:18.882959+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:17 GMT"
+  },
+  "key": "5d2d863cfcfa5af294eed0ada29e42d0e79a309a2db6506834f317b5afd02460",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

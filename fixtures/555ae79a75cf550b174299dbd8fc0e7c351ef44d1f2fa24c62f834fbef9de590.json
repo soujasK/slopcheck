@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a user-submitted legal Q&A forum thread addressing a specific follow-up scenario rather than providing a comprehensive guide on reporting cyber fraud in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/Vit/3/047Ii+zAhD2v2LRn5kxs3xWviSFw51vywyUfuo3fH0U05dheL24rFheaqIO6u+SECE8Ay/03i793RnryMcCBktfVQ6bEE9sAtCz3swUeseB/5KXkupfEwyBLXHeyHbKdIVDPHgilVKX1C37OOfRjRWMiGqn2Hy65r4uRr8irssgxUKD8PPVns5EgfMwD3QpsUFoiSQdbeDSB5ZP/SfNr28OeBOKLA+weyQNvQA6myEj/nhpGawfdNVhZRzI1QURJ07qcfOJOC6dljVmnBtrah3xlxqoST42+/pJkGEKwbKjZr4RIpkmIO4AsnyuIBu/96FcHQP8eNgUbuaSONbhgxycj7Pt56aVDr3g3z3YhwsgTYSC5xjMQPaI7lzrdLMmSKwRnn4SobywTzYtEt5XN8RehIlecEQCfO9HirQ4ru6uixhvQwk9nhd/0fLt2UCl57oO6gQWpWVWik+b0dnydnCUHoBn4QZVUkwNlXnhzp5pjkHF6jNRMo86lhbXn2A+6QaavLQe9Z8T4c+JPvHWCgnen3Lv8lk295fLhDuCwom879CpH0pw3yrPHO8FVIEsE6dKEWzdNZiDTmBygn/xNJvJTNRMCFjYFTmN07hzAcbkd9znc/QXK1s28cLhX0hf3p8DNZRclSY5HndHP91LzI0CKWOauLW8FpjylMYwXSRxvVb+psKso6uuKRcW2dGRuJWTs83G4aCkQeD7qURaGQIss6azl+b8jLt99m+w6DVlQUGSvuYFn3AnvYQfsQJXKD2KmPF50h27WaiVcBhKy6uHkXw4ypb912Eoi2HHaHvtFimGl7W59ptkVEA1MZSV7hSWHTDVMDaHSDbkntB9n+Mha5X/JaxlJSiZv9eA8ZrIYLE4cnVEyBqsI6uzraaNTwI+OoDRF+yKCrVcPaNeV8x/aSNjId1l/iludspQieTUhmFqxzUxZEN25xITSnUKpkHLkOlRHBYdtw2Vaz46diwN8eaNi5p/PmorTTuK5tpPgJJ5KG3bP532czQ9LnTGMHdnRKKmKNDrXo9FrhSRAEbQLmbBRc6PGx0mroPoDWaNU3rUzIxVmLvbsCXgHWPd0QYJLhEL5bweH+UABDsIAl0sUJgcPHFBuDQlexNmtvoJWpBZh6mVN0rkZbCVFUGyYPS8jpEq4yM1z86ubhnCYPoxiJv+CevAcV0fr+vH9iUTCJRWyh2AdsVwkPpi7iq+OPbu84nJV0u1ZzymtBKIOTD1cQuiPKDNoTQ4trdHbYs8KBRdb0Yx2X79/PWm7H4A0v9aRpqz+9NwZAVJDtkVR3p/zJIM39D54VM=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1093,\n    \"candidatesTokenCount\": 44,\n    \"totalTokenCount\": 1349,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1093\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 44\n      }\n    ],\n    \"thoughtsTokenCount\": 212\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:05.024896Z\",\n  \"responseId\": \"iTrHasDCAZzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:10.280648+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:08 GMT"
+  },
+  "key": "555ae79a75cf550b174299dbd8fc0e7c351ef44d1f2fa24c62f834fbef9de590",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

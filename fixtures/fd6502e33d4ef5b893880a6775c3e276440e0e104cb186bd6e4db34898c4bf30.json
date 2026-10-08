@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The content is provided by an established medical university (MGUMST) and directly and thoroughly answers the query regarding non-NEET medical science courses.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a18wV9kV1ccNBSDPngF4fzKs2e+RnCP1kY2cbHFN9wtz0skidgwYQGo28bcrZQ1whNHVROjAUHXMY58PPrymbDyJcqFDjPIEn7fGppl75n9YBTLBk/TQB3y1E5ldJDbGfYz0S9R8WZhLCAD4rMlD0Hph0t0t+KpGkeJ9v8jmbtqKs1bkFKONXc4YrAv1kQ5ah+YZOX0YOpHfgv1n+aYcWTDVhzbRFAbq8SWZ2vIW+2JLTQlwJPPDsyFIDCFfC7wDSIjlSdyDnIwOdlgw+I4PRIVOtckVCBXFiEIPZryrWIoLucIbEvznBLDrfuicnmmiJZV9iq/VmZ9Rzn5XG+P+ocz9bY/MGVNnsCr/klR8taQJ/dQrMZy+uoVp1MB441g1D1CLm30/0dgau8dzkPUu/ckbVjfl9VnMzgsu2pN7BTb3EbUV48NCb0QkLmEQNFjUw1bqDb/hASRya0rrOoaPpRE0Pmlj48YHps7nNCbeX4x+Zv+s5V0H7WsI6bkqpIGyXAFl8x7WiQCFOBK09K8E9714ysRSJvexiJsVtGVw382FpxhnqYpVXoG8cCRdpdGZhhxuFoH3sM9Y3yX8ewhnJt63AyZgxy46fMQ/cq6w0m2fQK95u0g38RWZdK7xqN/R+wyzHhAGzae5PJhAZt+0/EDX4ifneUsAC4fO48LEgU+iJStWVo7K0DE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1079,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1216,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1079\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 48\n      }\n    ],\n    \"thoughtsTokenCount\": 89\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:00.107700Z\",\n  \"responseId\": \"hDrHarTJBqeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:04.027183+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:02 GMT"
+  },
+  "key": "fd6502e33d4ef5b893880a6775c3e276440e0e104cb186bd6e4db34898c4bf30",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides detailed cutoff ranks for government MBBS seats with a named author on an established educational portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+jMfKC9wV0RVrAdyuhyRluYQ/NbmKjW7iaZmjf/xb+/XsnJeXv29AnRUGiXiUWg2cDqRwfoNZjTR/zA5zzh1X2+vAFVBHtQGuDiSMewkh8kCf47O0pak1GwbNu7akejjxpIF2JpDQXZ/jQYny7XljmNdr1pbR/0N7TaZ3gEvlcfewu5kxSY/WGiaAwhwZouf9jGbh97dXio0a6vKuZVJ8S3j+oyZ0iBn3thiJekJxgnUWYeF5jAmUWCWbTqhsErMtgu2B5mWawPEyPo6gP+UWNJhNwdgBQneEq0doTVhbzxEqZAgLNxfDxaysATGTi27hgrs/471gNgXrhdXuJHySwAFcIvrkS6braO2d/lv4yG5jw7a9UoT7K9P5hFFX/PVSkm4if8nbQxy/pMiA7n/MjL5SD/seTLEsEy7mZ7Z3yGUYBi4fACwYyzG1HQqF89a+4OHMg+KGbSyBvvhpS0IQe0IBuGVEpzbNU7BgN9lsYypr7vznKWHDKvWtt2gwEOotS3qsA4WtQNHNOnYMLWGhUI3wl8uNTStSSOs3jkj6RQoLd\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1155,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1254,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1155\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 68\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:11.062367Z\",\n  \"responseId\": \"nznHap_nA47h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:16.034277+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:14 GMT"
+  },
+  "key": "2d32f422a922055c0a6aa22728274e3cf1d8844fc56f31cd5ccb134eb5c17e57",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

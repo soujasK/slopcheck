@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"It is an official government transport department page providing step-by-step instructions for online driving licence renewal.\\\"}\",\n            \"thoughtSignature\": \"AY89a19k1RC8IfD7rVWGl81Tq94o4lP+52blAV1nmqT77iNJX9Ry66B7mgzk53WJu+ETqrIRzQHNCjAvUFWJp7hLhhbLwpeMIoJvBbK4hGW2Zr1GN5PNcssUkCjZ0/9oD4VOUmCcHPVv/1nqB3dVyd9hn5zYklP36gAY8Pz4kveFljRCb28dtUC/0ncuI78lqtPZM0yMcRyyEVqI4U2mWBDj/qpjFIk5Z/LHtCu1bBgPcYxgTXyU1UKZBoZN/9TZ1g4stRFXgwY6UoY44BP0H7ps2Lz93/JMJp6Os4QEVqXyZMMCT1YIz1fVBDK3b3jQZdywnhcHx5YuEehPYb//Cf7SUB63N0ocjW1HmS6mkGoRz7MJBXMeKQEIhZygj2AD9CgWgy+4zAtkiB/bSM/W4YQJxsOCMjrLJXtPgjpltr/zZg1yYfQM1DWOXJ2g4B93ejoYmPGDXyEaohuiBuYkhh5n1sF1e6C3\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 969,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1062,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 969\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:40.062535Z\",\n  \"responseId\": \"JDvHasfoA_zt8vUPjI3f6Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:44.004006+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:42 GMT"
+  },
+  "key": "54cd7733236c96f458344594b98a19bb6031380a587b19a08bd8fd1ba8da4f12",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

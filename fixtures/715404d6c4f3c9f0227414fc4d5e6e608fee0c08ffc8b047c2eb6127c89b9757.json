@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from an established educational portal with a named author providing detailed NEET cutoff ranks for government MBBS seats.\\\"}\",\n            \"thoughtSignature\": \"AY89a19F0t3pht/Kt9uMAlSAqp35qCTudJWu/YJ5cX0oN6SxtkqjIjuMJaUFwu3/LloUp0fewJ6/RaPcbuQEAoc6JG5JT5YnGsl1Vjh+WygMmuCTk23ORL6zoPffEMAD4/x3/dZqUiK9vTsEIsH4wx37xyxVeILxRwoy2jD+DNRLSj6B74w4sufUtiz3rnWvSE4xgyAf9fZOW944JVlvtqbg9VUdYCpUpmOacBsAcQDT1HcXc1qFC1gyXFOh5Wj5r3Sd4vSfXLaGCKebSMQX6CfVCxEa0q5r6uOKtqvbnpfRE2HN3YN8+/QkDatiYFPdxepsVObPMDht5h3NUyTXqvIK1U8kIDDgGtE5dsKXBDKdxbjKBHu+DKQ6fqo24fbP8zRmaDooOCZ4SgMAN0XZPbntgjamwrTx5Qyuvrax+DU+1aPmX7p44Z35DkgSYL3ozfm3UzpQqJzK2adk2BZurSjIWKwMUq5vtAQJdTEKuVhpQ7xzTbKyIj6NwkGmA3JDt1Y/xUX/UkoI5YcYdb+xopt3mUtwx1dkqdvqU256lRzyd4+hQD9r91ieif5uGMPgoXPOlpWvYwnJpepGP4Xyw+hn4U8vHCem8mXEuHRnxu07+C63AmTYfG2uapO3XVaOnM+ETkPwP3Ztfm98nQNN9Q32ujjOMiGET1QDXwEvWO4L2Odxr2vImkiNhygjz6D0GpwJm/ErKUa8hsQ/iaQBI7Rm4K9OLLleDg/8lg5s+w6bXPoMRCrjdmUB0yctlCFVdoYy4knkwVswLVKxuQF2vWODALJM2rN+zOP4BgdHNHvWR70Zztu1bvuSSlqJEE6PWsS40ISymzA=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1100,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1256,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1100\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 123\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:24.095360Z\",\n  \"responseId\": \"FDvHaoDpBfmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:28.717273+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:26 GMT"
+  },
+  "key": "715404d6c4f3c9f0227414fc4d5e6e608fee0c08ffc8b047c2eb6127c89b9757",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

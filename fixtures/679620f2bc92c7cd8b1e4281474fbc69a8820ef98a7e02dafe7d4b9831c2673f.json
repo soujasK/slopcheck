@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic tag archive page with keyword-stuffed tags rather than a direct, comprehensive guide.\\\"}\",\n            \"thoughtSignature\": \"AY89a18MU0gir6ZBPj2zSqupl1KOhonaM+ZVhsXSKuDFyNfmjCUdK8vgLtnDsO+GP7ztj8T5iixsG/2Rb72ak7Nepe/Q+zwnLEPlfXKZ4x010eVJHAYAKiL0UsFPIdLdtV9YzSBE16NwluVHZMlV+01kJsVf+zFe1aUX7TRCQahA9mb7aOK1iBtWE+mkAW/5mcYnKFife5YVyu7tMKAuabZNGepuHC6jJ9kgyg8t0N1Oyiag5aO2DGgBHUm7Tj7PaRnykZOVZxv1u3m/Z7dV4dlezz5gD3w5eDzZ+PBe15T1zafDOhDHmIJ7Jk8Cv5ClPUKm12kHVBgptFtuW2Js79CnmcvRNsOij988vIGbwqw6q5MSScj3HnHRfmxSnZr4xuPBaFltsfujcGUwr+GdAaoQcBF72dkiyaDtRKB+/6HHN2ze2G23HVEyqJ/0D/lM8B/JmWVUPFk=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1023,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1123,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1023\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 67\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:37:49.945414Z\",\n  \"responseId\": \"PTrHaobaOYm7i9sPoYey2QQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:37:53.911155+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:37:52 GMT"
+  },
+  "key": "679620f2bc92c7cd8b1e4281474fbc69a8820ef98a7e02dafe7d4b9831c2673f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

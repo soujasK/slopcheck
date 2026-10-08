@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is the official Indian government portal for online driving licence services.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/KU2AeqLPwrj5Lf68ikY7cJrFfvOw6A6H5DhWumJt+1m8bWpgGnWqOkxywwdXVithoKHvcsqzRdlsf3qgfgOBeF2cwDGfu3mG4KHYMEwCeq5EuPtqGjSQx6rN7f4BohWFxOv2WvzI5zC3qvyHwIyd68rf93fAS69jf0HKeG9XNe6Kl80mgqVKjbkoULSf0dbAWxfPWdWiH+GM30W3ydJSfmj9A2zaKxjHzj3rzZkh9/8vuIM4WfrwOL8NkWLzSrVSA/KNYeRvcrL9tNT+DxkFtmJAJKhXfM3TFrW+SVHO1RdqJq8qCPgYNFa214xOtqYehIS9V+U4wgFbAu58tZuMO1LRRtuZ+ZoBoT3cdgaVNJYe5ZWfWiU33lUnV49lrvTRKyLmf0lBVIQ/rpY/XPjyjuY/S1N1f4h+koy9C/SWhBEL4bVnEBZoliw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 990,\n    \"candidatesTokenCount\": 24,\n    \"totalTokenCount\": 1063,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 990\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 24\n      }\n    ],\n    \"thoughtsTokenCount\": 49\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:57.049182Z\",\n  \"responseId\": \"vTrHap6AA-qs7PkPxbOygAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:00.445913+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:58 GMT"
+  },
+  "key": "171894d04b519a29b6accb674b0e7a5386407677ba57d69c2a5d91a28ee93c0f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

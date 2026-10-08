@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an informative article from a reputable news outlet with a named author directly discussing the pros, cons, and data around taking a drop year for JEE.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1/PN/jGhon2cMW1YtLGnC6ugIlH8hxEDD1HvEdFdR2Hwudpn0xN2+gR8wwMtaMIP96wurzjmIIfZ1J4vmpfC9eo/eS/+jwHM5Ywba2QtH4tndiw5gFU5YCxMafXpBWsghvPB0rxYxplIFjpMsoMqUWxQn/1pfXCKepZ+krs6NNyJH3noiQf2CDZq+jGlCNpnr3U0t3Uy7lOoVDoyzLjwzVrGwh4OW1sNW4Zn51+OwxWk2VFPdWY76vAIWQ0hNVWl8WNdOrznWs4nqLX7KCSJgz0aDf7QR+IC1QRZ9qkVutoAMw4UH4X93d2RtwmmJ9ELfRnF26hNAuh0IT7hh+NA2wJGyoupyrjGEmTk3cTvdI4umm1uVcaNM9IsXO9HQ3Pw5d03gj+EtVWzoVqx4TK0EN5hkmKJNVncJWTAvzSAe1UOExoC64wpOhmkXPdj7xFgCr/LTExVR6ws8t+QLYTC8WiWYssrzbUlXV31E+ipSvvFBtp4v41prVzphHqb5TlYyFJtFwn1kfga9R1JwUSzKBDAQY6cHya6pj1JgJcsMAArKY1Rn6OMW2LTnPj+pzy+Zx3ZrweAburMMNvozcj1f/jyprJEzx85z4nOdQGrQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1063,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1188,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1063\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 48\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:07.887824Z\",\n  \"responseId\": \"mznHapCYNubq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:12.503659+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:10 GMT"
+  },
+  "key": "235565e9ed20068834e68ac9c96cc86f856126adbfc436e9e251147b56a5fa7a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

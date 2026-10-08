@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page is a user-uploaded document on Scribd containing an individual legal notice template rather than an authoritative legal guide.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/qgyv3UthZAslAzZAA2U7uz3rE1tcp9RQbaoVG4nDpxaBfxo9TfF0Q8Mt9PCbAdIQnRayU3ho9DcJRM3HtTHKnIPDQA1xVSqmzY7ummoG2julmgYHJqOQiiXEHqdY7vRhhZcdAYqGSZNYNTXcX3cCvv//sJd8E3OPwfevwER3blPTTeKleDdDAebGemY5mwC43bceDJCaO+XXFcnVtUMhur2YT+GZB+UAo8mONjFBhgrcEBhiGSPHSnSh7+fNMpki9+jYudSo54CtiW5T6C/GsnCda2Y3rmDUmvuByrQKrMZ0tqD+zQ62kS5zSoIOHU7/mtKfFqzwhmoI1GcHkgoTKTv2VD3wei9TEtcWEZeShb7oxw+D091MwAXdckHfqYIedMXIxcT+k+eH79KLmfUCOVTgjwvz79hS0FGuBZS8DrO2YNWKkZkbYz2BM3jLMvk6m6aC0aO9aGoSbV46mJ5tjhPWZFwhqw9ioLE2r3wUCXpMzC11iArKg9EVtii+7HjtpQaog2k43aj6rXYOUSZU1NPd/SLUDxxADposfWVvAbrjFrWbCxhvmMhf+Jz9F+rvPGyKp+ARIErLQ2MZJpdaIaHYTBQ4iaTJCYTU3fIMum0gzrsZXoJQIoaquQ0Z3WQqHcLf3/mtMSOZT0nimpMjKUwXIK9SfDqKH4pjP/h5Fa3LBy030fSBTwMyOF1LV4M/7aN3IyjobsUNjYN7+jMyePiU5PEaYxExSTsr1S9OovP/MTQkHfu+EBsOngoVRSO2EZq5QvfhF23rWvwhj8YDltBcfNOIIyjhTzslrU8O86pbkIhjsZR856tlafgxUgcBh0U/2tlTyofdWcAGg5Moo8wZa4uiiWDZt1FHTSQjt5MTJFMjqmNmwTxjI57muHBvcaQaxxvKGj2+N3sy2c/VXGx0VtEbp3g33a9oFETXEu40le4WEOUSZSw0/XwJVHWhvFVGouJmhzB+RsDx0GPADdn43BKSKtmmkhPKU8ycne29NsyUBAdr0BniVqURsTpsozu0Tcll0oF2uZNqN0AsPd/Ra1VlfGHF6dItxyoqe07ioUI3NBOnDkBfAb95wqIUD+1yBKwlvUsX9eMx4nK5uv11OyWyGNky3yWKccfG7l1IkdvZtsVcL4mIpFaaN5tFrUu96glOTdjoPuz1f1jYS8r+HWtA6Nvf9LlDQ8YUFaLOL1aOuXPo86eONN1e9k9zzC2tA53k8KvVXZD2KTUBEpNAFoWSYga+vJYYVw36/DSImf+G0RXZcbzrMyNFwaTsiWcHEF87lF4pl7cfhATeynCR7iMqcQoql+PzoMnHCPAI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1124,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1353,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1124\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 193\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:24.360039Z\",\n  \"responseId\": \"nDrHauf8Ffmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:29.419596+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:27 GMT"
+  },
+  "key": "4f616b2fffe13cf46ac33d1363f34f71021ca19a5f821a48b3da61a96531c5b9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is provided by an identified legal consultancy firm and directly answers the query with the legal remedies available under Indian law.\\\"}\",\n            \"thoughtSignature\": \"AY89a187vEqG+jnYujcpwj9/xGKrUb9q5eVHt+CSEegpfdo6oKSfXwtzj4pmue6F337HIyswfTnbFKJsULps05P424qFHLsUDYA/i1NW5s+0yT8G7WXkAbJ0UGB0DxdFVh6cS/MrOkoGXNQPer5mNX3mnxUktda36HzRPKemVc95XRPXAn86Sv3hYfNggPl+ugC4++ewacKWYOujfNsXFCfw/UgQa1xmamA8kNOQhsET0/81GmocnkS0xkoIz1u06OoG2u4qjf7MkUv/clsn3DDRAVEW2N4WMm8PSNiJZaD6WthdyUMp7sRyxb1b75lO8dBEHdl4m+elpAgMiyq399YYQu+4hBkc5uDAzxFRe9Hb2hE9s2CwNQIYryanMTHug5V1/Eb/M6/V1L+148vxN1BzmRRW+t6TALzTzG33mdwrucclMAa6Cw3DlgEyM/Q0BbW4FejKRaUB6J8zpN8rDMQpFizhg8NBDzg3clNrO9JWMQRnbhJAhC3oTqaEzAb8O9MyXUZ0DeZooJFHDaE+JU5Ut05dKlBFDdyCVjdFE1q6t/h9PsLwcp71Syzk+ofLXfV9nSGZc6JlUPAU6NytNEQX+1H5cPGQqh6PJCHjmN5g24sSAyamXqJmMy9zckv5KbQgVdrfX3D5+BM/OYdfxxlJKM5Rx9rKH9ky5eVe6GhVNL7NrzhwoHSuvGy4l9/4+J1pQOEiqhyVk2x4c6YF/MmmOnK2TKzmw9YjEDI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1028,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1167,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1028\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 104\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:00.006015Z\",\n  \"responseId\": \"_DrHav8usr-L2w-Xue9Q\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:03.936442+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:02 GMT"
+  },
+  "key": "1c79e4a15298deedd27d2b865b1aee712b4ad35143951b5e2991614a601d1b85",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

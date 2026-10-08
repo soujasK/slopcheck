@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article comes from an identifiable source and directly addresses fake UPI payment screenshot scams and verification.\\\"}\",\n            \"thoughtSignature\": \"AY89a1//DzxYH7cd78mVlUK+LDdBo133FKI9zzkm+I61vGIydozCNIkn/15LHYWiZovg/y2RfL7B9cpT5l3PCptbV9CYy41sGVfylVW25sV/ASiAxKqmpVCTELSEcNRp9kteXk36JzHDLhBQ77374lpCPtCKJTBYUvgykqGQxBc4tdcnwQrkD/Fx93RkuYYlmyLeOuq8N6IB0J1g9I1xetLWhNdz9ZtzhSvyfn6k61JILcuhzpstuo9VbGBZ3Irm3lXO/U4K4soqi1F2zozpdBNZb7RmcrPe37ZiKpMr8XlhnKQrvfE5CwCELltIreOAZDg6u80n40LwrcZN6iz7xpZ3OzDrdr2vIL2q92Y4rl2zWrfZAVDhQnlaEsSIU1Jp7R3tMchayoeMQ/2jh6X+WLNoCCyUUAsv5pA/9dCPa3Q/1UZSlRuQhjVsGVT1VQQQ/8qIvxlvXgq5zgMqmFzw2Ot5urG409tQvtXZMWCDxD52dJH4PrIMi4jQGe1d0E0tFKB0zcx0PSRqZIBMR4s34qVVJgkHzpY2l/d//i97gMuB6t5kLLdSzHS/xP2ZkB9LKDcJY6YW4Hw/N1/gpf0ko3A+jNayO5NfJkx1nu+IvYUtu51LjWImjzIwCixvhr5EWAbkbA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1016,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1122,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1016\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:46.695083Z\",\n  \"responseId\": \"djrHaqu2Kuqs7PkPxbOygAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:50.814946+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:49 GMT"
+  },
+  "key": "ed5c0f19d6bb5607a3479b3198cfbaf2c8001431815568f163e8f5a91e7c164f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

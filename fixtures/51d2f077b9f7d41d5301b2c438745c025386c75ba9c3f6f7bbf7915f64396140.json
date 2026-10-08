@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named author and directly discusses fake UPI payment screenshots, red flags, and prevention methods.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+chKWwP9kQaijcMmLtuDTvSokXZUyHwIaBQAvLvmVwRs15om1YIeiE3VR1MBTQsQ4RIwnz5F+u3QViFm0R7cWG9+K+9pJbs3EgrSqK/ItsRoKijvXncj6InD2vPTuRLb+JnKOcU2ny1BULdM54+g95HoCUZL+8lydlQYtzFZaru36ZvfZhOk9VLu5Gh0VEJKS3xYA7V6Yd75gltDHoSgBeZPtSZQI9ie+zFCs+SQNRcLM1ctY5sCUtnLymAHKCKEZAl4u+dIbMvEiI6RGal01pQV2MUp/L6GBteYbEdOeQhqyz2xRgv8guwtkFGLLOX1+h73zvYPOqe7uICtzf4vGSj74qqaZGlTNxewyUAw+ovMFbp2+NdHs+BfU0Joi/mMitMMnVAxLCuyonkWDCBUoMMvtT8/hSaAeq3iTdj/TMp+KYZrKXZaxh01vK6gVnaS7//NQ55VPfBSZ/iA0AUOyy3kPLSJcaFCYOT4c8ir4jyBd9yk5SLnfNkJPNJexkp2tIl7KlnUPUEVdaLm7Z65naImWieZM6chGl7aOt0svFVVp+28uxHet2h13CV8c0pQJmovaaNOQ1GyYR1Eu/v+YNrIfF/4iKwihe+wva/d5Lr9w8pZCdNo1S4E/qDXkVKY+ycUjujw/Q6P/GqgEgXUFwkGAAUdzW1NVkgIz/2CETK5h4DQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1033,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1167,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1033\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 100\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:30.290990Z\",\n  \"responseId\": \"ojrHaq7hEebq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:34.640754+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:32 GMT"
+  },
+  "key": "51d2f077b9f7d41d5301b2c438745c025386c75ba9c3f6f7bbf7915f64396140",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

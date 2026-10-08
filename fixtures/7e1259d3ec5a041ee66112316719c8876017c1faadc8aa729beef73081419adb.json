@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a keyword-stuffed commercial promotional page for cyber services rather than a reliable informational guide.\\\"}\",\n            \"thoughtSignature\": \"AY89a19PugP8qRsrpTdFIU0bTFv9Pn+UKKGu5n82CDyLHyyaA8FF28vZhHVwRl8Q5aHmq5Twy06wM7hLiDG9gnG5oUQFbtNg61pR0ABfe81CNF3eomomMv+Mzkg1/IezgX9lBAlKaWv/9AjGvjLx0QWf2htlolzWE3H8PmGKdlOAKJOwlTmyRm53BnP1k5SEGxr2fehE3x8++QRDc+jS8BvJKT4HhLFkl0F7vHmR0aWqScu3XGOK25ZKsxUIPtk07HaY/H6CPM2QbKdiaeXzVzauGXGL7LfZ390Rcs4Ti63PBzwmuhiqKaEtaZAU3dyRZ4GeD5ZtM7kdYjF2dYSqVu18x61+RHmLIhtiZF7/CqT3OfyaQyrJrnTD3tNRXV9ifhubFyX5+P0kO641tGCaoUEYRIlmbHwiBRg/0Gvqp9UsPFBlWJ3FCb616VoWglslDWdjcM03u8LMPAWwttd+A2+k9OXt5ema+OLhBJuYjsY1mLhPZtjt9jws695NOQKXiBGpvXAeR9pGVlPK5+lBKd7GFPkc4/54xSBYeNUJmIaplOl562FfRDYDZt37JFWikCAtNtR/zcM=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1049,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1155,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1049\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 74\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:33.788797Z\",\n  \"responseId\": \"HTvHar2SMJzPi9sP8ISloAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:38.225333+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:36 GMT"
+  },
+  "key": "7e1259d3ec5a041ee66112316719c8876017c1faadc8aa729beef73081419adb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly answers the query with accurate eligibility criteria and age relaxations provided by an identifiable coaching academy.\\\"}\",\n            \"thoughtSignature\": \"AY89a184MITxBvSi64mfZ4/ApnurO3zJ6D1aEzXZxQnrSYNVxmF0RzneK94igAJgQ8qvLqRR3BBocdEfJu7vSjO2fiqz4v5rPIePPWe4zc0yE0AUJGv6FIUAOwwEX0XGqs6+ZM8xjCmu6plEnuAoig9W6W1OSlLM1S4t1ziyeAASCjfH99wqhHqeAim5vKSFqqRO/o8/27kIgX8xbymKoVVshh0R5530GE8MaldOrO/4Ej4TaRbolcktgMWDZIULXThKNCZv16Cdhgp49l2rnFOxqnSVklmFNHDnYjY/q3ClZj3ZUD/Bt+zc22SCWQ5Kv0l0lqz2akpeclUk59ypMcqaDs8RMyB/K8WBwtudur7irPLGHJioEkHj46LBwLlF5a93C0YKDgUEYUzz8PPXlOSzcQeOGjf5qsex2AommX9SH2NGr9yMlTybzZb3qVathU72ixPL/nkocVly5nDlQDViBJMsRgKmru58IBBlEgK6OViKVynXwTJVHqRQHoN4LrJ6boSFwfU6RO1csTncs0Jb9fWS7SVxNtMU1FFFmPuudUYYVNEeRnBm/Xmtk0ZUug1hT3l0uyqPxgM0u7doSPM5zyi6stjSrlRvZ6fYe5OHethxY6j1RU5zqWFPC60HD7ATVeLSIR0=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1104,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1224,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1104\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 88\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:20.410802Z\",\n  \"responseId\": \"TDvHarKJGbCR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:24.218692+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:22 GMT"
+  },
+  "key": "87fd2191ef29f654c5077a3a5dfdfc3d65ded13874712934abf1229f7762b0a1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

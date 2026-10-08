@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with actionable advice from a named author on a reputable nonprofit organization's website.\\\"}\",\n            \"thoughtSignature\": \"AY89a19VVoJdZ18IjCnKhDZI4K3/AtgtQ7iRxof+WOFM1MXSm1MAIwX3nsmgSrXgZk9t5+eHahTp5hu2Q+bDEB6fQuQ/8GWjF4KZm6N4vouU4xraJyJ9rdNPJ1S8MkhA4AVNP4E4Fq1BZXY56SujvvHQIzVZhtKZCSrOHuoLUk0U+SB+/ElvrTNNi8UOf8N8b/STdt2z8K01dosivKX1DeFUo88DCco6EsNAPJqy400rmj+0YUqfygIBds9ax0XKYmFI25/GJLWYYHugN/1+mDrbcifXlq/zjK3rutlzDSPbzG6ah5sIKTqXOpc1d9rHpRrmmoSIjTBnStKhsqyde18g2uGxoDsWTYi1U3SxeCpGyoi1NyT3wElGstm8RfyticUnQeA9594Mxi0VenhvYw3rr1sKnwB2v4GIOJ22mq860q7FqFu24OLjRWVofXjfzJpJyGbOvK4BjWkSpvAv66k3ZYIY1yKsH2MGD7Z1OO+4FuBTAEe/PxLqWh+6XAU8c63eTHKAwAvpfeMK9kjJbAYjpv44EYKa+N5CikuYTg9rW0IedEX4ORIBYWL+XUpkEkGhhNpkjts6Jxru2IP9vxO21jji4hj0++CDm9Wm2snmtM+lVe7tsKze4YOgaw37eSU=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1074,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1182,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1074\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 75\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:49.860958Z\",\n  \"responseId\": \"tTrHap7GNLjk8vUPw_ThuQM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:53.381893+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:51 GMT"
+  },
+  "key": "6635a38c1ec2ea6dc8ed8d3b5c2777074cb203d8e08b7c432fe56cbc5585bcb6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a user-generated legal Q&A forum thread rather than a structured, authoritative legal guide or template.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+EzBCDehvD3V5iEOTFV+C3HYUeqnop8HXPayykcxe0BQ2mY1E9ogsP+4LNS2OiD5U96mBRbnC/EHAWEan5A1Pqc4n541rsKACdju2/lRoLRb2L4KAoOpauSf3Xy0toMpCokcJZYgNf1n5sno3in/tZBsSHRX/B2DH3tskROCTDdB/jpfP/RMT3piGAvKnzwIVkAJNm4mGYaj/DKnAqR3TqpTeJ6YnfnJydywQ7mVXJKevyR7f/iJQxHsR9eRzBDhjJfYueIXriOrOlTaAPZek60E41SpAyFLozw7zxNSavgtPQK9R4xFNJzuVQI0fEuOaHi/I2smXXJcPVERhBL0QgT7aho7daxJcuoKWdFHnS3Y/BFCcxCyii3sNLWcp0RVJjflxw7CxpWrwNtFBCcZRdZXetSBsnrNhU07vVoMygvMRNhgfr694USwFw+iKZJHU/w8orQMHzDnT9xEdsiohKHgMLLRc6qL50p5ScFBQIII/Wsx5yWQXjQvvqB6GLfaFXJX6pRxrgr/a48zusPN32pw4ndYiRupYgR11DGc6MQVvBJrSw6L76plu+pUWMInsdFlZtGmwCNKelEkz4ZWhPIOvErp3FHv1qi+ZNs3+2baVBHwggqrkbfbV/HK0N04jbwO78hN+To9vd+waZlND4AEgJ+XMoEH8783OtiY61oOQno7fbayx6HOKm9lqjrqRGB50QrImUGfymbs/9cB3KYw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1074,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1206,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1074\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 97\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:08.132633Z\",\n  \"responseId\": \"QDvHapmMCNmu7PkPgOfQ6A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:12.340517+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:10 GMT"
+  },
+  "key": "77350961ec1e15a15225a33ea97f1118dbcba163915a9ca02ff7457be14ef573",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

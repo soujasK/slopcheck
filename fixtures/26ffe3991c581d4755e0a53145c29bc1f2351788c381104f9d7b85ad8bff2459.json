@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial checkout and lead-generation portal for paid legal services rather than an informative guide on how to file a complaint.\\\"}\",\n            \"thoughtSignature\": \"AY89a19uzFnncccVHfmtrx4zz2hsC8ZsAJCTAzpmI4Q5HB0RTh0YKmY/X0JXRdp1Vs7V8/v4bbwRm41Q7DtrhC4praxENlwCl0ng+tl5Qiq0y0G27DvxDfN3fHGuDxuWHPNdMgOdpXMHHFQqqTlDjL1lUM44spFk9GHuihWLNrbEodwPsk/+40X5maDgg90H9yzmnZ2/yKI0Kju82JKD39p1qArSB9hCXh5jbb/LZr9bBdg0iSkRwA9czuYWiojQrmYR4YvNhxMlXEr3qzr1dJ3a/X/FDMep2L6StLSdX6D+ayMkwNVIceQ+ycWcByUWhY8KUYRnumhlRo7R3mGhnGy7TnGe3yjBgXvEAe5gmcxCKB/hnLxI2kDiQKUADmo+0uCoSn3AEOM7P+fZbgTaOfUBYDqdQZx9hBQfdWv758pypV0x/cwtw5T/C3yl0dkndWAXLYdxYjuiS673piOKHCgSmNFC9Hd9ai4I4VRQs7nfdH/4SEnaX11XVKIk8RPFaizBtv47xnCLKjciW/2Ti2c0V7LUkpB6+zFnLsntqSqzEhY2QSlEucQ9Ed4FFu75dI22hBWo3OToLAG2Dfr5aAdn+UnXJftZuYnqrUti+Ns+jvclSUpv82THiyhvokHDaP6YIQxUYwI5JbFX/IZJ4LQJ3dbzEfQVU9MQjT+wcon0ug1Cbhrp8YG7joqM6T90gCp2/xnVft4Q+GWAie6xgs+FvZ6FsjyxnSTz0F9iA89AaUJCTYfJ/xOz0GoE8jYv+B+K0TWvj48KmIjpVJ2xuwzXzd6yG1PiCyc6mkgNRgu0qDAhVs5K1Bc7x8MJp43nMb2gWKqifQwHv5hsUz8=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 918,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1071,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 918\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 115\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:17.387178Z\",\n  \"responseId\": \"lTrHaurQF86P7PkPk7GygQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:21.433315+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:19 GMT"
+  },
+  "key": "26ffe3991c581d4755e0a53145c29bc1f2351788c381104f9d7b85ad8bff2459",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

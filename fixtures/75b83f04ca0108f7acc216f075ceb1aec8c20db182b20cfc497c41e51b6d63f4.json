@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page is a lead-generation and informational overview from an educational coaching institute, but the provided text focuses on general exam details rather than the detailed syllabus.\\\"}\",\n            \"thoughtSignature\": \"AY89a19Z5xyPNeOMtIJbEomP5dqu3HX/AWhAQKVhF9NCnnbOc0K3WA0UCArrgSUEAeHLGKBGql7Do3Ig5NdgZJyMg9bIP8xrZbfXnleyu0Fjpz6J2iZGSMXs34AhcRYz/P5XtFAuJJ7BGAGrG5FnYgpRHcqRV2CqJU29zXUK/NIvQM6iC3LgTTg8BC+NRCGxPOHL0GzNrQpjXt8riPk/0wavTtRPofbqCIUR5JdeK5FmIO9CQ59cID/bp87+UAPnMRivdx5lcgJj3T48c3T1JHwthP+NKT2D6x7id9CwFCalSoYRZ5/uip40UHToVaBYLu+NJozH5u6ydnTsF1FE7NPT852NUa30OUKH2MN5/eQBHz5xpYlzwW0FAZWvSU19SsjqCg1RlGDi9yOI+87B4DNz6AHpumb0miX5lVBd/dYw/fEh8v2xq/fU0TgB0Lb2NiSIqhgofABCOpZhzXAIYFzvx6nx+yjGqJQ6tJ3mnT76L4zr+x3kKDvsdYl6sxdjVmhIPBJrH5pVtR0Y9+m2fA1FhYgH56r0diizO1LugFGp+jjsh0Vs/EK3n4ai2anLauNwX69ix8vNpTEh5Ua5OzqwAfiVQSlD5s8fbbxQy/r3ttX8zPS77tCXATsOUJBy8yQeDkfvKl7v/HX+0nS5f+XsHx3k4jThwFRZtkVFj+ryGeLHRSJl3bgJNxZNW2c8D46KTG9lOqEHR7Kv/kcry+1JpE1b7QPsYv3MiiAXKhp6QvOKc8KdXEIjvwENV07S2Q3w5mc0+oGSS43S1H4gWlfuMXl4tXEwacGvehq/tnQThMmXZqCSidhpwj9PYUBv74q2cJKYXyuUy1ujcS6Da6jMuaS/R46vpYSp8H6mLuSDl7xrJpFXz2WFccQH+PzSAMmu7hjH//mn8G9a1/nffSjShrAgj5UgN4+yFRbu/MaO2NfJc2sEGseCHUmpW2YwarXtA8sH6/6uKQ4NtXhlQFGoXoTnDUKE13DF0TXnNOuz5f9+tJEQ/+DCTmvv34MtTGbbgWWRvtEeMkbtYMm8izT9lSKsU+6lTveGZjlrbB4SPEs5cOo09VadZ0D3iISCDAnV4fOyoum07MM+MHXM+tiheol1emIjlATtMxTNvTU4eoaFQsdPJyneJvk1ME7Nmw0KIyGaEce+k6YkzHzQZMm9Qxfw3fOJI0EAeG4Hs957ZTcQu2L97hayfZlrbWZnCJZ3/ukqA/bgyF/eH6o2w8nRFo0eTg/1FxzOKjSJyZPkqpu07Pe2UTEFEHJkNiXqY4SoYNg+vCA/mmZwdzx93zrXh3vIC7AaNVQ=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1054,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1308,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1054\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 43\n      }\n    ],\n    \"thoughtsTokenCount\": 211\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:57.579857Z\",\n  \"responseId\": \"NTvHapGyI-qs7PkPxbOygAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:02.202453+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:00 GMT"
+  },
+  "key": "75b83f04ca0108f7acc216f075ceb1aec8c20db182b20cfc497c41e51b6d63f4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

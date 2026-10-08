@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly answers how to file an RTI application online with clear step-by-step instructions and has a named author.\\\"}\",\n            \"thoughtSignature\": \"AY89a19rSjGhes75UHTCTPdgj+sjf+pMh7LbiOe9j6eIpBATqRo4HaTok0dWQtO0GxI3t9UoqLIaKqx1VED6Ks+l0WjaJfbvfAnJth8PlYFUhED1M2TPRziaRzGV1HNPWxK0GJGNa+0EAPDinUV10gMS5/eo23wUJFlg8PNP2HWmtiJhNQcUEPufZXtTx8uZEuRT4JgvthxtqBDeqpszCarbEQhvIBO2ZYyDPf4ibczKCTrSiahDVrT9xgmrqK+HyZLVpHyTg9H5G8L1rnAOjCxzUuFZOeUYuRgKeEFKCy1sqPlOH+QtYvGyCyYkY34IBBZE7Hu+pp38DSXs4qLOoF4Zu+ZuugXapX0Yc4e8wAwsHozFpG8bB+FOzPYngeY5k+e0zo4Ylxt6CIL5CVs5WVMw+g9TteS3qLyBWIFYhW7MIO3U2bWtJ69v8xpmPjhyJTjzdevtd4uaM5Ct7mMruFVDcio1wTFgazup7MtDE1ZM/PAF0G1/6ITiA8je7KYDI1BB+9GbKStVPWlRc5Qz4l4YRycyXzA2xqfvA25XtZEToXJeyEA3NJUoBYBCsMlEXI+oKCKZk3NFke15tXAcjuBIHm2rx3qhsK38QRI=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1107,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1225,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1107\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 82\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:49.676291Z\",\n  \"responseId\": \"LTvHasOjKbjk8vUPw_ThuQM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:53.583504+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:51 GMT"
+  },
+  "key": "711650d8d93e9d27d22dc544b54da23b8edb8989f695dac8ccc6ca511c632da8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

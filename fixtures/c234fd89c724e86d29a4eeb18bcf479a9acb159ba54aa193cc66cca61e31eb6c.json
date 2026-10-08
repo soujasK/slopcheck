@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is an unofficial third-party domain mimicking the official government scholarship portal without clear institutional accountability.\\\"}\",\n            \"thoughtSignature\": \"AY89a19YFLuEdzFWgPWQymcQX/N8jVQt9x5v5T8YOIk/RAKU4l9JPRjs74A9Y1ZVLUkatezgaCpdSqVKxGfT8N6H9CwruAyH5OwdKjtTDvgA41PksyEAeKvOOD5bl6HIgAUdu3tOxRuLRLOb8viZ2hMq3TEMG+c5VVL0146HICam5CjqfPkVyvbhRl1YTXw6ghE0pt9xdenawunMgeuw8PI597PnSHtdtAEo5Zq29uAZ6+rO2qKv3wogwwiCDkBOXd0PT2NzSDOQU2oibGX6/xYvHLftJ0lPb1orZZhqWdcC8VLVFZM3sy4FTyCFJlQFuKieQndI3WtGsvVSQpSBiTUfGIERn9G7CTAgoA6SU/ib0ay/P2a5UVM5d9hBChUJ1DzTpPJtvemOIkGPPpIQzDBl/WvWgVSVigZZc75X+8FSXBDGuGRZeNpJciI3R+EoSd9Uje8GUriddvqK2IIkfCI895UU/aV08vkIFyhdw6PJIvtaxMFF/5ARaKAmbWhBak51tDBSSv6Yxc38he9eW9un7uBA+ch//0tvhld9s37lcxnvL6lQZVUsImUP0F4vIvOBV8RaVJpqy9cyUI1lVpLi/qGfEjnwj31HAY9T0BechPY+VFcfrKAp+wqTsv7uYIarYZTJeYXBAhgsEWOlpmtExAE/88LhS8c7+WzsG9B/EKZ05DP2GpEGq3ahffJw+y4nupz/kXGmRTubVfc4+J0CMqoqNJhNajgfCXq5BYOmXXBX/LiA49nuoT+bI6klGJ9ZYXvpaNIfvTbUchqOorpEZOmEchRKqAuovCZdjMIQ9HJMmcsDZIJSRXS+LAwZ+2URdNbgtElY7XBTAyVi9Msrt72cz/XxJC9IkVkSchL72+Lj1LkBqsqWsGSq3ycDuyqRRpFPpMmNaTx/zvwsTv3H1WJp\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1017,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1179,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1017\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 132\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:10.532778Z\",\n  \"responseId\": \"BjvHaqrCINzRi9sP5q-AkQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:15.007713+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:13 GMT"
+  },
+  "key": "c234fd89c724e86d29a4eeb18bcf479a9acb159ba54aa193cc66cca61e31eb6c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

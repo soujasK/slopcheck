@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a helpful, legitimate guide from a recognized non-profit organisation offering practical advice on recovering money from scams.\\\"}\",\n            \"thoughtSignature\": \"AY89a19bS1OmmTzfXKQ1b7d+lZgntG6GTLSbhbtwSFCMeGcfmlonUBp0lLmMFbi2KtC3GyS12ZgQgNYfDWTIYYaDVk1NZ9t4gT08kv8rS2wpRHiU003xJqwfczzsupGgsvmVXEUYfDx9mz13AaY5uTqYpcB68xOcrudvu8c5qtoxFIBIog/Y7yRmOdmbPsfSZZs20Tkp+uXFfhjzuxHu2+TMj1KCXPvJvUzJhAqzS1p3lGZYJ+2/PCH5Yt7xPj4wfi4tYmjV37ZvsvV1yyYyCjfZ9IwrrWi/KsHg8Xj4RCQJXNt5c3zaLBrLPb3jORB1Wq96o3itqnbcy7SQQqo0E0USHIZj7KEzQrJQXocMrKviu8R/rGXaQRFLtixanUN6k5luD7aPo2E48tsRa2KvBQ0XeTT+s9ydfGEJtl2UKnsYK9UOnBEH2EsGSrXnWYT6xuwyBKtzM3I68evzXsbXpUTr+vEg70PTMdtbW+8EbCrc4uIQ774zbjz90JArooEomcAGrP9cN7gAfLoQh+mXmUfFAd9q1e7EncmVTLF3iZxedd87\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1041,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1139,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1041\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 63\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:26.516103Z\",\n  \"responseId\": \"2jrHaofAH86P7PkPk7GygQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:30.349178+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:28 GMT"
+  },
+  "key": "e75fad0bf48bb54cf5a66e6ce2fa39252ae4b19fb93ae1a5c2cf8a49d23a69a3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

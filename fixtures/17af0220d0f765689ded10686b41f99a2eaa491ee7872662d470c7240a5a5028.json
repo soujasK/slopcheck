@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a comprehensive, authored guide answering how to file an RTI application online in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a195QKRJBb3nSuU/Gh+Rh1qp+obUXOz887Ae3IsnBYmVSFp9FNP8VFpvCECQg/pFrwmhuX7BRxJ8ynBt/VpDMyamHI8fTgB8hRMV/f/Am+YhlKy7w8lr/iaRktD1RqC2M+hOSuowJXaKZovgSh8NgHg2K6INlNAU4VZRdLLsM0hGIY3pPYhMJF1BKVMu+30S0DaIMqD7+g8sGWnqNltGxUGPO0Pj0a2gFM8TPes6sWwsPX14RcrS8Vw7eod6mS81S5I6Gll7ZDU7XHiedxZG8G/EFHsUmYphnGwb0JKajsRnhDd4muvzxsdpOKEMTIrBwAsVpSWiLcNfiTHgL6FIEoBw4C4VQYhW2zT6jOgpPYEqFdVGus3DjyIYwjPX+52sZqD/ZnLjZ7387tfrnIu4KIyXkoWoKdDf7x79wXSYFYFpRGm+seRxTTKhnntnw8Mu7tdl1d33RsXzk8BvwYzFM1T87HbfL99HReso7nIufjFvn2v0M6o/6HhtYwmMWw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 977,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1074,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 977\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 67\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:03.508437Z\",\n  \"responseId\": \"OzvHapWEH47h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:07.423430+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:05 GMT"
+  },
+  "key": "17af0220d0f765689ded10686b41f99a2eaa491ee7872662d470c7240a5a5028",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

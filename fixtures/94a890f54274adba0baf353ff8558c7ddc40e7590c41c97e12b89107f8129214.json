@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a thin Q&A video placeholder with mostly navigation boilerplate and no actual text answering the query.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+RcdyA5AZ/6T1djIe7qw/8LfbsXHN1YbQ8AbkGqsnB7jb0U1K6anFB8pc7ThJ92IzwQTn1D8voZFmDOGQ+AqjgRFPU8QAFeb1bkOAgvv6BmcDCWP2/vKDcbLW71LR0+zDejJ5Nb5PRVBwxbuQkEy1H90gDCwcAtNhVgXGd0jNY9njiUxQGvMsfiNDRReHOTGuaPqElz2dvqLDxCAZmscEkSK+oJBQY2kZStjH1p72lRlHdjP/nQq13oT4wP32fsLRXSkYeqXlBZ+wNtrcZLQV96IHTS3Rx3U8NmSFjIRr8iPumSx9Rt1o1gPs0WSiO83YNwx++tBDsPXwuQwBPMmliow0gkSJcO6vNxAIz6BQD1EoLsbML/QWQW5d58lC11VJQ7uUFw+WHP+CUBedYM6AiGycwU1YjeuhWcPTLedemFDZHWgKIcWlJEdE8bk2heBvUoGnIyh/ROqEFCL/UDodAfzCVwMNNLPPoXzIDeSY+aoEykstsL1FzIzXT/7LfvWnIOmyqsuNkbRK7225i35S7BRDTDPrqu261ZPV6peAK7PXR8VNIZWB3ExbGxc9HdmKZFkM3IEWXgBdgol54ctkvouoGClGH41qn372Dg1rgkQ6+/1Qclng8lJ1Z7LGY8cR0vU4vOVtZ1i1r8GTuNBsPP8I1Qc5TfJMI+n5K5dPSUuvXbBy1F10I1ppf3Y7ZqHqDW1yP6xxU70o71DO3PjfYpwBe5rGUSH0zMsIz5evZiBx2dp0Vu3AGQ+/N2Y4oIFdyHCvb779vxDjmW1jHAfiLPeqyvinPd7uHiMO9WBX9YqP5RIiVLRza/MXn15POH7ToIJxZUTulZuu9hNal6p8KmE9sFfKpkBicCf8p8Oac17VxxoeB/wkcOFgVhPXZM8utN+FyInKck+hTWMo9pNvCOhkwXTU85QnGycEO48GwVb8RHvmBLy4qOhfDJNA66Ja8C7ituzZa6NPp2wuBEYomAvAJN75uMH7he1qmLVBeMtwVFUwFn9Fx1FPQBJrapLekrw==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1143,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1347,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1143\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 165\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:33.156917Z\",\n  \"responseId\": \"pTrHavXJCfCO7PkPiMGugA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:38.023090+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:36 GMT"
+  },
+  "key": "94a890f54274adba0baf353ff8558c7ddc40e7590c41c97e12b89107f8129214",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

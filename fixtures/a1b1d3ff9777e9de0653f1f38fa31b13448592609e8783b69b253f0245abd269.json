@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"unsure\\\", \\\"reason\\\": \\\"The page is a news profile about a private startup rather than a direct guide explaining the official process to file an RTI online.\\\"}\",\n            \"thoughtSignature\": \"AY89a18EzlZYCt6lWO67q1Th16gyF34NKbOAhcyrSYSNQb0YIPegRb81FXpJ4ARBj76fzZmSA6ImA70D0Gj6ETPb8QkblNB4tU7JvEvysz5FPqj0ZEoj05QyyqWpsJuHzYA/SgFi5U0XfVbNoDh0rVHTbWHRdXrm6+cviEhHO2rKWtu36yPoToIvOBFc19z1yrlg//IfV/ZsODEy9Y2GSztfL+vappc/X05/d7/JEQQ1WhxS7b41sBXbtN7D+ydwQBBNQiFxE73g6QoLhtWpppGI7rWQLWBw1i5o8VhEHP5F4aXH/hbkuoDI+zvAGuaWfihXSHRU93WHZj8mzxwlakHgeRmwiwJZ5F/lZJd4B8lUaLocf3doJWaywTPwiHlwlYRFX6/MppCrD5TxfmIK24Eafm9BWJo2EnoDkoBkz9VMJdHkFiq8flBufwbkPnyn1MI86u5XmUsDwult5Ed3PFTwV5ojJ7olyVRnOtfr9VE9acbSLXBJFYXMDSuz4YhqXrJMVSLKw/WeK7rYC9s85n4wv5fwuUN0wTVvEb4UDNhfhyGf55eh2HDL7n6wFIhA9VFvUMMEJQITZpgrVJ1NvOWxY0oNYePo3y9RpJxqbFcF2+xUVYJ26Asyp0ylNJPWNDhX68L3xmR+xnjZq2Z2ARJXMzd+9si58xGxTO0fw7PS7FadGYroY/5ubRYH13XBGyxO2HvRIduy3oIorYTakHBzdWisx0oLCyLkgPRHRUBrXCoA8+LHu+LoufzEWg+GX5aoHm3BjYzaewt8JSAvD3t2wh5eXFAoMe0Ro/+61dpT3s6d37g9sEN3Ta8f7GEl89eiaQTbcYn/lU3RVXI5bjHUZFJuScC+deqztBwvXi+plwAIZJOQlAsb+ShugInxzZY+mMGZhqC18tFpsSCDQCNKqDLNwUenEetaWu18RP/Wqlbw2LWrpySwtpb3x1QQMpL/r3+41Ni2jdBjvW6oDJTJ0RsPlDX2/nxHLsDmdUJWBNgRu2h/fs/PQgi1MRpoXhJK99K0MyKxjoa3FhbAoHxcALorLNJ2HwzurFCxorPGxXGDkLMG5CC9Hc6kUjwpotSqVXIOT7x2aXmdGAQRxHVFYRF+syf9/Ac0UTVxRkIaEA+KvlRWg7hjRiZJDZg5G+eIyEA6kFpwyKXAZJMrfVrnUtX9ayLzzByTXvyxygLZz/H8WH7kXqfJlHW502dGZ9F+kGhb91oRY/p4voUlbGs5VwfQj5MU8+F17+R01CSLv/filnptVAtBq0hNayMfpxHQFJOf3gI5q2r0ssE3BnAYmEfGSmujTCf9pwJK3xrU7nirHdxnSBrLb7aNAlvOG7ffjkdVJpzpuHsSJ4SXFKqXhgOmlU+cCzIS2mDXgsnJQ8P32YXKphEiXHdz9fe7DvjC\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1051,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1319,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1051\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 231\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:04.800600Z\",\n  \"responseId\": \"ADvHatjuMJnd8vUP46Hl4A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:09.362477+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:07 GMT"
+  },
+  "key": "a1b1d3ff9777e9de0653f1f38fa31b13448592609e8783b69b253f0245abd269",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

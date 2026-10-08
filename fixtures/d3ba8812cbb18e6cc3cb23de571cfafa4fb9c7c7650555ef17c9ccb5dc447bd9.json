@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is an unofficial SEO blog with future-dated spam metadata designed to capture government scheme queries.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/Zyu4hbqpmlZYzLrK7Puxbmn1FvTd2yXBmaj2gqVpeRHBl6GsUlgas4HC7O0F67GUiTuFJUeyTdYFihs27SNquujjP1MyzrX7h1OWNI0cvYMaRccO31l3NC/m2FmxdiJrLHTtVmK6vzVUxlsPPyR/drdDybX25g5V5d0P48fQrW+Tvp7432A28WDVunO+T1qs8xtsCA9R+Odb58sXC0wf0MQCaHSsf7CZ/rzkbGDjks5kwZ3DPllKwAmx8rlFX2qIn/ZjY9WXa99Ceu1UhG28M1sU/puriOHUwmsmwHkPJzRIr2s2YjsihHSd6QbN6QXebZYps5095NCcctDi4SHgAw+EIn6HkFkztLUBiAzJufcdhK5RGjaw7yl64kW3Knqln45X8XEr92oVTYeDSTPZolrog2pBYzkUyD4zIzEFLOezQXkdENMUV9m706+iv0N7ogzV6czybfm9os6knoH7p2zxvoQSC7RWr3wcZSwtNojaHAf3JN9T5QNLkOVwwVGiv6PdaJOz/bslZu84y/xjIsf5lmdcLJWqKMygS5I/Bq6It/y5qKnDoIiXf8GrNSrvOfImSDIn7PxyEiDKwF2ZcI/PainbHXZ77uumc36twMwTNRP76AnMEtoPTNQewwg0fSiJP3l9kri9HDszTT5jZkZCQBWpPJpPxTHap4iDREDOsKxmHe1n3xI08Qvg5p9vOqWJx1aXqm6XOgzZ+Pn6sSQm1RQV0tCAMV0QqSHUiI9m8qq8CzMJb0YhqdcHHDRkCZERL3vWJfjKj6rCZqOAzaZx3CcmA0bzSvZZVPx1MZ0ECKT4461V3maPxRRzRctNvlYa5AlMn7h34+H+/2YBKyesbIhSrg/31uZXfpcF1rD+IP5KYW6bnmW4mERYSOtNM1vYYF3VQAZsHYmtut0PHF6D3IE0F9MFtvp241IEyfy0/Q1a78auQeRADIz5nSqSgzHh6Ci2/0CAbrKZQfnvPwi2PNDoeVVLq4odPG+3t0PtZX7lgvrKNlw1DViVOQK4z/+rSnUzQxcKiCNz6dzhsOxS+3KzQKkzdh+wfhGpeiRCsaMWHXUtMlOSDXp+NrBWng9ABKOn9q+1BlGZVbfDKFfRaYVzaen+KCzOk+KcEZP4p8BVYaZXqhIfeFb7zpgZEnzvnhiPtGBm7KH0jvSAm80RCVA4iZHiqe8kKkkt5qCK+nOeFG0BEGA5zftsPHX1gFpMxD36xEqCfLxDxYejU4tyLl8TFWrzVsPB19weHDRw8BoNDtBlnTVxSEQQ+CMsh5TfJguqilbxynqU+xKZHnorhl8kJgMT4mCf9Ud53KvfrRzMMDAl29StxQFEr9CCDecLoM12hN0gYZCf3fCFSNiAMBX8jpgdwZl4qrvJmTwHCtGQ5X/1WWj5f/AFDDO/kWgYKWb3sKjG+7PbNztKcsusxmAm/CmmGUR/F6yC4KMs7n4+DOMOhkvde46hdzTYNIiuUTplNVMSrnbf6ZC7luMi0VzieuqA67AePksxMoZUQwbKEieNFq9DBdDyXAmkTs830TGPmavw9BB1NHynmcCPJJJTsHa217ksVJHlNj0LO\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1068,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1372,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1068\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 274\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:35.427214Z\",\n  \"responseId\": \"4zrHas6JGubq8vUP3aq6oAo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:40.713531+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:39 GMT"
+  },
+  "key": "d3ba8812cbb18e6cc3cb23de571cfafa4fb9c7c7650555ef17c9ccb5dc447bd9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official government portal providing direct instructions on accessing driving license services online.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/YxxizCmw3u56ADRgbnAKdIGr+oR2r/ivqHEpi3yTQx9YFytFoDWSYE1eBm/6UBMEFgaSQvucjB7SRxBP4ddIHYPPh/GaFp1RADTLEonVznn7t4Jw3uLuBSTD/WI6XrLEGNy+eUxEoJihtRz0x2UkUEq5OwR0nzCmcYya6WYoL4IhyaD4a8NUhxKNg2XnHif+hYmICsMwQ51vDznqBGbSqJ6utmEzMXHa19GLXdWJzBc58l9NNONMWaPOfzpHVcsXXo2ntJhnduSGGVlo7cwix02uUwVTEasLWSAGZD/C5FPD6qI5U9Dg23DDs1J43oJ6eRNK+ooAUjBYWuHG+amuVOpO2/MtMw+CljrBlJK3M23dG5gYZarxBkrN8F/MoXLdchhwgvyiVZOJAvK5pgcSdHw0FcxrKrtVXulIVz51uABcnd8Bp8pU5kjQs1G71qyQxv7nOndX6tcWkVkE0luodsiIfYNiWDiMWac83r/NYPdK3Tn7E+I72Vu3fweXDLpGAeAUCX3Hn+U+l3A55+/DPcZISXquZZB9tzGHlCsumED4TELACfnSp5rk51ELlVnEsoWV7f35q\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1035,\n    \"candidatesTokenCount\": 27,\n    \"totalTokenCount\": 1139,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1035\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 27\n      }\n    ],\n    \"thoughtsTokenCount\": 77\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:56.386751Z\",\n  \"responseId\": \"-DrHar_NF-qs7PkPxbOygAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:01.475631+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:59 GMT"
+  },
+  "key": "190e33015eaa5603a40a5ee7cb81411e3ae114b8953ba7c6c1e69521bb31719b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

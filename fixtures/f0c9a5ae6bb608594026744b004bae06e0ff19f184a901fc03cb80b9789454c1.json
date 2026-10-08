@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Citizens Advice is a highly reputable organisation providing authoritative, actionable guidance directly answering the query.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/VuRdAcwZpIJRG1xfqi7w/AEp0Vp2SoGY8Ab5cNirqu6Y+kSvNCi33W45ZE8V5jvXf7EyWpTwvcpApT997IlzWAiUwwIpIp97AJpHNIAkyt5p8tekGxI0CbcSHjPRqycL8iA5sbFGTyE+HlTlKwgPoL6nDqNxyrgS36u/y9IQPDjKQjXMkLaURSKmKFXNAxrhXwoF8POLxoP8wkfkoFfTyJLAQRQmf0gHo/wqBt7Zoho9MsAPhz5ZaC6ZocyEQLSRzBF/+5+wViqWl50GicQHXCaJlDA1fTKFTr9+pWG+3BAhJz4NdrkohoYV2M8/RaRgG1egrD473RFXlwTp+xwatyb+IePIerzShpEOXTv/k+GVKJ9i2yA==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1091,\n    \"candidatesTokenCount\": 28,\n    \"totalTokenCount\": 1160,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1091\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 28\n      }\n    ],\n    \"thoughtsTokenCount\": 41\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:07.905254Z\",\n  \"responseId\": \"AzvHaqagN9mu7PkPgOfQ6A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:11.936997+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:10 GMT"
+  },
+  "key": "f0c9a5ae6bb608594026744b004bae06e0ff19f184a901fc03cb80b9789454c1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

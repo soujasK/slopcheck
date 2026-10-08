@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is an interactive lead-generation rank calculator tool without substantive informational content or verifiable analysis.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19001EzemZ8pXdwo1kSEi5E1j3ojtZEUsQp5mGnVV0MnMG8sIFN4Qi3kNQi/IWim7dvbYPRZw8YXC1QgeHXrhjxlH4iK+3yVEHVYQWhBi2d6wGnPjPXDbIesPBr+F8qaMxgcFN40CDD1o3iEEa/qVmIzoIlTpBFOvdC2lFRx2Idmr5we5/sqPr07VwbXc/8X+ksJ7FTMYfvG+ap9G/gW92jFMfVpqeuHkS4inHs4LskNxqz3G1fRf8MTzSMSrEwRBLzgpzc+Ozjwrnm8Zv1TI5IJiLQd+UTnn7gTIVkj3r+EVSJPao7Syj0kN8KKqC46UwY0xWlcLPW9l9cHLjBZiF/OXPKsNl30UdWjBvSDoWVPWqrqFEwsMHzwc2J4DyHBhXByRJU73a37iaabGAweADdkMQFhh73ZxuJCTm+5sKHOe73qh+04avXCai+UHLWLrby4B6/YLvu0N9hZkUsOZo/0np8ougloqytJyLzOmhQF3+HQy5bEdx4bdYKp9eB1t3NZTtwzL46sZfOGXV0UnMR1vC9FRIwaRkK4OSUJLmPDv8keFgrgnq9fUGcAtpVXS/7penQ7XA0BghGbWILAfehGAZwxDsb4pcLeud0HSlyj3kEEgeqH93vhNGW13yUc3bTed0wnUHLDGyjwAQ4BPiSA7CYywJ9ULf7ZeqRxx5NGXOxbGX20S0ftumF07Tn2wPbN2wrOLQO8s+KhrCssKQ1JofIgwM579I29lHf/gITOxPNR/E8PIgJGGigvMyNI5Omj44ipQCD0JVKaGcIBOrQEoeV6ohEHBrBHek3K7YpMcX2vqeSs7fn5y6uQh2qZ9VUU4IcNhFEd6v9zFXOykklkdvv9aFKDzaQhng=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 938,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1099,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 938\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 125\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:43.830306Z\",\n  \"responseId\": \"czrHauLWMr2vi9sP3O_KuQw\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:48.154324+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:46 GMT"
+  },
+  "key": "7a374162f5b86f2e9acc0179ae5cbdf17b51c49489188fe0614ed83b275fd15e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

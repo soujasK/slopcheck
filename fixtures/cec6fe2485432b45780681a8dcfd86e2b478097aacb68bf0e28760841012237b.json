@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is an official government transport department page providing instructions and slot booking for online driving license renewal.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19+clr2rMAlVOGegqOwJco6AW2WyShPRVcdFkD3XfXFfIR86SjGvIrH4LSpnSsbOXbPG4iHbNnUYATtqi1Yd2dqksFOAzwWRW6qfpUd/b8aASQatjQRJK+aM2t998EwgDpTynJq5hsJfoHS9sOT1Umxp5vdBT1sklhiw0MyhiZkrrQxoMVwNcb7G0QlnXye1YdaFPhYQEH1vTpcv3WUoxivn9OShJR+icqWOTYm/+CR0qHWjX5TLL1matKLsnousNS+yOGeqA7w0vqxCQKPtrMAM/UMpPmzZNjfzcHBEpoTW+1bphWHyLMd3JEI2gAreEB+mL7PwtqVXlVMG+R+Rc0xUiluSpLc7vxK52e3extUzpz9fIQBc41t4e0GOUErTJBWPUucUp0+3ZLgLzCAirVb0Xo+bqr/pzAW+AOQRv/keheoZkLjXsGfaqDTNoj9H18GGWzz6oKQ58EVfE2zeAMBmvEB3T6HaKb5NPGa+uztEkAKAt2iGU/rRxFr89sY6T9gF17M+4Tq7ue/MDtMyHNtX8YY/492T4H1LL33w/n53qqKkVd9FuE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 782,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 880,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 782\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 62\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:36.784460Z\",\n  \"responseId\": \"IDvHaszwL5fc8vUPjJDCqQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:41.523796+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:39 GMT"
+  },
+  "key": "cec6fe2485432b45780681a8dcfd86e2b478097aacb68bf0e28760841012237b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

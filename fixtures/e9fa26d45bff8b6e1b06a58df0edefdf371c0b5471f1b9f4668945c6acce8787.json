@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly provides the detailed UPSC age limit criteria across different categories from a recognized educational portal.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+P197suTTdtMCRNC4w8oY6pIvAw0S1bz1RpRDsFkMaYU5L03xO7wNJtWwsizn2AXBN6PnrY8pbzVCNU2n7DabaIW+Y+6TbEBFdeLTNYMSHnCG0ziXAfF8je4vc3NzpqIKByAZmqJ9hIiSECeoj9f2mVSuOo1cO4gaJaoFKrxq90d1qFzJ3Ft5NcbzXckvj4S8T/GGkt61qIKqx3TucKNsBz7kQlLfRXWY8s/1q6mqHoVx9GIk6fBK00dhXCb4k6RknXv9ZrPlE2gdyYubekLNPdbtOLL5yL78ycVZztDzD0LbWXmdbgtfxl6SNqqcW5Q0lji7ASKxCtHyeb9C86HC176XIdNDRFdOngDLq0ie+OAxJ0zSH/2Sm0XmBzY+sjP1TJiTFwgaBee6dRE/n678kiQVdjBby+9ACQpSwxcW9PcSqyA0SkRkAL21SccBfgG+VrPSXA4GNgHCSVfi1FPFhOl8q/jlktYmeT9MOaWaEL9C15xu/mZQIC0UwPVQ9JRHzv9vrb69yq6CSdq8=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1179,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1277,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1179\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 30\n      }\n    ],\n    \"thoughtsTokenCount\": 68\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:54.084275Z\",\n  \"responseId\": \"9jrHarOSBb2vi9sP3O_KuQw\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:57.850180+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:56 GMT"
+  },
+  "key": "e9fa26d45bff8b6e1b06a58df0edefdf371c0b5471f1b9f4668945c6acce8787",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

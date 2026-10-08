@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly and accurately answers the query with clear details on age limits and attempt limits across categories from a recognized educational platform.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+tj5/r7ZoBQWqUZjhzgwMP5VgedqPOPahWl/Q8BhWzwrzVarzEh0MuQq+Dt4k5xUTiruDOpnKKOLYgD6LTx2/LTEztZqJSiuWK/rl+Kp6HkFQB+fwUznaFqQ+I7oNLbEqBDy3U5VaVYRpBX6TmLaGap7oKnckBKjHr2UINZNo/KSZtIFYWYJcATR6kovdNG6b7rUE3Vb1h1686Gs71WRaE97CRMdTwY/XMoCwIzpcnecUZ1n/8BKluo7p/xjpeXWcS8YH1I/Cem1A31OxWxyKpOBWzuy8t+aBrCq00u5aU75mtlvhz4Oqzp/xpLlZ8vLRhY4RsFRUqEOu8CKXQP/i2h6VUKzLpTEzYLci7AHXqfdzxrwOWsHWp+fTLU6evMftAs9X9yZVwLLFoJFh8nmqv/OgrxM6WhfnHBAYhO7VedIGBvBUJz61rlMJ1PSU7eriFNAdJ/WJdPYpzMVo5pGPtqABNAIjqRpUaKB/pDR6ZZSb4xF5TTvlYpyQv1GEzElnoB14fc0IUDMS72t8B+sUthzvqMKWcPlXRTArRxX3AwZMmGQ==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1061,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1170,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1061\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 73\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:58.970555Z\",\n  \"responseId\": \"vjrHarueO7K_i9sPl7nvUA\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:02.587596+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:00 GMT"
+  },
+  "key": "f5316667f44a20463829fdfcb82a541b4c630c55a22815f534aa01d490c69771",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

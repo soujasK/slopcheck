@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from an established news organization offering relevant advice and safety tips regarding KYC fraud.\\\"}\",\n            \"thoughtSignature\": \"AY89a19aMS3G1IYhBCWSd/RjuMCMw8lHChCktTGrP0RHvng1Z+tA/mIObZ4U2z+UgIXv8yeRZoycAdGXoyX4syhvJVI/d4iehYOsXvRK3Y3digbxf8JNskN9XdLZxIu2Ny/B4EUZErJcIPQblOO9XFiGAgRB14s2zdWhmufD9BaVuP3Yb/4tfbfXCzE53mJsrg/XOeA+q16xDnbHsALZiKk3jXEf0KWpU8WKDJ0jzSgihjf3eK1zWsibAEJQX9VU8GJn7t37XznQOVAd1XRYfjZKmYxcocMlTo/A4Yx78dXao2mdGu38YQ8Gnc1TeUGYb761q4byhBxqDdPIj3d2W4wKx8lUWV7B/ed6xXW0y5tb3NTaxOTEZsZio1eFqWwdjD+8dpyhEP7b0ZhpJk8OdLGLbjcz43+RLV/yEk+rdOfNG+lI5xfnFW/eLHvdUQwmZBxlvXIDrmfGmsC3hyqo6vO5YULjJOSRBFdYHQp7JHBoKbGU6bIMVnRkr0bQ0iFYymewUVZRriDWqeSahd9uNNWzS53agjD1YjF8t4rawaaV/C2RJBHnAeTfDBun9ZaucRtbzoVYimmLplo7SO1M\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1115,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 1234,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1115\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 29\n      }\n    ],\n    \"thoughtsTokenCount\": 90\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:02.579106Z\",\n  \"responseId\": \"hjrHaqKsI5-yi9sP4LuC6Q8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:06.484388+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:04 GMT"
+  },
+  "key": "15319c1647d674a40416d511e37ee653329e2f5a99ddebf5bb137103d67df9c1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

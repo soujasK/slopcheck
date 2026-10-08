@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is off-topic content marketing/SEO blog material on a real estate portal rather than an authoritative or dedicated resource.\\\"}\",\n            \"thoughtSignature\": \"AY89a18JyeDnmpoqQOw6XDF7gvvAycoymFrpDo4VdN2L23gYkvn181t+IGOKZUyxPzzj2PQ0B3vjFIdHdcwYJ2qchUZETcCjjJu7d7kat43DX7YCef5x1J2EUtY4VEnlyuw6xl0PAj+ghNQZVMemgt1HRcaxNQnvY/3dOeeMz0PVf+dJ/BHBOUjRfZaovUqv6UfjArHPxGEQZ7kQErPHUu8Ovm48EWvciYGkeINMwemlv/f7YzWyaWTC7gKZP1X7B0dmmUBClJsFHAE2HuhBRS9doqVC1UAB1YJGBnNLhdbawGInpQ3tVEJPz14QG2ZS33gwqx8yKcFgfMEf5D+/MCAURoQjNc7313HcW4xet+ejhFM4jjn9Bf8HgkSRfAlnswc9GuMh9ongtYhtmvrwQWroCEWtcGE9yOu5X6DRv4dOyvgXL98TbR6uA/7FfH01lf+JdGGr+6ibGQkmbqX/JOaFfXOzVxh0HvcJCeeitPay4kBvRrFzbksIrfoHBdd/bx1WunYgDvN1zmb1D5vxwVBN/kDHdd8Lwwg=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 994,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1101,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 994\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 72\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:16.105921Z\",\n  \"responseId\": \"SDvHasG7BqeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:19.613407+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:17 GMT"
+  },
+  "key": "bf232bcc68f2606f8d8f7a46a08b2b9b9aa6b0ceb74bd1a207df84d739ba1e24",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

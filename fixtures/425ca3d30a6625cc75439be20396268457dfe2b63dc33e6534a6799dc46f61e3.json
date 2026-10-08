@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a guide from a known news organization with a named author directly answering how to check eligibility for the scheme.\\\"}\",\n            \"thoughtSignature\": \"AY89a18cx/3t+rLJhWr/7Pgzw1PvMfa48ZtCi5rCFyMg0f83ddfjW0IdSfwP+o6DKKaNFN7dkRCDhUxvxcZ/wAjTg0IO+tdd+NGhDfZkfOTOBoSEm7f96bOrVMiOHH/CwSa3CxmU4rB/DiOoyDfQgCfa6shUhZWuMF8fY7GXsrk+GZ07LhYwxjXIKd5C9kdCHUo2batH+68VNwOr8PI4OMwk0Kl9TiqzsSLnkESIZs2I46ALq6OSaoQ42U10nB39bYeBV2Cuja+d+dKiM9oSFbEoDcbc/FS7ROW058JirNfFHspARm2xnR6tyTL2NdTPX9iSxpmvrSjRIBzAnSMwHY56opzYwME5/lS+bwInh5m8DvHaPLhSp0T7SjdRGMSbjExnsuyNuM2tlJlpAI1R+wr+2EpqE/Wly2Y1KG/SgAFh+apC28/IOlyxtwcBanaIKmBJt7apSCXLoBtxCpGI2FSfRKWGefojNpeiP2Jfm0zGNAkgl7DEtsbXACrYnykudNfdHUSoq2m32196BxcJKj2cEdbT4pxTSh91xulZKeLsEFNfQcZt\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1248,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1361,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1248\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 78\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:05.152031Z\",\n  \"responseId\": \"mTnHat-jCYnDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:09.335135+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:07 GMT"
+  },
+  "key": "425ca3d30a6625cc75439be20396268457dfe2b63dc33e6534a6799dc46f61e3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a republished promotional press release for a commercial tool rather than an authoritative or comprehensive guide on checking RBI registration.\\\"}\",\n            \"thoughtSignature\": \"AY89a197isI5u7Y2i45TlI1TGDf3DmZ029f53K7RAkI5nwIMbxqSO2UzBhhM7rpBDq7jBy/6cavcLRUuEnhnplOcAFEc8hHUpo4byKwccTgxw46CumV7isgKYeT8DMUTPSyJtY78RkP3T787W+PQhT5ArkfeY9oWlUxjTGI3QvKrOzyKJ5kuzxiGKLG5Rn6rLOwEQKf1fk/ZmeJc+v52/iZyiwcETzVA0Dj/GhsbBo4chvOxOzwrIYHTu3KsHHDzILX9C/6lDIyx7UGVR/E1FjDTNceI8LbtWWNif+RRkFn43a6Kh2plvYC+C/6K9Uz6gITmRiuwaSxbSAxAdzjaFFejFcJSqpNbyMs9/1g7ynfHLx50+9ZAI8W2wLytGQNmU7eFoSz1d3hVvxsisyCkXTiUxhiJ3SI2kHbVn0W6f/736OMCxS2DRJW1byAph7TQS03MbCn8QqIVQg0Jyar9JqB1+u3TQ5FsumxFgN5mvcFtM0vq5tc2hc/87GWh2xGRGr0L2Ff98CFJeSt5eUv0nBkKmeYYiZV1T/4xTSFQTpP8WQ2D6KVklTnmWXuZQtNO28fEyKI65VUSZke1powyrMwpNBvufBS8GVC1Qi3LLiQaq9JP3lj2ui73LV2aVQDaM8edmF7cF/8Gw9jcslkY9cjQg0C3XrOCXbB1j47lYGNF/D6WXmibR+HOXwut208RaTCDxAI9WuaiBBEihzEW8zFnUdLrhlP8VnG7+cOMjtLOzyCdQG87du8O2yx7+fRx0bIymp3621kXYFsWPbhfyMB9mabyDvadSwYmr8mUhNj3A0JBye8RBokmM/4OeOzH7osw4RnlQIa+O33+ilIk9wjJQEJSodAXZKq41KfapAqlISPS2kiYJ8G3HfN+K6yaP3zThnsa/Rr+yYZNIY8F3tyreGRTXCvOk1mvUqH3V2NZXhvG44GMSZBH9yMifL+Y3mvLGBSBhAIcJWhhfTJuxI/QCevdDQ8qdeKFb1SvHnKUHRHyWQTRT3XytleF4m4Qp6SXJnDFnOsFEqGU86tyErgZ4lduztV7NzM/pd4v+wMW5gPQtaT+cDJKAOIf5vj5VmUQIibSa8ZmhU1TPlzV1udNZbM3UzkM/1yK3WAzX0LV2KprSrvmPSSN1Y0dmxaQzT8LyBewDD/zZ1XyXpzcgZfbnyHFbxa6skM291/c2Nea3y1eUpYoEp+dld8/CcU84HJ959tAYOTXJET30cuLDqxdRfP/qiIUktcsNu5Y6Pf3PV3wmeidPiXWab8gWZWEnfRK4qgM8jp0TFIU71+B6eySDm9HiftrxzsjgnXh1JrCb8L2W3C9RBiVwMIhnUENwasZgUxpdwYkSSwG1P/S6qOuwfDdZokm8M9WT6snVgoorYGl4nmNZZdIpcAoN5IzEGuDP0uzVhNvZduzI8kZe4BxjGqnWQggLyY2ln728aEzTRWl6sIpRgXIapYKR7xnbW5qBU0SnXjuf4gJCm3m9oAWDGaf97Gr0vJkD4s8bswRbTyoX1EYOTRpvJgoIqFNJWwcEk/dolCoVK3vwItyRc4OPDqHCPps+hurEomQmWZLyuaWn61BVppeVt3a1Q==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1160,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1437,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1160\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 242\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:07.703404Z\",\n  \"responseId\": \"TzrHaqz3KsHTi9sPjKWKyA8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:13.549984+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:11 GMT"
+  },
+  "key": "677aaa2c5b1de327067f339b26d584f3314f779c398b36d735f28375bd580a17",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

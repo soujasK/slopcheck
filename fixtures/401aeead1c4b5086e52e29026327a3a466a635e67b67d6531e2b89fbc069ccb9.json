@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"It is an article from an established news organization providing instructions on how to check the PM Kisan beneficiary status.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+96EAZjKPSWS8bB+zbHvz2dsoTvVMXEOFQSRjpwNkZEI9PLJS/gm38vIyq+U/fiSgVCkRjbAW2dBa3B2ovJ6ZJGd4DPtw3tjLPEbCCE/U/J5XWsn/mPZ2/mUNGvvW/JR9XeoiKIefdQZrLP2zRg0RmAAV+9dMKD4T09W/AOy6+a9ZnvWBFrwlV3qig4xJGsD/WwPKXrp77o4l36Xnqu/GLQOVLpsOWpBJFOrkMoxIhZIUjBkg74xTY+c3UsgRYjLnQqRwlakPCuS/dWwGC0udG+nCydHWKOfUyeABmulqd6zScRcm62kC7j1jwPidoRIsc9coZR+DkRl2cGtw6X97OfcUXSNofOogp5ZfKxriLTTHiS261IGX13Y2GdXD1ktlN9I4PwQ5EF5O5f728sr5oEa4pK252I2LJDdEMBb0QvU6BdTueIZN7E7xRfx38Lb/MfbQ6+2h7fOgQayTjcNicaLmYpb7KY1sPcP46QrLs3lw+K4lNEY0sYn0gnM3lbXbEWbawyK9rn/3iqO87tfmLclEwZDmXP1YtCm7oDq4M6sAECwZfN4oU+hvZP+Pd+bGugxoPm2vZdxEU3hGc4eQhGsc/4fNAGaj8n1GF/gW+bcQXbXZ1L25RJm+ZhI+gpsLZjNL5LJL1mSJ21B6xcnFUix3wVKYb\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1171,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1290,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1171\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 32\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:32.661734Z\",\n  \"responseId\": \"4DrHauaxKPmd8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:36.888715+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:35 GMT"
+  },
+  "key": "401aeead1c4b5086e52e29026327a3a466a635e67b67d6531e2b89fbc069ccb9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

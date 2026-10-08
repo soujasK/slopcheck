@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an identifiable overseas education consultancy and provides relevant, accurate overviews of major study-abroad scholarships for Indian students.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/WhnWwcpr38QUMRPfZrHRLAuNqR3bXmuYgWf2TOHgQU+6969NOth+Vb0f1G/8UiYrBzZbjOrwARL1+We4MwS23d5cVPDBSMTtKzs/oY3lBskM+9osYDxXwfz3hsWu6wYmnqYwtqz+YoCn9oA9SV5KPzVLldJZVbPGsl1CI4Rpbg127zWdbaysRA+6PyJGlX9P8TV54PcECEhnUY7z1uL+3TjdgKbKL7YI6u9L5XKdObs+Y/GgzrYtmjqvP8CJPNlZJpRaisoDmijoAliHjimjVTMrrGe3JHPcQW5v5VnmIcoc+y1h2o2I6do/xm4EjqEFYjYvjpnb5rxDhnTrR2G+5JOYdhY1+rYxEtDQhy36tTxRUKBzGumw9ltucYMbD59NnbdHSo12nXfqKsCWiyT8Xu//FBO10qs/A0C/0rt4xZYOe2DnKsAiWIxKacLMqLRTlHtOpAYcJ2jT2N7Et/N6DHpxaFPuHW2YWBCInhCundOt+umH2fAXqQXDPFMdA/Hk1UnVs8lU22GLr5sxc4pwRhbEH2bFZowcwy664HBdm9IpXMCzMQKnVCNz5vyxSfWPLextJg+hY/iBxxLTqbn6Xj+A74HZ0cfnmKuZ7CEXYpXhsDQeR3eNBzKR4o2N0YAXNxAoglorOZVWIyiPD2X7V0ZBiLvxMUOE2WkA0s+Cj9ioPo/V0t9XSdNePaZC+pxVlRCQc5E1SSFARVruflkSv02a0usSYgFX+r9qg1Xj5DsNkYEMB5XafV6pY/+c=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1022,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1143,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1022\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 39\n      }\n    ],\n    \"thoughtsTokenCount\": 82\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:54.562080Z\",\n  \"responseId\": \"fjrHaqCnIpnd8vUP46Hl4A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:58.906023+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:57 GMT"
+  },
+  "key": "2f72060490ee726e56d458765feeadafd85e2f6d896616d89996ef28e3c832a0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

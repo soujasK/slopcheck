@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional legal service marketing page with generic filler content rather than practical instructions for filing an online consumer complaint.\\\"}\",\n            \"thoughtSignature\": \"AY89a18waIzMa9h48JQAHt20U7okinZ4urX5XCVBYcodM0Ad4B7rMBsPWwfE8Be3XU8nK96X9VZ95qYvjgIWaznfukfP/AsXfhz6AUKOasQWaSJvNLlH2sLclRE6sjjE983Fy5DyyC3hQVl5DXSok+NxOAgUs/RW6Y5MB1gbhuEAtTE+SvPZNFA3y1mANkqvhUhyEOhcWC7neMlNCECjvSvD+mbDlYcmOGCxs8cYzt8eV8OEWIS0/g5rnxjOBlCY8TzbVLB7goRUuy8Mgyr+qU8hqUq2OcByx1xFN9BlE47qvGk48tzO5TBsHyjBgNQMkHXu2yd5XRrHqvLl+qYTF5/QkD/0gQbBsJJfoR9i/AK71WV3b8Mb1+CodPnyYIs0ERZHPeuSF2Hec7aqjWZDbyTv710zDh/tly291DC6+SPU11hcm2+EJjwvioa+N7Zw8GLOwNIj7xoh7IZ60Szar0LXMBWYNWwi0teWSaW/dAW16ZkXb6+ndVOpO2lz0Gg+yuCYtSPwMoX4zzno/ZF3Ei7hH1Ip1MUcT2Tj8VkZZ+F3CduQjbIaE28TA6+XPtJhrK060S/0q2NnCYKthapXYj6oPs7bvb1loop4jlQwRAkAIKd2UNcR1QIvz0nDxx/VkuvyFtm/QYWwhG+Rfh6IUIxKCJwld871pb6RwfXEkiEt\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1011,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1137,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1011\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 91\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:13.557085Z\",\n  \"responseId\": \"CTvHap2AIonDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:17.553690+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:15 GMT"
+  },
+  "key": "ff350f8b85206a22e7d2cc399471c64c779f4bca18222e122fc379d7398d6454",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

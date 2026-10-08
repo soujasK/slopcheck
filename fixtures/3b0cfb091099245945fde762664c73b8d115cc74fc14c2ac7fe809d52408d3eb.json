@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is keyword-padded SEO content hosted on an unrelated domain rather than an official or authoritative source for checking government scheme status.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/WjQKzBeACqFrR59nlBIkNWs2JDSyAxJIeC+U+J6vSAEcf1TWeKj3BY2bFd4JmN5H492gTT1tyQkXmGbK34bqqwGH/6fWl4ZQwhU3uEHoThfVx639f4u5geTkwtryLcxlyWkEPMjpcZSxgrkxTJKTR0gTCd9dWTW9QGsoo5qpbi2cXX4buots/XunfK+SCYlB3DTlCCnugq3hKhxo2XOCkYaLfN9E1jCPf6QLkVh0aMa5+YUjoWK4g1nT7OaVch3ldjGt+TNU2fFsuN5XZcoiSfdCWGetqetYLg5mwwRD5222pAULdvfBsqB1a2WbRIjRNLjweaY0S6rXCu5V2tQWZ6njhppytZO0WnAz4bP3HlkbSPO4edOquVCQ4jFiiJLO3QiMvtyvZe5xxtYfjGwLTthFiijtP54eA6kmfrpT56TxxGozCnRpvrgm7f1NJHrBOyjccGmdxmLw+vOoFUPylKaDsieQvoQtO53ZhkRlmftqeDrAOsSWlxVqYru0UVWwcYn+H1hGM7yDGoZs95nx9XyqqvTHMGG56QFT1KYqgsQrn952Lss7vge+pjm9kNxvdGd4IR6M8woAzy5zJ/vuunIzr\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1117,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1232,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1117\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 78\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:05.983397Z\",\n  \"responseId\": \"PTvHauWCPJnd8vUP46Hl4A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:09.576251+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:07 GMT"
+  },
+  "key": "3b0cfb091099245945fde762664c73b8d115cc74fc14c2ac7fe809d52408d3eb",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

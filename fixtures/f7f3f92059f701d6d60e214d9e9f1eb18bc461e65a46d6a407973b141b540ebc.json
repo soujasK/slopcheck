@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a recognized news organisation with a named author and directly addresses the query with percentile and rank estimates.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+9cDHvouKGGWR5BvMYHylW7f/1IXncgi2Gpz+6dKLKYzIlg1761MG1QkbjffbGU6TQ1A//97snpHlQD3xdWqo28ywyG3dkmenMFeBEppdH3yfRq+zmBGbs3q7EMDdWz/nG9tQuiB70MNovHhaD8LmhNNUcwSXcCO2ETG+VjoLrpq+njaOIArxbDWIuxvoOs5WoEvWkzoOuaLB5tqcdIDT9J8kHiacP0PN9WD2qUfC8qkn6NbS/3ldoyptr8d9K7dkUlyJMtdAh5rZClH5uum6uih8dTH9PehdvqNRqDtsQ5UNpT4FGvknqjSsnx71Ww079xdUouLDmRuYePOGiMY/5Kf9HXjZGtUH9BvmW/mPuxI0kcxKKuMBWtsPEg9Zk9b4OfI3msM+nQyreEY/IFIxvcEm69ECbcix/fK9dNVbQ/CW3sx0rFL7cikQCttC4RTjB5xbK6BZcPDQtz7tfx+L1kP933rOP/U5ygcML0zmBZtiVLAL9dw7VzDSYXi2LUKpUU+527Q/e2cmSVSUwKyAgbeyeGbk=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1220,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1315,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1220\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 61\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:35.561447Z\",\n  \"responseId\": \"azrHaqeiIvSp7PkPxrXAyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:39.868321+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:38 GMT"
+  },
+  "key": "f7f3f92059f701d6d60e214d9e9f1eb18bc461e65a46d6a407973b141b540ebc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

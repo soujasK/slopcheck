@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers clear, accurate step-by-step instructions for changing a voter ID name online through official channels.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+zj8AqXS4ZlUu3NviZcK623oeY5Px58rkCR68ZPvNCny7H9mwdrOQyco4hq5UaNSPXQVSY40abeiEuTUsRivA+z2FzpYvOkw9B79x5R26DJgT58L8uIui65VO3JR7AsD1RTWyJSSBb5Mi0G+30alWcDjU8lbfeH0J3gTCQOVljEEEJIKN33Z3FsIpX8+/JF2rimMkzY9wg7ZGwYDK6+H3/jJsTlWRdCYxOAI0ROfSF6bPr2i+VmKLhgId+Un5t5SRe6gVcXCUWXlzWUb/1lZV2UizCDRYBvhFQdt0HgGaPCC26IayoFFVafuLCjJOKOGIh6B3fKgx7IFYtJQrjjcQc3UsqMOQvl/yEflp6BCngdTJ8oF0B6A742cKN/CxYTFSErkC4L+w2BqUr4xNe4EJTmg5TQ9Mgf/hiwSbWz9g11XOVuSGKJ54DeJLK2n9Hiy7zIx4zJW3S9tLOGZHZBARekXbAFQLYoKek6qdRTfmjASg97VCnZ/89Ic9dUriKY5GdPYNjyyuyvngZjtiIvsKcNrawGjm8IChgidj/LHRMoNCk+Unl/GdH+bXVPNf1KR9Yq5qjUZByENHlMFRo1XneWbG8DgvVq7BiL7Vs57yG2jJqEid3vM2/tanBOqRBcbZBk2vWhFC60wPvmVQqod0wX9Ht+7JPs0KrLxNQ1ThIOZxXyp4dio9XCqfPVErK0D/Z\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1076,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1206,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1076\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 96\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:01.118007Z\",\n  \"responseId\": \"wTrHaveZB47h8vUP667F8AQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:04.954981+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:03 GMT"
+  },
+  "key": "0410399879b48c812411287523b79da70468e1f44f354b403a2a375898274c5d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

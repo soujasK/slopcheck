@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article has a named author and provides specific, relevant legal and practical guidance for tenants seeking to recover an unreturned security deposit.\\\"}\",\n            \"thoughtSignature\": \"AY89a19J9zAe+OUV9wwKnSKwcvrO178ARSbeJL8sd1Gpzlj5OOpd5nkaCGYsAOAQW0dn5Onau6yvzi164uMZSGr9IVPo9wCGIBkfweHQqBLb6js9vBxZgOKUuhHXMVRbPXqISXiQ75Ti9LlXlhaCooO3ooC4ZSyCjLS/n/vVHaVExR4xh2UY+ZIISTIK80VUF4sD+oHKxnztYaACE0KjS9O0BAUvN1EoZRXGhpmJunSsTT57APQPdQBK060Z73In4SbWbdw7pq4AKGCmDZXGyBwyEN0fi9zr4kQsuoECPMtbypDkuDAiXaP8glmnTQvY1k2P1xxvx39xMxVuoCmrkeGIo5Fn/XD39EdeY9FUmNXhrZ/vX+01HdwGDnQhKpB+efwoXsG7cSVPks9o9PLKsRBeTkyI9TOMLJ3ufpb7SBhUq5GbfqqLbhR/V/PiXvl79rcZD2fNsiZ5o9bfw+WR3dWop7/jABa7hyE39NeQMJAf+30HIfzhJ3mKExjMLNZqDg6u2v3ha4i8njNMnUPM/fp7kV9ucnScpPLZSMn1nWGlwma3/f/jqNcLuB+b2bEj3Q2h8D69DXX45NMcpTQ3C2CoErE=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1033,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1149,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1033\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 79\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:16.943864Z\",\n  \"responseId\": \"pDnHavjNOYSc8vUP152u8A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:21.324963+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:19 GMT"
+  },
+  "key": "5263836a2a3024dd97369bfbc5c0f32757263a346b4f712cf62f7ddcf0fe67c8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

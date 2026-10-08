@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an educational coaching organisation and directly addresses the pros and cons of taking a drop year for JEE.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/eCfKlySAbw6vCOxQuBc+eLwMBYsOMrVvXBw4dM+GrX9PZX9Gyfe5YNqVr6fXbF1vVs0iuW7juT5Ujx65cxTjwA5YcqKkr4yfcCKaOJ5UQfo0KnJ3oVYVyQ/EJVZ9EpG+vkvqkADiAdm3gj5FKGVED9VxqytHsewLzfFyB85FxUYaKx47JzmHJsbHAd1yljyVOS3b95X3I073GuorUA2R1CmtiFu9a/dKhBywEloQ+TMKESNfvWOSW5HluCSXmKOqpS7Yd3PiuZGo4vYrY/dNXkiXRXJm2iuUE/FNeVNAyuKW877aTSxr/c2OV/b9Bx36AETsOs3JrmbjDK68nWPQh1avCe3M/b5o7dWcBjcXdpGxIVVBT/CW83s0eZBYv+C4wq5zJKj1e/H+bF1YxvU7wucPxBD184HzKMpLjFdHffXLl6WaFbgddvLg9cUB2Ktvf8THqymGzKjFXBn2LEDV97onGw+YGTQ0/I8A5Wp90V9BhqiLFEhd3s8ofZ9/utzTGfl/l9x7f92lVK5qh5LM20Mqr8bG4917FKQx71UGlkx1eTpYyvP0e1UgWOBTN/bIHJCwX3YKzqssd3K1QqGJ4qputQQy4R1lUbq89gLo=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1072,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1190,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1072\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 83\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:35:14.631047Z\",\n  \"responseId\": \"ojnHaofCJrjk8vUPw_ThuQM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:35:18.347179+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:35:16 GMT"
+  },
+  "key": "8df2f7373a96bab56eb8e903f25b816775d83129158c512c5491f9c89f8a3494",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

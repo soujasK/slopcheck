@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by an established university and directly answers the query with specific career options and details.\\\"}\",\n            \"thoughtSignature\": \"AY89a18pMVrzM0q6zbzPLdAY1vRu7K0f2KlM+iMbEbvNJ9Qum1kAvPsitOHRBy9VzydBt+Us+Abe0/zV/BaPyGadtlbtvStv4XRdArYC1NETt6jZY+ZvSEQRATafMy6bMdx+l/ES3YAA5NsRyJySvPt83b/R7YKuLRoyxd72B2Zago670McDSwRU4GQqNgdeZRp2kH+XQQV60nUXgs/vYhMo8wVD0YSxuSQDW1DXTIzf71y4Gdz0OcT0vG2uh/y4qDugwUMnIol7s8lKLIYNPBzSDQiU2UTOAZeQK4oRAn/xzu6/Ds15nMPcVvWrayXj/qrXYWA/9HM64qMXCGhAkpzv5y775QfSeulkkkVd6pb2tQji58NCpEh1NDBPaBiVTwW0cRJNwiOvZ62BNCCJmpHc3svqOWPEi1lWBfBGv5nWm+cuEWcjMqv3z9/516O6r3/avC3gNbnrMSbGjNQHZOrxcYW5NeR5mqlWmiZoDgK8tX9eCYlHLa2L94Z93ZKekhT7KjHSx4/SFuZxDi0sE86WEx9ss4oKQbqpakhule29fNe00/d7kEiRfJEFfmh7x4Osl1KgKcdp9KQjFdew0XozfCPhwQaTJ7lvfJVvDmIFraZG9vS/Q10EBNyByQNIM1hTVBwqkl4iiS+Dq6GcEYZ/1uNkBBZXe5aAj8JTUO5ThakdqGMGOH9Mgbh42FwORDrtFdmW2syLfh6hyMDu8t/dzd2lBKX6OtSHRJ6tdy8g2/Tfuh/SzZFLYQzNYVPpPPsV2O1kV3M9/jRudjYPaqdzll2mwKs27JOK48xD3RGk0OHqOuJwsDiqaSFyiAVdUEShpb9b3N0=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1107,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1251,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1107\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 113\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:51.903578Z\",\n  \"responseId\": \"tzrHapqTN_-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:55.744675+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:54 GMT"
+  },
+  "key": "13f03b4665ef6182d8a2ab89cd9e6f023305f0a1247688735907995dbaf6329b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

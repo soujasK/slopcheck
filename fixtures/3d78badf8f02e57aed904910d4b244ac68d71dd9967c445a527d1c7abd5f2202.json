@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable educational platform with a named author and directly addresses the UPSC age limit eligibility criteria.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/tR6aI1CdloQeJp74Afrwk7t7Qf6VYwqii4OgqwwD3e/03Eg6W+9hq+niyZkxtc+Nyu17sex6B2KRta+B/Gw/oBac+yfGhNSa2vKMeKELqeqViOHOI3J7sT7CcEQeQFamT4QNZh+HANkTLttovDxNLQOKStuEmhI4IKnlUYB4VztO35YKO7gUT9Mp9lLxJF6ov96N6xrd1R/aqsKIxiIcueNJXFRDWHohOpn/0/c/0+OuuwSMUpI1IvDwe5Iqvs7hcbcZGjeZrV5a+5592/Ew83LOS2U1e7JepVD43tg9a7JnH40D3hVn+Q6THkm0Bz4lJ/ERG9+4g1nrSlMTqv1UKgf1VtlcRmJvNUwMBHNgNQIvXakIw4o6fNNcX7m3A/k2qdJYi41uTSFtegtytyL4GdK30521gH0jt+APfhPc+ITHtY9U82S7Jf6JYe96JlLmo3XzvdgTgcnS4u13ldU7wZpvCG72ZuHIyVi6Gw5UB1Rc+rNBGIik1NqAkz/p5P2rfUMozVOtdyoObamvytlpKy3+skVXK6kNs5TDfN+LSrJ3anFkVNDmkSfD3\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1124,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1237,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1124\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 80\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:20.916279Z\",\n  \"responseId\": \"EDvHarf2N7CR7PkPlprOuAQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:25.524034+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:23 GMT"
+  },
+  "key": "3d78badf8f02e57aed904910d4b244ac68d71dd9967c445a527d1c7abd5f2202",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

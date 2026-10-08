@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page directly addresses the query with a comprehensive, well-structured guide on how to file an online FIR in India provided by an identifiable legal information platform.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a19xxEfj4n/G/4PZeYKlXnuI3xUwGHWqduNO878LipKJDnZn5ojSEodzV7ftYCpMQdehd8rJ4JxNKWPXbrRlSeAoYKdlJHkgPlXpShrWEppARq+yoQzPeF2VOAxZvNqjZdLCzjzZgd6ReIscl0w8EzqyfcKr6SyV/ozw5AXQ32dk2+dsj+1oy5ZcspV0H+V58vaOdd7he5pRjvWINXI2hLZsd+K7GU1Ltyon9iYCqKDtf4hnquKE68B8kRPQkV4BbBoyKJ30wIp1lUMPyPvnuj97pfLP9ZU0py709sC7dGJDH6j/oUZq3v/5ET73qwCDcRESXB9Dqw7W86IHaee+jdh8P15zbpgwWyDRkAL6V+bFTGFqW1fotnw6hjH5kICfUNcJRQxw6XdRwp7C1dy19R+Ep5WEgNen8ibZ5Wli98EWEqeJM2E2NrVfWJfqe8MR+WrhYqb+COnSUCpnS6oSPHx7bXKmB7dxw2u9oc6EHAQ6gGRAVEqiRMBasJPEBUsw4oDurZ+BNbrRILdyXZNoGrZFZD1+E8Ek195+b/WuljZ82rVM9g6MQW+ZHp0jh9YTh6KWgY5ZsFA=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1030,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1152,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1030\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 48\n      }\n    ],\n    \"thoughtsTokenCount\": 74\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:18.150222Z\",\n  \"responseId\": \"SjvHas6VCc6P7PkPk7GygQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:21.864861+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:20 GMT"
+  },
+  "key": "ab94b2cddad280ac09d666a14d6f6a1e4dfc9779c27777fcf1c107800be1f2e5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

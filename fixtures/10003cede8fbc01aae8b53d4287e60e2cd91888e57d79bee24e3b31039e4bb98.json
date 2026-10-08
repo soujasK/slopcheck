@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly answers the legal question with clear, accurate information referencing relevant Indian law and court precedents.\\\"}\",\n            \"thoughtSignature\": \"AY89a18vDYUETcQhVZ+2ayRDMngQO/ZBprlmPIHh1NycdPJeZ7CkVS0z0tPGRnsNhWlnGQCAQvZV9/xstNGOcIR1wl/SBz8zRcIANR6MEJwwBknjKhxioD0jEn+sq5Vwa4dv2zRzzIFjyn0QMEw+B8+UwL2uVSjgn2sng0pO4d6SGbWTzQzUqu3MBJJK3wy9hPNG6cQA/Rw3SQs4QvQ/uTCdOwUiFhs63/6dHTa/bVS9Pd82J1+e+0esiblh/y3+oJZgFsCn9Uh4CpeYIBJ94Kdyf0u7vwA1Ngp20iSRqVNJwKz2Oief8x9lvSUVc5ivS4CrqJWplEWAlWAbTkovNYlHwNhv35pZ3yczHLaoUhn6gOxQ0zAj7aCKWNDMRQfw5/UHh+rdqbKoh2/k58YdDkF/4pYs4lPE8s1x00QdJL27ZCAUV2Ep92yaw/YuwpD8218Yksst6IL/498fo9Oqh9V6ZXCZwrY8WKtnSIVwclwQQ8DqOVrnR5XS8IMF+IuJE5Umg5mOaWsOE1N0IcEE2TpfeP6wJsF10/hxpwKnLFsgCXeyvSRw7ER5EEFj+o5JpAhUGiWq/7uqL24hZPeDsayDyorscKy9Aion50LVp/vn1vFT3dNuo7jjUFLVYDjkm41666QImFESsdDQ4tLh5GGRiEgUeETI5Q4Vbxc+VcnuGVS1us8lyavSISPKLCr99/cyqD+FYONLB61z5vKXMOfYBgBhh2NkMR4o7pDJvNFCNb44Syajp4L6WPECw3TPOwmDBlb7AlndX0K0L+Il0TAb01BlL2A9u1EEtqeIzSCi8KsJTLK650kS5OnWtikgtnuG\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1066,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1216,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1066\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 119\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:37:45.784905Z\",\n  \"responseId\": \"OTrHaon0L4nDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:37:51.428012+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:37:49 GMT"
+  },
+  "key": "10003cede8fbc01aae8b53d4287e60e2cd91888e57d79bee24e3b31039e4bb98",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

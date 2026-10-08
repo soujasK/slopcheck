@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is written by a named legal practitioner and directly addresses the query regarding a married daughter's property rights.\\\"}\",\n            \"thoughtSignature\": \"AY89a1+ttFJAMuRIYpgu7ZttgTWpOmeDKh+rdF0ozipXroXVMKFdbwRp55cOA8cDoLR92WuSrziG13yLsMSHGogc8/SEvYFWXria8JpuC+DUcQ7LkMwCOSPU60nGgYBibqy4QfhaUle7auf0WM9IA6FJf5ofEboxnERMtWm3Kdb6cyIfY/mFqV8OhvJlVlVRLmHA9clliHZ6VBWc+SmVFYfrLeo6gdhtoRpw3alvfZVewb5YiFQtaO4BIS9Rz24VPXdQloEv15cB5rEdV+1KhsoCoWVpS3xTLcRj5m0wNi5pUZhwvNO8L0BWoYY4xCpUMFmlsDCARxFtazugvUPxmmJ9ZkSVl6lGUNf+X8CAImTvJDw+RIiR/EAoofIFJAD4wKUxkyyT9dWX/GN84XDKrCcPINj2q+PpIMD3uNzhuRGqUMFjVQn2VZDop7WqGF/98/UfmcW7iFzE6B3HWkEDyCR/3q3/lzQEOvmXylzTfIcBG8J5JODP2UL4P3W390ssQKTq11GyKBEqNnaJSyXvg/5Jl5kvncAqmLKPoqMQs+paNriU/vxfN9/mJKyc9ZT/Bw2kwyUKjytmkN0MXsp3YJ3GdsRq/Z78dk50ire18B2JwWq/DSdtKxq9pTvxSjLVG8XtUZbAyCmCUW3jlCirqJh1m84zivR8d9VNeXq/JgroHsGumPw=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1037,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1158,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1037\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 87\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:36.530751Z\",\n  \"responseId\": \"qDrHar-yIJfc8vUPjJDCqQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:40.463357+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:38 GMT"
+  },
+  "key": "6bde6aade82de4a04e5809f85e7bfd7fbcdf62a687a650b40144c7ca894552c7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

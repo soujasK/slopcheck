@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with specific cutoff data for government MBBS seats and has a named author.\\\"}\",\n            \"thoughtSignature\": \"AY89a19pY/utwTTjLQywShNHSsbLBsHeVI31ly1Ixpodyj0mGEEwLlv8DNaArF75K28MTCLcHQpoWBl3iR8XXUpQKeXBkAihtOAB0SBRo7NsdBF85pukLRRqQ9nFHACTUAuPvH7XCf5NN710xQg35CT/U2kLQlit3zwHpPw/tzexLd3rluyndQAQ+K6qaIbCjk83NJlFLvyBYlfVwM5x+xURj0NacA4EXoAd/WF6iNdheOxYscwYKvBvnRtpVWtiK2/d+itdYwjyIonabHyPHoomWyouWydw+cWpy1Fq/DAKMIpbavZU46mE4Ah5ZkCD6Ufl3bzwXZwy0YwfLHUqBL3NaN14PkGNYdClp+U9MfpOKFyx3NyKWzYpBLq6epuC/eQuht8+kTwO9RROV/bdQwAo8jrA3lSHAVrXm5Hu2RoNWj2IT0UCpnN36wp6PfW5INjVqe5kHzsPm9o049hE8O0iCZuKxsmkQ0YgKSuzoKAL/c0OriupbpsFt/Bw1ocMfFnYLU8Ya9aa/FwK0jW4E+hLWI7HUJyA9XyzzoHKvex4FcmnbThTHXwnoeD6oBMqz1jTalUjSlSMPZ2Xo0QjdMvll2Dpcg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1240,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1341,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1240\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 70\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:18.886388Z\",\n  \"responseId\": \"DjvHavSMNs6P7PkPk7GygQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:22.373801+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:20 GMT"
+  },
+  "key": "834e6e57e150b30e94c4136d9a448f7d185fcb22c45d663be2e1d9fbdaadf5f2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

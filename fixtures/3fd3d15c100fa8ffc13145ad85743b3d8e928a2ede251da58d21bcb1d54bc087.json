@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is auto-generated or keyword-stuffed SEO churn with speculative and future-dated content designed to capture search traffic.\\\"}\",\n            \"thoughtSignature\": \"AY89a19eaYBsFTz49leq41V6KBmlYFgu/p5YvJEdGqP3Gvot/hISbY9XLdWEME7sOVFvCw1tFpxfiKdELqXxKGSYegRBfKpk8rxzsR0FvaWr7obuFFkGtpz+tuuEJgeWK38cUWaYXiFK/L5fOF4VAOvVCAW3RWx52GtLq+7+RvtA3uE7ZDzx+vD5BZeJnjJ091OjmOKBXdqKbsF3vNM/HmH2aZ8CHCWC/81PsDoYYuGORccemOPZmfhBVaJQEbSZIjoHQ80VQkd4v7X0M6qaWHPIR5PaqbvY5DZ+JsP52Hv87i29N+96bDAuD0MwiDbNXDQbTgbAEylPg/kZMbRIjf32c6eKpUO3ZRhGqnNMsqisuiJtUHIT4LaAutnkk06oPPynefel+LeV4TLKyS9UZCZYiEbFBqDhZhP/u5VbTozXz9gIGd9KqNJSeP2x8LEixwRHobvG1/9FlcIkrHYZ/CccpVDBlpCwoqRFoaUHiQSVKqk4I2kUG5VHMJwGMPh5wftjB160prylvzbRmfGkPpU1pzG2wKEW4hR5UvsnD5g7fivV2EzSfX/XLkmRVHJQgv/+UVyJgqmNUoB/b3WBZz9exUTl9ouI5+ycaCMxreOWSMyv3+9Bz8EsrmcjzjM2gR0qEyoMK7WOMIrs7QIuc8J+3J/R0E/4Rs/AsZDZHwQx3XI3BvUDLr41zwzJA7i1jbGcPksLUJfQ6fTFsKvMZuDwr5fkfrcDFapxGhJq00rb678o55MxYjzE/pbfFp83VIFyBpvLsMHVBhykMDffDz4l1CkfLlsaE7VfsU1rAK8aDVblmPc6K+/h90XtK2qFot8jBxfFbs6aDikcCSkjo9TuBLd1tiGn6M/Z0QjmGiAzybxQ6oZPPLXZM0BpaKo9/r/2mVCiAO0hiXQLU/5wbRidnlimutY5xwYve/Bz+4R5SNlxnXDoRS9eoU2DgiakFvLCiNJiTK41B518nR0JkOB+v8kUGAdMOO/HUdsM71YUUBNswXkQ9ohPe/NNw+o0y+ANQJr2X7RHPCPXtBStvuzJDet6yIaFgOx1ebUkswQrk8LdE4quPcFINMM4jiHr/jOMt1jgTqgocEYYFkgV+lEei2Xct4363B1HvDM7uuUAxZAryv/UvZOyT+B6Q8mxBqokKIs7bfWa4/WDtKXV\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1160,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1420,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1160\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 37\n      }\n    ],\n    \"thoughtsTokenCount\": 223\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:39:42.418636Z\",\n  \"responseId\": \"rjrHaszGGYSc8vUP152u8A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:39:47.127304+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:39:45 GMT"
+  },
+  "key": "3fd3d15c100fa8ffc13145ad85743b3d8e928a2ede251da58d21bcb1d54bc087",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

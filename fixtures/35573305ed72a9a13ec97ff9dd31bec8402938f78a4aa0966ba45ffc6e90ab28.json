@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is written by a named specialist from an identified platform and directly addresses how fake UPI payment scams work and how to identify them.\\\"}\",\n            \"thoughtSignature\": \"AY89a19+bfdL+uMMRhrz/Beje4hb2gfQehzieTk6H007wg27RJ91DJ6F2TUk0EgKZbo2Jlg6iH4PmHY2pXSokKzdNzKizokq0IyTw0sSMR4kPleD1T8XR4FlOOMM43U/uTpisCuOvRueHxb0mjyd0NeGeIMvwHScTRBbU2rg/ebBtWhjrdpOlTmsTWi+01mIWntDd9GGEyPPgjR4fyJOBM3Cn44gBNmfruQyLO/AyrcXUT3zyFar6mE6qmVzc980vOEfyluKnhw35TC5mMDgtPqAGIhG4bp7STgu8I/4QwPyoa2jLsrXswBUgqa6pi7vV1i6ND/rhZqte8tmilrlIzA5i9eJfN/BCXXXcZ/GO00tbh1TSHKEoHVqo7soUqKIWReDr4BzdVfK0CCGVnaeZ1hqKXlAId2vWyjMtMHkULSWmQkTUuaw+1T+nMIcTfiPwHVUtMKWBtACJIsgs37fCpgucwfXTOGbN45Q0uTnGhMW3WwWfEOkoZ5a3MnKCefXcsgeU8WHE2IhHUVTHEDDkxysaNNwPRnxxW1wEv6txdTlytF+Ppc+KmgsMiK31+O7p8RbtU9ens3n3ql5qqyarPFwpzJbg5dAoszRahTzlz3k4++xamkEs2/epIV/PpSCs/Eoo563Ebo1nctXi867NFue6uAh8L31uZx3yXiZX2l7IJ6Nj/tZ1o0=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1037,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1164,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1037\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 89\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:22.777699Z\",\n  \"responseId\": \"TjvHauO7L_md8vUP1_O5sAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:27.185067+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:25 GMT"
+  },
+  "key": "35573305ed72a9a13ec97ff9dd31bec8402938f78a4aa0966ba45ffc6e90ab28",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

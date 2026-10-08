@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial landing page selling paid drafting services rather than providing an instructional guide on filing an FIR online.\\\"}\",\n            \"thoughtSignature\": \"AY89a19ugaqUUj6z67Hk5PKEU0FIzH07NvJWXCbYptJCc7kJE81bCtAEAlc5oweY55vdhfF+g9tF65lHg8uFa15Vi9frgKuszYB+H0N6uhr/lt3e6cZJIeOIYCXOJ8GMx92KvzipHRmJqNEDnb65uZr38+AnGJRb+go4RRiefTfJmwmXp6XCogVKMd+r/yHOfP4JCcs8WSJlUqgi7TyiaAFlezr1/Z1dMjdxcVv1C+aQPAuk7LNXpX5EWPYj4cp8xdlK/h7+ifYJIsondzeumIhHkxhHZ2yXD/X5YN2qnAEXlR2NbhtKssJKV5q8MftG5dG+ByS8LkKo5X+FJ8W5qo6IunavJPvpht8DFuWwvdiN+ZpyEakio8j5tw3t82eI+a7JiOA9d5l4k6XrzEOEx5YbPScnw4YhdCsYAjwAHIAnIjI+Q1I0tohdKezEAx7L92OLOxzxQ3uH6lz9Klo2RifRjOiaEJkJJSoFX8tXZD4kVvfUUFX7fSktUAjKGlbvLQe7ivonRUPQVaOfu66aMPUM7PMQijfMRXjYj5Pk4+Vgc6wX+pj596iexl6QoGRKJAmYFW3tn/Wrye0f6dASTv/T0rCzJUxacVJ2vqP3fzjz+tKOsNseKnq5rt9vnYLJAjRR7R522H17FQWBX/DVtU+q9Q==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 996,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1126,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 996\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 96\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:49.284333Z\",\n  \"responseId\": \"8TrHaq2tEbjk8vUPw_ThuQM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:52.876200+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:51 GMT"
+  },
+  "key": "0c3c1895dc907f9e588d6c5791b11f886da2e91dafba26c1f9b6b968aed4f201",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

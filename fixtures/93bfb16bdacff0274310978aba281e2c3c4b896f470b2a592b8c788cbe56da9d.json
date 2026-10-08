@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official guide from the Federal Trade Commission providing authoritative advice on steps to take after being scammed.\\\"}\",\n            \"thoughtSignature\": \"AY89a1/C1ljwYhM/TgkD96GiPmRThF53NuUzL+zv2IalTTtUcIdPjVZQKH8Y6ZW5kyqV/eZNxekwa9suEbYuxQj6ak1VMehiodEs8KSORgK7LVXvM0eq2DyqGWni3jl/UT4jwFpRS3vCsOTlNTGUNS+ymSF8bArmGuFCwwQDi6bZ3ny8NaYNnmiLezkEZ7srunm/6Vch4Vp5pCnd4lBfCTNIAZ8LqMdhLURvycOHG/9JDndlU6vt43+IvzNP9D2xzdFzQzxJUKMCDGOOwZh0qQFdNv+g/0FbZEo4+/8lyLyfbCbdNK7xkxC0fC4aSeZ8VSzCSU6bPevBgq6mbIYxd74Lzg/Pe3e9XJekglYXTMQDJB/Ko3Sin3yPeyvyaSFm+paCRITItjaKG/05mcTGiarsrCOLtOMFE3IWA/32N/w2FLta/W644UQRQQuUUAw3VrFTx1TknU6EoWNoDKlKAcUcxc6rJJATBARTlnjJ3P9xtib/6RL77mnDDyqkcufPNk7oTxwTncd+EpYK/PCXE82d3/v6/SRmkOh8gV/lQR35x4AhPTi9DE99iKiocuKRV5l4t2NlGhQnrwn45m5zWyedrGwaFSwZskINyIgdtRxby93N6cPEmVCPDPXDWI5hT40HNXAKm6y9W1gLiJlvFoy9XkzbStevDPTjCdqK2QO9T5AKNnoj/pq6QmJRztTfXsj/urppnAbbeZpl12/XHRxx9yqCaFw+0KmZAkq8fCbI18aLirrfJK828EMnaPQR0UddOZgnd790\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1100,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1247,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1100\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 33\n      }\n    ],\n    \"thoughtsTokenCount\": 114\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:41:16.080338Z\",\n  \"responseId\": \"DDvHatLzBKeCoLAP4K2G0AE\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:41:20.322534+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:41:18 GMT"
+  },
+  "key": "93bfb16bdacff0274310978aba281e2c3c4b896f470b2a592b8c788cbe56da9d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

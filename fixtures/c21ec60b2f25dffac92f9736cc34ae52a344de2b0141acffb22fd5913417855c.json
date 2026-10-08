@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query on how to identify fake UPI payment screenshots and provides relevant information from an identified organisation.\\\"}\",\n            \"thoughtSignature\": \"AY89a18aZvQhWLdcN4xNVmilQc5Rp0wYt+bMtngsLHsiT0+xZYvuGYYjupwq6DX7ee07qxT7juVCEgAuve87deYo9WNJXOdLvtLUJqj76LTWteoN8wWahkxM6lhnLBPaPI0aogaVIdplqR9K1uhsXCXHECixuameQ02AIX2M9pko9Zu2IMHdcYNqCAVl36ah3SGmS/HWLr+vczyd1ALfQydw0f4KJJo6IoTtmLVnoo519PDnVmu4y1TOmusccR4Rg5ir04SxG9c+cikav2S1MxMOle/8YOZVAVRBDFNh+C9dHZaAH+f1DFkuaRywEpMQTAWZDnILTL1sz5XAy4B6OYcFpMZJ3790Z4PR9uvQQQ7B53E6+RfyhjGjtug9Ebo4cnNjFx3Ykq5VTAG0TxAc36FNUPBpbg9suv9wrlXHf8xuKuuPbEHb4Rve60ve2J9cd6FPod6GkxY3UAFRCVl7cZj+q4BUhrOv4aNkPsdayjFebaoetdJfVtBYmww7bYU0iqBwLZ72yNeOsLb1U4A32oR9g4EYO622w+qLYe/ldPTGuFzhQG3NHyCiHxa6bM4+hesIB/x3EhOitDOQQLrgsOhUGB2kvTSeq/D/cJ7JpNBpoRrarECqKeHb8bBz0U1NmebqTJzFlZ1Dvzd956i1YYwwujiU2U0sDJR53rHO/3ns1D7pZyIl0Fn4H4tEBxzaujv5mgzJJUsX7m3chFen7jcEbr5pQphELvNY4/Yc0jmS9KBkUjFZf2BrpXiDzJ7MgFSVecwL7cYrCFM4+JuV2F6T8tUzaEUand4bsVlrrWjlXYVhbwvYq28rCmw1NLfz\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1021,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1170,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1021\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 34\n      }\n    ],\n    \"thoughtsTokenCount\": 115\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:38:40.672026Z\",\n  \"responseId\": \"cDrHapqCKf-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:38:45.287389+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:38:43 GMT"
+  },
+  "key": "c21ec60b2f25dffac92f9736cc34ae52a344de2b0141acffb22fd5913417855c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

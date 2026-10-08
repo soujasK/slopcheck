@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a legal advisory portal answering a specific user query about Telegram part-time job task scams with actionable reporting and legal advice.\\\"}\",\n            \"thoughtSignature\": \"AY89a18y57LBudy/Cmd5XLwLf983xsP6HoGl6mgevKjBJ1kOwhHFzLNoOJjM/XgWJUk55JgSsCHneGu3QM3OZh2arx/EBZbL0SDFtKvULwBM9k54FXZvofgHadDJ8KEwplSX1tJCWUhTEnJkVDUDPkKd7cch88zjVoN59XkVVOVv1MF5wmkdz1LdnsGyStLp/2FxrC0cudCnbp2FuhE3ogLfVXVuwtwG8F+tkoP6/bJlInAXro/XoKducOEj7TUpM5MRxiYI9xv7lSfPEwVxVoW0cR6Kvdb8jFaz8bPDfqeYznLaOesLv8wTeu8e1PslN8S9tAQBxc0RcmwA6HaEi7VPXW5o5TL74rN5AiOXZvMhSvL3cfNPEm28tsBOOgcs6RUUsUsyCsDfRIbyrNm8rDgxEA/biIULVbUQLg/lJaVDJk8PSz8MUNy6LZvVdNR3yC+roh9yNTcYKotegdD9mwA7cusdbfNVFkHNvt68DqcKL4NUKT9iUOarVNsO4wZz4iRlnODuV9EmswFzko0myklUFtj3glwSkZYA50wtAHgaiN90JgwyjN/YCdT8YMzym6HyqxYp/l76gWVux8gWiWT4XqN5ljeblGvFCtVUrbM4YzZCBWmtlfKz2frUit/hL05A8Q3zkcKnuyrdoCc0GdYJU9s0hWyLibwYgFi73qSWfBjjObsNlxSVeKggIiH/yA4N1mg=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1080,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1215,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1080\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 38\n      }\n    ],\n    \"thoughtsTokenCount\": 97\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:03.725672Z\",\n  \"responseId\": \"wzrHaqilLJnd8vUP46Hl4A8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:08.024573+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:06 GMT"
+  },
+  "key": "48ec6f58dd209fb189ace892b73bb598784606241ab6caa06f026dd42e041940",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

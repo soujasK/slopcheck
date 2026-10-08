@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is about UN humanitarian relief efforts and is entirely irrelevant to obtaining free legal aid in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a19DwH6rmlmNEdVb0GG7NxNEom8a6FmhW4AC5VgoHm4v7IUox+m/XYZuWNqKpX3HKeDz4YRd+zBp8HqRXxfc4hFzwGDb6UYPtXDl2Fn1xTfT6KLe/WYv+fD+jIsx4iQuzyPvUaDtB8mokrQBAk1hu0HATmp+uMVe3hA6WpYh2784CPVunzoJ3PMptdGVLu4gL6nLg+ZYZPGsGe9w5gP6E8nsLmfwitQKwh2bY+o9poIRD+a58AEQV0FhLtnrGwzfFizYtM7WUxEB0yuO5dEJ7r6ywNTZqiz/CvT7D8HcoG7A/J5b1dPjomrlJBfctrlvBy7iQYrqXGHzd39YOVuwzGSxOLtyEMuGJE3wrzMOfvAxa3xVJ4BIpztDDkbkaZQR91DyeyhY5Z6rY7krlffqWqYARsLY0SrVqO4=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1024,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1102,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1024\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 31\n      }\n    ],\n    \"thoughtsTokenCount\": 47\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:42.605496Z\",\n  \"responseId\": \"6jrHarj6JPzt8vUPjI3f6Qk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:46.114040+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:44 GMT"
+  },
+  "key": "bcde868f630a831c84db06d4c9b454912060238ae4597cce9013fbf70851e74d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

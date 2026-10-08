@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is authored by named legal professionals at a reputable law firm and discusses legal remedies and procedures for cyber fraud in India.\\\"}\",\n            \"thoughtSignature\": \"AY89a18KqzwU7A5Jjnu6KZ58qHqg6HytfQinAMcdmNwFI1HeF2pQcjRxFNHZac0OpJmZHAlRBwKIXHlXyfvIm0mmzq/xeVLp+/g6etB9kqKe3Ay/wAOJLSesHY/lGO5jUoehTA36cEtlVlxJU0sCx9b23YE97glW/kX92lc9JJdsGhMsQ3tAKb+dCB3D/65QVXc6hmXqURzyVZSRT05TAF4LW6YbbyIah18iNu8jJcMJXG3Rtr9o+6JnTMMGR5TPKMzr62P5myEtfWZdMGDQFxifrpk8TrRQE4iZtrJhvBuwJplHax21gxAWH3coEVcJM6o7T+gZ9Tp4qVEObbtXUAccgRMV1yljZZbEokboeB6Khq9gD28VlYvvpiEhZ4HTkm4NbbwkwF9jOrT3FstiCyecXxBzy2hjH4R0ZdftJZDHykSQH7xgMw3MgwCjEIqgCia0FSyR0JgROse6Pe/2pGsXfmeY7LDULgxNH/0SRn3oQYRSMNx0ql3aevDjqaaVMK7aJwxmZfJzWhhw0KeUF7TcNNVcEk1Z1DHu0PTDO/93vQ1cG2JGir8aEgKn5hThtTPQH0AppoeHEq7gdYLYF75m\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1062,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1174,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1062\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 36\n      }\n    ],\n    \"thoughtsTokenCount\": 76\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:13.767149Z\",\n  \"responseId\": \"RTvHaq3pLonDi9sPwKnswQQ\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:17.539405+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:15 GMT"
+  },
+  "key": "11ca1d13e05be9609c5306a9923be709bb016af9a2f0e02779bbfdb81e2f86fa",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

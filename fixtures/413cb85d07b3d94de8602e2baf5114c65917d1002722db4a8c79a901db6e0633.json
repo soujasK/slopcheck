@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a keyword-stuffed promotional page from an ed-tech company with generic SEO content rather than reliable cutoff data.\\\"\\n}\",\n            \"thoughtSignature\": \"AY89a1+oC0tOGoivOBeeC4oAZAJhTfQNo3dyFYMfvbKCPJDxThujnnldhpJfxXHABeCyJfSgGLsSMsqOHwotZ8zvzDe6u8UDyW49F6QS+/91aJR5DdWtxMhjE7su8Ca4O7fcMeERE22sgiLLtotbKLncRhqxU5yE2zuXiqYstURv7j966yvY3VrjYJyvkvTzU63Rolcf6aw0dgQNVtXOqDoA1+DjX4iZuhvZBJKa2xUmM8j3K7zjSmcm2RqJDdwm2BTZyC1hIfHSnvX9gySMLiDC5gc0s4zf7urd3W3hYWePQHw5twftEAK3kjhIWZTtpoQr2WPxPc+4OyqQd97vqBdx89DpjrsLANFl3qKQgr8dkC/JIQofTVrzbasJiHXRh4OTU4OrsHMYD6FTL9ZeQ5N2+SOUBXEXE4Mv7ZP0JeE7w3ReP7XQM43XIOnguftQEr6XBebHTvXFRbssJixFHjEFbXowldqyiVM2a/boGR1d9d6nIxxMRjdv3rtup3lVWIuSJdCOdJj8c1sXryZXapYhqmwjzTrlYsmQjEo+lAP0iadL5wJApp2PiEWgX0iqsU/unQRLRjh49dbtjG1gsc9rzF0nbuQsEXGIpp8FHPIgsruEcNsBWgRjMxGdCz0Wzu4aGLmbqIAti5am3Y5EK4oTGdHcBkdV5HWSfCoaiLzCy8n0UaRimxhw56NWbmNTHGR78RdajBRLuk+GLeM0FUR7UNX1bZbfuCrysLmqHqKwk2ZTi7BouvPFocnw1jnVlr3HUwWj+y9fsfb8tfvjy/7yB8i3FtLx0CzLfBSDbPuECMYR51ESxKUb2OaX++19oURMDBPfalkSLM7DEp+glvBg4dCTc9RpIRzetPL89kM8FlxdWFtDeWAME4m4jH1zaXcsmIFWbD1ZyRlNVg==\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1052,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 1243,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1052\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 43\n      }\n    ],\n    \"thoughtsTokenCount\": 148\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:42:00.743778Z\",\n  \"responseId\": \"ODvHauKyLbK_i9sPl7nvUA\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:42:04.964624+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:42:03 GMT"
+  },
+  "key": "413cb85d07b3d94de8602e2baf5114c65917d1002722db4a8c79a901db6e0633",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}

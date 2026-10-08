@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"role\": \"model\",\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The content is an auto-generated Q&A response on a directory site rather than advice from a verified legal professional.\\\"}\",\n            \"thoughtSignature\": \"AY89a19J9sndQLNieahM3zrL8E4D6zrup+JyfftvWYdsSxUWaACFWNFOfXLvyoRzf2MtiJvi5UJH7H34bz1Feu/AQwhqRkeQR3/QLXXpG343vaz6kdJ9pdLtlq9r1O2KN+JpED+QWnNHh6fCC90qtRnUr1GJX9OsK9hXyj1ehK8ct+QjcwDxYcUNepOhgvv6Tiz+oFmNPUzmtGFP63Oj3jtFIVGdAIZbvInLYH6155IB0ARSD3HbUV+9S1EJrqK7zV0ISJRpHDbUzz2NZrcnCjbXAYAk2zkMgK6sD0eklgNXDOVj427+hHJJUUi+c+yUL8GqKFX/kcvDN9WhHDn4Krq0XWzgv/PvsFFKnykS0QQWYmGNLIgeTUZ8NbUabXS4GACz2cpcwQ8svVCoGTF0/lGAUyHEsPE1FtZZOjGs6JmhK80MUyujOt7x7RMaKEhJc2bCyEwQjsfph2aqPVCI0B23rTNa9yUV+5NhUjczsywxUyagRk9iYDD2vdsd+rZxTaBRFFjzskB50I/xAMFRas2Iz7YcemV7h1cubhhrI6uht94obIqCyVD8GRfmogL4wPVoFZPX8gdX7OW8oMypc/FyWYZtYFSmoricwjr8Lpi2KMwqb0bFf/mX6RksgFi+s7an1vUXDsc=\"\n          }\n        ]\n      },\n      \"finishReason\": \"STOP\"\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1031,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1163,\n    \"trafficType\": \"ON_DEMAND\",\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1031\n      }\n    ],\n    \"candidatesTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 35\n      }\n    ],\n    \"thoughtsTokenCount\": 97\n  },\n  \"modelVersion\": \"gemini-3.7-flash\",\n  \"createTime\": \"2026-10-08T06:40:51.426760Z\",\n  \"responseId\": \"8zrHaoiGGv-HoLAPvcGuuQY\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:40:55.539761+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:40:53 GMT"
+  },
+  "key": "58414c17398fc9311f175cd8cd2238471f20ce6ba4f3eede2d8de0eaf28e04dc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://aiplatform.googleapis.com/v1/projects/{project}/locations/global/publishers/google/models/gemini-3.7-flash:generateContent"
+}
