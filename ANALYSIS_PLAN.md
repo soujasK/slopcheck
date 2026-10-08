@@ -175,6 +175,13 @@ top-5, and whether the answer changed. All 8 are reported; none are dropped.
   labeler A's Flash-Lite. Judge C uses GEMINI_API_KEY unless GEMINI_PAID_API_KEY
   is set.
 
+- 2026-10-08: **round 5 result** (reported after the one-time test; nothing
+  changed): kappa 0.60, 83 agreed; rubric v4 precision 0.56 [0.27, 0.81], recall
+  0.25, F1 0.34, beats every baseline; 0.70 gate not met out of domain. Main miss:
+  service-selling lead-generation pages (legal / documents). Round 5 is spent. 9
+  SerpApi credits were wasted re-buying cached searches (record mode); logged in
+  SERPAPI_USAGE.md.
+
 ## 5. What will not be claimed
 
 - No per-site "spam" verdicts; examples show only the signals that fired.

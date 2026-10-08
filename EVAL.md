@@ -12,11 +12,14 @@ truth = items where both agree on ok or low.
 | Labeler agreement (Cohen's kappa) | 0.47 | 0.66 | 0.42 | 0.53 |
 | Agreed items | 141 | 155 (13 items not labeled by B: daily quota) | 114 of 150 | 102 of 128 |
 
+Round 5 (out-of-domain): kappa 0.60, 83 of 100 agreed.
+
 | Rubric | Development | **Test precision** | **Test recall** | **Test F1** | n |
 |---|---|---|---|---|---|
 | v2 (= v2c), round-2 test | dev F1 0.56 | 0.37 [0.19, 0.59] | 0.35 [0.18, 0.57] | 0.36 | 71 |
 | v3, round-3 fresh held-out test | CV precision 0.72, recall 0.33 | 0.57 [0.25, 0.84] | 0.19 [0.08, 0.40] | 0.29 | 114 |
 | **v4, round-4 fresh held-out test** | CV precision 0.80, recall 0.29 | **0.88 [0.53, 0.98]** | **0.30 [0.16, 0.51]** | **0.45** | 102 |
+| v4, round-5 out-of-domain test (4 new topics) | not fitted on these topics | 0.56 [0.27, 0.81] | 0.25 [0.11, 0.47] | 0.34 | 83 |
 
 **Gate (test precision >= 0.70): met by rubric v4 on round 4** (point estimate
 0.88; the 95% interval is wide, lower bound 0.53, because only 8 pages were
@@ -224,3 +227,75 @@ Baselines on the same items:
 | no author and no date | 32 | 0.38 | 0.31 | 0.34 |
 | 'best X' listicle | 10 | 0.90 | 0.23 | 0.37 |
 | random (same flag rate) | 9 | 0.32 | 0.07 | 0.12 |
+
+## Round 5 out-of-domain test (rubric v4 unchanged, one-time evaluation)
+
+Does rubric v4 transfer to topics it was never fitted or tested on? 32 new Google
+India queries, 8 each on government services, scams and safety, legal rights, and
+education and exams (frozen before any search; ANALYSIS_PLAN.md 2026-10-07).
+Nothing was tuned; same labelers and protocol. 128 of 264 pages were readable;
+100 drawn (seed 2029); A and B agree on 83 (kappa 0.60).
+
+**Result: the 0.70 precision gate is not met out of domain.** Precision 0.56
+[0.27, 0.81] (vs 0.88 on the original topics), recall 0.25, specificity 0.94 (4
+of 63 ok pages flagged). It still beats every baseline (best: "no author and no
+date", F1 0.25 vs 0.34). So rubric v4 is validated only for health, money,
+products and tech how-tos; on the four new topics it is a weaker signal.
+
+Per topic (descriptive only; n too small to test):
+
+| Topic | n | caught low | missed low | ok wrongly flagged |
+|---|---|---|---|---|
+| Legal rights | 25 | 2 | 8 | 0 |
+| Government services | 15 | 2 | 2 | 2 |
+| Education and exams | 26 | 0 | 4 | 1 |
+| Scams and safety | 17 | 1 | 1 | 1 |
+
+Why it misses: most missed slop is **lead-generation pages selling legal or
+document services** (docupro, rtifile, consumerlawyer, litem, complaintforum).
+The `sells_directly` signal recognises shop carts and product markup, not
+service sellers, so these score as ok. A service-seller signal is the obvious
+next step; it is **not** added here, because round 5 is spent and nothing is
+refitted on a test set.
+
+<!-- rubric v4 (frozen) sha256:87d60918426f; 83 labels -->
+## Split: all (n = 83, unsure excluded)
+
+| Metric (class = low) | Value | 95% CI (Wilson) |
+|---|---|---|
+| Precision | 0.56 | [0.27, 0.81] |
+| Recall | 0.25 | [0.11, 0.47] |
+| F1 | 0.34 | |
+| Specificity | 0.94 | |
+| Share labeled low | 0.24 | |
+
+Confusion matrix (rows = hand label, columns = scored band):
+
+| label \ band | ok | mixed | low |
+|---|---|---|---|
+| ok | 49 | 10 | 4 |
+| low | 14 | 1 | 5 |
+| unsure | 0 | 0 | 0 |
+
+Baselines on the same items:
+
+| Method | Flagged | Precision | Recall | F1 |
+|---|---|---|---|---|
+| **SlopWatch rubric** | 9 | **0.56** | **0.25** | **0.34** |
+| any affiliate link | 1 | 0.00 | 0.00 | 0.00 |
+| no author and no date | 20 | 0.25 | 0.25 | 0.25 |
+| 'best X' listicle | 3 | 0.33 | 0.05 | 0.09 |
+| random (same flag rate) | 9 | 0.24 | 0.11 | 0.15 |
+
+### Largest errors (up to 10)
+
+- false negative: labeled **low**, scored **ok** (no signals fired) https://docupro.in/bangalore/personal/police-complaint/police-complaint
+- false negative: labeled **low**, scored **ok** (thin main text (660 chars)) https://ioes.in/how-to-get-scholarship-to-study-abroad/
+- false negative: labeled **low**, scored **ok** (no signals fired) https://litem.in/remedies-when-police-refuse-to-file-fir.php
+- false negative: labeled **low**, scored **ok** (no signals fired) https://mbbscouncil.com/listing/expected-andhra-pradesh-neet-cut-off-for-all-india-quota-state-quota/
+- false negative: labeled **low**, scored **ok** (no signals fired) https://rtifile.in/punjab-rti.php
+- false negative: labeled **low**, scored **ok** (no signals fired) https://www.britannicaoverseas.com/blog/study-abroad/fully-funded-scholarships-for-indian-students-to-study-abroad-2025-guide
+- false negative: labeled **low**, scored **ok** ('best X' listicle pattern) https://www.culko.in/blog/best-medical-courses-without-neet-with-high-salary/
+- false negative: labeled **low**, scored **ok** (no about or contact page linked) https://www.homes247.in/blogs/govt-scheme-ayushman-bharat-yojana-1211
+- false negative: labeled **low**, scored **ok** (no named author) https://complaintforum.in/tag/how-to-file-a-consumer-complaint-online-in-india/
+- false negative: labeled **low**, scored **ok** (no named author) https://consumerlawyer.in/legal-services/chennai/file-consumer-complaint-online
