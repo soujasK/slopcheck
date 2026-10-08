@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page discusses children's product certificates, not how to apply for an income certificate online.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to apply for income certificate online\\\". The page is about Children's Product Certificate from CPSC, unrelated. So not relevant. Also not answering query. So label low? The page's primary purpose is providing info about product certification, not about income certificate. It's not monetized referral. It's official government site but irrelevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" No. So label low (or maybe \\\"unsure\\\"?). Since it's clearly not answering, it's low relevance. According to guidelines, low is for pages whose primary purpose is not answering query. This page does not answer. So low. Provide reason.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to apply for income certificate online\\\". The page is about Children's Product Certificate from CPSC, unrelated. So not relevant. Also not answering query. So label low? The page's primary purpose is providing info about product certification, not about income certificate. It's not monetized referral. It's official government site but irrelevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" No. So label low (or maybe \\\"unsure\\\"?). Since it's clearly not answering, it's low relevance. According to guidelines, low is for pages whose primary purpose is not answering query. This page does not answer. So low. Provide reason.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440722,\"ec_transfer_params\":null,\"id\":\"chatcmpl-451c1eda-cebc-4bad-8294-6cb8d3722791\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":974,\"completion_tokens\":188,\"total_tokens\":1162,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.80890655517578}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:25:25.852716+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:25:24 GMT"
+  },
+  "key": "eb3c166e98fb1ee66031084d21dbda935390e898a6a76bce9c6ffcda291a23d9",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

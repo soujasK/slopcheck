@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear, authored guide on how to check the PM Kisan beneficiary status using the official mobile app.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TxM09aFCMygPnfOdKIQ3BA6MXS/O8ceOGsxydzlEWY2JkzVp9D71uJK/pRcfIh7h4/77r9IERER5auKNNNWJhjfsoSH0MM5bR81m7jgvsh22vRDv1bq4koi0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1027,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1061,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1027\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"yDbHas2jKfiyg8UP6YvHyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:08.642438+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:23:06 GMT"
+  },
+  "key": "bca6a18aeca6985aa78ce6a52946ad5142edb268d1fdcc6b8d3d5d5d0ec4ef05",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

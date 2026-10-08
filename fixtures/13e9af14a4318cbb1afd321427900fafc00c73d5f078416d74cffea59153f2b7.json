@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official Telangana Transport Department page gives direct instructions for online licence renewal\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to renew driving licence online\\\". The page is from Transport Department Government of Telangana, India. Title: Welcome To TRANSPORT DEPARTMENT GOVERNMENT OF TELANGANA - INDIA. The content describes online slot booking for renewal, includes steps, forms, etc. This is an official government source, providing instructions. So it's \\\"ok\\\". It has identifiable organization (Transport Department of Telangana). So label ok.\\n\\nProvide reason: official government page providing online renewal instructions.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to renew driving licence online\\\". The page is from Transport Department Government of Telangana, India. Title: Welcome To TRANSPORT DEPARTMENT GOVERNMENT OF TELANGANA - INDIA. The content describes online slot booking for renewal, includes steps, forms, etc. This is an official government source, providing instructions. So it's \\\"ok\\\". It has identifiable organization (Transport Department of Telangana). So label ok.\\n\\nProvide reason: official government page providing online renewal instructions.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440832,\"ec_transfer_params\":null,\"id\":\"chatcmpl-d25ad035-a286-43b9-b0a7-6e72579ae7b3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":729,\"completion_tokens\":143,\"total_tokens\":872,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":32.945316314697266}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:15.316503+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:27:13 GMT"
+  },
+  "key": "13e9af14a4318cbb1afd321427900fafc00c73d5f078416d74cffea59153f2b7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

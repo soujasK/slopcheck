@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a user-uploaded document template on Scribd rather than an authoritative guide or official legal resource.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWFjuUyV3Ts4Bi5A9sG3EOryjLYXBUwTrAMPB5gvwXQzEHLlSWCT4rHc7TtRhquywvPhNpkIY5cjQdPGDmy3dmmhLZmu1dYKdBFP+XxIAQQN8FIckYMnApWs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1045,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1084,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1045\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"dTfHavqPCczEg8UP2YXWyAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:03.841320+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:26:02 GMT"
+  },
+  "key": "8a709de7b2071948c9d500e4f385a3d42f3fb8866b453582488893582261e19c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

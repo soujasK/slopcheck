@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly lists and describes medical courses after 12th without NEET and is authored by an identifiable university organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"best courses after 12th science without neet\\\". The page appears to be a blog from mgumst.org (maybe a university). It provides a list of medical courses after 12th without NEET, with details. It seems to answer the query. It has identifiable organization (MGUMST, a university). Likely ok. Need to check if it's primarily promotional? It is a university blog promoting its own courses, but still provides info. The question: \\\"best courses after 12th science without neet\\\". This page lists courses, likely helpful. It has organization. So label ok.\\n\\nReason: provides relevant list and is from identifiable university.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"best courses after 12th science without neet\\\". The page appears to be a blog from mgumst.org (maybe a university). It provides a list of medical courses after 12th without NEET, with details. It seems to answer the query. It has identifiable organization (MGUMST, a university). Likely ok. Need to check if it's primarily promotional? It is a university blog promoting its own courses, but still provides info. The question: \\\"best courses after 12th science without neet\\\". This page lists courses, likely helpful. It has organization. So label ok.\\n\\nReason: provides relevant list and is from identifiable university.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440625,\"ec_transfer_params\":null,\"id\":\"chatcmpl-61998606-f0a7-49ce-b23c-fdcf7083d3f3\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1016,\"completion_tokens\":194,\"total_tokens\":1210,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.55435562133789}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:50.619550+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:23:48 GMT"
+  },
+  "key": "b75b0d553909af521be273f0d5d3b581561568568310c818a03ccd7821779b9d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

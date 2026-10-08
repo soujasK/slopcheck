@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page primarily promotes a paid service to draft and file FIRs rather than providing a direct, free guide on filing an FIR online.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to file an fir online\\\". The page is from docupro.in, appears to be a service offering to draft and file police complaints for a fee. It is a commercial service, not an official guide. It may contain some info but primary purpose is to sell service. That is monetised referral? It's a service provider. The page is likely low because it's a commercial service, not an official guide. The query wants instructions on filing FIR online. This page is about hiring them to draft and file. Not a direct answer. So label low.\\n\\nCheck criteria: \\\"low\\\" if primary purpose is monetised referral or mass-produced content rather than answering query. This is a service offering, with price, contact. So low.\\n\\nThus output.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground an answer to query \\\"how to file an fir online\\\". The page is from docupro.in, appears to be a service offering to draft and file police complaints for a fee. It is a commercial service, not an official guide. It may contain some info but primary purpose is to sell service. That is monetised referral? It's a service provider. The page is likely low because it's a commercial service, not an official guide. The query wants instructions on filing FIR online. This page is about hiring them to draft and file. Not a direct answer. So label low.\\n\\nCheck criteria: \\\"low\\\" if primary purpose is monetised referral or mass-produced content rather than answering query. This is a service offering, with price, contact. So low.\\n\\nThus output.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440775,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0cc603c4-2769-4c4b-854c-a979d30fc15c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":948,\"completion_tokens\":214,\"total_tokens\":1162,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.75436782836914}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:19.840501+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:26:18 GMT"
+  },
+  "key": "07f23791052ca1fdf604a3cc996cb2619ae03b617a69f3a0a7e4fdb5ef8c465f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

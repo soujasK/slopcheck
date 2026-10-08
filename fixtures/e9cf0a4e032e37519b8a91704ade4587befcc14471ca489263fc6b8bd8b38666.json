@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The article has a named author and provides practical advice on finding legitimate remote work.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TYJOEVxAwgZWtruXQj4IZF+amU5Q96kQAZ7YajgBcY/P9FvvpteQSFv1GzJVChAiTCT5uRsb8C99BXCgzUElXPTvU6ebw3gWb9g85BR3OGNg1btMimeQjRrc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 947,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 980,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 947\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"_TfHaoGaM_GGjuMPseuXyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:16.244046+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:28:14 GMT"
+  },
+  "key": "e9cf0a4e032e37519b8a91704ade4587befcc14471ca489263fc6b8bd8b38666",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

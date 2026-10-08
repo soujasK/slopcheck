@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a reputable news organisation and provides direct instructions on checking the PM Kisan beneficiary status.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7vO+Rn+ZaztCC94Aapu78uMyBDwjvZiXIe5yew07or9SRPLQpM4+gOUGSkoOrCJ/vRXPV0xrWE9ybb2nqpEWyV2mhVqdU10vYpxUBUC10h2yvPQsv/WMSxI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1092,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1123,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1092\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"IzjHariaOKzFg8UPxK6xmQo\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:54.644317+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:28:52 GMT"
+  },
+  "key": "7c74b365d4a37d3d27fcb0a372851ace8d061a625cbc93ea6687b4d12ad21fd2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

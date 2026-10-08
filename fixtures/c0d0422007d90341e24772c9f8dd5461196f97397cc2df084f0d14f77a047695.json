@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a generic blog listing with little substantive content answering the specific scholarship query, serving as a doorway for study abroad consultants.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T9clDjMMr92ZfiR+HJn/GCXiAWLOSmIipAbOxakuwMozxxQHCBDP7Jczk30wuJ+KLS38dYfLf5DhGbdVQvlAjontfMDlnK01vuCIH+LY6BOGkSidHsdJIbu8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 692,\n    \"candidatesTokenCount\": 43,\n    \"totalTokenCount\": 735,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 692\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ozbHaqn-Otzeg8UPu-eWuAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:36.483026+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:34 GMT"
+  },
+  "key": "c0d0422007d90341e24772c9f8dd5461196f97397cc2df084f0d14f77a047695",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

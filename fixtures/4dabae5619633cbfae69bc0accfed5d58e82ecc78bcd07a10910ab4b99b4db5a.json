@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a clear legal guide with specific remedies under Indian law written by a legal website.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Ti3fP4Zyk8Dy4FJvhzspdsbRcmuPJEcB4DwOiQ19UKmlbGjwSEDddfBW/L4QOOFZ5ZZ3XnEJzBCPDVh+5YcSc4Ys7whlv3seC7D2xryd2Zi+UZC2Q1dxNLZw=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 987,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 1017,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 987\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"qzbHapKYDPjEg8UPpaCqyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:40.785749+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:39 GMT"
+  },
+  "key": "4dabae5619633cbfae69bc0accfed5d58e82ecc78bcd07a10910ab4b99b4db5a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

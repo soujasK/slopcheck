@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The Times of India article explains KYC fraud and offers practical steps to handle such scams, with a clear author and reputable source.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query: \\\"kyc update sms scam what to do\\\". The query asks about KYC update SMS scam, what to do. The page is an article about KYC fraud, tips to avoid KYC fraud. Likely includes advice on scams, maybe includes steps. It's from Times of India, a reputable news outlet. It has author attribution: \\\"TOI Tech Desk\\\". So it's an \\\"ok\\\" source: it answers the query and has identifiable organization. The page is not primarily affiliate. So label ok.\\n\\nWe need to provide reason: e.g., \\\"Article from Times of India provides advice on KYC fraud and how to handle scams\\\".\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query: \\\"kyc update sms scam what to do\\\". The query asks about KYC update SMS scam, what to do. The page is an article about KYC fraud, tips to avoid KYC fraud. Likely includes advice on scams, maybe includes steps. It's from Times of India, a reputable news outlet. It has author attribution: \\\"TOI Tech Desk\\\". So it's an \\\"ok\\\" source: it answers the query and has identifiable organization. The page is not primarily affiliate. So label ok.\\n\\nWe need to provide reason: e.g., \\\"Article from Times of India provides advice on KYC fraud and how to handle scams\\\".\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440629,\"ec_transfer_params\":null,\"id\":\"chatcmpl-fb1b5aac-dbac-4477-8c32-76cafef9d4ed\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1048,\"completion_tokens\":191,\"total_tokens\":1239,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.36798858642578}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:52.668056+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:23:51 GMT"
+  },
+  "key": "9a03f6ed984a6420f171575c6edd67b574943bd0d72783166781bb80896a3ddf",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

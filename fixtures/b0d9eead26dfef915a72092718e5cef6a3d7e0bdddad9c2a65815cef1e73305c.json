@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a major established news organisation and provides direct, reliable guidance on identifying and avoiding KYC scams.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T4Bbefr6fJKc4TA5Ni7UDis5/uuBPVSSk7iMGjD9QBQiay0llKlW5WHNg/0qFScUQ99Yy1PYwACDoS5+tCCV7jnh9U2WgvBREeQs6OEkCYFL3APO+sTkpKWo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1036,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1069,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1036\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"QjfHat3HHtn-4-EP6ZfOyAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:25:13.154002+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:25:11 GMT"
+  },
+  "key": "b0d9eead26dfef915a72092718e5cef6a3d7e0bdddad9c2a65815cef1e73305c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

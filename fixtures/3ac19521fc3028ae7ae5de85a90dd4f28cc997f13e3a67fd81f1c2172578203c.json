@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers detailed UPSC prelims age limit information and includes a named author and organization, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"upsc prelims eligibility age limit\\\". The page is from adda247.com, a known education portal that provides exam info. It appears to have a detailed article with author name (Abhishek Pundir) and date. It likely answers the query with age limit info. It may contain affiliate links? Not evident. It's primarily informational. So label \\\"ok\\\". Reason: provides specific eligibility age limit info and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"upsc prelims eligibility age limit\\\". The page is from adda247.com, a known education portal that provides exam info. It appears to have a detailed article with author name (Abhishek Pundir) and date. It likely answers the query with age limit info. It may contain affiliate links? Not evident. It's primarily informational. So label \\\"ok\\\". Reason: provides specific eligibility age limit info and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440588,\"ec_transfer_params\":null,\"id\":\"chatcmpl-fc8a4fb8-7785-4047-bba9-12f24c1da4b6\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1025,\"completion_tokens\":149,\"total_tokens\":1174,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.77253723144531}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:12.118674+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:23:10 GMT"
+  },
+  "key": "3ac19521fc3028ae7ae5de85a90dd4f28cc997f13e3a67fd81f1c2172578203c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

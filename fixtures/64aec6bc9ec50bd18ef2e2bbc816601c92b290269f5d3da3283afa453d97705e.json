@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a coaching institute and provides structured advice on taking a drop year for JEE with clear considerations.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TVu5NMOA5hExQ2OfO2xdHHVoAEUhp+ZTeUcEQHa8gcpK9sWLABIXdhLoanLdaCD9IdUo+cLvXCaJfymY5Y2RbFKJQyzddh0ih7RM21++ipN+P7rwYDGH7ZGE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 993,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1027,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 993\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"lTbHaqmAKIq7g8UP8Iyl-A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:20.105826+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:18 GMT"
+  },
+  "key": "64aec6bc9ec50bd18ef2e2bbc816601c92b290269f5d3da3283afa453d97705e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

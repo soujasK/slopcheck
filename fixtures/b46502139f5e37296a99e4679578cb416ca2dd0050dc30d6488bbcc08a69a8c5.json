@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a law firm (King Stubb & Kasiva) and directly addresses filing FIRs under Indian law with identifiable responsibility.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tl8exZxYH2itusAnIqUG31tv2eeZceu8DdPdSgqG7d8CFoyxGv4NmAQKYgKyDWnN/Zs6AOvkutiRdOTvdkHQ65a2fem50wtR8VSqr5gq/2hUOXu3ZcSL1/To=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 991,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1031,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 991\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3zfHapbTMoDfg8UP2KbX0Ag\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:50.649040+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:48 GMT"
+  },
+  "key": "b46502139f5e37296a99e4679578cb416ca2dd0050dc30d6488bbcc08a69a8c5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic informational article on a random blog about a government scheme, rather than the official portal to check the beneficiary status.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TKYe8HgVpJM0C/tgfuDBx8huQEC7Iw8iXxyH+mM0sT9SGHdugSI6dY5JMmyeJPFQa1vx6Q3d+NjAodWq9tVSuH/TSUlR1QcUnseIeB1C2H1nOkF5JITEgCwk=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1038,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1076,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1038\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"RznHar2nCvOzg8UP8Om_0Qg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:33:45.972619+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:33:44 GMT"
+  },
+  "key": "8f1cec64c04d9d2b6756e8d6c2c38f4642075e632dd85363517912c131abe006",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

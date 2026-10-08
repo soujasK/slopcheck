@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page discusses EU state aid data, not how to obtain free legal aid in India.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to get free legal aid in india\\\". The page is about European Commission state aid scoreboard, unrelated. So not relevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The answer: low (or unsuren?). It's not answering query, it's unrelated. So label low. Reason: page unrelated to legal aid in India.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to get free legal aid in india\\\". The page is about European Commission state aid scoreboard, unrelated. So not relevant. The question: \\\"Is this a page an AI agent should ground an answer to this query on?\\\" The answer: low (or unsuren?). It's not answering query, it's unrelated. So label low. Reason: page unrelated to legal aid in India.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440591,\"ec_transfer_params\":null,\"id\":\"chatcmpl-72012629-e37b-4487-aeb2-a7b19de0fa19\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":953,\"completion_tokens\":130,\"total_tokens\":1083,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":39.186187744140625}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:15.907888+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:23:14 GMT"
+  },
+  "key": "5bfa1ec29be8261d47f9a375553de56881174ed4c8b902c2157adbda1e219ce6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

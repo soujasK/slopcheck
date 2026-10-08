@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official FTC consumer advice page that directly addresses steps to take after being scammed, with clear organizational responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable to ground answer to query \\\"how to get money back after online fraud\\\". The page is from consumer.ftc.gov, which is Federal Trade Commission consumer advice. Title: \\\"What To Do if You Were Scammed | Consumer Advice\\\". Likely provides steps to recover money after scams, including online fraud. The snippet shows various articles but not the specific content; but the page is likely a guide. It is an official government source, with identifiable organization (FTC). So label \\\"ok\\\". Reason: official FTC consumer advice page that addresses scams and recovery steps.\",\"reasoning_content\":\"We need to decide if this page is suitable to ground answer to query \\\"how to get money back after online fraud\\\". The page is from consumer.ftc.gov, which is Federal Trade Commission consumer advice. Title: \\\"What To Do if You Were Scammed | Consumer Advice\\\". Likely provides steps to recover money after scams, including online fraud. The snippet shows various articles but not the specific content; but the page is likely a guide. It is an official government source, with identifiable organization (FTC). So label \\\"ok\\\". Reason: official FTC consumer advice page that addresses scams and recovery steps.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440813,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8ed512b3-9146-4e76-8150-ed25deed2f70\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1012,\"completion_tokens\":163,\"total_tokens\":1175,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.313446044921875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:56.372996+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:26:54 GMT"
+  },
+  "key": "0bf93ede3683eab396f956dd296a1369367e69e80e786e0199ab3b82b1e4111e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

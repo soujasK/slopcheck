@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a first-hand user complaint detailing the specific mechanics of a Telegram task scam, which directly answers the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TUGgsSiKQk3efdsVkxJjWuyEVWCnipJlHz4J6Mwnqo/nmyvSZUAttl6iDyW5ZyN3X1BTU3KEpHV//9RlVyYjlsRfe9aGV+QuTuHMojRIB+sJITJTleu14aZ8=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 996,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1032,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 996\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"BznHavq9A5ayg8UP_K2Z0Qg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:32:48.421479+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:32:46 GMT"
+  },
+  "key": "55d4a5396752166931583536ec61d2f551562558c0be108f114d35d60e3c749b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

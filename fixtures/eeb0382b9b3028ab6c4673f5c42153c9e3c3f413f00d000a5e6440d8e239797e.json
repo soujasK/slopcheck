@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognised educational portal with a named author providing direct information on NEET government MBBS cutoffs.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBpmEAFiJdsPGUlHi9lAkfUfOHWhrHa3DnueazD5DHGEiKx4T5QVxdO8mjHzcH45utWysqb3AZ4QQHgPau+/+ViJUGSyUxDA/fMNXdaF2GZxro0wyDRGVb0Q=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1161,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1194,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1161\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vjjHaq2hFtHfg8UP2YjykAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:31:31.625201+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:31:29 GMT"
+  },
+  "key": "eeb0382b9b3028ab6c4673f5c42153c9e3c3f413f00d000a5e6440d8e239797e",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

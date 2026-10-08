@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is published by a clear organisation and directly addresses how to identify fake UPI payment screenshots with practical tips for sellers.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TvnHjqcZfDFwxh+LvCQPRFLMT5J07ufpu5/hP2z3tAxbVdRntLh4cSQz0YTmsne1Mp/hWqLZlEO6LS6bZhkDs/5qs8Ex/j0ZzwM96+LKoqdZlOUJgTzb2gYA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 942,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 977,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 942\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"CjfHau2QCo6EjuMPzJ6-6Ao\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:16.502092+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:24:14 GMT"
+  },
+  "key": "a324e43ce34118be4da1706f98c43c7cb839f11ac367ca447a78eeee7722f7a0",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

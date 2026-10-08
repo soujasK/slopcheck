@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is primarily promotional content for a coaching institute and its test prep materials rather than an authoritative or comprehensive syllabus source.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TDWinuAhrmLkKzF1nADIy01o9dD5umYLtBrrB3jx4odyus5TKTeh9LRQnzGOkzxSgXxPg7s7DZrRhx0Dj6c8YraNfnGwADkriVyU2JCvPTzHsfW4Yd5A527M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 984,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1019,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 984\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"HDjHar6oNZrdg8UP9aimyAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:49.931992+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:28:48 GMT"
+  },
+  "key": "a1b920808c060211b1a65546b2eb7a642a90b4c77649a78846e58c789220c0c5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

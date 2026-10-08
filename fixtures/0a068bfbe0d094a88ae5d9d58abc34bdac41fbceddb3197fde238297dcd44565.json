@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government portal providing online driving licence services, suitable for answering the query\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to renew driving licence online\\\". The page is the official Indian government portal Parivahan (Ministry of Road Transport). The main text shows navigation, mentions services like appointment booking, duplicate licence, etc. Likely includes online renewal service. It's an official source, likely provides instructions. So label ok.\\n\\nCheck if page directly answers query? The snippet shows \\\"Driving License Related Services Various services related to new/old driving licence or learner's licence like Appointment Booking, Duplicate driving licence, Application Status, Online test for learner's licence, etc.\\\" Not explicit about renewal, but likely includes renewal. It's official, so ok.\\n\\nThus label ok.\",\"reasoning_content\":\"We need to decide if this page is appropriate to ground answer to query \\\"how to renew driving licence online\\\". The page is the official Indian government portal Parivahan (Ministry of Road Transport). The main text shows navigation, mentions services like appointment booking, duplicate licence, etc. Likely includes online renewal service. It's an official source, likely provides instructions. So label ok.\\n\\nCheck if page directly answers query? The snippet shows \\\"Driving License Related Services Various services related to new/old driving licence or learner's licence like Appointment Booking, Duplicate driving licence, Application Status, Online test for learner's licence, etc.\\\" Not explicit about renewal, but likely includes renewal. It's official, so ok.\\n\\nThus label ok.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440701,\"ec_transfer_params\":null,\"id\":\"chatcmpl-22351116-da0d-4c00-ba7c-9529324c9053\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":932,\"completion_tokens\":180,\"total_tokens\":1112,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":41.92709732055664}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:25:04.132577+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:25:02 GMT"
+  },
+  "key": "0a068bfbe0d094a88ae5d9d58abc34bdac41fbceddb3197fde238297dcd44565",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

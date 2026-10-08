@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is an unofficial third-party guide rather than the official government portal for scholarship registration.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TY8/lbajXLn34yjSqiSZJz3StmFXqGw6UwQEkDCEkliAQIZwADwPHa1rlwfxJ08HuKjtzZgn/h6DEdFTK2ZMJnisMaazrdN6sUGOs8iAxE0spGw7iurX5Gk4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 938,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 968,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 938\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"lTjHas2eDuzdg8UP8rWdyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:30:47.899635+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:30:46 GMT"
+  },
+  "key": "5f6e81ddfb5f45b7584759c4fed6f899f596f4832922ab7e5f6d697bed04dfc3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

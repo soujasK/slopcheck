@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides direct and actionable legal guidance on recovering a security deposit with clear disclaimers and organisation backing.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T//HoFiIt/YGqXy4jwJtpvkQCzR+iH4XU72pUOGBgSJ3NAM5N+ArlQK43jOqh+7GZRJI6MkZvuPu25Zky6m1RJO8gfWCfxns8Ph5D/zLH6ptbxwlpjUOXZKc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 952,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 985,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 952\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"WTjHaob3OZrdg8UP9aimyAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:29:49.632259+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:29:47 GMT"
+  },
+  "key": "184a6a3bf7f3524cda2a19aaa167cdf3a58b9e730b4cc2d75615030ae7d58278",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

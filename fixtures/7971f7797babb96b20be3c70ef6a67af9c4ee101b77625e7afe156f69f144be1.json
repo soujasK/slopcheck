@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is a law firm article by a named advocate that directly explains a married daughter's rights in her father's property.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"daughter rights in father property after marriage\\\". The page appears to be a law firm blog article discussing daughter's property rights after marriage, including rights in parents' property and husband's family property. It seems to directly answer the query. It has identifiable responsibility: the law firm \\\"Sachar Law Firm\\\", with named advocate Harshit Sachar. So it's \\\"ok\\\". It's not just affiliate. It's a legal article. So label ok.\\n\\nProvide reason: law firm article with named author explains daughter's rights.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"daughter rights in father property after marriage\\\". The page appears to be a law firm blog article discussing daughter's property rights after marriage, including rights in parents' property and husband's family property. It seems to directly answer the query. It has identifiable responsibility: the law firm \\\"Sachar Law Firm\\\", with named advocate Harshit Sachar. So it's \\\"ok\\\". It's not just affiliate. It's a legal article. So label ok.\\n\\nProvide reason: law firm article with named author explains daughter's rights.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440677,\"ec_transfer_params\":null,\"id\":\"chatcmpl-6061157d-5df7-4f11-953a-d098e13a9b75\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":991,\"completion_tokens\":157,\"total_tokens\":1148,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.23617935180664}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:42.843856+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:24:41 GMT"
+  },
+  "key": "7971f7797babb96b20be3c70ef6a67af9c4ee101b77625e7afe156f69f144be1",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

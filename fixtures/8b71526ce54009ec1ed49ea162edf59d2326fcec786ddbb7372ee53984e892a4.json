@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on checking PM Kisan beneficiary status and includes a named author, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"pm kisan beneficiary status check\\\". The page appears to be an article about checking status, includes author name (Ananya Singh) and date, seems to provide instructions. It's likely a blog site (patnarailmetro.com). It may have affiliate links? Not evident. It seems to be a genuine informational article, with author, date. So label \\\"ok\\\". Reason: provides direct info and has identifiable author.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"pm kisan beneficiary status check\\\". The page appears to be an article about checking status, includes author name (Ananya Singh) and date, seems to provide instructions. It's likely a blog site (patnarailmetro.com). It may have affiliate links? Not evident. It seems to be a genuine informational article, with author, date. So label \\\"ok\\\". Reason: provides direct info and has identifiable author.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440873,\"ec_transfer_params\":null,\"id\":\"chatcmpl-06954112-b461-4533-bc63-73450d4ed875\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1032,\"completion_tokens\":145,\"total_tokens\":1177,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":42.7225341796875}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:58.323959+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:27:56 GMT"
+  },
+  "key": "8b71526ce54009ec1ed49ea162edf59d2326fcec786ddbb7372ee53984e892a4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

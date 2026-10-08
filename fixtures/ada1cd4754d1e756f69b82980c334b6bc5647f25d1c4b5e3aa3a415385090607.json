@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is the official website of the National Legal Services Authority (NALSA) of India, which is the exact governmental body responsible for providing free legal aid.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TPw8Ss6+nlaAT4NLt0CJ+uAFJ3UnK+d8xFMfsGW9Qg7QYK16gbe/qZ/wuDxsdRz7egrACHy/BpnLkc49HIL+oXijG5tzbxy8EJ8U8/vBP83v4b+6KJ7bGnyE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 974,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1022,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 974\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VzfHavvuJve0g8UP3M352Ag\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:25:35.785034+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:25:34 GMT"
+  },
+  "key": "ada1cd4754d1e756f69b82980c334b6bc5647f25d1c4b5e3aa3a415385090607",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

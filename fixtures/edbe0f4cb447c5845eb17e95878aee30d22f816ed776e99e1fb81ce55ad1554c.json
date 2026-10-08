@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page contains a specific legal query about unpaid salary with a named expert providing advice, directly addressing the question.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding an answer to query \\\"legal notice to employer for unpaid salary\\\". The page appears to be a Q&A on LawyersClubIndia.com, with a specific query about salary not received, and an expert answer likely. The page includes legal advice. It seems to have an expert (kavksatyanarayana) responding. The site is a legal forum; likely has named experts. The purpose is to answer legal queries, not just affiliate. So likely \\\"ok\\\". Need to check if there is identifiable responsibility: the expert name is given. The site is a legal advice platform, likely reputable. So label ok.\\n\\nReason: provides expert answer to unpaid salary query.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding an answer to query \\\"legal notice to employer for unpaid salary\\\". The page appears to be a Q&A on LawyersClubIndia.com, with a specific query about salary not received, and an expert answer likely. The page includes legal advice. It seems to have an expert (kavksatyanarayana) responding. The site is a legal forum; likely has named experts. The purpose is to answer legal queries, not just affiliate. So likely \\\"ok\\\". Need to check if there is identifiable responsibility: the expert name is given. The site is a legal advice platform, likely reputable. So label ok.\\n\\nReason: provides expert answer to unpaid salary query.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440876,\"ec_transfer_params\":null,\"id\":\"chatcmpl-91b7268b-ac99-4d9b-99ab-cb552d34a0b4\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":995,\"completion_tokens\":188,\"total_tokens\":1183,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.477088928222656}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:02.328075+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:28:00 GMT"
+  },
+  "key": "edbe0f4cb447c5845eb17e95878aee30d22f816ed776e99e1fb81ce55ad1554c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

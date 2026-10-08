@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page gives clear instructions and official links to check PM Kisan beneficiary status and includes a named author.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"pm kisan beneficiary status check\\\". The page is from india.com, a news/business site. It provides instructions and direct links to official website for checking status. It includes author name (India.com Business Desk, edited by Debjit Sinha). It's not purely affiliate; it's informational. It seems to answer the query. It has identifiable author and organization (India.com). So label \\\"ok\\\". Reason: provides direct instructions and official links, with author attribution.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"pm kisan beneficiary status check\\\". The page is from india.com, a news/business site. It provides instructions and direct links to official website for checking status. It includes author name (India.com Business Desk, edited by Debjit Sinha). It's not purely affiliate; it's informational. It seems to answer the query. It has identifiable author and organization (India.com). So label \\\"ok\\\". Reason: provides direct instructions and official links, with author attribution.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440794,\"ec_transfer_params\":null,\"id\":\"chatcmpl-08207bf9-33f7-47c2-ac69-faf658835f0d\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1084,\"completion_tokens\":149,\"total_tokens\":1233,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.64979934692383}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:37.534625+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:26:35 GMT"
+  },
+  "key": "c5a8ae78a07e8aaf32ecb6d1a40f3abfb932cc1dd191d83d8ed275e5bc98d159",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

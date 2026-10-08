@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly explains how to file a consumer complaint online with specific steps and references the official e-Daakhil portal\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to file consumer complaint online\\\". The page appears to be a site \\\"lite.miss-lucy.in\\\" maybe a legal advice site. It provides info on consumer complaint process, mentions e-Daakhil portal, steps. It seems to be providing genuine info, not just affiliate. Does it have identifiable responsibility? The page seems to be from \\\"miss-lucy.in\\\" maybe a legal service. No author shown in excerpt, but organization may be identifiable (Miss Lucy). Could be a legal advice blog. It seems to answer the query directly. There's no obvious affiliate or monetization. So label \\\"ok\\\". Reason: provides clear steps and mentions official e-Daakhil portal.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to file consumer complaint online\\\". The page appears to be a site \\\"lite.miss-lucy.in\\\" maybe a legal advice site. It provides info on consumer complaint process, mentions e-Daakhil portal, steps. It seems to be providing genuine info, not just affiliate. Does it have identifiable responsibility? The page seems to be from \\\"miss-lucy.in\\\" maybe a legal service. No author shown in excerpt, but organization may be identifiable (Miss Lucy). Could be a legal advice blog. It seems to answer the query directly. There's no obvious affiliate or monetization. So label \\\"ok\\\". Reason: provides clear steps and mentions official e-Daakhil portal.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440851,\"ec_transfer_params\":null,\"id\":\"chatcmpl-c839c70b-faa3-4984-a191-877f6b217007\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1018,\"completion_tokens\":201,\"total_tokens\":1219,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":46.09526443481445}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:35.726592+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:27:34 GMT"
+  },
+  "key": "c1fe886264d9cf99d039370c491e3c3927c38676b59bb31de0ee40648108c1c7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

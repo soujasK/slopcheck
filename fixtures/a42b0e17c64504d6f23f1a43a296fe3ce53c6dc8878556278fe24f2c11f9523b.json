@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query with a well-explained article from an identifiable organisation discussing fake UPI payment screenshots.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TRkRk2Ya2iMHPdzD/ix50aMbttd0KD4n9y6xpjLL0q7wL73cVMWYqQp0jqEu4GEvK/4ptxr5AxFe7jlbDKZkgYUpvnOFPTJld/F1drj+JHpJPEIs24uGFFS0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 937,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 970,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 937\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"GDfHata6Ftzeg8UP-4OlkA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:29.226040+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:24:27 GMT"
+  },
+  "key": "a42b0e17c64504d6f23f1a43a296fe3ce53c6dc8878556278fe24f2c11f9523b",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

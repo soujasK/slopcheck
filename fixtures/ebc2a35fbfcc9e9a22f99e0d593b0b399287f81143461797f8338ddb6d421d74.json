@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is a generic portal cluttered with ads and menu links rather than an authoritative source for official NIRF rankings.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TlBct1jNHHf+2HZuhzGGMAcR20UzQzPMhruSMFeeif4GRDaNXrU2LQDEiBr5hAy9py9YIfwkTkfli9bFf8F6qCzV5IwlBfGfKJDTnYM/uQqFrQgPYhp3yXTQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1028,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1068,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1028\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"SzjHaqqYIsnFg8UPyd-9-As\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:29:35.061538+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:29:33 GMT"
+  },
+  "key": "ebc2a35fbfcc9e9a22f99e0d593b0b399287f81143461797f8338ddb6d421d74",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

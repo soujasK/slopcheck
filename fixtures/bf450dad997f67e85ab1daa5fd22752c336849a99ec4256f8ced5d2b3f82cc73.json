@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized educational portal (Careers360) with a named author, providing relevant details about NEET cutoff marks for government MBBS seats.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TS5tzbEkVLi5aJwm9kMmFw9y+LIgoLe2l3AcTldDnQ/9zcWinM8rpyioHg5pZwTaIirjjy3v7OXIZFJhA9axUAkMZsUDkICSUhCs3+q1es6FQIJxH7ofPcss=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 990,\n    \"candidatesTokenCount\": 42,\n    \"totalTokenCount\": 1032,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 990\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7TbHau_nD-adjuMPkp6zoAU\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:48.879821+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:23:47 GMT"
+  },
+  "key": "bf450dad997f67e85ab1daa5fd22752c336849a99ec4256f8ced5d2b3f82cc73",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

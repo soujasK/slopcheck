@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page is a legal blog by an organisation discussing married daughters' inheritance rights in India under relevant law.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tr54Dx8N5DapYo2sQgZG3eJigGlS9auXYC6LIYEOACLWcwMj0vQgxTsqwKyOS2122D2VBkmo3MGTb2doQT+n49QP+MoDE2jYJq/iqeoUe8K5uuJifFnJU/Sc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 965,\n    \"candidatesTokenCount\": 38,\n    \"totalTokenCount\": 1003,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 965\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"VTnHar-eCpP54-EP0fHe0A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:34:06.452201+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:34:04 GMT"
+  },
+  "key": "fd8ccd4fb76418976f9fc7b2617627ee57898731a15e857a4ce6c02ea9ea1307",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

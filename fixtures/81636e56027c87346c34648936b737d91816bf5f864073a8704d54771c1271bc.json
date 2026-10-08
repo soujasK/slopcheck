@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page has a named author, clear organizational backing, and directly answers the query about scholarships for Indian students.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Te4Sde6WUyDY9Roq1K9GGRlRkLv9aqsYZHLZkeP+BtpY6TJNupQqkPhTPw4IiHw0by1lOBps/mEZge+UctfUxmp1R4eV6zM8gwAbGMtifRFHtrWvDXqe+zMQ=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 967,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1000,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 967\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"3zbHar76CtTPg8UP7b_n6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:32.802055+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:23:31 GMT"
+  },
+  "key": "81636e56027c87346c34648936b737d91816bf5f864073a8704d54771c1271bc",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

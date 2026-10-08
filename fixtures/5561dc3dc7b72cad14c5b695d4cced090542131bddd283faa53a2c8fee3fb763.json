@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic, speculative SEO blog post about a future exam with low original depth and no named expert author.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0THUvRj0Rmplr97nbXqo5QK1mUVtKgoG3BEBHh1usthJTIumbHPIt1bqp0f7Ifjrtef+WF6/Jusgya3QckLu3T0XSE5BvOPclP27RLAQ19pv0FOyMKOmqpfQs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 944,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 979,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 944\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"BDjHasrQO_zFg8UPi-WtgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:32.116163+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:28:30 GMT"
+  },
+  "key": "5561dc3dc7b72cad14c5b695d4cced090542131bddd283faa53a2c8fee3fb763",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

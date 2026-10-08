@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is published by a law firm and directly addresses the legal rights of a daughter in property after marriage.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TLhqtlo1gGfWxmQBRCpjhDdn2K+CI4JCF17ZmPyd9SdBPPZk3ps9bZgr1MvaKU1XZ+VY0/Upf/OeHTimm4xXRKGk/+EtYeQZA3uf35eOMYo+xO7otOgvzfwo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 958,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 991,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 958\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"kTfHatLtHsK6g8UPluaHiA4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:32.307872+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:26:30 GMT"
+  },
+  "key": "705b7aa27953517eab2e9c5f02eb553820d8fcadbeaae1dcc84f19d1e3991e77",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly addresses the query about daughters' rights in a father's property after marriage by citing the Hindu Succession Amendment Act.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TSCj7PTkoG/CQHUgGZhcEpozVEGt25uyQipF6eYYCGM3ziHXJYAcOSPlF7vQhl/1JPQO31iL84FE3QxsjjAtsz1usXgFQbe78cRSLv5QhOsHNHy+yXinVPlA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 980,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1017,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 980\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"vDfHavbUB-3ag8UP5sjpgQ8\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:15.933339+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:14 GMT"
+  },
+  "key": "7612a8617ab0b64ca3869cb725fe07348c1c1e2ad3e9b614a4421a2a3281f1db",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

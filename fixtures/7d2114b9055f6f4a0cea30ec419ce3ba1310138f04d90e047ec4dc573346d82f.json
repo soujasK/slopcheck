@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page directly lists and describes medical courses after 12th science that do not require NEET, matching the query.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: Is this page an AI agent should ground an answer to query \\\"best courses after 12th science without neet\\\". The page is a blog from geu.ac.in (presumably Gujarat Education University?). Title: \\\"10 Medical Courses That Don?t Require NEET: High-Salary Career Option\\\". Content lists courses like B.Sc Nursing, BPT, etc. It seems to directly answer the query, providing a list of courses. It appears to be a blog post, likely with author info? Not shown but likely there is author. It's not a low-quality affiliate roundup; it's an informational blog from an educational institution. So label \\\"ok\\\". Reason: page directly lists relevant courses and appears to be from an educational institution, providing answer.\",\"reasoning_content\":\"We need to decide label: Is this page an AI agent should ground an answer to query \\\"best courses after 12th science without neet\\\". The page is a blog from geu.ac.in (presumably Gujarat Education University?). Title: \\\"10 Medical Courses That Don?t Require NEET: High-Salary Career Option\\\". Content lists courses like B.Sc Nursing, BPT, etc. It seems to directly answer the query, providing a list of courses. It appears to be a blog post, likely with author info? Not shown but likely there is author. It's not a low-quality affiliate roundup; it's an informational blog from an educational institution. So label \\\"ok\\\". Reason: page directly lists relevant courses and appears to be from an educational institution, providing answer.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440681,\"ec_transfer_params\":null,\"id\":\"chatcmpl-0f3405b1-5d35-47a8-892e-458c577083f8\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":973,\"completion_tokens\":200,\"total_tokens\":1173,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.595272064208984}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:44.994603+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:24:43 GMT"
+  },
+  "key": "7d2114b9055f6f4a0cea30ec419ce3ba1310138f04d90e047ec4dc573346d82f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

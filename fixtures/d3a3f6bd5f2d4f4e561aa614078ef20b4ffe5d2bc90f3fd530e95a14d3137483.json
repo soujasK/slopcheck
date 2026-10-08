@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a commercial service offering paid drafting assistance rather than directly explaining how a user can file an FIR online themselves.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TN0OqwKe5XAAFX74pvGk7p8XD86H81kTjmkb3iEhvgtG1jiJ0i4wAn8K/jIKTuUQRNzvXOc4g6uIb1YsU77zf1fwtv+4uE02F7Ne58XbVpy0+UfQUxkQUxIc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 917,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 952,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 917\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"UjjHapWPJK7VqfkP_c6IkAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:29:41.238462+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:29:39 GMT"
+  },
+  "key": "d3a3f6bd5f2d4f4e561aa614078ef20b4ffe5d2bc90f3fd530e95a14d3137483",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

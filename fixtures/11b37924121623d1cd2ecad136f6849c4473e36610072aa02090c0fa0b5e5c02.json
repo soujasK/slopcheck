@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from Citizens Advice, an official organisation, and provides direct, reliable guidance on recovering money after a scam.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TInHqgTYByfhEErm71CrCm9SG2e5ka7RyIwm8c2VTWFYKYXkE61XlXoOjluON4o7LAyPFXjUpHKUYRLtbPmH1C2eIAxI3B0eczY9uqgLGXrO7bCfSAdwjV0s=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1012,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 1047,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1012\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"jTjHarHuOoq7g8UP8Iyl-A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:30:43.393992+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:30:41 GMT"
+  },
+  "key": "11b37924121623d1cd2ecad136f6849c4473e36610072aa02090c0fa0b5e5c02",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article provides a direct, step-by-step guide on how to change a name on a voter ID card online using official government portals.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TqaAbLMCOnoc1g+SZwl7mPGSfyhjRzp4NCfjnw3MgVankpUK3HPM3LCP7S/5Bq8rwI0oilg/UM3/wAB7ffpQAFNwUdw0P3ftxSRrdE+q+TsM6CDj+r+pJtTM=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 997,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 1037,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 997\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"0TfHauqwKba2g8UPhdCRqAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:38.071864+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:36 GMT"
+  },
+  "key": "93adcd170fec772ced830bc311ae1cb75bc54096ffa2e0f1d55604c1634b0b55",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

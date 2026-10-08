@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers a detailed guide on spotting fake UPI screenshots and includes a named author and organization, indicating genuine informational content.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to identify fake upi payment screenshot\\\". The page is a blog post from checkout.shiprocket.in (Shiprocket Checkout) titled \\\"Fake UPI Payment Scams: Signs & How to Avoid Losses\\\". It appears to be a content article providing signs to detect fake UPI payment screenshots, with author name and date. It's likely a genuine article, not just affiliate. It has a named author (Ranjeet Sharma Senior Specialist @ Shiprocket Checkout). So it seems \\\"ok\\\". The purpose is to inform sellers about scams, not just sell product. It may also promote fastrr Checkout service, but primary purpose is informational. So label ok.\\n\\nReason: article provides detailed guidance and has identifiable author/organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nThe query: \\\"how to identify fake upi payment screenshot\\\". The page is a blog post from checkout.shiprocket.in (Shiprocket Checkout) titled \\\"Fake UPI Payment Scams: Signs & How to Avoid Losses\\\". It appears to be a content article providing signs to detect fake UPI payment screenshots, with author name and date. It's likely a genuine article, not just affiliate. It has a named author (Ranjeet Sharma Senior Specialist @ Shiprocket Checkout). So it seems \\\"ok\\\". The purpose is to inform sellers about scams, not just sell product. It may also promote fastrr Checkout service, but primary purpose is informational. So label ok.\\n\\nReason: article provides detailed guidance and has identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440905,\"ec_transfer_params\":null,\"id\":\"chatcmpl-56bc391d-479e-49bf-8d7b-a94f87d5cb6a\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":996,\"completion_tokens\":207,\"total_tokens\":1203,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":45.804359436035156}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:28:30.375874+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:28:28 GMT"
+  },
+  "key": "bf38b5b66908776ceed5e5681a7b2931f6b149f6335fe5f00416aad351d7314c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

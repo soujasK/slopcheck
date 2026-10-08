@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page promotes Google career training certificates and does not provide instructions on how to apply for an income certificate.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T1lXGCZAlYavRm1Ngbdr8H5o4qhRsYqqy/12sHabUno+HpG2B3oZKyAakwd1mD1uBY+Kvo8MzwQQNRisQTvq5VOSbHOcJAm1yUxuhIq7Whk7nYKxc6tP+86I=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 984,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1016,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 984\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"fDfHaqyBDJrag8UP_cmq0Ag\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:12.034098+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:26:10 GMT"
+  },
+  "key": "887f2c3ed92f545baebd81a9ddb125e12a8edacc4b2be278c3598949f7c1ad61",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

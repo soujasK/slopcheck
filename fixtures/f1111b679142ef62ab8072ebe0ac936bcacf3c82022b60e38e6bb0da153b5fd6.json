@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides legal advice from an expert on a community platform regarding unpaid salary and issuing a legal notice.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T7yN1aO567VJ/nmmLy5JQu3LejfzlU9fSxupOQVsK9Up64iFqM5nVsM7Pa+5nlLYz7Ej2D+lqpN0P5pKQ9IHmXl+NcMLgnvy1bHHo4gcTmnRDciy2wJvVL+M=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 995,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1027,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 995\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"TjnHapycIPzFg8UPi-WtgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:33:53.650957+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:33:51 GMT"
+  },
+  "key": "f1111b679142ef62ab8072ebe0ac936bcacf3c82022b60e38e6bb0da153b5fd6",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

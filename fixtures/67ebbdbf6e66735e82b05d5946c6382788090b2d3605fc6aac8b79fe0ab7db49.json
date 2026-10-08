@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers detailed guidance on spotting fake work‑from‑home job offers and is authored by a named expert from a reputable organization.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query: \\\"work from home job real or fake how to check\\\". The page is a blog post from Digital Forensics about spotting fake job offers. It seems to answer the query: provides info on how to spot and avoid fake job offers, especially remote work. It is authored by Benjamin Carpenter, with date, and organization Digital Forensics corp. It's a legitimate article, not just affiliate. So label \\\"ok\\\". Reason: provides guidance on identifying fake work-from-home jobs and is authored by a named author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query: \\\"work from home job real or fake how to check\\\". The page is a blog post from Digital Forensics about spotting fake job offers. It seems to answer the query: provides info on how to spot and avoid fake job offers, especially remote work. It is authored by Benjamin Carpenter, with date, and organization Digital Forensics corp. It's a legitimate article, not just affiliate. So label \\\"ok\\\". Reason: provides guidance on identifying fake work-from-home jobs and is authored by a named author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440574,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9e389e9e-d472-4ba5-bd8b-d37de219dd9c\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1030,\"completion_tokens\":166,\"total_tokens\":1196,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.09071350097656}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:58.308938+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:22:56 GMT"
+  },
+  "key": "67ebbdbf6e66735e82b05d5946c6382788090b2d3605fc6aac8b79fe0ab7db49",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

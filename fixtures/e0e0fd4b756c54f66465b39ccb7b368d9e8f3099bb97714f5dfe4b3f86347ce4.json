@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"This is a job listing and search results page rather than an informational guide on how to check if work-from-home jobs are real or fake.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0THzqZUoZ9igtMilaeYM795PKKBkOIjkW8wEzB6ZuTIMv26KJ6RCUd+lz4o3UCo6vQYMvV9UUqoGV+A6V2lKy9A/TwppJzGu1rO41RewRMx19a5UlekAGrCfI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1038,\n    \"candidatesTokenCount\": 48,\n    \"totalTokenCount\": 1086,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1038\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"DznHauegFZ-FjuMPjZT1yAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:32:50.479370+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:32:48 GMT"
+  },
+  "key": "e0e0fd4b756c54f66465b39ccb7b368d9e8f3099bb97714f5dfe4b3f86347ce4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

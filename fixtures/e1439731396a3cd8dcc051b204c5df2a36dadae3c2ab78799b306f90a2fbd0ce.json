@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic, commercial‑style article with no clear author or official source, primarily aimed at attracting traffic rather than providing authoritative cutoff data.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"neet cutoff for government mbbs seat\\\". The page appears to be a site mbbscouncil.com, with a listing page about expected NEET cut off 2025 in Andhra Pradesh. It seems to be a blog-like article with tables, possibly affiliate? Not clear if there is author. The content is about expected cutoffs, not official data. Likely low-quality, possibly SEO content. No clear author or organization. Might be a commercial site (mbbscouncil.com) maybe a counseling service. Could be considered low because primary purpose is to attract traffic, maybe affiliate. No clear responsibility. So label low.\\n\\nReason: page appears to be generic, likely commercial, no clear author, not official source.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"neet cutoff for government mbbs seat\\\". The page appears to be a site mbbscouncil.com, with a listing page about expected NEET cut off 2025 in Andhra Pradesh. It seems to be a blog-like article with tables, possibly affiliate? Not clear if there is author. The content is about expected cutoffs, not official data. Likely low-quality, possibly SEO content. No clear author or organization. Might be a commercial site (mbbscouncil.com) maybe a counseling service. Could be considered low because primary purpose is to attract traffic, maybe affiliate. No clear responsibility. So label low.\\n\\nReason: page appears to be generic, likely commercial, no clear author, not official source.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440730,\"ec_transfer_params\":null,\"id\":\"chatcmpl-9a9c1f68-1376-4fc3-aee4-86c03efa8a38\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1110,\"completion_tokens\":213,\"total_tokens\":1323,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":49.840702056884766}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:25:36.776186+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:25:35 GMT"
+  },
+  "key": "e1439731396a3cd8dcc051b204c5df2a36dadae3c2ab78799b306f90a2fbd0ce",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

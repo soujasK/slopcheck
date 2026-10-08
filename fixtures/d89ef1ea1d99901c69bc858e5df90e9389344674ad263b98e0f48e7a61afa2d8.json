@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides a clear informational eligibility checker for the Ayushman Bharat scheme with editorial oversight and disclaimers.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TsMbH0qBt5LWzgncmQWLqg+c9OthYPXvyi3G9cBXc0H6NN7xQ5U9PB3qJSHgosqyjDPgwqaDkQXvC97/i6AviLx7hAh7SOHuCcZonKABpSB95MqKRm1h7vaA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1001,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1040,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1001\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"2jjHaq3nJ9TPg8UP7b_n6A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:32:08.794809+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:32:07 GMT"
+  },
+  "key": "d89ef1ea1d99901c69bc858e5df90e9389344674ad263b98e0f48e7a61afa2d8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

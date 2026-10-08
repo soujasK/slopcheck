@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides clear, structured information regarding the UPSC age limits and eligibility criteria with a named organizational author.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TCGV2Oli53iydUUwuw3ikPtJGVcW5erqu8YpPiDrVo5J/OERaD/NyhGuE8fOayfpIiJshp+Sg7b8VmvdEPVdJGnoem0HVXkBlmhhOrdA/DkKbXvo/312RGo4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1032,\n    \"candidatesTokenCount\": 32,\n    \"totalTokenCount\": 1064,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1032\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"uTbHatmeEPKpg8UPpv6BwAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:54.812478+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:53 GMT"
+  },
+  "key": "990c1d06bfa2058a76a90d6a85312f7f8c4dda71f13efa03bad8fbf1b8e44f7c",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

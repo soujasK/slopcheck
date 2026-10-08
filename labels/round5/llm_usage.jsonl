@@ -1,0 +1,2 @@
+{"context": "main", "fallback_used": false, "from_cache": 0, "input_tokens": 100394, "invalid_final": 0, "labeled": 100, "labeler": "b", "models": ["@cf/openai/gpt-oss-120b"], "neurons": 4820.68, "output_tokens": 23853, "retries": 0, "ts": "2026-10-08T06:28:31+00:00"}
+{"context": "main", "fallback_used": false, "from_cache": 0, "input_tokens": 99372, "invalid_final": 0, "labeled": 100, "labeler": "a", "models": ["gemini-3.5-flash-lite"], "neurons": 0.0, "output_tokens": 3518, "retries": 0, "ts": "2026-10-08T06:34:38+00:00"}

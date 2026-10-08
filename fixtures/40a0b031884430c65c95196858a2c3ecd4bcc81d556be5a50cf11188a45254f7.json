@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a navigation and promotional stub for an institute rather than a detailed answer to the query.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBLj9nFfz6iCdruQac08c5vX0ZmUMRA5QYRbkxHcm2t0R0LW02ZguZzSdEo2F1jYZK1GdmsiMveaMml6oEcUEL6NpKhculyj23gjbGGT7pHJenNrtbNrmqOg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1064,\n    \"candidatesTokenCount\": 31,\n    \"totalTokenCount\": 1095,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1064\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ijfHaq3SCPzFg8UPi-WtgAs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:26.065174+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:26:24 GMT"
+  },
+  "key": "40a0b031884430c65c95196858a2c3ecd4bcc81d556be5a50cf11188a45254f7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

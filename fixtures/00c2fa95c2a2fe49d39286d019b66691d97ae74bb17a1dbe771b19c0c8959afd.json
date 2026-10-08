@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page offers direct advice on the query and includes a named author and organization, indicating responsibility.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Money Management Institute (moneymanagement.org) blog article \\\"What If Your Landlord Won’t Return Your Security Deposit?\\\" by Louis DeNicola, date 5/2/2024. It includes disclaimer \\\"informational purposes only not legal advice\\\". It seems to provide advice on what to do, includes author name, organization (Money Management Institute). Likely a legitimate article, not affiliate product roundup. So qualifies as \\\"ok\\\": it answers query, has identifiable author and organization.\\n\\nThus label ok. Reason: article provides advice and has named author and organization.\",\"reasoning_content\":\"We need to decide label: low, ok, unsure.\\n\\nWe have a page from Money Management Institute (moneymanagement.org) blog article \\\"What If Your Landlord Won’t Return Your Security Deposit?\\\" by Louis DeNicola, date 5/2/2024. It includes disclaimer \\\"informational purposes only not legal advice\\\". It seems to provide advice on what to do, includes author name, organization (Money Management Institute). Likely a legitimate article, not affiliate product roundup. So qualifies as \\\"ok\\\": it answers query, has identifiable author and organization.\\n\\nThus label ok. Reason: article provides advice and has named author and organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440690,\"ec_transfer_params\":null,\"id\":\"chatcmpl-baba8c79-9b40-4e5c-a9df-bf959f580b9b\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":997,\"completion_tokens\":172,\"total_tokens\":1169,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.44981384277344}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:55.712807+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:24:54 GMT"
+  },
+  "key": "00c2fa95c2a2fe49d39286d019b66691d97ae74bb17a1dbe771b19c0c8959afd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

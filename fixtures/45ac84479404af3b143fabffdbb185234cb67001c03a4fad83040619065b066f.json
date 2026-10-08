@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a well-organized and directly relevant list of major international scholarships for Indian students with specific details.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tm0vlpD98Q0OR39ZANzs1RTXtFS+VP1viu2V9D7uwO9kKOGiUzWeXVPMksRi4S2TVkax1W6vvM535P3s3B70FsPiFVMbsZhFmbolMLmLEYL+JX4VC0wuaToE=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 943,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 976,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 943\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"LTfHaoX-Kcjlg8UPrazL-As\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:51.634534+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:24:49 GMT"
+  },
+  "key": "45ac84479404af3b143fabffdbb185234cb67001c03a4fad83040619065b066f",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

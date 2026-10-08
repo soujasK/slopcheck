@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional blog for Chandigarh University primarily designed to market its own courses rather than provide an objective guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TFgQuthSniA3wynuxxX//lQmgckCCy+pT2uNenePaN38mcKwuoTDr1E+NJ6Gu2gLIDd44kMlslszqqO5PIjRKuZ7baBpf8LPGg+AysuEgm+o/UZnMtbH5ES0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1028,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1062,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1028\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"tDfHaveECoq7g8UP8Iyl-A0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:09.444241+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:07 GMT"
+  },
+  "key": "bc32f74d64b98b6bac2e865d61ce05aa49288b417e5fe5727cd246fea17e893d",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

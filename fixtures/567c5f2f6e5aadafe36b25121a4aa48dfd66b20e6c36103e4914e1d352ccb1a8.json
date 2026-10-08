@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is primarily a lead generation and consultancy service site offering paid assistance rather than a clear legal guide by an identifiable authority.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tk4IFTVVAAddbFuklB6vyWUrrYZV/gFOS1D5QiCyG0upjy45UN+Dg4aSj2qtDg5cvkbmjOSFAciB4AHEYAw5IDRSlIDDpEH+f1CqMxm8Lgm9XxTLkFXefyZs=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 949,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 985,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 949\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"czjHaoTZLo6EjuMPzJ6-6Ao\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:30:16.981610+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:30:15 GMT"
+  },
+  "key": "567c5f2f6e5aadafe36b25121a4aa48dfd66b20e6c36103e4914e1d352ccb1a8",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

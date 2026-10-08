@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government site (NALSA) that provides information on obtaining free legal aid in India\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get free legal aid in india\\\". The page is the homepage of NALSA, the National Legal Services Authority, which is the official government body providing free legal services. The homepage likely contains links to how to get legal aid, but the excerpt shows description of NALSA and its purpose. It is an official source, with organization identified. So it should be \\\"ok\\\". The question: is this page an AI agent should ground an answer on? Yes, it's official, provides info. So label ok. Reason: official government site providing free legal aid info.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to get free legal aid in india\\\". The page is the homepage of NALSA, the National Legal Services Authority, which is the official government body providing free legal services. The homepage likely contains links to how to get legal aid, but the excerpt shows description of NALSA and its purpose. It is an official source, with organization identified. So it should be \\\"ok\\\". The question: is this page an AI agent should ground an answer on? Yes, it's official, provides info. So label ok. Reason: official government site providing free legal aid info.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440639,\"ec_transfer_params\":null,\"id\":\"chatcmpl-8caa6629-68f6-4e0b-959e-ec05e623c16f\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":995,\"completion_tokens\":169,\"total_tokens\":1164,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":43.18163299560547}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:03.829971+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:24:02 GMT"
+  },
+  "key": "3ecdb899c31a5f1aa139020ce905fb4e47c11974d1834bb181a9f110fcaa03a3",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

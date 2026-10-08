@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"Official government site giving step‑by‑step instructions for online driving licence services\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to renew driving licence online\\\". The page is from parivahan.gov.in, an Indian government portal (Ministry of Road Transport & Highways). Title: Services On Driver's License. The content includes instructions to apply for services on Driving License via Sarathi portal, with steps. Likely includes renewal process. The page appears official, with clear instructions, not affiliate. So label \\\"ok\\\". Reason: official government source providing procedure.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"how to renew driving licence online\\\". The page is from parivahan.gov.in, an Indian government portal (Ministry of Road Transport & Highways). Title: Services On Driver's License. The content includes instructions to apply for services on Driving License via Sarathi portal, with steps. Likely includes renewal process. The page appears official, with clear instructions, not affiliate. So label \\\"ok\\\". Reason: official government source providing procedure.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440786,\"ec_transfer_params\":null,\"id\":\"chatcmpl-76703add-8c48-4f9f-9f4f-371486304857\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":962,\"completion_tokens\":140,\"total_tokens\":1102,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":40.15436553955078}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:26:30.641151+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:26:29 GMT"
+  },
+  "key": "2bf80af95c674bcaa220e5127c2c6b9a557ccc41529be0aaf38f8b9691feb9c5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

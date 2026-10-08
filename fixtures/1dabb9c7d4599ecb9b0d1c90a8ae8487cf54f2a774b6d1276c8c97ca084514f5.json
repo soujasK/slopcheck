@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article is from a reputable news organization with a named author discussing the benefits and challenges of taking a drop year for JEE.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TckIlk8hf5PUV2187Xo14mAYD5HGHDkyZW0HEB9O8GiGJHXZsOS+jKYX6RM48CYd5ZBrkOjDQvL/OkNVr5voZC3g5QBDX7f6h/QJY+rShaypdjeF+eUsPDu4=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 984,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1020,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 984\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"hzbHasrVKZrdg8UP9aimyAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:05.634163+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:03 GMT"
+  },
+  "key": "1dabb9c7d4599ecb9b0d1c90a8ae8487cf54f2a774b6d1276c8c97ca084514f5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

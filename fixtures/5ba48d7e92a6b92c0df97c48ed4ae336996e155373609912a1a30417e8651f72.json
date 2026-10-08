@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is heavily cluttered with lead-generation forms and phone code lists rather than providing a well-structured guide.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T5mL2IIxeGqDXjx+qbic5DW5VsvRIdv9YzfU6Garf3pzfKFRt7nGdQHdS2eEIJsKdG7wq2pV2LZp8JF1IWLZFY8pCarw8ex3Wr/IEVrdxPzfvcCbooIKuOdo=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1608,\n    \"candidatesTokenCount\": 34,\n    \"totalTokenCount\": 1642,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1608\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"JDnHapqzIszOg8UPy5LUgQs\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:33:14.561640+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:33:12 GMT"
+  },
+  "key": "5ba48d7e92a6b92c0df97c48ed4ae336996e155373609912a1a30417e8651f72",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides clear, direct instructions and official links to check the PM Kisan beneficiary status, published by a recognized media organization with named editors.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TtELdku2KXhrl7meAJw4OfgsWAO1soJzVyTcXTMfUzp1tUtlH6qfC57XL/11YY4d5nAYVNbGgukpkuFqmFnF/RBuSQ5PYgyIp9ZYzPI+nEu+XnBg3MCjQTyg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1087,\n    \"candidatesTokenCount\": 39,\n    \"totalTokenCount\": 1126,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1087\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ejjHapjZMJ-FjuMPjZT1yAg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:30:32.234652+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:30:30 GMT"
+  },
+  "key": "f12d74541ee939c8ab450d47535807cd915d6a007f1d24fd122164aefbea26ff",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

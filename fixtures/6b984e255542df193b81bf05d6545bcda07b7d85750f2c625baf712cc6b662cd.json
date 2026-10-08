@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"This is an official government portal providing direct instructions and online slot-booking for driving licence renewal.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TJmVf5Agtoo7Ewp7SLdKLqXP3f4lAsJveo36R+mWn76PQ1W0Ep3EieSC8Nwx0zyszBMphw9jHXh4v5tDdTdAzECeZo1cCfJnvgshnc77SWpNAC6jc9muX3H0=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 703,\n    \"candidatesTokenCount\": 30,\n    \"totalTokenCount\": 733,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 703\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"7jjHapHsH7a2g8UPhdCRqAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:32:32.958909+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:32:31 GMT"
+  },
+  "key": "6b984e255542df193b81bf05d6545bcda07b7d85750f2c625baf712cc6b662cd",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

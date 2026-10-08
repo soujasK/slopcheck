@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\"result\":{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null,\"message\":{\"annotations\":null,\"audio\":null,\"content\":\"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The article directly discusses JEE Main percentile versus rank and is authored by a named journalist from Times Now, providing a credible answer.\\\"}\",\"function_call\":null,\"reasoning\":\"We need to decide if this page is suitable for grounding answer to query \\\"jee main percentile vs rank\\\". The page is Times Now News article, authored by Ruchika Kumari, with date, seems to provide info about percentile vs marks and mentions rank vs percentile. It is a news/media site, but has author and organization (Times Now). It answers the query, providing expected percentile vs rank info. It's not purely affiliate. So label \\\"ok\\\". Reason: provides direct answer with identifiable author/organization.\",\"reasoning_content\":\"We need to decide if this page is suitable for grounding answer to query \\\"jee main percentile vs rank\\\". The page is Times Now News article, authored by Ruchika Kumari, with date, seems to provide info about percentile vs marks and mentions rank vs percentile. It is a news/media site, but has author and organization (Times Now). It answers the query, providing expected percentile vs rank info. It's not purely affiliate. So label \\\"ok\\\". Reason: provides direct answer with identifiable author/organization.\",\"refusal\":null,\"role\":\"assistant\"},\"routed_experts\":null,\"stop_reason\":null,\"token_ids\":null}],\"created\":1791440590,\"ec_transfer_params\":null,\"id\":\"chatcmpl-35ab15c1-26b6-45cc-b24f-75ff951f4025\",\"kv_transfer_params\":null,\"metrics\":null,\"model\":\"@cf/openai/gpt-oss-120b\",\"object\":\"chat.completion\",\"prompt_logprobs\":null,\"prompt_text\":null,\"prompt_token_ids\":null,\"service_tier\":null,\"usage\":{\"prompt_tokens\":1092,\"completion_tokens\":150,\"total_tokens\":1242,\"prompt_tokens_details\":{\"cached_tokens\":0},\"neurons\":44.97252655029297}},\"success\":true,\"errors\":[],\"messages\":[]}",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:23:13.366780+00:00",
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 08 Oct 2026 06:23:11 GMT"
+  },
+  "key": "10e5f8dddaa339099d4ecb017974a7b920be63e55b15c6a334985db0cfc697c4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/openai/gpt-oss-120b"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"low\\\",\\n  \\\"reason\\\": \\\"The page is about European Union state aid reporting and competition policy, which is completely irrelevant to legal aid in India.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TR28fD6/mVhC7RB63vBUNvwvpClE0aeroXQhU8z5cNqAljeK+fwBfjiBERfOet/wYV1XNbcGxnkhUf9mMhUdrdemHgFQGq2VLYRAERETL51VJLl5lXL4PUvU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 949,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 989,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 949\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"ATfHao_SMZazg8UP1b-XyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:24:11.414138+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:24:09 GMT"
+  },
+  "key": "b99d5acf8b473b3e35a8701dc79d4f8f5623610d22a8077708e44ffbd6bd0804",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

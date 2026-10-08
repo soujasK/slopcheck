@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"The page provides direct legal advice regarding a specific Telegram task scam from an identifiable legal advice platform.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TuG37setBdYlnC1uNVtxsxy5XoZcBMisRavPPBeeYKq2rbrdVVhJhDELZzChmfQZ5X8ThH7lamHL971j0HgSq5MTM8JJ8MBSixNvOG3ZSRqQy2PVFneqfJwc=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1001,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 1037,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1001\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"2DfHar-cMba2g8UPjMKRoAk\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:42.349886+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:40 GMT"
+  },
+  "key": "2f96225a59ec931f05b4af4b3545848219b06180e9fc0cf92146366f1c73c1a5",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

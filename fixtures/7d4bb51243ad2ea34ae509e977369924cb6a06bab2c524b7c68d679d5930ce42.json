@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page provides a comprehensive guide with a named author on how to file an RTI application.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0Tjwqnvr5OnAdFdukzc7nTbI6sH0CH+0Ig/XEvHl2pIpgcwH5Fy8B/7NZ3kO7nJ8ohOmOFlFgzVDhtH/rOJTwTbkLoe95U2pNaV5fcYKiWvhG6j/W067Yx8MA=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 898,\n    \"candidatesTokenCount\": 29,\n    \"totalTokenCount\": 927,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 898\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"OznHasCTDJP54-EP0fHe0A4\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:33:44.450478+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:33:42 GMT"
+  },
+  "key": "7d4bb51243ad2ea34ae509e977369924cb6a06bab2c524b7c68d679d5930ce42",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

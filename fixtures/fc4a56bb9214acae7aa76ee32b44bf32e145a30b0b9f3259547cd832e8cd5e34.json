@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\n  \\\"label\\\": \\\"ok\\\",\\n  \\\"reason\\\": \\\"This is the official government portal for transport services in India, providing direct access to driving licence renewal and related information.\\\"\\n}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TSN3y7tQXw4xi53UrXqUBaKze68d3zsupnJ8n8E/VXtKChdXhjGm7/wkdOyQ50RQ8iIvbDmlBcLemtGzlpcDun9BfTon+JG902LFDaJEjL6q1yTvv29YznyI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 911,\n    \"candidatesTokenCount\": 40,\n    \"totalTokenCount\": 951,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 911\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"wzfHasnKC7-sg8UPk8nvwAM\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:27:22.430229+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:27:20 GMT"
+  },
+  "key": "fc4a56bb9214acae7aa76ee32b44bf32e145a30b0b9f3259547cd832e8cd5e34",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

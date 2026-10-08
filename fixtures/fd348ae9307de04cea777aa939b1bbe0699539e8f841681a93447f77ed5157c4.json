@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"This is a generic tag archive page stuffed with keywords and lacks a direct, authoritative guide on how to file a complaint.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TbDaCT23CDcaURDKmij6OVmHEt6iZcxSkgVQIeGgZB81iqwTbHBNO0k3H1hoOPD0s0yW1zggdCs3MppuquYFUonSQOkQvHMuLCcxAINR4yJY9cOiyW8IOGvI=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 944,\n    \"candidatesTokenCount\": 35,\n    \"totalTokenCount\": 979,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 944\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"sjbHauz_DvGGjuMPseuXyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:22:48.479652+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:22:46 GMT"
+  },
+  "key": "fd348ae9307de04cea777aa939b1bbe0699539e8f841681a93447f77ed5157c4",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

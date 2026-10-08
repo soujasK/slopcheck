@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"ok\\\", \\\"reason\\\": \\\"The page is from a recognized news organisation and provides direct instructions on checking eligibility for the Ayushman Bharat card.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TBttI0a55WIivNlv/t02+OYu+odY2ePgyTzI2oPwvfXsPZrwZO5pMju46ZseWchxGMJAaLVEznkkxdtjXKyi4dzbilNmT/qWHuMhKrg6u3O9qQPLLIlHo1qU=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 1169,\n    \"candidatesTokenCount\": 33,\n    \"totalTokenCount\": 1202,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 1169\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"gDbHaraVM-ibg8UPmta10Q0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:21:59.417542+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:21:57 GMT"
+  },
+  "key": "f43883f36945b10fa7abacc366a306e8377ff3e829b409d66fdcc6432139f95a",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a generic third-party blog post providing general scheme information with affiliate or ad links rather than an official government portal.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0TWSmjO2aYkHxOI+k3lL1b32UhCbCSXQJMacEtMrrC0HAGNQgTA0Jx9u6lqWxQb13GnLMtHEobkq0/tr36KHConjjMht9SVlZC6FGeM78zKO8DejCSOwHK0Qg=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 989,\n    \"candidatesTokenCount\": 37,\n    \"totalTokenCount\": 1026,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 989\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"KjjHapS-OZazg8UP1b-XyQg\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:29:04.478157+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:29:02 GMT"
+  },
+  "key": "0258386d7b80cadd58e855ce72ed64d51f35005c8c21ffb604a9ed9395dc97a7",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}

@@ -1,0 +1,15 @@
+{
+  "as_of": null,
+  "body_text": "{\n  \"candidates\": [\n    {\n      \"content\": {\n        \"parts\": [\n          {\n            \"text\": \"{\\\"label\\\": \\\"low\\\", \\\"reason\\\": \\\"The page is a promotional landing page for a law firm rather than an objective guide on how to file a consumer complaint online.\\\"}\",\n            \"thoughtSignature\": \"EmAKXgFpFH0T6zjofgym1YcF3vmfzpz/5sd0pcYMbufCa8drALQsXqd3b663wS+OO+kAEHDCPya9glHZd9jUWZT4CBcpmSidFBg/2CnqL85J0TtpdPbxU7ScY9PZQnO6d1Q=\"\n          }\n        ],\n        \"role\": \"model\"\n      },\n      \"finishReason\": \"STOP\",\n      \"index\": 0\n    }\n  ],\n  \"usageMetadata\": {\n    \"promptTokenCount\": 932,\n    \"candidatesTokenCount\": 36,\n    \"totalTokenCount\": 968,\n    \"promptTokensDetails\": [\n      {\n        \"modality\": \"TEXT\",\n        \"tokenCount\": 932\n      }\n    ],\n    \"serviceTier\": \"standard\"\n  },\n  \"modelVersion\": \"gemini-3.5-flash-lite\",\n  \"responseId\": \"nDjHarDRFu_eg8UPqs2oiQ0\"\n}\n",
+  "cost": 0,
+  "fetched_at": "2026-10-08T06:31:13.395912+00:00",
+  "headers": {
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Thu, 08 Oct 2026 06:31:11 GMT"
+  },
+  "key": "451b3f0fb4a64806ff0489629a95dc149e5a97bb2c52ea0b4c5461e8bbaca0f2",
+  "method": "POST",
+  "params": {},
+  "status": 200,
+  "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+}
