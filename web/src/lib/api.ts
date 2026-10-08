@@ -73,7 +73,7 @@ export interface Overview {
   comparisons?: Record<string, { diff: number; ci: [number, number]; p: number; n_pairs: number }>;
   ai_overview: Record<string, string>;
   platform_share: Record<string, { share: number }>;
-  validation: Partial<Record<"round2_test" | "round3_test" | "round4_test", EvalSummary>>;
+  validation: Partial<Record<"round2_test" | "round3_test" | "round4_test" | "round5_test", EvalSummary>>;
 }
 
 export class ApiError extends Error {

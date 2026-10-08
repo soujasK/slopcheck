@@ -93,6 +93,15 @@ We report the whole history, including what failed (details: [EVAL.md](EVAL.md),
   date" reached a slightly higher F1 (0.47) by flagging 28 pages at precision
   0.43, so the pre-registered "beats every baseline on F1" criterion was **not**
   met.
+- **Round 5 (rubric v4, unchanged): new topics, gate not met.** Tested once on 32
+  queries about government services, scams, legal rights and education, topics
+  it was never fitted on (83 agreed results, kappa 0.60): **precision 0.56 [0.27,
+  0.81]**, recall 0.25, F1 0.34. It still beats every baseline, but it is
+  validated only for health, money, products and tech how-tos. Its main miss on
+  the new topics: pages selling legal or document services, which the
+  "sells directly" signal (built for shop carts) does not see.
+- **Audit (stronger judge, `gemini-3.7-flash`):** confirms 92% of the round-4
+  ground truth; rubric precision against it 0.89.
 
 The filter is conservative: it almost never removes a page the judges called ok
 (1 of 79), but it catches only about three in ten low-quality pages. Treat a drop

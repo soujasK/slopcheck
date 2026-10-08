@@ -112,9 +112,9 @@ export function Composer({ q, setQ, engine, setEngine, busy, onRun, inputRef, ex
           {topic && (
             <motion.span key={`topic-${topic.id}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
               className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[0.72rem]", topic.validated ? "bg-surface-3 text-ink-2" : "bg-info-soft text-info")}
-              title={topic.validated ? "SlopWatch's rubric was fitted and tested on this topic" : "Outside the four topics the rubric was validated on; SlopWatch's round-5 test covers it"}>
+              title={topic.validated ? "SlopWatch's rubric was fitted and tested on this topic" : "Outside the four topics the rubric was fitted on. Tested once on these topics (round 5): precision 0.56, below the 0.70 bar, so treat flags here as a weaker signal"}>
               {topic.validated ? <Compass className="size-3.5" /> : <FlaskConical className="size-3.5" />}
-              looks like {topic.label}{topic.validated ? " · validated topic" : " · being validated (round 5)"}
+              looks like {topic.label}{topic.validated ? " · validated topic" : " · tested, weaker signal here"}
             </motion.span>
           )}
           {typed && !peek && !topic && (

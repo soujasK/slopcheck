@@ -60,7 +60,9 @@ once on 30 brand-new Google India queries: **precision 0.88 [0.53, 0.98], recall
 0.30, specificity 0.99** (n = 102). That meets our 0.70 precision target, though
 the interval is wide; a one-line baseline ("no author and no date") reached a
 slightly higher F1 by flagging 3.5 times as many pages at half the precision.
-SlopWatch almost never removes a good page and misses most bad ones. Details in
+A fifth, one-time test on four topics it was never tuned on (government services,
+scams, legal rights, education) gave precision 0.56: below the bar, reported as a
+limit. SlopWatch almost never removes a good page and misses most bad ones. Details in
 EVAL.md.
 
 ## Disclosures

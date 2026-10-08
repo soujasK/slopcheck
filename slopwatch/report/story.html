@@ -387,6 +387,11 @@ tools = [web_search()]</pre>
   } else {
     html += '<div><span class="k">Fresh held-out test</span><span class="n">—</span><p>128 unseen pages, being labeled now. Reported as it lands.</p></div>';
   }
+  if (v.round5_test) {
+    var r5 = v.round5_test;
+    html += '<div><span class="k">New topics</span><span class="n' + (r5.precision < 0.7 ? " fail" : "") + '">' + r5.precision.toFixed(2) +
+      "</span><p>precision on government, scams, legal and education questions it was never tuned on. Weaker there, and we say so.</p></div>";
+  }
   html += '<div><span class="k">Judges agree</span><span class="n">0.53</span><p>Cohen's kappa between the two LLM labelers on the latest fresh test (0.42 and 0.66 on earlier rounds).</p></div>';
   el("verdict").innerHTML = html;
 })();

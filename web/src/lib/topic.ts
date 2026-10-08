@@ -1,6 +1,6 @@
 // Client-side topic guess for the typed question (a hint only; never sent to scoring).
 // "validated" = the rubric was fitted and tested on this topic (rounds 1-4);
-// the other four are SlopWatch's round-5 out-of-domain check.
+// the other four were tested once out of domain (round 5: precision 0.56, gate not met).
 
 export interface Topic { id: string; label: string; validated: boolean }
 

@@ -84,6 +84,13 @@ author and no date": F1 0.47 vs 0.45). Three test rounds means three looks at
 fresh data; each test set was used once, but the overall process is not a
 single pre-registered test.
 
+**Topic scope.** On four topics the rubric was never fitted on (government
+services, scams and safety, legal rights, education and exams) a one-time test
+gave precision 0.56 [0.27, 0.81] and recall 0.25 (83 agreed items): the 0.70
+target is not met. Flags on those topics are a weaker signal. The main gap is
+lead-generation pages that sell services (legal help, document filing): the
+sells-directly signal only recognises shop carts and product markup.
+
 The rubric is tuned for precision; at its operating point it catches roughly
 three in ten low-quality pages (test recall 0.30), so shares of "low" results
 are lower bounds of what the labelers would call low. The prevalence correction

@@ -86,6 +86,25 @@ def _eval_dict(rep: Any) -> dict[str, Any]:
     }
 
 
+def _fresh_test(root: Path, name: str, rubric: Any) -> Any:
+    """One-time test on a fresh label set with its own data dir (data_<name>/)."""
+    data = root / f"data_{name}"
+    items = load_sample(root / "labels" / name / "sample.jsonl")
+    labels = load_labels(root / "labels" / name / "labels.jsonl")
+    if not (items and labels and (data / SIGNALS).exists()):
+        return None
+    rows = read_jsonl(data / SERPS, SerpRow)
+    records = read_jsonl(data / SIGNALS, SignalRecord)
+    relevance = read_jsonl(data / RELEVANCE, RelevanceRecord)
+    return evaluate(
+        items,
+        labels,
+        score_rows(rows, records, relevance, rubric),
+        split="all",
+        signals=row_signals(rows, records, relevance),
+    )
+
+
 def compute(root: Path) -> dict[str, Any]:
     data, labels_dir = root / "data", root / "labels"
     rows = read_jsonl(data / SERPS, SerpRow)
@@ -106,23 +125,16 @@ def compute(root: Path) -> dict[str, Any]:
     validation.update(RECORDED_TESTS)
     # Round 4 (fresh queries, own data dir) tests the current rubric; its sensitivity
     # and specificity drive the prevalence correction.
-    data4 = root / "data_round4"
-    items4 = load_sample(labels_dir / "round4" / "sample.jsonl")
-    labels4 = load_labels(labels_dir / "round4" / "labels.jsonl")
     sensitivity = specificity = None
-    if items4 and labels4 and (data4 / SIGNALS).exists():
-        rows4 = read_jsonl(data4 / SERPS, SerpRow)
-        records4 = read_jsonl(data4 / SIGNALS, SignalRecord)
-        relevance4 = read_jsonl(data4 / RELEVANCE, RelevanceRecord)
-        rep4 = evaluate(
-            items4,
-            labels4,
-            score_rows(rows4, records4, relevance4, rubric),
-            split="all",
-            signals=row_signals(rows4, records4, relevance4),
-        )
+    rep4 = _fresh_test(root, "round4", rubric)
+    if rep4 is not None:
         validation["round4_test"] = _eval_dict(rep4)
         sensitivity, specificity = rep4.recall_low, rep4.specificity
+    # Round 5 tests the same rubric on four topics outside the measurement's four;
+    # it is reported but does not drive the correction (different topics).
+    rep5 = _fresh_test(root, "round5", rubric)
+    if rep5 is not None:
+        validation["round5_test"] = _eval_dict(rep5)
 
     # --- shares -----------------------------------------------------------------
     articles = [r for r in rows if platforms.kind(r.url) is None]
@@ -345,6 +357,7 @@ def _validation_html(v: dict[str, Any]) -> str:
     for key, title in (
         ("round3_test", "Round 3 fresh held-out test (rubric v3)"),
         ("round4_test", "Round 4 fresh held-out test (rubric v4, current)"),
+        ("round5_test", "Round 5 out-of-domain test (4 new topics, rubric v4)"),
     ):
         r = v.get(key)
         if not r:
