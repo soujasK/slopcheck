@@ -105,7 +105,11 @@ EXIT_OK, EXIT_FAIL, EXIT_USAGE, EXIT_CREDIT_CAP = 0, 1, 2, 3
 
 CacheModeOpt = Annotated[
     CacheMode | None,
-    typer.Option("--cache-mode", help="live | record | replay (default: SLOPWATCH_CACHE_MODE)"),
+    typer.Option(
+        "--cache-mode",
+        help="live = use cache, fetch misses | record = ALWAYS refetch (re-spends SerpApi credits) "
+        "| replay = fixtures only (default: SLOPWATCH_CACHE_MODE)",
+    ),
 ]
 
 

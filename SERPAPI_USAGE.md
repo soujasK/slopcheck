@@ -102,7 +102,9 @@ key and spends no credits.
 | Probe: Yahoo India (health-03) | 1 |
 | Measurement collection (97 searches; 3 probes reused from cache) | 97 |
 | Round-4 held-out test: 30 fresh Google India queries (`data_round4/`) | 30 |
-| **Total** | **133** of the 140 cap |
+| Round-5 out-of-domain test: 32 Google India queries (`data_round5/`) | 32 |
+| Wasted: 9 round-5 searches re-bought by a rerun in `record` mode (which always refetches) instead of `live` | 9 |
+| **Total** | **174** of the 180 cap |
 
 The Google, DuckDuckGo and Yahoo probes are jobs in the plan, so the full
 collection reuses them from the cache: it needs 97 more credits, not 100. The 3
