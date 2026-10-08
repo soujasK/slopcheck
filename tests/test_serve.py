@@ -201,3 +201,15 @@ def test_peek_and_suggest_never_spend(tmp_path: Path) -> None:
     spent = app.serp.ledger.spent
     app.suggest("dolo", "google-in")
     assert app.serp.ledger.spent == spent  # suggestions only look at the cache
+
+
+def test_input_is_normalized_capped_and_kept_as_plain_text(tmp_path: Path) -> None:
+    app, _ = make_app(tmp_path)
+    assert app.start("   \t ", "google-in")[0] == 400
+    assert app.peek("  dolo    650  ", "google-in")[1]["query"] == "dolo 650"
+    assert len(app.peek("x" * 500, "google-in")[1]["query"]) == 200
+    assert app.peek("pm किसान योजना", "google-in")[1]["query"] == "pm किसान योजना"
+    odd = '<script>alert(1)</script> & "q"'
+    assert app.peek(odd, "google-in")[1]["query"] == odd  # echoed as data; the UI renders text only
+    status, started = app.start(odd, "google-in")
+    assert status == 200 and started["query"] == odd
