@@ -4,15 +4,17 @@
 
 **Tagline:** Don't feed your agent slop.
 
-**Track:** Open Innovation (general)
+**Track:** Knowledge & Public Interest
 
 **Repository:** https://github.com/soujasK/slopwatch
 
 ## What it does
 
-AI agents answer from the top web search results and trust them blindly.
-SlopWatch measures what those results contain for Indian users and filters
-likely low-quality pages before an agent reads them.
+More and more Indians get answers to health, money and civic questions from AI
+assistants, and those assistants answer from the top web search results, which
+they trust blindly. SlopWatch measures, openly and with tested methods, what
+those results actually contain for Indian users, and filters likely low-quality
+pages before an AI repeats them.
 
 1. **Observatory.** 100 SerpApi searches (40 real Indian questions about health,
    money, products and tech on Google India; a locale-neutral subset on
@@ -34,16 +36,19 @@ answered "402 Payment Required".
 
 ## Who benefits
 
-Developers building agents and RAG systems on raw search APIs, who today get ten
-results with no quality signal; and anyone studying what Indian users (and the
-agents serving them) are shown for health and money questions.
+The public first: people asking AI assistants health, money, scam and
+government-service questions, who cannot see which sources the answer came from.
+Researchers, journalists and fact-checkers get an open, reproducible measurement
+of what Indian searches hand to AI, with every number's uncertainty and every
+failed test published. Developers building agents and RAG systems on raw search
+APIs get a drop-in filter that removes likely slop, with reasons, before their
+agent reads it.
 
 ## How SerpApi is used
 
 - **Data source:** 100 searches across the `google`, `duckduckgo` and `yahoo`
   engines with India and US locales, collected through a cached client with a hard
-  credit cap and a committed spend ledger (133 credits, including 30 searches
-  collected only for the final held-out test). Every response is
+  credit cap and a committed spend ledger (174 credits: 100 for the measurement, 30 and 32 for two held-out tests, 9 wasted by a re-run, the rest probes). Every response is
   committed as a fixture, so the whole analysis replays offline with no key.
 - **Integration:** `SlopWatchClient` wraps SerpApi's client inside
   `serpapi-search-tools`' `web_search` tool, filtering `organic_results` before the
