@@ -12,19 +12,24 @@ python -m venv .venv && . .venv/Scripts/activate   # macOS/Linux: . .venv/bin/ac
 pip install -e .
 ```
 
-## 0:00 - 0:20  An agent cites a page full of slop signals
+## 0:00 - 0:20  The hook: what an agent is handed for a money question
 
 ```bash
-slopwatch filter --serp-json examples/serp_cibil.json --offline --annotate | head -60
+slopwatch serve
 ```
 
-Say: "Agents answer from the top search results. Here is Google India for *how to
-improve cibil score fast*. The top two results are dictionary definitions of the
-word 'improve'. Number 3 is a US government research program called IMPROVE.
-SlopWatch annotates each result: no named author, and it covers a quarter of the
-question's words, so it lands in the low band." (`examples/serp_dolo650.json`
-also works; under rubric v4 its anonymous Q&A page is *mixed*, just under the
-low threshold.)
+Open `http://127.0.0.1:8765/?q=how%20to%20improve%20cibil%20score%20fast` (a saved
+snapshot: replays exactly, 0 credits). Say: "Agents answer from the top search
+results. This is Google India for *how to improve cibil score fast*, snapshot of
+3 October. The top two results are dictionary definitions of the word 'improve'.
+Number 3 is a US research program called IMPROVE. SlopWatch reads every page and
+flags it: no author, barely about the question. The agent with SlopWatch never
+sees it."
+
+Point at the line under the title: it says "snapshot of 3 Oct 2026". If Google
+shows better results when you search it live today, that is a different search
+on a different day; the snapshot is the measured one. (Terminal alternative:
+`slopwatch filter --serp-json examples/serp_cibil.json --offline --annotate`.)
 
 ## 0:20 - 0:50  "Agents trust the top results. We measured them."
 

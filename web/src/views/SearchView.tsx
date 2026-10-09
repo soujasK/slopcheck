@@ -13,7 +13,7 @@ import { Tooltip } from "../components/ui/tooltip";
 import type { EngineKey } from "../lib/api";
 import { wordDiff } from "../lib/diff";
 import { useSearchRun } from "../lib/useSearchRun";
-import { ENGINES, clean, cn, engineName, host, store, verdict } from "../lib/utils";
+import { ENGINES, clean, cn, engineName, host, snapshotLabel, store, verdict } from "../lib/utils";
 
 const EXAMPLES = ["how to improve cibil score fast", "best smartphone under 20000", "best water purifier for home ro or uv"];
 type Recent = { q: string; engine: EngineKey };
@@ -58,6 +58,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
     if (q0) go(q0, e0 && ENGINES.some((e) => e.key === e0) ? e0 : "google-in");
   }, []);
 
+  const snap = snapshotLabel(state.fetchedAt, state.cached);
   const frozen = state.threshold;           // the line the agent comparison uses
   const line = whatIf ?? frozen;            // the line the result list shows
   const verdicts = state.results.map((r) => verdict(state.scores[r.link], line));
@@ -109,7 +110,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
           </motion.span>
         </h1>
         <p className="mt-2 max-w-[46rem] text-[1rem] text-ink-2">
-          {state.query ? `${engineName(state.engine)} · every result read and scored on transparent signals, then the same agent answers with and without the slop.`
+          {state.query ? `${engineName(state.engine)}${snap ? ` · snapshot of ${snap}` : " · live, just now"} · every result read and scored on transparent signals, then the same agent answers with and without the slop.`
             : "Ask any question. SlopWatch fetches the real results, reads every page, scores it on transparent signals, and shows the agent's answer with and without the slop."}
         </p>
       </header>
@@ -129,7 +130,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
       ) : (
         <>
           <Pipeline phase={state.phase} error={!!state.error} agentOn={state.agentOn} steps={[
-            { title: "Search", detail: state.results.length ? `${state.results.length} results · ${state.cached ? "cached, free" : "1 credit"}` : `SerpApi · ${engineName(state.engine)}` },
+            { title: "Search", detail: state.results.length ? `${state.results.length} results · ${snap ? `snapshot ${snap}` : "live, 1 credit"}` : `SerpApi · ${engineName(state.engine)}` },
             { title: "Read pages", detail: `${stats.read} / ${state.results.length || "–"} fetched, robots-aware` },
             { title: "Score", detail: `${stats.frozenSlop} flagged at risk ≥ ${frozen.toFixed(2)}` },
             { title: "Agent answers", detail: !state.agentOn && state.phase !== "searching" ? "off: set GEMINI_API_KEY" : a ? "raw vs filtered, compared" : "raw vs filtered top 5" },
@@ -148,7 +149,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
 
           {state.results.length > 0 && (
             <div className="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
-              <Stat label="Results" value={state.results.length} hint={`${engineName(state.engine)} · ${state.cached ? "from cache, 0 credits" : "1 credit"}`} />
+              <Stat label="Results" value={state.results.length} hint={`${engineName(state.engine)} · ${snap ? `snapshot ${snap}, 0 credits` : "live search, 1 credit"}`} />
               <Stat label="Pages read" value={`${stats.read} / ${state.results.length}`}>
                 <span className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-surface-3"><motion.b className="block h-full rounded-full bg-clean" animate={{ width: `${(stats.read / state.results.length) * 100}%` }} /></span>
               </Stat>

@@ -213,3 +213,4 @@ def test_input_is_normalized_capped_and_kept_as_plain_text(tmp_path: Path) -> No
     assert app.peek(odd, "google-in")[1]["query"] == odd  # echoed as data; the UI renders text only
     status, started = app.start(odd, "google-in")
     assert status == 200 and started["query"] == odd
+    assert started["fetched_at"].startswith("20")  # ISO timestamp of the SerpApi snapshot

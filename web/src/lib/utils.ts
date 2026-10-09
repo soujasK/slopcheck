@@ -22,6 +22,13 @@ export const ENGINES: { key: EngineKey; name: string; short: string }[] = [
   { key: "yahoo-in", name: "Yahoo India", short: "Yahoo IN" },
   { key: "google-us", name: "Google US", short: "Google US" },
 ];
+/** "3 Oct 2026" for a cached snapshot; null when the search ran just now. */
+export function snapshotLabel(iso: string | null, cached: boolean) {
+  if (!iso || !cached) return null;
+  const d = new Date(iso);
+  return isNaN(+d) ? null : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
 export const engineName = (k: EngineKey) => ENGINES.find((e) => e.key === k)?.name ?? k;
 
 export type Verdict = "slop" | "clear" | "borderline" | "platform" | "unreadable" | "pending";

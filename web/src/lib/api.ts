@@ -31,6 +31,7 @@ export interface StartResponse extends Credits {
   threshold: number;
   results: Result[];
   cached: boolean;
+  fetched_at: string;
   credit_spent: number;
   agent: boolean;
 }

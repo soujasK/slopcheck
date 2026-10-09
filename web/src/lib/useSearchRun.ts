@@ -11,6 +11,7 @@ export interface RunState {
   scores: Record<string, Assessment>;
   threshold: number;
   cached: boolean;
+  fetchedAt: string | null;
   agentOn: boolean;
   answers: AnswerResponse | null;
   error: string | null;
@@ -19,7 +20,7 @@ export interface RunState {
 
 const initial: RunState = {
   phase: "idle", query: "", engine: "google-in", results: [], scores: {}, threshold: 1,
-  cached: false, agentOn: false, answers: null, error: null, credits: null,
+  cached: false, fetchedAt: null, agentOn: false, answers: null, error: null, credits: null,
 };
 
 /** Drives one search: start (SerpApi) -> step until every page is scored -> answer. */
@@ -36,7 +37,7 @@ export function useSearchRun() {
       if (!live()) return;
       setState((s) => ({
         ...s, phase: "reading", results: started.results, threshold: started.threshold,
-        cached: started.cached, agentOn: started.agent, credits: started,
+        cached: started.cached, fetchedAt: started.fetched_at, agentOn: started.agent, credits: started,
       }));
       if (!started.results.length) throw new ApiError("The engine returned no organic results for this question.", 200);
       for (;;) {

@@ -95,6 +95,8 @@ class App:
             "threshold": self.slop_filter.threshold(None),
             "results": results,
             "cached": page.from_cache,
+            # when SerpApi produced these results (a cached search replays that snapshot)
+            "fetched_at": page.fetched_at.isoformat(),
             "credit_spent": self.serp.ledger.spent - spent_before,
             "agent": self.agent is not None,
             **self._credits(),
