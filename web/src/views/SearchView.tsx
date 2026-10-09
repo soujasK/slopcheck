@@ -147,7 +147,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
           )}
 
           {state.results.length > 0 && (
-            <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr))]">
+            <div className="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
               <Stat label="Results" value={state.results.length} hint={`${engineName(state.engine)} · ${state.cached ? "from cache, 0 credits" : "1 credit"}`} />
               <Stat label="Pages read" value={`${stats.read} / ${state.results.length}`}>
                 <span className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-surface-3"><motion.b className="block h-full rounded-full bg-clean" animate={{ width: `${(stats.read / state.results.length) * 100}%` }} /></span>

@@ -37,7 +37,7 @@ export function Pipeline({ phase, error, agentOn, steps }: { phase: Phase; error
               )}
             </span>
             <b className="text-[0.88rem] font-semibold">{s.title}</b>
-            <span className="truncate font-mono text-[0.72rem] text-ink-3">{s.detail}</span>
+            <span className="font-mono text-[0.72rem] leading-snug text-ink-3 md:truncate">{s.detail}</span>
           </li>
         );
       })}
