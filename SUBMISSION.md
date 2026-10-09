@@ -4,7 +4,7 @@
 
 **Tagline:** Don't feed your agent slop.
 
-**Track:** Open-Source Integrations
+**Track:** Open Innovation (general)
 
 **Repository:** https://github.com/soujasK/slopwatch
 
