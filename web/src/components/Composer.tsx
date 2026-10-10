@@ -131,7 +131,7 @@ export function Composer({ q, setQ, engine, setEngine, busy, onRun, inputRef, ex
           <span className="text-[0.8rem] text-ink-3">Try</span>
           {examples.map((ex) => (
             <Button key={ex} variant="chip" size="chip" disabled={busy} onClick={() => { setQ(ex); onRun(ex, "google-in"); }}>
-              {ex}<span className="font-mono text-[0.6rem] font-semibold uppercase tracking-wider text-clean-ink">cached</span>
+              {ex}
             </Button>
           ))}
         </div>

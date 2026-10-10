@@ -22,7 +22,6 @@ export function MethodView({ rubric }: { rubric: Rubric | null }) {
         {v.round3_test && <Stat label="Test 2 · rubric v3" tone="risk" value={v.round3_test.precision.toFixed(2)} hint="precision · below the bar, refitted" />}
         {r4 && <Stat label="Test 3 · rubric v4 (current)" tone={r4.precision >= 0.7 ? "clean" : "risk"} value={r4.precision.toFixed(2)} hint={`precision · recall ${r4.recall.toFixed(2)} · n ${r4.n} · new queries`} />}
         {v.round5_test && <Stat label="Test 4 · new topics (out of domain)" tone={v.round5_test.precision >= 0.7 ? "clean" : "risk"} value={v.round5_test.precision.toFixed(2)} hint={`precision · recall ${v.round5_test.recall.toFixed(2)} · n ${v.round5_test.n} · government, scams, legal, education`} />}
-        <Stat label="Judge agreement" value="0.53" hint="Cohen's kappa on the latest test; a stronger audit judge confirms 92% of labels" />
       </div>
       {rubric && (
         <Card>
