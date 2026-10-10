@@ -19,7 +19,7 @@ const VIEWS: { value: View; label: string }[] = [
 
 function Logo() {
   return (
-    <svg viewBox="0 0 32 32" className="size-[26px]" aria-hidden="true">
+    <svg viewBox="0 0 32 32" className="size-[40px]" aria-hidden="true">
       <rect width="32" height="32" rx="8" fill="#1c1b18" />
       <circle cx="14" cy="14" r="7" fill="none" stroke="#3cc0a8" strokeWidth="3" />
       <path d="m19 19 6 6" stroke="#d0794c" strokeWidth="3.4" strokeLinecap="round" />
@@ -78,25 +78,25 @@ export default function App() {
           background: `radial-gradient(60% 70% at 50% -10%, color-mix(in srgb, ${mood === "slop" ? "var(--risk)" : "var(--clean)"} ${mood === "idle" ? 7 : 16}%, transparent), transparent 70%)` }}
         transition={{ duration: 0.9 }} />
       <Tabs.Root value={view} onValueChange={(v) => changeView(v as View)} className="relative min-h-screen">
-        <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur-md backdrop-saturate-150">
-          <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-3 px-4 py-2.5 md:gap-5 md:px-6">
-            <a href="#search" onClick={(e) => { e.preventDefault(); changeView("search"); }} className="flex items-center gap-2.5" aria-label="SlopWatch home">
+        <header className="mx-auto max-w-[1240px] px-4 pt-3 md:px-6">
+          {/* dateline */}
+          <div className="flex flex-wrap items-center justify-between gap-2 pb-2 font-mono text-[0.66rem] uppercase tracking-[0.16em] text-ink-3">
+            <span>Knowledge &amp; public interest · India edition</span>
+            <span className="hidden sm:inline">{new Date().toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}</span>
+          </div>
+          {/* masthead */}
+          <div className="rule-double flex flex-wrap items-end gap-x-6 gap-y-3 pt-3.5 pb-3">
+            <a href="#search" onClick={(e) => { e.preventDefault(); changeView("search"); }} className="flex items-center gap-3" aria-label="SlopWatch home">
               <Logo />
-              <b className="font-display text-[1.25rem] font-semibold tracking-[-0.005em]">Slop<span className="text-risk">Watch</span></b>
-              <small className="rounded-full border border-line-2 px-2 py-0.5 font-mono text-[0.6rem] font-medium uppercase tracking-[0.14em] text-ink-3">Console</small>
+              <span className="leading-none">
+                <b className="block font-display text-[2rem] font-semibold tracking-[-0.01em]">Slop<span className="text-risk">Watch</span></b>
+                <i className="mt-1 block font-display text-[0.98rem] text-ink-2">The agent's reading desk</i>
+              </span>
             </a>
-            <Tabs.List aria-label="Views" className="order-3 flex w-full gap-0.5 rounded-xl bg-surface-3 p-[3px] md:order-none md:w-auto">
-              {VIEWS.map((v) => (
-                <Tabs.Trigger key={v.value} value={v.value} className="relative flex-1 cursor-pointer rounded-[9px] px-3.5 py-1.5 text-[0.88rem] font-medium text-ink-2 transition-colors hover:text-ink data-[state=active]:text-ink md:flex-none">
-                  {view === v.value && <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(28_27_24/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
-                  <span className="relative">{v.label}</span>
-                </Tabs.Trigger>
-              ))}
-            </Tabs.List>
             <div className="ml-auto flex items-center gap-2">
               {credits && (
                 <Tooltip content="SerpApi credits used this session. Repeated questions come from the cache for free.">
-                  <span tabIndex={0} className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-2.5 py-1 font-mono text-[0.74rem] text-ink-2">
+                  <span tabIndex={0} className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-2.5 py-1 font-mono text-[0.72rem] text-ink-2">
                     <span className="size-1.5 rounded-full bg-clean" />{credits.session_spent} / {credits.session_cap} credits
                   </span>
                 </Tooltip>
@@ -108,6 +108,15 @@ export default function App() {
               </Tooltip>
             </div>
           </div>
+          {/* sections */}
+          <Tabs.List aria-label="Sections" className="rule-hair flex gap-6 border-b border-line-2">
+            {VIEWS.map((v) => (
+              <Tabs.Trigger key={v.value} value={v.value} className="relative cursor-pointer py-2.5 font-mono text-[0.74rem] font-medium uppercase tracking-[0.14em] text-ink-3 transition-colors hover:text-ink data-[state=active]:text-ink">
+                {v.label}
+                {view === v.value && <motion.span layoutId="nav-rule" className="absolute inset-x-0 -bottom-px h-[2px] bg-ink" transition={{ type: "spring", bounce: 0.15, duration: 0.4 }} />}
+              </Tabs.Trigger>
+            ))}
+          </Tabs.List>
         </header>
 
         <main className="mx-auto max-w-[1240px] px-4 pb-16 pt-6 md:px-6 md:pt-8">

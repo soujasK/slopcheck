@@ -47,11 +47,11 @@ export function AnswerCard({ a, scores, threshold, filtered, tainted, diff }: {
       <Card className={cn("flex h-full flex-col", filtered && "border-clean/45 shadow-[0_0_0_3px_color-mix(in_srgb,var(--clean)_12%,transparent)]")}>
         <CardHeader
           icon={filtered ? <ShieldCheck className="size-[18px] text-clean" /> : <Bot className={cn("size-[18px]", tainted ? "text-risk" : "text-ink-3")} />}
-          title={filtered ? "Agent with SlopWatch" : "Agent without SlopWatch"}
-          aside={filtered ? "top 5, slop removed" : "raw top 5"}
+          title={<span className="font-display text-[1.08rem] font-semibold">{filtered ? "Draft B · edited by SlopWatch" : "Draft A · as the agent read it"}</span>}
+          aside={filtered ? "top 5, slop struck" : "raw top 5"}
         />
         <div className="grid flex-1 content-start gap-4 p-5">
-          <p className="m-0 text-[0.98rem] leading-[1.7] [overflow-wrap:anywhere]">
+          <p className="m-0 font-display text-[1.12rem] leading-[1.6] [overflow-wrap:anywhere]">
             {diff
               ? diff.map((tok, i) => tok.changed ? (
                   <mark key={i} className={cn("rounded px-0.5", filtered ? "bg-clean-soft text-clean-ink" : "bg-risk-soft text-risk-ink line-through decoration-risk/50")}>
@@ -60,7 +60,8 @@ export function AnswerCard({ a, scores, threshold, filtered, tainted, diff }: {
                 ) : <Fragment key={i}>{withCites(tok.text, a, scores, threshold, `${i}-`)}</Fragment>)
               : withCites(a.answer, a, scores, threshold)}
           </p>
-          <ol className="m-0 grid list-none gap-1.5 border-t border-dashed border-line p-0 pt-3.5">
+          <span className="-mb-2 border-t border-line pt-3 font-mono text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-ink-3">Sources</span>
+          <ol className="m-0 grid list-none gap-1.5 p-0">
             {a.sources.map((s) => (
               <li key={s.n} className="grid grid-cols-[1.6rem_minmax(0,1fr)_auto] items-center gap-2.5 text-[0.82rem]">
                 <span className={cn("grid h-5 min-w-5 place-items-center rounded-md font-mono text-[0.7rem] font-semibold", citeTone(scores[s.link], threshold))}>{s.n}</span>
@@ -80,7 +81,7 @@ export function AnswerCard({ a, scores, threshold, filtered, tainted, diff }: {
 export function AnswerSkeleton({ filtered }: { filtered: boolean }) {
   return (
     <Card>
-      <CardHeader title={filtered ? "Agent with SlopWatch" : "Agent without SlopWatch"} aside="asking the agent…" />
+      <CardHeader title={<span className="font-display text-[1.08rem] font-semibold">{filtered ? "Draft B · edited by SlopWatch" : "Draft A · as the agent read it"}</span>} aside="the agent is writing…" />
       <div className="grid gap-2.5 p-5">
         {[92, 78, 85, 40].map((w) => <span key={w} className="skeleton h-3.5 rounded" style={{ width: `${w}%` }} />)}
       </div>

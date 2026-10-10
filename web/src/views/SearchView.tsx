@@ -1,4 +1,4 @@
-import { AlertTriangle, ArrowDownWideNarrow, Copy, Equal, GitCompareArrows, Info, ListOrdered, RotateCcw, ShieldCheck, SlidersHorizontal } from "lucide-react";
+import { AlertTriangle, ArrowDownWideNarrow, Copy, GitCompareArrows, Info, ListOrdered, RotateCcw, SlidersHorizontal } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AnswerCard, AnswerSkeleton } from "../components/AnswerCard";
@@ -131,9 +131,9 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
         <>
           <Pipeline phase={state.phase} error={!!state.error} agentOn={state.agentOn} steps={[
             { title: "Search", detail: state.results.length ? `${state.results.length} results · ${snap ? `snapshot ${snap}` : "live, 1 credit"}` : `SerpApi · ${engineName(state.engine)}` },
-            { title: "Read pages", detail: `${stats.read} / ${state.results.length || "–"} fetched, robots-aware` },
-            { title: "Score", detail: `${stats.frozenSlop} flagged at risk ≥ ${frozen.toFixed(2)}` },
-            { title: "Agent answers", detail: !state.agentOn && state.phase !== "searching" ? "off: set GEMINI_API_KEY" : a ? "raw vs filtered, compared" : "raw vs filtered top 5" },
+            { title: "Read", detail: `${stats.read} / ${state.results.length || "–"} fetched, robots-aware` },
+            { title: "Mark up", detail: `${stats.frozenSlop} struck at risk ≥ ${frozen.toFixed(2)}` },
+            { title: "Drafts", detail: !state.agentOn && state.phase !== "searching" ? "off: set GEMINI_API_KEY" : a ? "raw vs filtered, compared" : "raw vs filtered top 5" },
           ]} />
 
           <AnimatePresence>
@@ -160,10 +160,10 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
 
           {a && (
             <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
-              className={cn("flex flex-wrap items-start gap-3.5 rounded-2xl border px-5 py-4", a.same_sources ? "border-info/25 bg-info-soft" : "border-clean/35 bg-clean-soft")}>
-              {a.same_sources ? <Equal className="mt-0.5 size-[22px] shrink-0 text-info" /> : <ShieldCheck className="mt-0.5 size-[22px] shrink-0 text-clean-ink" />}
+              className="flex flex-wrap items-center gap-5 rounded-2xl border border-line bg-surface px-6 py-5 shadow-elev">
+              <span className={cn("stamp mt-0.5 shrink-0", a.same_sources ? "text-info" : "text-risk")}>{a.same_sources ? "Nothing struck" : `${a.dropped.length} source${a.dropped.length === 1 ? "" : "s"} struck`}</span>
               <div className="min-w-0 flex-1">
-                <b className="block text-[1rem]">{a.same_sources ? "Top 5 was clean: nothing removed" : `SlopWatch removed ${a.dropped.length} of the top 5 before the agent read them`}</b>
+                <b className="block font-display text-[1.25rem] font-semibold leading-snug">{a.same_sources ? "The top five were clean. Nothing removed." : `SlopWatch struck ${a.dropped.length} of the top five before the agent read them.`}</b>
                 <p className="m-0 mt-0.5 text-[0.88rem] text-ink-2">
                   {a.same_sources
                     ? "Both answers come from the same five sources, so they are identical by construction."
@@ -185,7 +185,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
           {(state.results.length > 0 || state.phase === "searching") && (
             <Card>
               <CardHeader
-                title={<>Search results <span className="font-mono text-[0.74rem] font-normal text-ink-3">{shown.length !== state.results.length ? `${shown.length} of ${state.results.length} shown` : ""}</span></>}
+                title={<><span className="font-display text-[1.15rem] font-semibold">The reading list</span> <span className="font-mono text-[0.74rem] font-normal text-ink-3">{shown.length !== state.results.length ? `${shown.length} of ${state.results.length} shown` : ""}</span></>}
                 aside={<>
                   <Segmented label="Sort results" value={sort} onChange={setSort} options={[{ value: "rank", label: "Rank" }, { value: "risk", label: "Risk" }]} />
                   <Tooltip content={sort === "rank" ? "as the engine ranked them" : "highest slop risk first"}><span className="text-ink-3">{sort === "rank" ? <ListOrdered className="size-4" /> : <ArrowDownWideNarrow className="size-4" />}</span></Tooltip>
