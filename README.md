@@ -1,6 +1,6 @@
 # SlopWatch
 
-[![ci](https://github.com/soujasK/slopcheck/actions/workflows/ci.yml/badge.svg)](https://github.com/soujasK/slopcheck/actions/workflows/ci.yml)
+[![ci](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml)
 
 > **Don't feed your agent slop.**
 
@@ -110,7 +110,7 @@ as "probably not a source to ground on", not as a verdict on a site.
 ## Use it
 
 ```bash
-pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopcheck"   # Python 3.11+
+pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"   # Python 3.11+
 # or from a clone: pip install -e ".[agents]"
 ```
 
@@ -188,7 +188,7 @@ responses are committed as fixtures, page HTML is not.
 ## Reproduce
 
 ```bash
-git clone https://github.com/soujasK/slopcheck && cd slopcheck
+git clone https://github.com/soujasK/slopwatch && cd slopwatch
 pip install -e ".[dev]"
 slopwatch report --cache-mode replay     # no API key, no network, < 3 minutes
 pytest                                   # offline; >= 80% coverage enforced

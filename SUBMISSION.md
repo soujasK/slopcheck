@@ -6,7 +6,7 @@
 
 **Track:** Knowledge & Public Interest
 
-**Repository:** https://github.com/soujasK/slopcheck
+**Repository:** https://github.com/soujasK/slopwatch
 
 ## What it does
 
