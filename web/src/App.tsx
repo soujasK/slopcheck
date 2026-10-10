@@ -20,9 +20,9 @@ const VIEWS: { value: View; label: string }[] = [
 function Logo() {
   return (
     <svg viewBox="0 0 32 32" className="size-[26px]" aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="#142725" />
-      <circle cx="14" cy="14" r="7" fill="none" stroke="#00a383" strokeWidth="3" />
-      <path d="m19 19 6 6" stroke="#d08433" strokeWidth="3.4" strokeLinecap="round" />
+      <rect width="32" height="32" rx="8" fill="#0b1a2a" />
+      <circle cx="14" cy="14" r="7" fill="none" stroke="#38bdf8" strokeWidth="3" />
+      <path d="m19 19 6 6" stroke="#f59e0b" strokeWidth="3.4" strokeLinecap="round" />
     </svg>
   );
 }
@@ -88,7 +88,7 @@ export default function App() {
             <Tabs.List aria-label="Views" className="order-3 flex w-full gap-0.5 rounded-xl bg-surface-3 p-[3px] md:order-none md:w-auto">
               {VIEWS.map((v) => (
                 <Tabs.Trigger key={v.value} value={v.value} className="relative flex-1 cursor-pointer rounded-[9px] px-3.5 py-1.5 text-[0.88rem] font-medium text-ink-2 transition-colors hover:text-ink data-[state=active]:text-ink md:flex-none">
-                  {view === v.value && <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(15_31_29/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
+                  {view === v.value && <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(11_26_42/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
                   <span className="relative">{v.label}</span>
                 </Tabs.Trigger>
               ))}

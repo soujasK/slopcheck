@@ -103,26 +103,26 @@ export function Composer({ q, setQ, engine, setEngine, busy, onRun, inputRef, ex
 
       {/* live read-out of what this question will do, before it is run */}
       <div className="flex min-h-7 flex-wrap items-center gap-2" aria-live="polite">
-        <AnimatePresence initial={false}>
+        <>
           {typed && peek && !stale && looksLikeQuestion && (
-            <motion.span key={`cost-${peek.cached}-${peek.can_run}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
-              className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[0.72rem]",
+            <span key={`cost-${peek.cached}-${peek.can_run}`}
+              className={cn("chip-in inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[0.72rem]",
                 peek.cached ? "bg-clean-soft text-clean-ink" : peek.can_run ? "bg-surface-3 text-ink-2" : "bg-risk-soft text-risk-ink")}>
               {peek.cached ? <><Zap className="size-3.5" />cached · runs free</> : peek.can_run ? <><CircleDollarSign className="size-3.5" />new search · 1 SerpApi credit · {peek.session_left} left this session</> : <>session credit cap reached · restart with --max-credits</>}
-            </motion.span>
+            </span>
           )}
           {topic && (
-            <motion.span key={`topic-${topic.id}`} initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }}
-              className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[0.72rem]", topic.validated ? "bg-surface-3 text-ink-2" : "bg-info-soft text-info")}
+            <span key={`topic-${topic.id}`}
+              className={cn("chip-in inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 font-mono text-[0.72rem]", topic.validated ? "bg-surface-3 text-ink-2" : "bg-info-soft text-info")}
               title={topic.validated ? "SlopWatch's rubric was fitted and tested on this topic" : "Outside the four topics the rubric was fitted on. Tested once on these topics (round 5): precision 0.56, below the 0.70 bar, so treat flags here as a weaker signal"}>
               {topic.validated ? <Compass className="size-3.5" /> : <FlaskConical className="size-3.5" />}
               looks like {topic.label}{topic.validated ? " · validated topic" : " · tested, weaker signal here"}
-            </motion.span>
+            </span>
           )}
           {typed && looksLikeQuestion && !peek && !topic && (
-            <motion.span key="hint" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="inline-flex items-center gap-1.5 font-mono text-[0.72rem] text-ink-3"><Sparkles className="size-3.5" />checking the cache…</motion.span>
+            <span key="hint" className="chip-in inline-flex items-center gap-1.5 font-mono text-[0.72rem] text-ink-3"><Sparkles className="size-3.5" />checking the cache…</span>
           )}
-        </AnimatePresence>
+        </>
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3">
