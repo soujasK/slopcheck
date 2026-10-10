@@ -178,3 +178,10 @@ def test_cache_url_hides_secret_path_from_cache_and_errors() -> None:
     with make_client(Recorder(boom), max_retries=0) as http, pytest.raises(HttpError) as err:
         http.post_json(secret_url, {"q": 2}, cache_url=public)
     assert "SECRETACCT" not in str(err.value)
+
+
+def test_redirect_loop_fails_the_url_without_crashing_or_retrying() -> None:
+    # A site whose robots.txt redirects to itself forever once crashed a live search.
+    rec = Recorder(lambda r: httpx.Response(301, headers={"location": str(r.url)}))
+    with make_client(rec, max_retries=2) as http, pytest.raises(HttpError, match="redirect loop"):
+        http.get(URL, {"q": "x", "api_key": "TOPSECRET"})

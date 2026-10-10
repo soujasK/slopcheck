@@ -242,6 +242,9 @@ class HttpClient:
                     method, url, params=dict(params or {}), content=body, headers=headers
                 )
                 resp = self._client.send(req, stream=True)
+            except httpx.TooManyRedirects:
+                # a redirect loop never fixes itself: fail this URL now instead of retrying
+                raise HttpError(f"redirect loop at {shown}") from None
             except httpx.TransportError as exc:
                 last_error = exc
                 continue
