@@ -106,7 +106,7 @@ def _fresh_test(root: Path, name: str, rubric: Any) -> Any:
 
 
 def compute(root: Path) -> dict[str, Any]:
-    data, labels_dir = root / "data", root / "labels"
+    data = root / "data"
     rows = read_jsonl(data / SERPS, SerpRow)
     records = read_jsonl(data / SIGNALS, SignalRecord)
     relevance = read_jsonl(data / RELEVANCE, RelevanceRecord)

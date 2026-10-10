@@ -6,7 +6,7 @@
 
 **Track:** Knowledge & Public Interest
 
-**Repository:** https://github.com/soujasK/slopwatch
+**Repository:** https://github.com/soujasK/slopcheck
 
 ## What it does
 
@@ -18,7 +18,7 @@ pages before an AI repeats them.
 
 1. **Observatory.** 100 SerpApi searches (40 real Indian questions about health,
    money, products and tech on Google India; a locale-neutral subset on
-   DuckDuckGo India, Yahoo India and Google US). Each of 681 result pages was
+   DuckDuckGo India, Yahoo India and Google US). Each of 681 unique result pages was
    fetched once (robots.txt respected) and scored with transparent, deterministic
    signals. The report gives every number with a 95% interval, coverage and
    bounds for pages we could not score.
@@ -31,7 +31,7 @@ pages before an AI repeats them.
 Key findings: in Indian results, low quality is not classic affiliate spam but
 anonymous pages, pages that do not answer the query (a UN climate report at #2
 for "best 1.5 ton inverter AC") and sellers' own blogs. Google showed an AI
-Overview on 59 of 60 searches. 22% of pages refused automated access; 14
+Overview on 39 of 40 India searches (59 of 60 including the US set). 22% of pages refused automated access; 14
 answered "402 Payment Required".
 
 ## Who benefits
@@ -75,6 +75,7 @@ EVAL.md.
 - **Existing work:** the HTTP cache, HTTP client, SerpApi client and page fetcher
   were adapted from the author's earlier project Zero Hour; everything else was
   built for this hackathon (visible in the git history).
-- **AI tools used:** Claude Code (development). Google Gemini and Cloudflare
-  Workers AI only as blind labelers for validation and as the agent in the demo;
-  no LLM is used in scoring.
+- **AI tools used:** Claude Code (development). As blind validation labelers
+  only: Google Gemini (`gemini-3.5-flash-lite`), Cloudflare Workers AI
+  (`gpt-oss-120b`) and, as an independent audit judge, `gemini-3.7-flash` on Google
+  Cloud Vertex AI; Gemini is also the agent in the demo. No LLM is used in scoring.

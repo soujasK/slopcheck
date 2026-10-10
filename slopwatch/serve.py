@@ -210,9 +210,9 @@ class App:
             toks = text.lower().split()
             if all(any(t.startswith(w) for t in toks) for w in words):
                 hits.append(text)
-        rows = [{"q": t, "cached": self._cached(t, engine_key)} for t in hits[: limit * 3]]
-        rows.sort(key=lambda r: (not r["cached"], len(r["q"])))
-        return 200, {"suggestions": rows[:limit]}
+        found = [(t, self._cached(t, engine_key)) for t in hits[: limit * 3]]
+        found.sort(key=lambda r: (not r[1], len(r[0])))
+        return 200, {"suggestions": [{"q": t, "cached": c} for t, c in found[:limit]]}
 
     # -- one-shot (API / scripts) ---------------------------------------------------
     def search(self, query: str, engine_key: str) -> tuple[int, dict[str, Any]]:

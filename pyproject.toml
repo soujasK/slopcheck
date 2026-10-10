@@ -27,8 +27,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/soujasK/slopwatch"
-Documentation = "https://github.com/soujasK/slopwatch#readme"
+Homepage = "https://github.com/soujasK/slopcheck"
+Documentation = "https://github.com/soujasK/slopcheck#readme"
 
 [project.optional-dependencies]
 # SerpApi's official agent tooling (14 agent frameworks); slopwatch.filter.serpapi_tools

@@ -7,7 +7,7 @@ large font, plus a browser window for the report.
 Setup before recording:
 
 ```bash
-git clone https://github.com/soujasK/slopwatch && cd slopwatch
+git clone https://github.com/soujasK/slopcheck && cd slopcheck
 python -m venv .venv && . .venv/Scripts/activate   # macOS/Linux: . .venv/bin/activate
 pip install -e .
 ```
@@ -91,7 +91,7 @@ without SlopWatch and with it, every citation marked clear or slop.
 ## 2:30 - 2:45  Close
 
 ```bash
-pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"
+pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopcheck"
 ```
 
 "SlopWatch: don't feed your agent slop." Show the repo URL.
