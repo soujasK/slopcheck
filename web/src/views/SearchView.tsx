@@ -104,7 +104,7 @@ export function SearchView({ isProtective, onCredits, onMood, focusSignal, toast
     <div className="grid gap-5">
       <header>
         <p className="eyebrow m-0">Live search · SerpApi</p>
-        <h1 className="mt-1.5 font-display text-[clamp(1.8rem,3.6vw,2.7rem)] font-bold leading-[1.05] tracking-[-0.03em] text-balance">
+        <h1 className="mt-1.5 font-display text-[clamp(1.95rem,3.9vw,2.9rem)] font-semibold leading-[1.08] tracking-[-0.012em] text-balance">
           <motion.span key={state.query || "idle"} className="inline-block" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }}>
             {state.query ? <>What your agent reads for <span className="text-clean-ink">“{state.query}”</span></> : "What will your agent read?"}
           </motion.span>

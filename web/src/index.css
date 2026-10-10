@@ -1,48 +1,49 @@
 @import "tailwindcss";
-@import "@fontsource/bricolage-grotesque/latin-600.css";
-@import "@fontsource/bricolage-grotesque/latin-700.css";
+@import "@fontsource/newsreader/latin-500.css";
+@import "@fontsource/newsreader/latin-600.css";
+@import "@fontsource/newsreader/latin-500-italic.css";
 @import "@fontsource/ibm-plex-sans/latin-400.css";
 @import "@fontsource/ibm-plex-sans/latin-500.css";
 @import "@fontsource/ibm-plex-sans/latin-600.css";
 @import "@fontsource/ibm-plex-mono/latin-400.css";
 @import "@fontsource/ibm-plex-mono/latin-500.css";
 
-/* Semantic tokens: a sky-blue tonal system. Components use only these (via the
-   Tailwind theme below). Neutrals carry a slight blue tint so every surface, line
-   and text grey belongs to one family. Data colors validated with the dataviz
-   palette checker in both themes (lightness band, chroma, CVD and contrast):
-   clean = clear / protective (sky), risk = raises slop risk (amber). */
+/* Semantic tokens: "paper and ink", an editorial palette for a public-interest
+   report. Warm paper neutrals, warm-black ink; pine = clear / protective,
+   terracotta = raises slop risk. Data colors validated with the dataviz palette
+   checker in both themes (lightness band, chroma, CVD separation, contrast); pine
+   leans blue so it stays distinct from terracotta for red-green colour blindness. */
 :root {
-  --bg: #f3f7fb; --surface: #ffffff; --surface-2: #f6f9fc; --surface-3: #e9f1f9;
-  --line: #dce6f0; --line-2: #c5d4e4;
-  --ink: #0b1a2a; --ink-2: #3b4f66; --ink-3: #687d94;
-  --risk: #c2570c; --risk-ink: #9a3f06; --risk-soft: #fdeee2;
-  --clean: #0284c7; --clean-ink: #0369a1; --clean-soft: #e0f2fe;
-  --info: #3f4f9c; --info-soft: #eceffb;
-  --ring: #0ea5e9;
-  --elev: 0 1px 2px rgb(11 26 42 / .05), 0 14px 36px -16px rgb(2 132 199 / .22);
+  --bg: #f6f3ec; --surface: #fffdf8; --surface-2: #faf7f0; --surface-3: #efeadf;
+  --line: #e4ddcf; --line-2: #d3c9b6;
+  --ink: #1c1b18; --ink-2: #4b4840; --ink-3: #797467;
+  --risk: #b4532a; --risk-ink: #8c3b1a; --risk-soft: #f7e6dc;
+  --clean: #00806b; --clean-ink: #006454; --clean-soft: #e0efe9;
+  --info: #3d5a73; --info-soft: #e8eef2;
+  --ring: #00806b;
+  --elev: 0 1px 2px rgb(28 27 24 / .05), 0 14px 34px -16px rgb(60 48 30 / .18);
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #06101b; --surface: #0b1724; --surface-2: #0f1d2d; --surface-3: #142538;
-    --line: #1a2c40; --line-2: #26405a;
-    --ink: #e6eef7; --ink-2: #a6b8cb; --ink-3: #7489a0;
-    --risk: #d0782c; --risk-ink: #f2a868; --risk-soft: #33200f;
-    --clean: #1e9bdb; --clean-ink: #7dd3fc; --clean-soft: #0b2a40;
-    --info: #b4bff0; --info-soft: #1a2142; --ring: #38bdf8;
-    --elev: 0 1px 2px rgb(0 0 0 / .4), 0 16px 40px -16px rgb(14 165 233 / .18);
+    --bg: #13120f; --surface: #1a1915; --surface-2: #201e1a; --surface-3: #28261f;
+    --line: #2f2c25; --line-2: #403c32;
+    --ink: #ece6da; --ink-2: #b9b2a3; --ink-3: #8a8476;
+    --risk: #cc7a4e; --risk-ink: #f0a98a; --risk-soft: #3a2318;
+    --clean: #11a08a; --clean-ink: #8fd8c6; --clean-soft: #15302a;
+    --info: #a9c0d3; --info-soft: #1e2a33; --ring: #3cc0a8;
+    --elev: 0 1px 2px rgb(0 0 0 / .45), 0 16px 40px -16px rgb(0 0 0 / .6);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #06101b; --surface: #0b1724; --surface-2: #0f1d2d; --surface-3: #142538;
-  --line: #1a2c40; --line-2: #26405a;
-  --ink: #e6eef7; --ink-2: #a6b8cb; --ink-3: #7489a0;
-  --risk: #d0782c; --risk-ink: #f2a868; --risk-soft: #33200f;
-  --clean: #1e9bdb; --clean-ink: #7dd3fc; --clean-soft: #0b2a40;
-  --info: #b4bff0; --info-soft: #1a2142; --ring: #38bdf8;
-  --elev: 0 1px 2px rgb(0 0 0 / .4), 0 16px 40px -16px rgb(14 165 233 / .18);
+  --bg: #13120f; --surface: #1a1915; --surface-2: #201e1a; --surface-3: #28261f;
+  --line: #2f2c25; --line-2: #403c32;
+  --ink: #ece6da; --ink-2: #b9b2a3; --ink-3: #8a8476;
+  --risk: #cc7a4e; --risk-ink: #f0a98a; --risk-soft: #3a2318;
+  --clean: #11a08a; --clean-ink: #8fd8c6; --clean-soft: #15302a;
+  --info: #a9c0d3; --info-soft: #1e2a33; --ring: #3cc0a8;
+  --elev: 0 1px 2px rgb(0 0 0 / .45), 0 16px 40px -16px rgb(0 0 0 / .6);
   color-scheme: dark;
 }
 
@@ -66,7 +67,7 @@
   --color-info-soft: var(--info-soft);
   --color-ring: var(--ring);
   --shadow-elev: var(--elev);
-  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
   --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
 }

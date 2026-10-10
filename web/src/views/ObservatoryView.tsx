@@ -26,7 +26,7 @@ export function ObservatoryView() {
     <div className="grid gap-5">
       <header>
         <p className="eyebrow m-0">Observatory · committed snapshot</p>
-        <h1 className="mt-1.5 font-display text-[clamp(1.8rem,3.6vw,2.7rem)] font-bold leading-[1.05] tracking-[-0.03em] text-balance">What Indian searches hand to agents</h1>
+        <h1 className="mt-1.5 font-display text-[clamp(1.95rem,3.9vw,2.9rem)] font-semibold leading-[1.08] tracking-[-0.012em] text-balance">What Indian searches hand to agents</h1>
         <p className="mt-2 max-w-[46rem] text-[1rem] text-ink-2">{ov ? `${ov.n_searches} SerpApi searches · ${ov.n_rows} results · collected ${ov.collected} · scored with rubric v${ov.rubric_version}` : err ? "" : "Loading measurement data…"}</p>
       </header>
       {err && <div className="rounded-xl bg-risk-soft px-4 py-3 text-[0.88rem] text-risk-ink">{err}</div>}

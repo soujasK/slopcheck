@@ -14,7 +14,7 @@ export function MethodView({ rubric }: { rubric: Rubric | null }) {
     <div className="grid gap-5">
       <header>
         <p className="eyebrow m-0">Method · validated, not claimed</p>
-        <h1 className="mt-1.5 font-display text-[clamp(1.8rem,3.6vw,2.7rem)] font-bold leading-[1.05] tracking-[-0.03em] text-balance">How a page gets flagged</h1>
+        <h1 className="mt-1.5 font-display text-[clamp(1.95rem,3.9vw,2.9rem)] font-semibold leading-[1.08] tracking-[-0.012em] text-balance">How a page gets flagged</h1>
         <p className="mt-2 max-w-[46rem] text-[1rem] text-ink-2">Each page's slop risk is a weighted sum of yes/no rules, clipped to 0–1. Weights were fitted on labeled development data and frozen before each one-time test. No AI judges a page.</p>
       </header>
       <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))]">

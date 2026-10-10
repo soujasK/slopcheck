@@ -20,7 +20,7 @@ export function Segmented<T extends string>({
             onClick={() => onChange(o.value)}
             className={cn("relative cursor-pointer rounded-[9px] px-3 py-1.5 text-[0.82rem] font-medium transition-colors", on ? "text-ink" : "text-ink-2 hover:text-ink")}
           >
-            {on && <motion.span layoutId={`seg-${id}`} className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(11_26_42/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
+            {on && <motion.span layoutId={`seg-${id}`} className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(28_27_24/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
             <span className="relative">{o.label}</span>
           </button>
         );

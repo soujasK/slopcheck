@@ -20,9 +20,9 @@ const VIEWS: { value: View; label: string }[] = [
 function Logo() {
   return (
     <svg viewBox="0 0 32 32" className="size-[26px]" aria-hidden="true">
-      <rect width="32" height="32" rx="8" fill="#0b1a2a" />
-      <circle cx="14" cy="14" r="7" fill="none" stroke="#38bdf8" strokeWidth="3" />
-      <path d="m19 19 6 6" stroke="#f59e0b" strokeWidth="3.4" strokeLinecap="round" />
+      <rect width="32" height="32" rx="8" fill="#1c1b18" />
+      <circle cx="14" cy="14" r="7" fill="none" stroke="#3cc0a8" strokeWidth="3" />
+      <path d="m19 19 6 6" stroke="#d0794c" strokeWidth="3.4" strokeLinecap="round" />
     </svg>
   );
 }
@@ -82,13 +82,13 @@ export default function App() {
           <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-3 px-4 py-2.5 md:gap-5 md:px-6">
             <a href="#search" onClick={(e) => { e.preventDefault(); changeView("search"); }} className="flex items-center gap-2.5" aria-label="SlopWatch home">
               <Logo />
-              <b className="font-display text-[1.1rem] font-bold tracking-[-0.015em]">Slop<span className="text-risk">Watch</span></b>
+              <b className="font-display text-[1.25rem] font-semibold tracking-[-0.005em]">Slop<span className="text-risk">Watch</span></b>
               <small className="rounded-full border border-line-2 px-2 py-0.5 font-mono text-[0.6rem] font-medium uppercase tracking-[0.14em] text-ink-3">Console</small>
             </a>
             <Tabs.List aria-label="Views" className="order-3 flex w-full gap-0.5 rounded-xl bg-surface-3 p-[3px] md:order-none md:w-auto">
               {VIEWS.map((v) => (
                 <Tabs.Trigger key={v.value} value={v.value} className="relative flex-1 cursor-pointer rounded-[9px] px-3.5 py-1.5 text-[0.88rem] font-medium text-ink-2 transition-colors hover:text-ink data-[state=active]:text-ink md:flex-none">
-                  {view === v.value && <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(11_26_42/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
+                  {view === v.value && <motion.span layoutId="nav-pill" className="absolute inset-0 rounded-[9px] bg-surface shadow-[0_1px_2px_rgb(28_27_24/0.08)]" transition={{ type: "spring", bounce: 0.18, duration: 0.4 }} />}
                   <span className="relative">{v.label}</span>
                 </Tabs.Trigger>
               ))}
@@ -123,7 +123,6 @@ export default function App() {
         </main>
 
         <footer className="mx-auto flex max-w-[1240px] flex-wrap justify-between gap-3 px-4 pb-10 font-mono text-[0.74rem] text-ink-3 md:px-6">
-          <span>Runs on 127.0.0.1 only · keys stay on this machine</span>
           <span>Built on SerpApi · deterministic signals, no AI-text detection</span>
         </footer>
       </Tabs.Root>
