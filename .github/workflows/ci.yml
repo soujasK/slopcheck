@@ -18,7 +18,7 @@ jobs:
         run: ruff check . && ruff format --check .
       - name: Types
         run: mypy
-      - name: Tests (offline: no keys, no network, fixtures only)
+      - name: "Tests (offline: no keys, no network, fixtures only)"
         run: pytest
       - name: Report reproduces from committed data
         run: slopwatch report --cache-mode replay --out /tmp/observatory.html
