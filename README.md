@@ -59,6 +59,20 @@ struck, the AI explains what helps: firm-to-medium support and spinal alignment.
 
 ---
 
+## Why it matters: bad context is worse than no context
+
+Published research shows the problem SlopWatch targets:
+
+| Finding | What it means here |
+|---|---|
+| **Insufficient context raises errors.** Gemma's wrong-answer rate went from 10.2% with no context to 66.1% with insufficient context ([Joren et al., Google, ICLR 2025](https://arxiv.org/abs/2411.06037); [blog](https://research.google/blog/deeper-insights-into-retrieval-augmented-generation-the-role-of-sufficient-context/)). | An agent handed the PostgreSQL manual for an Aadhaar question is worse off than one handed nothing. |
+| **Position matters.** Models use information best at the start or end of their context and worst in the middle ([Liu et al., *Lost in the Middle*, TACL 2024](https://arxiv.org/abs/2307.03172)). | Junk at the top of the results takes the most-read slots. Removing it moves good pages up. |
+| **Generative engines can be gamed.** Rewriting content (adding citations, quotations, statistics) raised a source's visibility in generated answers by up to 40% ([Aggarwal et al., *GEO*, KDD 2024](https://arxiv.org/abs/2311.09735)). | Pages written to be quoted are not the same as pages that answer the question. SlopWatch's `sells_directly` signal catches the shop page posing as advice (the mattress demo). |
+| **A few bad texts are enough.** Five planted texts per question reached about 90% attack success against a database of millions ([Zou et al., *PoisonedRAG*, USENIX Security 2025](https://arxiv.org/abs/2402.07867)). | That paper is about deliberate attacks. SlopWatch finds the accidental version: off-topic and sales pages ranking for ordinary questions. |
+
+These papers test retrieval in controlled settings. SlopWatch measures what live
+search actually returns for Indian questions, and filters it.
+
 ## Quick start
 
 ```bash
