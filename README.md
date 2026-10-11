@@ -4,6 +4,9 @@
 
 > **Don't feed your agent slop.**
 
+In one line: SlopWatch checks what AI assistants read from search results for
+Indian questions, and removes the junk before they repeat it.
+
 AI agents and RAG systems answer from the top web search results and trust them
 blindly. SlopWatch **measures** what those results actually contain for Indian
 users, across Google, DuckDuckGo and Yahoo (via [SerpApi](https://serpapi.com)),
@@ -11,7 +14,7 @@ and ships a **filter** that scores each result with transparent, deterministic
 signals and drops likely slop before it reaches the model, as a drop-in for
 SerpApi's official agent tooling (14 agent frameworks).
 
-Built for the SerpApi India Hackathon 2026 (Open-Source Integrations).
+Built for the SerpApi India Hackathon 2026 (Knowledge & Public Interest).
 
 [Story](report/story.html) · [Observatory report](report/observatory.html) · [EVAL.md](EVAL.md) ·
 [DEMO_RESULTS.md](DEMO_RESULTS.md) · [LIMITATIONS.md](LIMITATIONS.md)
@@ -162,9 +165,10 @@ SerpApi is the data source and the integration target: 100 searches across
 ([SERPAPI_USAGE.md](SERPAPI_USAGE.md): engines, parameters, credits per stage),
 a live `search` command, and a `SlopWatchClient` that plugs into
 `serpapi-search-tools` so filtering happens inside SerpApi's own agent tools. A
-hard research credit cap (140) is enforced against a committed ledger; 133 were
-spent (100 measurement, 30 for the round-4 test, plus probes; 3 on Bing, which
-returned unusable India results). Live questions (`serve`, `search`) use your own
+hard research credit cap (180) is enforced against a committed ledger; 174 were
+spent (100 measurement, 30 for the round-4 test, 32 for the round-5 test, 9 wasted
+by a re-run in `record` mode, plus probes; 3 on Bing, which returned unusable India
+results). Live questions (`serve`, `search`) use your own
 key and a separate local ledger, so they never count against that cap; `serve`
 allows 50 new searches per session by default (`--max-credits` to change).
 
@@ -227,8 +231,10 @@ on **Indian queries**, and shipped as a filter inside SerpApi's agent tooling.
 - **Pre-existing code:** the HTTP cache, HTTP client, SerpApi client and
   robots-aware page fetcher were adapted from the author's earlier project
   *Zero Hour*; everything else was built for this hackathon (see git history).
-- **AI tools:** development assisted by Claude Code. Google Gemini and Cloudflare
-  Workers AI were used only as blind labelers for validation and to play the agent
-  in the demo; no LLM is used in scoring.
+- **AI tools:** development assisted by Claude Code. Google Gemini
+  (`gemini-3.5-flash-lite`) and Cloudflare Workers AI (`gpt-oss-120b`) were used
+  only as blind labelers for validation; `gemini-3.7-flash` on Google Cloud Vertex
+  AI as an independent audit judge; and Gemini to play the agent in the demo. No
+  LLM is used in scoring.
 
 MIT License.
