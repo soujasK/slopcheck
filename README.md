@@ -22,9 +22,10 @@ manuals. SlopWatch strikes them, with reasons, before an AI agent reads them.</s
 
 ## In 30 seconds
 
-**The problem.** AI agents answer from the top search results and trust them
-blindly. Nobody had measured what those results contain for Indian users, or given
-agent builders a quality signal.
+**The problem.** Garbage in, garbage out. AI agents answer from the top search
+results and trust them blindly, so a junk page in the results becomes a confident
+junk answer. Nobody had measured what those results contain for Indian users, or
+given agent builders a quality signal.
 
 **What SlopWatch does**
 
