@@ -1,32 +1,115 @@
 # SlopWatch
 
 [![ci](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/soujasK/slopwatch/actions/workflows/ci.yml)
+![python](https://img.shields.io/badge/python-3.11%2B-1c1b18)
+![tests](https://img.shields.io/badge/tests-267%20offline-00806b)
+![license](https://img.shields.io/badge/license-MIT-1c1b18)
+![track](https://img.shields.io/badge/SerpApi%20India%20Hackathon-Knowledge%20%26%20Public%20Interest-b4532a)
 
 > **Don't feed your agent slop.**
 
-In one line: SlopWatch checks what AI assistants read from search results for
-Indian questions, and removes the junk before they repeat it.
+SlopWatch checks what AI assistants read from search results for Indian
+questions, and removes the junk before they repeat it.
 
-AI agents and RAG systems answer from the top web search results and trust them
-blindly. SlopWatch **measures** what those results actually contain for Indian
-users, across Google, DuckDuckGo and Yahoo (via [SerpApi](https://serpapi.com)),
-and ships a **filter** that scores each result with transparent, deterministic
-signals and drops likely slop before it reaches the model, as a drop-in for
-SerpApi's official agent tooling (14 agent frameworks).
+![Google India's live top results for "how to update aadhaar mobile number online": database manuals, struck by SlopWatch](docs/img/aadhaar-struck.png)
 
-Built for the SerpApi India Hackathon 2026 (Knowledge & Public Interest).
+<sub>A live Google India search (via SerpApi, 11 Oct 2026) for *how to update aadhaar
+mobile number online*. The top results include the PostgreSQL and MySQL `UPDATE`
+manuals. SlopWatch strikes them, with reasons, before an AI agent reads them.</sub>
 
-[Story](report/story.html) · [Observatory report](report/observatory.html) · [EVAL.md](EVAL.md) ·
-[DEMO_RESULTS.md](DEMO_RESULTS.md) · [LIMITATIONS.md](LIMITATIONS.md)
+---
 
-## The problem
+## In 30 seconds
 
-Search engines have fought SEO spam for years; research found product-review
-results on Google, Bing and DuckDuckGo heavily dominated by affiliate-driven
-content (Bevendorff et al., *Is Google Getting Worse?*, ECIR 2024). A human can
-skip a dodgy page. An agent quotes it. Developers who build agents on raw search
-APIs get ten results with **no quality signal at all**, and nobody had measured
-what Indian users' searches return to an agent, per engine and per topic.
+**The problem.** AI agents answer from the top search results and trust them
+blindly. Nobody had measured what those results contain for Indian users, or given
+agent builders a quality signal.
+
+**What SlopWatch does**
+
+1. **Measures.** 100 real Indian questions across Google, DuckDuckGo and Yahoo
+   (India) and Google US, through SerpApi. Every result page is read and scored,
+   and every number comes with a 95% confidence interval.
+2. **Filters.** A Python package that gives each result a 0–1 *slop risk* with
+   plain reasons and drops likely slop. It is a one-line drop-in for SerpApi's
+   official agent tooling (14 frameworks).
+3. **Shows it.** A local console: ask anything, watch every page get read and
+   scored, and compare the AI's answer with and without SlopWatch.
+
+**Does it change the answer?** Same AI, same live search, before and after:
+
+![Draft A (raw results, includes the seller's own shop page) vs Draft B (after SlopWatch): the answer turns from a sales list into advice](docs/img/mattress-drafts.png)
+
+<sub>*best mattress for back pain india* (live, 11 Oct 2026). With SleepyCat's own shop
+page in the sources, the AI repeats its sales copy ("5-zone body support"). With it
+struck, the AI explains what helps: firm-to-medium support and spinal alignment.</sub>
+
+### Key results
+
+| | |
+|---|---|
+| Share of India results with slop signals | **4.5%** [2.2%, 7.2%], about **11%** after correcting for what the filter misses |
+| Google India searches answered by an AI Overview first | **39 of 40** |
+| Pages that refused automated access | **22%** (14 answered *402 Payment Required*) |
+| Precision on a fresh, never-seen test (rubric v4) | **0.88** [0.53, 0.98]; specificity 0.99 |
+| Independent audit judge agrees with the labels | **92%** |
+| Published failures | v2 (0.37), v3 (0.57), and new topics (0.56) |
+
+---
+
+## Quick start
+
+```bash
+pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"   # Python 3.11+
+slopwatch serve                                  # opens the console at http://127.0.0.1:8765
+slopwatch report --cache-mode replay             # rebuild every number offline, no key needed
+```
+
+Live searches need `SERPAPI_API_KEY` (and `GEMINI_API_KEY` for the agent answers)
+in your environment or a `.env` file. Repeated questions come from the cache for free.
+
+## Use it in your agent
+
+**Three lines in any Python code:**
+
+```python
+from slopwatch.filter import filter_results
+clean = filter_results("best sip to invest in 2026", serp["organic_results"])
+# each kept result: result["slopwatch"] = {slop_risk, band, reasons, not_scored}
+```
+
+**SerpApi's official agent tooling** (OpenAI Agents SDK, LangChain, LangGraph,
+CrewAI, LlamaIndex, Claude Agent SDK, Google ADK and more):
+
+```python
+from slopwatch.filter.serpapi_tools import web_search   # instead of serpapi_search_tools
+tools = [web_search()]                                    # same tool, slop filtered
+```
+
+**LangChain `SerpAPIWrapper`:** `slopwatch.filter.langchain.filtered_results(wrapper, query)`.
+
+Every result keeps its reasons, e.g. `0.65 low: no named author · title and headings
+cover 20% of the query's words`. Platform pages (video, forums, shops) and pages that
+cannot be fetched are never dropped; they are marked `not_scored` with the cause.
+
+---
+
+## How it works
+
+```mermaid
+flowchart LR
+    Q["Question"] --> S["SerpApi<br/>google · duckduckgo · yahoo"]
+    S --> P["Read every result<br/>robots.txt respected"]
+    P --> G["Transparent signals<br/>author · relevance · selling"]
+    G --> R["Frozen rubric<br/>slop risk 0–1 + reasons"]
+    R --> F["Filter · console · observatory"]
+```
+
+No AI judges a page: the score is a fixed, weighted set of yes/no rules
+(`data/rubric.yaml`). AI is used only to *validate* those rules. Full design, with
+diagrams of every layer: **[ARCHITECTURE.md](ARCHITECTURE.md)**.
+
+---
 
 ## What we measured (snapshot of 2026-10-03)
 
@@ -58,136 +141,86 @@ between Google India and Google US (India − US: −9.3 points, 95% CI −24.2 
 **Findings**
 
 1. **Indian "slop" is not classic affiliate spam.** Affiliate links and "best X"
-   listicles did *not* predict low quality here (their fitted weights were
+   listicles did *not* predict low quality here (their fitted weights are
    negative). What did: **no named author**, **pages that do not address the
-   query** (a UN climate report ranking for "best 1.5 ton inverter AC"; a US
-   research program called "IMPROVE" in the top 5 for "how to improve cibil
-   score fast"), and **sellers' own content** (pharmacy and product blogs).
+   query** (a UN climate report ranking for "best 1.5 ton inverter AC"; dictionary
+   definitions and a US research program called "IMPROVE" in the top 5 for "how to
+   improve cibil score fast"), and **sellers' own content** (pharmacy and product
+   pages).
 2. **Google shows an AI Overview on 59 of 60 searches** (39/40 India, 20/20 US),
    and fills 30% of its India top results with platform pages (YouTube, Reddit,
-   Quora, shops) against 3-4% on DuckDuckGo and Yahoo.
+   Quora, shops) against 3–4% on DuckDuckGo and Yahoo.
 3. **The web is closing to crawlers:** 22% of pages refused us (403s, robots.txt)
    and 14 answered *402 Payment Required* (pay-per-crawl). US publishers block
-   more (66% coverage vs ~80% for India).
+   more (61% coverage vs ~77% for India).
 4. **Low-band pages appear at every rank** on Google India, including the top
-   result (5%, n = 22); no rank stands out (0-12%, small n per rank).
+   result (5%, n = 22); no rank stands out (0–12%, small n per rank).
+
+Live searches after the measurement (10–11 Oct 2026, demo sweeps, not part of the
+statistics above) found the same patterns: database manuals for an Aadhaar
+question, a bus company for "best mixer grinder brand", and brands' own shop pages
+quoted as advice for smartwatches and mattresses.
+
+---
 
 ## Validation (labels from two LLMs, not humans)
 
 We report the whole history, including what failed (details: [EVAL.md](EVAL.md),
 [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md), [LABELING.md](LABELING.md)).
 
-- Ground truth: two LLMs (Google `gemini-3.5-flash-lite`, Cloudflare
-  `gpt-oss-120b`) label each result blind (never seeing scores or signals);
-  only items where both agree count. Agreement: Cohen's kappa 0.47 with a
-  300-char excerpt, **0.66** with 2,000 chars of main text. **No human
-  validation.**
-- **Round 2 (rubric v2): failed.** Test precision 0.37 [0.19, 0.59], recall 0.35,
-  n = 71, below the pre-registered 0.70 gate and below the one-line baseline "no
-  author and no date". That test set was then retired.
-- **Round 3 (rubric v3): failed the gate.** Fitted on the 155 round-2 items,
-  frozen, tested once on 114 agreed results from 150 fresh pages (kappa 0.42):
-  precision 0.57 [0.25, 0.84], recall 0.19, F1 0.29. It beat every baseline.
-- **Round 4 (rubric v4): passed the gate.** Fitted on all 257 development items
-  (cross-validated precision 0.80), frozen, then tested **once** on 102 agreed
-  results from 30 brand-new Google India queries (kappa 0.53): **precision 0.88
-  [0.53, 0.98], recall 0.30 [0.16, 0.51], F1 0.45, specificity 0.99.** The
-  interval is wide (8 pages flagged). The one-line baseline "no author and no
-  date" reached a slightly higher F1 (0.47) by flagging 28 pages at precision
-  0.43, so the pre-registered "beats every baseline on F1" criterion was **not**
-  met.
-- **Round 5 (rubric v4, unchanged): new topics, gate not met.** Tested once on 32
-  queries about government services, scams, legal rights and education, topics
-  it was never fitted on (83 agreed results, kappa 0.60): **precision 0.56 [0.27,
-  0.81]**, recall 0.25, F1 0.34. It still beats every baseline, but it is
-  validated only for health, money, products and tech how-tos. Its main miss on
-  the new topics: pages selling legal or document services, which the
-  "sells directly" signal (built for shop carts) does not see.
-- **Audit (stronger judge, `gemini-3.7-flash`):** confirms 92% of the round-4
-  ground truth; rubric precision against it 0.89.
+- **Ground truth:** two LLMs (Google `gemini-3.5-flash-lite`, Cloudflare
+  `gpt-oss-120b`) label each result blind (never seeing scores or signals); only
+  items where both agree count. **No human validation.**
+- **Every test set is declared before it is searched and used once.**
+
+| Round | Rubric | Test | Precision [95% CI] | Recall | Outcome |
+|---|---|---|---|---|---|
+| 2 | v2 | 71 items | 0.37 [0.19, 0.59] | 0.35 | failed; set retired |
+| 3 | v3 | 114 items, 150 fresh pages | 0.57 [0.25, 0.84] | 0.19 | failed the 0.70 gate; beat every baseline |
+| **4** | **v4** | **102 items, 30 new queries** | **0.88 [0.53, 0.98]** | **0.30** | **passed**; specificity 0.99 |
+| 5 | v4, unchanged | 83 items, 4 new topics | 0.56 [0.27, 0.81] | 0.25 | failed out of domain |
+| audit | judge `gemini-3.7-flash` | rounds 4 and 5 | 0.89 / 0.56 | | confirms 92% / 83% of labels |
+
+Round 4's interval is wide (8 pages flagged), and the one-line baseline "no author
+and no date" reached a slightly higher F1 (0.47 vs 0.45), so that pre-registered
+criterion was **not** met. Round 5's main miss: pages selling legal or document
+services, which the "sells directly" signal (built for shop carts) does not see.
 
 The filter is conservative: it almost never removes a page the judges called ok
 (1 of 79), but it catches only about three in ten low-quality pages. Treat a drop
 as "probably not a source to ground on", not as a verdict on a site.
 
-## Use it
+---
 
-```bash
-pip install "slopwatch[agents] @ git+https://github.com/soujasK/slopwatch"   # Python 3.11+
-# or from a clone: pip install -e ".[agents]"
-```
+## Documentation
 
-Three lines in any Python agent:
-
-```python
-from slopwatch.filter import filter_results
-clean = filter_results("best sip to invest in 2026", serp["organic_results"])
-# each kept result: result["slopwatch"] = {slop_risk, band, reasons, not_scored}
-```
-
-**SerpApi's official agent tooling** (OpenAI Agents SDK, LangChain, LangGraph,
-CrewAI, LlamaIndex, Claude Agent SDK, Google ADK, and more):
-
-```python
-from slopwatch.filter.serpapi_tools import web_search   # instead of serpapi_search_tools
-tools = [web_search()]                                    # same tool, slop filtered
-```
-
-**LangChain `SerpAPIWrapper`:** `slopwatch.filter.langchain.filtered_results(wrapper, query)`.
-
-**CLI**
-
-```bash
-slopwatch serve                                                # local app: ask anything, compare the agent's answer with and without the filter
-slopwatch search "is it safe to take dolo 650 every day"      # live: SerpApi + filter
-slopwatch filter --serp-json results.json --threshold 0.6      # pipe-friendly
-slopwatch report --cache-mode replay                           # rebuild the observatory
-slopwatch demo --cache-mode replay                             # agent before/after
-slopwatch doctor                                               # key, cache, credits
-```
-
-Every result keeps its reasons, e.g. `0.63 low: no named author; no author or
-date; title and headings cover 33% of the query's words`. Platform pages and
-pages that cannot be fetched are never dropped; they are marked `not_scored`.
-
-**The console (`slopwatch serve`)** is a React 19 + TypeScript app (Vite,
-Tailwind CSS 4, Radix UI, Motion) in [`web/`](web/). Its production build is
-committed in `slopwatch/report/app/` and ships in the package, so running it needs
-no Node and no network (fonts and libraries are bundled). To change the UI:
-`cd web && npm install && npm run dev` (proxies the API to a running
-`slopwatch serve`), then `npm run build`. Open a ready-made run with a link such as
-`http://127.0.0.1:8765/?q=how%20to%20improve%20cibil%20score%20fast`.
+| Document | What's in it |
+|---|---|
+| [ARCHITECTURE.md](ARCHITECTURE.md) | System design, request flow, caching and ledgers, scoring, validation protocol, frontend (with diagrams) |
+| [EVAL.md](EVAL.md) | Every test, confusion matrices, baselines, largest errors, the audit |
+| [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md) | Pre-registered decisions, dated, before each test |
+| [LABELING.md](LABELING.md) | The labeler guide (verbatim) and protocol |
+| [LIMITATIONS.md](LIMITATIONS.md) | What this does not show |
+| [SERPAPI_USAGE.md](SERPAPI_USAGE.md) | Engines, parameters and every credit spent |
+| [DEMO.md](DEMO.md) · [DEMO_RESULTS.md](DEMO_RESULTS.md) | Demo script; pre-registered agent before/after (all 8 reported) |
+| [report/story.html](report/story.html) · [report/observatory.html](report/observatory.html) | The narrative page and the full observatory report |
 
 ## How it uses SerpApi
 
-SerpApi is the data source and the integration target: 100 searches across
-`google`, `duckduckgo` and `yahoo` with India and US locales for the measurement
-([SERPAPI_USAGE.md](SERPAPI_USAGE.md): engines, parameters, credits per stage),
-a live `search` command, and a `SlopWatchClient` that plugs into
-`serpapi-search-tools` so filtering happens inside SerpApi's own agent tools. A
-hard research credit cap (180) is enforced against a committed ledger; 174 were
-spent (100 measurement, 30 for the round-4 test, 32 for the round-5 test, 9 wasted
-by a re-run in `record` mode, plus probes; 3 on Bing, which returned unusable India
-results). Live questions (`serve`, `search`) use your own
-key and a separate local ledger, so they never count against that cap; `serve`
-allows 50 new searches per session by default (`--max-credits` to change).
+SerpApi is both the data source and the integration target:
 
-## How it works
-
-```
-queries.yaml ─► SerpApi (google / duckduckgo / yahoo, IN + US) ─► top organic results
-                                                                     │
-           robots-aware page fetch (10 s, 2 MB, cached) ◄────────────┘
-                     │
-                     ▼
-deterministic signals: author/date, query relevance, sells-directly, affiliate,
-ads, thin text, near-duplicates  ──►  rubric v4 (weights fitted, frozen)
-                     │                         │
-                     ▼                         ▼
-           observatory report          filter + agent adapters
-All HTTP goes through one SQLite cache (live / record / replay); SerpApi and LLM
-responses are committed as fixtures, page HTML is not.
-```
+- **Data:** the `google`, `duckduckgo` and `yahoo` engines with India and US locales.
+  That's 100 searches for the measurement plus 62 for two held-out tests
+  ([SERPAPI_USAGE.md](SERPAPI_USAGE.md): engines, parameters, credits per stage).
+- **Integration:** `SlopWatchClient` plugs into `serpapi-search-tools`, so
+  filtering happens inside SerpApi's own agent tools. A live `search` command and
+  the console use SerpApi directly.
+- **Accountability:** a hard research credit cap (180) is enforced against a
+  committed ledger; 174 were spent (100 measurement, 30 round-4 test, 32 round-5
+  test, 9 wasted by a re-run in `record` mode, plus probes; 3 on Bing, which
+  returned unusable India results). Live questions (`serve`, `search`) use your own
+  key and a separate local ledger; `serve` allows 50 new searches per session by
+  default (`--max-credits` to change).
 
 ## Reproduce
 
@@ -195,13 +228,29 @@ responses are committed as fixtures, page HTML is not.
 git clone https://github.com/soujasK/slopwatch && cd slopwatch
 pip install -e ".[dev]"
 slopwatch report --cache-mode replay     # no API key, no network, < 3 minutes
-pytest                                   # offline; >= 80% coverage enforced
+pytest                                   # 267 offline tests; >= 80% coverage enforced
 ```
 
 `collect` replays from the committed SerpApi fixtures byte-for-byte. Page HTML is
 deliberately not committed (third-party content), so `fetch` needs the network;
 everything downstream (`score`, `evaluate`, `report`, `filter --offline`, `demo`)
 replays from committed data.
+
+**CLI reference**
+
+```bash
+slopwatch serve                                                # local console
+slopwatch search "is it safe to take dolo 650 every day"      # live: SerpApi + filter
+slopwatch filter --serp-json results.json --threshold 0.6      # pipe-friendly
+slopwatch report --cache-mode replay                           # rebuild the observatory
+slopwatch demo --cache-mode replay                             # agent before/after
+slopwatch doctor                                               # key, cache, credits
+```
+
+**The console** is a React 19 + TypeScript app (Vite, Tailwind CSS 4, Radix UI,
+Motion) in [`web/`](web/). Its production build ships inside the package, so it
+needs no Node and no network. To change it: `cd web && npm install && npm run dev`,
+then `npm run build`.
 
 ## Prior art
 
@@ -222,6 +271,7 @@ on **Indian queries**, and shipped as a filter inside SerpApi's agent tooling.
 
 - No copies of third-party pages are published; the repo holds SERP data, page
   hashes, fetch metadata, excerpts of at most 300 characters and derived signals.
+  The two screenshots above are of SlopWatch's own interface.
 - robots.txt is respected; disallowed or unreachable pages are reported as
   unscored and never fetched. The crawler identifies itself with a contact URL.
 - Aggregates only. No per-site "spam" list; examples show only which signals fired.
