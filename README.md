@@ -5,6 +5,7 @@
 ![tests](https://img.shields.io/badge/tests-267%20offline-00806b)
 ![license](https://img.shields.io/badge/license-MIT-1c1b18)
 ![track](https://img.shields.io/badge/SerpApi%20India%20Hackathon-Knowledge%20%26%20Public%20Interest-b4532a)
+[![architecture](https://img.shields.io/badge/architecture-7%20diagrams-00806b?logo=mermaid&logoColor=white)](ARCHITECTURE.md)
 
 > **Don't feed your agent slop.**
 
